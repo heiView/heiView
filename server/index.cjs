@@ -205,27 +205,57 @@ function createApp() {
         }
       } catch(e) {}
 
-      const rows = db
-        .prepare(
-          `
-            SELECT
-              o.building_name,
-              o.floor_label,
-              o.room,
-              o.start_time,
-              o.end_time,
-              o.note,
-              c.title,
-              c.id AS course_id,
-              c.detail_link,
-              c.lecturers_json
-            FROM occurrences o
-            JOIN courses c ON c.id = o.course_id
-            WHERE o.date = ?
-            ORDER BY o.building_name, o.room, o.start_time, c.title
-          `
-        )
-        .all(date);
+      let rows;
+      if (buildingFilter) {
+        rows = db
+          .prepare(
+            `
+              SELECT
+                o.building_name,
+                o.floor_label,
+                o.room,
+                o.start_time,
+                o.end_time,
+                o.note,
+                c.title,
+                c.id AS course_id,
+                c.detail_link,
+                c.lecturers_json
+              FROM occurrences o
+              JOIN courses c ON c.id = o.course_id
+              WHERE o.date = ? 
+                AND (
+                  TRIM(o.building_name) = ?
+                  OR LOWER(o.building_name) = 'online'
+                  OR LOWER(o.room) = 'online'
+                )
+              ORDER BY o.building_name, o.room, o.start_time, c.title
+            `
+          )
+          .all(date, buildingFilter);
+      } else {
+        rows = db
+          .prepare(
+            `
+              SELECT
+                o.building_name,
+                o.floor_label,
+                o.room,
+                o.start_time,
+                o.end_time,
+                o.note,
+                c.title,
+                c.id AS course_id,
+                c.detail_link,
+                c.lecturers_json
+              FROM occurrences o
+              JOIN courses c ON c.id = o.course_id
+              WHERE o.date = ?
+              ORDER BY o.building_name, o.room, o.start_time, c.title
+            `
+          )
+          .all(date);
+      }
 
       for (const row of rows) {
         let building = (row.building_name || 'Unknown').trim();
@@ -274,9 +304,8 @@ function createApp() {
           link: row.detail_link || undefined,
         };
 
-        const isDuplicate = roomEntry.courses.some(
-          (c) => c.time === newCourse.time && c.name === newCourse.name
-        );
+        const lastCourse = roomEntry.courses[roomEntry.courses.length - 1];
+        const isDuplicate = lastCourse && lastCourse.time === newCourse.time && lastCourse.name === newCourse.name;
 
         if (!isDuplicate) {
           roomEntry.courses.push(newCourse);
