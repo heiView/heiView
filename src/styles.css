@@ -412,12 +412,29 @@ textarea {
   font-size: 0.92rem;
 }
 
+.hei-board-frame-header {
+  position: sticky;
+  top: 76px;
+  z-index: 20;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-gutter: stable;
+}
+.hei-board-frame-header::-webkit-scrollbar {
+  display: none;
+}
+
 .hei-board-frame {
   position: relative;
   min-height: 380px;
-  max-height: calc(100vh - 240px); /* Constrain height to enable inner scrolling */
-  overflow: auto; /* Allow scrolling in both directions */
-  overscroll-behavior-y: auto; /* Changed from contain to let mobile users scroll the whole page at boundaries */
+  max-height: calc(100vh - 240px);
+  overflow: auto;
+  scrollbar-gutter: stable;
 }
 
 .hei-timetable-host {
@@ -462,8 +479,6 @@ textarea {
 .hei-timetable-head {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
   height: 42px;
   border-bottom: 1px solid var(--hei-border);
   background: var(--hei-surface-strong); /* Less transparent to prevent text clashing */
@@ -625,6 +640,15 @@ textarea {
 }
 
 @media (max-width: 992px) {
+  .hei-board-frame-header {
+    top: 136px;
+  }
+  
+  .hei-board-frame {
+    max-height: none !important;
+    overflow-y: visible !important;
+    overflow-x: auto !important;
+  }
   .hei-content {
     padding-top: 136px;
   }
@@ -642,6 +666,10 @@ textarea {
 
   .hei-content {
     padding-top: 148px; /* Give room in case they wrap */
+  }
+
+  .hei-board-frame-header {
+    top: 148px;
   }
 
   .hei-topbar-inner {
