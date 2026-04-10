@@ -37,8 +37,8 @@ function splitBuildingAndFloor(value) {
     if (/\b(floor|geschoss|eg|og|untergeschoss|keller|mezzanine|level|ground|lower level|upper level|attic|dach)\b/.test(normalized)) return true;
     if (/\b\d+\s*(st|nd|rd|th)\s*floor\b/.test(normalized)) return true;
     if (/^u\d+$/.test(normalized)) return true;
-    if (/ebene/i.test(normalized)) return true; // e.g. "Ebene 99"
-    if (/e00/i.test(normalized)) return true;   // e.g. "E00"
+    if (/ebene/i.test(normalized)) return true;
+    if (/e00/i.test(normalized)) return true;
     return false;
   };
 
@@ -50,6 +50,20 @@ function splitBuildingAndFloor(value) {
   return { buildingName: buildingName || null, floorLabel: normalizeFloorLabel(floorLabel) };
 }
 
+
+// --- New Parser for Online Courses ---
+function parseOnline(rawRoom) {
+  const lower = (rawRoom || '').trim().toLowerCase();
+  // Match common online keywords
+  if (/\b(online|virtuell|virtual|zoom|heiconf|webex|teams)\b/.test(lower)) {
+    return {
+      buildingName: 'Online',
+      displayName: 'Online',
+      room: rawRoom.trim() || 'Virtual Room'
+    };
+  }
+  return null;
+}
 
 function parseVossRoom(rawRoom, building, note) {
   if (building === 'Voßstraße 2' || /vo(?:ss|ß)stra(?:ss|ß)e\s*2/i.test(building || '') || /vo(?:ss|ß)stra(?:ss|ß)e\s*2/i.test(note || '') || /vo(?:ss|ß)stra(?:ss|ß)e\s*2/i.test(rawRoom || '')) {
@@ -145,33 +159,97 @@ function parsePoliklinik(rawRoom) {
 
 function main() {
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
+  
+  // --- SELF-HEALING: Clean up existing duplicate IDs in the JSON file ---
+  const globalUniqueIds = new Set();
+
+  function getStrictlyUniqueId(baseId) {
+    if (!globalUniqueIds.has(baseId)) {
+      globalUniqueIds.add(baseId);
+      return baseId;
+    }
+    let counter = 1;
+    let newId = `${baseId}-${counter}`;
+    while (globalUniqueIds.has(newId)) {
+      counter++;
+      newId = `${baseId}-${counter}`;
+    }
+    globalUniqueIds.add(newId);
+    return newId;
+  }
+
+  // Pass 1: Force all existing items in the JSON to have unique IDs
+  for (const b of catalog.buildings) {
+    b.id = getStrictlyUniqueId(b.id);
+    if (b.rooms) {
+      for (const r of b.rooms) {
+        r.id = getStrictlyUniqueId(r.id);
+      }
+    }
+  }
+  // --- END SELF-HEALING ---
+
   const buildingsMap = new Map();
-  for (const b of catalog.buildings) buildingsMap.set(b.street, b);
+  for (const b of catalog.buildings) {
+    buildingsMap.set(b.street, b);
+  }
 
   const files = fs.readdirSync(COURSE_DIR).filter(f => f.endsWith('.json'));
   for (const file of files) {
     const payload = JSON.parse(fs.readFileSync(path.join(COURSE_DIR, file), 'utf8'));
     const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
-
+    
     for (const week of weeks) {
       if (week.building) continue;
       const rawRoom = week.room || week.location || '';
-
+      
       // Skip empty location data
       if (!rawRoom.trim()) continue;
 
+      const online = parseOnline(rawRoom);
       const inf = parseInfRoom(rawRoom);
       const voss = parseVossRoom(rawRoom, week.building, week.note);
       const akad = parseAkademiestrasse(rawRoom);
       const schlierbacher = parseSchlierbacher(rawRoom);
       const zsl = parseZSL(rawRoom);
       const poliklinik = parsePoliklinik(rawRoom);
-
-      if (inf) {
-        let bld = buildingsMap.get(inf.buildingName);
+      
+      if (online) {
+        let bld = buildingsMap.get(online.buildingName);
         if (!bld) {
           bld = {
-            id: `bld-${inf.displayName.toLowerCase().replace(/\s+/g, '-')}`,
+            id: getStrictlyUniqueId('bld-online'),
+            street: online.buildingName,
+            displayName: online.displayName,
+            campusId: "online", // Correct campus routing
+            floors: [],
+            rooms: []
+          };
+          catalog.buildings.push(bld);
+          buildingsMap.set(online.buildingName, bld);
+        }else {
+          bld.campusId = "online";
+		}
+		
+        let targetRoomName = online.room;
+        let roomObj = bld.rooms.find(r => r.name === targetRoomName);
+        if (!roomObj) {
+          const baseRoomId = `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
+          roomObj = {
+            id: getStrictlyUniqueId(baseRoomId),
+            name: targetRoomName,
+            floors: [],
+            features: {},
+            notes: "Online/Virtual Course"
+          };
+          bld.rooms.push(roomObj);
+        }
+      } else if (inf) {
+        let bld = buildingsMap.get(inf.buildingName);
+        if (!bld) {
+          const baseId = `bld-${inf.displayName.toLowerCase().replace(/\s+/g, '-')}`;
+          bld = {
+            id: getStrictlyUniqueId(baseId),
             street: inf.buildingName,
             displayName: inf.displayName,
             campusId: "im-neuenheimer-feld",
@@ -185,8 +263,9 @@ function main() {
         let targetRoomName = inf.room || "Main";
         let roomObj = bld.rooms.find(r => r.name === targetRoomName);
         if (!roomObj) {
+          const baseRoomId = `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
           roomObj = {
-            id: `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+            id: getStrictlyUniqueId(baseRoomId),
             name: targetRoomName,
             floors: [],
             features: {},
@@ -205,8 +284,9 @@ function main() {
       } else if (akad) {
         let bld = buildingsMap.get(akad.buildingName);
         if (!bld) {
+          const baseId = `bld-${akad.displayName.toLowerCase().replace(/\s+/g, '-').replace(/ß/g, 'ss')}`;
           bld = {
-            id: `bld-${akad.displayName.toLowerCase().replace(/\s+/g, '-').replace(/ß/g, 'ss')}`,
+            id: getStrictlyUniqueId(baseId),
             street: akad.buildingName,
             displayName: akad.displayName,
             campusId: "altstadt",
@@ -220,8 +300,9 @@ function main() {
         let targetRoomName = akad.room || "Unbekannter Raum";
         let roomObj = bld.rooms.find(r => r.name === targetRoomName);
         if (!roomObj) {
+          const baseRoomId = `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
           roomObj = {
-            id: `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+            id: getStrictlyUniqueId(baseRoomId),
             name: targetRoomName,
             floors: [],
             features: {},
@@ -234,7 +315,7 @@ function main() {
         let bld = buildingsMap.get(zsl.buildingName);
         if (!bld) {
           bld = {
-            id: 'bld-plock-79-81',
+            id: getStrictlyUniqueId('bld-plock-79-81'),
             street: zsl.buildingName,
             displayName: zsl.displayName,
             campusId: "altstadt",
@@ -248,8 +329,9 @@ function main() {
         let targetRoomName = zsl.room || "Unbekannter Raum";
         let roomObj = bld.rooms.find(r => r.name === targetRoomName);
         if (!roomObj) {
+          const baseRoomId = `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
           roomObj = {
-            id: `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+            id: getStrictlyUniqueId(baseRoomId),
             name: targetRoomName,
             floors: [],
             features: {},
@@ -267,7 +349,7 @@ function main() {
         let bld = buildingsMap.get(schlierbacher.buildingName);
         if (!bld) {
           bld = {
-            id: 'bld-schlierbacher-landstra-e-200a',
+            id: getStrictlyUniqueId('bld-schlierbacher-landstra-e-200a'),
             street: schlierbacher.buildingName,
             displayName: schlierbacher.displayName,
             campusId: "other",
@@ -281,8 +363,9 @@ function main() {
         let targetRoomName = schlierbacher.room || "Unbekannter Raum";
         let roomObj = bld.rooms.find(r => r.name === targetRoomName);
         if (!roomObj) {
+          const baseRoomId = `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
           roomObj = {
-            id: `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+            id: getStrictlyUniqueId(baseRoomId),
             name: targetRoomName,
             floors: [],
             features: {},
@@ -295,7 +378,7 @@ function main() {
         let bld = buildingsMap.get(poliklinik.buildingName);
         if (!bld) {
           bld = {
-            id: 'bld-im-neuenheimer-feld-400',
+            id: getStrictlyUniqueId('bld-im-neuenheimer-feld-400'),
             street: poliklinik.buildingName,
             displayName: poliklinik.displayName,
             campusId: "im-neuenheimer-feld",
@@ -309,8 +392,9 @@ function main() {
         let targetRoomName = poliklinik.room || "Unbekannter Raum";
         let roomObj = bld.rooms.find(r => r.name === targetRoomName);
         if (!roomObj) {
+          const baseRoomId = `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
           roomObj = {
-            id: `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+            id: getStrictlyUniqueId(baseRoomId),
             name: targetRoomName,
             floors: [],
             features: {},
@@ -328,8 +412,9 @@ function main() {
       } else if (voss) {
         let bld = buildingsMap.get(voss.buildingName);
         if (!bld) {
+          const baseId = `bld-${voss.displayName.toLowerCase().replace(/\s+/g, '-')}`;
           bld = {
-            id: `bld-${voss.displayName.toLowerCase().replace(/\s+/g, '-')}`,
+            id: getStrictlyUniqueId(baseId),
             street: voss.buildingName,
             displayName: voss.displayName,
             campusId: "bergheim",
@@ -343,8 +428,9 @@ function main() {
         let targetRoomName = voss.room || "Unbekannter Raum";
         let roomObj = bld.rooms.find(r => r.name === targetRoomName);
         if (!roomObj) {
+          const baseRoomId = `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
           roomObj = {
-            id: `${bld.id}::rm-${targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+            id: getStrictlyUniqueId(baseRoomId),
             name: targetRoomName,
             floors: [],
             features: {},
@@ -361,10 +447,10 @@ function main() {
         let bld = buildingsMap.get(fallbackBuildingName);
         if (!bld) {
           const safeIdPart = fallbackBuildingName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-          const uniqueSuffix = Math.random().toString(36).substring(2, 8);
+          const fallbackBaseId = safeIdPart ? `bld-other-${safeIdPart}` : `bld-other-${Math.random().toString(36).substring(2, 8)}`;
           
           bld = {
-            id: `bld-other-${safeIdPart || uniqueSuffix}`,
+            id: getStrictlyUniqueId(fallbackBaseId),
             street: fallbackBuildingName,
             displayName: fallbackBuildingName,
             campusId: "other",
@@ -379,9 +465,11 @@ function main() {
         let roomObj = bld.rooms.find(r => r.name === targetRoomName);
         
         if (!roomObj) {
-          const safeRoomId = targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          const safeRoomIdPart = targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          const baseRoomId = `${bld.id}::rm-${safeRoomIdPart || 'unbekannt'}`;
+          
           roomObj = {
-            id: `${bld.id}::rm-${safeRoomId || 'unbekannt'}`,
+            id: getStrictlyUniqueId(baseRoomId),
             name: targetRoomName,
             floors: [],
             features: {},
@@ -401,7 +489,7 @@ function main() {
   }
   
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2));
-  console.log("Updated building-catalog.json with mapped and fallback rooms.");
+  console.log("Database catalog patched. Online rooms mapped to 'online' campus. Duplicate IDs repaired.");
 }
 
 main();
