@@ -1,0 +1,30 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: none;
+  background: transparent !important;
+  color: var(--topbar-text, #fff);
+  transition: color .12s ease, background .12s ease, border-color .12s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--card-bg-start, #4a8cff);
+}
+
+.button:focus {
+  outline: 2px solid rgba(0,0,0,0.12);
+  outline-offset: 2px;
+}
+
+/* ensure the SVG icon uses currentColor and displays correctly */
+.button svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}

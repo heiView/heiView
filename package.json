@@ -1,0 +1,30 @@
+{
+  "name": "heiview",
+  "version": "0.9.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "node server/index.cjs",
+    "db:import:buildings": "node server/scripts/import-building-catalog.cjs",
+    "db:sync": "node server/scripts/patch-catalog.cjs && npm run db:build && npm run db:import:buildings",
+    "build": "vite build",
+    "preview": "vite preview",
+    "db:build": "node server/scripts/build-sqlite-db.cjs"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.1.1",
+    "antd": "^6.3.5",
+    "better-sqlite3": "^12.4.1",
+    "clsx": "^2.1.1",
+    "express": "^5.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.11"
+  }
+}

@@ -1,0 +1,125 @@
+.dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.button {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--topbar-text, #fff);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button:hover {
+  background: rgba(74, 140, 255, 0.18);
+}
+
+.button:focus-visible {
+  outline: 2px solid rgba(74, 140, 255, 0.8);
+  outline-offset: 2px;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  transition: transform 0.14s ease;
+}
+
+.button[aria-expanded="true"] .caret {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: rgba(12, 18, 28, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+  padding: 6px 0;
+  min-width: 140px;
+  z-index: 20;
+  list-style: none;
+  margin: 0;
+}
+
+.menuItem {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #f3f6ff;
+  padding: 8px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.menuItem:hover:not(:disabled) {
+  background: rgba(74, 140, 255, 0.35);
+}
+
+.menuItem:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.menuItemActive {
+  background: rgba(74, 140, 255, 0.25);
+}
+
+.menuCode {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.menuLabel {
+  font-size: 0.85rem;
+  color: rgba(243, 246, 255, 0.9);
+}
+
+@media (prefers-color-scheme: light) {
+  .button {
+    border-color: rgba(0, 0, 0, 0.14);
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--topbar-text, #333);
+  }
+
+  .menu {
+    background: rgba(255, 255, 255, 0.96);
+    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 30px rgba(15, 26, 43, 0.18);
+  }
+
+  .menuItem {
+    color: #0f1a2b;
+  }
+
+  .menuItem:hover:not(:disabled) {
+    background: rgba(74, 140, 255, 0.2);
+    color: #0f1a2b;
+  }
+
+  .menuItemActive {
+    background: rgba(74, 140, 255, 0.16);
+  }
+
+  .menuLabel {
+    color: rgba(15, 26, 43, 0.72);
+  }
+}
