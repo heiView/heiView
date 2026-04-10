@@ -1,0 +1,61 @@
+{
+  "id": "0000000139",
+  "title": "Interdis. HS: Bibel,ökumenische Theologie und das Recht im Kontext der gegenwärtigen Gefährdungen der Völkerrechtsordnung",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Duchrow, Ulrich",
+    "Theißen, Gerd",
+    "<N.N.>(Prof. Dr. jur. Norman Paech), 010000.100"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-05-10",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": "Vorbesprechung"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "20:00",
+      "location": "KiGa II (1200.EG.002C)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
+      "room": "KiGa II (1200.EG.002C)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "20:00",
+      "location": "KiGa II (1200.EG.002C)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
+      "room": "KiGa II (1200.EG.002C)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "11:30",
+      "end_time": "20:00",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410796",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

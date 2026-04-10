@@ -1,0 +1,49 @@
+{
+  "id": "1207393668",
+  "title": "Forschungskolloquium Humangeographie (Transient Spaces & Societies)",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bork-Hüffer, Tabea"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-06",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "15:30",
+      "end_time": "19:00",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": "Forschungskolloquiumssitzung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Hörsaal (6348.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19189",
+      "room": "Hörsaal (6348.EG.015)",
+      "building": "Hörsaal, Im Neuenheimer Feld 348, Ground floor",
+      "note": "Gastvortrag in Präsenz"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "17:30",
+      "end_time": "18:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Gastvortrag ONLINE"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418845",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

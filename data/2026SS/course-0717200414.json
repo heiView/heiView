@@ -1,0 +1,29 @@
+{
+  "id": "0717200414",
+  "title": "Sammlungsübung",
+  "type": "PC",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Faltings, Dina"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Ägyptische Sammlung, Marstallstraße 6, Raum 413"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414077",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

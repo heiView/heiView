@@ -1,0 +1,29 @@
+{
+  "id": "0906000017",
+  "title": "Theorien der Fremdsprachendidaktik",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Nezhad Masum, Madjid"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Seminarraum (3070.01.122)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15621",
+      "room": "Seminarraum (3070.01.122)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414675",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

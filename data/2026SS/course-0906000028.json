@@ -1,0 +1,29 @@
+{
+  "id": "0906000028",
+  "title": "Einführung in die Sprachtypologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klages, Hana"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Seminarraum (3070.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19223",
+      "room": "Seminarraum (3070.EG.013)",
+      "building": "Plöck 55, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414740",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

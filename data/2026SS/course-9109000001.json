@@ -1,0 +1,47 @@
+{
+  "id": "9109000001",
+  "title": "BIII - Untersuchungskurs und Propädeutik 1-3",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [],
+  "start_date": "2026-03-02",
+  "end_date": "2026-06-08",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:45",
+      "end_time": "12:15",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399210",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

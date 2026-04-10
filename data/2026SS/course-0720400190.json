@@ -1,0 +1,29 @@
+{
+  "id": "0720400190",
+  "title": "Die Gipsabgusssammlung des Instituts für Europäische Kunstgeschichte. Seminar zur Erschließung des Bestandes",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Müller, Rebecca"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": "und/oder Sammlung (1. OG, Raum 111/113)"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414237",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

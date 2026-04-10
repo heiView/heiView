@@ -1,0 +1,29 @@
+{
+  "id": "9207850101",
+  "title": "WFT07-IO - Onkologische Bildgebung_Bildgebung beim Malignen Melanom_16.06.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Wennmann, Markus"
+  ],
+  "start_date": "2026-06-16",
+  "end_date": "2026-06-16",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417307",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

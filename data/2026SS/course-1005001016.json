@@ -1,0 +1,39 @@
+{
+  "id": "1005001016",
+  "title": "Transalp mit dem Rennrad",
+  "type": "FT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Buchner, Markus"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-08-08",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "Seminarraum 1 720 (6720.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15930",
+      "room": "Seminarraum 1 720 (6720.EG.049)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": "Vorbesprechung"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414613",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

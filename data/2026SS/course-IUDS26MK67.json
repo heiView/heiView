@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26MK67",
+  "title": "Konsekutivdolmetschen II (EN>JP)",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "Japanese",
+  "lecturers": [
+    "Hatagami, Masaaki"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (3051.01.111)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19866",
+      "room": "Übungsraum (3051.01.111)",
+      "building": "Plöck 57a, 1st floor",
+      "note": "Online, Raum SR 111 steht zur Verfügung"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417602",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

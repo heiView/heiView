@@ -1,0 +1,39 @@
+{
+  "id": "1004140017",
+  "title": "(BA, M4+ÜK) Quantitative Datenanalyse in der empirischen Bildungsforschung",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Buchholz, Janine), 100400.100"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Ein bis zwei der nachfolgenden Termine werden in Präsenz in Raum 107 stattfinden. Diese Termine werden"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Übungsraum 1. OG 107 (3041.01.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
+      "room": "Übungsraum 1. OG 107 (3041.01.007)",
+      "building": "Akademiestraße 3, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411205",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

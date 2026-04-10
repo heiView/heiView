@@ -1,0 +1,30 @@
+{
+  "id": "020000103b",
+  "title": "Seminar: Insolvenzanfechtung und Gläubigeranfechtung",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Piekenbrock, Andreas",
+    "Schoppmeyer, Heinrich"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-04-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Ort/Zeit noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort/Zeit noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415281",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

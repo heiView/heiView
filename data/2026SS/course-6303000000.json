@@ -1,0 +1,269 @@
+{
+  "id": "6303000000",
+  "title": "(M.Ed., M2) Theorie trifft Praxis: Personale Kompetenzen für angehende Lehrkräfte (BeReady-P)",
+  "type": "SE",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Steinleitner, Wiebke"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:30",
+      "end_time": "17:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "17:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 2"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 3"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:15",
+      "end_time": "18:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "17:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 3"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 2"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Lehren und Lernen, Seminarraum 314, 3. OG"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "17:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 2"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Lehren und Lernen, Seminarraum 314, 3. OG"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:15",
+      "end_time": "11:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "11:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "12:00",
+      "end_time": "14:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "17:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 2"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "17:00",
+      "end_time": "18:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416113",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,70 @@
+{
+  "id": "7286611111",
+  "title": "Field trip: Hamburg as point of contact between continents: colonial legacies, trade hub, and political relations",
+  "type": "SE",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Ecker, Alejandro",
+    "Lehmann, Rosa"
+  ],
+  "start_date": "2026-05-19",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "*Preparation session of the field trip*. Location of the session: HCIAS Meeting Room (Campus Bergheim:"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "*Working session for field trip (tutorial)*. Location of the session: HCIAS Meeting Room (Campus Bergheim:"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "*field trip* July 8 to 10 (outside Heidelberg)"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "*field trip* July 8 to 10 (outside Heidelberg)"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "*field trip* July 8 to 10 (outside Heidelberg)"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407894",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,38 @@
+{
+  "id": "8503WSM110",
+  "title": "HP-F10 Epigenomics and Cancer (Lab and Seminar) (Practical Course with Student Seminars; Major Cancer Biology @ DKFZ)",
+  "type": "P",
+  "ects_credits": "10",
+  "course_languages": "English",
+  "lecturers": [
+    "Becker, Jonas",
+    "Feldmann, Angelika",
+    "Gerhäuser, Clarissa",
+    "Hartmann, Mark",
+    "Lipka, Daniel",
+    "Llamazares Prada, Maria",
+    "Plass, Christoph",
+    "Scherer, Michael",
+    "Schönung, Maximilian",
+    "Weichenhan, Dieter"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-04-30",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415488",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

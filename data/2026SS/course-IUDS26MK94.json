@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26MK94",
+  "title": "Simultan- und Konsekutivdolmetschen III (EN>ES)",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "Spanish",
+  "lecturers": [
+    "Ferreiro Castineira, Rosa"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Konferenzsaal (KS III) (3051.02.207)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19992",
+      "room": "Konferenzsaal (KS III) (3051.02.207)",
+      "building": "Plöck 57a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416910",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

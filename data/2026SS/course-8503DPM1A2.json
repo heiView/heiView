@@ -1,0 +1,40 @@
+{
+  "id": "8503DPM1A2",
+  "title": "Journal Club \"Infection, Inflammation and Cancer\"",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Autenrieth, Stella",
+    "Binder, Marco",
+    "Bund, Timo",
+    "Delecluse, Susanne",
+    "Harbottle, Richard",
+    "Heikenwälder, Mathias",
+    "Nettelbeck, Dirk",
+    "Nüesch, Jürg P.F.",
+    "Puschhof, Jens",
+    "Schüßler, Moritz",
+    "Seitz, Stefan",
+    "Waterboer, Tim"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "mode decided by tutor: in person (ATV/IIC building INF242, seminar room on the ground floor) or via Zoom"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418032",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

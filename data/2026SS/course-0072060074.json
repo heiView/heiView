@@ -1,0 +1,29 @@
+{
+  "id": "0072060074",
+  "title": "Klaviermusik in Wien zur Zeit Beethovens und Schuberts",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Flamm, Christoph"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Hörsaal des Musikwissenschaftlichen Seminars"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412504",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,39 @@
+{
+  "id": "1002000201",
+  "title": "KLF Gesundheitspsychologie (BSc)",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Zintel, Stephanie"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "UR C (3010.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23100",
+      "room": "UR C (3010.EG.020)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Seminarraum (3020.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
+      "room": "Seminarraum (3020.EG.038)",
+      "building": "Hauptstraße 47/51, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/406582",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

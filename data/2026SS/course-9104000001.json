@@ -1,0 +1,72 @@
+{
+  "id": "9104000001",
+  "title": "BIV - Blockpraktikum Frauenheilkunde und Geburtshilfe",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Heublein, Sabine",
+    "Marshall, Anne",
+    "Münch, Marie Luise",
+    "Wallwiener, Markus"
+  ],
+  "start_date": "2026-03-02",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "07:45",
+      "end_time": "09:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Einteilung auf Moodle beachten"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "07:45",
+      "end_time": "09:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bitte Gruppeneinteilung in Moodle beachten"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "07:45",
+      "end_time": "09:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bitte Einteilung in Moodle beachten"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "07:45",
+      "end_time": "09:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bitte Gruppeneinteilung in Moodle beachten"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "07:45",
+      "end_time": "09:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bitte Gruppeneinteilung in Moodle beachten"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392317",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

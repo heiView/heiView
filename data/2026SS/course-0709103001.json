@@ -1,0 +1,29 @@
+{
+  "id": "0709103001",
+  "title": "Proseminar Griechisch: Antike Symposienliteratur",
+  "type": "SE",
+  "ects_credits": "5",
+  "course_languages": "German",
+  "lecturers": [
+    "Spielhofer, Lukas"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (2100ZEG351)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23343",
+      "room": "Übungsraum (2100ZEG351)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Mezzanine floor on ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408528",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

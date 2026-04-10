@@ -1,0 +1,169 @@
+{
+  "id": "9106000006",
+  "title": "BIII - Seminar Psychiatrie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lauter, Jan"
+  ],
+  "start_date": "2026-03-02",
+  "end_date": "2026-05-05",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Raum (4190.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28731",
+      "room": "Raum (4190.EG.009)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 118 (4250.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30802",
+      "room": "Seminarraum 118 (4250.EG.118)",
+      "building": "Voßstraße 9, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "Seminarraum 118 (4250.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30802",
+      "room": "Seminarraum 118 (4250.EG.118)",
+      "building": "Voßstraße 9, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Institut für Psychosoziale Prävention Bergheimer Str. 54 3. OG Raum 301"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 118 (4250.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30802",
+      "room": "Seminarraum 118 (4250.EG.118)",
+      "building": "Voßstraße 9, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 118 (4250.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30802",
+      "room": "Seminarraum 118 (4250.EG.118)",
+      "building": "Voßstraße 9, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 009 (4270.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30803",
+      "room": "Seminarraum 009 (4270.EG.009)",
+      "building": "Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 113 (4250.02.113)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30801",
+      "room": "Seminarraum 113 (4250.02.113)",
+      "building": "Voßstraße 9, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379490",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

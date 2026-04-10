@@ -1,0 +1,95 @@
+{
+  "id": "1300100400",
+  "title": "Studierendentage",
+  "type": "SE",
+  "ects_credits": "1",
+  "course_languages": "English",
+  "lecturers": [
+    "Dittmeier, Sebastian",
+    "Fazzino, Giulia",
+    "Kar, Tamasi Rameshchandra",
+    "Marks, Jörg",
+    "Reygers, Klaus",
+    "Schiller, Manuel Tobias",
+    "Schmidt, Ulrich"
+  ],
+  "start_date": "2026-03-23",
+  "end_date": "2026-03-27",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Die Veranstaltungen der Studierendentage finden parallel in verschiedenen Räumen statt. Bitte informieren"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "PC-Pool (6226.01.305)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12093",
+      "room": "PC-Pool (6226.01.305)",
+      "building": "Im Neuenheimer Feld 226, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Glasbox INF 226 2.108"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "PC-Pool (6226.01.305)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12093",
+      "room": "PC-Pool (6226.01.305)",
+      "building": "Im Neuenheimer Feld 226, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Glasbox INF 226 2.108"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410480",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

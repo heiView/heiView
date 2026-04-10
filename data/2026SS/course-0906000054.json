@@ -1,0 +1,29 @@
+{
+  "id": "0906000054",
+  "title": "Kanonmentorat: Schlüsseltexte der deutschen Literatur (für Masterstudierende)",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Haase, Michael"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum (3070.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19223",
+      "room": "Seminarraum (3070.EG.013)",
+      "building": "Plöck 55, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414848",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

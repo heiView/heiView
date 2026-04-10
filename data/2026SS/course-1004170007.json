@@ -1,0 +1,39 @@
+{
+  "id": "1004170007",
+  "title": "(BA, M7) Gruppenarbeit zur Bachelorarbeit",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Friesel, Leo"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum 1. OG 107 (3041.01.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
+      "room": "Übungsraum 1. OG 107 (3041.01.007)",
+      "building": "Akademiestraße 3, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum EG 007 (3041.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14594",
+      "room": "Übungsraum EG 007 (3041.EG.007)",
+      "building": "Akademiestraße 3, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405378",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

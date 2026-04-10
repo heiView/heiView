@@ -1,0 +1,30 @@
+{
+  "id": "9207850108",
+  "title": "WFT07-IO - Molekulares Tumorboard_26.06.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Heilig, Christoph",
+    "Teleanu, Maria Veronica"
+  ],
+  "start_date": "2026-06-26",
+  "end_date": "2026-06-26",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "Seminarraum Direktoriumsraum (6460.03.324)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30922",
+      "room": "Seminarraum Direktoriumsraum (6460.03.324)",
+      "building": "Im Neuenheimer Feld 460, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417566",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

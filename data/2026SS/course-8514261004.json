@@ -1,0 +1,31 @@
+{
+  "id": "8514261004",
+  "title": "Forschungskolloquium ‚Ambivalent Enmity‘",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Becke, Johannes",
+    "Penter, Tanja",
+    "Taubner, Svenja"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Raum 440002212 (CATS)",
+      "location_link": null,
+      "room": "Raum 440002212 (CATS)",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414855",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

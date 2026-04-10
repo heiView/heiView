@@ -1,0 +1,59 @@
+{
+  "id": "1005001009",
+  "title": "Fußball SPF",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Damm, Thorsten"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Seminarraum 1 720 (6720.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15930",
+      "room": "Seminarraum 1 720 (6720.EG.049)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 700 / Stadion B",
+      "location_link": null,
+      "room": "INF 700 / Stadion B",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Seminarraum 700 (6700.EG.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
+      "room": "Seminarraum 700 (6700.EG.106)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Exkursion Zuzenhausen/TSG Hoffenheim"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414575",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

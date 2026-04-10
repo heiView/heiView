@@ -1,0 +1,29 @@
+{
+  "id": "1005001002",
+  "title": "SPF Spiele spielen lassen",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Knobloch, Ina"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "10:00",
+      "end_time": "12:15",
+      "location": "Dreifachhalle 1 (6720.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30769",
+      "room": "Dreifachhalle 1 (6720.EG.001)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414600",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

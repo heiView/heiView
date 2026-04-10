@@ -1,0 +1,31 @@
+{
+  "id": "1100190008",
+  "title": "Forschungsstelle Geometrie und Dynamik",
+  "type": "AG",
+  "ects_credits": "0",
+  "course_languages": "English",
+  "lecturers": [
+    "Albers, Peter",
+    "Schilling, Anna-Sofie",
+    "Schwer, Petra"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "SR C (6205.EG.204)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12449",
+      "room": "SR C (6205.EG.204)",
+      "building": "Im Neuenheimer Feld 205, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418259",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,80 @@
+{
+  "id": "0731000005",
+  "title": "Modernes Japanisch II - Hauptkurs",
+  "type": "LC",
+  "ects_credits": null,
+  "course_languages": "Japanese (primary)",
+  "lecturers": [
+    "Nakahiro-van den Berg, Mie",
+    "Takahashi, Yukie"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-30",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11569",
+      "room": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 120.01.10 (4120.01.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11087",
+      "room": "Übungsraum 120.01.10 (4120.01.010)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407483",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

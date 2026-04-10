@@ -1,0 +1,29 @@
+{
+  "id": "7110SB1P02",
+  "title": "Hauptpraktikum Nukleinsäuren E1",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Brügger, Britta"
+  ],
+  "start_date": "2026-07-06",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (6328.EG.027)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14751",
+      "room": "Übungsraum (6328.EG.027)",
+      "building": "Im Neuenheimer Feld 328, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/375784",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

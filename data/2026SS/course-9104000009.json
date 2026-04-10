@@ -1,0 +1,50 @@
+{
+  "id": "9104000009",
+  "title": "BIV - SkillsLab Frauenheilkunde und Geburtshilfe",
+  "type": "SL",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Heublein, Sabine",
+    "Wallwiener, Markus"
+  ],
+  "start_date": "2026-03-24",
+  "end_date": "2026-07-14",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:45",
+      "end_time": "12:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:45",
+      "end_time": "13:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:15",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392609",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,31 @@
+{
+  "id": "9207850049",
+  "title": "WFT07-IO - Interdisziplinärer Workshop Kopf-Hals-Onkologie: Hands-on-PACS zur schrittweisen Diagnostik und Falldiskussion",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Fuchs, Jennifer",
+    "Krauß, Jürgen",
+    "Uhl, Matthias"
+  ],
+  "start_date": "2026-05-09",
+  "end_date": "2026-05-09",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418369",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

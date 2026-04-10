@@ -1,0 +1,42 @@
+{
+  "id": "7160SB0005",
+  "title": "Einführung in die Systembiologie",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klingmüller, Ursula",
+    "Sahle, Sven",
+    "Schilling, Marcel",
+    "Starkuviene-Erfle, Vytaute"
+  ],
+  "start_date": "2026-06-15",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:15",
+      "end_time": "10:00",
+      "location": "Übungsraum (6267.EG.041)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9185",
+      "room": "Übungsraum (6267.EG.041)",
+      "building": "Übungsraum, Im Neuenheimer Feld 267, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:15",
+      "end_time": "10:00",
+      "location": "Übungsraum (6267.EG.043)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9187",
+      "room": "Übungsraum (6267.EG.043)",
+      "building": "Im Neuenheimer Feld 267, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414711",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

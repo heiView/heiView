@@ -1,0 +1,29 @@
+{
+  "id": "0901S26028",
+  "title": "Forschungskolloquium Albrecht",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Albrecht, Andrea"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "18:15",
+      "end_time": "20:00",
+      "location": "Übungsraum (1010.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22576",
+      "room": "Übungsraum (1010.EG.038)",
+      "building": "Hauptstraße 207-209, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409876",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

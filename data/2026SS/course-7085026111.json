@@ -1,0 +1,50 @@
+{
+  "id": "7085026111",
+  "title": "Arabisch II / Moderne arabische Schriftsprache II",
+  "type": "LC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Khasawneh, Abdalla Sami Abdallah",
+    "Labidi, Emna"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR 353 (8020.03.353)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22293",
+      "room": "ÜR 353 (8020.03.353)",
+      "building": "Albert-Ueberle-Straße 3-5, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Der Unterricht findet im SR 240 der Semitistik statt (Schulgasse 2)."
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR 353 (8020.03.353)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22293",
+      "room": "ÜR 353 (8020.03.353)",
+      "building": "Albert-Ueberle-Straße 3-5, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414270",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

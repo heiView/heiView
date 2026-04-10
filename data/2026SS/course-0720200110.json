@@ -1,0 +1,29 @@
+{
+  "id": "0720200110",
+  "title": "Pixel und Pinsel - Gamedesign für Historiker:innen",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schultes, Kilian"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "18:15",
+      "end_time": "19:45",
+      "location": "Übungsraum IV (2170.EG.055X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20298",
+      "room": "Übungsraum IV (2170.EG.055X)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414202",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

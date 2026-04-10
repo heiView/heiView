@@ -1,0 +1,29 @@
+{
+  "id": "0902000511",
+  "title": "Structure and Idiom",
+  "type": "PC",
+  "ects_credits": "4",
+  "course_languages": "English (primary)",
+  "lecturers": [
+    "Gaston, Bruce"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (2220.01.114)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22606",
+      "room": "Übungsraum (2220.01.114)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407857",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

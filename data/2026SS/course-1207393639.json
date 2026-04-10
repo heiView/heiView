@@ -1,0 +1,70 @@
+{
+  "id": "1207393639",
+  "title": "Geländepraktikum Physische Geographie: Bodenlandschaften",
+  "type": "PC",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Kunz, Julius",
+    "Pietsch, Dana"
+  ],
+  "start_date": "2026-06-01",
+  "end_date": "2026-06-05",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Geländepraktikum"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Geländepraktikum"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Geländepraktikum"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Geländepraktikum"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Geländepraktikum"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413543",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

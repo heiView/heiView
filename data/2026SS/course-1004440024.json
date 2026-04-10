@@ -1,0 +1,29 @@
+{
+  "id": "1004440024",
+  "title": "(M.Ed., M4) Capstone Schulpraxis",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Buhl, Monika"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum EG 007 (3041.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14594",
+      "room": "Übungsraum EG 007 (3041.EG.007)",
+      "building": "Akademiestraße 3, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405917",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

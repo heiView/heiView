@@ -1,0 +1,49 @@
+{
+  "id": "0902000053",
+  "title": "Atheism and Theism in the (Post)Modern Fantastic",
+  "type": "SE",
+  "ects_credits": "5",
+  "course_languages": "English",
+  "lecturers": [
+    "<N.N.>(Daniel Scott), 090200.100"
+  ],
+  "start_date": "2026-04-18",
+  "end_date": "2026-06-13",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "11:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (2220.01.113)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22605",
+      "room": "Übungsraum (2220.01.113)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (2220.01.113)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22605",
+      "room": "Übungsraum (2220.01.113)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "Übungsraum (2220.01.113)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22605",
+      "room": "Übungsraum (2220.01.113)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411279",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

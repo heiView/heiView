@@ -1,0 +1,139 @@
+{
+  "id": "9111000000",
+  "title": "BIII - Bedside Teaching Neurologie",
+  "type": "BT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Purrucker, Jan"
+  ],
+  "start_date": "2026-03-04",
+  "end_date": "2026-07-15",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Schlierbacher Landstr. 200A - Paraplegiologie",
+      "location_link": null,
+      "room": "Schlierbacher Landstr. 200A - Paraplegiologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "16:15",
+      "location": "Kliniken Schmieder Heidelberg",
+      "location_link": null,
+      "room": "Kliniken Schmieder Heidelberg",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:15",
+      "end_time": "16:15",
+      "location": "Kliniken Schmieder Heidelberg",
+      "location_link": null,
+      "room": "Kliniken Schmieder Heidelberg",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "location_link": null,
+      "room": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "location_link": null,
+      "room": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393568",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

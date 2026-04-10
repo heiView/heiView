@@ -1,0 +1,40 @@
+{
+  "id": "7120SM7000",
+  "title": "Translational Neuroimmunology: Transfer from bench to bedside in Multiple Sclerosis",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Fairless, Richard",
+    "Fairless, Sarah"
+  ],
+  "start_date": "2026-05-19",
+  "end_date": "2026-06-30",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "SR 4 (6231.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18342",
+      "room": "SR 4 (6231.EG.004)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": "Seminar introduction"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "SR 4 (6231.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18342",
+      "room": "SR 4 (6231.EG.004)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": "Seminar meetings"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415443",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

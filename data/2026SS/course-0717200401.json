@@ -1,0 +1,29 @@
+{
+  "id": "0717200401",
+  "title": "Ägypten der 18. Dynastie von Ahmose bis Amenophis III.: Verwaltung, Text- und Bildproduktion",
+  "type": "L",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Illin-Tomich, Alexander"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Heuscheuer I (2050.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9375",
+      "room": "Heuscheuer I (2050.01.102)",
+      "building": "Heuscheuer I, Große Mantelgasse 2, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408705",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

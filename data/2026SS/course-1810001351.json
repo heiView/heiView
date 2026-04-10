@@ -1,0 +1,29 @@
+{
+  "id": "1810001351",
+  "title": "Experimental Economics in Practice: Design, Organisation, and Digital Implementation",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "English",
+  "lecturers": [
+    "Olah, Tamas"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418751",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

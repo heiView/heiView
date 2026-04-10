@@ -1,0 +1,39 @@
+{
+  "id": "0709102005",
+  "title": "Hauptseminar Latein literaturwissenschaftlich: Literanatur - lesen, erleben und gestalten",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Jacquier, Josephine Alida"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (2040.04.406)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28093",
+      "room": "Übungsraum (2040.04.406)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (2040.04.405)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28092",
+      "room": "Übungsraum (2040.04.405)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": "Workshop"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408510",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

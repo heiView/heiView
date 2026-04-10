@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26BU99",
+  "title": "Vertiefung: Übersetzen gemeinsprachlicher Texte I (DE>EN)",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Vandermark, Neil"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "EDV-Übungsraum (3051.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19864",
+      "room": "EDV-Übungsraum (3051.01.108)",
+      "building": "Plöck 57a, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416893",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

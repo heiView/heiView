@@ -1,0 +1,49 @@
+{
+  "id": "9207850051",
+  "title": "WFT07-IO - W_Erfassung von Biomarkern: DNA",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Ball, Markus",
+    "Budczies, Jan",
+    "Fuchs, Tina",
+    "Kazdal, Daniel Nebil",
+    "Kirchner, Martina",
+    "Kluck, Klaus Henning",
+    "Menzel, Michael",
+    "Neumann, Olaf",
+    "Rössler, Stephanie",
+    "Volckmar, Anna-Lena",
+    "Wlochowitz, Darius"
+  ],
+  "start_date": "2026-06-13",
+  "end_date": "2026-06-14",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Seminarraum Allgemeine Pathologie (6224.01.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28784",
+      "room": "Seminarraum Allgemeine Pathologie (6224.01.004)",
+      "building": "Im Neuenheimer Feld 224, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Seminarraum Allgemeine Pathologie (6224.01.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28784",
+      "room": "Seminarraum Allgemeine Pathologie (6224.01.004)",
+      "building": "Im Neuenheimer Feld 224, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418407",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

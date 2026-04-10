@@ -1,0 +1,29 @@
+{
+  "id": "7286720000",
+  "title": "Trends in digital communication research",
+  "type": "SE",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Porten-Cheé, Pablo Jorge"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408581",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

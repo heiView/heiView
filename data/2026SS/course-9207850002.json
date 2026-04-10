@@ -1,0 +1,29 @@
+{
+  "id": "9207850002",
+  "title": "WFT07-IO - Cancer Survivorship I – Financial Hardship and Return to Work",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Doege, Daniela"
+  ],
+  "start_date": "2026-06-23",
+  "end_date": "2026-06-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Besprechungsraum (6581.EG.101A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31136",
+      "room": "Besprechungsraum (6581.EG.101A)",
+      "building": "Im Neuenheimer Feld 581, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417370",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

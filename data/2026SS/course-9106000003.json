@@ -1,0 +1,49 @@
+{
+  "id": "9106000003",
+  "title": "BIII - POL Psychosomatik",
+  "type": "PL",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lauter, Jan"
+  ],
+  "start_date": "2026-03-05",
+  "end_date": "2026-05-04",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 118 (4250.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30802",
+      "room": "Seminarraum 118 (4250.EG.118)",
+      "building": "Voßstraße 9, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379486",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

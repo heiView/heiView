@@ -1,0 +1,29 @@
+{
+  "id": "1207393648",
+  "title": "Proseminar Physische Geographie: Landschafts- und Flussgeschichte in Mitteleuropa",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Eitel, Bernhard"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (6348.01.132)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19340",
+      "room": "Übungsraum (6348.01.132)",
+      "building": "Im Neuenheimer Feld 348, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413577",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

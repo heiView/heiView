@@ -1,0 +1,29 @@
+{
+  "id": "0072060019",
+  "title": "Universitätschor",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Sekulla, Michael"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "19:45",
+      "end_time": "22:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Aula der Neuen Universität"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416849",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

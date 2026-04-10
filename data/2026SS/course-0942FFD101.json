@@ -1,0 +1,29 @@
+{
+  "id": "0942FFD101",
+  "title": "Fachdidaktik Französisch Modul 1 (Grundlagen der Fachdidaktik)",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Ufer, Isabel"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Die Veranstaltung findet im SAF, Quinckerstr. 69 statt. Der Raum wird noch bekannt gegeben."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413514",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

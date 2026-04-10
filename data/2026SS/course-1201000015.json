@@ -1,0 +1,33 @@
+{
+  "id": "1201000015",
+  "title": "Spektroskopische Methoden in der Anorganischen und Organischen Chemie (MC I)",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Arian, Dumitru",
+    "Graf, Jürgen",
+    "Gross, Jürgen",
+    "Hofmann, Matthias",
+    "Rominger, Frank"
+  ],
+  "start_date": "2026-09-07",
+  "end_date": "2026-09-25",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "15:30",
+      "location": "HSW (6252.EG.122)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7146",
+      "room": "HSW (6252.EG.122)",
+      "building": "HSW, Im Neuenheimer Feld 252, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412266",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

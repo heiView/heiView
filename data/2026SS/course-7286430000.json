@@ -1,0 +1,30 @@
+{
+  "id": "7286430000",
+  "title": "Lecture Series & HCIAS Colloquium",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Campos Motta, Renata",
+    "Guevara González, Yaatsil"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location: Bergheimer Str. 20, Seminarraum 215"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407888",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

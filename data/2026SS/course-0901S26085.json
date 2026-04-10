@@ -1,0 +1,39 @@
+{
+  "id": "0901S26085",
+  "title": "Fachdidaktik 3: Begleitseminar zum SPS",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Putzier, Eva-Maria"
+  ],
+  "start_date": "2026-07-20",
+  "end_date": "2027-01-08",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Der Kurs findet im Konferenzraum der HSE statt: Voßstraße 2, Gebäude 4330, 69115 Heidelberg."
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort wird noch bekanntgegeben."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418016",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

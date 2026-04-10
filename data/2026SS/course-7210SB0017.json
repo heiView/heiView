@@ -1,0 +1,29 @@
+{
+  "id": "7210SB0017",
+  "title": "Physiologie des Menschen II: Neurophysiologie",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Möhrlen, Frank"
+  ],
+  "start_date": "2026-06-22",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (6231.U1.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11200",
+      "room": "Übungsraum (6231.U1.024)",
+      "building": "Im Neuenheimer Feld 231, Lower level 1",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410879",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,69 @@
+{
+  "id": "9101100013",
+  "title": "BI - Seminar Nephrologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schultz, Jobst-Hendrik"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "12:15",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Nicht anwesenheitspflichtig"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:15",
+      "end_time": "12:15",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Nicht anwesenheitspflichtig"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:15",
+      "end_time": "12:15",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Nicht anwesenheitspflichtig"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Nicht anwesenheitspflichtig"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "12:15",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Nicht anwesenheitspflichtig"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397426",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

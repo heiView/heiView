@@ -1,0 +1,49 @@
+{
+  "id": "1207393651",
+  "title": "Kleine Forscher:innengruppe Humangeographie",
+  "type": "SE",
+  "ects_credits": "10",
+  "course_languages": "German",
+  "lecturers": [
+    "Bork-Hüffer, Tabea"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-01",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "15:15",
+      "end_time": "18:00",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": "Vorbesprechung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Vortrag von: Prof. Dr. Xue Desheng und Prof. Dr. Xie Jing// Ort: Marsilius-Kolleg, Hörsaal"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "18:30",
+      "end_time": "20:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Sitzung zum Thema Digitalisierungsforschung in Kooperation mit der Universität Birmingham"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413586",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

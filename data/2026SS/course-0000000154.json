@@ -1,0 +1,40 @@
+{
+  "id": "0000000154",
+  "title": "Ü ST: Das Kreuz in der Seelsorge",
+  "type": "PC",
+  "ects_credits": "1",
+  "course_languages": "German",
+  "lecturers": [
+    "Rolf, Sibylle",
+    "<N.N.>(Henning), 010000.100"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-06-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "KiGa I (1200.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
+      "room": "KiGa I (1200.EG.024)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "KiGa I (1200.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
+      "room": "KiGa I (1200.EG.024)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410839",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

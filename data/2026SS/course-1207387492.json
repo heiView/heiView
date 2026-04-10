@@ -1,0 +1,49 @@
+{
+  "id": "1207387492",
+  "title": "Nachhaltigkeit lehren lernen",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Foshag, Kathrin"
+  ],
+  "start_date": "2026-05-08",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Design Thinking Raum"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Institut für Geographie und Geokommunikation PH Heidelberg"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "18:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Aula Altbau PH"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409596",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

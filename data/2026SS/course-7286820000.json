@@ -1,0 +1,29 @@
+{
+  "id": "7286820000",
+  "title": "Reading and understanding theory: Neil Smith: \"Uneven Development: Nature, Capital and the Production of Space\"",
+  "type": "PC",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Lehmann, Rosa"
+  ],
+  "start_date": "2026-05-22",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410135",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

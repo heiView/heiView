@@ -1,0 +1,39 @@
+{
+  "id": "SESW-SBStG",
+  "title": "Gesunde Stimme, wirksam sprechen",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Fritsch, Elisabeth"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (3120.01.119)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22734",
+      "room": "Übungsraum (3120.01.119)",
+      "building": "Plöck 79-81, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (3120.01.119)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22734",
+      "room": "Übungsraum (3120.01.119)",
+      "building": "Plöck 79-81, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414410",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

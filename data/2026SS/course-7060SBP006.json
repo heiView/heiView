@@ -1,0 +1,102 @@
+{
+  "id": "7060SBP006",
+  "title": "Methoden der Molekularen Biowissenschaften - Teil Mikrobiologie",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Flotho, Annette",
+    "Kramer, Günter",
+    "Mayer, Matthias",
+    "Mogk, Axel"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "15:15",
+      "location": "Lab 1 (6329.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13034",
+      "room": "Lab 1 (6329.EG.004)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "Gruppe 1"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "15:15",
+      "location": "Lab 1 (6329.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13034",
+      "room": "Lab 1 (6329.EG.004)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "Gruppe 1"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "15:15",
+      "location": "Lab 1 (6329.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13034",
+      "room": "Lab 1 (6329.EG.004)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "Gruppe 1"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "15:15",
+      "location": "Lab 1 (6329.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13034",
+      "room": "Lab 1 (6329.EG.004)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "Gruppe 1"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "15:15",
+      "location": "Lab 1 (6329.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13034",
+      "room": "Lab 1 (6329.EG.004)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "Gruppe 1"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "SR26 (6329.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13032",
+      "room": "SR26 (6329.EG.001)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "18 Personen Gewünscht wäre: SR 26, INF 329, EG"
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "11:15",
+      "end_time": "15:15",
+      "location": "Lab 1 (6329.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13034",
+      "room": "Lab 1 (6329.EG.004)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "Gruppe 5"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": "KLAUSUR GK MMMB Mikrobiologie 140 Teilnehmende"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385670",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

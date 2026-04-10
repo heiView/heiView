@@ -1,0 +1,29 @@
+{
+  "id": "7281000213",
+  "title": "Seminar: \"Museum von morgen: Vision und Funktion\"",
+  "type": "SE",
+  "ects_credits": "5",
+  "course_languages": "German",
+  "lecturers": [
+    "Schmitt, Thomas Matthias"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "HS 413",
+      "location_link": null,
+      "room": "HS 413",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416837",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

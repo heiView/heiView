@@ -1,0 +1,30 @@
+{
+  "id": "8514261040",
+  "title": "Jüdisches Leben nach der Befreiung",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klein, Birgit",
+    "<N.N.>(Hoppe, Jens, Dr. ), 851400.100"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "A2.08 (Altbau)",
+      "location_link": null,
+      "room": "A2.08 (Altbau)",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416124",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,59 @@
+{
+  "id": "1207393638",
+  "title": "Geländepraktikum: Heimat remixed: Migration, Hip-Hop und die Praxis des Dazugehörens",
+  "type": null,
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Guevara González, Yaatsil"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-11",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (6348.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19178",
+      "room": "Übungsraum (6348.EG.004)",
+      "building": "Im Neuenheimer Feld 348, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (6348.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19178",
+      "room": "Übungsraum (6348.EG.004)",
+      "building": "Im Neuenheimer Feld 348, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "16:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413542",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "9207850119",
+  "title": "WFT07-IO - W_Immun-Checkpoint-Moleküle (ICPs) in der Krebstherapie_07.05.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Karakhanova, Svetlana"
+  ],
+  "start_date": "2026-05-07",
+  "end_date": "2026-05-07",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417756",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

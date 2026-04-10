@@ -1,0 +1,39 @@
+{
+  "id": "1005000041",
+  "title": "Sport- und Bewegungsgerontologie: Messung, Bewegung und Training im Alter",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Jansen, Carl-Philipp"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Multifunktionsraum 700 (6700.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16455",
+      "room": "Multifunktionsraum 700 (6700.EG.007)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Seminarraum 700 (6700.EG.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
+      "room": "Seminarraum 700 (6700.EG.106)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414602",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

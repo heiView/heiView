@@ -1,0 +1,29 @@
+{
+  "id": "9109000109",
+  "title": "BIII - Refresher Augenheilkunde",
+  "type": "RC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Conrad-Hengerer, Ina"
+  ],
+  "start_date": "2026-03-24",
+  "end_date": "2026-06-16",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "17:00",
+      "end_time": "20:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399206",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

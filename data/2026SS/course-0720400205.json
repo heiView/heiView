@@ -1,0 +1,49 @@
+{
+  "id": "0720400205",
+  "title": "Heiligkreuztal Monastery. Sources on the history of its construction",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Brehm, Anne-Christine"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-19",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17963",
+      "room": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Archiv, Adresse wird mitgeteilt"
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Vorstellen der Ergebnisse im Kloster Heiligkreuztal. Genauere Informationen folgen."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414831",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

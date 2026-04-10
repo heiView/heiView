@@ -1,0 +1,39 @@
+{
+  "id": "ZSL-SENMed",
+  "title": "English C1: Medical English",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "UGX 61 (2170.U1.061)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21090",
+      "room": "UGX 61 (2170.U1.061)",
+      "building": "Grabengasse 3-5, Lower level 1",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413792",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

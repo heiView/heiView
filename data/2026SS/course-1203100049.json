@@ -1,0 +1,29 @@
+{
+  "id": "1203100049",
+  "title": "Quasi-Geschichte der modernen Naturwissenschaften",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Volpp, Hans-Robert"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "17:30",
+      "end_time": "19:00",
+      "location": "Besprechung/Aufenthalt (6229.EG.030)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16331",
+      "room": "Besprechung/Aufenthalt (6229.EG.030)",
+      "building": "Im Neuenheimer Feld 229, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414239",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

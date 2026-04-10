@@ -1,0 +1,27 @@
+{
+  "id": "73ETH32261",
+  "title": "TSNG Religion and Politics in Theravada Buddhist South East Asia",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "English (primary)",
+  "lecturers": [],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416857",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0756252-20",
+  "title": "PS Minoische Ikonographie. Theoretische Ansätze, Methoden, Fallbeispiele",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Panagiotopoulos, Diamantis"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408921",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

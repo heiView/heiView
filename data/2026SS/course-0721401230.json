@@ -1,0 +1,242 @@
+{
+  "id": "0721401230",
+  "title": "SK Propädeutikum Modernes Chinesisch II",
+  "type": "LC",
+  "ects_credits": null,
+  "course_languages": "Chinese (primary)",
+  "lecturers": [
+    "Cheng, Yi-Ching",
+    "Lin, Chun-Ping",
+    "Riedel, Lennart",
+    "<N.N.>(Chen, Shuhang), 072140.100"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.01.13 (4010+4.01.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11586",
+      "room": "Übungsraum 010.01.13 (4010+4.01.013)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Übungsraum 120.01.10 (4120.01.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11087",
+      "room": "Übungsraum 120.01.10 (4120.01.010)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": "nur am 13. in diesem Raum, sonst in 010.00.01"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 120.01.10 (4120.01.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11087",
+      "room": "Übungsraum 120.01.10 (4120.01.010)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": "nur am 13. in diesem Raum, sonst in 010.00.01"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.01.13 (4010+4.01.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11586",
+      "room": "Übungsraum 010.01.13 (4010+4.01.013)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 120.01.10 (4120.01.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11087",
+      "room": "Übungsraum 120.01.10 (4120.01.010)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11569",
+      "room": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11569",
+      "room": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11573",
+      "room": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11573",
+      "room": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum 010.01.13 (4010+4.01.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11586",
+      "room": "Übungsraum 010.01.13 (4010+4.01.013)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11569",
+      "room": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408337",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1100231000",
+  "title": "Didaktik der Informatik",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Hildebrandt, Claudia"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Raum in der PH: INF 561, Raum A236"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414425",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

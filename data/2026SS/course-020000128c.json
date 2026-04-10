@@ -1,0 +1,40 @@
+{
+  "id": "020000128c",
+  "title": "Kognitive Psychologie für Juristinnen/Juristen",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Koepsell, Philipp",
+    "Olbrich, Till"
+  ],
+  "start_date": "2026-06-02",
+  "end_date": "2026-06-11",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Einführung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": "Eintägiger Workshop"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417823",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

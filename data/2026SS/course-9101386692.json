@@ -1,0 +1,52 @@
+{
+  "id": "9101386692",
+  "title": "Modul 8 - LV: Interprofessionelle Zusammenarbeit",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Fuchs, Gerhard Emmanuel",
+    "N.N., Unbekannt",
+    "Stöbich, Nicole",
+    "Trickes, Claudia"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-27",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K11 (6130.01.011)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30625",
+      "room": "Seminarraum K11 (6130.01.011)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K18 (6130.01.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30623",
+      "room": "Seminarraum K18 (6130.01.018)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:45",
+      "end_time": "16:00",
+      "location": "Seminarraum K18 (6130.01.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30623",
+      "room": "Seminarraum K18 (6130.01.018)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400471",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

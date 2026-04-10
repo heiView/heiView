@@ -1,0 +1,49 @@
+{
+  "id": "0720400211",
+  "title": "Deities in Spandex: Sacred and Mythological Motifs in American Superhero Comics",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Glötter, Laura Viktoria Eva Maria"
+  ],
+  "start_date": "2026-04-28",
+  "end_date": "2026-06-07",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": "Vorbesprechung"
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419746",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

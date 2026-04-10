@@ -1,0 +1,29 @@
+{
+  "id": "0905000017",
+  "title": "Research Module for MA Students",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English (primary)",
+  "lecturers": [
+    "Frank, Anette"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "SR 21 (6306.01.115)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14804",
+      "room": "SR 21 (6306.01.115)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409320",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

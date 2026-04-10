@@ -1,0 +1,29 @@
+{
+  "id": "0720500084",
+  "title": "PS/HS Studium mit Sinn: Persönliche Motivation und strategische Studienplanung",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lang, Hartmut"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Seminarraum (2065.03.314)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
+      "room": "Seminarraum (2065.03.314)",
+      "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417155",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1202000012",
+  "title": "Basiswissen der Anorganischen Chemie (AC_B2 )",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hofmann, Matthias"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "HSW (6252.EG.122)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7146",
+      "room": "HSW (6252.EG.122)",
+      "building": "HSW, Im Neuenheimer Feld 252, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410525",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

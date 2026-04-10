@@ -1,0 +1,34 @@
+{
+  "id": "4000SBP999",
+  "title": "Biology 4",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Binder, Marco",
+    "Chourbaji, Sabine",
+    "Ganter, Markus",
+    "Hentzschel, Franziska",
+    "Jékely, Gáspár",
+    "Koch, Marcus"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-06-05",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Großer Hörsaal (gHS) (6231.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11219",
+      "room": "Großer Hörsaal (gHS) (6231.EG.006)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412012",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

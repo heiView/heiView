@@ -1,0 +1,69 @@
+{
+  "id": "0000000021",
+  "title": "Biomolecular Simulations",
+  "type": "WS",
+  "ects_credits": "3",
+  "course_languages": "English",
+  "lecturers": [
+    "Lolicato, Fabio"
+  ],
+  "start_date": "2026-05-11",
+  "end_date": "2026-05-21",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415230",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

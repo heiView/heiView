@@ -27,8 +27,6 @@ dist-ssr
 data/*.db-shm
 data/*.db-wal
 
-# Auto-generated scraped contents
-data/2026SS/
 # Python cache
 __pycache__/
 *.py[cod]

@@ -1,0 +1,29 @@
+{
+  "id": "9207850100",
+  "title": "WFT07-IO - Onkologische Bildgebung_Aktuelle Myelom-Forschung am DKFZ_19.05.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Wennmann, Markus"
+  ],
+  "start_date": "2026-05-19",
+  "end_date": "2026-05-19",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417305",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

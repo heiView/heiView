@@ -1,0 +1,29 @@
+{
+  "id": "9207850053",
+  "title": "Blockpraktikum Experimentelle/Molekulare Pädiatrische Onkologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Grünewald, Thomas Georg Philipp"
+  ],
+  "start_date": "2026-09-23",
+  "end_date": "2026-09-25",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "13:00",
+      "location": "INF 280 DKFZ Raum B410",
+      "location_link": null,
+      "room": "INF 280 DKFZ Raum B410",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418424",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

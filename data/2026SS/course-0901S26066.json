@@ -1,0 +1,29 @@
+{
+  "id": "0901S26066",
+  "title": "Deutsche Literatur 1550-1600. Ein Überblick",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Wilhelmi, Thomas Gerhard"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "15:00",
+      "location": "Übungsraum (1010.01.122)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17441",
+      "room": "Übungsraum (1010.01.122)",
+      "building": "Hauptstraße 207-209, 1st floor",
+      "note": "17.4., 22.5., 29.5., 12.6., 26.6. 17.7.2026 jeweils 11.15-12.45 und 13.30-15 Uhr"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409209",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

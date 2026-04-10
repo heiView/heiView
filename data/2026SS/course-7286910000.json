@@ -1,0 +1,39 @@
+{
+  "id": "7286910000",
+  "title": "HCIAS Master's Colloquium_summer semester 2026",
+  "type": "CO",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Campos Motta, Renata"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-13",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "ATTENTION: this session is on a different weekday (Monday) than the previous sessions (Fridays). Location"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407920",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

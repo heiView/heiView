@@ -1,0 +1,30 @@
+{
+  "id": "0701261803",
+  "title": "Reading Group: Cass Sunstein",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Heinzelmann, Nora Cornelia",
+    "<N.N.>(Sunstein, Cass), 070100.100"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-06-08",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "EthicsLab (Mathematikon, Berliner Straße 45)"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418183",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

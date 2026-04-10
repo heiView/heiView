@@ -1,0 +1,100 @@
+{
+  "id": "9121000001",
+  "title": "BIV - Praktikum zur ärztlichen Leichenschau",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Krämer, Renata",
+    "Merkel, Lisa"
+  ],
+  "start_date": "2026-03-17",
+  "end_date": "2026-06-24",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "08:00",
+      "end_time": "09:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:00",
+      "end_time": "09:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Sektionssaal (4420.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28805",
+      "room": "Sektionssaal (4420.01.105)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398674",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

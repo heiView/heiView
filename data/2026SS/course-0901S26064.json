@@ -1,0 +1,29 @@
+{
+  "id": "0901S26064",
+  "title": "Fachdidaktik: Lyrik um 1800",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Sellner, Gabriele"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum (1010.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22576",
+      "room": "Übungsraum (1010.EG.038)",
+      "building": "Hauptstraße 207-209, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413857",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

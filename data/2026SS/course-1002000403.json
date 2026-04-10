@@ -1,0 +1,29 @@
+{
+  "id": "1002000403",
+  "title": "KLF - Darf man das? - Von Erkenntnisdrang und ethischen Grenzen der psychologischen Forschung (BSc)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Christmann, Ursula"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HS 1 (3020.01.127)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23526",
+      "room": "HS 1 (3020.01.127)",
+      "building": "HS 1, Hauptstraße 47/51, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407245",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

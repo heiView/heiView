@@ -1,0 +1,29 @@
+{
+  "id": "1300112207",
+  "title": "Galactic and Extragalactic Astronomy - Seminar (MVAstro3.2)",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "English",
+  "lecturers": [
+    "Grebel, Eva"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "17:15",
+      "end_time": "19:15",
+      "location": "Übungsraum (7020.U1.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15844",
+      "room": "Übungsraum (7020.U1.005)",
+      "building": "Mönchhofstraße 14, Lower level 1",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410291",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

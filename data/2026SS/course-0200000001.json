@@ -1,0 +1,39 @@
+{
+  "id": "0200000001",
+  "title": "Seminar: Aktuelle Fragen des Unternehmensrechts",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Verse, Dirk"
+  ],
+  "start_date": "2026-07-16",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Ort/Zeit noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort/Zeit noch nicht bekannt",
+      "building": null,
+      "note": "Siehe Ankündigung Lehrstuhl"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Ort/Zeit noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort/Zeit noch nicht bekannt",
+      "building": null,
+      "note": "Siehe Ankündigung Lehrstuhl"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420202",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

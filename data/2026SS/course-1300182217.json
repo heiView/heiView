@@ -1,0 +1,39 @@
+{
+  "id": "1300182217",
+  "title": "Scientific Machine Learning for Physics (MVSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Buck, Tobias"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "SR 10 (6205.05.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14007",
+      "room": "SR 10 (6205.05.101)",
+      "building": "Im Neuenheimer Feld 205, 5th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "CSo1 (6205.03.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13370",
+      "room": "CSo1 (6205.03.103)",
+      "building": "Im Neuenheimer Feld 205, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410460",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

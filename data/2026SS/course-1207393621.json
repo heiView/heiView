@@ -1,0 +1,31 @@
+{
+  "id": "1207393621",
+  "title": "Proseminar Humangeographie: Digitale Geographien",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Eckle, Melanie",
+    "Ludwig, Christina",
+    "Poerting, Julia"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409409",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

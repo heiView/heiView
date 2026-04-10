@@ -1,0 +1,29 @@
+{
+  "id": "1300182208",
+  "title": "Optimization in Machine Learning and Vision (MVSem)",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "English",
+  "lecturers": [
+    "Savchynskyy, Bogdan"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Berlinerstraße 43, 3.OG, Raum B.128"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412284",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,30 @@
+{
+  "id": "9207850055",
+  "title": "WFT07-IO - Klinisch Technisches Radiologieseminar_Grundlagen MRT: Spins im Magnetfeld, Kernspinanregung u. Signalempfang, MRT-Kontraste_14.04.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Fiedler, Thomas Michael",
+    "Platt, Tanja"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-04-14",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "16:45",
+      "end_time": "18:15",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418446",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

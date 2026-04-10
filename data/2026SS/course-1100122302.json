@@ -1,0 +1,39 @@
+{
+  "id": "1100122302",
+  "title": "Geometrische Gruppentheorie 2",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "German",
+  "lecturers": [
+    "Schwer, Petra"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "SR 3 (6205.03.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13368",
+      "room": "SR 3 (6205.03.101)",
+      "building": "Im Neuenheimer Feld 205, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "SR 3 (6205.03.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13368",
+      "room": "SR 3 (6205.03.101)",
+      "building": "Im Neuenheimer Feld 205, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413826",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7283000219",
+  "title": "Buddhist Sanskrit IV Ratnagotravibhāga",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Radich, Michael"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 400.00.02 (4400.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22071",
+      "room": "Übungsraum 400.00.02 (4400.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415338",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

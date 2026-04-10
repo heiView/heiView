@@ -1,0 +1,29 @@
+{
+  "id": "1203100045",
+  "title": "Aufbau der Materie und Spektren (PC-Z3)",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Volpp, Hans-Robert"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "12:00",
+      "location": "HSO (6252.EG.115)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7144",
+      "room": "HSO (6252.EG.115)",
+      "building": "HSO, Im Neuenheimer Feld 252, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413480",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

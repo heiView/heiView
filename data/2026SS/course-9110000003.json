@@ -1,0 +1,79 @@
+{
+  "id": "9110000003",
+  "title": "BIII - Hospitation HNO-Klinik",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hohenberger, Ralph Christian"
+  ],
+  "start_date": "2026-03-04",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "09:15",
+      "end_time": "11:30",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "11:45",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "11:45",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:45",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "11:45",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414206",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

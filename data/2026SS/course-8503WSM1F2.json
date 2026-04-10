@@ -1,0 +1,48 @@
+{
+  "id": "8503WSM1F2",
+  "title": "Focus-2 \"Tumor Immunology, Virology and Cancer\" (Lectures and Tutorials) (Lecture/Tutorial Series offered by Major Cancer Biology @DKFZ)",
+  "type": "L",
+  "ects_credits": "5",
+  "course_languages": "English",
+  "lecturers": [
+    "Amro, Elias",
+    "Autenrieth, Stella",
+    "Binder, Marco",
+    "Bund, Timo",
+    "Bunse, Lukas",
+    "Delecluse, Henri-Jacques",
+    "Delecluse, Susanne",
+    "Eichmüller, Stefan",
+    "Gahlawat, Aoife",
+    "Müller, Martin",
+    "Nettelbeck, Dirk",
+    "Offringa, Rienk",
+    "Papavasiliou, Fotina",
+    "Poschke, Isabel",
+    "Riemer, Angelika",
+    "Seiffert, Martina",
+    "Stojanovic, Ana",
+    "Thiele, Robin",
+    "Umansky, Viktor",
+    "Wistuba-Hamprecht, Kilian Levin"
+  ],
+  "start_date": "2026-06-08",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "speaker and lecture topic to be announced"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415926",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

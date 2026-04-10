@@ -1,0 +1,39 @@
+{
+  "id": "020000122a",
+  "title": "Kolloquium Unternehmensrestrukturierung",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schluck-Amend, Alexandra"
+  ],
+  "start_date": "2026-07-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "16:00",
+      "location": "Ort - siehe Anmerkung",
+      "location_link": null,
+      "room": "Ort - siehe Anmerkung",
+      "building": null,
+      "note": "1. Termin: CMS Stuttgart, Theodor-Heuss-Straße 29, Stuttgart"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417833",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

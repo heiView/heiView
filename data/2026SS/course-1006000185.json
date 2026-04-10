@@ -1,0 +1,39 @@
+{
+  "id": "1006000185",
+  "title": "Betriebswirtschaftliche Grundlagen",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Raj, Lena Sunali"
+  ],
+  "start_date": "2026-04-25",
+  "end_date": "2026-07-18",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Übungsraum (4141.EG.045)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19479",
+      "room": "Übungsraum (4141.EG.045)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum (4141.EG.045)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19479",
+      "room": "Übungsraum (4141.EG.045)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": "Prüfungstermin"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/380797",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

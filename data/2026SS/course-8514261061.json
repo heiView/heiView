@@ -1,0 +1,29 @@
+{
+  "id": "8514261061",
+  "title": "Hochschulkolloquium | Research colloquium of the Hochschule",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Brämer, Andreas"
+  ],
+  "start_date": "2026-05-06",
+  "end_date": "2026-06-17",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "Seminarraum 4",
+      "location_link": null,
+      "room": "Seminarraum 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416669",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

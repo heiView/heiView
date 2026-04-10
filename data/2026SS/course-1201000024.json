@@ -1,0 +1,39 @@
+{
+  "id": "1201000024",
+  "title": "Chemisches Praktikum für Biologen ohne Prüfungsfach Chemie",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Seehafer, Kai"
+  ],
+  "start_date": "2026-06-15",
+  "end_date": "2026-07-29",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Freudenbergsaal (6271.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7300",
+      "room": "Freudenbergsaal (6271.EG.002)",
+      "building": "Im Neuenheimer Feld 271, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "kHS (6252.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7145",
+      "room": "kHS (6252.EG.118)",
+      "building": "kHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": "Einsicht zur Hauptklausur"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411992",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

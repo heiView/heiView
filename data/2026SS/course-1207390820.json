@@ -1,0 +1,40 @@
+{
+  "id": "1207390820",
+  "title": "Proseminar: Ausgewählte Themen der Physischen Geographie",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Bubenzer, Olaf",
+    "Hecht, Stefan"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (6348.01.132)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19340",
+      "room": "Übungsraum (6348.01.132)",
+      "building": "Im Neuenheimer Feld 348, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Hörsaal (6348.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19189",
+      "room": "Hörsaal (6348.EG.015)",
+      "building": "Hörsaal, Im Neuenheimer Feld 348, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409363",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7085026106",
+  "title": "Reichtum und Armut: Konzepte, Realitäten, Kritik",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kollatz, Anna Brigitte"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "SR II (8020.02.203)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22272",
+      "room": "SR II (8020.02.203)",
+      "building": "Albert-Ueberle-Straße 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414263",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

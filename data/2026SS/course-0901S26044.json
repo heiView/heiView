@@ -1,0 +1,29 @@
+{
+  "id": "0901S26044",
+  "title": "Einführung in die Mediävistik II",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Möllenbrink, Linus"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (1010.01.137)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17450",
+      "room": "Übungsraum (1010.01.137)",
+      "building": "Hauptstraße 207-209, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410013",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

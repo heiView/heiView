@@ -1,0 +1,69 @@
+{
+  "id": "9109000000",
+  "title": "BIII - Vorlesung Augenheilkunde",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Auffarth, Gerd"
+  ],
+  "start_date": "2026-03-05",
+  "end_date": "2026-06-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "07:45",
+      "end_time": "08:30",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "07:45",
+      "end_time": "08:30",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "07:45",
+      "end_time": "08:30",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "07:45",
+      "end_time": "08:30",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "07:45",
+      "end_time": "08:30",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399213",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

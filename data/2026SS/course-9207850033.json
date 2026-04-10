@@ -1,0 +1,29 @@
+{
+  "id": "9207850033",
+  "title": "WFT07-IO - Was tun mit all den Daten? - Studienauswertung leicht gemacht mit SPSS",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Awounvo Awounvo, Junior Sinclair"
+  ],
+  "start_date": "2026-06-16",
+  "end_date": "2026-06-16",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "16:30",
+      "end_time": "18:45",
+      "location": "UFHK PC Pool (6440.EG.270)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28792",
+      "room": "UFHK PC Pool (6440.EG.270)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417791",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

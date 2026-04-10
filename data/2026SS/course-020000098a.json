@@ -1,0 +1,39 @@
+{
+  "id": "020000098a",
+  "title": "Seminar im Öffentlichen Wirtschaftsrecht: KRITIS – Der Schutz kritischer Infrastrukturen im Spiegel des Rechts",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Helm, Thorsten"
+  ],
+  "start_date": "2026-07-17",
+  "end_date": "2026-07-18",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "16:00",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "16:00",
+      "location": "HS 04a (2170.EG.044)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20442",
+      "room": "HS 04a (2170.EG.044)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408813",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

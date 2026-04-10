@@ -1,0 +1,29 @@
+{
+  "id": "1203100002",
+  "title": "0D to 2D Carbon Allotropes as Functional Materials",
+  "type": "L",
+  "ects_credits": "3",
+  "course_languages": "English",
+  "lecturers": [
+    "Zaumseil, Jana"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Seminarraum (6253.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7724",
+      "room": "Seminarraum (6253.02.211)",
+      "building": "Im Neuenheimer Feld 253, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411256",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

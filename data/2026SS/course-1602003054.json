@@ -1,0 +1,79 @@
+{
+  "id": "1602003054",
+  "title": "Tutorial for the lecture Organic Chemistry",
+  "type": "T",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 3 (6327.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16833",
+      "room": "SR 3 (6327.EG.003)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 6 (6327.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16836",
+      "room": "SR 6 (6327.EG.006)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 18 (6306.01.112X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30770",
+      "room": "SR 18 (6306.01.112X)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 4 (6327.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16834",
+      "room": "SR 4 (6327.EG.004)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR26 (6329.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13032",
+      "room": "SR26 (6329.EG.001)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 3 (6327.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16833",
+      "room": "SR 3 (6327.EG.003)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409486",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

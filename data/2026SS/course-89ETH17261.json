@@ -1,0 +1,57 @@
+{
+  "id": "89ETH17261",
+  "title": "(BaWü-Seminar) Feminisms in Latin America: Intersectionality and Situated Knowledge in Uncertain Times",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [],
+  "start_date": "2026-05-08",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Online on Zoom, Link tba"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "HS 01 009 (Werthmannstraße 10, Freiburg)"
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "HS 01 009 (Werthmannstraße 10, Freiburg)"
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "HS 01 009 (Werthmannstraße 10, Freiburg)"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418184",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

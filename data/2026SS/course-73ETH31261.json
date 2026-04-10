@@ -1,0 +1,29 @@
+{
+  "id": "73ETH31261",
+  "title": "Plantations",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Rahmadian, Gaffari"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "Übungsraum 110.02.05 (4110.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11026",
+      "room": "Übungsraum 110.02.05 (4110.02.005)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416861",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

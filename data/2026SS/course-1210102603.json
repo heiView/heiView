@@ -1,0 +1,29 @@
+{
+  "id": "1210102603",
+  "title": "Geländeübung Erdgeschichte",
+  "type": "PC",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Bohaty, Steve"
+  ],
+  "start_date": "2026-09-08",
+  "end_date": "2026-09-18",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409241",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

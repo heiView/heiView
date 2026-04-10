@@ -1,0 +1,31 @@
+{
+  "id": "9207850145",
+  "title": "WFT07-IO - W_Einzelzell- und digital-räumliche Expressionsanalysen in der Tumorforschung",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Azevedo Antunes Konietzko, Camila",
+    "Banerjee, Pratiti",
+    "Duensing, Anette"
+  ],
+  "start_date": "2026-07-09",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Seminarraum 2.8 (6517.EG.028)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31404",
+      "room": "Seminarraum 2.8 (6517.EG.028)",
+      "building": "Im Neuenheimer Feld 517, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418283",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

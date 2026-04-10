@@ -1,0 +1,29 @@
+{
+  "id": "1300112306",
+  "title": "High-energy astrophysics",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Zacharias, Michael"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "Unterrichtsraum (7020.01.028)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15705",
+      "room": "Unterrichtsraum (7020.01.028)",
+      "building": "Mönchhofstraße 14, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414847",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

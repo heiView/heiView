@@ -1,0 +1,40 @@
+{
+  "id": "020000048a",
+  "title": "Einführung in das Steuerrecht",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kube, Hanno",
+    "Reimer, Ekkehart"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408780",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

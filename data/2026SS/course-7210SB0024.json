@@ -1,0 +1,55 @@
+{
+  "id": "7210SB0024",
+  "title": "Experimentelle Entwicklungsbiologie",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Domsch, Katrin",
+    "Greb, Thomas",
+    "Gromes, Roland",
+    "Jékely, Gáspár",
+    "Lohmann, Jan",
+    "Pérez Acebron, Sergio",
+    "Thumberger, Thomas"
+  ],
+  "start_date": "2026-05-04",
+  "end_date": "2026-05-30",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (6231.U1.027)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22916",
+      "room": "Übungsraum (6231.U1.027)",
+      "building": "Im Neuenheimer Feld 231, Lower level 1",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (6231.U1.027)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22916",
+      "room": "Übungsraum (6231.U1.027)",
+      "building": "Im Neuenheimer Feld 231, Lower level 1",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (6231.U1.027)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22916",
+      "room": "Übungsraum (6231.U1.027)",
+      "building": "Im Neuenheimer Feld 231, Lower level 1",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413192",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

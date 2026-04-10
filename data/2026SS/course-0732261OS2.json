@@ -1,0 +1,30 @@
+{
+  "id": "0732261OS2",
+  "title": "HS/OS (V) Sino-Tibetan Buddhist Art: Jiangnan in the East and Sichuan in the West, Tang to Yuan dynasties, 9th to 13th c. (Heinz Götze Visiting Professor Xie Jisheng, Klasing Chen)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "<N.N.>(Prof. Xie Jisheng), 072130.100",
+    "<N.N.>(Zhong, Hanyang), 072130.100"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum 120.01.10 (4120.01.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11087",
+      "room": "Übungsraum 120.01.10 (4120.01.010)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407267",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7085026119",
+  "title": "Einführung ins Osmanische",
+  "type": "LC",
+  "ects_credits": "5",
+  "course_languages": "German",
+  "lecturers": [
+    "Zimmermann, Johannes"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "SR I (8020.02.210)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22280",
+      "room": "SR I (8020.02.210)",
+      "building": "Albert-Ueberle-Straße 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414289",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

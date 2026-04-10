@@ -1,0 +1,30 @@
+{
+  "id": "1203100050",
+  "title": "Grundlagen des Energie-und Klimawandels",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Dahmen, Nicolaus), 120300.100",
+    "<N.N.>(Henrich, Edmund), 120300.100"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "location": "Seminarraum (6253.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7724",
+      "room": "Seminarraum (6253.02.211)",
+      "building": "Im Neuenheimer Feld 253, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414248",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

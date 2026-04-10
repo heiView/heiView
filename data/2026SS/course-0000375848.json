@@ -1,0 +1,29 @@
+{
+  "id": "0000375848",
+  "title": "Geomorphologie",
+  "type": "L",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Bubenzer, Olaf"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 1 (6308.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22372",
+      "room": "HS 1 (6308.EG.001)",
+      "building": "HS 1, Im Neuenheimer Feld 308, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408445",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

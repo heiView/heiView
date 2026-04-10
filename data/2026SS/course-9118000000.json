@@ -1,0 +1,349 @@
+{
+  "id": "9118000000",
+  "title": "BIV - EBI - Vorlesung",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Baumann, Lukas"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-10-12",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:30",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:30",
+      "end_time": "13:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "13:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:30",
+      "end_time": "10:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:30",
+      "end_time": "13:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Zur Klausur ist eine Anmeldung erforderlich: heiCO Prüfungstermine unter „Fachübergreifende Prüfungsan-/abmeldung\"."
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:30",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:30",
+      "end_time": "10:30",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:30",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "HS 2 (6306.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18526",
+      "room": "HS 2 (6306.EG.021)",
+      "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
+      "note": "Zur Klausur ist eine Anmeldung erforderlich: heiCO Prüfungstermine unter „Fachübergreifende Prüfungsan-/abmeldung\"."
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "10:30",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:30",
+      "end_time": "13:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "HS 2 (6306.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18526",
+      "room": "HS 2 (6306.EG.021)",
+      "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
+      "note": "Zur Klausur ist eine Anmeldung erforderlich: heiCO Prüfungstermine unter „Fachübergreifende Prüfungsan-/abmeldung\"."
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:30",
+      "end_time": "10:30",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:30",
+      "end_time": "13:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400051",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

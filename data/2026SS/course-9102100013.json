@@ -1,0 +1,119 @@
+{
+  "id": "9102100013",
+  "title": "BII - Praktikum Viszeralchirurgie in Kleingruppen",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klupp, Fee"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-07",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:45",
+      "end_time": "10:45",
+      "location": "Seminarraum Anatomage, Skills Anä (6105.01.113)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30598",
+      "room": "Seminarraum Anatomage, Skills Anä (6105.01.113)",
+      "building": "Im Neuenheimer Feld 105, 1st floor",
+      "note": "Obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "14:45",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "15:00",
+      "end_time": "15:45",
+      "location": "Seminarraum MIC (6420.EG.067)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31135",
+      "room": "Seminarraum MIC (6420.EG.067)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "14:45",
+      "location": "Seminarraum MIC (6420.EG.067)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31135",
+      "room": "Seminarraum MIC (6420.EG.067)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "15:00",
+      "end_time": "15:45",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Seminarraum Anatomage, Skills Anä (6105.01.113)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30598",
+      "room": "Seminarraum Anatomage, Skills Anä (6105.01.113)",
+      "building": "Im Neuenheimer Feld 105, 1st floor",
+      "note": "Obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "Seminarraum MIC (6420.EG.067)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31135",
+      "room": "Seminarraum MIC (6420.EG.067)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Seminarraum MIC (6420.EG.067)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31135",
+      "room": "Seminarraum MIC (6420.EG.067)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "obligat"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409966",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

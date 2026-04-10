@@ -1,0 +1,29 @@
+{
+  "id": "0731000020",
+  "title": "Tutorium \"PS Japanische Literatur II\"",
+  "type": "T",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Barna, Irénea Lucie"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417349",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

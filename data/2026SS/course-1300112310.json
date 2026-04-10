@@ -1,0 +1,39 @@
+{
+  "id": "1300112310",
+  "title": "Stars Squared: Evolution of Binary Stars (MVSpec)",
+  "type": "L",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Schneider, Fabian"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "11:00",
+      "location": "Übungsraum (8010.01.106A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21963",
+      "room": "Übungsraum (8010.01.106A)",
+      "building": "Philosophenweg 12, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "location": "Übungsraum (8010.01.106A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21963",
+      "room": "Übungsraum (8010.01.106A)",
+      "building": "Philosophenweg 12, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410474",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

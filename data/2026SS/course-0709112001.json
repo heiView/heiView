@@ -1,0 +1,132 @@
+{
+  "id": "0709112001",
+  "title": "Übungen zur Sprache und Kultur Roms I",
+  "type": "C",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Filimonov, Evgenii",
+    "Hartmann, Marina Sergeevna",
+    "Klement, Günter",
+    "Mand, Isabel Alexandra"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "HS 02 (2170.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20446",
+      "room": "HS 02 (2170.EG.049)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "HS 05 (2170.01.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20589",
+      "room": "HS 05 (2170.01.033)",
+      "building": "HS 05, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "HS 07 (2170.01.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20592",
+      "room": "HS 07 (2170.01.037)",
+      "building": "HS 07, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "HS 08 (2170.01.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20593",
+      "room": "HS 08 (2170.01.038)",
+      "building": "HS 08, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "HS 04 (2170.EG.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20319",
+      "room": "HS 04 (2170.EG.037)",
+      "building": "HS 04, Grabengasse 3-5, Ground floor",
+      "note": "einmaliger Ausweichtermin wegen HKWK in HS 04"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 04 (2170.EG.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20319",
+      "room": "HS 04 (2170.EG.037)",
+      "building": "HS 04, Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 04 (2170.EG.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20319",
+      "room": "HS 04 (2170.EG.037)",
+      "building": "HS 04, Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408494",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,39 @@
+{
+  "id": "1100240036",
+  "title": "Neurosymbolic Computing",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Gertz, Michael"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Der erste Termin am Donnerstag, den 16.04.2026, wird online stattfinden."
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 1 (6205.02.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12922",
+      "room": "SR 1 (6205.02.101)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414947",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

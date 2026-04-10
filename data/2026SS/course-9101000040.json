@@ -1,0 +1,89 @@
+{
+  "id": "9101000040",
+  "title": "BI - Prüfungen Innere Medizin",
+  "type": "XC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-07-27",
+  "end_date": "2026-07-30",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "location": "MED Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "MED Ort noch nicht bekannt",
+      "building": null,
+      "note": "Hörsaal Kopfklinik"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "10:45",
+      "location": "MED Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "MED Ort noch nicht bekannt",
+      "building": null,
+      "note": "Hörsaal Kopfklinik"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:20",
+      "end_time": "12:20",
+      "location": "MED Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "MED Ort noch nicht bekannt",
+      "building": null,
+      "note": "Hörsaal Kopfklinik"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30175",
+      "room": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "building": "Medizinische Klinik - großer Hörsaal, Im Neuenheimer Feld 410, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "18:15",
+      "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30175",
+      "room": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "building": "Medizinische Klinik - großer Hörsaal, Im Neuenheimer Feld 410, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30175",
+      "room": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "building": "Medizinische Klinik - großer Hörsaal, Im Neuenheimer Feld 410, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30175",
+      "room": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "building": "Medizinische Klinik - großer Hörsaal, Im Neuenheimer Feld 410, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397320",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,81 @@
+{
+  "id": "1300162301",
+  "title": "Particle Physics II (before Standard Model I) (MVSpec)",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Degenkolb, Skyler",
+    "Plehn, Tilman",
+    "Uwer, Ulrich"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 2 (6227.EG.402)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16105",
+      "room": "HS 2 (6227.EG.402)",
+      "building": "HS 2, Im Neuenheimer Feld 227 / 227a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 2 (6227.EG.402)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16105",
+      "room": "HS 2 (6227.EG.402)",
+      "building": "HS 2, Im Neuenheimer Feld 227 / 227a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226, EG, Goldbox"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (8010.EG.059)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15233",
+      "room": "Übungsraum (8010.EG.059)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410425",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "0000000065",
+  "title": "Ü KG: Luther auf der Coburg – Confessio Augustana und Reichspolitik",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Deininger, Lisa"
+  ],
+  "start_date": "2026-05-04",
+  "end_date": "2026-06-27",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419725",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

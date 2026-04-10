@@ -1,0 +1,29 @@
+{
+  "id": "8514261064",
+  "title": "Forschungs-Kolloquium Jüdische Religionslehre, -pädagogik und -didaktik | Research Colloquium Jewish Religious Education, Pedagogy and Didactics",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Cranz, Isabel"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Bet Midrasch, N2.05",
+      "location_link": null,
+      "room": "Bet Midrasch, N2.05",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417455",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,229 @@
+{
+  "id": "9111000002",
+  "title": "BIII - POL Neurologie",
+  "type": "PL",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Purrucker, Jan"
+  ],
+  "start_date": "2026-03-05",
+  "end_date": "2026-07-13",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28823",
+      "room": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28823",
+      "room": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28823",
+      "room": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28823",
+      "room": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28738",
+      "room": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28738",
+      "room": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28738",
+      "room": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28738",
+      "room": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28823",
+      "room": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28738",
+      "room": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393575",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

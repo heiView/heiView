@@ -1,0 +1,89 @@
+{
+  "id": "1300142101",
+  "title": "Advanced Condensed Matter Physics (MKEP2)",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Ollefs, Katharina Johanna"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "HS 2 (6308.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22373",
+      "room": "HS 2 (6308.EG.002)",
+      "building": "HS 2, Im Neuenheimer Feld 308, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "HS 2 (6308.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22373",
+      "room": "HS 2 (6308.EG.002)",
+      "building": "HS 2, Im Neuenheimer Feld 308, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "16:00",
+      "location": "Übungsraum (6227.03.402)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14508",
+      "room": "Übungsraum (6227.03.402)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "16:00",
+      "location": "Unterrichtsraum (6227.02.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14229",
+      "room": "Unterrichtsraum (6227.02.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:15",
+      "end_time": "18:00",
+      "location": "Unterrichtsraum (6227.02.402)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14228",
+      "room": "Unterrichtsraum (6227.02.402)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "Unterrichtsraum (6227.02.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14230",
+      "room": "Unterrichtsraum (6227.02.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "16:00",
+      "location": "Unterrichtsraum (6227.02.402)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14228",
+      "room": "Unterrichtsraum (6227.02.402)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410211",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

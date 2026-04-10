@@ -1,0 +1,31 @@
+{
+  "id": "1207393658",
+  "title": "Geländepraktikum Physische Geographie \"Eberbach\"",
+  "type": "PC",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Bubenzer, Olaf",
+    "Eitel, Bernhard",
+    "Hecht, Stefan"
+  ],
+  "start_date": "2026-06-01",
+  "end_date": "2026-06-05",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413705",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

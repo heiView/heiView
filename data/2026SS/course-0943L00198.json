@@ -1,0 +1,29 @@
+{
+  "id": "0943L00198",
+  "title": "Prüfungswissen Literaturwissenschaft & Kolloquium: Klassiker der russischen Literatur vom 18. - 20. Jahrhundert, Teil 4",
+  "type": "PC",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Heftrich, Urs"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "17:15",
+      "end_time": "18:45",
+      "location": "Komenský-Raum (2190.02.216)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23071",
+      "room": "Komenský-Raum (2190.02.216)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409912",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

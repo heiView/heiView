@@ -1,0 +1,51 @@
+{
+  "id": "1602003046",
+  "title": "Special Biology: Tumor Biology",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Ahadova, Aysel Ilgar",
+    "Kloor, Matthias",
+    "von Knebel Doeberitz, Magnus"
+  ],
+  "start_date": "2026-05-06",
+  "end_date": "2026-06-19",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF 221 (Pathologie), gHS"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF 221 (Pathologie), gHS"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409479",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

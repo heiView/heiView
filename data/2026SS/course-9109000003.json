@@ -1,0 +1,77 @@
+{
+  "id": "9109000003",
+  "title": "BIII - Klinisch-Praktischer Tag Augenheilkunde",
+  "type": "BT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [],
+  "start_date": "2026-03-03",
+  "end_date": "2026-06-18",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "Poliklinik, 1.OG",
+      "location_link": null,
+      "room": "Poliklinik, 1.OG",
+      "building": null,
+      "note": "Treffpunkt 1. OG, vor Raum 482"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "Poliklinik, 1.OG",
+      "location_link": null,
+      "room": "Poliklinik, 1.OG",
+      "building": null,
+      "note": "Treffpunkt vor dem Raum 482, 1. OG"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "Poliklinik, 1.OG",
+      "location_link": null,
+      "room": "Poliklinik, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "Poliklinik, 1.OG",
+      "location_link": null,
+      "room": "Poliklinik, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Poliklinik, 1.OG",
+      "location_link": null,
+      "room": "Poliklinik, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Poliklinik, 1.OG",
+      "location_link": null,
+      "room": "Poliklinik, 1.OG",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399196",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

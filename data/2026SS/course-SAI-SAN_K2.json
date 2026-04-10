@@ -1,0 +1,39 @@
+{
+  "id": "SAI-SAN_K2",
+  "title": "Sanskrit kompakt 2",
+  "type": "LC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Mishra, Anand"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum 130.00.03 (4130.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11327",
+      "room": "Übungsraum 130.00.03 (4130.EG.003)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum 130.00.03 (4130.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11327",
+      "room": "Übungsraum 130.00.03 (4130.EG.003)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409880",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,159 @@
+{
+  "id": "9102200002",
+  "title": "BII - Seminar Herzchirurgie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Grieshaber, Philippe"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "09:30",
+      "location": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28770",
+      "room": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28770",
+      "room": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:45",
+      "end_time": "11:45",
+      "location": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28770",
+      "room": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:45",
+      "end_time": "14:45",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:45",
+      "end_time": "11:45",
+      "location": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28770",
+      "room": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "UFHK SR (6440.EG.274)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28796",
+      "room": "UFHK SR (6440.EG.274)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "UFHK SR (6440.EG.274)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28796",
+      "room": "UFHK SR (6440.EG.274)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "09:30",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:45",
+      "end_time": "11:45",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:45",
+      "end_time": "11:45",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "UFHK gHS (6440.EG.272)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28794",
+      "room": "UFHK gHS (6440.EG.272)",
+      "building": "UFHK gHS, Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:45",
+      "end_time": "14:45",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "UFHK PC Pool (6440.EG.270)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28792",
+      "room": "UFHK PC Pool (6440.EG.270)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402261",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

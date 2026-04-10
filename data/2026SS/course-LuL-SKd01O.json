@@ -1,0 +1,29 @@
+{
+  "id": "LuL-SKd01O",
+  "title": "Selbstlernkurs: Einführung in das wissenschaftliche Schreiben mit KI-Unterstützung für Studierende",
+  "type": "WS",
+  "ects_credits": "1",
+  "course_languages": "German",
+  "lecturers": [
+    "Neumann, Boris"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-04-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Dieser Kurs ist ein vollständiger Selbstlernkurs. Der angegebene Termin markiert lediglich den Startpunkt,"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414816",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

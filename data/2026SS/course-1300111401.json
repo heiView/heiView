@@ -1,0 +1,78 @@
+{
+  "id": "1300111401",
+  "title": "Python for Scientists",
+  "type": "C",
+  "ects_credits": "2",
+  "course_languages": "English (primary)",
+  "lecturers": [
+    "Dehnen, Walter",
+    "Grönke, Max Balthasar",
+    "Hundertmark, Markus",
+    "Ludwig, Hans-Günter",
+    "Reffert, Sabine",
+    "Reindl, Nicole",
+    "Rothmaier, Florian",
+    "Schmidt, Robert",
+    "Stürmer, Julian",
+    "Wylezalek, Dominika"
+  ],
+  "start_date": "2026-03-30",
+  "end_date": "2026-09-25",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (8011.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19091",
+      "room": "PC-Pool (8011.EG.001)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (8011.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19091",
+      "room": "PC-Pool (8011.EG.001)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (8011.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19091",
+      "room": "PC-Pool (8011.EG.001)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Meridiansaal (2811.EG.014X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14447",
+      "room": "Meridiansaal (2811.EG.014X)",
+      "building": "Meridiansaal, Königstuhl Sternwarte , Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410447",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,30 @@
+{
+  "id": "9207850136",
+  "title": "WFT07-IO - C_Wie plant man multimodal Tumortherapien?_18.06.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Apostolidis, Leonidas Alexis",
+    "Haag, Georg Martin"
+  ],
+  "start_date": "2026-06-18",
+  "end_date": "2026-06-18",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418609",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

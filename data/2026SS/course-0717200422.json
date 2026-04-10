@@ -1,0 +1,29 @@
+{
+  "id": "0717200422",
+  "title": "Die Tempel Ägyptens",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Wilde, Heike"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (4410.02.210)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12823",
+      "room": "Übungsraum (4410.02.210)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416527",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,60 @@
+{
+  "id": "1100131006",
+  "title": "Help-Desk - Schulung für Beratungskompetenz",
+  "type": "XC",
+  "ects_credits": "1",
+  "course_languages": "German",
+  "lecturers": [
+    "Koch, Maria Jochebed",
+    "Steinleitner, Wiebke"
+  ],
+  "start_date": "2026-04-07",
+  "end_date": "2026-06-02",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Seminarraum SR Statistik (6205.02.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12924",
+      "room": "Seminarraum SR Statistik (6205.02.103)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Seminarraum SR Statistik (6205.02.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12924",
+      "room": "Seminarraum SR Statistik (6205.02.103)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Seminarraum SR Statistik (6205.02.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12924",
+      "room": "Seminarraum SR Statistik (6205.02.103)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Seminarraum SR Statistik (6205.02.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12924",
+      "room": "Seminarraum SR Statistik (6205.02.103)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414360",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1810001257",
+  "title": "Computational Macroeconomics",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Urdukhanov, Rustam"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "PC-Pool 99.007 (4310.U1.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21004",
+      "room": "PC-Pool 99.007 (4310.U1.007)",
+      "building": "Bergheimer Straße 58, Lower level 1",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415273",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

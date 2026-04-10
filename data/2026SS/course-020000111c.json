@@ -1,0 +1,29 @@
+{
+  "id": "020000111c",
+  "title": "AG Zivilrecht II Gruppe 3",
+  "type": "AG",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Radke, Carolina Susanne"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "204 Haus zum Riesen (45)",
+      "location_link": null,
+      "room": "204 Haus zum Riesen (45)",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409283",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1002001201",
+  "title": "Präsentation eigener Forschung / Projektbegleitung / Forschungsbegleitung Alternsforschung (BSc + MSc)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Wrzus, Cornelia"
+  ],
+  "start_date": "2026-05-27",
+  "end_date": "2026-07-08",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "19:15",
+      "location": "Seminarraum 014 (4140.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18834",
+      "room": "Seminarraum 014 (4140.EG.014)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407450",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

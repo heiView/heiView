@@ -1,0 +1,29 @@
+{
+  "id": "0709106003",
+  "title": "Übung: Einführung in die Sprachwissenschaft",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Beltrán Hoffmann, Javier"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum (2040.04.406)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28093",
+      "room": "Übungsraum (2040.04.406)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408487",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "9101386880",
+  "title": "Modul 8 - LV: Digitalisierung im Gesundheitswesen",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-06-22",
+  "end_date": "2026-07-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K18 (6130.01.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30623",
+      "room": "Seminarraum K18 (6130.01.018)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400470",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

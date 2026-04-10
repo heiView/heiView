@@ -1,0 +1,29 @@
+{
+  "id": "7210SB0103",
+  "title": "Biodiversität in der Praxis: Einführung in Ökologie und Vielfalt der Ackerbegleitflora und Agrarökosysteme",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Koch, Marcus"
+  ],
+  "start_date": "2026-06-29",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "17:00",
+      "location": "Übungsraum (6345.02.230)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21334",
+      "room": "Übungsraum (6345.02.230)",
+      "building": "Im Neuenheimer Feld 345, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414099",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7283000231",
+  "title": "Transcultural Genres of Art: Critiquing the Art Historical Canon in the Arts of Global Contemporaneity",
+  "type": "L",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "<N.N.>(Sarah Hegenbart), 728300.100"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Übungsraum (4400.02.212)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22242",
+      "room": "Übungsraum (4400.02.212)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415844",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

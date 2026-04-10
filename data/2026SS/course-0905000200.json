@@ -1,0 +1,29 @@
+{
+  "id": "0905000200",
+  "title": "NLP in Industry: challenges and best practices",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Dahlmeier, Daniel"
+  ],
+  "start_date": "2026-07-27",
+  "end_date": "2026-07-31",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "SR 6 (6327.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16836",
+      "room": "SR 6 (6327.EG.006)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409333",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

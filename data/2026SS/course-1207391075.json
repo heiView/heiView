@@ -1,0 +1,29 @@
+{
+  "id": "1207391075",
+  "title": "Geländepraktikum Humangeographie: Zukunftscampus Im Neuenheimer Feld: Impulse für nachhaltige Campusentwicklung",
+  "type": "PC",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Marquardt, Editha"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408731",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

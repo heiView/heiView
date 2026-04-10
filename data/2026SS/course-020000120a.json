@@ -1,0 +1,79 @@
+{
+  "id": "020000120a",
+  "title": "60. Anwaltsorientierter Moot Court im Bürgerlichen Recht",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schoppmeyer, Heinrich"
+  ],
+  "start_date": "2026-06-24",
+  "end_date": "2026-07-15",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "19:00",
+      "end_time": "21:45",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "19:00",
+      "end_time": "21:45",
+      "location": "HS 04a (2170.EG.044)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20442",
+      "room": "HS 04a (2170.EG.044)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "19:00",
+      "end_time": "21:45",
+      "location": "HS 07 (2170.01.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20592",
+      "room": "HS 07 (2170.01.037)",
+      "building": "HS 07, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "19:00",
+      "end_time": "21:45",
+      "location": "HS 02 (2170.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20446",
+      "room": "HS 02 (2170.EG.049)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "19:00",
+      "end_time": "21:45",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "19:00",
+      "end_time": "21:45",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417817",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

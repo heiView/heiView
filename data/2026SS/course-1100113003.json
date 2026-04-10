@@ -1,0 +1,50 @@
+{
+  "id": "1100113003",
+  "title": "Übung zu Gewöhnliche Differentialgleichungen",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Albers, Peter",
+    "Wiegand, Kevin Emanuel"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 8 (6205.04.104)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13689",
+      "room": "SR 8 (6205.04.104)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Übungen werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 8 (6205.04.104)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13689",
+      "room": "SR 8 (6205.04.104)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Übungen werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "SR 8 (6205.04.104)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13689",
+      "room": "SR 8 (6205.04.104)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Übungen werden in Müsli verwaltet."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414039",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

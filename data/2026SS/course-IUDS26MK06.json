@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26MK06",
+  "title": "Konsekutivdolmetschen III (DE>FR)",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "French",
+  "lecturers": [
+    "Kaetsch, Monique"
+  ],
+  "start_date": "2026-06-01",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Unterrichtsraum (3051.02.210)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19994",
+      "room": "Unterrichtsraum (3051.02.210)",
+      "building": "Plöck 57a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416396",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

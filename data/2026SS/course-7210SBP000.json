@@ -1,0 +1,42 @@
+{
+  "id": "7210SBP000",
+  "title": "HP-E1: Methoden der Molekularbiologie: Nukleinsäuren Gromes",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Greiner, Steffen",
+    "Gromes, Roland",
+    "Kiefer, Christiane",
+    "Kiefer, Markus"
+  ],
+  "start_date": "2026-06-15",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "17:45",
+      "location": "Übungsraum (6360.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22994",
+      "room": "Übungsraum (6360.EG.003)",
+      "building": "Im Neuenheimer Feld 360, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Übungsraum (6360.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10515",
+      "room": "Übungsraum (6360.EG.007)",
+      "building": "Im Neuenheimer Feld 360, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408742",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

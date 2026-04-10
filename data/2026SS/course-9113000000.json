@@ -1,0 +1,99 @@
+{
+  "id": "9113000000",
+  "title": "BIII - Bedside Teaching Dermatologie",
+  "type": "BT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lonsdorf, Anke"
+  ],
+  "start_date": "2026-03-10",
+  "end_date": "2026-07-02",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Station 1, 1.OG",
+      "location_link": null,
+      "room": "INF 440 - Station 1, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Station 1, 1.OG",
+      "location_link": null,
+      "room": "INF 440 - Station 1, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Station 2, 1.OG",
+      "location_link": null,
+      "room": "INF 440 - Station 2, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Station 2, 1.OG",
+      "location_link": null,
+      "room": "INF 440 - Station 2, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Station 3, 1.OG",
+      "location_link": null,
+      "room": "INF 440 - Station 3, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Station 3, 1.OG",
+      "location_link": null,
+      "room": "INF 440 - Station 3, 1.OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Tagesklinik",
+      "location_link": null,
+      "room": "INF 440 - Tagesklinik",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "INF 440 - Tagesklinik",
+      "location_link": null,
+      "room": "INF 440 - Tagesklinik",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393843",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

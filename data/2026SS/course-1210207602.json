@@ -1,0 +1,29 @@
+{
+  "id": "1210207602",
+  "title": "Karbonatische sedimentäre Systeme",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Friedrich, Oliver"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Unterrichtsraum (6234.01.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23079",
+      "room": "Unterrichtsraum (6234.01.101)",
+      "building": "Im Neuenheimer Feld 234, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418581",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

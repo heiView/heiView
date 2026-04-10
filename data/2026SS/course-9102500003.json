@@ -1,0 +1,140 @@
+{
+  "id": "9102500003",
+  "title": "BII - vFallbeispiele Urologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schneider, Paul Benedikt",
+    "Schönberg, Gita"
+  ],
+  "start_date": "2026-04-30",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:15",
+      "end_time": "13:00",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:15",
+      "end_time": "13:00",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "15:30",
+      "end_time": "16:15",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "13:45",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402228",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7060SBP111",
+  "title": "Planung wissenschaftlicher Arbeiten",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Tolle, Ralf"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "SR26 (6329.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13032",
+      "room": "SR26 (6329.EG.001)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "bitte den Raum 26 INF 329, EG buchen 15 Teilnehmer"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385689",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,39 @@
+{
+  "id": "CS-DLd002K",
+  "title": "Daten analysieren und visualisieren – Von maschinellem Lernen bis zu Netzwerkdarstellungen",
+  "type": "C",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Cujai, Sebastian Thomas"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-06-26",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "tbc"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "16:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "tbc"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415502",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

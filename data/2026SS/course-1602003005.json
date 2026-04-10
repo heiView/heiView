@@ -1,0 +1,40 @@
+{
+  "id": "1602003005",
+  "title": "Pharmacological-toxicological demonstration course for pharmacists",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lukasova, Martina",
+    "Siemens, Jan-Erik"
+  ],
+  "start_date": "2026-05-22",
+  "end_date": "2026-05-22",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "08:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Postersession. Ort: Medizinische Klinik"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Postersession. Ort: Medizinische Klinik"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409461",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,79 @@
+{
+  "id": "1005000033",
+  "title": "Angewandte Sportpsychologie",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Krupop, Carolin"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-04-26",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Vorbesprechung"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 700 (6700.EG.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
+      "room": "Seminarraum 700 (6700.EG.106)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Dreifachhalle 1 (6720.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30769",
+      "room": "Dreifachhalle 1 (6720.EG.001)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 700 (6700.EG.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
+      "room": "Seminarraum 700 (6700.EG.106)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 700 (6700.EG.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
+      "room": "Seminarraum 700 (6700.EG.106)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Dreifachhalle 1 (6720.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30769",
+      "room": "Dreifachhalle 1 (6720.EG.001)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414557",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

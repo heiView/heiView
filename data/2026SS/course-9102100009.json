@@ -1,0 +1,69 @@
+{
+  "id": "9102100009",
+  "title": "BII - Einführung in das Modul Viszeralchirurgie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klupp, Fee"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "09:45",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402269",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

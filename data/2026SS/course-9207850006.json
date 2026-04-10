@@ -1,0 +1,29 @@
+{
+  "id": "9207850006",
+  "title": "WFT07-IO - Sinnvolle Tumorsuche -Differentialdiagnosen bei unklarem Primärtumor und CUP Syndrom als Ausschlussdiagnose",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bochtler, Tilmann"
+  ],
+  "start_date": "2026-05-12",
+  "end_date": "2026-05-12",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417326",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

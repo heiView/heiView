@@ -1,0 +1,39 @@
+{
+  "id": "1810001260",
+  "title": "Teaching Economics II",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Altmann, Eric"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Unterrichtsraum 02.036 (4310.02.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20521",
+      "room": "Unterrichtsraum 02.036 (4310.02.036)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Unterrichtsraum 01.030 (4310.01.030)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20225",
+      "room": "Unterrichtsraum 01.030 (4310.01.030)",
+      "building": "Bergheimer Straße 58, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414057",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

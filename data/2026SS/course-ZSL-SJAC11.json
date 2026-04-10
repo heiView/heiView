@@ -1,0 +1,29 @@
+{
+  "id": "ZSL-SJAC11",
+  "title": "Japanese C1.1",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "Japanese",
+  "lecturers": [
+    "Yazaki, Maya"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413731",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "9207850127",
+  "title": "WFT07-IO - Radiation Research in Oncology_26.06.2025",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Abdollahi, Amir"
+  ],
+  "start_date": "2026-06-18",
+  "end_date": "2026-06-18",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "17:00",
+      "end_time": "18:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417783",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0943L00002",
+  "title": "Einführung in die slavische Literaturwissenschaft, besonderer Teil: Polnisch",
+  "type": "SE",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Thaidigsmann, Karoline"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Verfügungsraum \"Orgel\" (2170.03.031)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20894",
+      "room": "Verfügungsraum \"Orgel\" (2170.03.031)",
+      "building": "Grabengasse 3-5, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409157",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

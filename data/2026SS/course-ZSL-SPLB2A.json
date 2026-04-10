@@ -1,0 +1,29 @@
+{
+  "id": "ZSL-SPLB2A",
+  "title": "Polish B2: Practical Grammar and Written Expression",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "Polish",
+  "lecturers": [
+    "Biadala, Dorota"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415632",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

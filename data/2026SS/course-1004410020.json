@@ -1,0 +1,49 @@
+{
+  "id": "1004410020",
+  "title": "(M.Ed., M1) Diversität, Differenzierung und Inklusion",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Sliwka, Anne"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-11",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "18:15",
+      "end_time": "19:45",
+      "location": "Hörsaal (HS 211) (3051.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19995",
+      "room": "Hörsaal (HS 211) (3051.02.211)",
+      "building": "Hörsaal (HS 211), Plöck 57a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "18:00",
+      "location": "Hörsaal (HS 211) (3051.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19995",
+      "room": "Hörsaal (HS 211) (3051.02.211)",
+      "building": "Hörsaal (HS 211), Plöck 57a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:30",
+      "end_time": "18:00",
+      "location": "Hörsaal (HS 211) (3051.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19995",
+      "room": "Hörsaal (HS 211) (3051.02.211)",
+      "building": "Hörsaal (HS 211), Plöck 57a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404980",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

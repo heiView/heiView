@@ -1,0 +1,29 @@
+{
+  "id": "0906000029",
+  "title": "Einführung in die Literaturwissenschaft I",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Rösch, Gertrud"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:30",
+      "location": "Seminarraum (3070.EG.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19220",
+      "room": "Seminarraum (3070.EG.010)",
+      "building": "Seminarraum, Plöck 55, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414743",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

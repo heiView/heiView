@@ -1,0 +1,29 @@
+{
+  "id": "0942KSP526",
+  "title": "Katalanisch für Fortgeschrittene",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Albornos Gomez, Paula"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Unterrichtsraum (2210.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17657",
+      "room": "Unterrichtsraum (2210.EG.017)",
+      "building": "Seminarstraße 3, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411126",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

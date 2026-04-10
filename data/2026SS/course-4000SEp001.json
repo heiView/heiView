@@ -1,0 +1,60 @@
+{
+  "id": "4000SEp001",
+  "title": "Master of Education Biologie im sozialen Kontext II",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bading, Hilmar",
+    "Dalpke, Alexander",
+    "Frischknecht, Friedrich",
+    "Greb, Thomas",
+    "Haas, Jan",
+    "Hofmann, Ilse",
+    "Mayer, Matthias",
+    "Schaaf, Christian",
+    "Schling, Petra",
+    "Spiller, Erin",
+    "Thumberger, Thomas",
+    "Wölfl, Stefan"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-15",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "08:15",
+      "end_time": "10:00",
+      "location": "SR 5 (6231.EG.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18343",
+      "room": "SR 5 (6231.EG.005)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:15",
+      "end_time": "10:00",
+      "location": "Übungsraum (6231.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11220",
+      "room": "Übungsraum (6231.EG.007)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:15",
+      "end_time": "10:00",
+      "location": "SR 4 (6231.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18342",
+      "room": "SR 4 (6231.EG.004)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414661",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

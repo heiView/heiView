@@ -1,0 +1,29 @@
+{
+  "id": "1002000606",
+  "title": "Developmental Perspectives on Human-Robot-Interaction",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Wolf, Jule"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "12:45",
+      "location": "ÜR E 3010 EG 022 (3010.EG.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23102",
+      "room": "ÜR E 3010 EG 022 (3010.EG.023)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405755",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

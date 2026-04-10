@@ -1,0 +1,39 @@
+{
+  "id": "SAI-S-4011",
+  "title": "Sonic Regimes: History and the Politics of Sound in South Asia",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Maclean, Kama"
+  ],
+  "start_date": "2026-06-05",
+  "end_date": "2026-07-18",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "18:00",
+      "location": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11580",
+      "room": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "building": "Hörsaal 010.01.05, Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "13:00",
+      "end_time": "18:00",
+      "location": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11580",
+      "room": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "building": "Hörsaal 010.01.05, Voßstraße 2, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413128",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

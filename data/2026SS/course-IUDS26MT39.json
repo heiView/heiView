@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26MT39",
+  "title": "Aktuelle Fragen der Sprach- und Translationswissenschaft",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Babych, Bogdan"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Hörsaal (HS 211) (3051.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19995",
+      "room": "Hörsaal (HS 211) (3051.02.211)",
+      "building": "Hörsaal (HS 211), Plöck 57a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417122",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

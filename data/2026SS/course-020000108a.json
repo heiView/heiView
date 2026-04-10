@@ -1,0 +1,49 @@
+{
+  "id": "020000108a",
+  "title": "Seminar zum Völkerrecht, Verfassungsrecht und zur Rechtsphilosophie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Borowski, Martin"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "18:30",
+      "end_time": "19:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Vorbesprechung Zugangsdaten:"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (3080.EG.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23674",
+      "room": "Übungsraum (3080.EG.016)",
+      "building": "Friedrich-Ebert-Platz 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (3080.EG.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23674",
+      "room": "Übungsraum (3080.EG.016)",
+      "building": "Friedrich-Ebert-Platz 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417528",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

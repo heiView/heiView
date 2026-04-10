@@ -1,0 +1,70 @@
+{
+  "id": "1805110501",
+  "title": "Introduction to Comparative Politics",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Oks, Michelle",
+    "Trinn, Christoph"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "UGX 60 (2170.U1.060)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21089",
+      "room": "UGX 60 (2170.U1.060)",
+      "building": "Grabengasse 3-5, Lower level 1",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "UGX 60 (2170.U1.060)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21089",
+      "room": "UGX 60 (2170.U1.060)",
+      "building": "Grabengasse 3-5, Lower level 1",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Unterrichtsraum (4310.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20512",
+      "room": "Unterrichtsraum (4310.02.023)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "Unterrichtsraum (4310.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20512",
+      "room": "Unterrichtsraum (4310.02.023)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "Unterrichtsraum (4310.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20512",
+      "room": "Unterrichtsraum (4310.02.023)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408257",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

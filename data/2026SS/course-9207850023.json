@@ -1,0 +1,31 @@
+{
+  "id": "9207850023",
+  "title": "Interdisziplinäre Diagnostik und Behandlung in der Hämato-Onkologie anhand des Multiplen Myelom_30.06.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Dapunt, Ulrike",
+    "Mai, Elias Karl",
+    "Weinhold, Niels"
+  ],
+  "start_date": "2026-06-30",
+  "end_date": "2026-06-30",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "15:15",
+      "end_time": "18:15",
+      "location": "GMMG-Studiensekretariat, Mannheimer Str.1, EG",
+      "location_link": null,
+      "room": "GMMG-Studiensekretariat, Mannheimer Str.1, EG",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417793",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

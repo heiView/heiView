@@ -1,0 +1,29 @@
+{
+  "id": "9207850026",
+  "title": "WFT07-IO - Intensivtherapie und Notfallmanagement bei onkologischen Patienten_07.05.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Stelmach, Ramona"
+  ],
+  "start_date": "2026-05-07",
+  "end_date": "2026-05-07",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "Seminarraum K9 (6460.02.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31398",
+      "room": "Seminarraum K9 (6460.02.403)",
+      "building": "Im Neuenheimer Feld 460, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418265",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0720200077",
+  "title": "AI in history classes as a problem in Didactics",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Wypior, Cajus"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum III (2170.EG.026H)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=8455",
+      "room": "Übungsraum III (2170.EG.026H)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412167",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

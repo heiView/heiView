@@ -1,0 +1,30 @@
+{
+  "id": "0732261V01",
+  "title": "V (HS/OS) The 16th-Century Expansion of the Potala Palace and the Reconstruction of Avalokiteshvara’s Sacred Site (Heinz Götze Visiting Professor Xie Jisheng, Fraser)",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "English (primary)",
+  "lecturers": [
+    "Fraser, Sarah Elizabeth",
+    "<N.N.>(Prof. Xie Jisheng), 072130.100"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407268",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

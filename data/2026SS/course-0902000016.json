@@ -1,0 +1,29 @@
+{
+  "id": "0902000016",
+  "title": "Variation Across Style and Register",
+  "type": "SE",
+  "ects_credits": "5",
+  "course_languages": "English",
+  "lecturers": [
+    "Yim, Oriana Nesta Soon Yi"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (2220.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22604",
+      "room": "Übungsraum (2220.01.112)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407536",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

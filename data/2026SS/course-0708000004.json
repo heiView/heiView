@@ -1,0 +1,29 @@
+{
+  "id": "0708000004",
+  "title": "Der arme Mann von Nippur",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Faist, Betina"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "SGU 1016 (2100.01.201X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23040",
+      "room": "SGU 1016 (2100.01.201X)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408193",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

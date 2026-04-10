@@ -1,0 +1,29 @@
+{
+  "id": "0000000182",
+  "title": "LIturgisch-Homiletisches Seminar in Kooperation mit der Hochschule für Kirchenmusik",
+  "type": "SE",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Mautner, Martin Christian"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "17:00",
+      "end_time": "19:30",
+      "location": "Peterskirche",
+      "location_link": null,
+      "room": "Peterskirche",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411076",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

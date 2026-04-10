@@ -1,0 +1,79 @@
+{
+  "id": "0906000043",
+  "title": "Der Mensch und sein Double von Plautus bis Kazuo Ishiguro. Formen des Humanen von der Antike bis zum Zeitalter seiner technologischen Reproduzierbarkeit",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Moraldo, Sandro"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-05-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Seminarraum (3070.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19375",
+      "room": "Seminarraum (3070.01.109)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Seminarraum (3070.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19375",
+      "room": "Seminarraum (3070.01.109)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Seminarraum (3070.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19375",
+      "room": "Seminarraum (3070.01.109)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "Seminarraum (3070.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19375",
+      "room": "Seminarraum (3070.01.109)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Seminarraum (3070.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19375",
+      "room": "Seminarraum (3070.01.109)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414776",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

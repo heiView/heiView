@@ -1,0 +1,59 @@
+{
+  "id": "9103100003",
+  "title": "BII - Praktikum Anästhesiologie HANS",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "HEIN Operation (5410.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30204",
+      "room": "HEIN Operation (5410.02.023)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:45",
+      "end_time": "15:15",
+      "location": "HEIN Operation (5410.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30204",
+      "room": "HEIN Operation (5410.02.023)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HEIN Operation (5410.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30204",
+      "room": "HEIN Operation (5410.02.023)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "HEIN Operation (5410.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30204",
+      "room": "HEIN Operation (5410.02.023)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402292",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

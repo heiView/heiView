@@ -1,0 +1,29 @@
+{
+  "id": "1210103202",
+  "title": "Geodynamik, Magmatismus und Metamorphose",
+  "type": "L",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Rojas-Agramonte, Yamirka"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "15:00",
+      "end_time": "17:15",
+      "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10986",
+      "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 235, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418068",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

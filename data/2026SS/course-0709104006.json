@@ -1,0 +1,29 @@
+{
+  "id": "0709104006",
+  "title": "Lektürekurs Latein (Einführung in den Umgang mit literarischen Texten): Livius, Ab urbe condita I-V",
+  "type": "C",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Scheithauer, Andrea"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "UGX 61 (2170.U1.061)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21090",
+      "room": "UGX 61 (2170.U1.061)",
+      "building": "Grabengasse 3-5, Lower level 1",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408519",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

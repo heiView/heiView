@@ -1,0 +1,69 @@
+{
+  "id": "4002200113",
+  "title": "FS4 - Praktikum Biochemie",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schling, Petra"
+  ],
+  "start_date": "2026-04-01",
+  "end_date": "2026-05-18",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "20:00",
+      "location": "Übungsraum (6328.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14897",
+      "room": "Übungsraum (6328.01.126)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "20:00",
+      "location": "Übungsraum (6328.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14897",
+      "room": "Übungsraum (6328.01.126)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "20:00",
+      "location": "Übungsraum (6328.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14897",
+      "room": "Übungsraum (6328.01.126)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "20:00",
+      "location": "Übungsraum (6328.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14897",
+      "room": "Übungsraum (6328.01.126)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "20:00",
+      "location": "Übungsraum (6328.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14897",
+      "room": "Übungsraum (6328.01.126)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398529",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

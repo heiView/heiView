@@ -1,0 +1,30 @@
+{
+  "id": "9207800000",
+  "title": "WFT07-IO - W_Tumoren und Viren, Teil 2",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Arians, Nathalie",
+    "Häfner, Matthias Felix"
+  ],
+  "start_date": "2026-07-11",
+  "end_date": "2026-07-11",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417796",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

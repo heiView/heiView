@@ -1,0 +1,39 @@
+{
+  "id": "0720200055",
+  "title": "Warfare in the Second World War: The European Theatre 1939-1945",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Prutsch, Markus Josef"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Übungsraum III (2170.EG.026H)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=8455",
+      "room": "Übungsraum III (2170.EG.026H)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Übungsraum I (2170.EG.025X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20302",
+      "room": "Übungsraum I (2170.EG.025X)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412145",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

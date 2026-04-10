@@ -1,0 +1,30 @@
+{
+  "id": "0901S26075",
+  "title": "Empirische Forschungsmethoden in der Sprachwissenschaft",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Franz, Sebastian",
+    "Ptashnyk, Stefaniya"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-05-20",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (1030.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22586",
+      "room": "Übungsraum (1030.EG.004)",
+      "building": "Karlstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415041",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

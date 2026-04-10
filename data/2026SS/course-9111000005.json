@@ -1,0 +1,659 @@
+{
+  "id": "9111000005",
+  "title": "BIII - Vorlesung Neurologie",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Purrucker, Jan"
+  ],
+  "start_date": "2026-03-02",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "09:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:45",
+      "end_time": "10:30",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:30",
+      "end_time": "11:15",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "14:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "10:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:15",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:30",
+      "end_time": "13:15",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:00",
+      "end_time": "13:15",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "09:30",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:45",
+      "end_time": "10:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:00",
+      "end_time": "12:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:45",
+      "end_time": "11:15",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "15:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:45",
+      "end_time": "10:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:30",
+      "end_time": "11:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:30",
+      "end_time": "13:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:00",
+      "end_time": "13:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:15",
+      "end_time": "09:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "09:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:45",
+      "end_time": "10:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:00",
+      "end_time": "12:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "10:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393585",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

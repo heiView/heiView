@@ -1,0 +1,29 @@
+{
+  "id": "000942FDI3",
+  "title": "Fachdidaktik 3: Rahmende Veranstaltung zum Praxissemester Italienisch",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Scheiderer, Laura Lisa"
+  ],
+  "start_date": "2026-07-16",
+  "end_date": "2027-01-14",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Die Sitzungen finden im SAF statt, Quinckerstr. 69. Der Raum wird noch bekannt gegeben."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413870",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

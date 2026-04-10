@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26MK69",
+  "title": "Simultandolmetschen II/III (EN>FR)",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "French",
+  "lecturers": [
+    "Boissel-Somerville, Corinne"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Konferenzsaal (KS II) (3052.EG.053)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20017",
+      "room": "Konferenzsaal (KS II) (3052.EG.053)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417604",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

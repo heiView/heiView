@@ -1,0 +1,29 @@
+{
+  "id": "1207391093",
+  "title": "R Application in Physical Geography (RAPHY)",
+  "type": "PC",
+  "ects_credits": "5",
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Unkel, Ingmar Björn"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Übungsraum (6348.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19185",
+      "room": "Übungsraum (6348.EG.013)",
+      "building": "Im Neuenheimer Feld 348, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408449",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

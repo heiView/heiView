@@ -1,0 +1,29 @@
+{
+  "id": "1300172233",
+  "title": "Modern Machine Learning in Fundamental Physics (MVSpec)",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Plehn, Tilman"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16724",
+      "room": "Kleiner Hörsaal (kHS) (8010.02.221)",
+      "building": "Philosophenweg 12, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412685",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

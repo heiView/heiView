@@ -1,0 +1,60 @@
+{
+  "id": "9102500000",
+  "title": "BII - Bedside-Teaching Urologie",
+  "type": "BT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schneider, Paul Benedikt",
+    "Schönberg, Gita"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "INF 420 - Ambulanz Urologie",
+      "location_link": null,
+      "room": "INF 420 - Ambulanz Urologie",
+      "building": null,
+      "note": "Es kann zwischen den Bereichen OP oder Statio und ggf. Ambulanz ausgewählt werden, idealerweise für die"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "INF 420 - Ambulanz Urologie",
+      "location_link": null,
+      "room": "INF 420 - Ambulanz Urologie",
+      "building": null,
+      "note": "Es kann zwischen den Bereichen OP oder Statio und ggf. Ambulanz ausgewählt werden, idealerweise für die"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "INF 420 - Ambulanz Urologie",
+      "location_link": null,
+      "room": "INF 420 - Ambulanz Urologie",
+      "building": null,
+      "note": "Es kann zwischen den Bereichen OP oder Statio und ggf. Ambulanz ausgewählt werden, idealerweise für die"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "INF 420 - Ambulanz Urologie",
+      "location_link": null,
+      "room": "INF 420 - Ambulanz Urologie",
+      "building": null,
+      "note": "Es kann zwischen den Bereichen OP oder Statio und ggf. Ambulanz ausgewählt werden, idealerweise für die"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402226",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

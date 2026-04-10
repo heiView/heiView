@@ -1,0 +1,32 @@
+{
+  "id": "9117000020",
+  "title": "Einführung in die Infektionsimmunologie",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Chen, Lan-Sun",
+    "Dalpke, Alexander",
+    "Jordan, Stefan",
+    "Seebach, Elisabeth"
+  ],
+  "start_date": "2026-06-22",
+  "end_date": "2026-06-26",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborbereich INF 324 1.OG"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412963",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

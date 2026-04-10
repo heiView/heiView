@@ -1,0 +1,59 @@
+{
+  "id": "9101030001",
+  "title": "Modul 1 - LV: Grundlagen der Statistik",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hennrich, Patrick"
+  ],
+  "start_date": "2026-05-21",
+  "end_date": "2026-07-30",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:30",
+      "end_time": "17:45",
+      "location": "Seminarraum K18 (6130.01.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30623",
+      "room": "Seminarraum K18 (6130.01.018)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:30",
+      "end_time": "17:45",
+      "location": "Seminarraum K15 (6130.01.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30620",
+      "room": "Seminarraum K15 (6130.01.015)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:30",
+      "end_time": "17:45",
+      "location": "Seminarraum K16 (6130.01.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30621",
+      "room": "Seminarraum K16 (6130.01.016)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:30",
+      "end_time": "17:45",
+      "location": "Seminarraum K13 (6130.01.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30618",
+      "room": "Seminarraum K13 (6130.01.013)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": "Klausur Statistik"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400427",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

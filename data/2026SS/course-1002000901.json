@@ -1,0 +1,49 @@
+{
+  "id": "1002000901",
+  "title": "Von den leistungsfähigsten Schulsystemen lernen - wie Erkenntnisse internationaler Vergleichsstudien für Bildungspolitik und Bildungspraxis genutzt werden können (BSc + MSc)",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Schleicher, Andreas"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-04",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "location": "A102 - Konferenzraum (3010.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23229",
+      "room": "A102 - Konferenzraum (3010.01.102)",
+      "building": "Hauptstraße 47-51, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "A102 - Konferenzraum (3010.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23229",
+      "room": "A102 - Konferenzraum (3010.01.102)",
+      "building": "Hauptstraße 47-51, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "A102 - Konferenzraum (3010.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23229",
+      "room": "A102 - Konferenzraum (3010.01.102)",
+      "building": "Hauptstraße 47-51, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405625",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

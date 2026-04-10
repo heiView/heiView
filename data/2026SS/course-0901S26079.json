@@ -1,0 +1,29 @@
+{
+  "id": "0901S26079",
+  "title": "Der Euphorion. Wissenschaftsgeschichte der Germanistik im Spiegel einer Fachzeitschrift",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Werle-Schneidereit, Dirk"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:30",
+      "location": "Übungsraum (1010.01.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17442",
+      "room": "Übungsraum (1010.01.123)",
+      "building": "Hauptstraße 207-209, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412750",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

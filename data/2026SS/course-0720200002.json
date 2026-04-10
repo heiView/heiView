@@ -1,0 +1,39 @@
+{
+  "id": "0720200002",
+  "title": "The Hansa",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Neumann, Christian Alexander"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum II (2170.EG.024X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20301",
+      "room": "Übungsraum II (2170.EG.024X)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum II (2170.EG.024X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20301",
+      "room": "Übungsraum II (2170.EG.024X)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410800",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

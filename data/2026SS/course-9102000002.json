@@ -1,0 +1,30 @@
+{
+  "id": "9102000002",
+  "title": "BII - Einführung/ Abschlussbesprechung",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klupp, Fee",
+    "Mohr, Stefan"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-04-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:15",
+      "end_time": "08:45",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402352",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

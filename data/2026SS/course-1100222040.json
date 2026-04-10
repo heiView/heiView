@@ -1,0 +1,39 @@
+{
+  "id": "1100222040",
+  "title": "Algorithmic Randomness and Computable Analysis",
+  "type": "L",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Titov, Ivan"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 2 (6205.02.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12923",
+      "room": "SR 2 (6205.02.102)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 1 (6205.02.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12922",
+      "room": "SR 1 (6205.02.101)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418924",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

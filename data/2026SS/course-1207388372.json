@@ -1,0 +1,39 @@
+{
+  "id": "1207388372",
+  "title": "Grundlagen der Fachdidaktik Geographie",
+  "type": "SE",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Sommer, Claudia"
+  ],
+  "start_date": "2026-05-22",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "08:00",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Seminar für Ausbildung und Fortbildung der Lehrkräfte HD (Gymnasium), Waldhofer Str. 102, 69123"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Seminar für Ausbildung und Fortbildung der Lehrkräfte HD (Gymnasium), Waldhofer Str. 102, 69123"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408736",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

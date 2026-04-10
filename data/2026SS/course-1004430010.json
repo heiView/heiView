@@ -1,0 +1,39 @@
+{
+  "id": "1004430010",
+  "title": "(LAO, Modul GFB) Die Schule und das gute Leben. Ethische Grundfragen der Bildung und des Lehrberufs",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Dietz, Dennis"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "P18 (2100.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13656",
+      "room": "P18 (2100.EG.009)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407235",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

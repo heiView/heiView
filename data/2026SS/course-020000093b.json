@@ -1,0 +1,39 @@
+{
+  "id": "020000093b",
+  "title": "Seminar \"Politisch motivierte Kriminalität\"",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hermann, Dieter"
+  ],
+  "start_date": "2026-07-22",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "10:15",
+      "end_time": "16:45",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "16:45",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413951",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

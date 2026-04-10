@@ -1,0 +1,39 @@
+{
+  "id": "0000000099",
+  "title": "HS KG: „Goethefreund, Berater des Zaren, begnadeter Augenarzt, Besteller-Autor und Patriarch der Erweckungsbewegung: Leben und Werk des Johann Heinrich Jung-Stilling“",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Klein, Michael"
+  ],
+  "start_date": "2026-04-18",
+  "end_date": "2026-06-13",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "KiGa II (1200.EG.002C)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
+      "room": "KiGa II (1200.EG.002C)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "KiGa III (1200.02.214)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22593",
+      "room": "KiGa III (1200.02.214)",
+      "building": "Kisselgasse 1, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410771",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

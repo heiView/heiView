@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26BU31",
+  "title": "Literaturübersetzen",
+  "type": "PC",
+  "ects_credits": "3",
+  "course_languages": "English",
+  "lecturers": [
+    "Mikeska, Libor"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (3051.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19867",
+      "room": "Übungsraum (3051.01.112)",
+      "building": "Plöck 57a, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416972",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

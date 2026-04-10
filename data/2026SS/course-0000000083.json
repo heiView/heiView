@@ -1,0 +1,29 @@
+{
+  "id": "0000000083",
+  "title": "HS NT: Ekklesiologie bei Paulus",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Konradt, Matthias"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "KiGa I (1200.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
+      "room": "KiGa I (1200.EG.024)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410735",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

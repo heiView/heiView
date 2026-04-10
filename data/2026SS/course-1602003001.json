@@ -1,0 +1,29 @@
+{
+  "id": "1602003001",
+  "title": "Biogenic drugs (phytopharmaceuticals, antibiotics, genetically engineered drugs)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Domhan, Cornelius"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "08:00",
+      "end_time": "10:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409423",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,39 @@
+{
+  "id": "020000086a",
+  "title": "Seminar: Contemporary Challenges in Adjudication by Supreme and Constitutional Courts",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Dr. Laura Hering), 020000.100"
+  ],
+  "start_date": "2026-06-18",
+  "end_date": "2026-06-19",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416655",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

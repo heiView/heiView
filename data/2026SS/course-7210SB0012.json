@@ -1,0 +1,30 @@
+{
+  "id": "7210SB0012",
+  "title": "Grundlagen der Populationsgenetik",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kiefer, Christiane",
+    "Koch, Marcus"
+  ],
+  "start_date": "2026-07-13",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "17:00",
+      "location": "Übungsraum (6361.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12803",
+      "room": "Übungsraum (6361.EG.001)",
+      "building": "Im Neuenheimer Feld 361, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414102",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

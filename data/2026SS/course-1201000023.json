@@ -1,0 +1,29 @@
+{
+  "id": "1201000023",
+  "title": "Tutorium zum Chemischen Praktikum für Biologen ohne Prüfungsfach Chemie",
+  "type": "T",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Seehafer, Kai"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-06-19",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 230 / HS 00.001"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412274",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

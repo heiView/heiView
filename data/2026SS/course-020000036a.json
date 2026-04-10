@@ -1,0 +1,49 @@
+{
+  "id": "020000036a",
+  "title": "Criminal defense colloquium",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Haas, Volker"
+  ],
+  "start_date": "2026-06-13",
+  "end_date": "2026-07-18",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "14:30",
+      "end_time": "18:00",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "UGX 60 (2170.U1.060)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21089",
+      "room": "UGX 60 (2170.U1.060)",
+      "building": "Grabengasse 3-5, Lower level 1",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416241",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

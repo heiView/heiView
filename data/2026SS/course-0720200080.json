@@ -1,0 +1,29 @@
+{
+  "id": "0720200080",
+  "title": "M.Ed. Modul Historisches Lernen",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Falkner, Christiane Ulrike"
+  ],
+  "start_date": "2026-07-30",
+  "end_date": "2026-07-31",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "19:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Veranstaltungszeit und -ort können sich noch ändern und werden sobald wie möglich bekanntgegeben."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412170",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1210102714",
+  "title": "Methoden der Geowissenschaften im Gelände (27) Odenwald und Umgebung",
+  "type": null,
+  "ects_credits": "1",
+  "course_languages": "German",
+  "lecturers": [
+    "Rojas-Agramonte, Yamirka"
+  ],
+  "start_date": "2026-04-18",
+  "end_date": "2026-04-18",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412738",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

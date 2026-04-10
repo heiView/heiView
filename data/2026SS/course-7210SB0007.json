@@ -1,0 +1,39 @@
+{
+  "id": "7210SB0007",
+  "title": "Methoden der Molekularen Biowissenschaften, Teil Molekularbiologie",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Özbek, Suat"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-05-29",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "12:15",
+      "end_time": "17:00",
+      "location": "Übungsraum (6231.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11221",
+      "room": "Übungsraum (6231.EG.008)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:15",
+      "end_time": "18:00",
+      "location": "Übungsraum (6231.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11221",
+      "room": "Übungsraum (6231.EG.008)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412779",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

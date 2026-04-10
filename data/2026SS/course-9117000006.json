@@ -1,0 +1,521 @@
+{
+  "id": "9117000006",
+  "title": "BIII - Vorlesung Infektiologie und Immunologie",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Beisel, Claudia",
+    "Brandt, Carl Johann Christian",
+    "Dalpke, Alexander",
+    "Denkinger, Claudia Maria",
+    "Fleischmann, Wim Alexander",
+    "Giese, Thomas",
+    "Khatamzas, Elham",
+    "Klein, Julian Albert Friedrich",
+    "Klein, Sabrina",
+    "Kölking, Britta",
+    "Leo, Albrecht",
+    "Lübbert, Judith",
+    "Marx, Florian Michael",
+    "Riemer, Angelika",
+    "Scholz, Timo Florian Martin",
+    "Stenzinger, Miriam",
+    "Stojkovic, Marija",
+    "Swoboda, Stefanie",
+    "Tran, Thuong Hien",
+    "Tsakmaklis, Helena",
+    "Wabnitz, Guido",
+    "Wendt, Constanze",
+    "Zimmermann, Stefan"
+  ],
+  "start_date": "2026-03-16",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Bitte vor dem Impfseminar bearbeiten"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "10:15",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": "Bitte vor dem Impfseminar bearbeiten"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Die Prüfung findet in der Chirugie Lehrtrakt Hörsaal INF 420 statt."
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Bitte vor dem Impfseminar bearbeiten"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409359",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

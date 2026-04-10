@@ -1,0 +1,39 @@
+{
+  "id": "0709105001",
+  "title": "Stil I, Griechisch",
+  "type": "C",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Heim, Benjamin"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (2100ZEG351)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23343",
+      "room": "Übungsraum (2100ZEG351)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Mezzanine floor on ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (2100ZEG351)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23343",
+      "room": "Übungsraum (2100ZEG351)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Mezzanine floor on ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408531",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

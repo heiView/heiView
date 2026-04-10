@@ -1,0 +1,29 @@
+{
+  "id": "1002000605",
+  "title": "Therapieassistenz KiJu - Ambulantes Berufspraktikum - Berufsqualifizierende Tätigkeit III (BQT III) (MSc)",
+  "type": "SE",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Ochs, Kerstin"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Die Veranstaltung findet donnerstags statt, Uhrzeit variierend je nach Therapiephase, in A120, PHA KJP-A"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405748",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

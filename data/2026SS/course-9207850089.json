@@ -1,0 +1,29 @@
+{
+  "id": "9207850089",
+  "title": "WFT07-IO - C_Einführungskurs: Infektionen in der Hämatologie und Onkologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Zschäbitz, Stefanie"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-04-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418602",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

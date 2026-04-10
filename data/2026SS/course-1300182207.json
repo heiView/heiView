@@ -1,0 +1,40 @@
+{
+  "id": "1300182207",
+  "title": "Computer Vision (MVSpec)",
+  "type": "L",
+  "ects_credits": "6",
+  "course_languages": "English",
+  "lecturers": [
+    "Feiden, Johann-Friedrich",
+    "Rother, Carsten"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Berlinerstr. 43, 3OG, B128"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Berlinerstr. 43, 3OG, B128"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410258",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

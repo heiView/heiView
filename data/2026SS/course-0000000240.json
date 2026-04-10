@@ -1,0 +1,31 @@
+{
+  "id": "0000000240",
+  "title": "Data Science and Simulations",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Aponte-Santamaria, Camilo",
+    "Boutros, Michael",
+    "Gräter, Frauke"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Graduate Academy, INF 370"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415863",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

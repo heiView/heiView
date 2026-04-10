@@ -1,0 +1,29 @@
+{
+  "id": "0708000016",
+  "title": "Aramäische Sprachgeschichte",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Reule, Dorothea Marie"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Unterrichtsraum (2160.02.240)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10150",
+      "room": "Unterrichtsraum (2160.02.240)",
+      "building": "Schulgasse 2, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417163",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

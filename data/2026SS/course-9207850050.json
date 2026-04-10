@@ -1,0 +1,53 @@
+{
+  "id": "9207850050",
+  "title": "WFT07-IO - Molekularbiologische Techniken in der Tumorforschung mit Schwerpunkt Uroonkologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Banerjee, Pratiti",
+    "Coelho Antunes, Beatriz",
+    "Duensing, Anette",
+    "Duensing, Stefan",
+    "Kaczorowski, Adam"
+  ],
+  "start_date": "2026-05-19",
+  "end_date": "2026-05-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "Seminarraum 2.8 (6517.EG.028)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31404",
+      "room": "Seminarraum 2.8 (6517.EG.028)",
+      "building": "Im Neuenheimer Feld 517, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "Seminarraum 2.8 (6517.EG.028)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31404",
+      "room": "Seminarraum 2.8 (6517.EG.028)",
+      "building": "Im Neuenheimer Feld 517, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "Seminarraum 2.8 (6517.EG.028)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31404",
+      "room": "Seminarraum 2.8 (6517.EG.028)",
+      "building": "Im Neuenheimer Feld 517, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418370",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

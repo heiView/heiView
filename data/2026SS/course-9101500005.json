@@ -1,0 +1,79 @@
+{
+  "id": "9101500005",
+  "title": "BI - MediKit Hämatologie",
+  "type": "CI",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schultz, Jobst-Hendrik"
+  ],
+  "start_date": "2026-05-06",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "MED SR 703 Teil 1 (6410.EG.703)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28762",
+      "room": "MED SR 703 Teil 1 (6410.EG.703)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "MED SR 703 Teil 1 (6410.EG.703)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28762",
+      "room": "MED SR 703 Teil 1 (6410.EG.703)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "MED SR 718 Teil 1 (6410.EG.718)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28766",
+      "room": "MED SR 718 Teil 1 (6410.EG.718)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "MED SR 708 (6410.EG.708)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28764",
+      "room": "MED SR 708 (6410.EG.708)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397402",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

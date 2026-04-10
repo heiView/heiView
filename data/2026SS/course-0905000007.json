@@ -1,0 +1,29 @@
+{
+  "id": "0905000007",
+  "title": "Identifying Structure in Data",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Seibold, Constantin Marc"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "SR 2 (6327.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
+      "room": "SR 2 (6327.EG.002)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409594",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

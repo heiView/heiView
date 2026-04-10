@@ -1,0 +1,29 @@
+{
+  "id": "0902000512",
+  "title": "English in Use: Text Comprehension",
+  "type": "PC",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Pfister, Katharina"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum (2220.01.116)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22608",
+      "room": "Übungsraum (2220.01.116)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408205",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

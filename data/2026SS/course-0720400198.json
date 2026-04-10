@@ -1,0 +1,29 @@
+{
+  "id": "0720400198",
+  "title": "Kunsthistorische Forschung im Archiv",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Welkens, Rebecca"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17963",
+      "room": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": "Kann etwas abweichen, da Exkursionen geplant sind"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414509",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

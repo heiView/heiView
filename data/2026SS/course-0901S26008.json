@@ -1,0 +1,29 @@
+{
+  "id": "0901S26008",
+  "title": "Sprache, Blick und Gestik in der Interaktion",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Stukenbrock, Anja"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (1030.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22586",
+      "room": "Übungsraum (1030.EG.004)",
+      "building": "Karlstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408713",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

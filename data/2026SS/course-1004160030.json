@@ -1,0 +1,49 @@
+{
+  "id": "1004160030",
+  "title": "(BA, M6/Forschung+ÜK) Mind over Learning: Mindsets und selbstreguliertes Lernen",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Weißmann, Madita Sophia"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "17:15",
+      "end_time": "18:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Auftakt"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "16:00",
+      "location": "Übungsraum 1. OG 107 (3041.01.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
+      "room": "Übungsraum 1. OG 107 (3041.01.007)",
+      "building": "Akademiestraße 3, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum 1. OG 107 (3041.01.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
+      "room": "Übungsraum 1. OG 107 (3041.01.007)",
+      "building": "Akademiestraße 3, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404743",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

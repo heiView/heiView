@@ -1,0 +1,69 @@
+{
+  "id": "1002000306",
+  "title": "Human AI Interaction at work (MSc) (Lehrauftrag Marsilius)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schrade, Franziska"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-07-11",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "HS 1 (3020.01.127)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23526",
+      "room": "HS 1 (3020.01.127)",
+      "building": "HS 1, Hauptstraße 47/51, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "HS 1 (3020.01.127)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23526",
+      "room": "HS 1 (3020.01.127)",
+      "building": "HS 1, Hauptstraße 47/51, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "ÜR B (3010.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23099",
+      "room": "ÜR B (3010.EG.019)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "ÜR B (3010.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23099",
+      "room": "ÜR B (3010.EG.019)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408135",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

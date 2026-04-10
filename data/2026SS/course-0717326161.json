@@ -1,0 +1,29 @@
+{
+  "id": "0717326161",
+  "title": ",Eher Italien als Provinz`- eine Kulturgeschichte der Gallia Narbonensis",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Witschel, Christian"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (2040.04.405)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28092",
+      "room": "Übungsraum (2040.04.405)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408274",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

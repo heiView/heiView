@@ -1,0 +1,39 @@
+{
+  "id": "1300152205",
+  "title": "Practical Course Environmental Physics",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Frieß, Udo"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF229"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF229"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410443",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

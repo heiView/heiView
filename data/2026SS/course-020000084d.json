@@ -1,0 +1,39 @@
+{
+  "id": "020000084d",
+  "title": "Berliner Blockseminar zum Unternehmensrecht",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(N.N.), 020000.100"
+  ],
+  "start_date": "2026-07-22",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Ort - siehe Anmerkung",
+      "location_link": null,
+      "room": "Ort - siehe Anmerkung",
+      "building": null,
+      "note": "Siehe Ausschreibung Homepage"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Ort - siehe Anmerkung",
+      "location_link": null,
+      "room": "Ort - siehe Anmerkung",
+      "building": null,
+      "note": "Siehe Ausschreibung Homepage"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420058",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

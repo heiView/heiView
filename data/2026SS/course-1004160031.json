@@ -1,0 +1,29 @@
+{
+  "id": "1004160031",
+  "title": "(BA, M6 Weiterbildung+ÜK ) Systemische Führungskräfteentwicklung in der Praxis",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Stern, Alexander"
+  ],
+  "start_date": "2026-05-08",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "17:00",
+      "location": "Übungsraum UG 024 (3040.U1.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21491",
+      "room": "Übungsraum UG 024 (3040.U1.024)",
+      "building": "Akademiestraße 3, Lower level 1",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411914",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

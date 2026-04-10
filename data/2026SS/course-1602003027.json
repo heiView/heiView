@@ -1,0 +1,69 @@
+{
+  "id": "1602003027",
+  "title": "Quantitative determination of inorganic pharmaceuticals, excipients and harmful substances (practical course, seminar and exercises)",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Fricker, Gert"
+  ],
+  "start_date": "2026-05-19",
+  "end_date": "2026-07-31",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "SR 1 (6327.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16707",
+      "room": "SR 1 (6327.EG.001)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "SR 19 (6306.01.111)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22349",
+      "room": "SR 19 (6306.01.111)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF 366, EG, Praktikumssaal Ost"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409474",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

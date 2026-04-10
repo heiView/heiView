@@ -1,0 +1,29 @@
+{
+  "id": "942ARLW830",
+  "title": "Einführung in die romanische Literaturwissenschaft",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Burnautzki, Sarah"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "HS 08 (2170.01.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20593",
+      "room": "HS 08 (2170.01.038)",
+      "building": "HS 08, Grabengasse 3-5, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408843",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

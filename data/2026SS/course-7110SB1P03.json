@@ -1,0 +1,30 @@
+{
+  "id": "7110SB1P03",
+  "title": "Hauptpraktikum E2 Proteine - Baßler",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bassler, Jochen",
+    "Kolenda, Caroline"
+  ],
+  "start_date": "2026-06-15",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (6328.EG.028)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14752",
+      "room": "Übungsraum (6328.EG.028)",
+      "building": "Im Neuenheimer Feld 328, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409598",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

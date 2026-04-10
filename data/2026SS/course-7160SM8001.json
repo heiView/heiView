@@ -1,0 +1,42 @@
+{
+  "id": "7160SM8001",
+  "title": "High-Throughput and -Omics",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hoff, Daniel",
+    "Sigismondo, Gianluca",
+    "Starkuviene-Erfle, Vytaute",
+    "Wölfl, Stefan"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "See for specific details this link:"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "See for specific details this link:"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412322",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

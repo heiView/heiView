@@ -1,0 +1,39 @@
+{
+  "id": "0906000041",
+  "title": "Transkulturalität und Exil in den Romanen Stefanie Zweigs",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Arendt, Christine"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Seminarraum (3070.EG.011)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19221",
+      "room": "Seminarraum (3070.EG.011)",
+      "building": "Plöck 55, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414775",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

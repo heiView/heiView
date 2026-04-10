@@ -1,0 +1,70 @@
+{
+  "id": "9114600008",
+  "title": "BII - Praktikum MSM (Woche 1)",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Forchheim, Franziska",
+    "Schmidt, Birte"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-01",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:30",
+      "end_time": "13:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "obligat - Treffpunkt vor dem Heicumed-Raum 2"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:15",
+      "end_time": "14:15",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat QB"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat QB"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:15",
+      "end_time": "14:15",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402332",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,59 @@
+{
+  "id": "9102100008",
+  "title": "BII - Sono Kurs Viszeralchirurgie",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klupp, Fee"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-08",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "15:15",
+      "location": "INF 420 - Pforte, Ebene 99",
+      "location_link": null,
+      "room": "INF 420 - Pforte, Ebene 99",
+      "building": null,
+      "note": "obligat, Anmeldung Radiologie"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "INF 420 - Pforte, Ebene 99",
+      "location_link": null,
+      "room": "INF 420 - Pforte, Ebene 99",
+      "building": null,
+      "note": "obligat, Anmeldung Radiologie"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "location": "INF 420 - Pforte, Ebene 99",
+      "location_link": null,
+      "room": "INF 420 - Pforte, Ebene 99",
+      "building": null,
+      "note": "obligat, Anmeldung Radiologie"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:45",
+      "end_time": "14:45",
+      "location": "INF 420 - Pforte, Ebene 99",
+      "location_link": null,
+      "room": "INF 420 - Pforte, Ebene 99",
+      "building": null,
+      "note": "obligat, Anmeldung Radiologie"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402282",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,50 @@
+{
+  "id": "1005001046",
+  "title": "Sportunterrichtliche Kasuistik (Teil 1)",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Borkenhagen, Frederik",
+    "Erny, Yvonne"
+  ],
+  "start_date": "2026-06-12",
+  "end_date": "2026-06-27",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "Hörsaal 700 (6700.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22439",
+      "room": "Hörsaal 700 (6700.EG.012)",
+      "building": "Hörsaal 700, Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "Seminarraum 700 (6700.EG.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
+      "room": "Seminarraum 700 (6700.EG.106)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414606",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "9103100005",
+  "title": "BII - Einführung in die Module Anästhesie und Notfallmedizin",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-06",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "10:00",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402287",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

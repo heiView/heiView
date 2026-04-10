@@ -1,0 +1,30 @@
+{
+  "id": "7210SB0101",
+  "title": "Pannonische Trockenlandschaften - Hochdiverser Natur- und Kulturraum",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Jabbusch, Sarina",
+    "Koch, Marcus"
+  ],
+  "start_date": "2026-04-30",
+  "end_date": "2026-05-07",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414103",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

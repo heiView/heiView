@@ -1,0 +1,29 @@
+{
+  "id": "0721401249",
+  "title": "Ostasienhauptseminar: Politische Spannungen in Ostasien: Boykotte, Proteste und die Rolle der Medien",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kwon, Ja Ok"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 120.02.11 (4120.02.011)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11108",
+      "room": "Übungsraum 120.02.11 (4120.02.011)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412016",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

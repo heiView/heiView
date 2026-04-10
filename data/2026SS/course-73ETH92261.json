@@ -1,0 +1,29 @@
+{
+  "id": "73ETH92261",
+  "title": "Thai für EthnologInnen 1",
+  "type": "SE",
+  "ects_credits": "5",
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Bernart, Orapim"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum 110.02.08 (4110.02.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11028",
+      "room": "Übungsraum 110.02.08 (4110.02.008)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418783",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

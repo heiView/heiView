@@ -1,0 +1,29 @@
+{
+  "id": "942FLKW730",
+  "title": "Proseminar+/Hauptseminar französische Kultur- und Literaturwissenschaft: Liberté Toujours: Kamel Daoud et la littérature-monde franco-algérienne",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Winkler, Daniel Bernhard"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (2210.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17658",
+      "room": "Übungsraum (2210.EG.019)",
+      "building": "Seminarstraße 3, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413874",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

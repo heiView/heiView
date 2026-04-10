@@ -1,0 +1,39 @@
+{
+  "id": "1100113002",
+  "title": "Gewöhnliche Differentialgleichungen",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "German",
+  "lecturers": [
+    "Albers, Peter"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Hörsaal (6205.EG.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12450",
+      "room": "Hörsaal (6205.EG.205)",
+      "building": "Hörsaal, Im Neuenheimer Feld 205, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Hörsaal (6205.EG.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12450",
+      "room": "Hörsaal (6205.EG.205)",
+      "building": "Hörsaal, Im Neuenheimer Feld 205, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414038",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

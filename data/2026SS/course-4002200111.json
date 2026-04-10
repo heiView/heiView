@@ -1,0 +1,59 @@
+{
+  "id": "4002200111",
+  "title": "FS2 - Praktikum Biochemie",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schling, Petra"
+  ],
+  "start_date": "2026-05-20",
+  "end_date": "2026-07-06",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "13:30",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:30",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:30",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398528",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

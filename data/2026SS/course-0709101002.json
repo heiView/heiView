@@ -1,0 +1,29 @@
+{
+  "id": "0709101002",
+  "title": "Vorlesung Literaturwissenschaft Latein: Urszenen der Philologie. Glanz und Elend der modernen Textwissenschaften",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schwindt, Jürgen Paul"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408496",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

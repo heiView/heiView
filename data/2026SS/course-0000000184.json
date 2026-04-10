@@ -1,0 +1,39 @@
+{
+  "id": "0000000184",
+  "title": "Ü Rel.päd.: Möglichkeiten der Aktivierung zu Selbstwirksamkeit und Partizipation in inner- und außerschulischen Lernsettings",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Hupe, Henning"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "ÜR K 2 (1040.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23185",
+      "room": "ÜR K 2 (1040.01.109)",
+      "building": "Karlstraße 16, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411082",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

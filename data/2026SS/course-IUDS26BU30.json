@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26BU30",
+  "title": "Dolmetschen für Übersetzer (Dolmetschpropädeutikum) (EN>DE)",
+  "type": "PC",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Kehl, Hannah Marie"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (3030.01.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28136",
+      "room": "Übungsraum (3030.01.007)",
+      "building": "Hauptstraße 52, 1st floor",
+      "note": "Raum 107 (Gebäude \"Im Riesen\")"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416935",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

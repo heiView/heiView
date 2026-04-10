@@ -1,0 +1,31 @@
+{
+  "id": "9207850030",
+  "title": "WFT07-IO - Onkologie international: Famulatur und PJ als erster Schritt in die akademische Laufbahn",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Jung, Carla",
+    "Lindel, Katja",
+    "Stoiber, Eva Maria"
+  ],
+  "start_date": "2026-06-20",
+  "end_date": "2026-06-20",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417792",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

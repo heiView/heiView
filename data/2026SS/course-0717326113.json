@@ -1,0 +1,30 @@
+{
+  "id": "0717326113",
+  "title": "Von Caesar bis Chlodwig: Das römische Gallien aus historischer und archäologischer Perspektive",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Prien, Roland",
+    "Witschel, Christian"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HS 09 (2170.01.041)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20596",
+      "room": "HS 09 (2170.01.041)",
+      "building": "HS 09, Grabengasse 3-5, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408217",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

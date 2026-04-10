@@ -1,0 +1,29 @@
+{
+  "id": "7085026129",
+  "title": "Übersetzen, Verstehen, Diskutieren: Die Diyanet Aylık Dergi (DAD) im Seminar",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Gögen, Sina"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "SR I (8020.02.210)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22280",
+      "room": "SR I (8020.02.210)",
+      "building": "Albert-Ueberle-Straße 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414366",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

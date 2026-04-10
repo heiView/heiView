@@ -1,0 +1,99 @@
+{
+  "id": "9103200000",
+  "title": "BII - Praktikum Palliativmedizin",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Alt-Epping, Bernd"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-04-17",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "12:30",
+      "end_time": "14:45",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "Gr.7 12:30-13:30, Gr.8 13:45-14:45"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Thoraxklinik - Pforte",
+      "location_link": null,
+      "room": "Thoraxklinik - Pforte",
+      "building": null,
+      "note": "Gr.1 13:00-14:30, Gr.2 14:45-16:15"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:30",
+      "end_time": "14:45",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "Gr.1 12:30-13:30, Gr.2 13:45-14:45"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Thoraxklinik - Pforte",
+      "location_link": null,
+      "room": "Thoraxklinik - Pforte",
+      "building": null,
+      "note": "Gr.3 13:00-14:30, Gr.4 14:45-16:15"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:30",
+      "end_time": "14:45",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "Gr.3 12:30-13:30, Gr.4 13:45-14:45"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Thoraxklinik - Pforte",
+      "location_link": null,
+      "room": "Thoraxklinik - Pforte",
+      "building": null,
+      "note": "Gr.5 13:00-14:30, Gr.6 14:45-16:15"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "12:30",
+      "end_time": "14:45",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "Gr.5 12:30-13:30, Gr.6 13:45-14:45"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Thoraxklinik - Pforte",
+      "location_link": null,
+      "room": "Thoraxklinik - Pforte",
+      "building": null,
+      "note": "Gr.7 13:00-14:30, Gr.8 14:45-16:15"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402314",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

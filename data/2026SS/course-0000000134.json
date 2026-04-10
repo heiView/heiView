@@ -1,0 +1,29 @@
+{
+  "id": "0000000134",
+  "title": "HS AT: Erzählungen und Gesetze über Schriftstücke im AT (fällt aus!)",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Focken, Friedrich-Emanuel"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "KiGa III (1200.02.214)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22593",
+      "room": "KiGa III (1200.02.214)",
+      "building": "Kisselgasse 1, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410561",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

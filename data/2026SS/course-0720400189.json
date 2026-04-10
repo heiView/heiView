@@ -1,0 +1,39 @@
+{
+  "id": "0720400189",
+  "title": "Deutsche Kolonialarchitektur in Afrika, Asien und Ozeanien. Kritische Architekturgeschichte und ambivalentes Kulturerbe",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Falser, Michael"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-06-27",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "ZOOM-Sitzung, technische Details folgen"
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:30",
+      "end_time": "18:00",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414230",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,220 @@
+{
+  "id": "9113000118",
+  "title": "BIV - Vorlesung Arbeits-, Sozial- und Umweltmedizin",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Ofenloch, Robert",
+    "Weisshaar, Elke"
+  ],
+  "start_date": "2026-03-02",
+  "end_date": "2026-04-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:45",
+      "end_time": "09:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "12:45",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/394810",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

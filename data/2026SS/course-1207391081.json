@@ -1,0 +1,29 @@
+{
+  "id": "1207391081",
+  "title": "Research colloquium",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schäfer, Susann"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Konferenzraum 211, BST 48"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408434",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

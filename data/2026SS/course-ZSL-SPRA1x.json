@@ -1,0 +1,40 @@
+{
+  "id": "ZSL-SPRA1x",
+  "title": "Portuguese A1",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "Portuguese",
+  "lecturers": [
+    "De Simone, Eliana",
+    "Ferreira Amado-Harbarth, Andrea"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413734",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

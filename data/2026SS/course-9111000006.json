@@ -1,0 +1,59 @@
+{
+  "id": "9111000006",
+  "title": "BIII - Fakultatives Angebot Neurologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Purrucker, Jan"
+  ],
+  "start_date": "2026-03-16",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Intensiv-2, Ebene 99",
+      "location_link": null,
+      "room": "INF 400 - Intensiv-2, Ebene 99",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "12:00",
+      "location": "INF 400 - Schlaganfallstation, E00",
+      "location_link": null,
+      "room": "INF 400 - Schlaganfallstation, E00",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung per Mail an: HeiCuMed.NEU@med.uni-heidelberg.de; Ort: Marsilius-Arkaden, Foyer im 1. OG,"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393571",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

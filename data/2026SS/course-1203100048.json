@@ -1,0 +1,49 @@
+{
+  "id": "1203100048",
+  "title": "GRK 2948",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Grieger, Sebastian"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-07-31",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "kHS (6252.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7145",
+      "room": "kHS (6252.EG.118)",
+      "building": "kHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:00",
+      "end_time": "19:00",
+      "location": "kHS (6252.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7145",
+      "room": "kHS (6252.EG.118)",
+      "building": "kHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:00",
+      "end_time": "19:00",
+      "location": "kHS (6252.EG.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7145",
+      "room": "kHS (6252.EG.118)",
+      "building": "kHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414023",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

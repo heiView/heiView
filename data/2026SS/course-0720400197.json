@@ -1,0 +1,39 @@
+{
+  "id": "0720400197",
+  "title": "Kunst zeigt Haltung - Übung zur kuratorischen Praxis mit zeitgenössischer Kunst + Realisation einer Ausstellung im Xylon Museum Schwetzingen",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hoge, Kristina"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Xylon Museum, Kronenstraße 17, 68723 Schwetzingen"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414426",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1203100017",
+  "title": "Molecular and Solid Semiconductors",
+  "type": "SE",
+  "ects_credits": "3",
+  "course_languages": "English",
+  "lecturers": [
+    "Deschler, Felix"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Unterrichtsraum (6229.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14153",
+      "room": "Unterrichtsraum (6229.01.110)",
+      "building": "Im Neuenheimer Feld 229, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412317",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

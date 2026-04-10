@@ -1,0 +1,49 @@
+{
+  "id": "1602003003",
+  "title": "Pharmacotherapy Reich",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Reich, Gabriele"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-06-16",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "18:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "SR 18 (6306.01.112X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30770",
+      "room": "SR 18 (6306.01.112X)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "18:00",
+      "location": "SR 5 (6327.EG.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16835",
+      "room": "SR 5 (6327.EG.005)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409463",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

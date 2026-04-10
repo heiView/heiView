@@ -1,0 +1,29 @@
+{
+  "id": "0902000027",
+  "title": "Heritage languages and diaspora in the Americas",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "English",
+  "lecturers": [
+    "Neuhausen, Miriam"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (2220.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22603",
+      "room": "Übungsraum (2220.01.110)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407544",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

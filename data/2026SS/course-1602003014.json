@@ -1,0 +1,82 @@
+{
+  "id": "1602003014",
+  "title": "Pharmacology and toxicology",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lukasova, Martina",
+    "Schrenk-Siemens, Katrin",
+    "Siemens, Jan-Erik",
+    "Theile, Dirk"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:00",
+      "end_time": "13:00",
+      "location": "SR 18 (6306.01.112X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30770",
+      "room": "SR 18 (6306.01.112X)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:00",
+      "end_time": "12:00",
+      "location": "SR 18 (6306.01.112X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30770",
+      "room": "SR 18 (6306.01.112X)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:00",
+      "end_time": "11:00",
+      "location": "SR 18 (6306.01.112X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30770",
+      "room": "SR 18 (6306.01.112X)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "12:00",
+      "end_time": "15:00",
+      "location": "HS 2 (6306.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18526",
+      "room": "HS 2 (6306.EG.021)",
+      "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409460",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

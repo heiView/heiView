@@ -1,0 +1,40 @@
+{
+  "id": "LuL-KId01O",
+  "title": "Einführung in das wissenschaftliche Schreiben mit KI-Unterstützung für Studierende",
+  "type": "WS",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Höger, Alexander Johannes",
+    "Neumann, Boris"
+  ],
+  "start_date": "2026-05-11",
+  "end_date": "2026-05-26",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414811",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

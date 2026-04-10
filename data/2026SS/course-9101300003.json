@@ -1,0 +1,149 @@
+{
+  "id": "9101300003",
+  "title": "BI - Bedside Teaching Kardiologie",
+  "type": "BT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schultz, Jobst-Hendrik"
+  ],
+  "start_date": "2026-04-29",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 410 - Erb",
+      "location_link": null,
+      "room": "INF 410 - Erb",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "INF 410 - Matthes",
+      "location_link": null,
+      "room": "INF 410 - Matthes",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "INF 410 - Wunderlich",
+      "location_link": null,
+      "room": "INF 410 - Wunderlich",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 410 - Matthes/Wunderlich",
+      "location_link": null,
+      "room": "INF 410 - Matthes/Wunderlich",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:50",
+      "end_time": "13:20",
+      "location": "INF 410 - Wunderlich",
+      "location_link": null,
+      "room": "INF 410 - Wunderlich",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:30",
+      "end_time": "11:45",
+      "location": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "location_link": null,
+      "room": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:50",
+      "end_time": "13:20",
+      "location": "INF 410 - Matthes",
+      "location_link": null,
+      "room": "INF 410 - Matthes",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 410 - Wunderlich",
+      "location_link": null,
+      "room": "INF 410 - Wunderlich",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 410 - Matthes",
+      "location_link": null,
+      "room": "INF 410 - Matthes",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "INF 410 - Erb",
+      "location_link": null,
+      "room": "INF 410 - Erb",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "INF 410 - Matthes/Wunderlich",
+      "location_link": null,
+      "room": "INF 410 - Matthes/Wunderlich",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "INF 410 - Wunderlich",
+      "location_link": null,
+      "room": "INF 410 - Wunderlich",
+      "building": null,
+      "note": "Pflichtveranstaltung, Mini-CEX"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "INF 410 - Matthes/Wunderlich",
+      "location_link": null,
+      "room": "INF 410 - Matthes/Wunderlich",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397339",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

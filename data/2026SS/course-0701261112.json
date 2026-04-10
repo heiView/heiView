@@ -1,0 +1,29 @@
+{
+  "id": "0701261112",
+  "title": "Grundfragen der philosophischen Ethik",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Wolff-Metternich, Brigitta-Sophie von"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Kantsaal (2190.01.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22759",
+      "room": "Kantsaal (2190.01.118)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411175",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

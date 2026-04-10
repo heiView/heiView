@@ -1,0 +1,30 @@
+{
+  "id": "0000381146",
+  "title": "Verschränkungsmodul Geographie: Klimawandel. Herausforderung für Wissenschaft, Alltag und den Geographieunterricht",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Aeschbach, Nicole",
+    "Sommer, Claudia"
+  ],
+  "start_date": "2026-04-30",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "15:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Seminar für Ausbildung und Fortbildung der Lehrkräfte HD (Gymnasium), Waldhofer Str. 102, 69123"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408739",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

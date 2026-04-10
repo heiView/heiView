@@ -1,0 +1,29 @@
+{
+  "id": "7210SBK000",
+  "title": "Functional diversity in marine phyto- and zooplankton",
+  "type": "C",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Jékely, Gáspár"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-05-04",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412134",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

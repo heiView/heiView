@@ -1,0 +1,29 @@
+{
+  "id": "LuL-WSe01O",
+  "title": "Write and Shine: Introduction to Scientific Writing",
+  "type": "WS",
+  "ects_credits": "4",
+  "course_languages": "English (primary)",
+  "lecturers": [
+    "Schindel, Anne"
+  ],
+  "start_date": "2026-05-05",
+  "end_date": "2026-06-30",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415087",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7085026133",
+  "title": "Persische Lektüre „Tahmas der Arme“",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kollatz, Anna Brigitte"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "SR II (8020.02.203)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22272",
+      "room": "SR II (8020.02.203)",
+      "building": "Albert-Ueberle-Straße 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414517",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

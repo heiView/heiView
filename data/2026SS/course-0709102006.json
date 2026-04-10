@@ -1,0 +1,39 @@
+{
+  "id": "0709102006",
+  "title": "Hauptseminar Latein: Sallust, De coniuratione Catilinae",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Müller, Roman"
+  ],
+  "start_date": "2026-06-06",
+  "end_date": "2026-06-07",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (2040.04.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28091",
+      "room": "Übungsraum (2040.04.404)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": "Anmeldung per-E-Mail ist obligatorisch! Alle müssen sich bei Anmeldung unverzüglich vor Beginn des"
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (2040.04.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28091",
+      "room": "Übungsraum (2040.04.404)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": "Anmeldung per-E-Mail ist obligatorisch! Alle müssen sich bei Anmeldung unverzüglich vor Beginn des"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411938",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

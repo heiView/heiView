@@ -1,0 +1,49 @@
+{
+  "id": "9111000004",
+  "title": "BIII - SkillsLab Neurologie",
+  "type": "SL",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Purrucker, Jan"
+  ],
+  "start_date": "2026-03-04",
+  "end_date": "2026-06-24",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "13:45",
+      "end_time": "15:15",
+      "location": "INF 400 - Foyer des großen Hörsaals",
+      "location_link": null,
+      "room": "INF 400 - Foyer des großen Hörsaals",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "INF 400 - Foyer des großen Hörsaals",
+      "location_link": null,
+      "room": "INF 400 - Foyer des großen Hörsaals",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 400 - Foyer des großen Hörsaals",
+      "location_link": null,
+      "room": "INF 400 - Foyer des großen Hörsaals",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393583",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

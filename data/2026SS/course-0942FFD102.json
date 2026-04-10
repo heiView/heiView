@@ -1,0 +1,29 @@
+{
+  "id": "0942FFD102",
+  "title": "Fachdidaktik Französisch Modul 2: Lebensauffassungen im 20. und 21. Jahrhundert",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hammouda, Karim"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Die Veranstaltung findet im SAF, Quinckerstr. 69 statt. Der Raum wird noch bekannt gegeben."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413515",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7200002083",
+  "title": "Advanced Computer Architecture",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Taherinejad, Nima"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Seminarraum (6350.U1.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15351",
+      "room": "Seminarraum (6350.U1.014)",
+      "building": "Im Neuenheimer Feld 350, Lower level 1",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416465",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

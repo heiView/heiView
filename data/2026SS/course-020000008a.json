@@ -1,0 +1,39 @@
+{
+  "id": "020000008a",
+  "title": "Textseminar Rechtsphilosophie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schuhr, Jan"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "18:15",
+      "end_time": "20:30",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408688",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

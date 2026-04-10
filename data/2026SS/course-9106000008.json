@@ -1,0 +1,39 @@
+{
+  "id": "9106000008",
+  "title": "BIII - Praktikum Psychiatrie",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lauter, Jan"
+  ],
+  "start_date": "2026-03-04",
+  "end_date": "2026-05-06",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "10:00",
+      "end_time": "16:00",
+      "location": "Bergheimer Str. 63, Leonardo Hotel",
+      "location_link": null,
+      "room": "Bergheimer Str. 63, Leonardo Hotel",
+      "building": null,
+      "note": "Abfahrt 08:20 Uhr, Rückfahrt 16:15 Uhr"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Bergheimer Str. 63, Leonardo Hotel",
+      "location_link": null,
+      "room": "Bergheimer Str. 63, Leonardo Hotel",
+      "building": null,
+      "note": "Abfahrt 12:20 Uhr, Rückfahrt 16:00 Uhr"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379487",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

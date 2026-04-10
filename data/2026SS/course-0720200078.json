@@ -1,0 +1,49 @@
+{
+  "id": "0720200078",
+  "title": "The Ebstorf world map II",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Dräger, Marco"
+  ],
+  "start_date": "2026-06-25",
+  "end_date": "2026-06-28",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Genaue Informationen zu Veranstaltungsort und -zeit werden von den Dozierenden bekanntgegeben."
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Genaue Informationen zu Veranstaltungsort und -zeit werden von den Dozierenden bekanntgegeben."
+    },
+    {
+      "day_of_week": 7,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Genaue Informationen zu Veranstaltungsort und -zeit werden von den Dozierenden bekanntgegeben."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412168",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

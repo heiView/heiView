@@ -1,0 +1,29 @@
+{
+  "id": "020000134b",
+  "title": "Corporate & Litigation",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Liebscher, Thomas"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "14:00",
+      "location": "HS 02 (2170.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20446",
+      "room": "HS 02 (2170.EG.049)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408753",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

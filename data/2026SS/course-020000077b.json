@@ -1,0 +1,59 @@
+{
+  "id": "020000077b",
+  "title": "Aspects of Private and Public International Law",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Nino, Michele), 020000.100"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-04-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": "The definition of terrorism in international law and the jurisdiction of the International Criminal Court"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": "State immunity from civil jurisdiction in labour disputes: evolution in international and national law"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": "The evolution of sovereignty in international law"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": "The protection of intellectual property in the case-law of the European Court of Human Rights"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417860",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

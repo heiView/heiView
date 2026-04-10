@@ -1,0 +1,29 @@
+{
+  "id": "8514261029",
+  "title": "Doktorand*innen-Kolloquium Jüdische Literaturen und Jiddistik | Research and Doctoral Colloquium Jewish Literatures and Yiddish Studies",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Gruschka, Roland"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416093",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

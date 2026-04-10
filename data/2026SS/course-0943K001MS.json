@@ -1,0 +1,29 @@
+{
+  "id": "0943K001MS",
+  "title": "Sprachübung Bosnisch/Kroatisch/Serbisch für Native/Heritage Speaker I",
+  "type": "PC",
+  "ects_credits": "5",
+  "course_languages": "German",
+  "lecturers": [
+    "Valjan, Ana"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "Seminarraum (2190.01.104)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23066",
+      "room": "Seminarraum (2190.01.104)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410724",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

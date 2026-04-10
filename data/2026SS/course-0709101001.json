@@ -1,0 +1,39 @@
+{
+  "id": "0709101001",
+  "title": "Vorlesung: (Literaturwiss. Griechisch) / (Sprachwiss. Latein UND Griechisch): Die Sprache der Liebe in der lateinischen und griechischen Literatur",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kuhn-Treichel, Thomas"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HS 08 (2170.01.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20593",
+      "room": "HS 08 (2170.01.038)",
+      "building": "HS 08, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "13:30",
+      "location": "HS 10 (2170.01.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20595",
+      "room": "HS 10 (2170.01.040)",
+      "building": "HS 10, Grabengasse 3-5, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408497",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

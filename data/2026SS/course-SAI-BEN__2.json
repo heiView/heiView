@@ -1,0 +1,30 @@
+{
+  "id": "SAI-BEN__2",
+  "title": "Bengali 2: Einführung in die Schrift- und Umgangssprache des modernen Bengali",
+  "type": "LC",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Basu, Chaiti",
+    "Harder, Hans"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.01.12 (4010+4.01.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11585",
+      "room": "Übungsraum 010.01.12 (4010+4.01.012)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379436",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

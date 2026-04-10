@@ -1,0 +1,29 @@
+{
+  "id": "0943S00186",
+  "title": "Aktuelle Fragestellungen der slavischen Sprachwissenschaft - Forschungskolloquium für Examenskandidaten",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Podtergera, Irina"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Komenský-Raum (2190.02.216)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23071",
+      "room": "Komenský-Raum (2190.02.216)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409901",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

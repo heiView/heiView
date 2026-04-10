@@ -1,0 +1,29 @@
+{
+  "id": "0901S26037",
+  "title": "Autor – Dichter – Sänger. Autorschaft und Performanz im Mittelalter",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lieb, Ludger"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HS 15 (2170.03.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20773",
+      "room": "HS 15 (2170.03.025)",
+      "building": "HS 15, Grabengasse 3-5, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409957",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

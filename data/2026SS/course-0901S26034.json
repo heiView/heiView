@@ -1,0 +1,29 @@
+{
+  "id": "0901S26034",
+  "title": "Interdisziplinäres Hauptseminar: Thomas Mann und die Musik",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Beßlich, Barbara"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Raum: Hörsaal des Musikwissenschaftlichen Seminars, Augustinergasse 7"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409917",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

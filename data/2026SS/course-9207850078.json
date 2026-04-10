@@ -1,0 +1,29 @@
+{
+  "id": "9207850078",
+  "title": "WFT07-IO - Fallbasiertes interaktives Bildbefundungsseminar Onkologie_07.05.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bonekamp, David"
+  ],
+  "start_date": "2026-05-07",
+  "end_date": "2026-05-07",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417474",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

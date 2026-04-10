@@ -1,0 +1,59 @@
+{
+  "id": "0906000055",
+  "title": "Interkulturelle Kompetenz in Theorie und Praxis",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schünemann, Markus"
+  ],
+  "start_date": "2026-05-08",
+  "end_date": "2026-07-06",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "12:45",
+      "location": "Seminarraum (3070.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19374",
+      "room": "Seminarraum (3070.01.108)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "16:15",
+      "location": "Seminarraum (3070.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19374",
+      "room": "Seminarraum (3070.01.108)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "16:15",
+      "location": "Seminarraum (3070.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19374",
+      "room": "Seminarraum (3070.01.108)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:15",
+      "end_time": "16:15",
+      "location": "Seminarraum (3070.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19374",
+      "room": "Seminarraum (3070.01.108)",
+      "building": "Plöck 55, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414850",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

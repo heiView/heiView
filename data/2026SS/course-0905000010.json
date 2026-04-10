@@ -1,0 +1,59 @@
+{
+  "id": "0905000010",
+  "title": "Programmieren I",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Rehl, Danny"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": "50 TN"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": "50 TN"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "17:00",
+      "end_time": "20:00",
+      "location": "SR 4 (6327.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16834",
+      "room": "SR 4 (6327.EG.004)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": "Ausweichtermin Tutorium Prog I"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "location": "SR26 (6329.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13032",
+      "room": "SR26 (6329.EG.001)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "Tutorium ProgI"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409318",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,60 @@
+{
+  "id": "9114600021",
+  "title": "BII - Medikit Schmerzmedizin/MSM (Woche 2)",
+  "type": "CI",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Beckmann, Nicholas Andreas",
+    "Innmann, Moritz"
+  ],
+  "start_date": "2026-04-30",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:15",
+      "location": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30589",
+      "room": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30589",
+      "room": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:15",
+      "end_time": "11:15",
+      "location": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30589",
+      "room": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30589",
+      "room": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402331",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

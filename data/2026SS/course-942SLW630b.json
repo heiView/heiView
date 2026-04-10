@@ -1,0 +1,29 @@
+{
+  "id": "942SLW630b",
+  "title": "Proseminar spanische Literaturwissenschaft: Mímesis y memoria: voces, tiempo y espacio en la novela argentina de la posdictadura (1990–2000)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "Spanish",
+  "lecturers": [
+    "Saban González, Karen"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "HS 04 (2170.EG.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20319",
+      "room": "HS 04 (2170.EG.037)",
+      "building": "HS 04, Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413905",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

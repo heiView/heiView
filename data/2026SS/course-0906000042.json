@@ -1,0 +1,29 @@
+{
+  "id": "0906000042",
+  "title": "„Wer bin ich? Woher komme ich? Wohin gehe ich?“ Jüdische Gegenwartsliteratur transnational",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Fraenkel, Nadja Samira"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum (3070.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19222",
+      "room": "Seminarraum (3070.EG.012)",
+      "building": "Plöck 55, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414554",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

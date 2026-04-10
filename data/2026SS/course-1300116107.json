@@ -1,0 +1,260 @@
+{
+  "id": "1300116107",
+  "title": "Physik B",
+  "type": "L",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Christlieb, Norbert",
+    "Fischer, Peer"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 1 (6308.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22372",
+      "room": "HS 1 (6308.EG.001)",
+      "building": "HS 1, Im Neuenheimer Feld 308, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 1 (6308.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22372",
+      "room": "HS 1 (6308.EG.001)",
+      "building": "HS 1, Im Neuenheimer Feld 308, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.01.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14076",
+      "room": "Unterrichtsraum (6227.01.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.01.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14077",
+      "room": "Unterrichtsraum (6227.01.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.02.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14229",
+      "room": "Unterrichtsraum (6227.02.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum (6227.03.402)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14508",
+      "room": "Übungsraum (6227.03.402)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Übungsraum (6501.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18321",
+      "room": "Übungsraum (6501.01.102)",
+      "building": "Im Neuenheimer Feld 501, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (6501.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18321",
+      "room": "Übungsraum (6501.01.102)",
+      "building": "Im Neuenheimer Feld 501, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum (6501.01.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=24303",
+      "room": "Übungsraum (6501.01.103)",
+      "building": "Im Neuenheimer Feld 501, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (8010.EG.059)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15233",
+      "room": "Übungsraum (8010.EG.059)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (8010.EG.059)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15233",
+      "room": "Übungsraum (8010.EG.059)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.01.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14076",
+      "room": "Unterrichtsraum (6227.01.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.01.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14077",
+      "room": "Unterrichtsraum (6227.01.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.02.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14230",
+      "room": "Unterrichtsraum (6227.02.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum (6227.03.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14509",
+      "room": "Übungsraum (6227.03.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum (6227.03.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14510",
+      "room": "Übungsraum (6227.03.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum (8010.EG.059)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15233",
+      "room": "Übungsraum (8010.EG.059)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.02.402)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14228",
+      "room": "Unterrichtsraum (6227.02.402)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum (6227.03.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14509",
+      "room": "Übungsraum (6227.03.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (8010.EG.059)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15233",
+      "room": "Übungsraum (8010.EG.059)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (6501.01.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=24303",
+      "room": "Übungsraum (6501.01.103)",
+      "building": "Im Neuenheimer Feld 501, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Unterrichtsraum (6227.02.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14229",
+      "room": "Unterrichtsraum (6227.02.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (6227.03.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14509",
+      "room": "Übungsraum (6227.03.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (6227.03.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14509",
+      "room": "Übungsraum (6227.03.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410436",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

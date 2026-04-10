@@ -1,0 +1,30 @@
+{
+  "id": "7210SB0014",
+  "title": "Python-Grundlagen für Biologen",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kiefer, Markus",
+    "Koch, Marcus"
+  ],
+  "start_date": "2026-05-26",
+  "end_date": "2026-06-01",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "17:00",
+      "location": "Übungsraum (6361.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12803",
+      "room": "Übungsraum (6361.EG.001)",
+      "building": "Im Neuenheimer Feld 361, Ground floor",
+      "note": "Klausurtermin am 01.06. um 15.00 Uhr, INF 361, SR"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414107",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

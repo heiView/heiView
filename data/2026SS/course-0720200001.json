@@ -1,0 +1,29 @@
+{
+  "id": "0720200001",
+  "title": "The Military Orders of the Middle Ages",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Jaspert, Nikolas"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409397",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

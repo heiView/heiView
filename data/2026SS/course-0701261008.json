@@ -1,0 +1,29 @@
+{
+  "id": "0701261008",
+  "title": "Phänomenologie des Narzissmus",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Fuchs, Thomas"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-15",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": "TN 80-100; unregelmäßig:22.04.26 / 06.05.26 / 13.05.26 / 20.05.26 / 17.06.26 / 01.07.26 / 08.07.26 /"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409521",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

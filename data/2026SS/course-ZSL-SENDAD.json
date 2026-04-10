@@ -1,0 +1,59 @@
+{
+  "id": "ZSL-SENDAD",
+  "title": "English: DAAD Test Preparation Course (incl. Test)",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Mukherjee, Sergio"
+  ],
+  "start_date": "2026-04-30",
+  "end_date": "2026-07-02",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "18:00",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "18:00",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413799",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

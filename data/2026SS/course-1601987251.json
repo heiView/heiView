@@ -1,0 +1,29 @@
+{
+  "id": "1601987251",
+  "title": "Integrative Multi-Omic Data Analysis",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Lu, Junyan"
+  ],
+  "start_date": "2026-05-18",
+  "end_date": "2026-05-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Morning lectures + afternoon hands-on practicals over one week Im Neuenheimer Feld 130.3 (Marsilius"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408760",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

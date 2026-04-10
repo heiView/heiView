@@ -1,0 +1,29 @@
+{
+  "id": "1004300008",
+  "title": "(LAO) Einführung in die Schulpädagogik",
+  "type": "L",
+  "ects_credits": "3",
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Sliwka, Anne"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Hörsaal (HS 211) (3051.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19995",
+      "room": "Hörsaal (HS 211) (3051.02.211)",
+      "building": "Hörsaal (HS 211), Plöck 57a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404989",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

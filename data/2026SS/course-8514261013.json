@@ -1,0 +1,29 @@
+{
+  "id": "8514261013",
+  "title": "Spinoza’s Theologico-Political Treatise: Reconstructing Scripture, Prophecy, and Monotheism",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Engel, Michael"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Seminarraum 4",
+      "location_link": null,
+      "room": "Seminarraum 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416027",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

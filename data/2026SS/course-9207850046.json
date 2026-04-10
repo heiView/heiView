@@ -1,0 +1,30 @@
+{
+  "id": "9207850046",
+  "title": "WFT07-IO - Schwerpunktseminar Klinische Radiologie/ Radiologie/ Onkologie/ Strahlentherapie_24.07.2026",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hauswald, Henrik",
+    "Zwicker, Felix Hubert"
+  ],
+  "start_date": "2026-07-24",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "14:15",
+      "end_time": "17:15",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417081",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

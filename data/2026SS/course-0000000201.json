@@ -1,0 +1,69 @@
+{
+  "id": "0000000201",
+  "title": "Kick-Off-Workshop BOP1",
+  "type": "WS",
+  "ects_credits": "0.5",
+  "course_languages": "German",
+  "lecturers": [
+    "Oberhauser, Lia"
+  ],
+  "start_date": "2026-06-19",
+  "end_date": "2026-09-11",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Konferenzraum der HSE in der Voßstraße 2, Gebäude 4330, Wegbeschreibung hier:"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "P18 (2100.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13656",
+      "room": "P18 (2100.EG.009)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "P18 (2100.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13656",
+      "room": "P18 (2100.EG.009)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "P18 (2100.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13656",
+      "room": "P18 (2100.EG.009)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Konferenzraum der HSE in der Voßstraße 2, Gebäude 4330, Wegbeschreibung hier:"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408652",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "LuL-PKd01P",
+  "title": "Study Skills: Prokrastination überwinden",
+  "type": "WS",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Salmen, Karolin"
+  ],
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "online über HeiConf"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "in Präsenz"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "in Präsenz"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414540",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

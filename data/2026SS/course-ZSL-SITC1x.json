@@ -1,0 +1,29 @@
+{
+  "id": "ZSL-SITC1x",
+  "title": "Italian C1",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "Italian",
+  "lecturers": [
+    "Tombolini-Daniels, Milena"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-30",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413940",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

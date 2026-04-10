@@ -1,0 +1,79 @@
+{
+  "id": "9103100004",
+  "title": "BII - Fallbesprechung Anästhesiologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "13:45",
+      "end_time": "16:45",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "12:45",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:45",
+      "end_time": "17:00",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "12:45",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:45",
+      "end_time": "17:00",
+      "location": "UFHK PÄD SR (6440.EG.264)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
+      "room": "UFHK PÄD SR (6440.EG.264)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402289",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

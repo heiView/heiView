@@ -1,0 +1,29 @@
+{
+  "id": "0720200046",
+  "title": "Writing history in times of AI",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Liebich, Susann"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:00",
+      "end_time": "15:30",
+      "location": "Übungsraum IV (2170.EG.055X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20298",
+      "room": "Übungsraum IV (2170.EG.055X)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411296",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

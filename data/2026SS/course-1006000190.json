@@ -1,0 +1,59 @@
+{
+  "id": "1006000190",
+  "title": "Stationäre und ambulante Pflege, offene Altenarbeit",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hinner, Jörg"
+  ],
+  "start_date": "2026-05-06",
+  "end_date": "2026-07-04",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (4141.EG.045)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19479",
+      "room": "Übungsraum (4141.EG.045)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": "Einführende Sitzung"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (4141.EG.045)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19479",
+      "room": "Übungsraum (4141.EG.045)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (4141.EG.045)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19479",
+      "room": "Übungsraum (4141.EG.045)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (4141.EG.043)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19478",
+      "room": "Übungsraum (4141.EG.043)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/380807",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

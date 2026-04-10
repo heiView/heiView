@@ -1,0 +1,29 @@
+{
+  "id": "9101300025",
+  "title": "BI - fakultative online-Vorlesung: Kardio EKG-Kurs",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-05-04",
+  "end_date": "2026-07-06",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Fakultativ, heiCONF Link siehe Moodle"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397344",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

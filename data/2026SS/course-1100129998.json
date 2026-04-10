@@ -1,0 +1,39 @@
+{
+  "id": "1100129998",
+  "title": "Introduction to Geometric Deep Learning",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Schnörr, Christoph"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 5 (6205.04.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13686",
+      "room": "SR 5 (6205.04.101)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 5 (6205.04.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13686",
+      "room": "SR 5 (6205.04.101)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417995",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,40 @@
+{
+  "id": "8503WSM112",
+  "title": "HP-F12 Immunological Methods (Lab and Seminar) (Practical Course with Student Seminars; Major Cancer Biology @ DKFZ)",
+  "type": "P",
+  "ects_credits": "10",
+  "course_languages": "English",
+  "lecturers": [
+    "Blaeschke, Franziska",
+    "Buchholz, Veit",
+    "Buschinger, Vincenz",
+    "Dietlein, Nikolaus",
+    "Eichmüller, Stefan",
+    "Feyerabend, Thorsten",
+    "Green, Edward",
+    "Hartley, Gemma",
+    "Hartmann, Felix",
+    "Osen, Wolfram",
+    "Seiffert, Martina",
+    "Wahl, Ilka"
+  ],
+  "start_date": "2026-06-08",
+  "end_date": "2026-07-01",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "various locations, exact details will be announced to participants"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416437",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

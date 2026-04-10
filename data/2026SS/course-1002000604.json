@@ -1,0 +1,29 @@
+{
+  "id": "1002000604",
+  "title": "Projektseminar Forschung: Entwicklungspsychologie (Msc)",
+  "type": "SE",
+  "ects_credits": "5",
+  "course_languages": "German",
+  "lecturers": [
+    "Pauen, Sabina"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "GFS - Übungsraum (3020.02.204)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23543",
+      "room": "GFS - Übungsraum (3020.02.204)",
+      "building": "Hauptstraße 47/51, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405746",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

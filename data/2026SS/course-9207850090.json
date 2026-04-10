@@ -1,0 +1,30 @@
+{
+  "id": "9207850090",
+  "title": "WFT07-IO - C_Fertilitätserhalt und Kardioonkologie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Germeyer, Ariane",
+    "Lehmann, Lorenz Heyne"
+  ],
+  "start_date": "2026-04-30",
+  "end_date": "2026-04-30",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "15:30",
+      "end_time": "17:45",
+      "location": "UFHK PÄD SR (6440.EG.264)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
+      "room": "UFHK PÄD SR (6440.EG.264)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418603",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

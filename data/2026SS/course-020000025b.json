@@ -1,0 +1,39 @@
+{
+  "id": "020000025b",
+  "title": "Deutsches und europäisches Konzernrecht",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hommelhoff, Peter"
+  ],
+  "start_date": "2026-05-26",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Übungsraum (3080.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23669",
+      "room": "Übungsraum (3080.EG.009)",
+      "building": "Friedrich-Ebert-Platz 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408751",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "LuL-WSd01P",
+  "title": "Einführung in das wissenschaftliche Schreiben",
+  "type": "WS",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Schindel, Anne"
+  ],
+  "start_date": "2026-06-18",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Seminarraum 314, Bergheimer Straße 20"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415089",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

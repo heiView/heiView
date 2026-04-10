@@ -1,0 +1,29 @@
+{
+  "id": "SAI-URD_4a",
+  "title": "Urdu 4a: Zeitungslektüre",
+  "type": "LC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hopf, Arian"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Übungsraum 010.01.03 (4010+4.01.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11578",
+      "room": "Übungsraum 010.01.03 (4010+4.01.003)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418757",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

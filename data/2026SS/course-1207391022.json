@@ -1,0 +1,29 @@
+{
+  "id": "1207391022",
+  "title": "Wald in der Krise – Aktuelle Bedrohungen, modernes Monitoring und Zukunftsperspektiven",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Weiser, Hannah"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Hörsaal (6348.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19189",
+      "room": "Hörsaal (6348.EG.015)",
+      "building": "Hörsaal, Im Neuenheimer Feld 348, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409603",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

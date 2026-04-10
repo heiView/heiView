@@ -1,0 +1,29 @@
+{
+  "id": "0709104001",
+  "title": "Lektürekurs Griechisch (Einführung in den Umgang mit literarischen Texten): Xenophon, Anabasis 3",
+  "type": "C",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Heim, Benjamin"
+  ],
+  "start_date": "2026-04-22",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (2100ZEG351)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23343",
+      "room": "Übungsraum (2100ZEG351)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Mezzanine floor on ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408516",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

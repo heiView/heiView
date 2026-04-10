@@ -1,0 +1,32 @@
+{
+  "id": "CS-FCd004K",
+  "title": "Frame your Career for international Students: Rechtliches für Praktika und Berufseinstieg in Deutschland",
+  "type": "C",
+  "ects_credits": "0",
+  "course_languages": "German",
+  "lecturers": [
+    "Hecker, Katja",
+    "<N.N.>(Claudia Knauber), 728950.100",
+    "<N.N.>(Petra Kuhn), 728950.100",
+    "<N.N.>(Sylvia Beyerer), 728950.100"
+  ],
+  "start_date": "2026-06-15",
+  "end_date": "2026-06-15",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419869",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

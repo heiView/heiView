@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26MK92",
+  "title": "Konsekutivdolmetschen III (DE>EN) Gruppe 2",
+  "type": "PC",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Martensson, Kathrin"
+  ],
+  "start_date": "2026-05-27",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Unterrichtsraum (3051.02.210)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19994",
+      "room": "Unterrichtsraum (3051.02.210)",
+      "building": "Plöck 57a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416908",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

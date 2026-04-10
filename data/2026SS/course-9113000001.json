@@ -1,0 +1,99 @@
+{
+  "id": "9113000001",
+  "title": "BIII - Praktikum Dermatologie",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Lonsdorf, Anke"
+  ],
+  "start_date": "2026-03-09",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Freiwillig, je 3 Plätze nach Voranmeldung"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "UFHK Allergolie Ambulanz (6440.01.107)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28797",
+      "room": "UFHK Allergolie Ambulanz (6440.01.107)",
+      "building": "Im Neuenheimer Feld 440, 1st floor",
+      "note": "Pflichtpraktikum"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:15",
+      "end_time": "09:00",
+      "location": "INF 440 - Ambulanz Haut",
+      "location_link": null,
+      "room": "INF 440 - Ambulanz Haut",
+      "building": null,
+      "note": "Freiwillig, je 3 Plätze nach Voranmeldung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "08:15",
+      "end_time": "09:00",
+      "location": "INF 440 - Ambulanz Haut",
+      "location_link": null,
+      "room": "INF 440 - Ambulanz Haut",
+      "building": null,
+      "note": "Freiwillig, je 3 Plätze nach Voranmeldung"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "location": "UFHK gHS (6440.EG.272)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28794",
+      "room": "UFHK gHS (6440.EG.272)",
+      "building": "UFHK gHS, Im Neuenheimer Feld 440, Ground floor",
+      "note": "Fakultativ, findet wöchentlich statt"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "UFHK Mykologie/Andrologie (6440.01.113)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28798",
+      "room": "UFHK Mykologie/Andrologie (6440.01.113)",
+      "building": "Im Neuenheimer Feld 440, 1st floor",
+      "note": "Pflichtpraktikum"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "UFHK Licht Bestrahlung (6440.01.146)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28799",
+      "room": "UFHK Licht Bestrahlung (6440.01.146)",
+      "building": "Im Neuenheimer Feld 440, 1st floor",
+      "note": "Pflichtpraktikum"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "UFHK (6440.U1.318)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28802",
+      "room": "UFHK (6440.U1.318)",
+      "building": "Im Neuenheimer Feld 440, Lower level 1",
+      "note": "Pflichtpraktikum"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393848",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

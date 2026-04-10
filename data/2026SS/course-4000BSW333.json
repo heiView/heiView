@@ -1,0 +1,29 @@
+{
+  "id": "4000BSW333",
+  "title": "From Genes to Circuits: Modern Neurogenetics in Practice",
+  "type": "C",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Althammer, Ferdinand"
+  ],
+  "start_date": "2026-06-08",
+  "end_date": "2026-06-12",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Mo-Do Institut für Humangenetik INF 366, Freitag ZI Mannheim J4"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414340",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

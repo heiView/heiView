@@ -1,0 +1,29 @@
+{
+  "id": "SAI-PAL__2",
+  "title": "Pali 2",
+  "type": "LC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Roock, Andreas"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-15",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409851",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0720200000",
+  "title": "Ordinary people: The folk and their daily sorroundings in the middle ages",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Daniels, Tobias"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Heuscheuer I (2050.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9375",
+      "room": "Heuscheuer I (2050.01.102)",
+      "building": "Heuscheuer I, Große Mantelgasse 2, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409395",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,89 @@
+{
+  "id": "9110000002",
+  "title": "BIII - Praktischer Unterricht HNO",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hohenberger, Ralph Christian"
+  ],
+  "start_date": "2026-03-02",
+  "end_date": "2026-07-14",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "10:00",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "15:00",
+      "end_time": "15:45",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": "Freiwillig, Buchung über Moodle"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Veranstaltung zusammen mit WFT Notfallmedizin in INF 105 (siehe Moodle)"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": "Freiwillig, Buchung über Moodle"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": "Freiwilllig, Buchung über Moodle"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414205",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,69 @@
+{
+  "id": "0000000064",
+  "title": "Latein I: Einführung in die lateinische Sprache - Latein für Anfänger*innen",
+  "type": "LC",
+  "ects_credits": "9",
+  "course_languages": "German",
+  "lecturers": [
+    "Meisters, Stefan"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR K 3 (1040.04.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19673",
+      "room": "ÜR K 3 (1040.04.403)",
+      "building": "Karlstraße 16, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR K 3 (1040.04.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19673",
+      "room": "ÜR K 3 (1040.04.403)",
+      "building": "Karlstraße 16, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR K 3 (1040.04.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19673",
+      "room": "ÜR K 3 (1040.04.403)",
+      "building": "Karlstraße 16, 4th floor",
+      "note": "Tutorium bei Dominic Abraham"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR K 3 (1040.04.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19673",
+      "room": "ÜR K 3 (1040.04.403)",
+      "building": "Karlstraße 16, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR K 2 (1040.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23185",
+      "room": "ÜR K 2 (1040.01.109)",
+      "building": "Karlstraße 16, 1st floor",
+      "note": "Tutorium bei Dominic Abraham"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410538",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

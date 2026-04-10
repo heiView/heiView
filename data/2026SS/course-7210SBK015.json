@@ -1,0 +1,30 @@
+{
+  "id": "7210SBK015",
+  "title": "Grundkurs: Biodiversität der Tiere - Zoologische Bestimmungsübungen",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Brotzmann, Katharina",
+    "Jékely, Gáspár"
+  ],
+  "start_date": "2026-08-24",
+  "end_date": "2026-09-05",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "Großer Hörsaal (gHS) (6231.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11219",
+      "room": "Großer Hörsaal (gHS) (6231.EG.006)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415318",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

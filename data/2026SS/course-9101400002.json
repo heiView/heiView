@@ -1,0 +1,119 @@
+{
+  "id": "9101400002",
+  "title": "BI - Bedside Teaching Gastroenterologie",
+  "type": "BT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schultz, Jobst-Hendrik"
+  ],
+  "start_date": "2026-04-29",
+  "end_date": "2026-07-16",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "INF 410 - Morawitz",
+      "location_link": null,
+      "room": "INF 410 - Morawitz",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 410 - Gastro Wach",
+      "location_link": null,
+      "room": "INF 410 - Gastro Wach",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "INF 410 - Volhard",
+      "location_link": null,
+      "room": "INF 410 - Volhard",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "INF 410 - Morawitz",
+      "location_link": null,
+      "room": "INF 410 - Morawitz",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:30",
+      "end_time": "11:45",
+      "location": "Krankenhaus Salem",
+      "location_link": null,
+      "room": "Krankenhaus Salem",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "INF 410 - Volhard",
+      "location_link": null,
+      "room": "INF 410 - Volhard",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 410 - Volhard",
+      "location_link": null,
+      "room": "INF 410 - Volhard",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "INF 410 - Morawitz",
+      "location_link": null,
+      "room": "INF 410 - Morawitz",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:50",
+      "end_time": "13:20",
+      "location": "INF 410 - Volhard",
+      "location_link": null,
+      "room": "INF 410 - Volhard",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:50",
+      "end_time": "13:20",
+      "location": "INF 410 - Morawitz",
+      "location_link": null,
+      "room": "INF 410 - Morawitz",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397379",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

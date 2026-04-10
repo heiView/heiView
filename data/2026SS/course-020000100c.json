@@ -1,0 +1,29 @@
+{
+  "id": "020000100c",
+  "title": "Europäisches Seminar im Steuerrecht",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Reimer, Ekkehart"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-04-30",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "00:00",
+      "end_time": "00:00",
+      "location": "Ort - siehe Anmerkung",
+      "location_link": null,
+      "room": "Ort - siehe Anmerkung",
+      "building": null,
+      "note": "Das Seminar findet in Budapest/Ungarn statt"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416521",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

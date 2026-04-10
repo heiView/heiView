@@ -1,0 +1,39 @@
+{
+  "id": "0943K00003",
+  "title": "Sprachübung Bosnisch/Kroatisch/Serbisch III (B1.1)",
+  "type": "PC",
+  "ects_credits": "5",
+  "course_languages": "German",
+  "lecturers": [
+    "Petrak, Iva"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "Tschižewskij-Raum (2190.02.210)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22768",
+      "room": "Tschižewskij-Raum (2190.02.210)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "Seminarraum (2190.01.104)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23066",
+      "room": "Seminarraum (2190.01.104)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410630",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

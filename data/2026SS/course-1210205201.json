@@ -1,0 +1,29 @@
+{
+  "id": "1210205201",
+  "title": "Quaternary Geology in the Field (52)",
+  "type": null,
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Koutsodendris, Andreas"
+  ],
+  "start_date": "2026-09-12",
+  "end_date": "2026-09-17",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412743",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

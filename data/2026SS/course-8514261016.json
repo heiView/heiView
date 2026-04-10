@@ -1,0 +1,29 @@
+{
+  "id": "8514261016",
+  "title": "What is Jewish Theology?",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Engel, Michael"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "via Zoom"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416030",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

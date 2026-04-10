@@ -1,0 +1,29 @@
+{
+  "id": "0120739366",
+  "title": "Proseminar Physische Geographie: Böden im Wandel",
+  "type": "SE",
+  "ects_credits": "4",
+  "course_languages": "German",
+  "lecturers": [
+    "Pietsch, Dana"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Hörsaal (6348.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19189",
+      "room": "Hörsaal (6348.EG.015)",
+      "building": "Hörsaal, Im Neuenheimer Feld 348, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414339",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

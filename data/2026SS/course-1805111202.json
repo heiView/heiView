@@ -1,0 +1,39 @@
+{
+  "id": "1805111202",
+  "title": "Colloquium",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Engler, Fabian"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Unterrichtsraum (4310.02.035)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20520",
+      "room": "Unterrichtsraum (4310.02.035)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bibliotheksraum 2.OG"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413089",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

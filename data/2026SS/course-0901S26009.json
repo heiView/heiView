@@ -1,0 +1,29 @@
+{
+  "id": "0901S26009",
+  "title": "Imagination und Animation verlorener Heimat(en)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Stukenbrock, Anja"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Übungsraum (1010.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22576",
+      "room": "Übungsraum (1010.EG.038)",
+      "building": "Hauptstraße 207-209, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408715",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

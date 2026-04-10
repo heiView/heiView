@@ -1,0 +1,42 @@
+{
+  "id": "8503WSM111",
+  "title": "HP-F11 Tumor Heterogeneity and Proteomics (Lab and Seminar) (Practical Course with Student Seminars; Major Cancer Biology @ DKFZ)",
+  "type": "P",
+  "ects_credits": "10",
+  "course_languages": "English",
+  "lecturers": [
+    "Berghaus, Natalie",
+    "Krijgsveld, Jeroen",
+    "Pusch, Stefan René",
+    "Sotillo, Rocio"
+  ],
+  "start_date": "2026-06-01",
+  "end_date": "2026-06-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Part of Jeroen Krijgsveld: \"Proteomics\""
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414753",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

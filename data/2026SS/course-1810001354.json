@@ -1,0 +1,39 @@
+{
+  "id": "1810001354",
+  "title": "Field Experiments in Air Pollution",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Maus, Patrick"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "11:15",
+      "location": "Übungsraum (4140.02.215)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19286",
+      "room": "Übungsraum (4140.02.215)",
+      "building": "Bergheimer Straße 20, 2nd floor",
+      "note": "Lecture"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "location": "Übungsraum (4140.02.215)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19286",
+      "room": "Übungsraum (4140.02.215)",
+      "building": "Bergheimer Straße 20, 2nd floor",
+      "note": "Tutorial"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419123",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

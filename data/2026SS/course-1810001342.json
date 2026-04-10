@@ -1,0 +1,49 @@
+{
+  "id": "1810001342",
+  "title": "Behavioral Macroeconomics",
+  "type": "L",
+  "ects_credits": "8",
+  "course_languages": "English",
+  "lecturers": [
+    "Srivastava, Prachi"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-14",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum 00.010 (4310.EG.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18981",
+      "room": "Übungsraum 00.010 (4310.EG.010)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum 00.010 (4310.EG.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18981",
+      "room": "Übungsraum 00.010 (4310.EG.010)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Unterrichtsraum 02.036 (4310.02.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20521",
+      "room": "Unterrichtsraum 02.036 (4310.02.036)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414051",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

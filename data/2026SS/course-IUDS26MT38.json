@@ -1,0 +1,41 @@
+{
+  "id": "IUDS26MT38",
+  "title": "Projektarbeit Spanisch: Cultura del café y del chocolate",
+  "type": "PC",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Cruz Rubio, Adriana",
+    "Ramos Rivas, Karla Vanessa",
+    "Teucher, Mathis"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (3051.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19839",
+      "room": "Übungsraum (3051.EG.014)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (3051.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19839",
+      "room": "Übungsraum (3051.EG.014)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417120",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

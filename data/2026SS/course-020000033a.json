@@ -1,0 +1,29 @@
+{
+  "id": "020000033a",
+  "title": "Jugendstrafrecht",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Dr. Heuser, Martin), 020000.100"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "HS 07 (2170.01.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20592",
+      "room": "HS 07 (2170.01.037)",
+      "building": "HS 07, Grabengasse 3-5, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408763",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

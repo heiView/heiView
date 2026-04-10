@@ -1,0 +1,29 @@
+{
+  "id": "ZSL-SFRThB",
+  "title": "French C1: Thèmes actuels B",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "French",
+  "lecturers": [
+    "Nieradka-Steiner, Magali Laure"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "11:45",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413914",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

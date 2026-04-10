@@ -1,0 +1,49 @@
+{
+  "id": "020000097b",
+  "title": "Seminar: Steuerrecht und Grundrechte",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kube, Hanno"
+  ],
+  "start_date": "2026-02-19",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Eine virtuelle Vorbesprechung"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Findet in Heidelberg statt"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Findet in Heidelberg statt"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416862",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

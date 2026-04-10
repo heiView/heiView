@@ -1,0 +1,29 @@
+{
+  "id": "LuL-WBe01O",
+  "title": "(Digital) Learning and student wellbeing - Englisch (open for 4EU+)",
+  "type": "WS",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Koch, Maria Jochebed"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-06-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Link zur Teilnahme wird per Mail versendet"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414119",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

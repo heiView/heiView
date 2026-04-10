@@ -1,0 +1,29 @@
+{
+  "id": "9207850076",
+  "title": "Experimentelle Doktorarbeit (Teil 2): Zellkultur und mehr.",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Castagna, Arianna"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-04-13",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Ort/Zeit noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort/Zeit noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418496",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

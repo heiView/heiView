@@ -1,0 +1,29 @@
+{
+  "id": "1300112332",
+  "title": "Protoplanetary disks and planet formation (OberSem)",
+  "type": "SE",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Dullemond, Cornelis"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-09-22",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Institut for Theoretical Astrophysics, Albert-Uelberle-Str. 3-5, basement, Library"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410446",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

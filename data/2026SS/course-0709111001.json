@@ -1,0 +1,49 @@
+{
+  "id": "0709111001",
+  "title": "Übungen zur griechischen Sprache und Kultur I",
+  "type": "C",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Scheithauer, Andrea"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 09 (2170.01.041)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20596",
+      "room": "HS 09 (2170.01.041)",
+      "building": "HS 09, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 09 (2170.01.041)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20596",
+      "room": "HS 09 (2170.01.041)",
+      "building": "HS 09, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408492",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

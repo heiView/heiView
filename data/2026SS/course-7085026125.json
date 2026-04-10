@@ -1,0 +1,40 @@
+{
+  "id": "7085026125",
+  "title": "'Islamische Kunst' und 'Orient'-Bilder in Museen der Region. Islamwissenschaft und Kunstgeschichte im Dialog IV",
+  "type": "PC",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Kollatz, Anna Brigitte",
+    "Sölch, Brigitte"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-17",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "12:30",
+      "end_time": "13:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Vorbesprechung, Institut für Europäische Kunstgeschichte, Seminarraum 2"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Exkursion in Planung"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414341",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

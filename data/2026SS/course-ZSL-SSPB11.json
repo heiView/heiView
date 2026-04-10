@@ -1,0 +1,61 @@
+{
+  "id": "ZSL-SSPB11",
+  "title": "Spanish B1.1",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "Spanish",
+  "lecturers": [
+    "Martinez Sarrio, Paula",
+    "Pardo Ballester, Sara",
+    "Perez Diaz, Jose Lucio"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "19:15",
+      "end_time": "20:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Prüfung"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:15",
+      "end_time": "19:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413946",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

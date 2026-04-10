@@ -1,0 +1,30 @@
+{
+  "id": "0901S26073",
+  "title": "Republikanisches Theater und Verschwörung bei Schiller, Alfieri und Verdi",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bockius, Julian Manuel",
+    "Winkler, Daniel Bernhard"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (1010.01.122)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17441",
+      "room": "Übungsraum (1010.01.122)",
+      "building": "Hauptstraße 207-209, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414061",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

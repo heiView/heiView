@@ -1,0 +1,29 @@
+{
+  "id": "IDS26BU100",
+  "title": "Portugal Contemporâneo - História, Sociedade e Cultura",
+  "type": "PC",
+  "ects_credits": "3",
+  "course_languages": "Portuguese",
+  "lecturers": [
+    "<N.N.>(Ricardo Nogueira Guerra), 090900.100"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "location": "Übungsraum (3030.01.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28143",
+      "room": "Übungsraum (3030.01.005)",
+      "building": "Hauptstraße 52, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417613",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,260 @@
+{
+  "id": "9114600015",
+  "title": "BII - Seminar MSM (Woche 2)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Beckmann, Nicholas Andreas",
+    "Innmann, Moritz"
+  ],
+  "start_date": "2026-04-27",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "10:15",
+      "end_time": "10:30",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:30",
+      "end_time": "11:15",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:30",
+      "end_time": "15:45",
+      "location": "SCHLIERBACH P1 Sporthalle (9046.04.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30747",
+      "room": "SCHLIERBACH P1 Sporthalle (9046.04.009)",
+      "building": "Schlierbacher Landstraße 200A, 4th floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "13:45",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:45",
+      "end_time": "14:30",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:15",
+      "end_time": "11:15",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:30",
+      "end_time": "12:15",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "13:45",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:45",
+      "end_time": "14:30",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:30",
+      "end_time": "14:45",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "15:00",
+      "end_time": "15:15",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "15:30",
+      "end_time": "16:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "15:15",
+      "end_time": "16:30",
+      "location": "SCHLIERBACH P1 Sporthalle (9046.04.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30747",
+      "room": "SCHLIERBACH P1 Sporthalle (9046.04.009)",
+      "building": "Schlierbacher Landstraße 200A, 4th floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "14:45",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:45",
+      "end_time": "14:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "14:30",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "13:45",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:45",
+      "end_time": "14:30",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:45",
+      "end_time": "16:00",
+      "location": "SCHLIERBACH P1 Sporthalle (9046.04.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30747",
+      "room": "SCHLIERBACH P1 Sporthalle (9046.04.009)",
+      "building": "Schlierbacher Landstraße 200A, 4th floor",
+      "note": "obligat"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402340",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

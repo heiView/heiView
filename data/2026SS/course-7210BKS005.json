@@ -1,0 +1,59 @@
+{
+  "id": "7210BKS005",
+  "title": "Genetic Chimeras, Grafts & Mosaics",
+  "type": "C",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "Centanin, Lazaro"
+  ],
+  "start_date": "2026-07-14",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:30",
+      "end_time": "18:00",
+      "location": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16896",
+      "room": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "building": "Kleiner Hörsaal (kHS), Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Im Labor INF 230 5.OG"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "10:00",
+      "end_time": "14:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Im Labor INF230, 5.OG oder nach Vereinbarung"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "14:30",
+      "end_time": "18:00",
+      "location": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16896",
+      "room": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "building": "Kleiner Hörsaal (kHS), Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416073",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

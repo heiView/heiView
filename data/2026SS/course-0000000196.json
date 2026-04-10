@@ -1,0 +1,30 @@
+{
+  "id": "0000000196",
+  "title": "Einstufung und Beratung für Studierende mit Vorkenntnissen Russisch",
+  "type": "XC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kunz, Katharina",
+    "Megrelishvili, Ketevan"
+  ],
+  "start_date": "2026-04-01",
+  "end_date": "2026-04-01",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Komenský-Raum (2190.02.216)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23071",
+      "room": "Komenský-Raum (2190.02.216)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414721",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

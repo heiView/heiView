@@ -1,0 +1,30 @@
+{
+  "id": "7177010070",
+  "title": "Tutorium - Einführung in die Ur- und Frühgeschichte II",
+  "type": "T",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Neubert, Miriam Leokadia",
+    "Teucke, Andrea Monika"
+  ],
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408842",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

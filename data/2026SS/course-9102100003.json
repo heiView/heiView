@@ -1,0 +1,329 @@
+{
+  "id": "9102100003",
+  "title": "BII - Seminar Viszeralchirurgie",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klupp, Fee"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-09",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:45",
+      "end_time": "10:45",
+      "location": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28775",
+      "room": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:45",
+      "end_time": "16:30",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28775",
+      "room": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28775",
+      "room": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:05",
+      "end_time": "12:35",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "AVP",
+      "location_link": null,
+      "room": "AVP",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:30",
+      "end_time": "11:30",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:05",
+      "end_time": "12:50",
+      "location": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28775",
+      "room": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:30",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "AVP",
+      "location_link": null,
+      "room": "AVP",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "11:30",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "09:45",
+      "end_time": "10:45",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "09:30",
+      "end_time": "11:00",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
+      "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "AVP",
+      "location_link": null,
+      "room": "AVP",
+      "building": null,
+      "note": "Bitte Folien in Moodle beachten!"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:30",
+      "end_time": "12:45",
+      "location": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28775",
+      "room": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:45",
+      "end_time": "14:45",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:45",
+      "end_time": "16:30",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "AVP",
+      "location_link": null,
+      "room": "AVP",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:45",
+      "end_time": "14:45",
+      "location": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
+      "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:30",
+      "end_time": "11:30",
+      "location": "UFHK SR (6440.EG.274)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28796",
+      "room": "UFHK SR (6440.EG.274)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:30",
+      "end_time": "12:45",
+      "location": "UFHK SR (6440.EG.274)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28796",
+      "room": "UFHK SR (6440.EG.274)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:45",
+      "end_time": "14:45",
+      "location": "UFHK SR (6440.EG.274)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28796",
+      "room": "UFHK SR (6440.EG.274)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402277",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

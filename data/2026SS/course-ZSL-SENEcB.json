@@ -1,0 +1,30 @@
+{
+  "id": "ZSL-SENEcB",
+  "title": "English C1: English for Students of Economics B [ECON1d/ECON2d]",
+  "type": "PC",
+  "ects_credits": "7",
+  "course_languages": "English",
+  "lecturers": [
+    "Bueno Reynoso, Natia",
+    "Stevenson, Natalie Grace"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413798",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

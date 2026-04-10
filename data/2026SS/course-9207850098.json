@@ -1,0 +1,29 @@
+{
+  "id": "9207850098",
+  "title": "WFT07-IO - Forschung mit Konzept: Onkologie verstehen, planen, publizieren… und erfolgreich promovieren“ (Teil 1)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Hoffmann, Dirk Carsten Frieder"
+  ],
+  "start_date": "2026-04-18",
+  "end_date": "2026-04-18",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_time": "08:00",
+      "end_time": "18:45",
+      "location": "Seminarraum (6280.04.473)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31403",
+      "room": "Seminarraum (6280.04.473)",
+      "building": "Im Neuenheimer Feld 280, 4th floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417486",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

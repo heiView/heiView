@@ -1,0 +1,39 @@
+{
+  "id": "9104000014",
+  "title": "BIV - OP-Hospitationen",
+  "type": "XC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-03-02",
+  "end_date": "2026-06-30",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392333",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

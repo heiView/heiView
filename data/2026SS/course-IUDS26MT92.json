@@ -1,0 +1,29 @@
+{
+  "id": "IUDS26MT92",
+  "title": "Terminología dentro de las TAO",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "Spanish (primary)",
+  "lecturers": [
+    "Cuevas Lozano, Carlos Alberto"
+  ],
+  "start_date": "2026-05-18",
+  "end_date": "2026-05-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "14:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417610",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

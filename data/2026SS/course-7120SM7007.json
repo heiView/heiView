@@ -1,0 +1,59 @@
+{
+  "id": "7120SM7007",
+  "title": "Neural Basis of Behavior",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Abraham, Nixon"
+  ],
+  "start_date": "2026-05-07",
+  "end_date": "2026-06-25",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16896",
+      "room": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "building": "Kleiner Hörsaal (kHS), Im Neuenheimer Feld 231, Ground floor",
+      "note": "Introduction meeting (1)"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16896",
+      "room": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+      "building": "Kleiner Hörsaal (kHS), Im Neuenheimer Feld 231, Ground floor",
+      "note": "Introduction meeting (2)"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "SR 4 (6231.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18342",
+      "room": "SR 4 (6231.EG.004)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": "seminar day"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "SR 4 (6231.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18342",
+      "room": "SR 4 (6231.EG.004)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": "seminar day"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416844",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1002000701",
+  "title": "(AP) Emotionsregulation als Schlüssel psychischer Gesundheit – von Theorien zur Anwendung (BSc)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Geiger, Eva Johanna"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "UR C (3010.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23100",
+      "room": "UR C (3010.EG.020)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/403718",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}
