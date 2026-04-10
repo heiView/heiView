@@ -375,7 +375,6 @@ textarea {
 .hei-board-card {
   padding: 24px;
   border-radius: 28px;
-  overflow: hidden;
   background: var(--hei-surface) !important;
   border: 1px solid var(--hei-border) !important;
   box-shadow: var(--hei-shadow);
@@ -416,8 +415,9 @@ textarea {
 .hei-board-frame {
   position: relative;
   min-height: 380px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  max-height: calc(100vh - 240px); /* Constrain height to enable inner scrolling */
+  overflow: auto; /* Allow scrolling in both directions */
+  overscroll-behavior-y: contain; /* Prevent the entire page from sliding when scrolling hits bottom */
 }
 
 .hei-timetable-host {
@@ -453,7 +453,6 @@ textarea {
   min-width: 100%;
   width: 100%;
   position: relative;
-  overflow: hidden;
   border-radius: 20px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.04)),
@@ -467,8 +466,12 @@ textarea {
   top: 0;
   height: 42px;
   border-bottom: 1px solid var(--hei-border);
-  background: var(--hei-surface);
-  z-index: 10;
+  background: var(--hei-surface-strong); /* Less transparent to prevent text clashing */
+  backdrop-filter: blur(16px); /* Creates a glassy blur for elements sliding underneath */
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 20;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .hei-timetable-head-label {
