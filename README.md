@@ -80,10 +80,9 @@ npm run dev
 This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 ---
-<br>
 
 <a id="chinese-version"></a>
-### 项目简介
+### 简介
 
 受够了heiCO里谜一样的建筑物地址？厌烦了想查个教室还要先连 VPN？想上自习却总不确定等会是否有人上课？
 
