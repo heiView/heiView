@@ -103,7 +103,7 @@ const UI_TEXT = {
     searchPlaceholder: '教室、课程或教师',
     selectedBuildingFallback: '未选择建筑',
     noteLabel: '备注：',
-    reportError: '汇报错误',
+    reportError: '反馈错误',
   },
   en: {
     brand: 'heiView',
@@ -826,7 +826,10 @@ function App() {
                 {selectedCourse ? resolveLocalizedText(selectedCourse.course.name, language) : ''}
               </span>
               {selectedCourse && (
-                <div
+                <a
+                  href="https://github.com/heiView/heiView/issues/new"
+                  target="_blank"
+                  rel="noreferrer"
                   className="report-error-btn"
                   style={{
                     display: 'inline-flex',
@@ -841,7 +844,8 @@ function App() {
                     whiteSpace: 'nowrap',
                     flexShrink: 0,
                     cursor: 'pointer',
-                    userSelect: 'none'
+                    userSelect: 'none',
+                    textDecoration: 'none'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#fff1f0';
@@ -849,13 +853,9 @@ function App() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.backgroundColor = 'transparent';
                   }}
-                  onClick={(e) => {
-                    // Email feature temporarily removed per user request
-                    e.preventDefault();
-                  }}
                 >
                   {text.reportError}
-                </div>
+                </a>
               )}
             </div>
           }
