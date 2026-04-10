@@ -176,6 +176,9 @@ function formatCampusOptionLabel(campus: Campus) {
   if (campus === 'Altstadt' || campus === 'Bergheim') {
     return `${campus} Campus`
   }
+  if (campus === 'Im Neuenheimer Feld') {
+    return 'INF Campus'
+  }
   return campus
 }
 

@@ -865,15 +865,15 @@ textarea {
 }
 
 .hei-topbar-campus {
-  flex: 0 0 200px !important;
-  width: 200px !important;
+  flex: 0 0 180px !important;
+  width: 180px !important;
 }
 
 .hei-control-select {
   flex: 0 0 auto !important;
-  /* Dynamic exact width: Container 100% minus Campus(200) minus Gap(16) */
-  width: calc(100% - 216px) !important;
-  /* Min width 200 forces wrap when container < 416px, AND limits the 100% calc on new line to keep it exactly 200px */
-  min-width: 200px !important;
+  /* Dynamic exact width: Container 100% minus Campus(180) minus Gap(16) */
+  width: calc(100% - 196px) !important;
+  /* Min width 180 forces wrap when container < 376px, AND limits the 100% calc on new line to keep it exactly 180px */
+  min-width: 180px !important;
   max-width: 335px !important;
 }
