@@ -804,8 +804,8 @@ textarea {
   }
 
   .hei-footer-content {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
     margin-bottom: 32px;
   }
 }
@@ -820,8 +820,8 @@ textarea {
   }
 
   .hei-footer-content {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 12px;
     margin-bottom: 24px;
   }
 
