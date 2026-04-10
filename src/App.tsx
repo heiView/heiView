@@ -852,8 +852,6 @@ function App() {
                 <h4>About</h4>
                 <ul>
                   <li><a href="/about">About Us</a></li>
-                  <li><a href="#joinus">Join Us</a></li>
-                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
             </div>
