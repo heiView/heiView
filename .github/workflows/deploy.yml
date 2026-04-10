@@ -18,7 +18,8 @@ jobs:
           script: |
             set -e
             cd ~/heiView
-            git pull origin main
+            git fetch origin
+            git reset --hard origin/main
             npm install
             npm run build
             pm2 restart heiview-api
