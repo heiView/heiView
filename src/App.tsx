@@ -22,7 +22,6 @@ import {
 } from '@ant-design/icons'
 import DarkModeButton from './components/DarkModeButton/DarkModeButton'
 import { CAMPUS_OPTIONS, resolveCampusFromBuilding, type Campus } from './campusConfig'
-import LanguageToggle from './components/LanguageToggle/LanguageToggle'
 import useStore from './store'
 
 type Language = 'zh' | 'en' | 'de'
@@ -384,19 +383,11 @@ async function fetchSchedule(date: string) {
 }
 
 function App() {
-  const params = useParams<{ lang?: string; building?: string }>()
+  const params = useParams<{ building?: string }>()
   const navigate = useNavigate()
-  const { setLanguage } = useStore((state) => ({ setLanguage: state.setLanguage }))
-  const language = useStore((state) => state.language)
   const theme = useStore((state) => state.theme)
-  const text = UI_TEXT[language] || UI_TEXT.zh
-
-  React.useEffect(() => {
-    const paramLang = params.lang as Language | undefined
-    if (paramLang && ['zh', 'en', 'de'].includes(paramLang)) {
-      setLanguage(paramLang)
-    }
-  }, [params.lang, setLanguage])
+  const language: Language = 'en'
+  const text = UI_TEXT[language]
 
   const [schedule, setSchedule] = React.useState<ScheduleResponse | null>(null)
   const [selectedCampus, setSelectedCampus] = React.useState<Campus>('Altstadt')
@@ -406,19 +397,41 @@ function App() {
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
   const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
-  
 
-  const initialBuildingRef = React.useRef<string | undefined>(params.building)
-
+  const initializedRef = React.useRef(false)
+  const campusSyncedRef = React.useRef(false)
 
   React.useEffect(() => {
-    const currentLang = language || 'zh'
-    if (!selectedBuilding) {
-      navigate(`/${currentLang}`, { replace: true })
-    } else {
-      navigate(`/${currentLang}/${selectedBuilding}`, { replace: true })
+    if (params.building) {
+      setSelectedBuilding(params.building)
     }
-  }, [selectedBuilding, language, navigate])
+  }, [params.building])
+
+  React.useEffect(() => {
+    if (!schedule || !selectedBuilding) return
+
+    const selectedBuildingData = schedule.buildings.find((b) => b.id === selectedBuilding)
+    if (!selectedBuildingData) return
+
+    const street = resolveLocalizedText(selectedBuildingData.street, language) || selectedBuildingData.id
+    const buildingCampus = normalizeCampusValue(selectedBuildingData.campus) || resolveCampusName(street) || 'Other'
+
+    campusSyncedRef.current = true
+    setSelectedCampus(buildingCampus as Campus)
+  }, [selectedBuilding, schedule, language])
+
+  React.useEffect(() => {
+    if (!initializedRef.current) {
+      initializedRef.current = true
+      return
+    }
+
+    if (selectedBuilding) {
+      navigate(`/${selectedBuilding}`, { replace: true })
+    } else {
+      navigate('/', { replace: true })
+    }
+  }, [selectedBuilding, navigate])
 
   React.useEffect(() => {
     let alive = true
@@ -432,29 +445,33 @@ function App() {
         if (!alive) return
 
         setSchedule(data)
-
-        let firstBuilding = '';
-        if (selectedCampus === 'Other') {
-          const unknownBuilding = data.buildings.find(b => b.id === 'Unknown' && (normalizeCampusValue(b.campus) || resolveCampusName(resolveLocalizedText(b.street, language) || b.id) || 'Other') === 'Other');
-          if (unknownBuilding) firstBuilding = unknownBuilding.id;
-        }
-        if (!firstBuilding) {
-          firstBuilding = data.buildings.find((building) => {
-            const street = resolveLocalizedText(building.street, language) || building.id
-            const campus = normalizeCampusValue(building.campus) || resolveCampusName(street) || 'Other'
-            return campus === selectedCampus
-          })?.id || ''
-        }
+        
         setSelectedBuilding((current) => {
-          const buildingFromUrl = initialBuildingRef.current
-          if (buildingFromUrl && data.buildings.some((building) => building.id === buildingFromUrl)) {
-            return buildingFromUrl
+          if (current) {
+            if (data.buildings.some((building) => building.id === current)) {
+              return current
+            }
+            
+            const lowerCurrent = current.toLowerCase()
+            const matchedBuilding = data.buildings.find((building) => 
+              building.id.toLowerCase() === lowerCurrent
+            )
+            if (matchedBuilding) {
+              return matchedBuilding.id
+            }
           }
-
-          if (current && data.buildings.some((building) => building.id === current)) {
-            return current
+          let firstBuilding = '';
+          if (selectedCampus === 'Other') {
+            const unknownBuilding = data.buildings.find(b => b.id === 'Unknown' && (normalizeCampusValue(b.campus) || resolveCampusName(resolveLocalizedText(b.street, language) || b.id) || 'Other') === 'Other');
+            if (unknownBuilding) firstBuilding = unknownBuilding.id;
           }
-
+          if (!firstBuilding) {
+            firstBuilding = data.buildings.find((building) => {
+              const street = resolveLocalizedText(building.street, language) || building.id
+              const campus = normalizeCampusValue(building.campus) || resolveCampusName(street) || 'Other'
+              return campus === selectedCampus
+            })?.id || ''
+          }
           return firstBuilding
         })
       } catch (loadError) {
@@ -506,6 +523,11 @@ function App() {
   }, [filteredBuildingOptions, selectedBuilding, selectedCampus])
 
   React.useEffect(() => {
+    if (campusSyncedRef.current) {
+      campusSyncedRef.current = false
+      return
+    }
+
     if (filteredBuildingOptions.length === 0) return
     if (!filteredBuildingOptions.some((option) => option.value === selectedBuilding)) {
       if (selectedCampus === 'Other') {
@@ -608,7 +630,6 @@ function App() {
 
               <Space size="middle" wrap align="center" className="hei-toolbar-actions">
                 <DarkModeButton className="hei-toolbar-icon-button" />
-                <LanguageToggle className="hei-toolbar-segmented" />
                 <Input
                   size="large"
                   allowClear

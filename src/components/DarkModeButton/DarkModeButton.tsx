@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Tooltip } from 'antd'
+import { Button } from 'antd'
 import { MoonOutlined, SunOutlined } from '@ant-design/icons'
 import useStore from '../../store'
 
@@ -27,18 +27,16 @@ function DarkModeButton({ className }: { className?: string }) {
   const Icon = theme === 'dark' ? SunOutlined : MoonOutlined
 
   return (
-    <Tooltip title={label}>
-      <Button
-        type="text"
-        shape="circle"
-        size="large"
-        className={className}
-        onClick={toggleTheme}
-        aria-label={label}
-        aria-pressed={theme === 'dark'}
-        icon={<Icon />}
-      />
-    </Tooltip>
+    <Button
+      type="text"
+      shape="circle"
+      size="large"
+      className={className}
+      onClick={toggleTheme}
+      aria-label={label}
+      aria-pressed={theme === 'dark'}
+      icon={<Icon />}
+    />
   )
 }
 

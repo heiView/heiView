@@ -5,21 +5,18 @@ import App from './App'
 import 'antd/dist/reset.css'
 import './styles.css'
 
-console.debug('[main] React entry loaded');
-
 function Router() {
   return (
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/:lang" element={<App />} />
-      <Route path="/:lang/:building" element={<App />} />
+      <Route path="/:building" element={<App />} />
     </Routes>
   )
 }
 
-const rootEl = document.getElementById('root');
-if (!rootEl) console.error('[main] #root not found');
-createRoot(rootEl!).render(
+const rootEl = document.getElementById('root')
+if (!rootEl) throw new Error('Root element not found')
+createRoot(rootEl).render(
   <React.StrictMode>
     <BrowserRouter>
       <Router />

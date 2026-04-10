@@ -458,9 +458,12 @@ textarea {
 .hei-timetable-head {
   display: flex;
   align-items: center;
-  position: relative;
+  position: sticky;
+  top: 0;
   height: 42px;
   border-bottom: 1px solid var(--hei-border);
+  background: var(--hei-surface);
+  z-index: 10;
 }
 
 .hei-timetable-head-label {
