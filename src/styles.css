@@ -6,9 +6,9 @@
   --hei-muted: #5e728f;
   --hei-border: rgba(16, 33, 58, 0.08);
   --hei-shadow: 0 20px 60px rgba(8, 24, 48, 0.12);
-  --hei-primary: #0f62fe;
-  --hei-primary-strong: #5b8cff;
-  --hei-primary-soft: rgba(15, 98, 254, 0.12);
+  --hei-primary: #003a65;
+  --hei-primary-strong: #2d7aaf;
+  --hei-primary-soft: rgba(0, 58, 101, 0.12);
   --hei-grid: rgba(16, 33, 58, 0.08);
   --hei-grid-strong: rgba(16, 33, 58, 0.16);
 }
@@ -21,9 +21,9 @@
   --hei-muted: #9bb1cb;
   --hei-border: rgba(233, 241, 255, 0.08);
   --hei-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
-  --hei-primary: #7ab2ff;
-  --hei-primary-strong: #4f88ff;
-  --hei-primary-soft: rgba(122, 178, 255, 0.14);
+  --hei-primary: #4fa3d1;
+  --hei-primary-strong: #7eb9dd;
+  --hei-primary-soft: rgba(79, 163, 209, 0.14);
   --hei-grid: rgba(255, 255, 255, 0.06);
   --hei-grid-strong: rgba(255, 255, 255, 0.12);
 }
