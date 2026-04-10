@@ -101,7 +101,9 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 ### 简介
 
 受够了heiCO里谜一样的建筑地址吗？
+
 很烦查个教室还要先点开OTP连VPN吗？
+
 想上自习却不确定等会是否有人上课吗？
 
 这些看似细小的问题，却每天都在影响着海德堡大学学生们的体验。而heiView正是为此而生。
