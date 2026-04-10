@@ -130,17 +130,38 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; /* Only wraps if items collide */
+}
+
+.hei-brand-cluster {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 0px;
+  min-width: max-content;
+  justify-content: flex-start;
 }
 
 .hei-topbar-center {
   display: flex;
   align-items: center;
+  justify-content: center;
   pointer-events: auto;
+  flex: 0 0 auto;
+}
+
+.hei-toolbar-actions {
+  display: flex;
+  align-items: center !important;
+  gap: 8px;
+  flex-wrap: nowrap !important;
+  flex: 1 1 0px;
+  justify-content: flex-end;
+  min-width: max-content;
 }
 
 .hei-topbar-date {
-  width: 180px;
+  width: 150px;
   pointer-events: auto;
 }
 
@@ -162,21 +183,11 @@ textarea {
   gap: 16px;
 }
 
-.hei-brand-cluster {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
-}
-
 .hei-topbar-campus-wrap {
   display: inline-flex;
   align-items: center;
 }
 
-.hei-topbar-campus {
-  width: 200px;
-}
 
 /* Campus selector styling - left aligned */
 .hei-topbar-campus .ant-select-selection-item {
@@ -243,23 +254,17 @@ textarea {
   font-size: 0.9rem;
 }
 
-.hei-toolbar-actions {
-  align-items: center !important;
-  gap: 8px;
-  flex-wrap: nowrap !important;
-  margin-left: 8px;
-}
-
 .hei-toolbar-icon-button,
 .hei-toolbar-segmented {
   height: 40px;
+  flex-shrink: 0;
 }
 
 .hei-toolbar-search {
   height: 40px;
-  width: min(305px, 32vw);
-  min-width: 140px;
-  flex: 0 1 auto;
+  width: min(305px, 1fr);
+  min-width: 120px;
+  flex: 1 1 140px;
 }
 
 .hei-toolbar-icon-button.ant-btn,
@@ -620,47 +625,6 @@ textarea {
   .hei-content {
     padding-top: 136px;
   }
-
-  .hei-topbar-inner {
-    width: min(100vw - 24px, 1680px);
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-    row-gap: 8px;
-  }
-
-  .hei-brand-cluster {
-    grid-column: 1;
-    grid-row: 1;
-    min-width: 0;
-  }
-
-  .hei-topbar-center {
-    grid-column: 2;
-    grid-row: 1;
-    width: auto;
-    justify-content: flex-end;
-  }
-
-  .hei-toolbar-actions {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    width: 100%;
-    justify-content: flex-end;
-    margin-left: 0;
-    min-width: 0;
-  }
-
-  .hei-topbar-campus {
-    width: 200px;
-  }
-
-  .hei-toolbar-search {
-    width: auto;
-    min-width: 0;
-    max-width: 260px;
-    flex: 1 1 140px;
-  }
 }
 
 @media (max-width: 640px) {
@@ -670,18 +634,18 @@ textarea {
   }
 
   .hei-content {
-    padding-top: 148px;
+    padding-top: 148px; /* Give room in case they wrap */
   }
 
   .hei-topbar-inner {
-    width: min(100vw - 16px, 1680px);
     padding: 8px 6px;
     gap: 8px;
   }
 
   .hei-topbar-date {
-    width: 130px;
+    width: 150px;
   }
+
 
   .hei-brand-mark {
     width: 38px;
@@ -693,14 +657,12 @@ textarea {
     font-size: 1.1rem !important;
   }
 
-  .hei-topbar-campus {
-    width: 200px;
-  }
 
   .hei-toolbar-search {
-    max-width: 180px;
-    flex: 1 1 100px;
-    min-width: 80px;
+    flex: 1 1 80px;
+    min-width: 70px;
+    max-width: 140px;
+    width: auto;
   }
 
   .hei-controls-card,
@@ -891,4 +853,27 @@ textarea {
 /* Adjust dropdown height so it doesn't force a scroll immediately */
 .hei-building-dropdown-multi .rc-virtual-list-holder {
   max-height: 60vh !important;
+}
+
+.hei-campus-building-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.hei-topbar-campus {
+  flex: 0 0 160px !important;
+  width: 160px !important;
+}
+
+.hei-control-select {
+  flex: 0 0 auto !important;
+  /* Dynamic exact width: Container 100% minus Campus(160) minus Gap(16) */
+  width: calc(100% - 176px) !important;
+  /* Min width 160 forces wrap when container < 336px, AND limits the 100% calc on new line to keep it exactly 160px */
+  min-width: 160px !important;
+  max-width: 335px !important;
 }

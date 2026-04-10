@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import dayjs, { Dayjs } from 'dayjs'
 import {
   Alert,
@@ -383,15 +383,16 @@ async function fetchSchedule(date: string) {
 }
 
 function App() {
-  const params = useParams<{ building?: string }>()
+  const location = useLocation()
   const navigate = useNavigate()
+  const buildingFromUrl = location.pathname === '/' ? '' : decodeURIComponent(location.pathname.slice(1))
   const theme = useStore((state) => state.theme)
   const language: Language = 'en'
   const text = UI_TEXT[language]
 
   const [schedule, setSchedule] = React.useState<ScheduleResponse | null>(null)
   const [selectedCampus, setSelectedCampus] = React.useState<Campus>('Altstadt')
-  const [selectedBuilding, setSelectedBuilding] = React.useState<string>(() => params.building || '')
+  const [selectedBuilding, setSelectedBuilding] = React.useState<string>(() => buildingFromUrl)
   const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => dayjs())
   const [search, setSearch] = React.useState('')
   const [loading, setLoading] = React.useState(true)
@@ -402,10 +403,10 @@ function App() {
   const campusSyncedRef = React.useRef(false)
 
   React.useEffect(() => {
-    if (params.building) {
-      setSelectedBuilding(params.building)
+    if (buildingFromUrl) {
+      setSelectedBuilding(buildingFromUrl)
     }
-  }, [params.building])
+  }, [buildingFromUrl])
 
   React.useEffect(() => {
     if (!schedule || !selectedBuilding) return
@@ -427,7 +428,7 @@ function App() {
     }
 
     if (selectedBuilding) {
-      navigate(`/${selectedBuilding}`, { replace: true })
+      navigate('/' + encodeURIComponent(selectedBuilding), { replace: true })
     } else {
       navigate('/', { replace: true })
     }
@@ -602,20 +603,6 @@ function App() {
                     <img src="/heiView_logo.png" alt={text.brand} className="hei-brand-logo" />
                   </a>
                 </div>
-                <Space size={8} align="center" className="hei-topbar-campus-wrap">
-                  <Select
-                    size="large"
-                    value={selectedCampus}
-                    options={CAMPUS_OPTIONS.map((campus) => ({
-                      value: campus,
-                      label: formatCampusOptionLabel(campus),
-                    }))}
-                    popupMatchSelectWidth={false}
-                    popupClassName="hei-campus-dropdown"
-                    onChange={(value) => setSelectedCampus(value as Campus)}
-                    className="hei-topbar-campus"
-                  />
-                </Space>
               </div>
 
               <div className="hei-topbar-center">
@@ -648,26 +635,33 @@ function App() {
 
             <section className="hei-board-card">
             <div className="hei-board-controls">
-              <Row gutter={[16, 16]} align="middle">
-                <Col xs={24} sm={24} lg={12}>
-                  <Space direction="horizontal" size={12} align="center" className="hei-control-group hei-control-inline">
-                    <Select
-                      size="large"
-                      value={activeBuildingId || undefined}
-                      placeholder={text.selectedBuildingFallback}
-                      options={filteredBuildingOptions.map(({ campus, ...option }) => option)}
-                      popupMatchSelectWidth={false}
-                      onChange={(value) => setSelectedBuilding(value)}
-                      disabled={filteredBuildingOptions.length === 0}
-                      className="hei-control-select"
-                      style={{ width: 335 }}
-                      virtual={false}
-                      listHeight={500}
-                      popupClassName="hei-building-dropdown-multi"
-                    />
-                  </Space>
-                </Col>
-              </Row>
+              <div className="hei-campus-building-row">
+                <Select
+                  size="large"
+                  value={selectedCampus}
+                  options={CAMPUS_OPTIONS.map((campus) => ({
+                    value: campus,
+                    label: formatCampusOptionLabel(campus),
+                  }))}
+                  popupMatchSelectWidth={false}
+                  popupClassName="hei-campus-dropdown"
+                  onChange={(value) => setSelectedCampus(value as Campus)}
+                  className="hei-topbar-campus"
+                />
+                <Select
+                  size="large"
+                  value={activeBuildingId || undefined}
+                  placeholder={text.selectedBuildingFallback}
+                  options={filteredBuildingOptions.map(({ campus, ...option }) => option)}
+                  popupMatchSelectWidth={false}
+                  onChange={(value) => setSelectedBuilding(value)}
+                  disabled={filteredBuildingOptions.length === 0}
+                  className="hei-control-select"
+                  virtual={false}
+                  listHeight={500}
+                  popupClassName="hei-building-dropdown-multi"
+                />
+              </div>
             </div>
 
             <div className="hei-board-controls-divider" />

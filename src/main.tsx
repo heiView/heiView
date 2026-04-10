@@ -9,7 +9,7 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/:building" element={<App />} />
+      <Route path="/*" element={<App />} />
     </Routes>
   )
 }
