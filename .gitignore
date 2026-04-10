@@ -30,5 +30,3 @@ data/*.db-wal
 # Python cache
 __pycache__/
 *.py[cod]
-
-.gitignore
