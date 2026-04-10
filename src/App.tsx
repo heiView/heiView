@@ -800,7 +800,7 @@ function App() {
               <div className="hei-footer-section">
                 <h4>Developers</h4>
                 <ul>
-                  <li><a href="https://github.com/hitable" target="_blank" rel="noreferrer">GitHub</a></li>
+                  <li><a href="https://github.com/heiView/heiView" target="_blank" rel="noreferrer">GitHub</a></li>
                 </ul>
               </div>
 
