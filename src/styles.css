@@ -257,7 +257,7 @@ textarea {
 
 .hei-toolbar-search {
   height: 40px;
-  width: min(300px, 32vw);
+  width: min(305px, 32vw);
   min-width: 140px;
   flex: 0 1 auto;
 }
@@ -477,7 +477,7 @@ textarea {
 .hei-hour-label {
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-75%, -50%);
   color: var(--hei-muted);
   font-size: 13px;
   font-weight: 600;
