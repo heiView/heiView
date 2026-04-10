@@ -836,23 +836,22 @@ function App() {
               <div className="hei-footer-section">
                 <h4>Support</h4>
                 <ul>
-                  <li><a href="#faq">FAQ</a></li>
-                  <li><a href="#feedback">Feedback</a></li>
-                  <li><a href="#privacy">Privacy Policy</a></li>
+                  <li><a href="/imprint">Imprint</a></li>
+                  <li><a href="/privacy">Privacy Policy</a></li>
                 </ul>
               </div>
 
               <div className="hei-footer-section">
                 <h4>Developers</h4>
                 <ul>
-                  <li><a href="https://github.com/heiView/heiView" target="_blank" rel="noreferrer">GitHub</a></li>
+                  <li><a href="https://github.com/heiView/heiView" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 </ul>
               </div>
 
               <div className="hei-footer-section">
                 <h4>About</h4>
                 <ul>
-                  <li><a href="#team">Team</a></li>
+                  <li><a href="/about">About Us</a></li>
                   <li><a href="#joinus">Join Us</a></li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>

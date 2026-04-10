@@ -55,14 +55,14 @@ Due to incomplete and inconsistently formatted data in heiCO, over 700 out of th
 
 The project relies on Python scripts in the `crawler/` directory to download course data from heiCO. Raw scraped results are saved as JSON files in the `data/2026SS/` directory.
 
-1. **Full Batch Crawl**: Run `python 2026ss.py` to traverse and download all ~4,000 courses for the 2026 Summer Semester. This requires campus network or university VPN access and takes considerable time.
+1. **Full Batch Crawl**: Run `python heico_crawler.py` to traverse and download all ~4,000 courses for the 2026 Summer Semester. This requires campus network or university VPN access and takes considerable time.
 2. **Small Test Crawl**: When developing features or fixing parsing bugs, use this to grab a limited number of courses for quick testing:
    ```python
-   python 2026ss.py --limit-courses 10
+   python heico_crawler.py --limit-courses 10
    ```
 3. **Single Course Crawl**: Test precise parsing against a single course URL:
    ```python
-   python 2026ss.py --course-url "<heiCO course URL>"
+   python heico_crawler.py --course-url "<heiCO course URL>"
    ```
 4. **Incremental Updates**: Repeated runs only write files when course web page content changes, avoiding unnecessary disk I/O. Room details are fetched only when room information changes, reducing load on heiCO.
 
@@ -130,17 +130,17 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 项目依赖 `crawler/` 目录下的 Python 脚本从heiCO下载课程数据。原始抓取的结果会以 JSON 文件的形式保存在 `data/2026SS/` 目录中。
 
-1. **全量爬取**：运行脚本 2026ss.py，程序将会遍历并下载全部2026年夏季学期课程，约4000条，此过程需要在校园网或大学VPN下进行。
+1. **全量爬取**：运行脚本 heico_crawler.py，程序将会遍历并下载全部2026年夏季学期课程，约4000条，此过程需要在校园网或大学VPN下进行。
 1. **少量测试**：在开发新功能或修复解析 BUG 时，可以使用以下命令爬取若干条课程信息进行小规模测试。
 
 	```python
-	python 2026ss.py --limit-courses 10
+	python heico_crawler.py --limit-courses 10
 	```
 
 1. **单页爬取**：可使用以下命令爬取单一课程进行精准测试。
 
 	```python
-	python 2026ss.py --course-url "<heiCO课程网址>"
+	python heico_crawler.py --course-url "<heiCO课程网址>"
 	```
 
 1. **增量爬取**：重复运行时，只在发现课程网页内容变化时才写入文件，避免无意义的写盘。检测到教室信息发生变化时才进一步爬取教室详情页，减少heiCO访问压力。
