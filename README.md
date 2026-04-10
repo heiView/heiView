@@ -1,10 +1,10 @@
 <div align="center">
-  <a href="https://heiview.de/">
+  <a href="https://heiview.de/" target="_blank" rel="noopener noreferrer">
     <img src="public/heiView_logo.png" alt="heiView Logo" height="80" />
   </a>
   </br>
   </br>
-  <a href="https://heiview.de/"> https://heiview.de </a>
+  <a href="https://heiview.de/" target="_blank" rel="noopener noreferrer"> https://heiview.de </a>
 </div>
 
 
