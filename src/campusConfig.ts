@@ -5,8 +5,6 @@ type CampusBuildingRule = {
   patterns: string[]
 }
 
-// Add exact building names or stable keywords here.
-// Matching is case-insensitive and works by substring.
 export const CAMPUS_BUILDING_RULES: CampusBuildingRule[] = [
   {
     campus: 'Altstadt',

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import dayjs, { Dayjs } from 'dayjs'
 import {
   Alert,
@@ -383,18 +384,41 @@ async function fetchSchedule(date: string) {
 }
 
 function App() {
+  const params = useParams<{ lang?: string; building?: string }>()
+  const navigate = useNavigate()
+  const { setLanguage } = useStore((state) => ({ setLanguage: state.setLanguage }))
   const language = useStore((state) => state.language)
   const theme = useStore((state) => state.theme)
   const text = UI_TEXT[language] || UI_TEXT.zh
 
+  React.useEffect(() => {
+    const paramLang = params.lang as Language | undefined
+    if (paramLang && ['zh', 'en', 'de'].includes(paramLang)) {
+      setLanguage(paramLang)
+    }
+  }, [params.lang, setLanguage])
+
   const [schedule, setSchedule] = React.useState<ScheduleResponse | null>(null)
   const [selectedCampus, setSelectedCampus] = React.useState<Campus>('Altstadt')
-  const [selectedBuilding, setSelectedBuilding] = React.useState<string>('')
+  const [selectedBuilding, setSelectedBuilding] = React.useState<string>(() => params.building || '')
   const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => dayjs())
   const [search, setSearch] = React.useState('')
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
   const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
+  
+
+  const initialBuildingRef = React.useRef<string | undefined>(params.building)
+
+
+  React.useEffect(() => {
+    const currentLang = language || 'zh'
+    if (!selectedBuilding) {
+      navigate(`/${currentLang}`, { replace: true })
+    } else {
+      navigate(`/${currentLang}/${selectedBuilding}`, { replace: true })
+    }
+  }, [selectedBuilding, language, navigate])
 
   React.useEffect(() => {
     let alive = true
@@ -422,9 +446,15 @@ function App() {
           })?.id || ''
         }
         setSelectedBuilding((current) => {
+          const buildingFromUrl = initialBuildingRef.current
+          if (buildingFromUrl && data.buildings.some((building) => building.id === buildingFromUrl)) {
+            return buildingFromUrl
+          }
+
           if (current && data.buildings.some((building) => building.id === current)) {
             return current
           }
+
           return firstBuilding
         })
       } catch (loadError) {
