@@ -43,7 +43,7 @@ There are still some contents to be improved, such as incomplete building floors
 
 ### To Do List
 
-Due to incomplete and inconsistently formatted data in heiCO, over 700 out of the 4,000+ courses in the 2026 Summer Semester lack directly downloadable schedule and location information. These courses are currently placed under Other → No Information and some courses with incomplete information are placed in Other -> Unknow， require manual addition.
+Due to incomplete and inconsistently formatted data in heiCO, over 700 out of the 4,000+ courses in the 2026 Summer Semester lack directly downloadable schedule and location information. These courses are currently placed under "Other → No Information" and some courses with incomplete information are placed in "Other → Unknown"， require manual addition.
 
 **We warmly welcome contributions!** You can:
 
@@ -126,7 +126,7 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 ### 待办事项
 
-由于heiCO上的课程信息存在大量缺失和格式不规范等问题，2026夏季学期的4000+门课程里有超过700门没有可以直接下载的时间和地点信息，目前被放置在Other -> No Information中，还有部分信息不全的课程被放在Other -> Unknow里，都需要后续手动添加，欢迎感兴趣的同学邮件我(ht305)加入本项目一同编辑，也欢迎创建Issue提出反馈/建议或直接修改文件提交Pull Request。
+由于heiCO上的课程信息存在大量缺失和格式不规范等问题，2026夏季学期的4000+门课程里有超过700门没有可以直接下载的时间和地点信息，目前被放置在Other -> No Information中，还有部分信息不全的课程被放在Other -> Unknown里，都需要后续手动添加，欢迎感兴趣的同学邮件我(ht305)加入本项目一同编辑，也欢迎创建Issue提出反馈/建议或直接修改文件提交Pull Request。
 
 ### 爬虫工具
 
