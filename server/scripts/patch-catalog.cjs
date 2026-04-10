@@ -24,7 +24,6 @@ function normalizeFloorLabel(label) {
 }
 
 function splitBuildingAndFloor(value) {
-
   if (!value || typeof value !== 'string') return { buildingName: null, floorLabel: null };
   const text = value.trim();
   if (!text) return { buildingName: null, floorLabel: null };
@@ -153,15 +152,21 @@ function main() {
   for (const file of files) {
     const payload = JSON.parse(fs.readFileSync(path.join(COURSE_DIR, file), 'utf8'));
     const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
+
     for (const week of weeks) {
       if (week.building) continue;
       const rawRoom = week.room || week.location || '';
+
+      // Skip empty location data
+      if (!rawRoom.trim()) continue;
+
       const inf = parseInfRoom(rawRoom);
       const voss = parseVossRoom(rawRoom, week.building, week.note);
       const akad = parseAkademiestrasse(rawRoom);
       const schlierbacher = parseSchlierbacher(rawRoom);
       const zsl = parseZSL(rawRoom);
       const poliklinik = parsePoliklinik(rawRoom);
+
       if (inf) {
         let bld = buildingsMap.get(inf.buildingName);
         if (!bld) {
@@ -224,7 +229,6 @@ function main() {
           };
           bld.rooms.push(roomObj);
         }
-      
       
       } else if (zsl) {
         let bld = buildingsMap.get(zsl.buildingName);
@@ -348,12 +352,56 @@ function main() {
           };
           bld.rooms.push(roomObj);
         }
+      } else {
+        // Fallback logic for completely unrecognized rooms/buildings
+        const split = splitBuildingAndFloor(rawRoom);
+        const fallbackBuildingName = split.buildingName || rawRoom.trim();
+        const floorLabel = split.floorLabel;
+        
+        let bld = buildingsMap.get(fallbackBuildingName);
+        if (!bld) {
+          const safeIdPart = fallbackBuildingName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          const uniqueSuffix = Math.random().toString(36).substring(2, 8);
+          
+          bld = {
+            id: `bld-other-${safeIdPart || uniqueSuffix}`,
+            street: fallbackBuildingName,
+            displayName: fallbackBuildingName,
+            campusId: "other",
+            floors: [],
+            rooms: []
+          };
+          catalog.buildings.push(bld);
+          buildingsMap.set(fallbackBuildingName, bld);
+        }
+        
+        let targetRoomName = rawRoom.trim();
+        let roomObj = bld.rooms.find(r => r.name === targetRoomName);
+        
+        if (!roomObj) {
+          const safeRoomId = targetRoomName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          roomObj = {
+            id: `${bld.id}::rm-${safeRoomId || 'unbekannt'}`,
+            name: targetRoomName,
+            floors: [],
+            features: {},
+            notes: "Auto-generated fallback from unparsed location. Needs manual review."
+          };
+          bld.rooms.push(roomObj);
+        }
+        
+        if (floorLabel && !roomObj.floors.includes(floorLabel)) {
+          roomObj.floors.push(floorLabel);
+        }
+        if (floorLabel && !bld.floors.includes(floorLabel)) {
+          bld.floors.push(floorLabel);
+        }
       }
     }
   }
   
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2));
-  console.log("Updated building-catalog.json with INF rooms.");
+  console.log("Updated building-catalog.json with mapped and fallback rooms.");
 }
 
 main();
