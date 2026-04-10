@@ -417,7 +417,7 @@ textarea {
   min-height: 380px;
   max-height: calc(100vh - 240px); /* Constrain height to enable inner scrolling */
   overflow: auto; /* Allow scrolling in both directions */
-  overscroll-behavior-y: contain; /* Prevent the entire page from sliding when scrolling hits bottom */
+  overscroll-behavior-y: auto; /* Changed from contain to let mobile users scroll the whole page at boundaries */
 }
 
 .hei-timetable-host {
@@ -627,6 +627,10 @@ textarea {
 @media (max-width: 992px) {
   .hei-content {
     padding-top: 136px;
+  }
+  
+  .hei-board-frame {
+    max-height: 65vh; /* Leave room for users to swipe the window directly */
   }
 }
 

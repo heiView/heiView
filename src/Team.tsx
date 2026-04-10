@@ -74,7 +74,8 @@ const Team: React.FC = () => {
               >
                 <Typography.Title level={3} style={{ margin: 0 }}>Xin</Typography.Title>
                 <Typography.Text type="secondary">
-                  Developer & Student
+                  Developer & Student<br />
+                  ht305&#123;at&#125;stud.uni-heidelberg.de
                 </Typography.Text>
               </Card>
 
