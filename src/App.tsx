@@ -886,7 +886,7 @@ function App() {
               <div className="hei-footer-section">
                 <h4>About</h4>
                 <ul>
-                  <li><a href="/about">About Us</a></li>
+                  <li><a href="/about">Join Us</a></li>
                 </ul>
               </div>
             </div>

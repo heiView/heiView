@@ -55,7 +55,7 @@ const Team: React.FC = () => {
 
           <div className="hei-shell" style={{ maxWidth: '800px', margin: '0 auto', padding: '24px' }}>
             <section className="hei-board-card" style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <Typography.Title level={1}>About Us</Typography.Title>
+              <Typography.Title level={1}>Join Us</Typography.Title>
               <Typography.Paragraph type="secondary" style={{ marginBottom: 40, textAlign: 'center' }}>
                 Meet the minds behind heiView.
               </Typography.Paragraph>
@@ -101,8 +101,6 @@ const Team: React.FC = () => {
               <div className="hei-footer-section">
                 <h4>Support</h4>
                 <ul>
-                  <li><a href="/#faq">FAQ</a></li>
-                  <li><a href="/#feedback">Feedback</a></li>
                   <li><a href="/imprint">Imprint</a></li>
                   <li><a href="/privacy">Privacy Policy</a></li>
                 </ul>
@@ -118,9 +116,7 @@ const Team: React.FC = () => {
               <div className="hei-footer-section">
                 <h4>About</h4>
                 <ul>
-                  <li><a href="/about">About Us</a></li>
-                  <li><a href="/#joinus">Join Us</a></li>
-                  <li><a href="/#contact">Contact</a></li>
+                  <li><a href="/about">Join Us</a></li>
                 </ul>
               </div>
             </div>
