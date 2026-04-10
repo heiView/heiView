@@ -398,6 +398,7 @@ function App() {
   const [selectedBuilding, setSelectedBuilding] = React.useState<string>(() => buildingFromUrl)
   const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => dayjs())
   const [search, setSearch] = React.useState('')
+  const deferredSearch = React.useDeferredValue(search)
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
   const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
@@ -562,13 +563,13 @@ function App() {
   const visibleRooms = React.useMemo(() => {
     const rooms = (schedule?.rooms[activeBuildingId] || []).filter((room) => room.room)
 
-    const query = search.trim().toLowerCase()
+    const query = deferredSearch.trim().toLowerCase()
     if (!query) return rooms
     return rooms.filter((room) => {
       if (room.room.toLowerCase().includes(query)) return true
       return getVisibleRoomCourses(room, query, language).length > 0
     })
-  }, [activeBuildingId, language, schedule, search])
+  }, [activeBuildingId, language, schedule, deferredSearch])
 
   const visibleRoomGroups = React.useMemo<FloorGroup[]>(() => {
     const floorMap = new Map<string, RoomEntry[]>()
@@ -725,7 +726,9 @@ function App() {
               ) : activeBuildingId === 'No Information' ? (
                 <div className="hei-no-info-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px', padding: '16px' }}>
                   {(() => {
-                    const allCourses = visibleRoomGroups.flatMap(g => g.rooms.flatMap(r => getVisibleRoomCourses(r, search.trim().toLowerCase(), language)));
+                    const allCourses = visibleRoomGroups.flatMap(g => 
+                      g.rooms.flatMap(r => getVisibleRoomCourses(r, deferredSearch.trim().toLowerCase(), language))
+                    );
                     return allCourses.map((event, idx) => (
                       <div
                         key={idx}
@@ -756,7 +759,7 @@ function App() {
                       <div key={`floor-${group.floor}`} className="hei-floor-group">
                         <div className="hei-floor-header">{group.floor}</div>
                         {group.rooms.map((room) => {
-                          const visibleCourses = getVisibleRoomCourses(room, search.trim().toLowerCase(), language)
+                          const visibleCourses = getVisibleRoomCourses(room, deferredSearch.trim().toLowerCase(), language)
                           const parsedEvents = visibleCourses
                             .map<TimelineEvent | null>((course) => {
                               const [startText, endText] = course.time.split('-')

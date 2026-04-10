@@ -76,6 +76,8 @@ function createApp() {
         ? req.query.building.trim()
         : null;
 
+    res.setHeader('Cache-Control', 'public, max-age=600, stale-while-revalidate=1200');
+
     let db;
     try {
       db = openDb();

@@ -14,8 +14,12 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      input: {
-        main: './index.html'
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          antd: ['antd'],
+          
+        }
       }
     }
   },
