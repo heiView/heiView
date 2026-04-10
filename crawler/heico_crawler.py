@@ -4,10 +4,14 @@ import argparse
 import asyncio
 import json
 import re
+import sys
 from pathlib import Path
 from urllib.parse import quote, urljoin
 
 from playwright.async_api import async_playwright
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from crawler.scrape_course_details import extract_time_slots
 
 ROOT = Path(__file__).resolve().parent
@@ -66,6 +70,7 @@ def parse_args() -> argparse.Namespace:
         default=[],
         help='Recrawl a specific course detail page URL. Can be provided multiple times.',
     )
+    parser.add_argument('--reverse', action='store_true', help='Enable reverse crawling logic.')
     return parser.parse_args()
 
 
@@ -331,7 +336,7 @@ def extract_course_type_from_type_field(raw_text: str) -> str | None:
 
 
 async def open_course_page_with_warmup(page, course_url: str) -> str:
-    # Warm up app shell first so hash-route pages render reliably in manual mode.
+
     await page.goto(DESKTOP_HOME_URL, wait_until='domcontentloaded', timeout=30000)
     await safe_wait_networkidle(page)
     await page.wait_for_timeout(1200)
@@ -625,6 +630,102 @@ async def main() -> None:
                     processed_count += 1
                     if written:
                         updated_count += 1
+            elif args.reverse:
+                skip = 4000
+                found_less_than_page = False
+                while True:
+                    page = await browser.new_page()
+                    try:
+                        page_url = build_page_url(skip)
+                        await page.goto(page_url, wait_until='domcontentloaded', timeout=30000)
+                        await page.wait_for_timeout(5000)
+                        await page.wait_for_selector('[role="listitem"]', timeout=30000)
+
+                        entries = await extract_course_entries(page)
+                        page_course_count = len(entries)
+                        print(f'[REVERSE] Found {page_course_count} courses on page skip={skip}')
+                        if page_course_count == 0:
+                            break
+
+                        page_entries: list[dict[str, object]] = []
+                        for entry in entries:
+                            course_id = entry['course_id']  # type: ignore[index]
+                            if course_id in seen_course_ids:
+                                continue
+                            if args.limit_courses is not None and processed_count + len(page_entries) >= args.limit_courses:
+                                break
+                            seen_course_ids.add(course_id)
+                            page_entries.append(entry)
+
+                        tasks = [
+                            process_course_entry(browser, entry, room_cache, room_semaphore, detail_semaphore)
+                            for entry in page_entries
+                        ]
+                        results = await asyncio.gather(*tasks)
+                        for result in results:
+                            if result is None:
+                                continue
+                            _course_id, _filename, written = result
+                            processed_count += 1
+                            if written:
+                                updated_count += 1
+
+                        if args.limit_courses is not None and processed_count >= args.limit_courses:
+                            break
+
+                        if page_course_count < PAGE_SIZE:
+                            found_less_than_page = True
+                            break
+                        skip += PAGE_SIZE
+                    finally:
+                        await page.close()
+
+                if found_less_than_page:
+                    skip = 3900
+                    while skip >= 0:
+                        page = await browser.new_page()
+                        try:
+                            page_url = build_page_url(skip)
+                            await page.goto(page_url, wait_until='domcontentloaded', timeout=30000)
+                            await page.wait_for_timeout(5000)
+                            await page.wait_for_selector('[role="listitem"]', timeout=30000)
+
+                            entries = await extract_course_entries(page)
+                            page_course_count = len(entries)
+                            print(f'[REVERSE] (decrement) Found {page_course_count} courses on page skip={skip}')
+                            if page_course_count == 0:
+                                break
+
+                            page_entries: list[dict[str, object]] = []
+                            for entry in entries:
+                                course_id = entry['course_id']  # type: ignore[index]
+                                if course_id in seen_course_ids:
+                                    continue
+                                if args.limit_courses is not None and processed_count + len(page_entries) >= args.limit_courses:
+                                    break
+                                seen_course_ids.add(course_id)
+                                page_entries.append(entry)
+
+                            tasks = [
+                                process_course_entry(browser, entry, room_cache, room_semaphore, detail_semaphore)
+                                for entry in page_entries
+                            ]
+                            results = await asyncio.gather(*tasks)
+                            for result in results:
+                                if result is None:
+                                    continue
+                                _course_id, _filename, written = result
+                                processed_count += 1
+                                if written:
+                                    updated_count += 1
+
+                            if args.limit_courses is not None and processed_count >= args.limit_courses:
+                                break
+
+                        finally:
+                            await page.close()
+                        skip -= PAGE_SIZE
+
             else:
                 skip = 0
 
