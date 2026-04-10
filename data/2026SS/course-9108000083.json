@@ -1,0 +1,69 @@
+{
+  "id": "9108000083",
+  "title": "FS 4 - Praktikum der Zahnmedizinischen Propädeutik mit Schwerpunkt Präventive Zahnheilkunde",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Rampf, Sarah Franziska"
+  ],
+  "start_date": "2026-06-29",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28741",
+      "room": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28741",
+      "room": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28741",
+      "room": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "08:30",
+      "end_time": "12:15",
+      "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28741",
+      "room": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "08:30",
+      "end_time": "12:15",
+      "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28741",
+      "room": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415932",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

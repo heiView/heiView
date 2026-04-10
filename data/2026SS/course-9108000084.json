@@ -1,0 +1,29 @@
+{
+  "id": "9108000084",
+  "title": "FS 4 - Praktikum der Zahnmedizinischen Propädeutik mit Schwerpunkt Präventive Zahnheilkunde / Übung/Feedback",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Rampf, Sarah Franziska"
+  ],
+  "start_date": "2026-07-01",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28741",
+      "room": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
+      "building": "Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415933",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

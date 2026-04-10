@@ -28,7 +28,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23390",
       "room": "G KiJu Neuro (3020.01.105)",
       "building": "Hauptstraße 47/51, 1st floor",
-      "note": null
+      "note": "Block 1"
     },
     {
       "day_of_week": 6,
@@ -38,7 +38,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23390",
       "room": "G KiJu Neuro (3020.01.105)",
       "building": "Hauptstraße 47/51, 1st floor",
-      "note": null
+      "note": "Block 1"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405008",

@@ -1,0 +1,50 @@
+{
+  "id": "9108900053",
+  "title": "FS 6 - Pathologie",
+  "type": "C",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Flechtenmacher, Christa",
+    "Glade, Julia"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "gHS (6221.EG.998)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28782",
+      "room": "gHS (6221.EG.998)",
+      "building": "Im Neuenheimer Feld 221, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "Histosaal (6221.EG.999)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28783",
+      "room": "Histosaal (6221.EG.999)",
+      "building": "Im Neuenheimer Feld 221, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "10:30",
+      "end_time": "10:45",
+      "location": "Histosaal (6221.EG.999)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28783",
+      "room": "Histosaal (6221.EG.999)",
+      "building": "Im Neuenheimer Feld 221, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415936",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

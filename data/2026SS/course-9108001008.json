@@ -1,0 +1,30 @@
+{
+  "id": "9108001008",
+  "title": "FS 10 - Praktikum der zahnmedizinischen Diagnostik und Behandlungsplanung II",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Sekundo, Caroline Sarah",
+    "Zenthöfer, Andreas"
+  ],
+  "start_date": "2026-07-03",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417238",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

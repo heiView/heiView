@@ -3,13 +3,24 @@
   "title": "Modul 12 Wahlpflicht: Didaktik für Fortbildungsveranstaltungen",
   "type": "SE",
   "ects_credits": null,
-  "course_languages": null,
+  "course_languages": "German",
   "lecturers": [
     "Mink, Johanna"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-04-14",
+  "end_date": "2026-04-14",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:15",
+      "location": "Seminarraum K9 (6130.01.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30628",
+      "room": "Seminarraum K9 (6130.01.009)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415203",
   "room": null,
   "building": null,

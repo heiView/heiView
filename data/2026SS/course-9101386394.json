@@ -3,14 +3,35 @@
   "title": "Modul 15 - LV: Projektseminar",
   "type": "SE",
   "ects_credits": null,
-  "course_languages": null,
+  "course_languages": "German",
   "lecturers": [
     "Denninger, Natascha-Elisabeth Ramona",
     "Mitzkat, Anika"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-04-15",
+  "end_date": "2026-06-10",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Seminarraum K12 (6130.01.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30626",
+      "room": "Seminarraum K12 (6130.01.012)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400446",
   "room": null,
   "building": null,

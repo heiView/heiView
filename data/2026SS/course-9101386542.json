@@ -3,14 +3,55 @@
   "title": "Modul 11 - LV: Lebensphasenmodelle",
   "type": "SE",
   "ects_credits": null,
-  "course_languages": null,
+  "course_languages": "German",
   "lecturers": [
     "Krug, Katja",
     "Mink, Johanna"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-05-12",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:15",
+      "location": "Seminarraum K9 (6130.01.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30628",
+      "room": "Seminarraum K9 (6130.01.009)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K16 (6130.01.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30621",
+      "room": "Seminarraum K16 (6130.01.016)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:15",
+      "location": "Seminarraum K16 (6130.01.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30621",
+      "room": "Seminarraum K16 (6130.01.016)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "12:15",
+      "location": "Seminarraum K13 (6130.01.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30618",
+      "room": "Seminarraum K13 (6130.01.013)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400436",
   "room": null,
   "building": null,

@@ -14,6 +14,16 @@
       "day_of_week": 4,
       "start_time": "11:15",
       "end_time": "12:45",
+      "location": "HS 211 (IÜD, Plöck 57a)",
+      "location_link": null,
+      "room": "HS 211 (IÜD, Plöck 57a)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
       "location": "Ort noch nicht bekannt",
       "location_link": null,
       "room": "Ort noch nicht bekannt",

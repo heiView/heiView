@@ -19,6 +19,16 @@
       "room": "UGX 60 (2170.U1.060)",
       "building": "Grabengasse 3-5, Lower level 1",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:15",
+      "end_time": "09:45",
+      "location": "Übungsraum (2100ZEG351)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23343",
+      "room": "Übungsraum (2100ZEG351)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Mezzanine floor on ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408534",

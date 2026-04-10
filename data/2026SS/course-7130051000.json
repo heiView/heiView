@@ -7,13 +7,13 @@
   "lecturers": [
     "Mausbach, Wilfried"
   ],
-  "start_date": "2026-04-15",
+  "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
     {
-      "day_of_week": 3,
+      "day_of_week": 4,
       "start_time": "13:00",
-      "end_time": "14:00",
+      "end_time": "16:00",
       "location": "Siehe Anmerkung",
       "location_link": null,
       "room": "Siehe Anmerkung",
@@ -21,9 +21,9 @@
       "note": "Seminar: HCA, Stucco Tutorium: HCA, Oculus"
     },
     {
-      "day_of_week": 4,
+      "day_of_week": 3,
       "start_time": "13:00",
-      "end_time": "16:00",
+      "end_time": "14:00",
       "location": "Siehe Anmerkung",
       "location_link": null,
       "room": "Siehe Anmerkung",

@@ -21,6 +21,10 @@
       "name": "Im Neuenheimer Feld"
     },
     {
+      "id": "online",
+      "name": "Online"
+    },
+    {
       "id": "other",
       "name": "Other"
     }
@@ -31,7 +35,8 @@
       "altstadt": 33,
       "bergheim": 5,
       "other": 2,
-      "im-neuenheimer-feld": 51
+      "im-neuenheimer-feld": 51,
+      "online": 1
     }
   },
   "buildings": [
@@ -3767,6 +3772,13 @@
           ],
           "features": {},
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-400::rm-leitstelle-zahn-kfo",
+          "name": "Leitstelle Zahn KFO",
+          "floors": [],
+          "features": {},
+          "notes": ""
         }
       ],
       "notes": ""
@@ -7064,6 +7076,750 @@
           "floors": [],
           "features": {},
           "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "bld-other-siehe-anmerkung",
+      "street": "Siehe Anmerkung",
+      "displayName": "Siehe Anmerkung",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-siehe-anmerkung::rm-siehe-anmerkung",
+          "name": "Siehe Anmerkung",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-externer-ort",
+      "street": "Externer Ort",
+      "displayName": "Externer Ort",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-externer-ort::rm-externer-ort",
+          "name": "Externer Ort",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-ort-zeit-noch-nicht-bekannt",
+      "street": "Ort/Zeit noch nicht bekannt.",
+      "displayName": "Ort/Zeit noch nicht bekannt.",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-ort-zeit-noch-nicht-bekannt::rm-ort-zeit-noch-nicht-bekannt",
+          "name": "Ort/Zeit noch nicht bekannt.",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-ort-zeit-noch-nicht-bekannt-1",
+      "street": "Ort/Zeit noch nicht bekannt",
+      "displayName": "Ort/Zeit noch nicht bekannt",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-ort-zeit-noch-nicht-bekannt::rm-ort-zeit-noch-nicht-bekannt-1",
+          "name": "Ort/Zeit noch nicht bekannt",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-204-haus-zum-riesen-45",
+      "street": "204 Haus zum Riesen (45)",
+      "displayName": "204 Haus zum Riesen (45)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-204-haus-zum-riesen-45::rm-204-haus-zum-riesen-45",
+          "name": "204 Haus zum Riesen (45)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-online",
+      "street": "Online",
+      "displayName": "Online",
+      "campusId": "online",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-online::rm-online",
+          "name": "Online",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-kapelle",
+      "street": "Kapelle",
+      "displayName": "Kapelle",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-kapelle::rm-kapelle",
+          "name": "Kapelle",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-hfk-a",
+      "street": "HfK (A)",
+      "displayName": "HfK (A)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-hfk-a::rm-hfk-a",
+          "name": "HfK (A)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-hs-413",
+      "street": "HS 413",
+      "displayName": "HS 413",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-hs-413::rm-hs-413",
+          "name": "HS 413",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-ort-noch-nicht-bekannt",
+      "street": "Ort noch nicht bekannt",
+      "displayName": "Ort noch nicht bekannt",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-ort-noch-nicht-bekannt::rm-ort-noch-nicht-bekannt",
+          "name": "Ort noch nicht bekannt",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-205-haus-zum-riesen-15",
+      "street": "205 Haus zum Riesen (15)",
+      "displayName": "205 Haus zum Riesen (15)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-205-haus-zum-riesen-15::rm-205-haus-zum-riesen-15",
+          "name": "205 Haus zum Riesen (15)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-ort-siehe-anmerkung",
+      "street": "Ort - siehe Anmerkung",
+      "displayName": "Ort - siehe Anmerkung",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-ort-siehe-anmerkung::rm-ort-siehe-anmerkung",
+          "name": "Ort - siehe Anmerkung",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-106-haus-zum-riesen-10",
+      "street": "106 Haus zum Riesen (10)",
+      "displayName": "106 Haus zum Riesen (10)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-106-haus-zum-riesen-10::rm-106-haus-zum-riesen-10",
+          "name": "106 Haus zum Riesen (10)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-002-haus-zum-riesen-40",
+      "street": "002 Haus zum Riesen (40)",
+      "displayName": "002 Haus zum Riesen (40)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-002-haus-zum-riesen-40::rm-002-haus-zum-riesen-40",
+          "name": "002 Haus zum Riesen (40)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-210-haus-zum-riesen-25",
+      "street": "210 Haus zum Riesen (25)",
+      "displayName": "210 Haus zum Riesen (25)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-210-haus-zum-riesen-25::rm-210-haus-zum-riesen-25",
+          "name": "210 Haus zum Riesen (25)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-selbststudium",
+      "street": "Selbststudium",
+      "displayName": "Selbststudium",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-selbststudium::rm-selbststudium",
+          "name": "Selbststudium",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-8020-01-160",
+      "street": "8020.01.160",
+      "displayName": "8020.01.160",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-8020-01-160::rm-8020-01-160",
+          "name": "8020.01.160",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-therapieraum-altstadt",
+      "street": "Therapieraum Altstadt",
+      "displayName": "Therapieraum Altstadt",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-therapieraum-altstadt::rm-therapieraum-altstadt",
+          "name": "Therapieraum Altstadt",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-therapieraum-landfried",
+      "street": "Therapieraum Landfried",
+      "displayName": "Therapieraum Landfried",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-therapieraum-landfried::rm-therapieraum-landfried",
+          "name": "Therapieraum Landfried",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-issw-bootshaus",
+      "street": "ISSW Bootshaus",
+      "displayName": "ISSW Bootshaus",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-issw-bootshaus::rm-issw-bootshaus",
+          "name": "ISSW Bootshaus",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-semesterplanung-sose-2026-unterrichtsbereich-nf",
+      "street": "Semesterplanung SoSe 2026 - Unterrichtsbereich NF",
+      "displayName": "Semesterplanung SoSe 2026 - Unterrichtsbereich NF",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-semesterplanung-sose-2026-unterrichtsbereich-nf::rm-semesterplanung-sose-2026-unterrichtsbereich-nf",
+          "name": "Semesterplanung SoSe 2026 - Unterrichtsbereich NF",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-bungsraum-413",
+      "street": "Übungsraum 413",
+      "displayName": "Übungsraum 413",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-bungsraum-413::rm-bungsraum-413",
+          "name": "Übungsraum 413",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-hauptstr-235-v-lkerkundemuseum",
+      "street": "Hauptstr. 235 / Völkerkundemuseum",
+      "displayName": "Hauptstr. 235 / Völkerkundemuseum",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-hauptstr-235-v-lkerkundemuseum::rm-hauptstr-235-v-lkerkundemuseum",
+          "name": "Hauptstr. 235 / Völkerkundemuseum",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-1",
+      "street": "Seminarraum 1",
+      "displayName": "Seminarraum 1",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-1::rm-seminarraum-1",
+          "name": "Seminarraum 1",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-vo-str-2",
+      "street": "Voßstr. 2",
+      "displayName": "Voßstr. 2",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-vo-str-2::rm-cats-vo-str-2",
+          "name": "CATS, Voßstr. 2",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-raum-440002212-cats",
+      "street": "Raum 440002212 (CATS)",
+      "displayName": "Raum 440002212 (CATS)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-raum-440002212-cats::rm-raum-440002212-cats",
+          "name": "Raum 440002212 (CATS)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-3",
+      "street": "Seminarraum 3",
+      "displayName": "Seminarraum 3",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-3::rm-seminarraum-3",
+          "name": "Seminarraum 3",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-4",
+      "street": "Seminarraum 4",
+      "displayName": "Seminarraum 4",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-4::rm-seminarraum-4",
+          "name": "Seminarraum 4",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-2",
+      "street": "Seminarraum 2",
+      "displayName": "Seminarraum 2",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-2::rm-seminarraum-2",
+          "name": "Seminarraum 2",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-pl-ck-57a",
+      "street": "Plöck 57a)",
+      "displayName": "Plöck 57a)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-pl-ck-57a::rm-hs-211-i-d-pl-ck-57a",
+          "name": "HS 211 (IÜD, Plöck 57a)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-n2-05",
+      "street": "N2.05",
+      "displayName": "N2.05",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-n2-05::rm-bet-midrasch-n2-05",
+          "name": "Bet Midrasch, N2.05",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-a2-08-altbau",
+      "street": "A2.08 (Altbau)",
+      "displayName": "A2.08 (Altbau)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-a2-08-altbau::rm-a2-08-altbau",
+          "name": "A2.08 (Altbau)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-med-ort-noch-nicht-bekannt",
+      "street": "MED Ort noch nicht bekannt",
+      "displayName": "MED Ort noch nicht bekannt",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-med-ort-noch-nicht-bekannt::rm-med-ort-noch-nicht-bekannt",
+          "name": "MED Ort noch nicht bekannt",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-agaplesion-bethanien-krankenhaus",
+      "street": "Agaplesion Bethanien Krankenhaus",
+      "displayName": "Agaplesion Bethanien Krankenhaus",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-agaplesion-bethanien-krankenhaus::rm-agaplesion-bethanien-krankenhaus",
+          "name": "Agaplesion Bethanien Krankenhaus",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-krankenhaus-salem",
+      "street": "Krankenhaus Salem",
+      "displayName": "Krankenhaus Salem",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-krankenhaus-salem::rm-krankenhaus-salem",
+          "name": "Krankenhaus Salem",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-thoraxklinik-pforte",
+      "street": "Thoraxklinik - Pforte",
+      "displayName": "Thoraxklinik - Pforte",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-thoraxklinik-pforte::rm-thoraxklinik-pforte",
+          "name": "Thoraxklinik - Pforte",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-srh-kurpfalzkrankenhaus-heidelberg",
+      "street": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "displayName": "SRH Kurpfalzkrankenhaus Heidelberg",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-srh-kurpfalzkrankenhaus-heidelberg::rm-srh-kurpfalzkrankenhaus-heidelberg",
+          "name": "SRH Kurpfalzkrankenhaus Heidelberg",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-avp",
+      "street": "AVP",
+      "displayName": "AVP",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-avp::rm-avp",
+          "name": "AVP",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-station-gyn-kologie",
+      "street": "Station Gynäkologie",
+      "displayName": "Station Gynäkologie",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-station-gyn-kologie::rm-wartebereich-3-og-station-gyn-kologie",
+          "name": "Wartebereich 3.OG, Station Gynäkologie",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-station-geburtshilfe",
+      "street": "Station Geburtshilfe",
+      "displayName": "Station Geburtshilfe",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-station-geburtshilfe::rm-wartebereich-2-og-station-geburtshilfe",
+          "name": "Wartebereich 2.OG, Station Geburtshilfe",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-leonardo-hotel",
+      "street": "Leonardo Hotel",
+      "displayName": "Leonardo Hotel",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-leonardo-hotel::rm-bergheimer-str-63-leonardo-hotel",
+          "name": "Bergheimer Str. 63, Leonardo Hotel",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-op",
+      "street": "OP",
+      "displayName": "OP",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-op::rm-op",
+          "name": "OP",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-kliniken-schmieder-heidelberg",
+      "street": "Kliniken Schmieder Heidelberg",
+      "displayName": "Kliniken Schmieder Heidelberg",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-kliniken-schmieder-heidelberg::rm-kliniken-schmieder-heidelberg",
+          "name": "Kliniken Schmieder Heidelberg",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-turm-1",
+      "street": "Turm 1",
+      "displayName": "Turm 1",
+      "campusId": "other",
+      "floors": [
+        "9.OG"
+      ],
+      "rooms": [
+        {
+          "id": "bld-other-turm-1::rm-bg-ludwigshafen-sr-1-2-turm-1-9-og",
+          "name": "BG Ludwigshafen, SR 1+2, Turm 1, 9.OG",
+          "floors": [
+            "9.OG"
+          ],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-mannheimer-str-1",
+      "street": "Mannheimer Str.1",
+      "displayName": "Mannheimer Str.1",
+      "campusId": "other",
+      "floors": [
+        "Ground floor"
+      ],
+      "rooms": [
+        {
+          "id": "bld-other-mannheimer-str-1::rm-gmmg-studiensekretariat-mannheimer-str-1-eg",
+          "name": "GMMG-Studiensekretariat, Mannheimer Str.1, EG",
+          "floors": [
+            "Ground floor"
+          ],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-stift-neuburg",
+      "street": "Stift Neuburg",
+      "displayName": "Stift Neuburg",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-stift-neuburg::rm-stift-neuburg",
+          "name": "Stift Neuburg",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ]
     }
