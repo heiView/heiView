@@ -79,6 +79,13 @@ function ensureSchema(db) {
 
     CREATE UNIQUE INDEX IF NOT EXISTS idx_rooms_meta_building_name
       ON rooms_meta(building_id, name);
+
+    CREATE TABLE IF NOT EXISTS building_aliases (
+      alias TEXT NOT NULL,
+      building_id TEXT NOT NULL,
+      PRIMARY KEY (alias),
+      FOREIGN KEY (building_id) REFERENCES buildings_meta(id)
+    );
   `);
 
   const columns = db.prepare('PRAGMA table_info(buildings_meta);').all();
@@ -117,6 +124,11 @@ function main() {
     );
   `);
 
+  const insertAlias = db.prepare(`
+    INSERT OR IGNORE INTO building_aliases (alias, building_id)
+    VALUES (@alias, @building_id);
+  `);
+
   const insertRoom = db.prepare(`
     INSERT INTO rooms_meta (
       id, building_id, name, floors_json,
@@ -134,6 +146,7 @@ function main() {
     db.exec('DELETE FROM rooms_meta;');
     db.exec('DELETE FROM buildings_meta;');
     db.exec('DELETE FROM campuses;');
+    db.exec('DELETE FROM building_aliases;');
 
     for (const campus of campuses) {
       if (!campus || !campus.id || !campus.name) continue;
@@ -161,6 +174,18 @@ function main() {
         notes: building.notes ? String(building.notes) : null,
       });
       buildingCount += 1;
+
+      const aliases = Array.isArray(building.aliases) ? building.aliases : [];
+      for (const alias of aliases) {
+        if (alias && alias.trim()) {
+          insertAlias.run({ alias: alias.trim(), building_id: String(building.id) });
+        }
+      }
+      insertAlias.run({ alias: street.trim(), building_id: String(building.id) });
+      const dashStreet = street.replace(/\//g, '-');
+      if (dashStreet !== street) {
+        insertAlias.run({ alias: dashStreet.trim(), building_id: String(building.id) });
+      }
 
       const rooms = Array.isArray(building.rooms) ? building.rooms : [];
       for (const room of rooms) {

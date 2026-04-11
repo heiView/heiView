@@ -6,6 +6,35 @@ const ROOT = path.resolve(__dirname, '..', '..');
 const COURSE_DIR = path.join(ROOT, 'data', '2026SS');
 const DB_DIR = path.join(ROOT, 'data');
 const DB_PATH = path.join(DB_DIR, 'heitable.db');
+const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
+
+function buildAliasMap() {
+  const aliasMap = new Map();
+  if (!fs.existsSync(CATALOG_PATH)) return aliasMap;
+  try {
+    const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
+    for (const b of (catalog.buildings || [])) {
+      const canonical = b.street;
+      if (!canonical) continue;
+      aliasMap.set(canonical.trim().toLowerCase(), canonical);
+      for (const alias of (b.aliases || [])) {
+        if (alias) aliasMap.set(alias.trim().toLowerCase(), canonical);
+      }
+      const dashName = canonical.replace(/\//g, '-');
+      if (dashName !== canonical) {
+        aliasMap.set(dashName.trim().toLowerCase(), canonical);
+      }
+    }
+  } catch (e) {
+    console.warn('[alias] Failed to load building-catalog.json:', e.message);
+  }
+  return aliasMap;
+}
+
+function resolveCanonicalBuildingName(name, aliasMap) {
+  if (!name) return name;
+  return aliasMap.get(name.trim().toLowerCase()) || name;
+}
 
 function parseIsoDate(value) {
   const [y, m, d] = value.split('-').map((part) => Number.parseInt(part, 10));
@@ -203,6 +232,8 @@ function main() {
     db.exec('DELETE FROM occurrences;');
     db.exec('DELETE FROM courses;');
 
+    const aliasMap = buildAliasMap();
+
     const insertCourse = db.prepare(`
       INSERT INTO courses (
         id, title, type, ects_credits, course_languages,
@@ -331,7 +362,7 @@ function main() {
             course_id: String(payload.id),
             date,
             building: week.building || null,
-            building_name: split.buildingName,
+            building_name: resolveCanonicalBuildingName(split.buildingName, aliasMap),
             floor_label: split.floorLabel,
             room: currentRoom,
             start_time: week.start_time || null,
