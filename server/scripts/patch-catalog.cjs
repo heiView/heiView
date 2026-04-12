@@ -3,7 +3,26 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const COURSE_DIR = path.join(ROOT, 'data', '2026SS');
+const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
+const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
+
+function loadSkipSet() {
+  if (!fs.existsSync(SKIP_LIST_PATH)) return new Set();
+  try {
+    const data = JSON.parse(fs.readFileSync(SKIP_LIST_PATH, 'utf8'));
+    return new Set(Array.isArray(data) ? data.map(String) : []);
+  } catch (e) {
+    console.warn('[skip] Failed to load skip list:', e.message);
+    return new Set();
+  }
+}
+
+function resolveCoursePath(fileName) {
+  const overridePath = path.join(OVERRIDES_DIR, fileName);
+  if (fs.existsSync(overridePath)) return overridePath;
+  return path.join(COURSE_DIR, fileName);
+}
 
 function normalizeFloorLabel(label) {
   if (!label) return null;
@@ -242,9 +261,13 @@ function main() {
 
   // Ensure directory exists before reading
   if (fs.existsSync(COURSE_DIR)) {
+    const skipSet = loadSkipSet();
+    if (skipSet.size > 0) console.log(`[skip] Loaded ${skipSet.size} course(s) to skip.`);
     const files = fs.readdirSync(COURSE_DIR).filter(f => f.endsWith('.json'));
     for (const file of files) {
-      const payload = JSON.parse(fs.readFileSync(path.join(COURSE_DIR, file), 'utf8'));
+      const coursePath = resolveCoursePath(file);
+      const payload = JSON.parse(fs.readFileSync(coursePath, 'utf8'));
+      if (payload.id && skipSet.has(String(payload.id))) continue;
       const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
       
       for (const week of weeks) {

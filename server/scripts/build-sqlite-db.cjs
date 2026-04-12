@@ -4,9 +4,31 @@ const Database = require('better-sqlite3');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const COURSE_DIR = path.join(ROOT, 'data', '2026SS');
+const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
+const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
+const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const DB_DIR = path.join(ROOT, 'data');
 const DB_PATH = path.join(DB_DIR, 'heitable.db');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
+
+function loadSkipSet() {
+  if (!fs.existsSync(SKIP_LIST_PATH)) return new Set();
+  try {
+    const data = JSON.parse(fs.readFileSync(SKIP_LIST_PATH, 'utf8'));
+    return new Set(Array.isArray(data) ? data.map(String) : []);
+  } catch (e) {
+    console.warn('[skip] Failed to load skip list:', e.message);
+    return new Set();
+  }
+}
+
+function resolveCoursePath(fileName) {
+  const overridePath = path.join(OVERRIDES_DIR, fileName);
+  if (fs.existsSync(overridePath)) return overridePath;
+  const customPath = path.join(CUSTOM_DIR, fileName);
+  if (fs.existsSync(customPath)) return customPath;
+  return path.join(COURSE_DIR, fileName);
+}
 
 function buildAliasMap() {
   const aliasMap = new Map();
@@ -171,7 +193,9 @@ function ensureOccurrencesSplitColumns(db) {
 
 function ensureSchema(db) {
   // First-version reset: remove catalog tables so import script always recreates latest schema.
+  // Drop building_aliases first since it has a FK to buildings_meta.
   db.exec(`
+    DROP TABLE IF EXISTS building_aliases;
     DROP TABLE IF EXISTS rooms_meta;
     DROP TABLE IF EXISTS buildings_meta;
     DROP TABLE IF EXISTS campuses;
@@ -233,6 +257,11 @@ function main() {
     db.exec('DELETE FROM courses;');
 
     const aliasMap = buildAliasMap();
+    const skipSet = loadSkipSet();
+
+    if (skipSet.size > 0) {
+      console.log(`[skip] Loaded ${skipSet.size} course ID(s) to skip.`);
+    }
 
     const insertCourse = db.prepare(`
       INSERT INTO courses (
@@ -252,18 +281,36 @@ function main() {
       );
     `);
 
-    const files = fs
-      .readdirSync(COURSE_DIR)
-      .filter((name) => name.startsWith('course-') && name.endsWith('.json'));
+    const files = [
+      ...fs.readdirSync(COURSE_DIR).filter((name) => name.startsWith('course-') && name.endsWith('.json')),
+      ...(fs.existsSync(CUSTOM_DIR) ? fs.readdirSync(CUSTOM_DIR).filter((name) => name.startsWith('course-') && name.endsWith('.json')) : []),
+    ];
+    // Deduplicate (override or custom may shadow original)
+    const seenIds = new Set();
+    const uniqueFiles = files.filter((name) => {
+      if (seenIds.has(name)) return false;
+      seenIds.add(name);
+      return true;
+    });
 
     let courseCount = 0;
     let occurrenceCount = 0;
 
-    for (const fileName of files) {
-      const coursePath = path.join(COURSE_DIR, fileName);
+    for (const fileName of uniqueFiles) {
+      const coursePath = resolveCoursePath(fileName);
+      const isOverride = coursePath !== path.join(COURSE_DIR, fileName);
       const payload = safeReadJson(coursePath);
       if (!payload || !payload.id) {
         continue;
+      }
+
+      if (skipSet.has(String(payload.id))) {
+        console.log(`[skip] Skipping course: ${payload.id}`);
+        continue;
+      }
+
+      if (isOverride) {
+        console.log(`[override] Using override for: ${fileName}`);
       }
 
       insertCourse.run({
@@ -283,7 +330,7 @@ function main() {
       for (const week of weeks) {
         const dayOfWeek = Number.parseInt(String(week.day_of_week || ''), 10);
         const meetingDates = collectMeetingDates(payload.start_date, payload.end_date, dayOfWeek);
-        const rawRoom = week.room || week.location || null;
+        const rawRoom = (week.room || week.location || '').trim() || null;
         let split = splitBuildingAndFloor(week.building || null);
         let currentRoom = rawRoom;
         
@@ -337,6 +384,15 @@ function main() {
                     split.buildingName = 'Im Neuenheimer Feld 400';
                     split.floorLabel = floorLabel;
                     currentRoom = 'Unbekannt';
+                  } else {
+                    // Generic fallback: extract building name from rawRoom (e.g. "Room, Building, Floor")
+                    // mirror the same fallback used in patch-catalog.cjs
+                    const fallback = splitBuildingAndFloor(rawRoom);
+                    if (fallback.buildingName) {
+                      split.buildingName = fallback.buildingName;
+                      split.floorLabel = fallback.floorLabel;
+                      // currentRoom stays as rawRoom (full string) for display
+                    }
                   }
                 }
               }
@@ -386,4 +442,175 @@ function main() {
   }
 }
 
-main();
+/**
+ * Sync a single course's occurrences in SQLite from its (override) JSON file.
+ * Much faster than a full db:sync — deletes then reinserts only this course.
+ */
+function syncSingleCourse(courseId) {
+  if (!fs.existsSync(DB_PATH)) {
+    console.warn('[syncSingleCourse] DB not found, skipping. Run db:sync first.');
+    return;
+  }
+  const fileName = `course-${courseId}.json`;
+  const coursePath = resolveCoursePath(fileName);
+  if (!fs.existsSync(coursePath)) {
+    console.warn(`[syncSingleCourse] No file found for course ${courseId}`);
+    return;
+  }
+  const payload = safeReadJson(coursePath);
+  if (!payload || !payload.id) return;
+
+  const db = new Database(DB_PATH);
+  ensureOccurrencesSplitColumns(db);
+  const aliasMap = buildAliasMap();
+  const skipSet = loadSkipSet();
+
+  const insertCourse = db.prepare(`
+    INSERT OR REPLACE INTO courses (
+      id, title, type, ects_credits, course_languages,
+      lecturers_json, detail_link, start_date, end_date
+    ) VALUES (
+      @id, @title, @type, @ects_credits, @course_languages,
+      @lecturers_json, @detail_link, @start_date, @end_date
+    )
+  `);
+  const insertOccurrence = db.prepare(`
+    INSERT INTO occurrences (
+      course_id, date, building, building_name, floor_label, room, start_time, end_time, note
+    ) VALUES (
+      @course_id, @date, @building, @building_name, @floor_label, @room, @start_time, @end_time, @note
+    )
+  `);
+
+  db.exec('BEGIN');
+  try {
+    db.prepare('DELETE FROM occurrences WHERE course_id = ?').run(String(payload.id));
+    db.prepare('DELETE FROM courses WHERE id = ?').run(String(payload.id));
+
+    if (skipSet.has(String(payload.id))) {
+      console.log(`[syncSingleCourse] Course ${courseId} is in skip list, cleared from DB.`);
+      db.exec('COMMIT');
+      return;
+    }
+
+    insertCourse.run({
+      id: String(payload.id),
+      title: payload.title || null,
+      type: payload.type || null,
+      ects_credits: payload.ects_credits || null,
+      course_languages: payload.course_languages || null,
+      lecturers_json: JSON.stringify(Array.isArray(payload.lecturers) ? payload.lecturers : []),
+      detail_link: payload.detail_link || null,
+      start_date: payload.start_date || null,
+      end_date: payload.end_date || null,
+    });
+
+    const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
+    for (const week of weeks) {
+      const dayOfWeek = Number.parseInt(String(week.day_of_week || ''), 10);
+      const meetingDates = collectMeetingDates(payload.start_date, payload.end_date, dayOfWeek);
+      const rawRoom = week.room || week.location || null;
+      let split = splitBuildingAndFloor(week.building || null);
+      let currentRoom = rawRoom;
+
+      if (!split.buildingName && rawRoom) {
+        const inf = parseInfRoom(rawRoom);
+        if (inf) {
+          split.buildingName = inf.buildingName;
+          split.floorLabel = inf.floorLabel;
+          currentRoom = inf.room || inf.original;
+        } else if (/peterskirche/i.test(rawRoom)) {
+          split.buildingName = 'Peterskirche';
+          split.floorLabel = null;
+          currentRoom = 'Peterskirche';
+        } else {
+          const akadMatch = rawRoom?.match(/^(.*)\s*\/\s*(Akademiestra(?:ss|ß)e\s*4)$/i);
+          if (akadMatch) {
+            split.buildingName = 'Akademiestraße 4';
+            split.floorLabel = null;
+            currentRoom = akadMatch[1].trim();
+          } else {
+            const schlierbacherMatch = rawRoom?.match(/^Schlierbacher\s+Landstr(?:a(?:ss|ß)e|\.)?\s*200A\s*-\s*(.*)$/i);
+            if (schlierbacherMatch) {
+              split.buildingName = 'Schlierbacher Landstraße 200A';
+              split.floorLabel = null;
+              currentRoom = schlierbacherMatch[1].trim();
+            } else {
+              const zslMatch = rawRoom?.match(/^ZSL,?\s*Raum\s*(\d+)$/i);
+              if (zslMatch) {
+                const roomNumber = zslMatch[1];
+                const floorDigit = roomNumber.substring(0, 1);
+                let floorLabel = '';
+                if (floorDigit === '0') floorLabel = 'Ground floor';
+                else if (floorDigit === '1') floorLabel = '1st floor';
+                else if (floorDigit === '2') floorLabel = '2nd floor';
+                else if (floorDigit === '3') floorLabel = '3rd floor';
+                else floorLabel = `${floorDigit}th floor`;
+                split.buildingName = 'Plöck 79-81';
+                split.floorLabel = floorLabel;
+                currentRoom = `Übungsraum (3120.0${floorDigit}.${roomNumber})`;
+              } else {
+                const poliMatch = rawRoom?.match(/^Poliklinik(?:,?\s*(.*))?$/i);
+                if (poliMatch) {
+                  const suffix = poliMatch[1]?.trim() || '';
+                  let floorLabel = null;
+                  if (/1\.\s*[oO][gG]/.test(suffix)) floorLabel = '1st floor';
+                  else if (/2\.\s*[oO][gG]/.test(suffix)) floorLabel = '2nd floor';
+                  else if (/3\.\s*[oO][gG]/.test(suffix)) floorLabel = '3rd floor';
+                  else if (/EG/i.test(suffix)) floorLabel = 'Ground floor';
+                  split.buildingName = 'Im Neuenheimer Feld 400';
+                  split.floorLabel = floorLabel;
+                  currentRoom = 'Unbekannt';
+                } else {
+                  const fallback = splitBuildingAndFloor(rawRoom);
+                  if (fallback.buildingName) {
+                    split.buildingName = fallback.buildingName;
+                    split.floorLabel = fallback.floorLabel;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      if (split.buildingName === 'Voßstraße 2' || /vo(?:ss|ß)stra(?:ss|ß)e\s*2/i.test(week.building || '') || /vo(?:ss|ß)stra(?:ss|ß)e\s*2/i.test(week.note || '') || /vo(?:ss|ß)stra(?:ss|ß)e\s*2/i.test(rawRoom || '')) {
+        const combo = [week.building, rawRoom, week.note].join(' ');
+        const codeMatch = combo.match(/\b(4\d{3})\b/);
+        if (codeMatch) {
+          split.buildingName = `Voßstraße 2 - ${codeMatch[1]}`;
+          if (/^geb(?:ä|a)ude\s*\d+\s*\(/i.test(rawRoom?.trim())) {
+            currentRoom = 'Unbekannter Raum';
+          }
+        } else {
+          split.buildingName = `Voßstraße 2`;
+        }
+      }
+
+      for (const date of meetingDates) {
+        insertOccurrence.run({
+          course_id: String(payload.id),
+          date,
+          building: week.building || null,
+          building_name: resolveCanonicalBuildingName(split.buildingName, aliasMap),
+          floor_label: split.floorLabel,
+          room: currentRoom,
+          start_time: week.start_time || null,
+          end_time: week.end_time || null,
+          note: week.note || null,
+        });
+      }
+    }
+
+    db.exec('COMMIT');
+    console.log(`[syncSingleCourse] Synced course ${courseId}`);
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  } finally {
+    db.close();
+  }
+}
+
+module.exports = { syncSingleCourse };
+if (require.main === module) { main(); }

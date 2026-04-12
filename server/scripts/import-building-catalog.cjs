@@ -143,10 +143,10 @@ function main() {
 
   db.exec('BEGIN');
   try {
+    db.exec('DELETE FROM building_aliases;');
     db.exec('DELETE FROM rooms_meta;');
     db.exec('DELETE FROM buildings_meta;');
     db.exec('DELETE FROM campuses;');
-    db.exec('DELETE FROM building_aliases;');
 
     for (const campus of campuses) {
       if (!campus || !campus.id || !campus.name) continue;
@@ -220,4 +220,8 @@ function main() {
   }
 }
 
-main();
+module.exports = { importBuildingCatalog: main };
+
+if (require.main === module) {
+  main();
+}
