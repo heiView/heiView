@@ -1,0 +1,1903 @@
+import React from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
+import dayjs, { Dayjs } from 'dayjs'
+import {
+  Alert,
+  AutoComplete,
+  Button,
+  Checkbox,
+  ConfigProvider,
+  DatePicker,
+  Empty,
+  Input,
+  Layout,
+  Modal,
+  Form,
+  Row,
+  Col,
+  Select,
+  Space,
+  Spin,
+  Tag,
+  Typography,
+  theme as antdTheme,
+} from 'antd'
+import {
+  LogoutOutlined,
+  SearchOutlined,
+} from '@ant-design/icons'
+import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
+import { CAMPUS_OPTIONS, resolveCampusFromBuilding, type Campus } from '../campusConfig'
+import useStore from '../store'
+import { clearToken, adminFetch } from './adminAuth'
+
+type Language = 'zh' | 'en' | 'de'
+type LocalizedText = string | Record<string, string> | null | undefined
+
+type RoomFeatures = {
+  hasAirConditioning?: boolean | null
+  hasAccessControl?: boolean | null
+  hasProjector?: boolean | null
+  hasMicrophone?: boolean | null
+}
+
+type Course = {
+  id?: string
+  time: string
+  name: LocalizedText
+  prof?: LocalizedText
+  link?: string
+  note?: string | null
+}
+
+type RoomEntry = {
+  room: string
+  floor?: string | null
+  features?: RoomFeatures | null
+  courses: Course[]
+}
+
+type BuildingEntry = {
+  id: string
+  street?: LocalizedText
+  displayName?: LocalizedText
+  campus?: Campus | null
+}
+
+type ScheduleResponse = {
+  buildings: BuildingEntry[]
+  rooms: Record<string, RoomEntry[]>
+}
+
+type CourseModalState = {
+  room: string
+  course: Course
+  startMinutes: number
+  endMinutes: number
+  dayOfWeek: number
+}
+
+type TimelineEvent = {
+  course: Course
+  start: number
+  end: number
+  startOffset: number
+  endOffset: number
+}
+
+type FloorGroup = {
+  floor: string
+  rooms: RoomEntry[]
+}
+
+const TRACK_START_HOUR = 8
+const TRACK_END_HOUR = 23
+const PIXELS_PER_MINUTE = 2
+const ROOM_ROW_HEIGHT = 126
+const EVENT_HEIGHT = 112
+const COMMON_FLOORS = [
+  'Ground floor', '1st floor', '2nd floor', '3rd floor', '4th floor',
+  'Lower level 1', 'Lower level 2', 'Unknown floor',
+]
+const BUILDING_CAMPUS_OPTIONS = [
+  { value: 'altstadt', label: 'Altstadt' },
+  { value: 'bergheim', label: 'Bergheim' },
+  { value: 'im-neuenheimer-feld', label: 'Im Neuenheimer Feld' },
+  { value: 'mannheim-and-ludwigshafen', label: 'Mannheim & Ludwigshafen' },
+  { value: 'online', label: 'Online' },
+  { value: 'other', label: 'Other' },
+]
+
+function resolveLocalizedText(value: LocalizedText, language: Language) {
+  if (!value) return ''
+  if (typeof value === 'string') return value
+  return value[language] || value.zh || value.en || value.de || Object.values(value)[0] || ''
+}
+
+function resolveBuildingLabel(displayName: LocalizedText, language: Language, fallbackStreet: string) {
+  return resolveLocalizedText(displayName, language) || fallbackStreet
+}
+
+function resolveCampusName(street: string): Campus | null {
+  return resolveCampusFromBuilding(street)
+}
+
+function formatCampusOptionLabel(campus: Campus) {
+  if (campus === 'Altstadt' || campus === 'Bergheim') return `${campus} Campus`
+  if (campus === 'Im Neuenheimer Feld') return 'INF Campus'
+  return campus
+}
+
+function normalizeFloorLabel(value: string | null | undefined) {
+  const text = (value || '').trim()
+  return text || 'Unspecified floor'
+}
+
+function floorSortValue(floor: string) {
+  const normalized = floor.toLowerCase().trim()
+  if (!normalized || normalized === 'unspecified floor') return 99999
+  if (/basement|untergeschoss|keller|\bug\b/.test(normalized)) {
+    const m = normalized.match(/(\d+)/)
+    return -100 - (m ? Number.parseInt(m[1], 10) : 1)
+  }
+  if (/ground|erdgeschoss|\beg\b/.test(normalized)) return 0
+  if (/mezzanine|zwischen/.test(normalized)) return 0.5
+  const og = normalized.match(/(\d+)\s*\.?\s*og/)
+  if (og) return Number.parseInt(og[1], 10)
+  const ord = normalized.match(/(-?\d+)\s*(st|nd|rd|th)?\s*(floor|level|stock|geschoss)?/)
+  if (ord) return Number.parseInt(ord[1], 10)
+  if (/attic|dach/.test(normalized)) return 9990
+  return 9999
+}
+
+function compareFloors(left: string, right: string) {
+  const diff = floorSortValue(left) - floorSortValue(right)
+  return diff !== 0 ? diff : left.localeCompare(right, undefined, { numeric: true, sensitivity: 'base' })
+}
+
+function normalizeCampusValue(value: string | null | undefined): Campus | null {
+  const text = (value || '').trim().toLowerCase()
+  if (!text) return null
+  if (text === 'altstadt') return 'Altstadt'
+  if (text === 'bergheim') return 'Bergheim'
+  if (text === 'im neuenheimer feld' || text === 'im-neuenheimer-feld') return 'Im Neuenheimer Feld'
+  if (text === 'mannheim & ludwigshafen' || text === 'mannheim-and-ludwigshafen') return 'Mannheim & Ludwigshafen'
+  if (text === 'online') return 'Online'
+  if (text === 'other') return 'Other'
+  return null
+}
+
+function parseTimeToMinutes(time: string) {
+  const [h, m] = time.split(':').map((v) => Number.parseInt(v, 10))
+  if (Number.isNaN(h) || Number.isNaN(m)) return NaN
+  return h * 60 + m
+}
+
+function formatMinutesToTime(total: number) {
+  return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`
+}
+
+function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleResponse {
+  const roomGroups: Record<string, RoomEntry[]> = {}
+
+  Object.entries(raw.rooms || {}).forEach(([street, entries]) => {
+    if (street.toLowerCase() === 'online') {
+      const allCourses = (entries || []).flatMap((e) => e.courses || [])
+      const sorted = [...allCourses].sort((a, b) => {
+        const sa = parseTimeToMinutes((a.time || '').split('-')[0]) || 0
+        const sb = parseTimeToMinutes((b.time || '').split('-')[0]) || 0
+        return sa - sb
+      })
+      const tracks: { end: number; courses: Course[] }[] = []
+      for (const course of sorted) {
+        const start = parseTimeToMinutes((course.time || '').split('-')[0])
+        const end = parseTimeToMinutes((course.time || '').split('-')[1])
+        if (Number.isNaN(start) || Number.isNaN(end)) {
+          if (tracks.length === 0) tracks.push({ end: 0, courses: [] })
+          tracks[0].courses.push(course)
+          continue
+        }
+        let placed = false
+        for (const track of tracks) {
+          if (start >= track.end) { track.courses.push(course); track.end = end; placed = true; break }
+        }
+        if (!placed) tracks.push({ end, courses: [course] })
+      }
+      roomGroups[street] = tracks.map((track, i) => ({
+        room: `Online ${i + 1}`,
+        floor: 'Virtual Spaces',
+        features: null,
+        courses: track.courses,
+      }))
+    } else {
+      roomGroups[street] = (entries || []).map((entry) => ({
+        room: entry.room,
+        floor: normalizeFloorLabel(entry.floor),
+        features: entry.features || null,
+        courses: entry.courses || [],
+      }))
+    }
+  })
+
+  const fallbackBuildings = Object.keys(roomGroups).map((street) => ({
+    id: street, street, displayName: street,
+    campus: resolveCampusName(street) || ('Other' as Campus),
+  }))
+  const normalizedBuildings = (raw.buildings && raw.buildings.length > 0 ? raw.buildings : fallbackBuildings)
+    .map((b) => {
+      const street = b.id || resolveLocalizedText(b.street, 'en') || 'Unknown'
+      return {
+        id: street,
+        street,
+        displayName: resolveLocalizedText(b.displayName, 'en') || street,
+        campus: normalizeCampusValue(b.campus) || resolveCampusName(street) || (street.toLowerCase() === 'online' ? 'Online' : 'Other'),
+      }
+    })
+    .filter((b, i, arr) => arr.findIndex((x) => x.id === b.id) === i)
+  return { buildings: normalizedBuildings, rooms: roomGroups }
+}
+
+function toIsoDate(d: Dayjs) { return d.format('YYYY-MM-DD') }
+
+function getVisibleRoomCourses(room: RoomEntry, query: string, language: Language) {
+  if (!query) return room.courses
+  return room.courses.filter((course) => {
+    const name = resolveLocalizedText(course.name, language).toLowerCase()
+    const prof = resolveLocalizedText(course.prof, language).toLowerCase()
+    return name.includes(query) || prof.includes(query)
+  })
+}
+
+function clusterEvents(events: TimelineEvent[]) {
+  const clusters: TimelineEvent[][] = []
+  const sorted = [...events].sort((l, r) => l.start - r.start)
+  for (const event of sorted) {
+    const cluster = clusters[clusters.length - 1]
+    if (!cluster) { clusters.push([event]); continue }
+    const clusterEnd = Math.max(...cluster.map((e) => e.end))
+    if (event.start < clusterEnd) { cluster.push(event) } else { clusters.push([event]) }
+  }
+  return clusters
+}
+
+async function fetchSchedule(date: string) {
+  const res = await fetch(`/api/schedule?date=${date}`, { cache: 'no-store' })
+  if (!res.ok) throw new Error(`HTTP ${res.status}`)
+  const contentType = res.headers.get('content-type') || ''
+  if (!contentType.includes('application/json')) throw new Error(`Unexpected content type`)
+  return normalizeScheduleResponse((await res.json()) as ScheduleResponse)
+}
+
+// ── Admin-specific components ────────────────────────────────────────────────
+
+type WeekEntry = {
+  day_of_week?: number
+  start_time?: string
+  end_time?: string
+  location?: string
+  location_link?: string | null
+  room?: string | null
+  building?: string | null
+  note?: string | null
+  [key: string]: unknown
+}
+
+type EditFileState = {
+  courseId: string
+  weekIndex: number   // index into weeks[]; -1 = no specific week
+  data: Record<string, unknown>
+}
+
+type BuildingEditState = {
+  isNew: boolean
+  buildingId: string
+  data: Record<string, unknown>
+}
+
+function AdminApp() {
+  const location = useLocation()
+  const navigate = useNavigate()
+  const buildingFromUrl = location.pathname === '/admin' ? '' : decodeURIComponent(location.pathname.slice('/admin/'.length - 1 + 1))
+  const theme = useStore((s) => s.theme)
+  const language: Language = 'en'
+
+  const [schedule, setSchedule] = React.useState<ScheduleResponse | null>(null)
+  const [scheduleVersion, setScheduleVersion] = React.useState(0)
+  const [selectedCampus, setSelectedCampus] = React.useState<Campus>('Altstadt')
+  const [selectedBuilding, setSelectedBuilding] = React.useState<string>('')
+  const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => {
+    try {
+      const saved = sessionStorage.getItem('admin-selected-date')
+      if (saved) {
+        const d = dayjs(saved)
+        if (d.isValid()) return d
+      }
+    } catch (_) { /* ignore */ }
+    return dayjs()
+  })
+  const [search, setSearch] = React.useState('')
+  const deferredSearch = React.useDeferredValue(search)
+  const [loading, setLoading] = React.useState(true)
+  const [error, setError] = React.useState<string | null>(null)
+  const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
+  const [skipSet, setSkipSet] = React.useState<Set<string>>(new Set())
+  const [skipLoading, setSkipLoading] = React.useState<string | null>(null)
+  const [editFileState, setEditFileState] = React.useState<EditFileState | null>(null)
+  const [editFileLoading, setEditFileLoading] = React.useState(false)
+  const [editFileSaving, setEditFileSaving] = React.useState(false)
+  const [batchEditChecked, setBatchEditChecked] = React.useState(false)
+  const [batchEditCount, setBatchEditCount] = React.useState<{ matches: { courseId: string; title: string; weeks: unknown[] }[]; totalWeeks: number } | null>(null)
+  const [batchEditSaving, setBatchEditSaving] = React.useState(false)
+  const [editForm] = Form.useForm()
+  const [buildingEditState, setBuildingEditState] = React.useState<BuildingEditState | null>(null)
+  const [buildingEditSaving, setBuildingEditSaving] = React.useState(false)
+  const [buildingDeleteLoading, setBuildingDeleteLoading] = React.useState(false)
+  const [buildingForm] = Form.useForm()
+  const [allBuildingsList, setAllBuildingsList] = React.useState<{ id: string; street: string; displayName: string; campusId: string }[] | null>(null)
+  const [weekEditCampus, setWeekEditCampus] = React.useState<string>('')
+
+  const bldOptions = React.useMemo(() => {
+    return (allBuildingsList || [])
+      .filter(b => !weekEditCampus || b.campusId === weekEditCampus)
+      .map(b => ({ value: b.street, label: (b.displayName && b.displayName.trim()) ? b.displayName.trim() : b.street }))
+  }, [allBuildingsList, weekEditCampus])
+  const [mergeTargetId, setMergeTargetId] = React.useState<string | null>(null)
+  const [mergeSaving, setMergeSaving] = React.useState(false)
+  const [roomEditState, setRoomEditState] = React.useState<{ buildingId: string; room: Record<string, unknown> } | null>(null)
+  const [roomEditSaving, setRoomEditSaving] = React.useState(false)
+  const [roomDeleteLoading, setRoomDeleteLoading] = React.useState<string | null>(null)
+  const [roomForm] = Form.useForm()
+  const [roomsModalOpen, setRoomsModalOpen] = React.useState(false)
+  const [roomsModalBuildingId, setRoomsModalBuildingId] = React.useState('')
+  const [roomsModalLabel, setRoomsModalLabel] = React.useState('')
+  const [roomsModalRooms, setRoomsModalRooms] = React.useState<Record<string, unknown>[]>([])
+  const [roomsModalLoading, setRoomsModalLoading] = React.useState(false)
+  const [addRoomSaving, setAddRoomSaving] = React.useState(false)
+  const [addRoomForm] = Form.useForm()
+  const [newEventOpen, setNewEventOpen] = React.useState(false)
+  const [newEventSaving, setNewEventSaving] = React.useState(false)
+  const [newEventCampus, setNewEventCampus] = React.useState('')
+  const [newEventForm] = Form.useForm()
+
+  const headerScrollRef = React.useRef<HTMLDivElement>(null)
+  const bodyScrollRef = React.useRef<HTMLDivElement>(null)
+  const initializedRef = React.useRef(false)
+  const campusSyncedRef = React.useRef(false)
+
+  const handleHeaderScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    if (bodyScrollRef.current) bodyScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft
+  }
+  const handleBodyScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    if (headerScrollRef.current) headerScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft
+  }
+
+  // Load skip list
+  React.useEffect(() => {
+    adminFetch('/api/admin/skip')
+      .then((r) => r.json())
+      .then((data) => setSkipSet(new Set(data.skip || [])))
+      .catch(() => {})
+  }, [])
+
+  // Building from URL
+  React.useEffect(() => {
+    const b = location.pathname.replace(/^\/admin\/?/, '')
+    if (b) setSelectedBuilding(decodeURIComponent(b))
+  }, [location.pathname])
+
+  // Sync selectedBuilding → campus
+  React.useEffect(() => {
+    if (!schedule || !selectedBuilding) return
+    const bld = schedule.buildings.find((b) => b.id === selectedBuilding)
+    if (!bld) return
+    const street = resolveLocalizedText(bld.street, language) || bld.id
+    const campus = normalizeCampusValue(bld.campus) || resolveCampusName(street) || 'Other'
+    campusSyncedRef.current = true
+    setSelectedCampus(campus as Campus)
+  }, [selectedBuilding, schedule])
+
+  // Update URL when building changes
+  React.useEffect(() => {
+    if (!initializedRef.current) { initializedRef.current = true; return }
+    if (selectedBuilding) {
+      navigate('/admin/' + encodeURIComponent(selectedBuilding), { replace: true })
+    } else {
+      navigate('/admin', { replace: true })
+    }
+  }, [selectedBuilding, navigate])
+
+  // Fetch schedule
+  React.useEffect(() => {
+    let alive = true
+    const run = async () => {
+      setLoading(true); setError(null)
+      try {
+        const data = await fetchSchedule(toIsoDate(selectedDate))
+        if (!alive) return
+        setSchedule(data)
+        setSelectedBuilding((cur) => {
+          if (cur && data.buildings.some((b) => b.id === cur)) return cur
+          return data.buildings.find((b) => {
+            const street = resolveLocalizedText(b.street, language) || b.id
+            const campus = normalizeCampusValue(b.campus) || resolveCampusName(street) || 'Other'
+            return campus === selectedCampus
+          })?.id || ''
+        })
+      } catch (e) {
+        if (!alive) return
+        setSchedule(null)
+        setError(e instanceof Error ? e.message : String(e))
+      } finally {
+        if (alive) setLoading(false)
+      }
+    }
+    void run()
+    return () => { alive = false }
+  }, [selectedDate, scheduleVersion])
+
+  const buildingOptions = React.useMemo(
+    () =>
+      (schedule?.buildings || []).map((b) => ({
+        value: b.id,
+        label: resolveBuildingLabel(b.displayName, language, resolveLocalizedText(b.street, language) || b.id),
+        campus: normalizeCampusValue(b.campus) || resolveCampusName(resolveLocalizedText(b.street, language) || b.id) || 'Other',
+      })),
+    [schedule],
+  )
+
+  const filteredBuildingOptions = React.useMemo(() => {
+    return buildingOptions
+      .filter((b) => b.campus === selectedCampus)
+      .sort((a, b) => {
+        const aU = a.value.toLowerCase() === 'unknown'
+        const bU = b.value.toLowerCase() === 'unknown'
+        if (aU && !bU) return -1
+        if (!aU && bU) return 1
+        return 0
+      })
+  }, [buildingOptions, selectedCampus])
+
+  const activeBuildingId = React.useMemo(() => {
+    if (selectedBuilding && filteredBuildingOptions.some((o) => o.value === selectedBuilding)) return selectedBuilding
+    return filteredBuildingOptions[0]?.value || ''
+  }, [filteredBuildingOptions, selectedBuilding])
+
+  React.useEffect(() => {
+    if (campusSyncedRef.current) { campusSyncedRef.current = false; return }
+    if (filteredBuildingOptions.length === 0) return
+    if (!filteredBuildingOptions.some((o) => o.value === selectedBuilding)) {
+      setSelectedBuilding(filteredBuildingOptions[0].value)
+    }
+  }, [filteredBuildingOptions, selectedBuilding])
+
+  // When user selects "No Information", fire a separate request for unscheduled courses
+  // (the server only populates that building when ?building=No+Information is present)
+  React.useEffect(() => {
+    if (activeBuildingId !== 'No Information') return
+    if (schedule?.rooms['No Information']?.length) return  // already loaded
+    let alive = true
+    const run = async () => {
+      try {
+        const res = await fetch(`/api/schedule?date=${toIsoDate(selectedDate)}&building=No+Information`, { cache: 'no-store' })
+        if (!res.ok || !alive) return
+        const data = normalizeScheduleResponse(await res.json() as ScheduleResponse)
+        if (!alive) return
+        setSchedule(prev => prev
+          ? { ...prev, rooms: { ...prev.rooms, 'No Information': data.rooms['No Information'] || [] } }
+          : data
+        )
+      } catch (_) { /* ignore */ }
+    }
+    void run()
+    return () => { alive = false }
+  }, [activeBuildingId, selectedDate])
+
+  // Sync edit form values whenever editFileState changes (handles multi-week re-open correctly)
+  React.useEffect(() => {
+    if (!editFileState || editFileState.weekIndex < 0) return
+    const weeks = editFileState.data.weeks as WeekEntry[]
+    const week = weeks[editFileState.weekIndex]
+    if (!week) return
+    const rawBuilding = week.building ?? ''
+    const lastComma = rawBuilding.lastIndexOf(',')
+    const floorLower = COMMON_FLOORS.map(f => f.toLowerCase())
+    let initBuilding = rawBuilding
+    let initFloor = ''
+    if (lastComma >= 0) {
+      const possibleFloor = rawBuilding.slice(lastComma + 1).trim()
+      if (floorLower.includes(possibleFloor.toLowerCase())) {
+        initBuilding = rawBuilding.slice(0, lastComma).trim()
+        initFloor = possibleFloor
+      }
+    }
+    const matched = (allBuildingsList || []).find(b => b.street === initBuilding)
+    setWeekEditCampus(matched?.campusId || '')
+    editForm.setFieldsValue({
+      week_room: week.room ?? '',
+      week_building: initBuilding || (week.building ?? ''),
+      week_floor: initFloor ? [initFloor] : [],
+      week_note: week.note ?? '',
+      week_location: week.location ?? '',
+    })
+    // Fetch batch-edit preview count
+    setBatchEditChecked(false)
+    setBatchEditCount(null)
+    const qRoom = encodeURIComponent(week.room || '')
+    const qBuilding = encodeURIComponent(week.building || 'null')
+    adminFetch(`/api/admin/courses/with-room?room=${qRoom}&building=${qBuilding}`)
+      .then(r => (r.ok ? r.json() : null))
+      .then((data: { matches: { courseId: string; title: string; weeks: unknown[] }[]; totalWeeks: number } | null) => { if (data) setBatchEditCount(data) })
+      .catch(() => {})
+  }, [editFileState])
+
+  const visibleRooms = React.useMemo(() => {
+    const rooms = (schedule?.rooms[activeBuildingId] || []).filter((r) => r.room)
+    const query = deferredSearch.trim().toLowerCase()
+    if (!query) return rooms
+    return rooms.filter((room) => {
+      if (room.room.toLowerCase().includes(query)) return true
+      return getVisibleRoomCourses(room, query, language).length > 0
+    })
+  }, [activeBuildingId, schedule, deferredSearch])
+
+  const visibleRoomGroups = React.useMemo<FloorGroup[]>(() => {
+    const floorMap = new Map<string, RoomEntry[]>()
+    visibleRooms.forEach((room) => {
+      const floor = normalizeFloorLabel(room.floor)
+      const bucket = floorMap.get(floor)
+      if (bucket) bucket.push(room)
+      else floorMap.set(floor, [room])
+    })
+    return Array.from(floorMap.entries())
+      .sort((l, r) => compareFloors(l[0], r[0]))
+      .map(([floor, rooms]) => ({
+        floor,
+        rooms: [...rooms].sort((l, r) => l.room.localeCompare(r.room, undefined, { numeric: true })),
+      }))
+  }, [visibleRooms])
+
+  const appTheme = React.useMemo(
+    () => ({
+      algorithm: theme === 'dark' ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm,
+      token: {
+        colorPrimary: theme === 'dark' ? '#7ab2ff' : '#0f62fe',
+        borderRadius: 16,
+        fontFamily: 'Manrope, "Noto Sans SC", "PingFang SC", sans-serif',
+      },
+    }),
+    [theme],
+  )
+
+  function handleLogout() {
+    clearToken()
+    navigate('/admin/login', { replace: true })
+  }
+
+  async function handleSkipToggle(courseId: string) {
+    if (!courseId) return
+    setSkipLoading(courseId)
+    try {
+      if (skipSet.has(courseId)) {
+        const res = await adminFetch(`/api/admin/skip/${encodeURIComponent(courseId)}`, { method: 'DELETE' })
+        const data = await res.json()
+        setSkipSet(new Set(data.skip || []))
+      } else {
+        const res = await adminFetch('/api/admin/skip', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ courseId }),
+        })
+        const data = await res.json()
+        setSkipSet(new Set(data.skip || []))
+      }
+    } catch (_) {
+      /* ignore */
+    } finally {
+      setSkipLoading(null)
+    }
+  }
+
+  async function handleOpenBuildingEdit() {
+    if (!activeBuildingId || activeBuildingId === 'No Information') return
+    const [buildingRes, listRes] = await Promise.all([
+      adminFetch(`/api/admin/building/${encodeURIComponent(activeBuildingId)}`),
+      adminFetch('/api/admin/buildings'),
+    ])
+    if (!buildingRes.ok) return
+    const data = await buildingRes.json()
+    if (listRes.ok) setAllBuildingsList(await listRes.json())
+    setMergeTargetId(null)
+    // Use the catalog id (data.id = slug like "bld-xxx"), not the street address
+    setBuildingEditState({ isNew: false, buildingId: data.id as string, data })
+    buildingForm.setFieldsValue({
+      street: data.street || '',
+      displayName: data.displayName || '',
+      campusId: data.campusId || '',
+      aliases: Array.isArray(data.aliases) ? data.aliases.join('\n') : '',
+      floors: Array.isArray(data.floors) ? data.floors : [],
+      notes: data.notes || '',
+    })
+  }
+
+  function handleOpenBuildingAdd() {
+    const campusIdMap: Record<string, string> = {
+      Altstadt: 'altstadt',
+      Bergheim: 'bergheim',
+      'Im Neuenheimer Feld': 'im-neuenheimer-feld',
+      'Mannheim & Ludwigshafen': 'mannheim-and-ludwigshafen',
+      Online: 'online',
+      Other: 'other',
+    }
+    setBuildingEditState({ isNew: true, buildingId: '', data: {} })
+    buildingForm.setFieldsValue({
+      street: '',
+      displayName: '',
+      campusId: campusIdMap[selectedCampus] || 'altstadt',
+      aliases: '',
+      floors: [],
+      notes: '',
+    })
+  }
+
+  async function handleSaveNewEvent(values: Record<string, unknown>) {
+    setNewEventSaving(true)
+    try {
+      const floorArr = Array.isArray(values.week_floor) ? values.week_floor as string[] : []
+      const floor = floorArr[0] ?? ''
+      let building = (values.week_building as string) || null
+      if (building && floor) building = `${building}, ${floor}`
+      const lecturers = (values.lecturers as string || '').split('\n').map((s: string) => s.trim()).filter(Boolean)
+      const payload = {
+        title: values.title as string,
+        type: (values.type as string) || '',
+        lecturers,
+        detail_link: (values.detail_link as string) || null,
+        start_date: values.start_date ? (values.start_date as unknown as { format: (f: string) => string }).format('YYYY-MM-DD') : null,
+        end_date: values.end_date ? (values.end_date as unknown as { format: (f: string) => string }).format('YYYY-MM-DD') : null,
+        weeks: [
+          {
+            day_of_week: values.day_of_week != null ? Number(values.day_of_week) : null,
+            start_time: (values.start_time as string) || null,
+            end_time: (values.end_time as string) || null,
+            room: (values.week_room as string) || null,
+            building,
+            location_link: (values.week_link as string) || null,
+            note: (values.week_note as string) || null,
+          },
+        ].filter(w => w.start_time || w.room),
+      }
+      const res = await adminFetch('/api/admin/course-file', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) { const e = await res.json(); alert(e.error || 'Failed to create event'); return }
+      setNewEventOpen(false)
+      newEventForm.resetFields()
+      setNewEventCampus('')
+      setScheduleVersion(v => v + 1)
+    } catch (_) {
+      /* ignore */
+    } finally {
+      setNewEventSaving(false)
+    }
+  }
+
+  async function handleMergeBuilding() {
+    if (!buildingEditState || buildingEditState.isNew || !mergeTargetId) return
+    const srcLabel = (buildingEditState.data.street as string) || buildingEditState.buildingId
+    const targetBuilding = (allBuildingsList || []).find(b => b.id === mergeTargetId)
+    const tgtLabel = targetBuilding ? (targetBuilding.displayName || targetBuilding.street) : mergeTargetId
+    const confirmed = window.confirm(
+      `Merge "${srcLabel}" INTO "${tgtLabel}"?\n\n` +
+      `• "${srcLabel}" will become an alias of "${tgtLabel}"\n` +
+      `• All rooms will be moved to "${tgtLabel}"\n` +
+      `• This building entry will be removed\n\n` +
+      `SQLite will be synced automatically after merge.`
+    )
+    if (!confirmed) return
+    setMergeSaving(true)
+    try {
+      const res = await adminFetch(
+        `/api/admin/building/${encodeURIComponent(buildingEditState.buildingId)}/merge-into/${encodeURIComponent(mergeTargetId)}`,
+        { method: 'POST' }
+      )
+      if (!res.ok) {
+        const err = await res.json()
+        alert(err.error || 'Merge failed')
+        return
+      }
+      setBuildingEditState(null)
+      setMergeTargetId(null)
+    } catch (_) {
+      alert('Network error during merge')
+    } finally {
+      setMergeSaving(false)
+    }
+  }
+
+  async function handleSaveBuildingEdit(values: Record<string, string>) {
+    if (!buildingEditState) return
+    setBuildingEditSaving(true)
+    const payload = {
+      street: values.street,
+      displayName: values.displayName || '',
+      campusId: values.campusId,
+      aliases: (values.aliases || '').split('\n').map((s: string) => s.trim()).filter(Boolean),
+      floors: Array.isArray(values.floors) ? (values.floors as string[]).map((s: string) => s.trim()).filter(Boolean) : [],
+      notes: values.notes || '',
+    }
+    try {
+      if (buildingEditState.isNew) {
+        const res = await adminFetch('/api/admin/building', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        })
+        if (!res.ok) {
+          const err = await res.json()
+          alert(err.error || 'Failed to create building')
+          return
+        }
+      } else {
+        await adminFetch(`/api/admin/building/${encodeURIComponent(buildingEditState.buildingId)}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...buildingEditState.data, ...payload }),
+        })
+      }
+      setBuildingEditState(null)
+      setScheduleVersion(v => v + 1)
+      setAllBuildingsList(null)  // invalidate cache so next course edit re-fetches
+    } catch (_) {
+      /* ignore */
+    } finally {
+      setBuildingEditSaving(false)
+    }
+  }
+
+  async function handleDeleteBuilding() {
+    if (!buildingEditState || buildingEditState.isNew) return
+    const label = (buildingEditState.data.street as string) || buildingEditState.buildingId
+    setBuildingDeleteLoading(true)
+    try {
+      const res = await adminFetch(
+        `/api/admin/building/${encodeURIComponent(buildingEditState.buildingId)}`,
+        { method: 'DELETE' }
+      )
+      const body = await res.json()
+      if (res.status === 409) {
+        const ids: string[] = body.courseIds || []
+        Modal.error({
+          title: 'Cannot delete building',
+          content: (
+            <div>
+              <p>The following courses are still mounted on this building. Please reassign or delete them first:</p>
+              <ul style={{ maxHeight: 200, overflowY: 'auto', paddingLeft: 18 }}>
+                {ids.map(id => <li key={id}><code>{id}</code></li>)}
+              </ul>
+            </div>
+          ),
+          width: 480,
+        })
+        return
+      }
+      if (!res.ok) { alert(body.error || 'Delete failed'); return }
+      setBuildingEditState(null)
+    } catch (_) {
+      alert('Network error')
+    } finally {
+      setBuildingDeleteLoading(false)
+    }
+  }
+
+  function confirmDeleteBuilding() {
+    const label = (buildingEditState?.data?.street as string) || buildingEditState?.buildingId || ''
+    Modal.confirm({
+      title: `Delete building "${label}"?`,
+      content: 'This action cannot be undone. The building and all its rooms will be removed from the catalog.',
+      okText: 'Delete',
+      okButtonProps: { danger: true },
+      onOk: handleDeleteBuilding,
+    })
+  }
+
+  async function handleDeleteRoom(buildingId: string, roomId: string, roomName: string) {
+    setRoomDeleteLoading(roomId)
+    try {
+      const res = await adminFetch(
+        `/api/admin/building/${encodeURIComponent(buildingId)}/room/${encodeURIComponent(roomId)}`,
+        { method: 'DELETE' }
+      )
+      const body = await res.json()
+      if (res.status === 409) {
+        const ids: string[] = body.courseIds || []
+        Modal.error({
+          title: 'Cannot delete room',
+          content: (
+            <div>
+              <p>The following courses are still mounted on room <strong>{roomName}</strong>. Please reassign or delete them first:</p>
+              <ul style={{ maxHeight: 200, overflowY: 'auto', paddingLeft: 18 }}>
+                {ids.map(id => <li key={id}><code>{id}</code></li>)}
+              </ul>
+            </div>
+          ),
+          width: 480,
+        })
+        return
+      }
+      if (!res.ok) { alert(body.error || 'Delete failed'); return }
+      await refreshRoomsData(buildingId)
+    } catch (_) {
+      alert('Network error')
+    } finally {
+      setRoomDeleteLoading(null)
+    }
+  }
+
+  function confirmDeleteRoom(buildingId: string, roomId: string, roomName: string) {
+    Modal.confirm({
+      title: `Delete room "${roomName}"?`,
+      content: 'This action cannot be undone.',
+      okText: 'Delete',
+      okButtonProps: { danger: true },
+      onOk: () => handleDeleteRoom(buildingId, roomId, roomName),
+    })
+  }
+
+  function openRoomEditModal(buildingId: string, room: Record<string, unknown>) {
+    setRoomEditState({ buildingId, room })
+    roomForm.setFieldsValue({
+      room_name: room.name ?? '',
+      room_floors: Array.isArray(room.floors) && (room.floors as string[]).length > 0 ? [(room.floors as string[])[0]] : [],
+      room_notes: room.notes ?? '',
+    })
+  }
+
+  async function refreshRoomsData(buildingId: string) {
+    const res = await adminFetch(`/api/admin/building/${encodeURIComponent(buildingId)}`)
+    if (!res.ok) return
+    const data = await res.json()
+    const rooms: Record<string, unknown>[] = Array.isArray(data.rooms) ? data.rooms : []
+    setRoomsModalRooms(rooms)
+    setBuildingEditState(prev => prev?.buildingId === buildingId ? { ...prev, data } : prev)
+  }
+
+  async function handleOpenRoomsManage() {
+    if (!activeBuildingId || activeBuildingId === 'No Information') return
+    setRoomsModalLoading(true)
+    setRoomsModalOpen(true)
+    try {
+      const res = await adminFetch(`/api/admin/building/${encodeURIComponent(activeBuildingId)}`)
+      if (!res.ok) { setRoomsModalOpen(false); return }
+      const data = await res.json()
+      setRoomsModalBuildingId(data.id as string)
+      setRoomsModalLabel((data.street as string) || (data.id as string))
+      setRoomsModalRooms(Array.isArray(data.rooms) ? data.rooms : [])
+    } catch (_) {
+      setRoomsModalOpen(false)
+    } finally {
+      setRoomsModalLoading(false)
+    }
+  }
+
+  async function handleAddRoomToBuilding(values: Record<string, string>) {
+    if (!roomsModalBuildingId) return
+    setAddRoomSaving(true)
+    const payload = {
+      name: values.room_add_name,
+      floors: Array.isArray(values.room_add_floors) ? (values.room_add_floors as string[]).slice(0, 1) : [],
+      notes: values.room_add_notes || '',
+    }
+    try {
+      const res = await adminFetch(
+        `/api/admin/building/${encodeURIComponent(roomsModalBuildingId)}/room`,
+        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }
+      )
+      if (!res.ok) { const e = await res.json(); alert(e.error || 'Failed to add room'); return }
+      addRoomForm.resetFields()
+      await refreshRoomsData(roomsModalBuildingId)
+    } catch (_) {
+      alert('Network error')
+    } finally {
+      setAddRoomSaving(false)
+    }
+  }
+
+  // Removed: handleOpenRoomEdit (replaced by openRoomEditModal)
+  // Removed: handleOpenRoomEditByName (replaced by handleOpenRoomsManage button in top bar)
+
+  async function handleSaveRoomEdit(values: Record<string, string>) {
+    if (!roomEditState) return
+    const room = roomEditState.room
+    setRoomEditSaving(true)
+    const payload = {
+      name: values.room_name,
+      floors: Array.isArray(values.room_floors) ? (values.room_floors as string[]).slice(0, 1) : [],
+      notes: values.room_notes || '',
+      features: room.features ?? null,
+    }
+    try {
+      const res = await adminFetch(
+        `/api/admin/building/${encodeURIComponent(roomEditState.buildingId)}/room/${encodeURIComponent(room.id as string)}`,
+        { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }
+      )
+      if (!res.ok) { const e = await res.json(); alert(e.error || 'Save failed'); return }
+      setRoomEditState(null)
+      await refreshRoomsData(roomEditState.buildingId)
+    } catch (_) {
+      alert('Network error')
+    } finally {
+      setRoomEditSaving(false)
+    }
+  }
+
+  async function handleOpenEdit(courseId: string, startTime?: string, dayOfWeek?: number) {
+    if (!courseId) return
+    setEditFileLoading(true)
+    setEditFileState(null)
+    // Reset form and campus immediately so old values don't bleed into the next week
+    editForm.resetFields()
+    setWeekEditCampus('')
+    try {
+      // Lazy-load all buildings for the cascade selector
+      let buildings = allBuildingsList
+      if (!buildings) {
+        const listRes = await adminFetch('/api/admin/buildings')
+        if (listRes.ok) {
+          buildings = await listRes.json()
+          setAllBuildingsList(buildings)
+        }
+      }
+      const res = await adminFetch(`/api/admin/course-file/${encodeURIComponent(courseId)}`)
+      const data = await res.json()
+      const weeks: WeekEntry[] = Array.isArray(data.weeks) ? data.weeks : []
+      // Find the matching week by start_time
+      const weekIndex = startTime
+        ? (() => {
+            // Prefer matching on both start_time AND day_of_week to avoid collision
+            // when multiple weeks share the same time slot
+            if (dayOfWeek !== undefined) {
+              const idx = weeks.findIndex((w) => w.start_time === startTime && w.day_of_week === dayOfWeek)
+              if (idx >= 0) return idx
+            }
+            return weeks.findIndex((w) => w.start_time === startTime)
+          })()
+        : -1
+      setEditFileState({ courseId, weekIndex, data })
+      // Form values are set via useEffect watching editFileState
+    } catch (_) {
+      /* ignore */
+    } finally {
+      setEditFileLoading(false)
+    }
+  }
+
+  async function handleSaveEdit(values: Record<string, unknown>) {
+    if (!editFileState) return
+    setEditFileSaving(true)
+    try {
+      const weeks: WeekEntry[] = Array.isArray(editFileState.data.weeks)
+        ? [...(editFileState.data.weeks as WeekEntry[])]
+        : []
+      // week_floor is string[] from tags Select — take first entry
+      const floorArr = Array.isArray(values.week_floor) ? values.week_floor as string[] : []
+      const floor = floorArr[0] ?? (typeof values.week_floor === 'string' ? values.week_floor : '')
+      let newBuilding = (values.week_building as string) || null
+      if (newBuilding && floor) {
+        newBuilding = `${newBuilding}, ${floor}`
+      }
+      if (editFileState.weekIndex >= 0 && editFileState.weekIndex < weeks.length) {
+        weeks[editFileState.weekIndex] = {
+          ...weeks[editFileState.weekIndex],
+          room: (values.week_room as string) || null,
+          building: newBuilding,
+          location: (values.week_location as string) || weeks[editFileState.weekIndex].location || null,
+          note: (values.week_note as string) || null,
+        }
+      }
+      const payload = { ...editFileState.data, weeks }
+      if (batchEditChecked) {
+        // Batch mode: apply same room/building change to ALL matching courses/weeks
+        setBatchEditSaving(true)
+        const origWeek = (editFileState.data.weeks as WeekEntry[])[editFileState.weekIndex]
+        await adminFetch('/api/admin/batch-edit-room', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            originalRoom: origWeek.room || null,
+            originalBuilding: origWeek.building || null,
+            newRoom: (values.week_room as string) || null,
+            newBuilding: newBuilding,
+          }),
+        })
+        setBatchEditSaving(false)
+      } else {
+        await adminFetch(`/api/admin/course-file/${encodeURIComponent(editFileState.courseId)}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        })
+      }
+      setEditFileState(null)
+    } catch (_) {
+      /* ignore */
+    } finally {
+      setEditFileSaving(false)
+    }
+  }
+
+  const timelineMinWidth = 120 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+
+  function renderCourseCard(event: TimelineEvent, room: RoomEntry, left: number, top: number, width: number, key: string) {
+    const professor = resolveLocalizedText(event.course.prof, language)
+    const courseName = resolveLocalizedText(event.course.name, language) || 'Untitled'
+    const courseId = event.course.id || ''
+    const isSkipped = courseId ? skipSet.has(courseId) : false
+
+    return (
+      <button
+        key={key}
+        type="button"
+        className="hei-event"
+        style={{
+          position: 'absolute',
+          left,
+          top,
+          width,
+          height: EVENT_HEIGHT,
+          opacity: isSkipped ? 0.4 : 1,
+          outline: isSkipped ? '2px dashed #ff4d4f' : undefined,
+        }}
+        onClick={() => setSelectedCourse({ room: room.room, course: event.course, startMinutes: event.start, endMinutes: event.end, dayOfWeek: selectedDate.day() })}
+      >
+        <span className="hei-event-title">{courseName}</span>
+        <span className="hei-event-meta">{professor || '—'}</span>
+        <span className="hei-event-time">
+          {formatMinutesToTime(event.start)} - {formatMinutesToTime(event.end)}
+        </span>
+      </button>
+    )
+  }
+
+  return (
+    <ConfigProvider theme={appTheme}>
+      <Layout className="hei-layout">
+        <div className="hei-orb hei-orb-a" />
+        <div className="hei-orb hei-orb-b" />
+
+        <Layout.Content className="hei-content">
+          <header className="hei-topbar">
+            <div className="hei-topbar-inner">
+              <div className="hei-brand-cluster">
+                <div className="hei-brand-row">
+                  <a href="/admin" style={{ display: 'flex', alignItems: 'center' }}>
+                    <img src="/heiView_logo.png" alt="heiView" className="hei-brand-logo" />
+                  </a>
+                  <Tag color="orange" style={{ marginLeft: 8, fontWeight: 600 }}>Admin</Tag>
+                </div>
+              </div>
+
+              <div className="hei-topbar-center">
+                <DatePicker
+                  size="large"
+                  allowClear={false}
+                  value={selectedDate}
+                  onChange={(v) => {
+                    const d = v || dayjs()
+                    setSelectedDate(d)
+                    try { sessionStorage.setItem('admin-selected-date', d.format('YYYY-MM-DD')) } catch (_) { /* ignore */ }
+                  }}
+                  className="hei-topbar-date"
+                />
+              </div>
+
+              <Space size="middle" wrap align="center" className="hei-toolbar-actions">
+                <DarkModeButton className="hei-toolbar-icon-button" />
+                <Input
+                  size="large"
+                  allowClear
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Room, course, or lecturer"
+                  suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
+                  className="hei-toolbar-search"
+                />
+                <Button
+                  size="large"
+                  icon={<LogoutOutlined />}
+                  onClick={handleLogout}
+                  danger
+                >
+                  Logout
+                </Button>
+              </Space>
+            </div>
+          </header>
+
+          <div className="hei-shell">
+            {error && <Alert type="error" showIcon className="hei-error" message={`Load failed: ${error}`} />}
+
+            <section className="hei-board-card">
+              <div className="hei-board-controls">
+                <div className="hei-campus-building-row">
+                  <Select
+                    size="large"
+                    value={selectedCampus}
+                    options={CAMPUS_OPTIONS.map((c) => ({ value: c, label: formatCampusOptionLabel(c) }))}
+                    popupMatchSelectWidth={false}
+                    popupClassName="hei-campus-dropdown"
+                    onChange={(v) => setSelectedCampus(v as Campus)}
+                    className="hei-topbar-campus"
+                  />
+                  <Select
+                    size="large"
+                    value={activeBuildingId || undefined}
+                    placeholder="No building selected"
+                    options={filteredBuildingOptions.map(({ campus, ...o }) => o)}
+                    popupMatchSelectWidth={false}
+                    onChange={(v) => setSelectedBuilding(v)}
+                    disabled={filteredBuildingOptions.length === 0}
+                    className="hei-control-select"
+                    virtual={false}
+                    listHeight={500}
+                    popupClassName="hei-building-dropdown-multi"
+                  />
+                  <Button
+                    size="large"
+                    disabled={!activeBuildingId || activeBuildingId === 'No Information'}
+                    onClick={handleOpenBuildingEdit}
+                  >
+                    Edit Building
+                  </Button>
+                  <Button
+                    size="large"
+                    disabled={!activeBuildingId || activeBuildingId === 'No Information'}
+                    onClick={handleOpenRoomsManage}
+                  >
+                    Edit Rooms
+                  </Button>
+                  <Button
+                    size="large"
+                    type="dashed"
+                    onClick={handleOpenBuildingAdd}
+                  >
+                    + New Building
+                  </Button>
+                  <Button
+                    size="large"
+                    type="dashed"
+                    onClick={async () => {
+                      newEventForm.resetFields()
+                      setNewEventCampus('')
+                      setNewEventOpen(true)
+                      // Lazy-load buildings list for the building selector
+                      if (!allBuildingsList) {
+                        const r = await adminFetch('/api/admin/buildings')
+                        if (r.ok) setAllBuildingsList(await r.json())
+                      }
+                    }}
+                  >
+                    + New Event
+                  </Button>
+                </div>
+              </div>
+
+              <div className="hei-board-controls-divider" />
+
+              {(!loading && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
+                <div className="hei-board-frame-header" ref={headerScrollRef} onScroll={handleHeaderScroll}>
+                  <div className="hei-timetable" aria-hidden="true" style={{ width: `max(100%, ${timelineMinWidth}px)`, borderBottomLeftRadius: 0, borderBottomRightRadius: 0, minHeight: 'auto' }}>
+                    <div className="hei-timetable-head" style={{ borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }}>
+                      <div className="hei-timetable-head-label" />
+                      <div className="hei-timetable-head-track">
+                        {Array.from({ length: TRACK_END_HOUR - TRACK_START_HOUR + 1 }, (_, i) => TRACK_START_HOUR + i).map((hour) => {
+                          if (hour > 22) return null
+                          const left = (hour - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+                          return (
+                            <div key={hour} className="hei-hour-label" style={{ left }}>
+                              {String(hour).padStart(2, '0')}:00
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <div className="hei-board-frame" ref={bodyScrollRef} onScroll={handleBodyScroll}>
+                {loading ? (
+                  <div className="hei-board-loading">
+                    <Spin size="large" />
+                    <Typography.Text type="secondary">Loading course data...</Typography.Text>
+                  </div>
+                ) : activeBuildingId === 'No Information' ? (
+                  <div className="hei-no-info-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px', padding: '16px' }}>
+                    {(() => {
+                      const allCourses = visibleRoomGroups.flatMap((g) =>
+                        g.rooms.flatMap((r) => getVisibleRoomCourses(r, deferredSearch.trim().toLowerCase(), language)),
+                      )
+                      return allCourses.map((event, idx) => {
+                        const courseId = event.id || ''
+                        const isSkipped = courseId ? skipSet.has(courseId) : false
+                        return (
+                          <div
+                            key={idx}
+                            className="hei-event"
+                            style={{ position: 'relative', width: '100%', height: 'auto', minHeight: 140, padding: '12px', cursor: 'pointer', opacity: isSkipped ? 0.4 : 1, outline: isSkipped ? '2px dashed #ff4d4f' : undefined }}
+                            onClick={() => setSelectedCourse({ room: 'No Information', course: event, startMinutes: 0, endMinutes: 0, dayOfWeek: selectedDate.day() })}
+                          >
+                            <span className="hei-event-title" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', whiteSpace: 'normal' }}>{resolveLocalizedText(event.name, language)}</span>
+                            <span className="hei-event-meta" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', whiteSpace: 'normal' }}>{resolveLocalizedText(event.prof, language) || '—'}</span>
+                          </div>
+                        )
+                      })
+                    })()}
+                  </div>
+                ) : visibleRoomGroups.length > 0 ? (
+                  <div className="hei-timetable" role="table" aria-label="Course timeline" style={{ width: `max(100%, ${timelineMinWidth}px)`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
+                    <div className="hei-timetable-body">
+                      {visibleRoomGroups.map((group) => (
+                        <div key={`floor-${group.floor}`} className="hei-floor-group">
+                          <div className="hei-floor-header">{group.floor}</div>
+                          {group.rooms.map((room) => {
+                            const visibleCourses = getVisibleRoomCourses(room, deferredSearch.trim().toLowerCase(), language)
+                            const parsedEvents = visibleCourses
+                              .map<TimelineEvent | null>((course) => {
+                                const [startText, endText] = course.time.split('-')
+                                const start = parseTimeToMinutes(startText)
+                                const end = parseTimeToMinutes(endText)
+                                if (Number.isNaN(start) || Number.isNaN(end)) return null
+                                const startOffset = Math.max(0, start - TRACK_START_HOUR * 60)
+                                const endOffset = Math.min((TRACK_END_HOUR - TRACK_START_HOUR) * 60, end - TRACK_START_HOUR * 60)
+                                return { course, start, end, startOffset, endOffset }
+                              })
+                              .filter((e): e is TimelineEvent => e !== null)
+
+                            const clusters = clusterEvents(parsedEvents)
+
+                            return (
+                              <div key={`${group.floor}-${room.room}`} className="hei-room-row" style={{ minHeight: ROOM_ROW_HEIGHT }}>
+                                <div className="hei-room-label">
+                                  <span>{room.room.replace(/\s*\/\s*/g, ' / ')}</span>
+                                </div>
+                                <div className="hei-room-track" style={{ minHeight: ROOM_ROW_HEIGHT }}>
+                                  {Array.from({ length: TRACK_END_HOUR - TRACK_START_HOUR + 1 }, (_, i) => i).map((i) => (
+                                    <div key={i} className="hei-grid-line" style={{ left: i * 60 * PIXELS_PER_MINUTE }} />
+                                  ))}
+                                  {clusters.flatMap((cluster, ci) => {
+                                    const columns: TimelineEvent[][] = []
+                                    cluster.forEach((event) => {
+                                      let placed = false
+                                      for (const col of columns) {
+                                        if (col[col.length - 1].end <= event.start) { col.push(event); placed = true; break }
+                                      }
+                                      if (!placed) columns.push([event])
+                                    })
+                                    return cluster.map((event) => {
+                                      const colIdx = columns.findIndex((col) => col.includes(event))
+                                      const colCount = Math.max(1, columns.length)
+                                      const durationPx = Math.max(30, (event.endOffset - event.startOffset) * PIXELS_PER_MINUTE)
+                                      const slotWidth = Math.max(24, Math.floor(durationPx / colCount) - 6)
+                                      const left = event.startOffset * PIXELS_PER_MINUTE + colIdx * slotWidth
+                                      const top = 7 + colIdx * 4
+                                      const courseName = resolveLocalizedText(event.course.name, language) || 'Untitled'
+                                      return renderCourseCard(event, room, left, top, slotWidth, `${room.room}-${ci}-${event.start}-${event.end}-${courseName}`)
+                                    })
+                                  })}
+                                </div>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="hei-empty-state">
+                    <Empty description="No course data is available for the selected date" />
+                  </div>
+                )}
+              </div>
+            </section>
+          </div>
+        </Layout.Content>
+
+        {/* Course detail modal */}
+        <Modal
+          open={selectedCourse !== null}
+          onCancel={() => setSelectedCourse(null)}
+          footer={null}
+          title={
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingRight: 32 }}>
+              <span style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', whiteSpace: 'normal', wordBreak: 'break-word', paddingRight: 8 }}>
+                {selectedCourse ? resolveLocalizedText(selectedCourse.course.name, language) : ''}
+              </span>
+              {selectedCourse?.course.id && (
+                <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+                  <button
+                    type="button"
+                    disabled={skipLoading === selectedCourse.course.id}
+                    onClick={() => handleSkipToggle(selectedCourse.course.id!)}
+                    style={{
+                      padding: '2px 10px',
+                      borderRadius: 4,
+                      border: `1px solid ${skipSet.has(selectedCourse.course.id) ? '#52c41a' : '#ff4d4f'}`,
+                      background: 'transparent',
+                      color: skipSet.has(selectedCourse.course.id) ? '#52c41a' : '#ff4d4f',
+                      fontSize: 12,
+                      fontWeight: 500,
+                      cursor: 'pointer',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {skipSet.has(selectedCourse.course.id) ? 'Undo Skip' : 'Skip'}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const startTime = formatMinutesToTime(selectedCourse.startMinutes)
+                      setSelectedCourse(null)
+                      handleOpenEdit(selectedCourse.course.id!, startTime, selectedCourse.dayOfWeek)
+                    }}
+                    style={{
+                      padding: '2px 10px',
+                      borderRadius: 4,
+                      border: '1px solid #7ab2ff',
+                      background: 'transparent',
+                      color: '#7ab2ff',
+                      fontSize: 12,
+                      fontWeight: 500,
+                      cursor: 'pointer',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    Edit
+                  </button>
+                </div>
+              )}
+            </div>
+          }
+          destroyOnClose
+        >
+          {selectedCourse && (
+            <Space direction="vertical" size="middle" style={{ width: '100%' }}>
+              <div className="hei-modal-summary">
+                <Space direction="vertical" size={8} style={{ width: '100%' }}>
+                  <Typography.Text strong>
+                    {selectedCourse.room} · {formatMinutesToTime(selectedCourse.startMinutes)} - {formatMinutesToTime(selectedCourse.endMinutes)}
+                  </Typography.Text>
+                  <Typography.Text type="secondary">
+                    {resolveLocalizedText(selectedCourse.course.prof, language) || '—'}
+                  </Typography.Text>
+                  {selectedCourse.course.note && (
+                    <Typography.Text type="secondary" style={{ whiteSpace: 'pre-wrap', marginTop: 8, display: 'block' }}>
+                      <span style={{ fontWeight: 'normal', color: 'var(--hei-text)' }}>Note: </span>
+                      {selectedCourse.course.note}
+                    </Typography.Text>
+                  )}
+                  {selectedCourse.course.id && (
+                    <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                      ID: <code>{selectedCourse.course.id}</code>
+                      {skipSet.has(selectedCourse.course.id) && (
+                        <Tag color="red" style={{ marginLeft: 8 }}>Marked to skip</Tag>
+                      )}
+                    </Typography.Text>
+                  )}
+                </Space>
+              </div>
+              {selectedCourse.course.link ? (
+                <a href={selectedCourse.course.link} target="_blank" rel="noreferrer">{selectedCourse.course.link}</a>
+              ) : (
+                <Typography.Text type="secondary">No course link provided.</Typography.Text>
+              )}
+            </Space>
+          )}
+        </Modal>
+
+        {/* Edit course file modal */}
+        <Modal
+          open={editFileState !== null || editFileLoading}
+          onCancel={() => { setEditFileState(null); setEditFileLoading(false); }}
+          title={editFileState && editFileState.weekIndex >= 0
+            ? (() => {
+                const w = (editFileState.data.weeks as WeekEntry[])?.[editFileState.weekIndex]
+                return `Edit Occurrence — ${w?.start_time ?? ''}${w?.end_time ? `–${w.end_time}` : ''}`
+              })()
+            : 'Edit Course'}
+          width={560}
+          footer={null}
+          destroyOnClose
+        >
+          {editFileLoading ? (
+            <div style={{ textAlign: 'center', padding: 40 }}><Spin /></div>
+          ) : editFileState && editFileState.weekIndex >= 0 ? (() => {
+            const week = (editFileState.data.weeks as WeekEntry[])[editFileState.weekIndex]
+            return (
+              <Form form={editForm} layout="vertical" onFinish={handleSaveEdit}>
+                <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 16, fontSize: 12 }}>
+                  {`Day ${week.day_of_week ?? '?'} · ${week.start_time ?? '?'} – ${week.end_time ?? '?'}`}
+                  {week.location && <span style={{ marginLeft: 8 }}>· Original: <em>{week.location}</em></span>}
+                </Typography.Text>
+                <Form.Item name="week_room" label="Room">
+                  <Input placeholder="e.g. Übungsraum 110.02.05 (4110.02.005)" />
+                </Form.Item>
+                <Form.Item label="Building">
+                  <div style={{ display: 'flex', gap: 8 }}>
+                    <Select
+                      style={{ width: 160, flexShrink: 0 }}
+                      placeholder="Campus…"
+                      allowClear
+                      value={weekEditCampus || undefined}
+                      options={BUILDING_CAMPUS_OPTIONS}
+                      onChange={(v: string | undefined) => {
+                        setWeekEditCampus(v || '')
+                        editForm.setFieldValue('week_building', undefined)
+                      }}
+                    />
+                    <Form.Item name="week_building" noStyle>
+                      <Select
+                        showSearch
+                        allowClear
+                        placeholder="Select building…"
+                        optionFilterProp="label"
+                        options={bldOptions}
+                        style={{ flex: 1 }}
+                      />
+                    </Form.Item>
+                  </div>
+                </Form.Item>
+                <Form.Item name="week_floor" label="Floor">
+                  <Select
+                    mode="tags"
+                    maxCount={1}
+                    placeholder="Select or type a floor…"
+                    options={COMMON_FLOORS.map(f => ({ value: f, label: f }))}
+                    tokenSeparators={[',']}
+                  />
+                </Form.Item>
+                <Form.Item name="week_note" label="Note">
+                  <Input.TextArea rows={2} />
+                </Form.Item>
+                <Form.Item name="week_location" label="Location (raw string, optional override)">
+                  <Input placeholder="Leave empty to keep original" />
+                </Form.Item>
+                <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 16, fontSize: 12 }}>
+                  Saved to <code>overrides/course-{editFileState.courseId}.json</code> and synced to SQLite automatically.
+                </Typography.Text>
+                {batchEditCount && batchEditCount.totalWeeks > 1 && (
+                  <Form.Item style={{ marginBottom: 12 }}>
+                    <Checkbox
+                      checked={batchEditChecked}
+                      onChange={e => setBatchEditChecked(e.target.checked)}
+                    >
+                      Also update all {batchEditCount.totalWeeks} occurrences with the same room
+                      <Typography.Text type="secondary" style={{ fontSize: 11, marginLeft: 6 }}>
+                        ({batchEditCount.matches.length} course{batchEditCount.matches.length > 1 ? 's' : ''})
+                      </Typography.Text>
+                    </Checkbox>
+                  </Form.Item>
+                )}
+                <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
+                  <Space>
+                    <Button onClick={() => setEditFileState(null)}>Cancel</Button>
+                    <Button type="primary" htmlType="submit" loading={editFileSaving || batchEditSaving}>
+                      {batchEditChecked ? 'Save to all matching' : 'Save to overrides'}
+                    </Button>
+                  </Space>
+                </Form.Item>
+              </Form>
+            )
+          })() : null}
+        </Modal>
+        {/* New Event modal */}
+        <Modal
+          open={newEventOpen}
+          onCancel={() => setNewEventOpen(false)}
+          title="New Event / Lecture"
+          width={600}
+          footer={null}
+          destroyOnClose
+        >
+          <Form form={newEventForm} layout="vertical" onFinish={handleSaveNewEvent}>
+            <Form.Item name="title" label="Title" rules={[{ required: true, message: 'Title is required' }]}>
+              <Input placeholder="e.g. Guest Lecture: Introduction to …" />
+            </Form.Item>
+            <Form.Item name="type" label="Type (optional)">
+              <AutoComplete
+                placeholder="Select or type a type…"
+                options={[
+                  { value: 'L', label: 'L — Lecture (Vorlesung)' },
+                  { value: 'GL', label: 'GL — Guest Lecture' },
+                  { value: 'SE', label: 'SE — Seminar' },
+                  { value: 'WS', label: 'WS — Workshop' },
+                  { value: 'T', label: 'T — Tutorial (Tutorium / Übung)' },
+                  { value: 'CO', label: 'CO — Colloquium (Kolloquium)' },
+                  { value: 'P', label: 'P — Praktikum' },
+                  { value: 'PC', label: 'PC — Practical Course' },
+                  { value: 'C', label: 'C — Course' },
+                  { value: 'BT', label: 'BT — Block Tutorial' },
+                  { value: 'AG', label: 'AG — Working Group (Arbeitsgruppe)' },
+                ]}
+                filterOption={(inputValue, option) =>
+                  !!option && option.value.toLowerCase().includes(inputValue.toLowerCase())
+                }
+              />
+            </Form.Item>
+            <Form.Item name="lecturers" label="Lecturers (one per line, optional)">
+              <Input.TextArea rows={2} placeholder="Max Müller&#10;Jane Doe" />
+            </Form.Item>
+            <Form.Item name="detail_link" label="Link (optional)">
+              <Input placeholder="https://heilearn.uni-heidelberg.de/…" />
+            </Form.Item>
+            <Row gutter={12}>
+              <Col span={12}>
+                <Form.Item name="start_date" label="Start date">
+                  <DatePicker style={{ width: '100%' }} />
+                </Form.Item>
+              </Col>
+              <Col span={12}>
+                <Form.Item name="end_date" label="End date">
+                  <DatePicker style={{ width: '100%' }} />
+                </Form.Item>
+              </Col>
+            </Row>
+            <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 12, fontSize: 12 }}>
+              Session (repeats weekly between the dates above)
+            </Typography.Text>
+            <Row gutter={12}>
+              <Col span={8}>
+                <Form.Item name="day_of_week" label="Day of week">
+                  <Select placeholder="Day" options={[
+                    { value: 1, label: 'Monday' },
+                    { value: 2, label: 'Tuesday' },
+                    { value: 3, label: 'Wednesday' },
+                    { value: 4, label: 'Thursday' },
+                    { value: 5, label: 'Friday' },
+                    { value: 6, label: 'Saturday' },
+                    { value: 0, label: 'Sunday' },
+                  ]} />
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item name="start_time" label="Start time">
+                  <Input placeholder="09:00" />
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item name="end_time" label="End time">
+                  <Input placeholder="10:30" />
+                </Form.Item>
+              </Col>
+            </Row>
+            <Form.Item name="week_room" label="Room">
+              <Input placeholder="e.g. Seminarraum 1" />
+            </Form.Item>
+            <Form.Item label="Building">
+              <div style={{ display: 'flex', gap: 8 }}>
+                <Select
+                  style={{ width: 160, flexShrink: 0 }}
+                  placeholder="Campus…"
+                  allowClear
+                  value={newEventCampus || undefined}
+                  options={BUILDING_CAMPUS_OPTIONS}
+                  onChange={(v: string | undefined) => {
+                    setNewEventCampus(v || '')
+                    newEventForm.setFieldValue('week_building', undefined)
+                  }}
+                />
+                <Form.Item name="week_building" noStyle>
+                  <Select
+                    showSearch
+                    allowClear
+                    placeholder="Select building…"
+                    optionFilterProp="label"
+                    options={(allBuildingsList || [])
+                      .filter(b => !newEventCampus || b.campusId === newEventCampus)
+                      .map(b => ({ value: b.street, label: (b.displayName && b.displayName.trim()) ? b.displayName.trim() : b.street }))}
+                    style={{ flex: 1 }}
+                  />
+                </Form.Item>
+              </div>
+            </Form.Item>
+            <Form.Item name="week_floor" label="Floor (optional)">
+              <Select
+                mode="tags"
+                maxCount={1}
+                placeholder="Leave empty → Unknown floor"
+                options={COMMON_FLOORS.map(f => ({ value: f, label: f }))}
+                tokenSeparators={[',']}
+              />
+            </Form.Item>
+            <Form.Item name="week_note" label="Note (optional)">
+              <Input.TextArea rows={2} />
+            </Form.Item>
+            <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 12, fontSize: 12 }}>
+              Saved to <code>data/2026SS/custom/</code> and synced to SQLite automatically.
+            </Typography.Text>
+            <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
+              <Space>
+                <Button onClick={() => setNewEventOpen(false)}>Cancel</Button>
+                <Button type="primary" htmlType="submit" loading={newEventSaving}>Create Event</Button>
+              </Space>
+            </Form.Item>
+          </Form>
+        </Modal>
+        {/* Edit / Add building modal */}
+        <Modal
+          open={buildingEditState !== null}
+          onCancel={() => setBuildingEditState(null)}
+          title={buildingEditState?.isNew ? 'New Building' : `Edit Building — ${buildingEditState?.data?.street || buildingEditState?.buildingId || ''}`}
+          width={560}
+          footer={null}
+          destroyOnClose
+        >
+          {buildingEditState && (
+            <Form form={buildingForm} layout="vertical" onFinish={handleSaveBuildingEdit}>
+              <Form.Item name="street" label="Street address" rules={[{ required: true }]}>
+                <Input placeholder="Hauptstraße 47-51" />
+              </Form.Item>
+              <Form.Item name="displayName" label="Display name (optional)">
+                <Input placeholder="Leave empty to use street address" />
+              </Form.Item>
+              <Form.Item name="campusId" label="Campus" rules={[{ required: true }]}>
+                <Select
+                  options={BUILDING_CAMPUS_OPTIONS}
+                />
+              </Form.Item>
+              <Form.Item name="aliases" label="Aliases (one per line)">
+                <Input.TextArea rows={3} placeholder="Alias 1&#10;Alias 2" />
+              </Form.Item>
+              <Form.Item name="floors" label="Floors (optional)">
+                <Select
+                  mode="tags"
+                  placeholder="Select or type floors…"
+                  options={COMMON_FLOORS.map(f => ({ value: f, label: f }))}
+                  tokenSeparators={[',']}
+                />
+              </Form.Item>
+              <Form.Item name="notes" label="Notes">
+                <Input.TextArea rows={2} />
+              </Form.Item>
+              <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 16, fontSize: 12 }}>
+                Saved to <code>data/building-catalog.json</code> and synced to SQLite automatically.
+              </Typography.Text>
+              <Form.Item style={{ marginBottom: 0 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  {!buildingEditState.isNew ? (
+                    <Button danger loading={buildingDeleteLoading} onClick={confirmDeleteBuilding}>
+                      Delete Building
+                    </Button>
+                  ) : <span />}
+                  <Space>
+                    <Button onClick={() => setBuildingEditState(null)}>Cancel</Button>
+                    <Button type="primary" htmlType="submit" loading={buildingEditSaving}>
+                      {buildingEditState.isNew ? 'Create Building' : 'Save Changes'}
+                    </Button>
+                  </Space>
+                </div>
+              </Form.Item>
+              {!buildingEditState.isNew && (
+                <>
+                  {/* ── Merge section ── */}
+                  <div style={{ marginTop: 24, borderTop: '1px solid rgba(128,128,128,0.2)', paddingTop: 16 }}>
+                    <Typography.Text type="secondary" style={{ fontSize: 12, display: 'block', marginBottom: 8 }}>
+                      Merge into another building — this building's street address will become an alias of the target, and all its rooms will be moved over. This entry will then be removed.
+                    </Typography.Text>
+                    <Space.Compact style={{ width: '100%' }}>
+                      <Select
+                        style={{ flex: 1 }}
+                        placeholder="Select target building…"
+                        showSearch
+                        allowClear
+                        optionFilterProp="label"
+                        value={mergeTargetId}
+                        onChange={(v) => setMergeTargetId(v ?? null)}
+                        options={(allBuildingsList || [])
+                          .filter(b => b.id !== buildingEditState.buildingId)
+                          .map(b => ({ value: b.id, label: b.displayName || b.street }))}
+                      />
+                      <Button
+                        danger
+                        loading={mergeSaving}
+                        disabled={!mergeTargetId}
+                        onClick={handleMergeBuilding}
+                      >
+                        Merge
+                      </Button>
+                    </Space.Compact>
+                  </div>
+                  {/* ── Rooms section ── */}
+                  <div style={{ marginTop: 24, borderTop: '1px solid rgba(128,128,128,0.2)', paddingTop: 16 }}>
+                    <Typography.Text strong style={{ fontSize: 13, display: 'block', marginBottom: 12 }}>
+                      Rooms
+                    </Typography.Text>
+                    {(() => {
+                      const rooms = Array.isArray(buildingEditState.data.rooms)
+                        ? (buildingEditState.data.rooms as Record<string, unknown>[])
+                        : []
+                      if (rooms.length === 0) {
+                        return (
+                          <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                            No rooms defined for this building.
+                          </Typography.Text>
+                        )
+                      }
+                      return (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                          {rooms.map(room => {
+                            const roomId = room.id as string
+                            const roomName = room.name as string
+                            const roomFloors = Array.isArray(room.floors) ? (room.floors as string[]) : []
+                            return (
+                              <div
+                                key={roomId}
+                                style={{
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: 8,
+                                  padding: '6px 10px',
+                                  borderRadius: 6,
+                                  background: 'rgba(128,128,128,0.06)',
+                                }}
+                              >
+                                <div style={{ flex: 1, minWidth: 0 }}>
+                                  <span style={{ fontSize: 13, fontWeight: 500 }}>{roomName}</span>
+                                  {roomFloors.length > 0 && (
+                                    <span style={{ marginLeft: 8, fontSize: 11, color: 'var(--color-text-secondary, #888)' }}>
+                                      {roomFloors.join(', ')}
+                                    </span>
+                                  )}
+                                </div>
+                                <Button size="small" onClick={() => openRoomEditModal(buildingEditState.buildingId, room)}>
+                                  Edit
+                                </Button>
+                                <Button
+                                  size="small"
+                                  danger
+                                  loading={roomDeleteLoading === roomId}
+                                  onClick={() => confirmDeleteRoom(buildingEditState.buildingId, roomId, roomName)}
+                                >
+                                  Delete
+                                </Button>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      )
+                    })()}
+                  </div>
+                </>
+              )}
+            </Form>
+          )}
+        </Modal>
+
+        {/* ── Edit Room modal ── */}
+        <Modal
+          open={roomEditState !== null}
+          onCancel={() => setRoomEditState(null)}
+          title={`Edit Room — ${(roomEditState?.room?.name as string) || ''}`}
+          width={440}
+          footer={null}
+          destroyOnClose
+        >
+          {roomEditState && (
+            <Form form={roomForm} layout="vertical" onFinish={handleSaveRoomEdit}>
+              <Form.Item name="room_name" label="Room name" rules={[{ required: true }]}>
+                <Input placeholder="Hörsaal 5 (3041.EG.005)" />
+              </Form.Item>
+              <Form.Item name="room_floors" label="Floor">
+                <Select
+                  mode="tags"
+                  maxCount={1}
+                  placeholder="Select or type a floor…"
+                  options={COMMON_FLOORS.map(f => ({ value: f, label: f }))}
+                  tokenSeparators={[',']}
+                />
+              </Form.Item>
+              <Form.Item name="room_notes" label="Notes">
+                <Input.TextArea rows={2} />
+              </Form.Item>
+              <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
+                <Space>
+                  <Button onClick={() => setRoomEditState(null)}>Cancel</Button>
+                  <Button type="primary" htmlType="submit" loading={roomEditSaving}>
+                    Save Room
+                  </Button>
+                </Space>
+              </Form.Item>
+            </Form>
+          )}
+        </Modal>
+
+        {/* ── Manage Rooms modal ── */}
+        <Modal
+          open={roomsModalOpen}
+          onCancel={() => setRoomsModalOpen(false)}
+          title={`Rooms — ${roomsModalLabel || roomsModalBuildingId}`}
+          width={560}
+          footer={null}
+          destroyOnClose
+        >
+          {roomsModalLoading ? (
+            <div style={{ textAlign: 'center', padding: 32 }}><Spin /></div>
+          ) : (
+            <div style={{ maxHeight: '55vh', overflowY: 'auto', marginBottom: 20 }}>
+              {roomsModalRooms.length === 0 && (
+                <div style={{ color: '#999', textAlign: 'center', padding: 16 }}>No rooms defined.</div>
+              )}
+              {roomsModalRooms.map((room) => {
+                const roomId = room.id as string
+                const roomName = room.name as string
+                return (
+                  <div
+                    key={roomId}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      padding: '6px 0',
+                      borderBottom: '1px solid #f0f0f0',
+                    }}
+                  >
+                    <div style={{ flex: 1 }}>
+                      <span style={{ fontWeight: 500 }}>{roomName}</span>
+                      {Array.isArray(room.floors) && (room.floors as string[]).length > 0 && (
+                        <span style={{ fontSize: 11, color: '#888', marginLeft: 8 }}>
+                          {(room.floors as string[]).join(', ')}
+                        </span>
+                      )}
+                    </div>
+                    <Button
+                      size="small"
+                      onClick={() => openRoomEditModal(roomsModalBuildingId, room)}
+                    >
+                      Edit
+                    </Button>
+                    <Button
+                      size="small"
+                      danger
+                      loading={roomDeleteLoading === roomId}
+                      onClick={() => confirmDeleteRoom(roomsModalBuildingId, roomId, roomName)}
+                    >
+                      Delete
+                    </Button>
+                  </div>
+                )
+              })}
+            </div>
+          )}
+          <div style={{ borderTop: '1px solid #f0f0f0', paddingTop: 16 }}>
+            <div style={{ fontWeight: 500, marginBottom: 8 }}>Add New Room</div>
+            <Form form={addRoomForm} layout="vertical" onFinish={handleAddRoomToBuilding}>
+              <Form.Item name="room_add_name" label="Room name" rules={[{ required: true, message: 'Name required' }]}>
+                <Input placeholder="Hörsaal 5 (3041.EG.005)" />
+              </Form.Item>
+              <Form.Item name="room_add_floors" label="Floor">
+                <Select
+                  mode="tags"
+                  maxCount={1}
+                  placeholder="Select or type a floor…"
+                  options={COMMON_FLOORS.map(f => ({ value: f, label: f }))}
+                  tokenSeparators={[',']}
+                />
+              </Form.Item>
+              <Form.Item name="room_add_notes" label="Notes">
+                <Input />
+              </Form.Item>
+              <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
+                <Button type="primary" htmlType="submit" loading={addRoomSaving}>
+                  Add Room
+                </Button>
+              </Form.Item>
+            </Form>
+          </div>
+        </Modal>
+      </Layout>
+    </ConfigProvider>
+  )
+}
+
+export default AdminApp

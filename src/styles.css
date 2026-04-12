@@ -88,14 +88,14 @@ textarea {
 .hei-content {
   position: relative;
   z-index: 1;
-  padding-top: 76px;
+  padding-top: 61px;
 }
 
 .hei-shell {
   position: relative;
   z-index: 1;
   width: min(1680px, calc(100vw - 24px));
-  margin: 16px auto 36px;
+  margin: 12px auto 36px;
   display: flex;
   flex-direction: column;
   gap: 16px;

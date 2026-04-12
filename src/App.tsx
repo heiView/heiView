@@ -184,12 +184,12 @@ function formatCampusOptionLabel(campus: Campus) {
 
 function normalizeFloorLabel(value: string | null | undefined) {
   const text = (value || '').trim()
-  return text || 'Unspecified floor'
+  return text || 'Unknown floor'
 }
 
 function floorSortValue(floor: string) {
   const normalized = floor.toLowerCase().trim()
-  if (!normalized || normalized === 'unspecified floor') return 99999
+  if (!normalized || normalized === 'unspecified floor' || normalized === 'unknown floor') return 99999
 
   if (/basement|untergeschoss|keller|\bug\b/.test(normalized)) {
     const depthMatch = normalized.match(/(\d+)/)
@@ -235,6 +235,7 @@ function normalizeCampusValue(value: string | null | undefined): Campus | null {
   if (text === 'altstadt') return 'Altstadt'
   if (text === 'bergheim') return 'Bergheim'
   if (text === 'im neuenheimer feld' || text === 'im-neuenheimer-feld') return 'Im Neuenheimer Feld'
+  if (text === 'mannheim & ludwigshafen' || text === 'mannheim-and-ludwigshafen') return 'Mannheim & Ludwigshafen'
   if (text === 'online') return 'Online'
   if (text === 'other') return 'Other'
   return null
