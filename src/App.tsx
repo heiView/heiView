@@ -370,7 +370,7 @@ function clusterEvents(events: TimelineEvent[]) {
 
 async function fetchSchedule(date: string) {
   const response = await fetch(`/api/schedule?date=${date}`, {
-    cache: 'no-store',
+    cache: 'default',
   })
 
   if (!response.ok) {
@@ -676,7 +676,6 @@ function App() {
                   onChange={(value) => setSelectedBuilding(value)}
                   disabled={filteredBuildingOptions.length === 0}
                   className="hei-control-select"
-                  virtual={false}
                   listHeight={500}
                   popupClassName="hei-building-dropdown-multi"
                 />

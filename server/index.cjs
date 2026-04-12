@@ -864,6 +864,29 @@ function createApp() {
 
   // ────────────────────────────────────────────────────────────────────────
 
+  // In-memory response cache for /api/schedule (TTL: 60s)
+  const scheduleCache = new Map(); // key -> { data, ts }
+  const SCHEDULE_CACHE_TTL = 60_000;
+
+  function getScheduleCache(key) {
+    const entry = scheduleCache.get(key);
+    if (!entry) return null;
+    if (Date.now() - entry.ts > SCHEDULE_CACHE_TTL) {
+      scheduleCache.delete(key);
+      return null;
+    }
+    return entry.data;
+  }
+
+  function setScheduleCache(key, data) {
+    // Limit cache size to avoid unbounded growth
+    if (scheduleCache.size > 200) {
+      const oldest = scheduleCache.keys().next().value;
+      scheduleCache.delete(oldest);
+    }
+    scheduleCache.set(key, { data, ts: Date.now() });
+  }
+
   app.get('/api/schedule', (req, res) => {
     const date = typeof req.query.date === 'string' ? req.query.date.trim() : '';
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
@@ -884,6 +907,17 @@ function createApp() {
         : null;
 
     res.setHeader('Cache-Control', 'public, max-age=60, stale-while-revalidate=120');
+
+    // Admin requests bypass cache (skip list excluded, may see hidden courses)
+    const cacheKey = isAdmin ? null : `${date}|${buildingFilter || ''}`;
+    if (cacheKey) {
+      const cached = getScheduleCache(cacheKey);
+      if (cached) {
+        res.setHeader('X-Cache', 'HIT');
+        res.json(cached);
+        return;
+      }
+    }
 
     let db;
     try {
@@ -1030,21 +1064,30 @@ function createApp() {
       // "mannheim-and-ludwigshafen" campus buildings, so they show up even on days
       // with no courses (mirrors behaviour of the main campuses).
       try {
-        const otherRoomRows = db
+        // First get the canonical building names for these campus types (small result set)
+        const otherBuildingNames = db
           .prepare(
-            `
-              SELECT o.building_name, o.room, MAX(o.floor_label) AS floor_label
-              FROM occurrences o
-              JOIN buildings_meta b ON TRIM(b.name) = TRIM(o.building_name)
-              WHERE b.campus_id IN ('other', 'mannheim-and-ludwigshafen')
-                AND o.room IS NOT NULL
-                AND o.building_name IS NOT NULL
-              GROUP BY o.building_name, o.room
-            `
+            `SELECT name FROM buildings_meta WHERE campus_id IN ('other', 'mannheim-and-ludwigshafen') AND name IS NOT NULL`
           )
-          .all();
-        for (const row of otherRoomRows) {
-          ensureRoomEntry(row.building_name, row.room, row.floor_label || null, null);
+          .all()
+          .map(r => r.name.trim())
+          .filter(Boolean);
+
+        if (otherBuildingNames.length > 0) {
+          const placeholders = otherBuildingNames.map(() => '?').join(',');
+          const otherRoomRows = db
+            .prepare(
+              `SELECT building_name, room, MAX(floor_label) AS floor_label
+               FROM occurrences
+               WHERE building_name IN (${placeholders})
+                 AND room IS NOT NULL
+                 AND building_name IS NOT NULL
+               GROUP BY building_name, room`
+            )
+            .all(...otherBuildingNames);
+          for (const row of otherRoomRows) {
+            ensureRoomEntry(row.building_name, row.room, row.floor_label || null, null);
+          }
         }
       } catch(e) {}
 
@@ -1239,10 +1282,9 @@ function createApp() {
           campus: buildingCampusMap.get(id) || null,
         }));
 
-      res.json({
-        buildings,
-        rooms,
-      });
+      const responseData = { buildings, rooms };
+      if (cacheKey) setScheduleCache(cacheKey, responseData);
+      res.json(responseData);
     } catch (err) {
       res.status(500).json({ error: err.message || String(err) });
     } finally {

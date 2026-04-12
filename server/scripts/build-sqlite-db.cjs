@@ -236,6 +236,9 @@ function ensureSchema(db) {
 
     CREATE INDEX IF NOT EXISTS idx_occurrences_course_date
       ON occurrences(course_id, date);
+
+    CREATE INDEX IF NOT EXISTS idx_occurrences_building_name
+      ON occurrences(building_name);
   `);
 
   ensureOccurrencesSplitColumns(db);
