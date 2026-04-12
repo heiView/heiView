@@ -1,0 +1,27 @@
+{
+  "id": "0720200068",
+  "title": "Teaching Outside the Classroom: Theory, Praxis and Problems",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Berti, Irene"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "TO111",
+      "building": "Im Neuenheimer Feld 519, Unknown floor",
+      "note": "Neuenheimer Feld INF519/TO111"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412158",
+  "exceptions": [],
+  "notes": ""
+}

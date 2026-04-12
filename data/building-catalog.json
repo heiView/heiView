@@ -180,6 +180,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-albert-ueberle-strasse-3-5::rm-library",
+          "name": "Library",
+          "floors": [
+            "Lower level 1"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -1929,6 +1941,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-226::rm-eg-ost",
+          "name": "EG Ost",
+          "floors": [
+            "Ground floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -3206,6 +3230,18 @@
           "name": "Praktikumsräume 1. OG",
           "floors": [],
           "features": {},
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-326::rm-praktikum",
+          "name": "Praktikum",
+          "floors": [
+            "1st floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
           "notes": ""
         }
       ],
@@ -4848,6 +4884,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-460::rm-nct",
+          "name": "NCT",
+          "floors": [
+            "2nd floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -4894,6 +4942,18 @@
           "name": "Übungsraum (6501.EG.006)",
           "floors": [
             "Ground floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-501::rm-praktikum",
+          "name": "Praktikum",
+          "floors": [
+            "Unknown floor"
           ],
           "features": {
             "hasAirConditioning": null,
@@ -7555,6 +7615,16 @@
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        },
+        {
+          "id": "bld-online::rm-siehe-anmerkung",
+          "name": "Siehe Anmerkung",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ]
     },
@@ -7970,6 +8040,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-landfriedstrasse-12::rm-seminarraum-4",
+          "name": "Seminarraum 4",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8018,6 +8100,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-marstallstrasse-6-hcch::rm-raum-112",
+          "name": "Raum 112",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8036,6 +8130,18 @@
         {
           "id": "bld-im-neuenheimer-feld-580::rm-buchleither-seminar-room",
           "name": "Buchleither Seminar room",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-580::rm-unknown-room",
+          "name": "Unknown Room",
           "floors": [
             "Unknown floor"
           ],
@@ -8068,6 +8174,142 @@
           "name": "B128",
           "floors": [
             "3rd floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-561",
+      "street": "Im Neuenheimer Feld 561",
+      "displayName": "Neue Pädagogische Hochschule",
+      "campusId": "other",
+      "aliases": [
+        "PH"
+      ],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-561::rm-raum-a236",
+          "name": "Raum A236",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-koenigstuhl-17",
+      "street": "Königstuhl 17",
+      "displayName": "Max Planck Institute for Astronomy",
+      "campusId": "other",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-koenigstuhl-17::rm-hda-sr-h-308",
+          "name": "HdA / SR H-308",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-keplerstrasse-87",
+      "street": "Keplerstraße 87",
+      "displayName": "Altbau Pädagogische Hochschule",
+      "campusId": "other",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-keplerstrasse-87::rm-raum-130",
+          "name": "Raum 130",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-370",
+      "street": "Im Neuenheimer Feld 370",
+      "displayName": "INF 370",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-370::rm-idea-room",
+          "name": "Idea room",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-256",
+      "street": "Im Neuenheimer Feld 256",
+      "displayName": "INF 256",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-256::rm-sr211",
+          "name": "SR211",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-519",
+      "street": "Im Neuenheimer Feld 519",
+      "displayName": "INF 519",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-519::rm-to111",
+          "name": "TO111",
+          "floors": [
+            "Unknown floor"
           ],
           "features": {
             "hasAirConditioning": null,

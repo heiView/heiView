@@ -1,0 +1,27 @@
+{
+  "id": "1004440033",
+  "title": "(M.Ed., M2) Professionelle Kompetenz von Lehrkräften",
+  "type": "L",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Raum 130",
+      "building": "Keplerstraße 87",
+      "note": "Raum 130, Altbau PH, Keplerstraße 87, 69121 HD"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415475",
+  "exceptions": [],
+  "notes": ""
+}
