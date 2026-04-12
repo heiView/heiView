@@ -11,9 +11,52 @@ const DB_PATH = path.join(ROOT, 'data', 'heitable.db');
 const PORT = Number.parseInt(process.env.PORT || '3001', 10);
 
 // ── Admin auth ──────────────────────────────────────────────────────────────
-const ADMIN_USER = process.env.ADMIN_USER || 'admin';
-const ADMIN_PASS = process.env.ADMIN_PASS || 'changeme';
 const ADMIN_SECRET = process.env.ADMIN_SECRET || 'dev-secret-change-in-production';
+const ADMIN_ACCOUNTS_PATH = path.join(ROOT, 'data', 'admin-accounts.json');
+const AUDIT_LOG_PATH = path.join(ROOT, 'data', 'admin-audit.json');
+const MAX_AUDIT_ENTRIES = 2000;
+
+// Superadmin from env — always exists, cannot be deleted via UI
+const ENV_SUPERADMIN = {
+  username: process.env.ADMIN_USER || 'admin',
+  password: process.env.ADMIN_PASS || 'changeme',
+  role: 'superadmin',
+};
+
+function readAccounts() {
+  try { return JSON.parse(fs.readFileSync(ADMIN_ACCOUNTS_PATH, 'utf8')); } catch (_) { return []; }
+}
+function writeAccounts(accounts) {
+  fs.writeFileSync(ADMIN_ACCOUNTS_PATH, JSON.stringify(accounts, null, 2), 'utf8');
+}
+function getAllAccounts() {
+  // env superadmin always first; dynamic accounts cannot shadow it
+  const dynamic = readAccounts().filter(a => a.username !== ENV_SUPERADMIN.username);
+  return [ENV_SUPERADMIN, ...dynamic];
+}
+function findAccount(username) {
+  return getAllAccounts().find(a => a.username === username) || null;
+}
+
+function readAuditLog() {
+  try { return JSON.parse(fs.readFileSync(AUDIT_LOG_PATH, 'utf8')); } catch (_) { return []; }
+}
+function appendAuditEntry(entry) {
+  let log = readAuditLog();
+  log.unshift({ id: crypto.randomBytes(8).toString('hex'), ...entry });
+  if (log.length > MAX_AUDIT_ENTRIES) log = log.slice(0, MAX_AUDIT_ENTRIES);
+  try { fs.writeFileSync(AUDIT_LOG_PATH, JSON.stringify(log, null, 2), 'utf8'); } catch (_) {}
+}
+function audit(req, action, target, summary, snapshot) {
+  appendAuditEntry({
+    ts: new Date().toISOString(),
+    username: req.adminUser || 'unknown',
+    action,
+    target: target || null,
+    summary: summary || null,
+    snapshot: snapshot || null,
+  });
+}
 const SEASON = '2026SS';
 const COURSE_DIR = path.join(ROOT, 'data', SEASON);
 const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
@@ -34,8 +77,8 @@ function writeCatalog(catalog) {
   }
 }
 
-function makeAdminToken(username) {
-  const payload = JSON.stringify({ user: username, exp: Date.now() + 7 * 24 * 3600 * 1000 });
+function makeAdminToken(username, role) {
+  const payload = JSON.stringify({ user: username, role, exp: Date.now() + 7 * 24 * 3600 * 1000 });
   const b64 = Buffer.from(payload).toString('base64url');
   const sig = crypto.createHmac('sha256', ADMIN_SECRET).update(b64).digest('base64url');
   return `${b64}.${sig}`;
@@ -63,11 +106,25 @@ function verifyAdminToken(token) {
 function requireAdmin(req, res, next) {
   const auth = req.headers['authorization'] || '';
   const token = auth.startsWith('Bearer ') ? auth.slice(7) : '';
-  if (!verifyAdminToken(token)) {
+  const payload = verifyAdminToken(token);
+  if (!payload) {
     res.status(401).json({ error: 'Unauthorized' });
     return;
   }
+  req.adminUser = payload.user || 'unknown';
+  // Backward-compat: old tokens without role field — env superadmin → superadmin, else editor
+  req.adminRole = payload.role || (req.adminUser === ENV_SUPERADMIN.username ? 'superadmin' : 'editor');
   next();
+}
+
+function requireSuperAdmin(req, res, next) {
+  requireAdmin(req, res, () => {
+    if (req.adminRole !== 'superadmin') {
+      res.status(403).json({ error: 'Superadmin required' });
+      return;
+    }
+    next();
+  });
 }
 
 function readSkipList() {
@@ -141,12 +198,192 @@ function createApp() {
   // ── Admin endpoints ─────────────────────────────────────────────────────
   app.post('/api/admin/login', (req, res) => {
     const { username, password } = req.body || {};
-    if (username !== ADMIN_USER || password !== ADMIN_PASS) {
+    const account = findAccount(username);
+    if (!account || account.password !== password) {
       res.status(401).json({ error: 'Invalid credentials' });
       return;
     }
-    res.json({ token: makeAdminToken(username) });
+    res.json({ token: makeAdminToken(username, account.role) });
   });
+
+  // ── Account management (superadmin only) ─────────────────────────────────
+  app.get('/api/admin/accounts', requireSuperAdmin, (_req, res) => {
+    const accounts = getAllAccounts().map(({ username, role }) => ({ username, role }));
+    res.json(accounts);
+  });
+
+  app.post('/api/admin/accounts', requireSuperAdmin, (req, res) => {
+    const { username, password, role } = req.body || {};
+    if (!username || typeof username !== 'string' || !/^[a-zA-Z0-9_\-]{2,32}$/.test(username)) {
+      res.status(400).json({ error: 'username must be 2-32 alphanumeric chars' }); return;
+    }
+    if (!password || typeof password !== 'string' || password.length < 6) {
+      res.status(400).json({ error: 'password must be at least 6 characters' }); return;
+    }
+    if (!['superadmin', 'editor'].includes(role)) {
+      res.status(400).json({ error: 'role must be superadmin or editor' }); return;
+    }
+    if (username === ENV_SUPERADMIN.username) {
+      res.status(409).json({ error: 'Cannot create account with the same username as the system superadmin' }); return;
+    }
+    const accounts = readAccounts();
+    if (accounts.some(a => a.username === username)) {
+      res.status(409).json({ error: 'Username already exists' }); return;
+    }
+    accounts.push({ username, password, role });
+    writeAccounts(accounts);
+    audit(req, 'create_account', username, `Created account (role: ${role})`, { username });
+    res.json({ ok: true });
+  });
+
+  app.delete('/api/admin/accounts/:username', requireSuperAdmin, (req, res) => {
+    const { username } = req.params;
+    if (username === ENV_SUPERADMIN.username) {
+      res.status(409).json({ error: 'Cannot delete the system superadmin account' }); return;
+    }
+    if (username === req.adminUser) {
+      res.status(409).json({ error: 'Cannot delete your own account' }); return;
+    }
+    const accounts = readAccounts();
+    const deletedAccount = accounts.find(a => a.username === username);
+    if (!deletedAccount) {
+      res.status(404).json({ error: 'Account not found' }); return;
+    }
+    writeAccounts(accounts.filter(a => a.username !== username));
+    audit(req, 'delete_account', username, 'Deleted account', { username: deletedAccount.username, password: deletedAccount.password, role: deletedAccount.role });
+    res.json({ ok: true });
+  });
+
+  app.get('/api/admin/audit-log', requireSuperAdmin, (req, res) => {
+    const limit = Math.min(Number(req.query.limit) || 200, 1000);
+    res.json(readAuditLog().slice(0, limit));
+  });
+
+  app.post('/api/admin/audit-log/:entryId/undo', requireSuperAdmin, (req, res) => {
+    const { entryId } = req.params;
+    const log = readAuditLog();
+    const idx = log.findIndex(e => e.id === entryId);
+    if (idx === -1) { res.status(404).json({ error: 'Log entry not found' }); return; }
+    const entry = log[idx];
+    if (entry.undone) { res.status(409).json({ error: 'Already undone' }); return; }
+    const { action, snapshot } = entry;
+    if (!snapshot) { res.status(400).json({ error: 'No snapshot — cannot undo this entry' }); return; }
+    try {
+      switch (action) {
+        case 'hide_course': {
+          const list = readSkipList().filter(id => id !== snapshot.courseId);
+          writeSkipList(list); break;
+        }
+        case 'unhide_course': {
+          const list = readSkipList();
+          if (!list.includes(snapshot.courseId)) { list.push(snapshot.courseId); writeSkipList(list); } break;
+        }
+        case 'edit_course': {
+          if (!snapshot.previousData) { res.status(400).json({ error: 'No previous data in snapshot' }); return; }
+          const ovPath = path.join(OVERRIDES_DIR, `course-${snapshot.courseId}.json`);
+          if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
+          fs.writeFileSync(ovPath, JSON.stringify(snapshot.previousData, null, 2), 'utf8');
+          try { syncSingleCourse(snapshot.courseId); } catch (_) {} break;
+        }
+        case 'create_course': {
+          const customFilePath = path.join(CUSTOM_DIR, `course-${snapshot.courseId}.json`);
+          if (fs.existsSync(customFilePath)) fs.unlinkSync(customFilePath);
+          if (fs.existsSync(DB_PATH)) {
+            const db = new Database(DB_PATH);
+            try {
+              db.prepare('DELETE FROM occurrences WHERE course_id = ?').run(snapshot.courseId);
+              db.prepare('DELETE FROM courses WHERE id = ?').run(snapshot.courseId);
+            } finally { db.close(); }
+          } break;
+        }
+        case 'batch_edit_room': {
+          const { origRoom, origBuilding, newRoom: nr, newBuilding: nb, courseIds: affectedIds } = snapshot;
+          for (const cid of (affectedIds || [])) {
+            const p = resolveCoursePath(cid);
+            if (!p) continue;
+            let data; try { data = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) { continue; }
+            const weeks = (data.weeks || []).map(w => {
+              if ((w.room || null) === (nr || null) && (w.building || null) === (nb || null))
+                return { ...w, room: origRoom || null, building: origBuilding || null };
+              return w;
+            });
+            const ovPath = path.join(OVERRIDES_DIR, `course-${cid}.json`);
+            if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
+            fs.writeFileSync(ovPath, JSON.stringify({ ...data, weeks }, null, 2), 'utf8');
+            try { syncSingleCourse(cid); } catch (_) {}
+          } break;
+        }
+        case 'edit_building': {
+          if (!snapshot.previousBuilding) { res.status(400).json({ error: 'No previous building in snapshot' }); return; }
+          const catalog = readCatalog();
+          const bldIdx = findBuilding(catalog.buildings, snapshot.buildingId);
+          if (bldIdx !== -1) { catalog.buildings[bldIdx] = snapshot.previousBuilding; writeCatalog(catalog); } break;
+        }
+        case 'create_building': {
+          const catalog = readCatalog();
+          catalog.buildings = (catalog.buildings || []).filter(b => b.id !== snapshot.buildingId);
+          writeCatalog(catalog); break;
+        }
+        case 'delete_building': {
+          const catalog = readCatalog();
+          if (!catalog.buildings) catalog.buildings = [];
+          if (!catalog.buildings.some(b => b.id === snapshot.building.id)) {
+            catalog.buildings.push(snapshot.building); writeCatalog(catalog); } break;
+        }
+        case 'merge_building': {
+          const catalog = readCatalog();
+          const tgtIdx = findBuilding(catalog.buildings, snapshot.previousTarget.id);
+          if (tgtIdx !== -1) catalog.buildings[tgtIdx] = snapshot.previousTarget;
+          if (!catalog.buildings.some(b => b.id === snapshot.sourceBuilding.id))
+            catalog.buildings.push(snapshot.sourceBuilding);
+          writeCatalog(catalog); break;
+        }
+        case 'create_room': {
+          const catalog = readCatalog();
+          const bldIdx = findBuilding(catalog.buildings, snapshot.buildingId);
+          if (bldIdx !== -1) {
+            catalog.buildings[bldIdx].rooms = (catalog.buildings[bldIdx].rooms || []).filter(r => r.id !== snapshot.roomId);
+            writeCatalog(catalog); } break;
+        }
+        case 'delete_room': {
+          const catalog = readCatalog();
+          const bldIdx = findBuilding(catalog.buildings, snapshot.buildingId);
+          if (bldIdx !== -1) {
+            if (!catalog.buildings[bldIdx].rooms) catalog.buildings[bldIdx].rooms = [];
+            if (!catalog.buildings[bldIdx].rooms.some(r => r.id === snapshot.room.id)) {
+              catalog.buildings[bldIdx].rooms.push(snapshot.room); writeCatalog(catalog); } } break;
+        }
+        case 'edit_room': {
+          if (!snapshot.previousRoom) { res.status(400).json({ error: 'No previous room in snapshot' }); return; }
+          const catalog = readCatalog();
+          const bldIdx = findBuilding(catalog.buildings, snapshot.buildingId);
+          if (bldIdx !== -1) {
+            const roomIdx = (catalog.buildings[bldIdx].rooms || []).findIndex(r => r.id === snapshot.previousRoom.id);
+            if (roomIdx !== -1) { catalog.buildings[bldIdx].rooms[roomIdx] = snapshot.previousRoom; writeCatalog(catalog); }
+          } break;
+        }
+        case 'create_account': {
+          writeAccounts(readAccounts().filter(a => a.username !== snapshot.username)); break;
+        }
+        case 'delete_account': {
+          const accs = readAccounts();
+          if (!accs.some(a => a.username === snapshot.username) && snapshot.username !== ENV_SUPERADMIN.username)
+            accs.push({ username: snapshot.username, password: snapshot.password, role: snapshot.role });
+          writeAccounts(accs); break;
+        }
+        default:
+          res.status(400).json({ error: `Undo not supported for action: ${action}` }); return;
+      }
+      // Mark entry as undone in log
+      log[idx] = { ...entry, undone: true, undoneAt: new Date().toISOString(), undoneBy: req.adminUser };
+      try { fs.writeFileSync(AUDIT_LOG_PATH, JSON.stringify(log, null, 2), 'utf8'); } catch (_) {}
+      audit(req, `undo_${action}`, entry.target, `Undone: ${entry.summary || action} by ${entry.username}`);
+      res.json({ ok: true });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+  // ─────────────────────────────────────────────────────────────────────────
 
   app.get('/api/admin/skip', requireAdmin, (_req, res) => {
     res.json({ skip: readSkipList() });
@@ -163,6 +400,7 @@ function createApp() {
       list.push(courseId);
       writeSkipList(list);
     }
+    audit(req, 'hide_course', courseId, 'Hidden course from schedule', { courseId });
     res.json({ ok: true, skip: list });
   });
 
@@ -170,6 +408,7 @@ function createApp() {
     const courseId = req.params.courseId;
     const list = readSkipList().filter(id => id !== courseId);
     writeSkipList(list);
+    audit(req, 'unhide_course', courseId, 'Unhidden course', { courseId });
     res.json({ ok: true, skip: list });
   });
 
@@ -198,6 +437,12 @@ function createApp() {
     const filename = `course-${courseId}.json`;
     const overridePath = path.join(OVERRIDES_DIR, filename);
     try {
+      // Capture previous state before overwriting
+      let previousData = null;
+      try {
+        const prevPath = fs.existsSync(overridePath) ? overridePath : path.join(COURSE_DIR, filename);
+        if (fs.existsSync(prevPath)) previousData = JSON.parse(fs.readFileSync(prevPath, 'utf8'));
+      } catch (_) {}
       if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
       fs.writeFileSync(overridePath, JSON.stringify(req.body, null, 2), 'utf8');
       try { syncSingleCourse(courseId); } catch (e) { console.error('[PUT course-file] SQLite sync failed:', e.message); }
@@ -229,6 +474,7 @@ function createApp() {
         }
         if (catalogChanged) writeCatalog(catalog);
       } catch (e) { console.error('[PUT course-file] Room upsert failed:', e.message); }
+      audit(req, 'edit_course', courseId, `Edited course file`, { courseId, previousData });
       res.json({ ok: true });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -264,6 +510,7 @@ function createApp() {
       const filePath = path.join(CUSTOM_DIR, `course-${courseId}.json`);
       fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), 'utf8');
       try { syncSingleCourse(courseId); } catch (e) { console.error('[POST course-file] SQLite sync failed:', e.message); }
+      audit(req, 'create_course', courseId, `Created custom event: ${payload.title}`, { courseId });
       res.json({ ok: true, courseId });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -357,6 +604,7 @@ function createApp() {
       } catch (e) { console.error(`[batch] write failed for ${courseId}:`, e.message); }
     }
 
+    audit(req, 'batch_edit_room', null, `Batch room change: "${origRoom}" → "${newRoom || ''}", updated ${updatedCourseIds.length} course(s)`, { origRoom, origBuilding, newRoom: newRoom || null, newBuilding: newBuilding || null, courseIds: updatedCourseIds });
     res.json({ ok: true, updatedCourses: updatedCourseIds.length, courseIds: updatedCourseIds });
   });
   // ────────────────────────────────────────────────────────────────────────
@@ -427,8 +675,9 @@ function createApp() {
     if (idx === -1) { res.status(404).json({ error: 'Building not found' }); return; }
     // Preserve the real catalog id — never overwrite with the lookup key
     const realId = catalog.buildings[idx].id;
+    const previousBuilding = JSON.parse(JSON.stringify(catalog.buildings[idx]));
     catalog.buildings[idx] = { ...catalog.buildings[idx], ...req.body, id: realId };
-    try { writeCatalog(catalog); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
+    try { writeCatalog(catalog); audit(req, 'edit_building', buildingId, `Edited building`, { buildingId, previousBuilding }); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
   });
 
   // List all buildings (for merge target selection)
@@ -461,6 +710,8 @@ function createApp() {
 
     const src = buildings[srcIdx];
     const tgt = buildings[tgtIdx];
+    const snapshotSrc = JSON.parse(JSON.stringify(src));
+    const snapshotTgt = JSON.parse(JSON.stringify(tgt));
 
     // Merge aliases: tgt.street and existing aliases are the "taken" set
     const takenByTarget = new Set([tgt.street, ...(tgt.aliases || [])]);
@@ -498,6 +749,7 @@ function createApp() {
 
     try {
       writeCatalog(catalog);
+      audit(req, 'merge_building', buildingId, `Merged into ${targetId}`, { sourceBuilding: snapshotSrc, previousTarget: snapshotTgt });
       res.json({ ok: true, targetId: tgt.id });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -526,7 +778,7 @@ function createApp() {
     };
     if (!catalog.buildings) catalog.buildings = [];
     catalog.buildings.push(newBuilding);
-    try { writeCatalog(catalog); res.json({ ok: true, id }); } catch (e) { res.status(500).json({ error: e.message }); }
+    try { writeCatalog(catalog); audit(req, 'create_building', id, `Created building: ${body.street}`, { buildingId: id }); res.json({ ok: true, id }); } catch (e) { res.status(500).json({ error: e.message }); }
   });
 
   // Add a new room to a building
@@ -551,7 +803,7 @@ function createApp() {
     };
     rooms.push(newRoom);
     building.rooms = rooms;
-    try { writeCatalog(catalog); res.json({ ok: true, id: newRoom.id }); } catch (e) { res.status(500).json({ error: e.message }); }
+    try { writeCatalog(catalog); audit(req, 'create_room', buildingId, `Added room: ${roomName}`, { buildingId, roomId: newRoom.id }); res.json({ ok: true, id: newRoom.id }); } catch (e) { res.status(500).json({ error: e.message }); }
   });
 
   // Delete a building — fails if any courses are still mounted on it
@@ -567,7 +819,7 @@ function createApp() {
       return;
     }
     catalog.buildings.splice(idx, 1);
-    try { writeCatalog(catalog); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
+    try { writeCatalog(catalog); audit(req, 'delete_building', buildingId, `Deleted building: ${building.street}`, { building: JSON.parse(JSON.stringify(building)) }); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
   });
 
   // Delete a room from a building — fails if any courses are mounted on it
@@ -589,7 +841,7 @@ function createApp() {
     }
     rooms.splice(roomIdx, 1);
     building.rooms = rooms;
-    try { writeCatalog(catalog); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
+    try { writeCatalog(catalog); audit(req, 'delete_room', `${buildingId}/${room.name}`, `Deleted room: ${room.name}`, { buildingId, room: JSON.parse(JSON.stringify(room)) }); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
   });
 
   // Update a room in a building
@@ -604,9 +856,10 @@ function createApp() {
     const roomIdx = rooms.findIndex(r => r.id === decodedRoomId);
     if (roomIdx === -1) { res.status(404).json({ error: 'Room not found' }); return; }
     const realId = rooms[roomIdx].id;
+    const previousRoom = JSON.parse(JSON.stringify(rooms[roomIdx]));
     rooms[roomIdx] = { ...rooms[roomIdx], ...req.body, id: realId };
     building.rooms = rooms;
-    try { writeCatalog(catalog); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
+    try { writeCatalog(catalog); audit(req, 'edit_room', `${buildingId}/${rooms[roomIdx].name}`, `Edited room: ${rooms[roomIdx].name}`, { buildingId, previousRoom }); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
   });
 
   // ────────────────────────────────────────────────────────────────────────

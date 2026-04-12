@@ -29,7 +29,7 @@ import {
 import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
 import { CAMPUS_OPTIONS, resolveCampusFromBuilding, type Campus } from '../campusConfig'
 import useStore from '../store'
-import { clearToken, adminFetch } from './adminAuth'
+import { clearToken, adminFetch, isSuperAdmin, getUsername } from './adminAuth'
 
 type Language = 'zh' | 'en' | 'de'
 type LocalizedText = string | Record<string, string> | null | undefined
@@ -358,6 +358,20 @@ function AdminApp() {
   const [newEventSaving, setNewEventSaving] = React.useState(false)
   const [newEventCampus, setNewEventCampus] = React.useState('')
   const [newEventForm] = Form.useForm()
+
+  // ── Superadmin-only state ─────────────────────────────────────────────────
+  const superAdmin = React.useMemo(() => isSuperAdmin(), [])
+  const currentUser = React.useMemo(() => getUsername(), [])
+  const [accountsOpen, setAccountsOpen] = React.useState(false)
+  const [accountsList, setAccountsList] = React.useState<{ username: string; role: string }[]>([])
+  const [accountsLoading, setAccountsLoading] = React.useState(false)
+  const [accountForm] = Form.useForm()
+  const [accountSaving, setAccountSaving] = React.useState(false)
+  const [auditOpen, setAuditOpen] = React.useState(false)
+  const [auditLog, setAuditLog] = React.useState<{ id?: string; ts: string; username: string; action: string; target: string | null; summary: string | null; undone?: boolean }[]>([])
+  const [auditLoading, setAuditLoading] = React.useState(false)
+  const [undoLoadingSet, setUndoLoadingSet] = React.useState<Set<string>>(new Set())
+  // ─────────────────────────────────────────────────────────────────────────
 
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
   const bodyScrollRef = React.useRef<HTMLDivElement>(null)
@@ -1103,6 +1117,36 @@ function AdminApp() {
                   suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
                   className="hei-toolbar-search"
                 />
+                {superAdmin && (
+                  <>
+                    <Button
+                      size="large"
+                      onClick={async () => {
+                        setAccountsOpen(true)
+                        setAccountsLoading(true)
+                        try {
+                          const r = await adminFetch('/api/admin/accounts')
+                          if (r.ok) setAccountsList(await r.json())
+                        } finally { setAccountsLoading(false) }
+                      }}
+                    >
+                      Accounts
+                    </Button>
+                    <Button
+                      size="large"
+                      onClick={async () => {
+                        setAuditOpen(true)
+                        setAuditLoading(true)
+                        try {
+                          const r = await adminFetch('/api/admin/audit-log?limit=200')
+                          if (r.ok) setAuditLog(await r.json())
+                        } finally { setAuditLoading(false) }
+                      }}
+                    >
+                      Audit Log
+                    </Button>
+                  </>
+                )}
                 <Button
                   size="large"
                   icon={<LogoutOutlined />}
@@ -1491,6 +1535,172 @@ function AdminApp() {
             )
           })() : null}
         </Modal>
+
+        {/* Accounts modal (superadmin only) */}
+        {superAdmin && (
+          <Modal
+            open={accountsOpen}
+            onCancel={() => { setAccountsOpen(false); accountForm.resetFields() }}
+            title="Account Management"
+            width={680}
+            footer={null}
+            destroyOnClose
+          >
+            <Spin spinning={accountsLoading}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: 20 }}>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                    <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Username</th>
+                    <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Role</th>
+                    <th />
+                  </tr>
+                </thead>
+                <tbody>
+                  {accountsList.map(acc => (
+                    <tr key={acc.username} style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                      <td style={{ padding: '6px 8px' }}>{acc.username}</td>
+                      <td style={{ padding: '6px 8px' }}>
+                        <Tag color={acc.role === 'superadmin' ? 'orange' : 'blue'}>{acc.role}</Tag>
+                      </td>
+                      <td style={{ padding: '6px 8px', textAlign: 'right' }}>
+                        {acc.role !== 'superadmin' && (
+                          <Button
+                            size="small"
+                            danger
+                            onClick={async () => {
+                              if (!window.confirm(`Delete account "${acc.username}"?`)) return
+                              const r = await adminFetch(`/api/admin/accounts/${encodeURIComponent(acc.username)}`, { method: 'DELETE' })
+                              if (!r.ok) { const e = await r.json(); alert(e.error || 'Failed'); return }
+                              setAccountsList(prev => prev.filter(a => a.username !== acc.username))
+                            }}
+                          >Delete</Button>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <Typography.Text strong style={{ display: 'block', marginBottom: 12 }}>Add account</Typography.Text>
+              <Form
+                form={accountForm}
+                layout="vertical"
+                onFinish={async (vals: { username: string; password: string; role: string }) => {
+                  setAccountSaving(true)
+                  try {
+                    const r = await adminFetch('/api/admin/accounts', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify(vals),
+                    })
+                    if (!r.ok) { const e = await r.json(); alert(e.error || 'Failed'); return }
+                    accountForm.resetFields()
+                    const listR = await adminFetch('/api/admin/accounts')
+                    if (listR.ok) setAccountsList(await listR.json())
+                  } finally { setAccountSaving(false) }
+                }}
+              >
+                <Row gutter={12}>
+                  <Col span={9}>
+                    <Form.Item name="username" label="Username" rules={[{ required: true }]}>
+                      <Input placeholder="alice" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={8}>
+                    <Form.Item name="password" label="Password" rules={[{ required: true, min: 6 }]}>
+                      <Input.Password placeholder="min 6 chars" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={7}>
+                    <Form.Item name="role" label="Role" rules={[{ required: true }]} initialValue="editor">
+                      <Select options={[{ value: 'editor', label: 'Editor' }, { value: 'superadmin', label: 'Superadmin' }]} />
+                    </Form.Item>
+                  </Col>
+                </Row>
+                <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
+                  <Button type="primary" htmlType="submit" loading={accountSaving}>Add Account</Button>
+                </Form.Item>
+              </Form>
+            </Spin>
+          </Modal>
+        )}
+
+        {/* Audit Log modal (superadmin only) */}
+        {superAdmin && (
+          <Modal
+            open={auditOpen}
+            onCancel={() => setAuditOpen(false)}
+            title="Audit Log (last 200 actions)"
+            width={720}
+            footer={null}
+            destroyOnClose
+          >
+            <Spin spinning={auditLoading}>
+              <div style={{ maxHeight: 480, overflowY: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+                  <thead style={{ position: 'sticky', top: 0, background: 'var(--hei-surface)', zIndex: 1 }}>
+                    <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600, whiteSpace: 'nowrap' }}>Time</th>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>User</th>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Action</th>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Target</th>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Summary</th>
+                      <th />
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {auditLog.map((entry, i) => {
+                      const canUndo = !!entry.id && !entry.undone && entry.username !== currentUser
+                      const isUndoing = !!entry.id && undoLoadingSet.has(entry.id)
+                      return (
+                        <tr key={i} style={{ borderBottom: '1px solid var(--hei-border)', verticalAlign: 'top', opacity: entry.undone ? 0.45 : 1 }}>
+                          <td style={{ padding: '5px 8px', whiteSpace: 'nowrap', color: 'var(--hei-text-secondary)', fontSize: 12 }}>
+                            {new Date(entry.ts).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
+                          </td>
+                          <td style={{ padding: '5px 8px' }}>
+                            <Tag color="blue" style={{ margin: 0 }}>{entry.username}</Tag>
+                          </td>
+                          <td style={{ padding: '5px 8px', whiteSpace: 'nowrap' }}>
+                            <Typography.Text code style={{ fontSize: 12 }}>{entry.action}</Typography.Text>
+                          </td>
+                          <td style={{ padding: '5px 8px', maxWidth: 120, wordBreak: 'break-all', fontSize: 12, color: 'var(--hei-text-secondary)' }}>
+                            {entry.target || '—'}
+                          </td>
+                          <td style={{ padding: '5px 8px', fontSize: 12 }}>{entry.undone ? <Typography.Text type="secondary" italic>Undone</Typography.Text> : (entry.summary || '—')}</td>
+                          <td style={{ padding: '5px 8px', whiteSpace: 'nowrap' }}>
+                            {canUndo && (
+                              <Button
+                                size="small"
+                                loading={isUndoing}
+                                onClick={async () => {
+                                  if (!entry.id) return
+                                  if (!window.confirm(`Undo "${entry.action}" by ${entry.username}?`)) return
+                                  setUndoLoadingSet(prev => new Set(prev).add(entry.id!))
+                                  try {
+                                    const r = await adminFetch(`/api/admin/audit-log/${encodeURIComponent(entry.id!)}/undo`, { method: 'POST' })
+                                    if (!r.ok) { const e = await r.json(); alert(e.error || 'Undo failed'); return }
+                                    // Refresh log
+                                    const lr = await adminFetch('/api/admin/audit-log?limit=200')
+                                    if (lr.ok) setAuditLog(await lr.json())
+                                  } finally {
+                                    setUndoLoadingSet(prev => { const s = new Set(prev); s.delete(entry.id!); return s })
+                                  }
+                                }}
+                              >Undo</Button>
+                            )}
+                          </td>
+                        </tr>
+                      )
+                    })}
+                    {auditLog.length === 0 && !auditLoading && (
+                      <tr><td colSpan={6} style={{ textAlign: 'center', padding: 24, color: 'var(--hei-text-secondary)' }}>No audit entries yet.</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </Spin>
+          </Modal>
+        )}
+
         {/* New Event modal */}
         <Modal
           open={newEventOpen}
