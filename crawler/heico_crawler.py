@@ -572,8 +572,6 @@ async def process_course_entry(
         'end_date': max(end_dates) if end_dates else None,
         'weeks': weeks,
         'detail_link': href,
-        'room': None,
-        'building': None,
         'exceptions': [],
         'notes': '',
     }
