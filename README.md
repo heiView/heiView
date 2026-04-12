@@ -93,17 +93,41 @@ npm run db:sync
 ```
 Your newly scraped data will automatically sync to the backend database.
 
-**3. Start the Backend API Server**
+**3. Configure Environment Variables**
+
+Create a `.env` file in the project root before starting the backend:
+```bash
+# .env
+ADMIN_USER=admin          # superadmin username (default: admin)
+ADMIN_PASS=changeme       # superadmin password (default: changeme)
+ADMIN_SECRET=dev-secret   # JWT signing secret — change this in production
+PORT=3001                 # API server port (default: 3001)
+```
+
+If `.env` is absent, the server falls back to the defaults shown above, which is fine for local development.
+
+**4. Start the Backend API Server**
 ```bash
 npm run dev:api
 ```
 
-**4. Start the Frontend App**
+**5. Start the Frontend App**
 
 Keep the backend running. In a new terminal window:
 ```bash
 npm run dev
 ```
+
+**6. Access the Admin Page**
+
+Open `http://localhost:5173/admin` in your browser and log in with the superadmin credentials set in `.env` (defaults: `admin` / `changeme`).
+
+The admin page allows you to:
+- Edit course room and building assignments for individual occurrences
+- Hide courses from the public schedule
+- Manage the building catalog (add, edit, merge, or delete buildings and rooms)
+- Create additional editor accounts
+- View the audit log of all changes made by editor accounts
 
 ### License
 
@@ -189,17 +213,41 @@ npm run db:sync
 
 新爬取的内容将自动同步至后端数据库。
 
-**3. 启动后端 API 服务**
+**3. 配置环境变量**
+
+在项目根目录创建 `.env` 文件，然后再启动后端：
+```bash
+# .env
+ADMIN_USER=admin          # 超级管理员用户名（默认值：admin）
+ADMIN_PASS=changeme       # 超级管理员密码（默认值：changeme）
+ADMIN_SECRET=dev-secret   # JWT 签名密钥，生产环境请务必修改
+PORT=3001                 # API 服务端口（默认值：3001）
+```
+
+若 `.env` 文件不存在，服务端会使用上述默认值，本地开发时无需额外配置。
+
+**4. 启动后端 API 服务**
 ```bash
 npm run dev:api
 ```
 
-**4. 启动前端应用**
+**5. 启动前端应用**
 
 保持后端终端运行，新开一个终端窗口执行：
 ```bash
 npm run dev
 ```
+
+**6. 访问管理页面**
+
+在浏览器中打开 `http://localhost:5173/admin`，使用 `.env` 中设置的超级管理员账号登录（默认：`admin` / `changeme`）。
+
+管理页面支持以下操作：
+- 编辑单个课程条目的教室与建筑信息
+- 将课程从公开课表中隐藏
+- 管理建筑数据库（新增、编辑、合并或删除建筑与教室）
+- 创建普通编辑员账号
+- 查看所有编辑员账号的操作审计日志
 
 ### 协议
 
