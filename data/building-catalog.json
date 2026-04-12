@@ -3678,6 +3678,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-350::rm-raum-u015",
+          "name": "Raum U015",
+          "floors": [
+            "Lower level 1"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8000,6 +8012,62 @@
           "name": "Übungsraum 413",
           "floors": [
             "4th floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-580",
+      "street": "Im Neuenheimer Feld 580",
+      "displayName": "INF 580 DKFZ TP3",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [
+        "INF 580",
+        "inf 580"
+      ],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-580::rm-buchleither-seminar-room",
+          "name": "Buchleither Seminar room",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-berliner-strasse-43",
+      "street": "Berliner Straße 43",
+      "displayName": "",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [
+        "Berlinerstr. 43"
+      ],
+      "floors": [
+        "Ground floor",
+        "1st floor",
+        "2nd floor",
+        "3rd floor"
+      ],
+      "rooms": [
+        {
+          "id": "bld-berliner-strasse-43::rm-b128",
+          "name": "B128",
+          "floors": [
+            "3rd floor"
           ],
           "features": {
             "hasAirConditioning": null,
