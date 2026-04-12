@@ -48,6 +48,7 @@ function appendAuditEntry(entry) {
   try { fs.writeFileSync(AUDIT_LOG_PATH, JSON.stringify(log, null, 2), 'utf8'); } catch (_) {}
 }
 function audit(req, action, target, summary, snapshot) {
+  if (req.adminRole === 'superadmin') return;
   appendAuditEntry({
     ts: new Date().toISOString(),
     username: req.adminUser || 'unknown',
