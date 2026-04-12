@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-12T22:25:01.319Z",
+  "updatedAt": "2026-04-12T23:11:26.198Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -7815,8 +7815,8 @@
     },
     {
       "id": "bld-voelkerkundemuseum",
-      "street": "Völkerkundemuseum",
-      "displayName": "Hauptstr. 235 Völkerkundemuseum",
+      "street": "Hauptstraße 235",
+      "displayName": "Hauptstraße 235 Völkerkundemuseum",
       "campusId": "altstadt",
       "aliases": [
         "Hauptstr. 235",
