@@ -69,6 +69,7 @@ function readCatalog() {
 }
 
 function writeCatalog(catalog) {
+  catalog.updatedAt = new Date().toISOString();
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2), 'utf8');
   try {
     importBuildingCatalog();
