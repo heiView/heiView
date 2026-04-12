@@ -3,8 +3,10 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import dayjs, { Dayjs } from 'dayjs'
 import {
   Alert,
+  Button,
   ConfigProvider,
   DatePicker,
+  Divider,
   Empty,
   Input,
   Layout,
@@ -39,6 +41,8 @@ type Course = {
   prof?: LocalizedText
   link?: string
   note?: string | null
+  start_date?: string | null
+  end_date?: string | null
 }
 
 type RoomEntry = {
@@ -102,6 +106,8 @@ const UI_TEXT = {
     selectedBuildingFallback: '未选择建筑',
     noteLabel: '备注：',
     reportError: '反馈错误',
+    addToCalendar: '加入日历',
+    downloadIcs: '下载 .ics',
   },
   en: {
     brand: 'heiView',
@@ -124,6 +130,8 @@ const UI_TEXT = {
     selectedBuildingFallback: 'No building selected',
     noteLabel: 'Note: ',
     reportError: 'Report Error',
+    addToCalendar: 'Add to Calendar',
+    downloadIcs: 'Download .ics',
   },
   de: {
     brand: 'heiView',
@@ -146,8 +154,51 @@ const UI_TEXT = {
     selectedBuildingFallback: 'Kein Gebäude ausgewählt',
     noteLabel: 'Anmerkung: ',
     reportError: 'Fehler melden',
+    addToCalendar: 'Zum Kalender',
+    downloadIcs: '.ics herunterladen',
   },
 } as const
+
+function toGoogleCalendarUrl(name: string, room: string, dateStr: string, startMin: number, endMin: number, prof: string, link: string, endDate?: string | null) {
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const start = `${pad(Math.floor(startMin / 60))}${pad(startMin % 60)}00`
+  const end = `${pad(Math.floor(endMin / 60))}${pad(endMin % 60)}00`
+  const d = dateStr.replace(/-/g, '')
+  const details = [prof, link].filter(Boolean).join('\n')
+  // If endDate differs from dateStr, mark as recurring weekly until endDate (Google Calendar uses RRULE via recur param)
+  const isRecurring = endDate && endDate !== dateStr
+  const recur = isRecurring ? `RRULE:FREQ=WEEKLY;UNTIL=${endDate!.replace(/-/g, '')}T235959Z` : undefined
+  const params = new URLSearchParams({ action: 'TEMPLATE', text: name, dates: `${d}T${start}/${d}T${end}`, ctz: 'Europe/Berlin', location: room, details })
+  if (recur) params.set('recur', recur)
+  return `https://calendar.google.com/calendar/render?${params}`
+}
+
+function downloadIcsFile(name: string, room: string, dateStr: string, startMin: number, endMin: number, prof: string, endDate?: string | null) {
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const d = dateStr.replace(/-/g, '')
+  const start = `${d}T${pad(Math.floor(startMin / 60))}${pad(startMin % 60)}00`
+  const end = `${d}T${pad(Math.floor(endMin / 60))}${pad(endMin % 60)}00`
+  const escape = (s: string) => s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n')
+  const isRecurring = endDate && endDate !== dateStr
+  const lines = [
+    'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//heiView//heiView//EN',
+    'BEGIN:VEVENT',
+    `DTSTART;TZID=Europe/Berlin:${start}`,
+    `DTEND;TZID=Europe/Berlin:${end}`,
+    `SUMMARY:${escape(name)}`,
+    `LOCATION:${escape(room)}`,
+    prof ? `DESCRIPTION:${escape(prof)}` : '',
+    isRecurring ? `RRULE:FREQ=WEEKLY;UNTIL=${endDate!.replace(/-/g, '')}T235959Z` : '',
+    'END:VEVENT', 'END:VCALENDAR',
+  ].filter(Boolean).join('\r\n')
+  const blob = new Blob([lines], { type: 'text/calendar;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `${name.replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '_').slice(0, 50)}.ics`
+  document.body.appendChild(a); a.click(); document.body.removeChild(a)
+  URL.revokeObjectURL(url)
+}
 
 const TRACK_START_HOUR = 8
 const TRACK_END_HOUR = 23
@@ -974,6 +1025,49 @@ function App() {
                 </a>
               ) : (
                 <Typography.Text type="secondary">No course link provided.</Typography.Text>
+              )}
+
+              {selectedCourse.startMinutes > 0 && (
+                <>
+                  <Divider style={{ margin: '4px 0' }} />
+                  <div>
+                    <Typography.Text type="secondary" style={{ fontSize: 12, display: 'block', marginBottom: 8 }}>
+                      {text.addToCalendar}
+                    </Typography.Text>
+                    <Space wrap>
+                      <a
+                        href={toGoogleCalendarUrl(
+                          resolveLocalizedText(selectedCourse.course.name, language),
+                          selectedCourse.room,
+                          selectedDate.format('YYYY-MM-DD'),
+                          selectedCourse.startMinutes,
+                          selectedCourse.endMinutes,
+                          resolveLocalizedText(selectedCourse.course.prof, language),
+                          selectedCourse.course.link || '',
+                          selectedCourse.course.end_date,
+                        )}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Button size="small">Google Calendar</Button>
+                      </a>
+                      <Button
+                        size="small"
+                        onClick={() => downloadIcsFile(
+                          resolveLocalizedText(selectedCourse.course.name, language),
+                          selectedCourse.room,
+                          selectedDate.format('YYYY-MM-DD'),
+                          selectedCourse.startMinutes,
+                          selectedCourse.endMinutes,
+                          resolveLocalizedText(selectedCourse.course.prof, language),
+                          selectedCourse.course.end_date,
+                        )}
+                      >
+                        {text.downloadIcs}
+                      </Button>
+                    </Space>
+                  </div>
+                </>
               )}
             </Space>
           )}
