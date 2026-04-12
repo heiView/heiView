@@ -30,6 +30,7 @@ Whether you're looking for a quiet room to study, or exploring courses and activ
 
 - **Interactive Timeline Visualization**: Intuitively displays daily course schedules and idle time slots across all classrooms in campus buildings.
 - **Detailed Course Information**: Click on any course card in the timeline to view full details, including direct heiCO links.
+- **Add to Calendar**: Export any course to Google Calendar or download a standard `.ics` file compatible with Apple Calendar and Outlook. Recurring weekly courses are automatically set up with the correct end date.
 - **Building independent bookmarks**: Each building has its own exclusive URL. It is recommended to switch to a frequently visited building before saving the bookmark.
 - **Smart filter search**: Supports filter search by courses, buildings, professor names, etc. in any building.
 
@@ -129,6 +130,7 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 - **可视化时间轴**：直观展示每日课程的时间跨度以及各建筑所有楼层教室的空闲时段。
 - **课程详细信息**：点击时间轴上的课程卡片即可查看详细信息，包含课程的heiCO链接。
+- **加入日历**：可将任意课程导出到 Google 日历，或下载兼容苹果日历、Outlook 的标准 `.ics` 文件。每周重复的课程会自动设置正确的结束日期。
 - **建筑独立书签**：每栋建筑都有自己的专属网址，建议切换到常去的建筑后再保存书签。
 - **快速过滤检索**：支持在任意界面按课程、建筑、教授名等进行过滤检索。
 
