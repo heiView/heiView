@@ -41,7 +41,7 @@ There are still some contents to be improved, such as incomplete building floors
 
 ### To Do List
 
-Due to incomplete and inconsistently formatted data in heiCO, over 700 out of the 4,000+ courses in the 2026 Summer Semester lack directly downloadable schedule and location information. These courses are currently placed under "Other → No Information" and some courses with incomplete information are placed in "Other → Unknown"， require manual addition.
+Due to incomplete and inconsistently formatted data in heiCO, over 700 out of the 4,000+ courses in the 2026 Summer Semester lack directly downloadable schedule and location information. These courses are currently placed under "Other → No Information" and some courses with incomplete information are placed in "Other"， require manual addition.
 
 **We warmly welcome contributions!** You can:
 
