@@ -3,7 +3,7 @@ const path = require('path');
 const Database = require('better-sqlite3');
 
 const ROOT = path.resolve(__dirname, '..', '..');
-const DB_PATH = path.join(ROOT, 'data', 'heitable.db');
+const DB_PATH = path.join(ROOT, 'data', 'heiview.db');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
 
 function toNullableInteger(value) {

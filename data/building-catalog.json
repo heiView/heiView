@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-04-11T12:18:03.000Z",
   "source": {
-    "type": "heitable-crawler-json",
+    "type": "heiview-crawler-json",
     "folder": "2026SS",
     "fileCount": 4162,
     "note": "Added aliases array for better building matching (e.g. Hauptstraße 47/51 -> Hauptstraße 47-51)"
