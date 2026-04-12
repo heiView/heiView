@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "dev:api": "node server/index.cjs",
+    "dev:api": "node --env-file=.env server/index.cjs",
     "db:import:buildings": "node server/scripts/import-building-catalog.cjs",
     "db:sync": "node server/scripts/patch-catalog.cjs && npm run db:build && npm run db:import:buildings",
     "build": "vite build",
