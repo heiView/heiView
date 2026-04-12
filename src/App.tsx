@@ -406,6 +406,19 @@ function App() {
   const campusSyncedRef = React.useRef(false)
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
   const bodyScrollRef = React.useRef<HTMLDivElement>(null)
+  const topbarRef = React.useRef<HTMLElement>(null)
+
+  React.useEffect(() => {
+    const el = topbarRef.current
+    if (!el) return
+    const update = () => {
+      document.documentElement.style.setProperty('--topbar-h', el.clientHeight + 'px')
+    }
+    update()
+    const ro = new ResizeObserver(update)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
 
   const handleHeaderScroll = (e: React.UIEvent<HTMLDivElement>) => {
     if (bodyScrollRef.current && bodyScrollRef.current.scrollLeft !== (e.target as HTMLDivElement).scrollLeft) {
@@ -612,7 +625,7 @@ function App() {
         <div className="hei-orb hei-orb-b" />
 
         <Layout.Content className="hei-content">
-          <header className="hei-topbar">
+          <header className="hei-topbar" ref={topbarRef}>
             <div className="hei-topbar-inner">
               <div className="hei-brand-cluster">
                 <div className="hei-brand-row">
@@ -679,8 +692,6 @@ function App() {
                 />
               </div>
             </div>
-
-            <div className="hei-board-controls-divider" />
 
             {(!loading && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
               <div

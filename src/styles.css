@@ -88,14 +88,14 @@ textarea {
 .hei-content {
   position: relative;
   z-index: 1;
-  padding-top: 61px;
+  padding-top: var(--topbar-h, 61px);
 }
 
 .hei-shell {
   position: relative;
   z-index: 1;
   width: min(1680px, calc(100vw - 24px));
-  margin: 12px auto 36px;
+  margin: 12px auto 12px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -116,7 +116,6 @@ textarea {
   left: 0;
   right: 0;
   z-index: 30;
-  border-bottom: 1px solid var(--hei-border);
   background: color-mix(in srgb, var(--hei-bg) 78%, transparent);
   backdrop-filter: blur(18px);
   overflow: hidden;
@@ -373,7 +372,7 @@ textarea {
 }
 
 .hei-board-card {
-  padding: 24px;
+  padding: 24px 0;
   border-radius: 28px;
   background: var(--hei-surface) !important;
   border: 1px solid var(--hei-border) !important;
@@ -382,13 +381,8 @@ textarea {
 }
 
 .hei-board-controls {
-  margin-bottom: 18px;
-}
-
-.hei-board-controls-divider {
-  height: 1px;
-  margin: 0 0 18px;
-  background: var(--hei-border);
+  margin-bottom: 10px;
+  padding: 0 24px;
 }
 
 .hei-board-head {
@@ -414,7 +408,7 @@ textarea {
 
 .hei-board-frame-header {
   position: sticky;
-  top: 76px;
+  top: var(--topbar-h, 61px);
   z-index: 20;
   overflow-x: auto;
   overflow-y: hidden;
@@ -640,17 +634,10 @@ textarea {
 }
 
 @media (max-width: 992px) {
-  .hei-board-frame-header {
-    top: 136px;
-  }
-  
   .hei-board-frame {
     max-height: none !important;
     overflow-y: visible !important;
     overflow-x: auto !important;
-  }
-  .hei-content {
-    padding-top: 136px;
   }
   
   .hei-board-frame {
@@ -661,15 +648,12 @@ textarea {
 @media (max-width: 640px) {
   .hei-shell {
     width: min(100vw - 16px, 1680px);
-    margin: 12px auto 20px;
+    margin: 12px auto 12px;
   }
 
-  .hei-content {
-    padding-top: 148px; /* Give room in case they wrap */
-  }
-
-  .hei-board-frame-header {
-    top: 148px;
+  .hei-board-controls {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .hei-topbar-inner {
