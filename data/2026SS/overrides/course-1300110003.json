@@ -1,0 +1,29 @@
+{
+  "id": "1300110003",
+  "title": "Königstuhl-Colloquium (KOLL)",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Beuther, Henrik Georg",
+    "Reffert, Sabine",
+    "Wagner, Stefan"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Hörsaal",
+      "building": "Königstuhl 17",
+      "note": "Hörsaal des Max-Planck-Instituts für Astronomie (MPIA); Lecture Theatre of the Max-Planck-Institute for"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410329",
+  "exceptions": [],
+  "notes": ""
+}

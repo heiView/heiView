@@ -1,0 +1,57 @@
+{
+  "id": "7281000202",
+  "title": "Übung \"Objekthandling\"",
+  "type": "PC",
+  "ects_credits": "5",
+  "course_languages": "German",
+  "lecturers": [
+    "Bitsch, Robert"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-11",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: Völkerkundemuseum Heidelberg"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "15:00",
+      "end_time": "19:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: Völkerkundemuseum Heidelberg"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Völkerkundemuseum",
+      "building": "Völkerkundemuseum, Unknown floor",
+      "note": "Ort: Völkerkundemuseum Heidelberg"
+    },
+    {
+      "day_of_week": 6,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: Völkerkundemuseum Heidelberg"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409709",
+  "exceptions": [],
+  "notes": ""
+}

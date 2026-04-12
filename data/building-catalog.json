@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-11T12:18:03.000Z",
+  "updatedAt": "2026-04-12T22:21:32.389Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -3889,6 +3889,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-364::rm-kleiner-seminarraum-r520",
+          "name": "kleiner Seminarraum R520",
+          "floors": [
+            "5th floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -7563,7 +7575,7 @@
     {
       "id": "bld-akademiestrasse-4",
       "street": "Akademiestraße 4",
-      "displayName": "Akademiestraße 4",
+      "displayName": "Akademiestraße 4 Universitätsarchiv",
       "campusId": "altstadt",
       "aliases": [
         "Akademiestr. 4",
@@ -7584,8 +7596,21 @@
           "floors": [],
           "features": {},
           "notes": ""
+        },
+        {
+          "id": "bld-akademiestrasse-4::rm-unknown-room",
+          "name": "Unknown Room",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-siehe-anmerkung",
@@ -8303,6 +8328,16 @@
           "floors": [
             "Unknown floor"
           ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-koenigstuhl-17::rm-hoersaal",
+          "name": "Hörsaal",
+          "floors": [],
           "features": {
             "hasAirConditioning": null,
             "hasAccessControl": null
