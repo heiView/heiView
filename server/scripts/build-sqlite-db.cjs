@@ -8,7 +8,7 @@ const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
 const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
 const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const DB_DIR = path.join(ROOT, 'data');
-const DB_PATH = path.join(DB_DIR, 'heitable.db');
+const DB_PATH = path.join(DB_DIR, 'heiview.db');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
 
 function loadSkipSet() {

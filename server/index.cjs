@@ -7,7 +7,7 @@ const { importBuildingCatalog } = require('./scripts/import-building-catalog.cjs
 const { syncSingleCourse } = require('./scripts/build-sqlite-db.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
-const DB_PATH = path.join(ROOT, 'data', 'heitable.db');
+const DB_PATH = path.join(ROOT, 'data', 'heiview.db');
 const PORT = Number.parseInt(process.env.PORT || '3001', 10);
 
 // ── Admin auth ──────────────────────────────────────────────────────────────
