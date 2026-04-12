@@ -85,6 +85,7 @@ npm install
 ```
 
 **2. Synchronize & Build Database**
+
 After the crawler generates new JSON files, run:
 ```bash
 npm run db:sync
@@ -97,6 +98,7 @@ npm run dev:api
 ```
 
 **4. Start the Frontend App**
+
 Keep the backend running. In a new terminal window:
 ```bash
 npm run dev
@@ -176,6 +178,7 @@ npm install
 ```
 
 **2. 同步与构建数据库**
+
 在爬虫运行完毕并生成新的 JSON 文件后，请执行：
 
 ```bash
@@ -190,6 +193,7 @@ npm run dev:api
 ```
 
 **4. 启动前端应用**
+
 保持后端终端运行，新开一个终端窗口执行：
 ```bash
 npm run dev
