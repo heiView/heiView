@@ -7,8 +7,6 @@
   <a href="https://heiview.de/" target="_blank" rel="noopener noreferrer"> https://heiview.de </a>
 </div>
 
-
-
 </br>
 
 <div align="center">
@@ -40,7 +38,6 @@ Whether you're looking for a quiet room to study, or exploring courses and activ
 The `data/building-catalog.json` file is a data dictionary generated from the classroom information in the heiCO course, supplemented by a large number of manual modifications. It is used to record the affiliation and alias relationships of different campuses, buildings and classrooms. For example, Grabengasse 3-5 is displayed as Neue Universität for easy understanding, and Voßstraße 2 is divided into 10 different buildings to avoid new students getting lost, etc.
 
 There are still some contents to be improved, such as incomplete building floors, adding common abbreviations to the buildings and information about the facilities inside the classroom (whether there are sockets and air conditioners, etc.).
-
 
 ### To Do List
 
@@ -142,7 +139,7 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 ### 待办事项
 
-由于heiCO上的课程信息存在大量缺失和格式不规范等问题，2026夏季学期的4000+门课程里有超过700门没有可以直接下载的时间和地点信息，目前被放置在Other -> No Information中，还有部分信息不全的课程被放在Other -> Unknown里，都需要后续手动添加，欢迎感兴趣的同学邮件我(ht305)加入本项目一同编辑，也欢迎创建Issue提出反馈/建议或直接修改文件提交Pull Request。
+由于heiCO上的课程信息存在大量缺失和格式不规范等问题，2026夏季学期的4000+门课程里有超过700门没有可以直接下载的时间和地点信息，目前被放置在Other -> No Information中，还有部分信息不全的课程被放在Other里，都需要后续手动添加，欢迎感兴趣的同学邮件我(ht305)加入本项目一同编辑，也欢迎创建Issue提出反馈/建议或直接修改文件提交Pull Request。
 
 ### 爬虫工具
 
@@ -198,8 +195,6 @@ npm run dev:api
 npm run dev
 ```
 
-
 ### 协议
 
 本项目采用 [AGPL-3.0 协议](LICENSE) 开源。
-
