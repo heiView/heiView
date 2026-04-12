@@ -48,8 +48,7 @@ export const useStore = create<State>((set) => {
     return null;
   })();
 
-  const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initialTheme: Theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  const initialTheme: Theme = savedTheme || 'light';
   applyThemeToDocument(initialTheme);
 
   const savedLanguage = ((): Language | null => {
