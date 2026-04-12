@@ -35,3 +35,6 @@ __pycache__/
 copilot-instructions.md
 
 .env
+
+data/admin-accounts.json
+data/admin-audit.json
