@@ -341,6 +341,8 @@ function AdminApp() {
       .filter(b => !weekEditCampus || b.campusId === weekEditCampus)
       .map(b => ({ value: b.street, label: (b.displayName && b.displayName.trim()) ? b.displayName.trim() : b.street }))
   }, [allBuildingsList, weekEditCampus])
+  const [editRoomOptions, setEditRoomOptions] = React.useState<{ value: string }[]>([])
+  const [newEventRoomOptions, setNewEventRoomOptions] = React.useState<{ value: string }[]>([])
   const [mergeTargetId, setMergeTargetId] = React.useState<string | null>(null)
   const [mergeSaving, setMergeSaving] = React.useState(false)
   const [roomEditState, setRoomEditState] = React.useState<{ buildingId: string; room: Record<string, unknown> } | null>(null)
@@ -358,6 +360,8 @@ function AdminApp() {
   const [newEventSaving, setNewEventSaving] = React.useState(false)
   const [newEventCampus, setNewEventCampus] = React.useState('')
   const [newEventForm] = Form.useForm()
+  const watchedEditBuilding = Form.useWatch('week_building', editForm)
+  const watchedNewEventBuilding = Form.useWatch('week_building', newEventForm)
 
   // ── Superadmin-only state ─────────────────────────────────────────────────
   const superAdmin = React.useMemo(() => isSuperAdmin(), [])
@@ -946,6 +950,39 @@ function AdminApp() {
     }
   }
 
+  async function fetchBuildingRooms(buildingStreet: string, setter: (opts: { value: string }[]) => void) {
+    if (!buildingStreet) { setter([]); return }
+    const buildings = allBuildingsList || []
+    const bld = buildings.find(b => b.street === buildingStreet)
+    if (!bld) { setter([]); return }
+    try {
+      const res = await adminFetch(`/api/admin/building/${encodeURIComponent(bld.id)}/rooms`)
+      if (res.ok) {
+        const rooms: { name: string }[] = await res.json()
+        setter(rooms.map(r => ({ value: r.name })))
+      } else {
+        setter([])
+      }
+    } catch { setter([]) }
+  }
+
+  // Reactively fetch room options when building selection changes
+  React.useEffect(() => {
+    if (watchedEditBuilding) {
+      fetchBuildingRooms(watchedEditBuilding, setEditRoomOptions)
+    } else {
+      setEditRoomOptions([])
+    }
+  }, [watchedEditBuilding, allBuildingsList])
+
+  React.useEffect(() => {
+    if (watchedNewEventBuilding) {
+      fetchBuildingRooms(watchedNewEventBuilding, setNewEventRoomOptions)
+    } else {
+      setNewEventRoomOptions([])
+    }
+  }, [watchedNewEventBuilding, allBuildingsList])
+
   async function handleOpenEdit(courseId: string, startTime?: string, dayOfWeek?: number, room?: string) {
     if (!courseId) return
     setEditFileLoading(true)
@@ -1468,9 +1505,6 @@ function AdminApp() {
                   {`Day ${week.day_of_week ?? '?'} · ${week.start_time ?? '?'} – ${week.end_time ?? '?'}`}
                   {week.location && <span style={{ marginLeft: 8 }}>· Original: <em>{week.location}</em></span>}
                 </Typography.Text>
-                <Form.Item name="week_room" label="Room">
-                  <Input placeholder="e.g. Übungsraum 110.02.05 (4110.02.005)" />
-                </Form.Item>
                 <Form.Item label="Building">
                   <div style={{ display: 'flex', gap: 8 }}>
                     <Select
@@ -1482,6 +1516,7 @@ function AdminApp() {
                       onChange={(v: string | undefined) => {
                         setWeekEditCampus(v || '')
                         editForm.setFieldValue('week_building', undefined)
+                        setEditRoomOptions([])
                       }}
                     />
                     <Form.Item name="week_building" noStyle>
@@ -1492,9 +1527,19 @@ function AdminApp() {
                         optionFilterProp="label"
                         options={bldOptions}
                         style={{ flex: 1 }}
+                        onChange={() => editForm.setFieldValue('week_room', undefined)}
                       />
                     </Form.Item>
                   </div>
+                </Form.Item>
+                <Form.Item name="week_room" label="Room">
+                  <AutoComplete
+                    options={editRoomOptions}
+                    filterOption={(input, option) =>
+                      (option?.value ?? '').toLowerCase().includes(input.toLowerCase())
+                    }
+                    placeholder="e.g. Übungsraum 110.02.05 (4110.02.005)"
+                  />
                 </Form.Item>
                 <Form.Item name="week_floor" label="Floor">
                   <Select
@@ -1785,9 +1830,6 @@ function AdminApp() {
                 </Form.Item>
               </Col>
             </Row>
-            <Form.Item name="week_room" label="Room">
-              <Input placeholder="e.g. Seminarraum 1" />
-            </Form.Item>
             <Form.Item label="Building">
               <div style={{ display: 'flex', gap: 8 }}>
                 <Select
@@ -1799,6 +1841,7 @@ function AdminApp() {
                   onChange={(v: string | undefined) => {
                     setNewEventCampus(v || '')
                     newEventForm.setFieldValue('week_building', undefined)
+                    setNewEventRoomOptions([])
                   }}
                 />
                 <Form.Item name="week_building" noStyle>
@@ -1811,9 +1854,19 @@ function AdminApp() {
                       .filter(b => !newEventCampus || b.campusId === newEventCampus)
                       .map(b => ({ value: b.street, label: (b.displayName && b.displayName.trim()) ? b.displayName.trim() : b.street }))}
                     style={{ flex: 1 }}
+                    onChange={() => newEventForm.setFieldValue('week_room', undefined)}
                   />
                 </Form.Item>
               </div>
+            </Form.Item>
+            <Form.Item name="week_room" label="Room">
+              <AutoComplete
+                options={newEventRoomOptions}
+                filterOption={(input, option) =>
+                  (option?.value ?? '').toLowerCase().includes(input.toLowerCase())
+                }
+                placeholder="e.g. Seminarraum 1"
+              />
             </Form.Item>
             <Form.Item name="week_floor" label="Floor (optional)">
               <Select

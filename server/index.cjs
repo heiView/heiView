@@ -693,6 +693,14 @@ function createApp() {
     res.json(list);
   });
 
+  app.get('/api/admin/building/:buildingId/rooms', requireAdmin, (req, res) => {
+    const catalog = readCatalog();
+    const building = (catalog.buildings || []).find(b => b.id === req.params.buildingId);
+    if (!building) { res.status(404).json({ error: 'Building not found' }); return; }
+    const rooms = (building.rooms || []).map(r => ({ id: r.id, name: r.name, floors: r.floors || [] }));
+    res.json(rooms);
+  });
+
   // Merge building A into building B:
   //   - A.street + A.aliases become B.aliases
   //   - A.rooms (re-prefixed) + A.floors are merged into B
