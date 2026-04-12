@@ -1116,7 +1116,9 @@ function createApp() {
                 c.title,
                 c.id AS course_id,
                 c.detail_link,
-                c.lecturers_json
+                c.lecturers_json,
+                c.start_date,
+                c.end_date
               FROM occurrences o
               JOIN courses c ON c.id = o.course_id
               WHERE o.date = ? 
@@ -1143,7 +1145,9 @@ function createApp() {
                 c.title,
                 c.id AS course_id,
                 c.detail_link,
-                c.lecturers_json
+                c.lecturers_json,
+                c.start_date,
+                c.end_date
               FROM occurrences o
               JOIN courses c ON c.id = o.course_id
               WHERE o.date = ?
@@ -1199,6 +1203,8 @@ function createApp() {
               }).join(', ')
             : '',
           link: row.detail_link || undefined,
+          start_date: row.start_date || null,
+          end_date: row.end_date || null,
         };
 
         if (skipSet.has(String(row.course_id))) continue;
