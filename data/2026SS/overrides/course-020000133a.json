@@ -1,0 +1,29 @@
+{
+  "id": "020000133a",
+  "title": "Gestaltung und Beratung in der arbeitsrechtlichen Praxis",
+  "type": "WS",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(N.N.), 020000.100"
+  ],
+  "start_date": "2026-05-06",
+  "end_date": "2026-06-03",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "205 Haus zum Riesen (15)",
+      "location_link": null,
+      "room": "205",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417709",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "0000000190",
+  "title": "Übung „Denkmal- und Museumsrecht in Deutschland“",
+  "type": "PC",
+  "ects_credits": "3",
+  "course_languages": "German",
+  "lecturers": [
+    "Davydov, Dimitrij"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-06-26",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "HS 413",
+      "location_link": null,
+      "room": "Hörsaal 413 (HS 413)",
+      "building": "Marstallstraße. 6 HCCH, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "HS 413",
+      "location_link": null,
+      "room": "Hörsaal 413 (HS 413)",
+      "building": "Marstallstraße. 6 HCCH, 4th floor",
+      "note": "Klausur"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407465",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

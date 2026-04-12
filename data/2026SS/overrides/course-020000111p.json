@@ -1,0 +1,29 @@
+{
+  "id": "020000111p",
+  "title": "AG Zivilrecht II Gruppe 16",
+  "type": "AG",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kloth, Johannes"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "204 Haus zum Riesen (45)",
+      "location_link": null,
+      "room": "204",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409297",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

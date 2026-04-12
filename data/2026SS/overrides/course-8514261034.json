@@ -1,0 +1,29 @@
+{
+  "id": "8514261034",
+  "title": "Joseph Roth und der habsburgische Mythos",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kathan, Maximilian"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum 1",
+      "location_link": null,
+      "room": "Seminarraum 1",
+      "building": "Landfriedstraße 12, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416115",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

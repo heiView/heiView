@@ -1,0 +1,39 @@
+{
+  "id": "8514261031",
+  "title": "Jüdische Geschichtspraxis und Geschichtsschreibung des Mittelalters | Medieval Jewish Historical Thinking and Historiography",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Heil, Johannes"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "HS 211 (IÜD, Plöck 57a)",
+      "location_link": null,
+      "room": "Hörsaal (HS 211) (3051.02.211)",
+      "building": "Plöck 57a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416101",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

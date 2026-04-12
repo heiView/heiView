@@ -1,0 +1,104 @@
+{
+  "id": "020000110s",
+  "title": "AG Strafrecht II",
+  "type": "AG",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Arndt, Michelle Sheila",
+    "Freitag, Alica",
+    "Hensel, Lena",
+    "Kraft, Julia",
+    "Rabausch, Juliane",
+    "Weng, Philipp"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SGU 1016 (2100.01.201X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23040",
+      "room": "SGU 1016 (2100.01.201X)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "HS 6"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "ÜR-B, Hauptstr. 47-51"
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "HS 2, Hauptstr. 47-51"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "204 Haus zum Riesen (45)",
+      "location_link": null,
+      "room": "204",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "204 Haus zum Riesen (45)",
+      "location_link": null,
+      "room": "204",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409300",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "020000111k",
+  "title": "AG Zivilrecht II Gruppe 11",
+  "type": "AG",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Feith, Ferdinand"
+  ],
+  "start_date": "2026-04-20",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "002 Haus zum Riesen (40)",
+      "location_link": null,
+      "room": "002",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409291",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

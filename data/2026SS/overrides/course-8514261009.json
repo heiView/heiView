@@ -1,0 +1,29 @@
+{
+  "id": "8514261009",
+  "title": "| Liturgy of Daily Life: Tefillah in Schools and Adult Education",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Cranz, Isabel"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum 4",
+      "location_link": null,
+      "room": "Seminarraum 4",
+      "building": "Landfriedstraße 12, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414894",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

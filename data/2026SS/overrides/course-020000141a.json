@@ -1,0 +1,69 @@
+{
+  "id": "020000141a",
+  "title": "Einführung in das türkische Arbeitsrecht",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Laciner, Vedat"
+  ],
+  "start_date": "2026-07-20",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "205 Haus zum Riesen (15)",
+      "location_link": null,
+      "room": "205",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "205 Haus zum Riesen (15)",
+      "location_link": null,
+      "room": "205",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "205 Haus zum Riesen (15)",
+      "location_link": null,
+      "room": "205",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "205 Haus zum Riesen (15)",
+      "location_link": null,
+      "room": "205",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "205 Haus zum Riesen (15)",
+      "location_link": null,
+      "room": "205",
+      "building": "Hauptstraße 52, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416448",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

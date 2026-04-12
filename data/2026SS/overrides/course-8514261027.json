@@ -1,0 +1,29 @@
+{
+  "id": "8514261027",
+  "title": "Jiddisch für Anfänger",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Gruschka, Roland"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Seminarraum 2",
+      "location_link": null,
+      "room": "Seminarraum 2",
+      "building": "Landfriedstraße 12, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416090",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

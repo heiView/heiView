@@ -1,0 +1,29 @@
+{
+  "id": "8514261021",
+  "title": "Hebräische Lexikographie: Alt(es) und Neu(es) | Hebrew Lexicography: Old and New",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Golinets, Viktor"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Seminarraum 1",
+      "location_link": null,
+      "room": "Seminarraum 1",
+      "building": "Landfriedstraße 12, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416035",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

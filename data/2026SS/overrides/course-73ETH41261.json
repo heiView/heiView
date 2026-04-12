@@ -1,0 +1,30 @@
+{
+  "id": "73ETH41261",
+  "title": "Museumsethnografie – Objekte als Wissensspeicher",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "German",
+  "lecturers": [
+    "Bitsch, Robert",
+    "von Stockhausen, Alban"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Hauptstr. 235 / Völkerkundemuseum",
+      "location_link": null,
+      "room": "Völkerkundemuseum",
+      "building": "Völkerkundemuseum, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416865",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}

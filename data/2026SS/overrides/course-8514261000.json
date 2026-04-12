@@ -1,0 +1,29 @@
+{
+  "id": "8514261000",
+  "title": "Einführung in die Geistesgeschichte des Zionismus",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Becke, Johannes"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Seminarraum 1",
+      "location_link": null,
+      "room": "Seminarraum 1",
+      "building": "Landfriedstraße 12, Unknown floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414837",
+  "room": null,
+  "building": null,
+  "exceptions": [],
+  "notes": ""
+}
