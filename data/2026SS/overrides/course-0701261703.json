@@ -1,0 +1,27 @@
+{
+  "id": "0701261703",
+  "title": "Inklusion – philosophische, ethische und fachdidaktische Grundfragen",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Wellmann, Tom), 070100.100"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Raum 220",
+      "building": "Keplerstraße 87, Unknown floor",
+      "note": "Ort: Raum 220 im Altbau der PH Heidelberg Keplerstraße 87 69120 Heidelberg"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415426",
+  "exceptions": [],
+  "notes": ""
+}

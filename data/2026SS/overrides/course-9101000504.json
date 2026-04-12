@@ -1,0 +1,69 @@
+{
+  "id": "9101000504",
+  "title": "BI - Laborführung Klinische Chemie",
+  "type": "XC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Anker, Sophie Caroline",
+    "Brings, Sebastian",
+    "Zimmer, Holger"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-04-17",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Laborführung",
+      "building": "Im Neuenheimer Feld 671, Unknown floor",
+      "note": "Laborführung, INF 671"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/374963",
+  "exceptions": [],
+  "notes": ""
+}

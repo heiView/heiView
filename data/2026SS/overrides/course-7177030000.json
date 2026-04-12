@@ -1,0 +1,30 @@
+{
+  "id": "7177030000",
+  "title": "Orientierungsveranstaltung",
+  "type": "XC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Heß, Tatjana Anna",
+    "Kutlu, Ayca",
+    "Menconi, Mayra",
+    "Schimmelfennig, Laura Katharina"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-04-16",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Raum 19",
+      "building": "Sandgasse 7, Unknown floor",
+      "note": "Raum 19, Sandgasse 7"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418820",
+  "exceptions": [],
+  "notes": ""
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1300112341",
+  "title": "Exoplanet Journal Club (MVRS)",
+  "type": "SE",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Ahrer, Eva-Maria"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Seminar Room (306)",
+      "building": "Königstuhl 17, Unknown floor",
+      "note": "MPIA Seminar Room (306)"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419592",
+  "exceptions": [],
+  "notes": ""
+}

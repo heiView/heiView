@@ -991,6 +991,16 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-grabengasse-3-5::rm-raum-229-historisches-seminar",
+          "name": "Raum 229, Historisches Seminar.",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -1264,6 +1274,30 @@
         {
           "id": "bld-hauptstrasse-52::rm-210",
           "name": "210",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-hauptstrasse-52::rm-204",
+          "name": "204",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-hauptstrasse-52::rm-002",
+          "name": "002",
           "floors": [
             "Unknown floor"
           ],
@@ -1945,6 +1979,30 @@
         {
           "id": "bld-im-neuenheimer-feld-226::rm-eg-ost",
           "name": "EG Ost",
+          "floors": [
+            "Ground floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-226::rm-cqd-lounge",
+          "name": "CQD-Lounge",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-226::rm-goldbox",
+          "name": "Goldbox",
           "floors": [
             "Ground floor"
           ],
@@ -8187,7 +8245,7 @@
     {
       "id": "bld-im-neuenheimer-feld-561",
       "street": "Im Neuenheimer Feld 561",
-      "displayName": "Neue Pädagogische Hochschule",
+      "displayName": "Neubau Pädagogische Hochschule",
       "campusId": "other",
       "aliases": [
         "PH"
@@ -8197,6 +8255,18 @@
         {
           "id": "bld-im-neuenheimer-feld-561::rm-raum-a236",
           "name": "Raum A236",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-561::rm-to111",
+          "name": "TO111",
           "floors": [
             "Unknown floor"
           ],
@@ -8226,6 +8296,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-koenigstuhl-17::rm-seminar-room-306",
+          "name": "Seminar Room (306)",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8242,6 +8324,18 @@
           "id": "bld-keplerstrasse-87::rm-raum-130",
           "name": "Raum 130",
           "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-keplerstrasse-87::rm-raum-220",
+          "name": "Raum 220",
+          "floors": [
+            "Unknown floor"
+          ],
           "features": {
             "hasAirConditioning": null,
             "hasAccessControl": null
@@ -8308,6 +8402,85 @@
         {
           "id": "bld-im-neuenheimer-feld-519::rm-to111",
           "name": "TO111",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-366",
+      "street": "Im Neuenheimer Feld 366",
+      "displayName": "INF 366",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-366::rm-sr111",
+          "name": "SR111",
+          "floors": [
+            "1st floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-sandgasse-7",
+      "street": "Sandgasse 7",
+      "displayName": "",
+      "campusId": "altstadt",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-sandgasse-7::rm-raum-19",
+          "name": "Raum 19",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-563",
+      "street": "Im Neuenheimer Feld 563",
+      "displayName": "INF 563",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-671",
+      "street": "Im Neuenheimer Feld 671",
+      "displayName": "INF 671",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-671::rm-laborfuehrung",
+          "name": "Laborführung",
           "floors": [
             "Unknown floor"
           ],

@@ -1,0 +1,27 @@
+{
+  "id": "0720200063",
+  "title": "Theory and History",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Maissen, Thomas"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "18:15",
+      "end_time": "19:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Raum 229, Historisches Seminar.",
+      "building": "Grabengasse 3-5",
+      "note": "Raum 229, Historisches Seminar."
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412153",
+  "exceptions": [],
+  "notes": ""
+}

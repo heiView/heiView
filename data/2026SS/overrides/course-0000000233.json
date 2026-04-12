@@ -1,0 +1,27 @@
+{
+  "id": "0000000233",
+  "title": "Planung wissenschaftlicher Arbeiten",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Schuster, Christoph"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_time": "18:30",
+      "end_time": "20:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "SR111",
+      "building": "Im Neuenheimer Feld 366, 1st floor",
+      "note": "INF 366, 1.OG, SR111"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412716",
+  "exceptions": [],
+  "notes": ""
+}

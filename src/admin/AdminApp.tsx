@@ -130,12 +130,12 @@ function formatCampusOptionLabel(campus: Campus) {
 
 function normalizeFloorLabel(value: string | null | undefined) {
   const text = (value || '').trim()
-  return text || 'Unspecified floor'
+  return text || 'Unknown floor'
 }
 
 function floorSortValue(floor: string) {
   const normalized = floor.toLowerCase().trim()
-  if (!normalized || normalized === 'unspecified floor') return 99999
+  if (!normalized || normalized === 'unknown floor') return 99999
   if (/basement|untergeschoss|keller|\bug\b/.test(normalized)) {
     const m = normalized.match(/(\d+)/)
     return -100 - (m ? Number.parseInt(m[1], 10) : 1)
@@ -946,7 +946,7 @@ function AdminApp() {
     }
   }
 
-  async function handleOpenEdit(courseId: string, startTime?: string, dayOfWeek?: number) {
+  async function handleOpenEdit(courseId: string, startTime?: string, dayOfWeek?: number, room?: string) {
     if (!courseId) return
     setEditFileLoading(true)
     setEditFileState(null)
@@ -966,12 +966,15 @@ function AdminApp() {
       const res = await adminFetch(`/api/admin/course-file/${encodeURIComponent(courseId)}`)
       const data = await res.json()
       const weeks: WeekEntry[] = Array.isArray(data.weeks) ? data.weeks : []
-      // Find the matching week by start_time
+      // Find the matching week by start_time, day_of_week, and room (most specific first)
       const weekIndex = startTime
         ? (() => {
-            // Prefer matching on both start_time AND day_of_week to avoid collision
-            // when multiple weeks share the same time slot
             if (dayOfWeek !== undefined) {
+              // Best match: day_of_week + start_time + room (handles duplicate time slots)
+              if (room) {
+                const idx = weeks.findIndex((w) => w.start_time === startTime && w.day_of_week === dayOfWeek && w.room === room)
+                if (idx >= 0) return idx
+              }
               const idx = weeks.findIndex((w) => w.start_time === startTime && w.day_of_week === dayOfWeek)
               if (idx >= 0) return idx
             }
@@ -1382,8 +1385,9 @@ function AdminApp() {
                     type="button"
                     onClick={() => {
                       const startTime = formatMinutesToTime(selectedCourse.startMinutes)
+                      const room = selectedCourse.room
                       setSelectedCourse(null)
-                      handleOpenEdit(selectedCourse.course.id!, startTime, selectedCourse.dayOfWeek)
+                      handleOpenEdit(selectedCourse.course.id!, startTime, selectedCourse.dayOfWeek, room)
                     }}
                     style={{
                       padding: '2px 10px',

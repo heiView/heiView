@@ -187,7 +187,7 @@ function normalizeFloorLabel(value: string | null | undefined) {
 
 function floorSortValue(floor: string) {
   const normalized = floor.toLowerCase().trim()
-  if (!normalized || normalized === 'unspecified floor' || normalized === 'unknown floor') return 99999
+  if (!normalized || normalized === 'unknown floor') return 99999
 
   if (/basement|untergeschoss|keller|\bug\b/.test(normalized)) {
     const depthMatch = normalized.match(/(\d+)/)
