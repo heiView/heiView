@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-12T22:21:32.389Z",
+  "updatedAt": "2026-04-12T22:25:01.319Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -8368,6 +8368,18 @@
         {
           "id": "bld-keplerstrasse-87::rm-raum-220",
           "name": "Raum 220",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-keplerstrasse-87::rm-raum-122",
+          "name": "Raum 122",
           "floors": [
             "Unknown floor"
           ],
