@@ -30,7 +30,14 @@ def compact_ws(value: str) -> str:
 
 def parse_course_id(raw_text: str, title: str) -> str:
     first_line = compact_ws(raw_text.splitlines()[0]) if raw_text.splitlines() else compact_ws(raw_text)
-    prefix = first_line.split(title, 1)[0] if title in first_line else first_line
+    # Split on " <title>" (space-prefixed) to avoid splitting inside IDs that contain the title as a substring.
+    spaced_title = ' ' + title
+    if spaced_title in first_line:
+        prefix = first_line.split(spaced_title, 1)[0]
+    elif title in first_line:
+        prefix = first_line.split(title, 1)[0]
+    else:
+        prefix = first_line
     prefix = prefix.strip()
 
     # Keep full course ids with unicode letters and symbols like -, _, /
