@@ -879,6 +879,7 @@ function AdminApp() {
     setRoomEditState({ buildingId, room })
     roomForm.setFieldsValue({
       room_name: room.name ?? '',
+      room_display_name: room.displayName ?? '',
       room_floors: Array.isArray(room.floors) && (room.floors as string[]).length > 0 ? [(room.floors as string[])[0]] : [],
       room_notes: room.notes ?? '',
     })
@@ -916,6 +917,7 @@ function AdminApp() {
     setAddRoomSaving(true)
     const payload = {
       name: values.room_add_name,
+      displayName: values.room_add_display_name || '',
       floors: Array.isArray(values.room_add_floors) ? (values.room_add_floors as string[]).slice(0, 1) : [],
       notes: values.room_add_notes || '',
     }
@@ -943,6 +945,7 @@ function AdminApp() {
     setRoomEditSaving(true)
     const payload = {
       name: values.room_name,
+      displayName: values.room_display_name || '',
       floors: Array.isArray(values.room_floors) ? (values.room_floors as string[]).slice(0, 1) : [],
       notes: values.room_notes || '',
       features: room.features ?? null,
@@ -2206,6 +2209,9 @@ function AdminApp() {
               <Form.Item name="room_name" label="Room name" rules={[{ required: true }]}>
                 <Input placeholder="Hörsaal 5 (3041.EG.005)" />
               </Form.Item>
+              <Form.Item name="room_display_name" label="Display name (optional)">
+                <Input placeholder="Short or friendly name shown to users" />
+              </Form.Item>
               <Form.Item name="room_floors" label="Floor">
                 <Select
                   mode="tags"
@@ -2292,6 +2298,9 @@ function AdminApp() {
             <Form form={addRoomForm} layout="vertical" onFinish={handleAddRoomToBuilding}>
               <Form.Item name="room_add_name" label="Room name" rules={[{ required: true, message: 'Name required' }]}>
                 <Input placeholder="Hörsaal 5 (3041.EG.005)" />
+              </Form.Item>
+              <Form.Item name="room_add_display_name" label="Display name (optional)">
+                <Input placeholder="Short or friendly name shown to users" />
               </Form.Item>
               <Form.Item name="room_add_floors" label="Floor">
                 <Select

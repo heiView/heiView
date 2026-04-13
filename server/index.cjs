@@ -882,6 +882,7 @@ function createApp() {
     const newRoom = {
       id: `${building.id}::rm-${slug}`,
       name: roomName,
+      displayName: (req.body.displayName || '').trim(),
       floors: Array.isArray(req.body.floors) ? req.body.floors : [],
       features: { hasAirConditioning: null, hasAccessControl: null },
       notes: req.body.notes || '',

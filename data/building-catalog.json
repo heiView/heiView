@@ -56,6 +56,7 @@
         {
           "id": "bld-akademiestrasse-3::hs-5-3041-eg-005",
           "name": "HS 5 (3041.EG.005)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -68,6 +69,7 @@
         {
           "id": "bld-akademiestrasse-3::ubungsraum-1-og-107-3041-01-007",
           "name": "Übungsraum 1. OG 107 (3041.01.007)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -80,6 +82,7 @@
         {
           "id": "bld-akademiestrasse-3::ubungsraum-eg-007-3041-eg-007",
           "name": "Übungsraum EG 007 (3041.EG.007)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -92,6 +95,7 @@
         {
           "id": "bld-akademiestrasse-3::ubungsraum-ug-024-3040-u1-024",
           "name": "Übungsraum UG 024 (3040.U1.024)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -124,6 +128,7 @@
         {
           "id": "bld-albert-ueberle-strasse-3-5::sr-i-8020-02-210",
           "name": "SR I (8020.02.210)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -136,6 +141,7 @@
         {
           "id": "bld-albert-ueberle-strasse-3-5::sr-ii-8020-02-203",
           "name": "SR II (8020.02.203)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -148,6 +154,7 @@
         {
           "id": "bld-albert-ueberle-strasse-3-5::ur-254-8020-02-254",
           "name": "ÜR 254 (8020.02.254)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -160,6 +167,7 @@
         {
           "id": "bld-albert-ueberle-strasse-3-5::ur-353-8020-03-353",
           "name": "ÜR 353 (8020.03.353)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -172,6 +180,7 @@
         {
           "id": "bld-albert-ueberle-strasse-3-5::rm-8020-01-160",
           "name": "8020.01.160",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -184,6 +193,7 @@
         {
           "id": "bld-albert-ueberle-strasse-3-5::rm-library",
           "name": "Library",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -212,6 +222,7 @@
         {
           "id": "bld-albert-ueberle-strasse-7::horsaal-8022-eg-005",
           "name": "Hörsaal (8022.EG.005)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -237,6 +248,7 @@
         {
           "id": "bld-augustinergasse-9::ubungsraum-2150-eg-008",
           "name": "Übungsraum (2150.EG.008)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -266,6 +278,7 @@
         {
           "id": "bld-bergheimer-strasse-20::seminarraum-014-4140-eg-014",
           "name": "Seminarraum 014 (4140.EG.014)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -278,6 +291,7 @@
         {
           "id": "bld-bergheimer-strasse-20::ubungsraum-4140-02-215",
           "name": "Übungsraum (4140.02.215)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -290,6 +304,7 @@
         {
           "id": "bld-bergheimer-strasse-20::ubungsraum-4141-eg-043",
           "name": "Übungsraum (4141.EG.043)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -302,6 +317,7 @@
         {
           "id": "bld-bergheimer-strasse-20::ubungsraum-4141-eg-045",
           "name": "Übungsraum (4141.EG.045)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -333,6 +349,7 @@
         {
           "id": "bld-bergheimer-strasse-58::pc-pool-99-007-4310-u1-007",
           "name": "PC-Pool 99.007 (4310.U1.007)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -345,6 +362,7 @@
         {
           "id": "bld-bergheimer-strasse-58::ubungsraum-4310-02-005",
           "name": "Übungsraum (4310.02.005)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -357,6 +375,7 @@
         {
           "id": "bld-bergheimer-strasse-58::ubungsraum-4310-eg-024",
           "name": "Übungsraum (4310.EG.024)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -369,6 +388,7 @@
         {
           "id": "bld-bergheimer-strasse-58::ubungsraum-00-010-4310-eg-010",
           "name": "Übungsraum 00.010 (4310.EG.010)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -381,6 +401,7 @@
         {
           "id": "bld-bergheimer-strasse-58::ubungsraum-00-028-4310-eg-028",
           "name": "Übungsraum 00.028 (4310.EG.028)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -393,6 +414,7 @@
         {
           "id": "bld-bergheimer-strasse-58::unterrichtsraum-4310-02-023",
           "name": "Unterrichtsraum (4310.02.023)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -405,6 +427,7 @@
         {
           "id": "bld-bergheimer-strasse-58::unterrichtsraum-4310-02-024",
           "name": "Unterrichtsraum (4310.02.024)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -417,6 +440,7 @@
         {
           "id": "bld-bergheimer-strasse-58::unterrichtsraum-4310-02-025",
           "name": "Unterrichtsraum (4310.02.025)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -429,6 +453,7 @@
         {
           "id": "bld-bergheimer-strasse-58::unterrichtsraum-4310-02-034",
           "name": "Unterrichtsraum (4310.02.034)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -441,6 +466,7 @@
         {
           "id": "bld-bergheimer-strasse-58::unterrichtsraum-4310-02-035",
           "name": "Unterrichtsraum (4310.02.035)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -453,6 +479,7 @@
         {
           "id": "bld-bergheimer-strasse-58::unterrichtsraum-01-030-4310-01-030",
           "name": "Unterrichtsraum 01.030 (4310.01.030)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -465,6 +492,7 @@
         {
           "id": "bld-bergheimer-strasse-58::unterrichtsraum-02-036-4310-02-036",
           "name": "Unterrichtsraum 02.036 (4310.02.036)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -494,6 +522,7 @@
         {
           "id": "bld-berliner-strasse-48::horsaal-7051-eg-012",
           "name": "Hörsaal (7051.EG.012)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -506,6 +535,7 @@
         {
           "id": "bld-berliner-strasse-48::pc-pool-7050-eg-003",
           "name": "PC-Pool (7050.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -518,6 +548,7 @@
         {
           "id": "bld-berliner-strasse-48::unterrichtsraum-7050-01-104",
           "name": "Unterrichtsraum (7050.01.104)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -547,6 +578,7 @@
         {
           "id": "bld-fischmarkt-hauptstrasse-1-2-185-187::seminarraum-2065-03-314",
           "name": "Seminarraum (2065.03.314)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -572,6 +604,7 @@
         {
           "id": "bld-friedrich-ebert-platz-2::ubungsraum-3080-eg-009",
           "name": "Übungsraum (3080.EG.009)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -584,6 +617,7 @@
         {
           "id": "bld-friedrich-ebert-platz-2::ubungsraum-3080-eg-016",
           "name": "Übungsraum (3080.EG.016)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -614,6 +648,7 @@
         {
           "id": "bld-grabengasse-sandgasse-14-18-5-7::p18-2100-eg-009",
           "name": "P18 (2100.EG.009)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -626,6 +661,7 @@
         {
           "id": "bld-grabengasse-sandgasse-14-18-5-7::sgu-1016-2100-01-201x",
           "name": "SGU 1016 (2100.01.201X)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -638,6 +674,7 @@
         {
           "id": "bld-grabengasse-sandgasse-14-18-5-7::sgu-1017-2100-01-213",
           "name": "SGU 1017 (2100.01.213)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -650,6 +687,7 @@
         {
           "id": "bld-grabengasse-sandgasse-14-18-5-7::ubungsraum-2100zeg351",
           "name": "Übungsraum (2100ZEG351)",
+          "displayName": "",
           "floors": [
             "Mezzanine floor on ground floor"
           ],
@@ -683,6 +721,7 @@
         {
           "id": "bld-grabengasse-3-5::ehem-senatssaal-2170-02-038",
           "name": "ehem. Senatssaal (2170.02.038)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -695,6 +734,7 @@
         {
           "id": "bld-grabengasse-3-5::horsaal-2170-01-002a",
           "name": "Hörsaal (2170.01.002A)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -707,6 +747,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-01-2170-eg-051",
           "name": "HS 01 (2170.EG.051)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -719,6 +760,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-02-2170-eg-049",
           "name": "HS 02 (2170.EG.049)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -731,6 +773,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-03-2170-eg-048",
           "name": "HS 03 (2170.EG.048)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -743,6 +786,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-04-2170-eg-037",
           "name": "HS 04 (2170.EG.037)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -755,6 +799,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-04a-2170-eg-044",
           "name": "HS 04a (2170.EG.044)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -767,6 +812,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-05-2170-01-033",
           "name": "HS 05 (2170.01.033)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -779,6 +825,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-06-2170-01-036",
           "name": "HS 06 (2170.01.036)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -791,6 +838,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-07-2170-01-037",
           "name": "HS 07 (2170.01.037)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -803,6 +851,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-08-2170-01-038",
           "name": "HS 08 (2170.01.038)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -815,6 +864,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-09-2170-01-041",
           "name": "HS 09 (2170.01.041)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -827,6 +877,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-10-2170-01-040",
           "name": "HS 10 (2170.01.040)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -839,6 +890,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-12-2170-01-022",
           "name": "HS 12 (2170.01.022)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -851,6 +903,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-12a-2170-02-020",
           "name": "HS 12a (2170.02.020)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -863,6 +916,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-13-2170-02-018",
           "name": "HS 13 (2170.02.018)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -875,6 +929,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-14-2170-02-033",
           "name": "HS 14 (2170.02.033)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -887,6 +942,7 @@
         {
           "id": "bld-grabengasse-3-5::hs-15-2170-03-025",
           "name": "HS 15 (2170.03.025)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -899,6 +955,7 @@
         {
           "id": "bld-grabengasse-3-5::neue-aula-inkl-empore-2170-02-036x",
           "name": "Neue Aula (inkl. Empore) (2170.02.036X)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -911,6 +968,7 @@
         {
           "id": "bld-grabengasse-3-5::ubungsraum-i-2170-eg-025x",
           "name": "Übungsraum I (2170.EG.025X)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -923,6 +981,7 @@
         {
           "id": "bld-grabengasse-3-5::ubungsraum-ii-2170-eg-024x",
           "name": "Übungsraum II (2170.EG.024X)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -935,6 +994,7 @@
         {
           "id": "bld-grabengasse-3-5::ubungsraum-iii-2170-eg-026h",
           "name": "Übungsraum III (2170.EG.026H)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -947,6 +1007,7 @@
         {
           "id": "bld-grabengasse-3-5::ubungsraum-iv-2170-eg-055x",
           "name": "Übungsraum IV (2170.EG.055X)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -959,6 +1020,7 @@
         {
           "id": "bld-grabengasse-3-5::ugx-60-2170-u1-060",
           "name": "UGX 60 (2170.U1.060)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -971,6 +1033,7 @@
         {
           "id": "bld-grabengasse-3-5::ugx-61-2170-u1-061",
           "name": "UGX 61 (2170.U1.061)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -983,6 +1046,7 @@
         {
           "id": "bld-grabengasse-3-5::verfugungsraum-orgel-2170-03-031",
           "name": "Verfügungsraum \"Orgel\" (2170.03.031)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -995,6 +1059,7 @@
         {
           "id": "bld-grabengasse-3-5::rm-raum-229-historisches-seminar",
           "name": "Raum 229, Historisches Seminar.",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -1021,6 +1086,7 @@
         {
           "id": "bld-grosse-mantelgasse-2::heuscheuer-i-2050-01-102",
           "name": "Heuscheuer I (2050.01.102)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1033,6 +1099,7 @@
         {
           "id": "bld-grosse-mantelgasse-2::heuscheuer-ii-2050-02-202",
           "name": "Heuscheuer II (2050.02.202)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -1065,6 +1132,7 @@
         {
           "id": "bld-hauptstrasse-47-51::a102-konferenzraum-3010-01-102",
           "name": "A102 - Konferenzraum (3010.01.102)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1077,6 +1145,7 @@
         {
           "id": "bld-hauptstrasse-47-51::hs-2-saal-3010-eg-013",
           "name": "HS 2 Saal (3010.EG.013)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1089,6 +1158,7 @@
         {
           "id": "bld-hauptstrasse-47-51::hs-3-3011-eg-001",
           "name": "HS 3 (3011.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1101,6 +1171,7 @@
         {
           "id": "bld-hauptstrasse-47-51::ur-b-3010-eg-019",
           "name": "ÜR B (3010.EG.019)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1113,6 +1184,7 @@
         {
           "id": "bld-hauptstrasse-47-51::ur-c-3010-eg-020",
           "name": "UR C (3010.EG.020)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1125,6 +1197,7 @@
         {
           "id": "bld-hauptstrasse-47-51::ur-d-3010-eg-021",
           "name": "ÜR D (3010.EG.021)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1137,6 +1210,7 @@
         {
           "id": "bld-hauptstrasse-47-51::ur-e-3010-eg-022-3010-eg-023",
           "name": "ÜR E 3010 EG 022 (3010.EG.023)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1149,6 +1223,7 @@
         {
           "id": "bld-hauptstrasse-47-51::g-kiju-neuro-3020-01-105",
           "name": "G KiJu Neuro (3020.01.105)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1161,6 +1236,7 @@
         {
           "id": "bld-hauptstrasse-47-51::gfs-ubungsraum-3020-02-204",
           "name": "GFS - Übungsraum (3020.02.204)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -1173,6 +1249,7 @@
         {
           "id": "bld-hauptstrasse-47-51::hs-1-3020-01-127",
           "name": "HS 1 (3020.01.127)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1185,6 +1262,7 @@
         {
           "id": "bld-hauptstrasse-47-51::seminarraum-3020-eg-038",
           "name": "Seminarraum (3020.EG.038)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1214,6 +1292,7 @@
         {
           "id": "bld-hauptstrasse-52::ubungsraum-3030-01-004",
           "name": "Übungsraum (3030.01.004)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1226,6 +1305,7 @@
         {
           "id": "bld-hauptstrasse-52::ubungsraum-3030-01-005",
           "name": "Übungsraum (3030.01.005)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1238,6 +1318,7 @@
         {
           "id": "bld-hauptstrasse-52::ubungsraum-3030-01-007",
           "name": "Übungsraum (3030.01.007)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1250,6 +1331,7 @@
         {
           "id": "bld-hauptstrasse-52::ubungsraum-3030-02-010",
           "name": "Übungsraum (3030.02.010)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -1262,6 +1344,7 @@
         {
           "id": "bld-hauptstrasse-52::rm-106",
           "name": "106",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -1274,6 +1357,7 @@
         {
           "id": "bld-hauptstrasse-52::rm-210",
           "name": "210",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -1286,6 +1370,7 @@
         {
           "id": "bld-hauptstrasse-52::rm-204",
           "name": "204",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -1298,6 +1383,7 @@
         {
           "id": "bld-hauptstrasse-52::rm-002",
           "name": "002",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -1328,6 +1414,7 @@
         {
           "id": "bld-hauptstrasse-207-209::ubungsraum-1010-01-122",
           "name": "Übungsraum (1010.01.122)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1340,6 +1427,7 @@
         {
           "id": "bld-hauptstrasse-207-209::ubungsraum-1010-01-123",
           "name": "Übungsraum (1010.01.123)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1352,6 +1440,7 @@
         {
           "id": "bld-hauptstrasse-207-209::ubungsraum-1010-01-133",
           "name": "Übungsraum (1010.01.133)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1364,6 +1453,7 @@
         {
           "id": "bld-hauptstrasse-207-209::ubungsraum-1010-01-137",
           "name": "Übungsraum (1010.01.137)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1376,6 +1466,7 @@
         {
           "id": "bld-hauptstrasse-207-209::ubungsraum-1010-eg-021",
           "name": "Übungsraum (1010.EG.021)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1388,6 +1479,7 @@
         {
           "id": "bld-hauptstrasse-207-209::ubungsraum-1010-eg-038",
           "name": "Übungsraum (1010.EG.038)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1415,6 +1507,7 @@
         {
           "id": "bld-im-neuenheimer-feld-105::seminarraum-anatomage-skills-ana-6105-01-113",
           "name": "Seminarraum Anatomage, Skills Anä (6105.01.113)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1427,6 +1520,7 @@
         {
           "id": "bld-im-neuenheimer-feld-105::seminarraum-naht-pol-medikit-6105-01-115",
           "name": "Seminarraum Naht, POL, MediKit (6105.01.115)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1439,6 +1533,7 @@
         {
           "id": "bld-im-neuenheimer-feld-105::seminarraum-naht-pol-medikit-6105-01-116",
           "name": "Seminarraum Naht, POL, MediKit (6105.01.116)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1451,6 +1546,7 @@
         {
           "id": "bld-im-neuenheimer-feld-105::seminarraum-skills-ana-6105-01-112",
           "name": "Seminarraum Skills Anä (6105.01.112)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1463,6 +1559,7 @@
         {
           "id": "bld-im-neuenheimer-feld-105::seminarraum-uro-skills-6105-01-103",
           "name": "Seminarraum Uro Skills (6105.01.103)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1491,6 +1588,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k1-6130-eg-001",
           "name": "Seminarraum K1 (6130.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1503,6 +1601,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k5-6130-01-005",
           "name": "Seminarraum K5 (6130.01.005)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1515,6 +1614,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k9-6130-01-009",
           "name": "Seminarraum K9 (6130.01.009)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1527,6 +1627,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k11-6130-01-011",
           "name": "Seminarraum K11 (6130.01.011)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1539,6 +1640,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k12-6130-01-012",
           "name": "Seminarraum K12 (6130.01.012)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1551,6 +1653,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k13-6130-01-013",
           "name": "Seminarraum K13 (6130.01.013)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1563,6 +1666,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k15-6130-01-015",
           "name": "Seminarraum K15 (6130.01.015)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1575,6 +1679,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k16-6130-01-016",
           "name": "Seminarraum K16 (6130.01.016)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1587,6 +1692,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k17-6130-01-017",
           "name": "Seminarraum K17 (6130.01.017)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1599,6 +1705,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k18-6130-01-018",
           "name": "Seminarraum K18 (6130.01.018)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1611,6 +1718,7 @@
         {
           "id": "bld-im-neuenheimer-feld-130::seminarraum-k42-6130-eg-042",
           "name": "Seminarraum K42 (6130.EG.042)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1643,6 +1751,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::besprechung-aufenthalt-6205-eg-200",
           "name": "Besprechung/Aufenthalt (6205.EG.200)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1655,6 +1764,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::cso1-6205-03-103",
           "name": "CSo1 (6205.03.103)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -1667,6 +1777,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::cso2-6205-03-104",
           "name": "CSo2 (6205.03.104)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -1679,6 +1790,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::horsaal-6205-eg-205",
           "name": "Hörsaal (6205.EG.205)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1691,6 +1803,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::seminarraum-sr-statistik-6205-02-103",
           "name": "Seminarraum SR Statistik (6205.02.103)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -1703,6 +1816,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-1-6205-02-101",
           "name": "SR 1 (6205.02.101)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -1715,6 +1829,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-2-6205-02-102",
           "name": "SR 2 (6205.02.102)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -1727,6 +1842,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-3-6205-03-101",
           "name": "SR 3 (6205.03.101)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -1739,6 +1855,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-4-6205-03-102",
           "name": "SR 4 (6205.03.102)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -1751,6 +1868,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-5-6205-04-101",
           "name": "SR 5 (6205.04.101)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -1763,6 +1881,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-6-6205-04-102",
           "name": "SR 6 (6205.04.102)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -1775,6 +1894,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-7-6205-04-103",
           "name": "SR 7 (6205.04.103)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -1787,6 +1907,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-8-6205-04-104",
           "name": "SR 8 (6205.04.104)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -1799,6 +1920,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-9-6205-04-105",
           "name": "SR 9 (6205.04.105)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -1811,6 +1933,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-10-6205-05-101",
           "name": "SR 10 (6205.05.101)",
+          "displayName": "",
           "floors": [
             "5th floor"
           ],
@@ -1823,6 +1946,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-11-6205-05-102",
           "name": "SR 11 (6205.05.102)",
+          "displayName": "",
           "floors": [
             "5th floor"
           ],
@@ -1835,6 +1959,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-a-6205-eg-202",
           "name": "SR A (6205.EG.202)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1847,6 +1972,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-b-6205-eg-203",
           "name": "SR B (6205.EG.203)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1859,6 +1985,7 @@
         {
           "id": "bld-im-neuenheimer-feld-205::sr-c-6205-eg-204",
           "name": "SR C (6205.EG.204)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1886,6 +2013,7 @@
         {
           "id": "bld-im-neuenheimer-feld-221::histosaal-6221-eg-999",
           "name": "Histosaal (6221.EG.999)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1913,6 +2041,7 @@
         {
           "id": "bld-im-neuenheimer-feld-224::seminarraum-allgemeine-pathologie-6224-01-004",
           "name": "Seminarraum Allgemeine Pathologie (6224.01.004)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1940,6 +2069,7 @@
         {
           "id": "bld-im-neuenheimer-feld-225::ubungsraum-6225-01-413",
           "name": "Übungsraum (6225.01.413)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1967,6 +2097,7 @@
         {
           "id": "bld-im-neuenheimer-feld-226::pc-pool-6226-01-305",
           "name": "PC-Pool (6226.01.305)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -1979,6 +2110,7 @@
         {
           "id": "bld-im-neuenheimer-feld-226::rm-eg-ost",
           "name": "EG Ost",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -1991,6 +2123,7 @@
         {
           "id": "bld-im-neuenheimer-feld-226::rm-cqd-lounge",
           "name": "CQD-Lounge",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -2003,6 +2136,7 @@
         {
           "id": "bld-im-neuenheimer-feld-226::rm-goldbox",
           "name": "Goldbox",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2035,6 +2169,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::besprechung-aufenthalt-6227-01-107",
           "name": "Besprechung/Aufenthalt (6227.01.107)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2047,6 +2182,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::besprechung-aufenthalt-6227-02-107",
           "name": "Besprechung/Aufenthalt (6227.02.107)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -2059,6 +2195,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::hs-1-6227-eg-403",
           "name": "HS 1 (6227.EG.403)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2071,6 +2208,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::hs-2-6227-eg-402",
           "name": "HS 2 (6227.EG.402)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2083,6 +2221,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::pc-pool-6227-01-401",
           "name": "PC-Pool (6227.01.401)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2095,6 +2234,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::ubungsraum-6227-03-402",
           "name": "Übungsraum (6227.03.402)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -2107,6 +2247,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::ubungsraum-6227-03-403",
           "name": "Übungsraum (6227.03.403)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -2119,6 +2260,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::ubungsraum-6227-03-404",
           "name": "Übungsraum (6227.03.404)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -2131,6 +2273,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::unterrichtsraum-6227-01-403",
           "name": "Unterrichtsraum (6227.01.403)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2143,6 +2286,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::unterrichtsraum-6227-01-404",
           "name": "Unterrichtsraum (6227.01.404)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2155,6 +2299,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::unterrichtsraum-6227-02-402",
           "name": "Unterrichtsraum (6227.02.402)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -2167,6 +2312,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::unterrichtsraum-6227-02-403",
           "name": "Unterrichtsraum (6227.02.403)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -2179,6 +2325,7 @@
         {
           "id": "bld-im-neuenheimer-feld-227-227a::unterrichtsraum-6227-02-404",
           "name": "Unterrichtsraum (6227.02.404)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -2208,6 +2355,7 @@
         {
           "id": "bld-im-neuenheimer-feld-229::besprechung-aufenthalt-6229-eg-030",
           "name": "Besprechung/Aufenthalt (6229.EG.030)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2220,6 +2368,7 @@
         {
           "id": "bld-im-neuenheimer-feld-229::ubungsraum-6229-06-628",
           "name": "Übungsraum (6229.06.628)",
+          "displayName": "",
           "floors": [
             "6th floor"
           ],
@@ -2232,6 +2381,7 @@
         {
           "id": "bld-im-neuenheimer-feld-229::unterrichtsraum-6229-01-110",
           "name": "Unterrichtsraum (6229.01.110)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2260,6 +2410,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::gro-er-horsaal-ghs-6231-eg-006",
           "name": "Großer Hörsaal (gHS) (6231.EG.006)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2272,6 +2423,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::kleiner-horsaal-khs-6231-eg-001",
           "name": "Kleiner Hörsaal (kHS) (6231.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2284,6 +2436,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::sr-4-6231-eg-004",
           "name": "SR 4 (6231.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2296,6 +2449,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::sr-5-6231-eg-005",
           "name": "SR 5 (6231.EG.005)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2308,6 +2462,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::ubungsraum-6231-eg-007",
           "name": "Übungsraum (6231.EG.007)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2320,6 +2475,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::ubungsraum-6231-eg-008",
           "name": "Übungsraum (6231.EG.008)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2332,6 +2488,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::ubungsraum-6231-eg-009",
           "name": "Übungsraum (6231.EG.009)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2344,6 +2501,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::ubungsraum-6231-u1-024",
           "name": "Übungsraum (6231.U1.024)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -2356,6 +2514,7 @@
         {
           "id": "bld-im-neuenheimer-feld-231::ubungsraum-6231-u1-027",
           "name": "Übungsraum (6231.U1.027)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -2384,6 +2543,7 @@
         {
           "id": "bld-im-neuenheimer-feld-234::ubungsraum-6234-04-404",
           "name": "Übungsraum (6234.04.404)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -2396,6 +2556,7 @@
         {
           "id": "bld-im-neuenheimer-feld-234::ubungsraum-6234-04-405",
           "name": "Übungsraum (6234.04.405)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -2408,6 +2569,7 @@
         {
           "id": "bld-im-neuenheimer-feld-234::unterrichtsraum-6234-01-101",
           "name": "Unterrichtsraum (6234.01.101)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2435,6 +2597,7 @@
         {
           "id": "bld-im-neuenheimer-feld-235::gro-er-horsaal-ghs-6235-eg-015x",
           "name": "Großer Hörsaal (gHS) (6235.EG.015X)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2463,6 +2626,7 @@
         {
           "id": "bld-im-neuenheimer-feld-236::ubungsraum-6236-01-001x",
           "name": "Übungsraum (6236.01.001X)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2475,6 +2639,7 @@
         {
           "id": "bld-im-neuenheimer-feld-236::ubungsraum-6236-01-101",
           "name": "Übungsraum (6236.01.101)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2487,6 +2652,7 @@
         {
           "id": "bld-im-neuenheimer-feld-236::ubungsraum-6236-03-305",
           "name": "Übungsraum (6236.03.305)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -2515,6 +2681,7 @@
         {
           "id": "bld-im-neuenheimer-feld-242::seminarraum-6242-02-228",
           "name": "Seminarraum (6242.02.228)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -2527,6 +2694,7 @@
         {
           "id": "bld-im-neuenheimer-feld-242::seminarraum-6242-eg-225",
           "name": "Seminarraum (6242.EG.225)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2539,6 +2707,7 @@
         {
           "id": "bld-im-neuenheimer-feld-242::rm-seminarraum-0-106",
           "name": "Seminarraum 0.106",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -2564,6 +2733,7 @@
         {
           "id": "bld-im-neuenheimer-feld-252::ghs-6252-eg-110",
           "name": "gHS (6252.EG.110)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2576,6 +2746,7 @@
         {
           "id": "bld-im-neuenheimer-feld-252::hso-6252-eg-115",
           "name": "HSO (6252.EG.115)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2588,6 +2759,7 @@
         {
           "id": "bld-im-neuenheimer-feld-252::hsw-6252-eg-122",
           "name": "HSW (6252.EG.122)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2600,6 +2772,7 @@
         {
           "id": "bld-im-neuenheimer-feld-252::khs-6252-eg-118",
           "name": "kHS (6252.EG.118)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2628,6 +2801,7 @@
         {
           "id": "bld-im-neuenheimer-feld-253::besprechungsraum-ak-tanaka-6253-01-110a",
           "name": "Besprechungsraum AK Tanaka (6253.01.110A)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2640,6 +2814,7 @@
         {
           "id": "bld-im-neuenheimer-feld-253::seminarraum-6253-02-211",
           "name": "Seminarraum (6253.02.211)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -2667,6 +2842,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::ubungsraum-6267-eg-041",
           "name": "Übungsraum (6267.EG.041)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2679,6 +2855,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::ubungsraum-6267-eg-043",
           "name": "Übungsraum (6267.EG.043)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2691,6 +2868,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::rm-uebungsraum-6267-eg-044",
           "name": "Übungsraum (6267.EG.044)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2703,6 +2881,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::rm-uebungsraum-6267-eg-042",
           "name": "Übungsraum (6267.EG.042)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2731,6 +2910,7 @@
         {
           "id": "bld-im-neuenheimer-feld-270::sran-149-eg-6270-eg-145",
           "name": "SrAn 149 EG (6270.EG.145)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2743,6 +2923,7 @@
         {
           "id": "bld-im-neuenheimer-feld-270::sran-304-2-og-6270-02-321",
           "name": "SrAn 304, 2 OG (6270.02.321)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -2755,6 +2936,7 @@
         {
           "id": "bld-im-neuenheimer-feld-270::ubungsraum-6270-eg-129",
           "name": "Übungsraum (6270.EG.129)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2767,6 +2949,7 @@
         {
           "id": "bld-im-neuenheimer-feld-270::ubungsraum-6270-eg-180",
           "name": "Übungsraum (6270.EG.180)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2794,6 +2977,7 @@
         {
           "id": "bld-im-neuenheimer-feld-271::freudenbergsaal-6271-eg-002",
           "name": "Freudenbergsaal (6271.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2821,6 +3005,7 @@
         {
           "id": "bld-im-neuenheimer-feld-275::curtiussaal-6275-eg-003",
           "name": "Curtiussaal (6275.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2833,6 +3018,7 @@
         {
           "id": "bld-im-neuenheimer-feld-275::sran-0-01-eg-275-6275-eg-001a",
           "name": "SrAn 0.01, EG 275 (6275.EG.001A)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2861,6 +3047,7 @@
         {
           "id": "bld-im-neuenheimer-feld-276::beckesaal-6276-01-102",
           "name": "Beckesaal (6276.01.102)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2873,6 +3060,7 @@
         {
           "id": "bld-im-neuenheimer-feld-276::bunsensaal-6276-eg-002",
           "name": "Bunsensaal (6276.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2900,6 +3088,7 @@
         {
           "id": "bld-im-neuenheimer-feld-280::seminarraum-6280-04-473",
           "name": "Seminarraum (6280.04.473)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -2912,6 +3101,7 @@
         {
           "id": "bld-im-neuenheimer-feld-280::rm-dkfz-raum-b410",
           "name": "DKFZ Raum B410",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -2935,6 +3125,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::hs-1-6306-eg-020",
           "name": "HS 1 (6306.EG.020)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2947,6 +3138,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::hs-2-6306-eg-021",
           "name": "HS 2 (6306.EG.021)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2959,6 +3151,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::sr-13-6306-eg-013",
           "name": "SR 13 (6306.EG.013)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2971,6 +3164,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::sr-14-6306-eg-014",
           "name": "SR 14 (6306.EG.014)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -2983,6 +3177,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::sr-18-6306-01-112x",
           "name": "SR 18 (6306.01.112X)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -2995,6 +3190,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::sr-19-6306-01-111",
           "name": "SR 19 (6306.01.111)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3007,6 +3203,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::sr-20-6306-01-110",
           "name": "SR 20 (6306.01.110)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3019,6 +3216,7 @@
         {
           "id": "bld-im-neuenheimer-feld-306::sr-21-6306-01-115",
           "name": "SR 21 (6306.01.115)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3048,6 +3246,7 @@
         {
           "id": "bld-im-neuenheimer-feld-307::ubungsraum-6307-01-126",
           "name": "Übungsraum (6307.01.126)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3060,6 +3259,7 @@
         {
           "id": "bld-im-neuenheimer-feld-307::ubungsraum-6307-eg-021",
           "name": "Übungsraum (6307.EG.021)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3072,6 +3272,7 @@
         {
           "id": "bld-im-neuenheimer-feld-307::unterrichtsraum-6307-01-120c",
           "name": "Unterrichtsraum (6307.01.120C)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3084,6 +3285,7 @@
         {
           "id": "bld-im-neuenheimer-feld-307::rm-pr-ps-le",
           "name": "Präpsäle",
+          "displayName": "",
           "floors": [
             "EG/1.OG"
           ],
@@ -3108,6 +3310,7 @@
         {
           "id": "bld-im-neuenheimer-feld-308::hs-1-6308-eg-001",
           "name": "HS 1 (6308.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3120,6 +3323,7 @@
         {
           "id": "bld-im-neuenheimer-feld-308::hs-2-6308-eg-002",
           "name": "HS 2 (6308.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3148,6 +3352,7 @@
         {
           "id": "bld-im-neuenheimer-feld-325::sr-7-6325-01-112",
           "name": "SR 7 (6325.01.112)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3160,6 +3365,7 @@
         {
           "id": "bld-im-neuenheimer-feld-325::sr-7a-6325-01-112a",
           "name": "SR 7a (6325.01.112A)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3172,6 +3378,7 @@
         {
           "id": "bld-im-neuenheimer-feld-325::sr-7b-6325-01-112b",
           "name": "SR 7b (6325.01.112B)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3184,6 +3391,7 @@
         {
           "id": "bld-im-neuenheimer-feld-325::sr-24-6325-eg-021",
           "name": "SR 24 (6325.EG.021)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3212,6 +3420,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::sr-27-6326-02-220",
           "name": "SR 27 (6326.02.220)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -3224,6 +3433,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::sr-28-6326-02-222",
           "name": "SR 28 (6326.02.222)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -3236,6 +3446,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-a",
           "name": "PR A",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3245,6 +3456,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-b",
           "name": "PR B",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3254,6 +3466,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-c",
           "name": "PR C",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3263,6 +3476,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-d",
           "name": "PR D",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3272,6 +3486,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-e",
           "name": "PR E",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3281,6 +3496,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-f",
           "name": "PR F",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3290,6 +3506,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-g",
           "name": "PR G",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3299,6 +3516,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-pr-h",
           "name": "PR H",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3308,6 +3526,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-praktikumsr-ume-1-og",
           "name": "Praktikumsräume 1. OG",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -3315,6 +3534,7 @@
         {
           "id": "bld-im-neuenheimer-feld-326::rm-praktikum",
           "name": "Praktikum",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3343,6 +3563,7 @@
         {
           "id": "bld-im-neuenheimer-feld-327::bibliothek-6327-01-117",
           "name": "Bibliothek (6327.01.117)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3355,6 +3576,7 @@
         {
           "id": "bld-im-neuenheimer-feld-327::sr-1-6327-eg-001",
           "name": "SR 1 (6327.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3367,6 +3589,7 @@
         {
           "id": "bld-im-neuenheimer-feld-327::sr-2-6327-eg-002",
           "name": "SR 2 (6327.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3379,6 +3602,7 @@
         {
           "id": "bld-im-neuenheimer-feld-327::sr-3-6327-eg-003",
           "name": "SR 3 (6327.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3391,6 +3615,7 @@
         {
           "id": "bld-im-neuenheimer-feld-327::sr-4-6327-eg-004",
           "name": "SR 4 (6327.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3403,6 +3628,7 @@
         {
           "id": "bld-im-neuenheimer-feld-327::sr-5-6327-eg-005",
           "name": "SR 5 (6327.EG.005)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3415,6 +3641,7 @@
         {
           "id": "bld-im-neuenheimer-feld-327::sr-6-6327-eg-006",
           "name": "SR 6 (6327.EG.006)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3444,6 +3671,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::besprechung-aufenthalt-6328-02-207",
           "name": "Besprechung/Aufenthalt (6328.02.207)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -3456,6 +3684,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::pc-pool-6328-01-111",
           "name": "PC-Pool (6328.01.111)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3468,6 +3697,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::sr-16a-6328-01-116a",
           "name": "SR 16a (6328.01.116A)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3480,6 +3710,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::sr-16b-6328-01-116b",
           "name": "SR 16b (6328.01.116B)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3492,6 +3723,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::sr-17a-6328-01-117a",
           "name": "SR 17a (6328.01.117A)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3504,6 +3736,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::sr-17b-6328-01-117b",
           "name": "SR 17b (6328.01.117B)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3516,6 +3749,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::sr-25-6328-eg-005",
           "name": "SR 25 (6328.EG.005)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3528,6 +3762,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::ubungsraum-6328-01-126",
           "name": "Übungsraum (6328.01.126)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3540,6 +3775,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::ubungsraum-6328-eg-025",
           "name": "Übungsraum (6328.EG.025)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3552,6 +3788,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::ubungsraum-6328-eg-026",
           "name": "Übungsraum (6328.EG.026)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3564,6 +3801,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::ubungsraum-6328-eg-027",
           "name": "Übungsraum (6328.EG.027)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3576,6 +3814,7 @@
         {
           "id": "bld-im-neuenheimer-feld-328::ubungsraum-6328-eg-028",
           "name": "Übungsraum (6328.EG.028)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3604,6 +3843,7 @@
         {
           "id": "bld-im-neuenheimer-feld-329::lab-1-6329-eg-004",
           "name": "Lab 1 (6329.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3616,6 +3856,7 @@
         {
           "id": "bld-im-neuenheimer-feld-329::lab-3-6329-01-109",
           "name": "Lab 3 (6329.01.109)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3628,6 +3869,7 @@
         {
           "id": "bld-im-neuenheimer-feld-329::sr26-6329-eg-001",
           "name": "SR26 (6329.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3655,6 +3897,7 @@
         {
           "id": "bld-im-neuenheimer-feld-345::ubungsraum-6345-02-230",
           "name": "Übungsraum (6345.02.230)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -3682,6 +3925,7 @@
         {
           "id": "bld-im-neuenheimer-feld-346::sr-10-6346-eg-004",
           "name": "SR 10 (6346.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3710,6 +3954,7 @@
         {
           "id": "bld-im-neuenheimer-feld-348::horsaal-6348-eg-015",
           "name": "Hörsaal (6348.EG.015)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3722,6 +3967,7 @@
         {
           "id": "bld-im-neuenheimer-feld-348::ubungsraum-6348-01-132",
           "name": "Übungsraum (6348.01.132)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3734,6 +3980,7 @@
         {
           "id": "bld-im-neuenheimer-feld-348::ubungsraum-6348-eg-004",
           "name": "Übungsraum (6348.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3746,6 +3993,7 @@
         {
           "id": "bld-im-neuenheimer-feld-348::ubungsraum-6348-eg-013",
           "name": "Übungsraum (6348.EG.013)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3774,6 +4022,7 @@
         {
           "id": "bld-im-neuenheimer-feld-350::pc-pool-2-6350-u1-012",
           "name": "PC-Pool 2 (6350.U1.012)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -3786,6 +4035,7 @@
         {
           "id": "bld-im-neuenheimer-feld-350::seminarraum-6350-u1-014",
           "name": "Seminarraum (6350.U1.014)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -3798,6 +4048,7 @@
         {
           "id": "bld-im-neuenheimer-feld-350::rm-raum-u015",
           "name": "Raum U015",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -3825,6 +4076,7 @@
         {
           "id": "bld-im-neuenheimer-feld-360::ubungsraum-6360-eg-001",
           "name": "Übungsraum (6360.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3837,6 +4089,7 @@
         {
           "id": "bld-im-neuenheimer-feld-360::ubungsraum-6360-eg-003",
           "name": "Übungsraum (6360.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3849,6 +4102,7 @@
         {
           "id": "bld-im-neuenheimer-feld-360::ubungsraum-6360-eg-007",
           "name": "Übungsraum (6360.EG.007)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3876,6 +4130,7 @@
         {
           "id": "bld-im-neuenheimer-feld-361::ubungsraum-6361-eg-001",
           "name": "Übungsraum (6361.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3903,6 +4158,7 @@
         {
           "id": "bld-im-neuenheimer-feld-364::pc-pool-6364-05-542",
           "name": "PC-Pool (6364.05.542)",
+          "displayName": "",
           "floors": [
             "5th floor"
           ],
@@ -3915,6 +4171,7 @@
         {
           "id": "bld-im-neuenheimer-feld-364::rm-kleiner-seminarraum-r520",
           "name": "kleiner Seminarraum R520",
+          "displayName": "",
           "floors": [
             "5th floor"
           ],
@@ -3927,6 +4184,7 @@
         {
           "id": "bld-im-neuenheimer-feld-364::rm-praktikumssaal",
           "name": "Praktikumssaal",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -3954,6 +4212,7 @@
         {
           "id": "bld-im-neuenheimer-feld-365::labor-6365-01-112",
           "name": "Labor (6365.01.112)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -3986,6 +4245,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-ghs-6400-eg-266",
           "name": "KOPF gHS (6400.EG.266)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -3998,6 +4258,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-nch-konferenzraum-6400-03-608",
           "name": "KOPF NCH Konferenzraum (6400.03.608)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -4010,6 +4271,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-neuroonko-besprechungsraum-6400-02-340",
           "name": "KOPF NEUROONKO Besprechungsraum (6400.02.340)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -4022,6 +4284,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-spiegelsaal-6400-eg-276",
           "name": "KOPF Spiegelsaal (6400.EG.276)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4034,6 +4297,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-spiegelsaal-pol-1-6400-eg-276a",
           "name": "KOPF Spiegelsaal POL 1 (6400.EG.276A)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4046,6 +4310,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-sr-1-6400-eg-268",
           "name": "KOPF SR 1 (6400.EG.268)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4058,6 +4323,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-sr-2-6400-eg-269",
           "name": "KOPF SR 2 (6400.EG.269)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4070,6 +4336,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::kopf-zahn-hs-6400-02-120",
           "name": "KOPF ZAHN HS (6400.02.120)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -4082,6 +4349,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-augenklinik",
           "name": "Augenklinik",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4091,6 +4359,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-hno-klinik",
           "name": "HNO-Klinik",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4100,6 +4369,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-neuroambulanz",
           "name": "Neuroambulanz",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4109,6 +4379,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-foyer-des-gro-en-h-rsaals",
           "name": "Foyer des großen Hörsaals",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4116,6 +4387,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-intensiv-2",
           "name": "Intensiv-2",
+          "displayName": "",
           "floors": [
             "Ebene 99"
           ],
@@ -4125,6 +4397,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-schlaganfallstation",
           "name": "Schlaganfallstation",
+          "displayName": "",
           "floors": [
             "E00"
           ],
@@ -4134,6 +4407,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-unbekannt",
           "name": "Unbekannt",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4143,6 +4417,7 @@
         {
           "id": "bld-im-neuenheimer-feld-400::rm-leitstelle-zahn-kfo",
           "name": "Leitstelle Zahn KFO",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4165,6 +4440,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-skillslab-endo-6410-eg-222",
           "name": "MED Skillslab Endo (6410.EG.222)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4177,6 +4453,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-skillslab-gastro-6410-eg-151",
           "name": "MED Skillslab Gastro (6410.EG.151)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4189,6 +4466,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-skillslab-kardio-6410-eg-226",
           "name": "MED Skillslab Kardio (6410.EG.226)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4201,6 +4479,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-skillslab-klin-chem-ham-rheu-6410-eg-225",
           "name": "MED Skillslab klin. Chem/Häm/Rheu (6410.EG.225)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4213,6 +4492,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-sr-703-teil-1-6410-eg-703",
           "name": "MED SR 703 Teil 1 (6410.EG.703)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4225,6 +4505,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-sr-708-6410-eg-708",
           "name": "MED SR 708 (6410.EG.708)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4237,6 +4518,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-sr-712-6410-eg-712",
           "name": "MED SR 712 (6410.EG.712)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4249,6 +4531,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-sr-718-teil-1-6410-eg-718",
           "name": "MED SR 718 Teil 1 (6410.EG.718)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4261,6 +4544,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-sr-719-teil-2-6410-eg-719",
           "name": "MED SR 719 Teil 2 (6410.EG.719)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4273,6 +4557,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-sr-725-6410-eg-725",
           "name": "MED SR 725 (6410.EG.725)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4285,6 +4570,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::med-sr-729-6410-eg-729",
           "name": "MED SR 729 (6410.EG.729)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4297,6 +4583,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::medizinische-klinik-gro-er-horsaal-6410-eg-130",
           "name": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4309,6 +4596,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-naunyn",
           "name": "Naunyn",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4316,6 +4604,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-siebeck",
           "name": "Siebeck",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4323,6 +4612,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-weizs-cker",
           "name": "Weizsäcker",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4330,6 +4620,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-nct-station",
           "name": "NCT-Station",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4337,6 +4628,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-erb",
           "name": "Erb",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4344,6 +4636,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-matthes",
           "name": "Matthes",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4351,6 +4644,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-wunderlich",
           "name": "Wunderlich",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4358,6 +4652,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-matthes-wunderlich",
           "name": "Matthes/Wunderlich",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4365,6 +4660,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-morawitz",
           "name": "Morawitz",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4372,6 +4668,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-gastro-wach",
           "name": "Gastro Wach",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4379,6 +4676,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-volhard",
           "name": "Volhard",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4386,6 +4684,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-ackermann",
           "name": "Ackermann",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4393,6 +4692,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-thannhauser",
           "name": "Thannhauser",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4400,6 +4700,7 @@
         {
           "id": "bld-im-neuenheimer-feld-410::rm-ackermann-thannhauser",
           "name": "Ackermann/Thannhauser",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4424,6 +4725,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::chir-hs-neue-chirurgie-6420-eg-040",
           "name": "CHIR HS Neue Chirurgie (6420.EG.040)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4436,6 +4738,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::seminarraum-1-inf-420-chirurgische-klinik-eg-6420-eg-013",
           "name": "Seminarraum 1 (INF 420, Chirurgische Klinik, EG) (6420.EG.013)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4448,6 +4751,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::seminarraum-2-inf-420-chirurgische-klinik-eg-6420-eg-015",
           "name": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4460,6 +4764,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::seminarraum-3-inf-420-chirurgische-klinik-eg-6420-eg-017",
           "name": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4472,6 +4777,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::seminarraum-4-inf-420-chirurgische-klinik-eg-6420-eg-063",
           "name": "Seminarraum 4 (INF 420, Chirurgische Klinik, EG) (6420.EG.063)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4484,6 +4790,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::seminarraum-6-inf-420-chirurgische-klinik-eg-6420-eg-065",
           "name": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4496,6 +4803,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::seminarraum-6-1-inf-420-chirurgische-klinik-eg-6420-eg-065a",
           "name": "Seminarraum 6.1 (INF 420, Chirurgische Klinik, EG) (6420.EG.065A)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4508,6 +4816,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::seminarraum-mic-6420-eg-067",
           "name": "Seminarraum MIC (6420.EG.067)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4520,6 +4829,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::rm-pforte",
           "name": "Pforte",
+          "displayName": "",
           "floors": [
             "Ebene 99"
           ],
@@ -4529,6 +4839,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::rm-station-f2",
           "name": "Station F2",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -4538,6 +4849,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::rm-station-f1",
           "name": "Station F1",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4545,6 +4857,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::rm-gef-ambulanz",
           "name": "Gefäßambulanz",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4552,6 +4865,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::rm-kittelautomat-ebene-99",
           "name": "Kittelautomat Ebene 99",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4559,6 +4873,7 @@
         {
           "id": "bld-im-neuenheimer-feld-420::rm-ambulanz-urologie",
           "name": "Ambulanz Urologie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4583,6 +4898,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-6440-u1-318",
           "name": "UFHK (6440.U1.318)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -4595,6 +4911,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-allergolie-ambulanz-6440-01-107",
           "name": "UFHK Allergolie Ambulanz (6440.01.107)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4607,6 +4924,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-ghs-6440-eg-272",
           "name": "UFHK gHS (6440.EG.272)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4619,6 +4937,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-gyn-sr-6440-eg-261",
           "name": "UFHK GYN SR (6440.EG.261)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4631,6 +4950,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-kleingruppenraum-6440-eg-250",
           "name": "UFHK Kleingruppenraum (6440.EG.250)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4643,6 +4963,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-kleingruppenraum-6440-eg-252",
           "name": "UFHK Kleingruppenraum (6440.EG.252)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4655,6 +4976,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-kleingruppenraum-6440-eg-253",
           "name": "UFHK Kleingruppenraum (6440.EG.253)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4667,6 +4989,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-kleingruppenraum-6440-eg-262",
           "name": "UFHK Kleingruppenraum (6440.EG.262)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4679,6 +5002,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-kleingruppenraum-6440-eg-271",
           "name": "UFHK Kleingruppenraum (6440.EG.271)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4691,6 +5015,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-licht-bestrahlung-6440-01-146",
           "name": "UFHK Licht Bestrahlung (6440.01.146)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4703,6 +5028,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-mykologie-andrologie-6440-01-113",
           "name": "UFHK Mykologie/Andrologie (6440.01.113)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4715,6 +5041,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-pad-sr-6440-eg-264",
           "name": "UFHK PÄD SR (6440.EG.264)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4727,6 +5054,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-pc-pool-6440-eg-270",
           "name": "UFHK PC Pool (6440.EG.270)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4739,6 +5067,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::ufhk-sr-6440-eg-274",
           "name": "UFHK SR (6440.EG.274)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4751,6 +5080,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k3-onkologie",
           "name": "K3 Onkologie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4758,6 +5088,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k-neonatologie",
           "name": "K Neonatologie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4765,6 +5096,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k1-neurop-diatrie",
           "name": "K1 Neuropädiatrie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4772,6 +5104,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k1-allgemein",
           "name": "K1 Allgemein",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4779,6 +5112,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k1-stoffwechsel",
           "name": "K1 Stoffwechsel",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4786,6 +5120,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k2-nephrologie",
           "name": "K2 Nephrologie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4793,6 +5128,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k1-kardiologie",
           "name": "K1 Kardiologie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4800,6 +5136,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-k-neonatologie-imc",
           "name": "K Neonatologie IMC",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4807,6 +5144,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-station-1",
           "name": "Station 1",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4816,6 +5154,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-station-2",
           "name": "Station 2",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4825,6 +5164,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-station-3",
           "name": "Station 3",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4834,6 +5174,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-tagesklinik",
           "name": "Tagesklinik",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4841,6 +5182,7 @@
         {
           "id": "bld-im-neuenheimer-feld-440::rm-ambulanz-haut",
           "name": "Ambulanz Haut",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -4863,6 +5205,7 @@
         {
           "id": "bld-im-neuenheimer-feld-442::besprechungsraum-frauenklinik-6442-eg-163",
           "name": "Besprechungsraum Frauenklinik (6442.EG.163)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4890,6 +5233,7 @@
         {
           "id": "bld-im-neuenheimer-feld-450::kurt-wannenmacher-raum-6450-u1-013",
           "name": "Kurt-Wannenmacher-Raum (6450.U1.013)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -4920,6 +5264,7 @@
         {
           "id": "bld-im-neuenheimer-feld-460::behandlungsraum-sono-raum-6460-eg-258",
           "name": "Behandlungsraum Sono-Raum (6460.EG.258)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -4932,6 +5277,7 @@
         {
           "id": "bld-im-neuenheimer-feld-460::seminarraum-direktoriumsraum-6460-03-324",
           "name": "Seminarraum Direktoriumsraum (6460.03.324)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -4944,6 +5290,7 @@
         {
           "id": "bld-im-neuenheimer-feld-460::seminarraum-k2-6460-02-304",
           "name": "Seminarraum K2 (6460.02.304)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -4956,6 +5303,7 @@
         {
           "id": "bld-im-neuenheimer-feld-460::seminarraum-k5-6460-03-305",
           "name": "Seminarraum K5 (6460.03.305)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -4968,6 +5316,7 @@
         {
           "id": "bld-im-neuenheimer-feld-460::seminarraum-k8-6460-01-406",
           "name": "Seminarraum K8 (6460.01.406)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -4980,6 +5329,7 @@
         {
           "id": "bld-im-neuenheimer-feld-460::seminarraum-k9-6460-02-403",
           "name": "Seminarraum K9 (6460.02.403)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -4992,6 +5342,7 @@
         {
           "id": "bld-im-neuenheimer-feld-460::rm-nct",
           "name": "NCT",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -5020,6 +5371,7 @@
         {
           "id": "bld-im-neuenheimer-feld-501::ubungsraum-6501-01-102",
           "name": "Übungsraum (6501.01.102)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5032,6 +5384,7 @@
         {
           "id": "bld-im-neuenheimer-feld-501::ubungsraum-6501-01-103",
           "name": "Übungsraum (6501.01.103)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5044,6 +5397,7 @@
         {
           "id": "bld-im-neuenheimer-feld-501::ubungsraum-6501-eg-006",
           "name": "Übungsraum (6501.EG.006)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5056,6 +5410,7 @@
         {
           "id": "bld-im-neuenheimer-feld-501::rm-praktikum",
           "name": "Praktikum",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -5083,6 +5438,7 @@
         {
           "id": "bld-im-neuenheimer-feld-504::ubungsraum-6504-01-118",
           "name": "Übungsraum (6504.01.118)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5110,6 +5466,7 @@
         {
           "id": "bld-im-neuenheimer-feld-517::seminarraum-2-8-6517-eg-028",
           "name": "Seminarraum 2.8 (6517.EG.028)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5137,6 +5494,7 @@
         {
           "id": "bld-im-neuenheimer-feld-581::besprechungsraum-6581-eg-101a",
           "name": "Besprechungsraum (6581.EG.101A)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5165,6 +5523,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::gymnastikhalle-700-6700-eg-070",
           "name": "Gymnastikhalle 700 (6700.EG.070)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5177,6 +5536,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::horsaal-700-6700-eg-012",
           "name": "Hörsaal 700 (6700.EG.012)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5189,6 +5549,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::multifunktionsraum-700-6700-eg-007",
           "name": "Multifunktionsraum 700 (6700.EG.007)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5201,6 +5562,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::schwimmhalle-6700-eg-085",
           "name": "Schwimmhalle (6700.EG.085)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5213,6 +5575,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::seminarraum-700-6700-eg-106",
           "name": "Seminarraum 700 (6700.EG.106)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5225,6 +5588,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::sporthalle-700-6700-eg-022",
           "name": "Sporthalle 700 (6700.EG.022)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5237,6 +5601,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::turnhalle-700-6700-eg-071",
           "name": "Turnhalle 700 (6700.EG.071)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5249,6 +5614,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::rm-tennispl-tze",
           "name": "Tennisplätze",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -5256,6 +5622,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::rm-stadion-a",
           "name": "Stadion A",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -5263,6 +5630,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::rm-stadion-b",
           "name": "Stadion B",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -5270,6 +5638,7 @@
         {
           "id": "bld-im-neuenheimer-feld-700::rm-stadion-c",
           "name": "Stadion C",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -5293,6 +5662,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::dreifachhalle-1-6720-eg-001",
           "name": "Dreifachhalle 1 (6720.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5305,6 +5675,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::dreifachhalle-1a-6720-eg-001a",
           "name": "Dreifachhalle 1a (6720.EG.001A)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5317,6 +5688,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::dreifachhalle-1b-6720-eg-001b",
           "name": "Dreifachhalle 1b (6720.EG.001B)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5329,6 +5701,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::dreifachhalle-1c-6720-eg-001c",
           "name": "Dreifachhalle 1c (6720.EG.001C)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5341,6 +5714,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::empore-spezialhalle-6720-01-127",
           "name": "Empore Spezialhalle (6720.01.127)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5353,6 +5727,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::kraftraum-6720-eg-004",
           "name": "Kraftraum (6720.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5365,6 +5740,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::seminarraum-1-720-6720-eg-049",
           "name": "Seminarraum 1 720 (6720.EG.049)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5377,6 +5753,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::seminarraum-2-720-6720-eg-048",
           "name": "Seminarraum 2 720 (6720.EG.048)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5389,6 +5766,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::spezialhalle-6720-eg-003",
           "name": "Spezialhalle (6720.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5401,6 +5779,7 @@
         {
           "id": "bld-im-neuenheimer-feld-720::rm-beachanlage",
           "name": "Beachanlage",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -5424,6 +5803,7 @@
         {
           "id": "bld-karlstrasse-2::ubungsraum-1030-eg-004",
           "name": "Übungsraum (1030.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5454,6 +5834,7 @@
         {
           "id": "bld-karlstrasse-16::hs-007-1040-eg-007",
           "name": "HS 007 (1040.EG.007)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5466,6 +5847,7 @@
         {
           "id": "bld-karlstrasse-16::ur-k-2-1040-01-109",
           "name": "ÜR K 2 (1040.01.109)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5478,6 +5860,7 @@
         {
           "id": "bld-karlstrasse-16::ur-k-3-1040-04-403",
           "name": "ÜR K 3 (1040.04.403)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -5505,6 +5888,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-108",
           "name": "Übungsraum (2220.01.108)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5517,6 +5901,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-110",
           "name": "Übungsraum (2220.01.110)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5529,6 +5914,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-112",
           "name": "Übungsraum (2220.01.112)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5541,6 +5927,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-113",
           "name": "Übungsraum (2220.01.113)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5553,6 +5940,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-114",
           "name": "Übungsraum (2220.01.114)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5565,6 +5953,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-115",
           "name": "Übungsraum (2220.01.115)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5577,6 +5966,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-116",
           "name": "Übungsraum (2220.01.116)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5589,6 +5979,7 @@
         {
           "id": "bld-kettengasse-12-16::ubungsraum-2220-01-122",
           "name": "Übungsraum (2220.01.122)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5615,6 +6006,7 @@
         {
           "id": "bld-kisselgasse-1::kiga-i-1200-eg-024",
           "name": "KiGa I (1200.EG.024)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5627,6 +6019,7 @@
         {
           "id": "bld-kisselgasse-1::kiga-ii-1200-eg-002c",
           "name": "KiGa II (1200.EG.002C)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5639,6 +6032,7 @@
         {
           "id": "bld-kisselgasse-1::kiga-iii-1200-02-214",
           "name": "KiGa III (1200.02.214)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -5666,6 +6060,7 @@
         {
           "id": "bld-koenigstuhl-sternwarte::meridiansaal-2811-eg-014x",
           "name": "Meridiansaal (2811.EG.014X)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5692,6 +6087,7 @@
         {
           "id": "bld-marstallhof-4::fachschaftsraum-2040-02-262",
           "name": "Fachschaftsraum (2040.02.262)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -5704,6 +6100,7 @@
         {
           "id": "bld-marstallhof-4::ubungsraum-2040-04-404",
           "name": "Übungsraum (2040.04.404)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -5716,6 +6113,7 @@
         {
           "id": "bld-marstallhof-4::ubungsraum-2040-04-405",
           "name": "Übungsraum (2040.04.405)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -5728,6 +6126,7 @@
         {
           "id": "bld-marstallhof-4::ubungsraum-2040-04-406",
           "name": "Übungsraum (2040.04.406)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -5757,6 +6156,7 @@
         {
           "id": "bld-moenchhofstrasse-14::ubungsraum-7020-u1-005",
           "name": "Übungsraum (7020.U1.005)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -5769,6 +6169,7 @@
         {
           "id": "bld-moenchhofstrasse-14::unterrichtsraum-7020-01-028",
           "name": "Unterrichtsraum (7020.01.028)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5796,6 +6197,7 @@
         {
           "id": "bld-philosophenweg-12::gro-er-horsaal-ghs-8010-02-008x",
           "name": "Großer Hörsaal (gHS) (8010.02.008X)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -5808,6 +6210,7 @@
         {
           "id": "bld-philosophenweg-12::kleiner-horsaal-khs-8010-02-221",
           "name": "Kleiner Hörsaal (kHS) (8010.02.221)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -5820,6 +6223,7 @@
         {
           "id": "bld-philosophenweg-12::pc-pool-8011-eg-001",
           "name": "PC-Pool (8011.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5832,6 +6236,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-01-105",
           "name": "Übungsraum (8010.01.105)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5844,6 +6249,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-01-106a",
           "name": "Übungsraum (8010.01.106A)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5856,6 +6262,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-eg-056",
           "name": "Übungsraum (8010.EG.056)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5868,6 +6275,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-eg-058",
           "name": "Übungsraum (8010.EG.058)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5880,6 +6288,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-eg-059",
           "name": "Übungsraum (8010.EG.059)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5892,6 +6301,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-eg-060",
           "name": "Übungsraum (8010.EG.060)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5904,6 +6314,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-eg-068",
           "name": "Übungsraum (8010.EG.068)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5916,6 +6327,7 @@
         {
           "id": "bld-philosophenweg-12::ubungsraum-8010-eg-070",
           "name": "Übungsraum (8010.EG.070)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5941,6 +6353,7 @@
         {
           "id": "bld-philosophenweg-16::ubungsraum-8050-01-106",
           "name": "Übungsraum (8050.01.106)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -5966,6 +6379,7 @@
         {
           "id": "bld-philosophenweg-19::ubungsraum-8080-eg-010",
           "name": "Übungsraum (8080.EG.010)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -5993,6 +6407,7 @@
         {
           "id": "bld-plankengasse-1-3::oinst-sr-1060-eg-014",
           "name": "ÖInst SR (1060.EG.014)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6019,6 +6434,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-01-105",
           "name": "Seminarraum (3070.01.105)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6031,6 +6447,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-01-108",
           "name": "Seminarraum (3070.01.108)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6043,6 +6460,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-01-109",
           "name": "Seminarraum (3070.01.109)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6055,6 +6473,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-01-122",
           "name": "Seminarraum (3070.01.122)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6067,6 +6486,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-eg-010",
           "name": "Seminarraum (3070.EG.010)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6079,6 +6499,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-eg-011",
           "name": "Seminarraum (3070.EG.011)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6091,6 +6512,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-eg-012",
           "name": "Seminarraum (3070.EG.012)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6103,6 +6525,7 @@
         {
           "id": "bld-ploeck-55::seminarraum-3070-eg-013",
           "name": "Seminarraum (3070.EG.013)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6131,6 +6554,7 @@
         {
           "id": "bld-ploeck-57a::edv-ubungsraum-3051-01-107",
           "name": "EDV-Übungsraum (3051.01.107)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6143,6 +6567,7 @@
         {
           "id": "bld-ploeck-57a::edv-ubungsraum-3051-01-108",
           "name": "EDV-Übungsraum (3051.01.108)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6155,6 +6580,7 @@
         {
           "id": "bld-ploeck-57a::horsaal-hs-211-3051-02-211",
           "name": "Hörsaal (HS 211) (3051.02.211)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6167,6 +6593,7 @@
         {
           "id": "bld-ploeck-57a::konferenzsaal-ks-i-3051-02-208",
           "name": "Konferenzsaal (KS I) (3051.02.208)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6179,6 +6606,7 @@
         {
           "id": "bld-ploeck-57a::konferenzsaal-ks-ii-3052-eg-053",
           "name": "Konferenzsaal (KS II) (3052.EG.053)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6191,6 +6619,7 @@
         {
           "id": "bld-ploeck-57a::konferenzsaal-ks-iii-3051-02-207",
           "name": "Konferenzsaal (KS III) (3051.02.207)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6203,6 +6632,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-01-109",
           "name": "Übungsraum (3051.01.109)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6215,6 +6645,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-01-111",
           "name": "Übungsraum (3051.01.111)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6227,6 +6658,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-01-112",
           "name": "Übungsraum (3051.01.112)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6239,6 +6671,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-01-114",
           "name": "Übungsraum (3051.01.114)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6251,6 +6684,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-eg-009",
           "name": "Übungsraum (3051.EG.009)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6263,6 +6697,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-eg-013",
           "name": "Übungsraum (3051.EG.013)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6275,6 +6710,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-eg-014",
           "name": "Übungsraum (3051.EG.014)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6287,6 +6723,7 @@
         {
           "id": "bld-ploeck-57a::ubungsraum-3051-eg-019",
           "name": "Übungsraum (3051.EG.019)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6299,6 +6736,7 @@
         {
           "id": "bld-ploeck-57a::unterrichtsraum-3051-02-210",
           "name": "Unterrichtsraum (3051.02.210)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6311,6 +6749,7 @@
         {
           "id": "bld-ploeck-57a::unterrichtsraum-3051-u1-107b",
           "name": "Unterrichtsraum (3051.U1.107B)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -6323,6 +6762,7 @@
         {
           "id": "bld-ploeck-57a::unterrichtsraum-3051-u1-108",
           "name": "Unterrichtsraum (3051.U1.108)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -6335,6 +6775,7 @@
         {
           "id": "bld-ploeck-57a::unterrichtsraum-3051-u1-109",
           "name": "Unterrichtsraum (3051.U1.109)",
+          "displayName": "",
           "floors": [
             "Lower level 1"
           ],
@@ -6365,6 +6806,7 @@
         {
           "id": "bld-ploeck-79-81::ubungsraum-3120-01-105",
           "name": "Übungsraum (3120.01.105)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6377,6 +6819,7 @@
         {
           "id": "bld-ploeck-79-81::ubungsraum-3120-01-116",
           "name": "Übungsraum (3120.01.116)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6389,6 +6832,7 @@
         {
           "id": "bld-ploeck-79-81::ubungsraum-3120-01-119",
           "name": "Übungsraum (3120.01.119)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6401,6 +6845,7 @@
         {
           "id": "bld-ploeck-79-81::ubungsraum-3120-01-120",
           "name": "Übungsraum (3120.01.120)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6413,6 +6858,7 @@
         {
           "id": "bld-ploeck-79-81::ubungsraum-3120-02-220",
           "name": "Übungsraum (3120.02.220)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6445,6 +6891,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-gro-er-hs-9041-01-001",
           "name": "SCHLIERBACH Großer HS (9041.01.001)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6457,6 +6904,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-heicumed-1-9005-eg-024",
           "name": "SCHLIERBACH Heicumed 1 (9005.EG.024)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6469,6 +6917,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-heicumed-2-9005-eg-025",
           "name": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6481,6 +6930,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-heicumed-3-9005-eg-026",
           "name": "SCHLIERBACH Heicumed 3 (9005.EG.026)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6493,6 +6943,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-p1-sporthalle-9046-04-009",
           "name": "SCHLIERBACH P1 Sporthalle (9046.04.009)",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -6505,6 +6956,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-physiotherapieschule-seminarraum-3-9031-01-014",
           "name": "SCHLIERBACH Physiotherapieschule Seminarraum 3 (9031.01.014)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6517,6 +6969,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-seminarraum-klh-9034-03-307",
           "name": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -6529,6 +6982,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::schlierbach-vorstellungsraum-kleiner-hs-9040-02-509",
           "name": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6541,6 +6995,7 @@
         {
           "id": "bld-schlierbacher-landstrasse-200a::rm-paraplegiologie",
           "name": "Paraplegiologie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -6565,6 +7020,7 @@
         {
           "id": "bld-schulgasse-augustinergasse-6-15::hegelsaal-2190-01-103",
           "name": "Hegelsaal (2190.01.103)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6577,6 +7033,7 @@
         {
           "id": "bld-schulgasse-augustinergasse-6-15::kantsaal-2190-01-118",
           "name": "Kantsaal (2190.01.118)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6589,6 +7046,7 @@
         {
           "id": "bld-schulgasse-augustinergasse-6-15::komensky-raum-2190-02-216",
           "name": "Komenský-Raum (2190.02.216)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6601,6 +7059,7 @@
         {
           "id": "bld-schulgasse-augustinergasse-6-15::seminarraum-2190-01-104",
           "name": "Seminarraum (2190.01.104)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6613,6 +7072,7 @@
         {
           "id": "bld-schulgasse-augustinergasse-6-15::tschizewskij-raum-2190-02-210",
           "name": "Tschižewskij-Raum (2190.02.210)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6625,6 +7085,7 @@
         {
           "id": "bld-schulgasse-augustinergasse-6-15::ubungsraum-2190-01-117",
           "name": "Übungsraum (2190.01.117)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6650,6 +7111,7 @@
         {
           "id": "bld-schulgasse-2::unterrichtsraum-2160-02-240",
           "name": "Unterrichtsraum (2160.02.240)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6679,6 +7141,7 @@
         {
           "id": "bld-seminarstrasse-3::ubungsraum-2210-eg-016",
           "name": "Übungsraum (2210.EG.016)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6691,6 +7154,7 @@
         {
           "id": "bld-seminarstrasse-3::ubungsraum-2210-eg-019",
           "name": "Übungsraum (2210.EG.019)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6703,6 +7167,7 @@
         {
           "id": "bld-seminarstrasse-3::unterrichtsraum-2210-01-117",
           "name": "Unterrichtsraum (2210.01.117)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6715,6 +7180,7 @@
         {
           "id": "bld-seminarstrasse-3::unterrichtsraum-2210-eg-017",
           "name": "Unterrichtsraum (2210.EG.017)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6727,6 +7193,7 @@
         {
           "id": "bld-seminarstrasse-3::unterrichtsraum-2210-eg-020",
           "name": "Unterrichtsraum (2210.EG.020)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6755,6 +7222,7 @@
         {
           "id": "bld-seminarstrasse-4::ubungsraum-001-graimberg-raum-2230-eg-001",
           "name": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6767,6 +7235,7 @@
         {
           "id": "bld-seminarstrasse-4::ubungsraum-002-winsbekin-raum-2230-eg-002",
           "name": "Übungsraum 002 (Winsbekin - Raum) (2230.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6779,6 +7248,7 @@
         {
           "id": "bld-seminarstrasse-4::ubungsraum-003-turner-raum-2230-eg-003",
           "name": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6791,6 +7261,7 @@
         {
           "id": "bld-seminarstrasse-4::ubungsraum-016-marie-marcks-raum-2230-eg-016",
           "name": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6820,6 +7291,7 @@
         {
           "id": "bld-thibautstrasse-4::seminarraum-102-4240-01-102",
           "name": "Seminarraum 102 (4240.01.102)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6832,6 +7304,7 @@
         {
           "id": "bld-thibautstrasse-4::seminarraum-205-4240-02-205",
           "name": "Seminarraum 205 (4240.02.205)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6844,6 +7317,7 @@
         {
           "id": "bld-thibautstrasse-4::zpm-bibliothek-4240-01-108",
           "name": "ZPM-Bibliothek (4240.01.108)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -6874,6 +7348,7 @@
         {
           "id": "bld-vossstrasse-4::horsaal-psia-haus-1-4270-eg-040",
           "name": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6886,6 +7361,7 @@
         {
           "id": "bld-vossstrasse-4::jaspers-bibliothek-4270-02-235",
           "name": "Jaspers-Bibliothek (4270.02.235)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6898,6 +7374,7 @@
         {
           "id": "bld-vossstrasse-4::seminarraum-009-4270-eg-009",
           "name": "Seminarraum 009 (4270.EG.009)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6928,6 +7405,7 @@
         {
           "id": "bld-vossstrasse-9::seminarraum-113-4250-02-113",
           "name": "Seminarraum 113 (4250.02.113)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6940,6 +7418,7 @@
         {
           "id": "bld-vossstrasse-9::seminarraum-118-4250-eg-118",
           "name": "Seminarraum 118 (4250.EG.118)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -6965,6 +7444,7 @@
         {
           "id": "bld-wieblinger-weg-21::hein-operation-5410-02-023",
           "name": "HEIN Operation (5410.02.023)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6977,6 +7457,7 @@
         {
           "id": "bld-wieblinger-weg-21::hein-praklinik-5410-02-030",
           "name": "HEIN Präklinik (5410.02.030)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -6989,6 +7470,7 @@
         {
           "id": "bld-wieblinger-weg-21::hein-sim-multi-5410-02-026",
           "name": "HEIN Sim Multi (5410.02.026)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7001,6 +7483,7 @@
         {
           "id": "bld-wieblinger-weg-21::hein-vr-briefing-5410-02-021",
           "name": "HEIN VR Briefing (5410.02.021)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7026,6 +7509,7 @@
         {
           "id": "bld-im-neuenheimer-feld-162::rm-nierenzentrum",
           "name": "Nierenzentrum",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -7045,6 +7529,7 @@
         {
           "id": "bld-im-neuenheimer-feld-430::rm-kinderchirurgie",
           "name": "Kinderchirurgie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -7062,6 +7547,7 @@
         {
           "id": "bld-peterskirche::rm-peterskirche",
           "name": "Peterskirche",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -7086,6 +7572,7 @@
         {
           "id": "bld-vossstrasse-2-4010::fernerkundungsraum-010-01-01-4010-4-01-001",
           "name": "Fernerkundungsraum 010.01.01 (4010+4.01.001)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7098,6 +7585,7 @@
         {
           "id": "bld-vossstrasse-2-4010::horsaal-010-01-05-4010-4-01-005",
           "name": "Hörsaal 010.01.05 (4010+4.01.005)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7110,6 +7598,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-00-01-4010-4-eg-001",
           "name": "Übungsraum 010.00.01 (4010+4.EG.001)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7122,6 +7611,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-00-04-4010-4-eg-002",
           "name": "Übungsraum 010.00.04 (4010+4.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7134,6 +7624,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-00-06-4010-4-eg-006",
           "name": "Übungsraum 010.00.06 (4010+4.EG.006)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7146,6 +7637,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-00-07-4010-4-eg-007",
           "name": "Übungsraum 010.00.07 (4010+4.EG.007)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7158,6 +7650,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-01-02-4010-4-01-002",
           "name": "Übungsraum 010.01.02 (4010+4.01.002)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7170,6 +7663,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-01-03-4010-4-01-003",
           "name": "Übungsraum 010.01.03 (4010+4.01.003)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7182,6 +7676,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-01-12-4010-4-01-012",
           "name": "Übungsraum 010.01.12 (4010+4.01.012)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7194,6 +7689,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-01-13-4010-4-01-013",
           "name": "Übungsraum 010.01.13 (4010+4.01.013)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7206,6 +7702,7 @@
         {
           "id": "bld-vossstrasse-2-4010::ubungsraum-010-01-14-4010-4-01-014",
           "name": "Übungsraum 010.01.14 (4010+4.01.014)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7235,6 +7732,7 @@
         {
           "id": "bld-vossstrasse-2-4110::seminarraum-4110-01-009",
           "name": "Seminarraum (4110.01.009)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7247,6 +7745,7 @@
         {
           "id": "bld-vossstrasse-2-4110::ubungsraum-110-02-05-4110-02-005",
           "name": "Übungsraum 110.02.05 (4110.02.005)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7259,6 +7758,7 @@
         {
           "id": "bld-vossstrasse-2-4110::ubungsraum-110-02-08-4110-02-008",
           "name": "Übungsraum 110.02.08 (4110.02.008)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7289,6 +7789,7 @@
         {
           "id": "bld-vossstrasse-2-4120::besprechung-aufenthalt-4120-02-002",
           "name": "Besprechung/Aufenthalt (4120.02.002)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7301,6 +7802,7 @@
         {
           "id": "bld-vossstrasse-2-4120::ubungsraum-120-00-03-4120-eg-003",
           "name": "Übungsraum 120.00.03 (4120.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7313,6 +7815,7 @@
         {
           "id": "bld-vossstrasse-2-4120::ubungsraum-120-01-10-4120-01-010",
           "name": "Übungsraum 120.01.10 (4120.01.010)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7325,6 +7828,7 @@
         {
           "id": "bld-vossstrasse-2-4120::ubungsraum-120-02-11-4120-02-011",
           "name": "Übungsraum 120.02.11 (4120.02.011)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7354,6 +7858,7 @@
         {
           "id": "bld-vossstrasse-2-4130::besprechungsraum-130-00-02-4130-eg-002",
           "name": "Besprechungsraum 130.00.02 (4130.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7366,6 +7871,7 @@
         {
           "id": "bld-vossstrasse-2-4130::buro-4130-02-025",
           "name": "Büro (4130.02.025)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7378,6 +7884,7 @@
         {
           "id": "bld-vossstrasse-2-4130::ubungsraum-130-00-03-4130-eg-003",
           "name": "Übungsraum 130.00.03 (4130.EG.003)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7390,6 +7897,7 @@
         {
           "id": "bld-vossstrasse-2-4130::ubungsraum-130-00-04-4130-eg-004",
           "name": "Übungsraum 130.00.04 (4130.EG.004)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7418,6 +7926,7 @@
         {
           "id": "bld-vossstrasse-2-4190::raum-4190-eg-009",
           "name": "Raum (4190.EG.009)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7448,6 +7957,7 @@
         {
           "id": "bld-vossstrasse-2-4400::ubungsraum-4400-01-112",
           "name": "Übungsraum (4400.01.112)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7460,6 +7970,7 @@
         {
           "id": "bld-vossstrasse-2-4400::ubungsraum-4400-02-212",
           "name": "Übungsraum (4400.02.212)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7472,6 +7983,7 @@
         {
           "id": "bld-vossstrasse-2-4400::ubungsraum-400-00-02-4400-eg-002",
           "name": "Übungsraum 400.00.02 (4400.EG.002)",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -7500,6 +8012,7 @@
         {
           "id": "bld-vossstrasse-2-4410::ubungsraum-4410-02-210",
           "name": "Übungsraum (4410.02.210)",
+          "displayName": "",
           "floors": [
             "2nd floor"
           ],
@@ -7529,6 +8042,7 @@
         {
           "id": "bld-vossstrasse-2-4420::horsaal-4420-03-304",
           "name": "Hörsaal (4420.03.304)",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -7541,6 +8055,7 @@
         {
           "id": "bld-vossstrasse-2-4420::kurssaal-4420-01-201",
           "name": "Kurssaal (4420.01.201)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7553,6 +8068,7 @@
         {
           "id": "bld-vossstrasse-2-4420::sektionssaal-4420-01-105",
           "name": "Sektionssaal (4420.01.105)",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -7579,6 +8095,7 @@
         {
           "id": "bld-vossstrasse-2-4330::rm-siehe-anmerkung",
           "name": "Siehe Anmerkung",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -7600,6 +8117,7 @@
         {
           "id": "bld-vossstrasse-2-4040::rm-unbekannter-raum",
           "name": "Unbekannter Raum",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -7620,6 +8138,7 @@
         {
           "id": "bld-akademiestrasse-4::rm-seminarraum-2",
           "name": "Seminarraum 2",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -7627,6 +8146,7 @@
         {
           "id": "bld-akademiestrasse-4::rm-seminarraum-1",
           "name": "Seminarraum 1",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": ""
@@ -7634,6 +8154,7 @@
         {
           "id": "bld-akademiestrasse-4::rm-unknown-room",
           "name": "Unknown Room",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -7657,6 +8178,7 @@
         {
           "id": "bld-siehe-anmerkung::rm-siehe-anmerkung",
           "name": "Siehe Anmerkung",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7674,6 +8196,7 @@
         {
           "id": "bld-externer-ort::rm-externer-ort",
           "name": "Externer Ort",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7693,6 +8216,7 @@
         {
           "id": "bld-ort-zeit-noch-nicht-bekannt::rm-ort-zeit-noch-nicht-bekannt",
           "name": "Ort/Zeit noch nicht bekannt.",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7710,6 +8234,7 @@
         {
           "id": "bld-ort-zeit-noch-nicht-bekannt-1::rm-ort-zeit-noch-nicht-bekannt-1",
           "name": "Ort/Zeit noch nicht bekannt",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7729,6 +8254,7 @@
         {
           "id": "bld-online::rm-online",
           "name": "Online",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7736,6 +8262,7 @@
         {
           "id": "bld-online::rm-siehe-anmerkung",
           "name": "Siehe Anmerkung",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -7756,6 +8283,7 @@
         {
           "id": "bld-ort-noch-nicht-bekannt::rm-ort-noch-nicht-bekannt",
           "name": "Ort noch nicht bekannt",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7773,6 +8301,7 @@
         {
           "id": "bld-ort-siehe-anmerkung::rm-ort-siehe-anmerkung",
           "name": "Ort - siehe Anmerkung",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7790,6 +8319,7 @@
         {
           "id": "bld-selbststudium::rm-selbststudium",
           "name": "Selbststudium",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7807,6 +8337,7 @@
         {
           "id": "bld-therapieraum-altstadt::rm-therapieraum-altstadt",
           "name": "Therapieraum Altstadt",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7824,6 +8355,7 @@
         {
           "id": "bld-therapieraum-landfried::rm-therapieraum-landfried",
           "name": "Therapieraum Landfried",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7841,6 +8373,7 @@
         {
           "id": "bld-semesterplanung-sose-2026-unterrichtsbereich-nf::rm-semesterplanung-sose-2026-unterrichtsbereich-nf",
           "name": "Semesterplanung SoSe 2026 - Unterrichtsbereich NF",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7862,6 +8395,7 @@
         {
           "id": "bld-voelkerkundemuseum::rm-voelkerkundemuseum",
           "name": "Völkerkundemuseum",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -7885,6 +8419,7 @@
         {
           "id": "bld-vossstr-2::rm-cats-vo-str-2",
           "name": "CATS, Voßstr. 2",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7902,6 +8437,7 @@
         {
           "id": "bld-med-ort-noch-nicht-bekannt::rm-med-ort-noch-nicht-bekannt",
           "name": "MED Ort noch nicht bekannt",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7919,6 +8455,7 @@
         {
           "id": "bld-agaplesion-bethanien-krankenhaus::rm-agaplesion-bethanien-krankenhaus",
           "name": "Agaplesion Bethanien Krankenhaus",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7936,6 +8473,7 @@
         {
           "id": "bld-krankenhaus-salem::rm-krankenhaus-salem",
           "name": "Krankenhaus Salem",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7953,6 +8491,7 @@
         {
           "id": "bld-thoraxklinik-pforte::rm-thoraxklinik-pforte",
           "name": "Thoraxklinik - Pforte",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7970,6 +8509,7 @@
         {
           "id": "bld-srh-kurpfalzkrankenhaus-heidelberg::rm-srh-kurpfalzkrankenhaus-heidelberg",
           "name": "SRH Kurpfalzkrankenhaus Heidelberg",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -7987,6 +8527,7 @@
         {
           "id": "bld-avp::rm-avp",
           "name": "AVP",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -8004,6 +8545,7 @@
         {
           "id": "bld-station-gynaekologie::rm-wartebereich-3-og-station-gyn-kologie",
           "name": "Wartebereich 3.OG, Station Gynäkologie",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -8021,6 +8563,7 @@
         {
           "id": "bld-station-geburtshilfe::rm-wartebereich-2-og-station-geburtshilfe",
           "name": "Wartebereich 2.OG, Station Geburtshilfe",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -8038,6 +8581,7 @@
         {
           "id": "bld-leonardo-hotel::rm-bergheimer-str-63-leonardo-hotel",
           "name": "Bergheimer Str. 63, Leonardo Hotel",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -8055,6 +8599,7 @@
         {
           "id": "bld-op::rm-op",
           "name": "OP",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -8072,6 +8617,7 @@
         {
           "id": "bld-kliniken-schmieder-heidelberg::rm-kliniken-schmieder-heidelberg",
           "name": "Kliniken Schmieder Heidelberg",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -8091,6 +8637,7 @@
         {
           "id": "bld-mannheimer-str-1::rm-eg",
           "name": "EG",
+          "displayName": "",
           "floors": [
             "Ground floor"
           ],
@@ -8113,6 +8660,7 @@
         {
           "id": "bld-stift-neuburg::rm-stift-neuburg",
           "name": "Stift Neuburg",
+          "displayName": "",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -8149,6 +8697,7 @@
         {
           "id": "bld-landfriedstrasse-12::rm-a2-08-altbau",
           "name": "A2.08 (Altbau)",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8161,6 +8710,7 @@
         {
           "id": "bld-landfriedstrasse-12::rm-seminarraum-4",
           "name": "Seminarraum 4",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8209,6 +8759,7 @@
         {
           "id": "bld-marstallstrasse-6-hcch::rm-uebungsraum-413",
           "name": "Übungsraum 413",
+          "displayName": "",
           "floors": [
             "4th floor"
           ],
@@ -8221,6 +8772,7 @@
         {
           "id": "bld-marstallstrasse-6-hcch::rm-raum-112",
           "name": "Raum 112",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8247,6 +8799,7 @@
         {
           "id": "bld-im-neuenheimer-feld-580::rm-buchleither-seminar-room",
           "name": "Buchleither Seminar room",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8259,6 +8812,7 @@
         {
           "id": "bld-im-neuenheimer-feld-580::rm-unknown-room",
           "name": "Unknown Room",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8289,6 +8843,7 @@
         {
           "id": "bld-berliner-strasse-43::rm-b128",
           "name": "B128",
+          "displayName": "",
           "floors": [
             "3rd floor"
           ],
@@ -8314,6 +8869,7 @@
         {
           "id": "bld-im-neuenheimer-feld-561::rm-raum-a236",
           "name": "Raum A236",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8326,6 +8882,7 @@
         {
           "id": "bld-im-neuenheimer-feld-561::rm-to111",
           "name": "TO111",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8349,6 +8906,7 @@
         {
           "id": "bld-koenigstuhl-17::rm-hda-sr-h-308",
           "name": "HdA / SR H-308",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -8359,6 +8917,7 @@
         {
           "id": "bld-koenigstuhl-17::rm-seminar-room-306",
           "name": "Seminar Room (306)",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8371,6 +8930,7 @@
         {
           "id": "bld-koenigstuhl-17::rm-hoersaal",
           "name": "Hörsaal",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -8392,6 +8952,7 @@
         {
           "id": "bld-keplerstrasse-87::rm-raum-130",
           "name": "Raum 130",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -8402,6 +8963,7 @@
         {
           "id": "bld-keplerstrasse-87::rm-raum-220",
           "name": "Raum 220",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8414,6 +8976,7 @@
         {
           "id": "bld-keplerstrasse-87::rm-raum-122",
           "name": "Raum 122",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8437,6 +9000,7 @@
         {
           "id": "bld-im-neuenheimer-feld-370::rm-idea-room",
           "name": "Idea room",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8449,6 +9013,7 @@
         {
           "id": "bld-im-neuenheimer-feld-370::rm-graduate-academy",
           "name": "Graduate Academy",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8472,6 +9037,7 @@
         {
           "id": "bld-im-neuenheimer-feld-256::rm-sr211",
           "name": "SR211",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8495,6 +9061,7 @@
         {
           "id": "bld-im-neuenheimer-feld-519::rm-to111",
           "name": "TO111",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8518,6 +9085,7 @@
         {
           "id": "bld-im-neuenheimer-feld-366::rm-sr111",
           "name": "SR111",
+          "displayName": "",
           "floors": [
             "1st floor"
           ],
@@ -8541,6 +9109,7 @@
         {
           "id": "bld-sandgasse-7::rm-raum-19",
           "name": "Raum 19",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8574,6 +9143,7 @@
         {
           "id": "bld-im-neuenheimer-feld-671::rm-laborfuehrung",
           "name": "Laborführung",
+          "displayName": "",
           "floors": [
             "Unknown floor"
           ],
@@ -8597,6 +9167,7 @@
         {
           "id": "bld-im-neuenheimer-feld-230::rm-hs-00-001",
           "name": "HS 00.001",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -8618,6 +9189,7 @@
         {
           "id": "bld-jahnstrasse-29::rm-seminar-room",
           "name": "Seminar Room",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
@@ -8639,6 +9211,7 @@
         {
           "id": "bld-im-neuenheimer-feld-223::rm-f-01-088",
           "name": "F.01.088",
+          "displayName": "",
           "floors": [],
           "features": {
             "hasAirConditioning": null,
