@@ -1,0 +1,38 @@
+{
+  "id": "1602003029",
+  "title": "Microbiology Part I",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schäfer, Holger"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-04-30",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "13:30",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Praktikumssaal",
+      "building": "Im Neuenheimer Feld 364, 4th floor",
+      "note": "Ort: INF 364, 4.OG, Praktikumssaal"
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "HS 2 (6306.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18526",
+      "room": "HS 2 (6306.EG.021)",
+      "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409451",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-12T22:26:48Z"
+}

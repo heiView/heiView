@@ -1,0 +1,30 @@
+{
+  "id": "7120SM7004",
+  "title": "Introduction to Neuroscience (Focus 1)",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Rudolf, Rüdiger",
+    "Schuster, Christoph",
+    "Wiegert, Simon"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-05-11",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "08:00",
+      "end_time": "10:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Übungsraum (6267.EG.042)",
+      "building": "Im Neuenheimer Feld 267, Ground floor",
+      "note": "series takes place in SR 42 in the BioQuant (INF 267)"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399079",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-12T22:26:48Z"
+}

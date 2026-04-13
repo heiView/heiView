@@ -391,7 +391,8 @@ function getVisibleRoomCourses(room: RoomEntry, query: string, language: Languag
   return room.courses.filter((course) => {
     const courseName = resolveLocalizedText(course.name, language).toLowerCase()
     const professor = resolveLocalizedText(course.prof, language).toLowerCase()
-    return courseName.includes(query) || professor.includes(query)
+    const note = (course.note || '').toLowerCase()
+    return courseName.includes(query) || professor.includes(query) || note.includes(query)
   })
 }
 

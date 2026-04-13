@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-13T08:16:14.034Z",
+  "updatedAt": "2026-04-13T09:14:50.532Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -2535,6 +2535,16 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-242::rm-seminarraum-0-106",
+          "name": "Seminarraum 0.106",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -2681,6 +2691,18 @@
         {
           "id": "bld-im-neuenheimer-feld-267::rm-uebungsraum-6267-eg-044",
           "name": "Übungsraum (6267.EG.044)",
+          "floors": [
+            "Ground floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-267::rm-uebungsraum-6267-eg-042",
+          "name": "Übungsraum (6267.EG.042)",
           "floors": [
             "Ground floor"
           ],
@@ -3895,6 +3917,18 @@
           "name": "kleiner Seminarraum R520",
           "floors": [
             "5th floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-364::rm-praktikumssaal",
+          "name": "Praktikumssaal",
+          "floors": [
+            "4th floor"
           ],
           "features": {
             "hasAirConditioning": null,
@@ -8543,6 +8577,69 @@
           "floors": [
             "Unknown floor"
           ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-230",
+      "street": "Im Neuenheimer Feld 230",
+      "displayName": "INF 230",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-230::rm-hs-00-001",
+          "name": "HS 00.001",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-jahnstrasse-29",
+      "street": "Jahnstraße 29",
+      "displayName": "MPI for Medical Research",
+      "campusId": "other",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-jahnstrasse-29::rm-seminar-room",
+          "name": "Seminar Room",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-223",
+      "street": "Im Neuenheimer Feld 223",
+      "displayName": "INF 223",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-223::rm-f-01-088",
+          "name": "F.01.088",
+          "floors": [],
           "features": {
             "hasAirConditioning": null,
             "hasAccessControl": null
