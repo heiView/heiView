@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-12T23:11:26.198Z",
+  "updatedAt": "2026-04-13T08:16:14.034Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -8403,6 +8403,18 @@
         {
           "id": "bld-im-neuenheimer-feld-370::rm-idea-room",
           "name": "Idea room",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-370::rm-graduate-academy",
+          "name": "Graduate Academy",
           "floors": [
             "Unknown floor"
           ],
