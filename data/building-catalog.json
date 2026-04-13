@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-13T09:14:50.532Z",
+  "updatedAt": "2026-04-13T11:56:30.718Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -2842,7 +2842,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::ubungsraum-6267-eg-041",
           "name": "Übungsraum (6267.EG.041)",
-          "displayName": "",
+          "displayName": "041 Vorlesungsraum",
           "floors": [
             "Ground floor"
           ],
@@ -2855,7 +2855,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::ubungsraum-6267-eg-043",
           "name": "Übungsraum (6267.EG.043)",
-          "displayName": "",
+          "displayName": "043 Seminarraum",
           "floors": [
             "Ground floor"
           ],
@@ -2868,7 +2868,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::rm-uebungsraum-6267-eg-044",
           "name": "Übungsraum (6267.EG.044)",
-          "displayName": "",
+          "displayName": "044 Seminarraum",
           "floors": [
             "Ground floor"
           ],
@@ -2881,7 +2881,7 @@
         {
           "id": "bld-im-neuenheimer-feld-267::rm-uebungsraum-6267-eg-042",
           "name": "Übungsraum (6267.EG.042)",
-          "displayName": "",
+          "displayName": "042 Seminarraum",
           "floors": [
             "Ground floor"
           ],

@@ -65,6 +65,8 @@ const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
 const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
 
+const scheduleCache = new Map(); // key -> { data, ts } — module-level so writeCatalog can clear it
+
 function readCatalog() {
   try { return JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8')); } catch (_) { return { buildings: [] }; }
 }
@@ -77,6 +79,7 @@ function writeCatalog(catalog) {
   } catch (e) {
     console.error('[writeCatalog] SQLite sync failed:', e.message);
   }
+  scheduleCache.clear();
 }
 
 function makeAdminToken(username, role) {
@@ -951,7 +954,7 @@ function createApp() {
   // ────────────────────────────────────────────────────────────────────────
 
   // In-memory response cache for /api/schedule (TTL: 60s)
-  const scheduleCache = new Map(); // key -> { data, ts }
+  // Note: scheduleCache is declared at module level so writeCatalog can clear it.
   const SCHEDULE_CACHE_TTL = 60_000;
 
   function getScheduleCache(key) {
@@ -992,7 +995,7 @@ function createApp() {
         ? req.query.building.trim()
         : null;
 
-    res.setHeader('Cache-Control', 'public, max-age=60, stale-while-revalidate=120');
+    res.setHeader('Cache-Control', 'no-store');
 
     // Admin requests bypass cache (skip list excluded, may see hidden courses)
     const cacheKey = isAdmin ? null : `${date}|${buildingFilter || ''}`;
@@ -1054,7 +1057,7 @@ function createApp() {
         return normalized;
       }
 
-      function ensureRoomEntry(buildingName, roomName, floorLabel, features) {
+      function ensureRoomEntry(buildingName, roomName, floorLabel, features, displayName) {
         const resolvedBuilding = ensureBuilding(buildingName);
         if (!resolvedBuilding) return null;
 
@@ -1076,12 +1079,16 @@ function createApp() {
           } else {
             roomEntry = {
               room,
+              displayName: displayName || null,
               floor,
               features: features || null,
               courses: [],
             };
             rooms[resolvedBuilding].push(roomEntry);
           }
+        }
+        if (displayName && !roomEntry.displayName) {
+          roomEntry.displayName = displayName;
         }
         if (features) {
           roomEntry.features = {
@@ -1116,6 +1123,7 @@ function createApp() {
               SELECT
                 b.name AS building_name,
                 r.name AS room_name,
+                r.display_name AS room_display_name,
                 r.floors_json,
                 r.has_air_conditioning,
                 r.has_access_control,
@@ -1141,7 +1149,7 @@ function createApp() {
           const targetFloors = floors.length > 0 ? floors : [null];
 
           for (const floorLabel of targetFloors) {
-            ensureRoomEntry(roomRow.building_name, roomRow.room_name, floorLabel, features);
+            ensureRoomEntry(roomRow.building_name, roomRow.room_name, floorLabel, features, roomRow.room_display_name || null);
           }
         }
       } catch(e) {}

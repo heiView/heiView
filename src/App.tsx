@@ -47,6 +47,7 @@ type Course = {
 
 type RoomEntry = {
   room: string
+  displayName?: string | null
   floor?: string | null
   features?: RoomFeatures | null
   courses: Course[]
@@ -349,6 +350,7 @@ function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleResponse {
     } else {
       roomGroups[street] = (entries || []).map((entry) => ({
         room: entry.room,
+        displayName: (entry as RoomEntry).displayName || null,
         floor: normalizeFloorLabel(entry.floor),
         features: entry.features || null,
         courses: entry.courses || [],
@@ -630,7 +632,8 @@ function App() {
     const query = deferredSearch.trim().toLowerCase()
     if (!query) return rooms
     return rooms.filter((room) => {
-      if (room.room.toLowerCase().includes(query)) return true
+      const label = (room.displayName || room.room).toLowerCase()
+      if (label.includes(query) || room.room.toLowerCase().includes(query)) return true
       return getVisibleRoomCourses(room, query, language).length > 0
     })
   }, [activeBuildingId, language, schedule, deferredSearch])
@@ -844,7 +847,7 @@ function App() {
                           return (
                             <div key={`${group.floor}-${room.room}`} className="hei-room-row" style={{ minHeight: ROOM_ROW_HEIGHT }}>
                               <div className="hei-room-label">
-                                <span>{room.room.replace(/\s*\/\s*/g, ' / ')}</span>
+                                <span>{(room.displayName || room.room).replace(/\s*\/\s*/g, ' / ')}</span>
                               </div>
 
                               <div className="hei-room-track" style={{ minHeight: ROOM_ROW_HEIGHT }}>

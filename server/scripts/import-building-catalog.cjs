@@ -62,6 +62,7 @@ function ensureSchema(db) {
       id TEXT PRIMARY KEY,
       building_id TEXT NOT NULL,
       name TEXT NOT NULL,
+      display_name TEXT,
       floors_json TEXT NOT NULL,
       has_air_conditioning INTEGER,
       has_access_control INTEGER,
@@ -92,6 +93,10 @@ function ensureSchema(db) {
   const names = new Set(columns.map((column) => column.name));
   if (!names.has('display_name')) {
     db.exec('ALTER TABLE buildings_meta ADD COLUMN display_name TEXT;');
+  }
+  const roomCols = new Set(db.prepare('PRAGMA table_info(rooms_meta);').all().map(c => c.name));
+  if (!roomCols.has('display_name')) {
+    db.exec('ALTER TABLE rooms_meta ADD COLUMN display_name TEXT;');
   }
 }
 
@@ -131,11 +136,11 @@ function main() {
 
   const insertRoom = db.prepare(`
     INSERT INTO rooms_meta (
-      id, building_id, name, floors_json,
+      id, building_id, name, display_name, floors_json,
       has_air_conditioning, has_access_control, has_projector, has_microphone,
       notes
     ) VALUES (
-      @id, @building_id, @name, @floors_json,
+      @id, @building_id, @name, @display_name, @floors_json,
       @has_air_conditioning, @has_access_control, @has_projector, @has_microphone,
       @notes
     );
@@ -196,6 +201,7 @@ function main() {
           id: String(room.id),
           building_id: String(building.id),
           name: String(room.name),
+          display_name: room.displayName ? String(room.displayName) : null,
           floors_json: JSON.stringify(Array.isArray(room.floors) ? room.floors : []),
           has_air_conditioning: toNullableInteger(features.hasAirConditioning),
           has_access_control: toNullableInteger(features.hasAccessControl),
