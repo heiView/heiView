@@ -375,6 +375,17 @@ function AdminApp() {
   const [auditLog, setAuditLog] = React.useState<{ id?: string; ts: string; username: string; action: string; target: string | null; summary: string | null; undone?: boolean }[]>([])
   const [auditLoading, setAuditLoading] = React.useState(false)
   const [undoLoadingSet, setUndoLoadingSet] = React.useState<Set<string>>(new Set())
+
+  // Stale overrides — source JSON updated more recently than override
+  type StaleEntry = { courseId: string; srcMtime: number; ovMtime: number }
+  type BothFiles = { source: Record<string, unknown> | null; override: Record<string, unknown> | null; srcMtime: number | null; ovMtime: number | null }
+  const [staleOpen, setStaleOpen] = React.useState(false)
+  const [staleList, setStaleList] = React.useState<StaleEntry[]>([])
+  const [staleLoading, setStaleLoading] = React.useState(false)
+  const [staleDiffCourseId, setStaleDiffCourseId] = React.useState<string | null>(null)
+  const [staleDiffData, setStaleDiffData] = React.useState<BothFiles | null>(null)
+  const [staleDiffLoading, setStaleDiffLoading] = React.useState(false)
+  const [staleDismissLoading, setStaleDismissLoading] = React.useState<string | null>(null)
   // ─────────────────────────────────────────────────────────────────────────
 
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
@@ -1185,6 +1196,22 @@ function AdminApp() {
                     >
                       Audit Log
                     </Button>
+                    <Button
+                      size="large"
+                      onClick={async () => {
+                        setStaleOpen(true)
+                        setStaleLoading(true)
+                        setStaleDiffCourseId(null)
+                        setStaleDiffData(null)
+                        try {
+                          const r = await adminFetch('/api/admin/stale-overrides')
+                          if (r.ok) setStaleList(await r.json())
+                        } finally { setStaleLoading(false) }
+                      }}
+                      style={staleList.length > 0 ? { borderColor: '#faad14', color: '#faad14' } : undefined}
+                    >
+                      {staleList.length > 0 ? `⚠ Stale Overrides (${staleList.length})` : 'Stale Overrides'}
+                    </Button>
                   </>
                 )}
                 <Button
@@ -1749,6 +1776,129 @@ function AdminApp() {
             </Spin>
           </Modal>
         )}
+
+        {/* Stale Overrides modal */}
+        <Modal
+          open={staleOpen}
+          onCancel={() => { setStaleOpen(false); setStaleDiffCourseId(null); setStaleDiffData(null) }}
+          title="Stale Overrides — Source updated after override"
+          width={staleDiffCourseId ? 900 : 600}
+          footer={null}
+          destroyOnClose
+        >
+          <Spin spinning={staleLoading}>
+            {!staleDiffCourseId ? (
+              <>
+                {staleList.length === 0 && !staleLoading && (
+                  <Typography.Text type="secondary">All overrides are up-to-date.</Typography.Text>
+                )}
+                {staleList.length > 0 && (
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+                    <thead>
+                      <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Course ID</th>
+                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Source updated</th>
+                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Override saved</th>
+                        <th />
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {staleList.map(entry => (
+                        <tr key={entry.courseId} style={{ borderBottom: '1px solid var(--hei-border)', verticalAlign: 'middle' }}>
+                          <td style={{ padding: '5px 8px' }}>
+                            <Typography.Text code style={{ fontSize: 12 }}>{entry.courseId}</Typography.Text>
+                          </td>
+                          <td style={{ padding: '5px 8px', fontSize: 12, color: '#faad14' }}>
+                            {new Date(entry.srcMtime).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
+                          </td>
+                          <td style={{ padding: '5px 8px', fontSize: 12, color: 'var(--hei-text-secondary)' }}>
+                            {new Date(entry.ovMtime).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
+                          </td>
+                          <td style={{ padding: '5px 8px', whiteSpace: 'nowrap' }}>
+                            <Space>
+                              <Button
+                                size="small"
+                                onClick={async () => {
+                                  setStaleDiffCourseId(entry.courseId)
+                                  setStaleDiffLoading(true)
+                                  try {
+                                    const r = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(entry.courseId)}`)
+                                    if (r.ok) setStaleDiffData(await r.json())
+                                  } finally { setStaleDiffLoading(false) }
+                                }}
+                              >
+                                Compare
+                              </Button>
+                              <Button
+                                size="small"
+                                loading={staleDismissLoading === entry.courseId}
+                                onClick={async () => {
+                                  setStaleDismissLoading(entry.courseId)
+                                  try {
+                                    const r = await adminFetch(`/api/admin/stale-overrides/${encodeURIComponent(entry.courseId)}/dismiss`, { method: 'POST' })
+                                    if (r.ok) setStaleList(prev => prev.filter(e => e.courseId !== entry.courseId))
+                                  } finally { setStaleDismissLoading(null) }
+                                }}
+                              >
+                                Dismiss
+                              </Button>
+                            </Space>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </>
+            ) : (
+              <Spin spinning={staleDiffLoading}>
+                <div style={{ marginBottom: 12, display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <Button size="small" onClick={() => { setStaleDiffCourseId(null); setStaleDiffData(null) }}>← Back</Button>
+                  <Typography.Text strong>course-{staleDiffCourseId}.json</Typography.Text>
+                  <Button
+                    size="small"
+                    loading={staleDismissLoading === staleDiffCourseId}
+                    onClick={async () => {
+                      if (!staleDiffCourseId) return
+                      setStaleDismissLoading(staleDiffCourseId)
+                      try {
+                        const r = await adminFetch(`/api/admin/stale-overrides/${encodeURIComponent(staleDiffCourseId)}/dismiss`, { method: 'POST' })
+                        if (r.ok) {
+                          setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId))
+                          setStaleDiffCourseId(null)
+                          setStaleDiffData(null)
+                        }
+                      } finally { setStaleDismissLoading(null) }
+                    }}
+                    style={{ marginLeft: 'auto' }}
+                  >
+                    Mark as Reviewed
+                  </Button>
+                </div>
+                {staleDiffData && (
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                    <div>
+                      <Typography.Text type="secondary" style={{ fontSize: 11, display: 'block', marginBottom: 4 }}>
+                        SOURCE (crawler) — updated {staleDiffData.srcMtime ? new Date(staleDiffData.srcMtime).toLocaleString() : '—'}
+                      </Typography.Text>
+                      <pre style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: 10, fontSize: 11, overflowY: 'auto', maxHeight: 460, margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
+                        {staleDiffData.source ? JSON.stringify(staleDiffData.source, null, 2) : '(not found)'}
+                      </pre>
+                    </div>
+                    <div>
+                      <Typography.Text type="secondary" style={{ fontSize: 11, display: 'block', marginBottom: 4 }}>
+                        OVERRIDE — saved {staleDiffData.ovMtime ? new Date(staleDiffData.ovMtime).toLocaleString() : '—'}
+                      </Typography.Text>
+                      <pre style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: 10, fontSize: 11, overflowY: 'auto', maxHeight: 460, margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
+                        {staleDiffData.override ? JSON.stringify(staleDiffData.override, null, 2) : '(not found)'}
+                      </pre>
+                    </div>
+                  </div>
+                )}
+              </Spin>
+            )}
+          </Spin>
+        </Modal>
 
         {/* New Event modal */}
         <Modal

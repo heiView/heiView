@@ -50,34 +50,6 @@ Due to incomplete and inconsistently formatted data in heiCO, over 700 out of th
 - Create Issues to report missing or incorrect information
 - Submit Pull Requests to update the file directly
 
-### heiCO Crawler
-
-
-The project relies on Python scripts in the `crawler/` directory to download course data from heiCO. Raw scraped results are saved as JSON files in the `data/2026SS/` directory.
-
-1. **Full Batch Crawl**: Run `python heico_crawler.py` to traverse and download all ~4,000 courses for the 2026 Summer Semester. This requires campus network or university VPN access, otherwise your access will be restricted very easily. And it takes considerable time.
-
-1. **Reverse Crawl Mode**: This mode starts from skip=4000, crawls forward until a page contains fewer than 100 courses, then goes back from skip=3900 in decrements to fill in earlier data. Usage:
-
-	```python
-	python heico_crawler.py --reverse
-	```
-
-1. **Small Test Crawl**: When developing features or fixing parsing bugs, use this to grab a limited number of courses for quick testing:
-
-	```python
-	python heico_crawler.py --limit-courses 10
-	```
-
-1. **Single Course Crawl**: Test precise parsing against a single course URL:
-
-	```python
-	python heico_crawler.py --course-url "<heiCO course URL>"
-	```
-
-1. **Incremental Updates**: Repeated runs only write files when course web page content changes, avoiding unnecessary disk I/O. Room details are fetched only when room information changes, reducing load on heiCO.
-
-
 ### Local Testing & Development
 
 **1. Install Dependencies**
@@ -85,7 +57,15 @@ The project relies on Python scripts in the `crawler/` directory to download cou
 npm install
 ```
 
-**2. Synchronize & Build Database**
+**2. Crawl Course Data**
+
+Run the crawler to fetch all courses for the semester (requires campus network or university VPN):
+```bash
+python crawler/heico_crawler.py
+```
+Repeated runs only write files when content changes. To update a single course, use `--course-url "<URL>"`.
+
+**3. Synchronize & Build Database**
 
 After the crawler generates new JSON files, run:
 ```bash
@@ -93,7 +73,7 @@ npm run db:sync
 ```
 Your newly scraped data will automatically sync to the backend database.
 
-**3. Configure Environment Variables**
+**4. Configure Environment Variables**
 
 Create a `.env` file in the project root before starting the backend:
 ```bash
@@ -106,19 +86,19 @@ PORT=3001                 # API server port (default: 3001)
 
 If `.env` is absent, the server falls back to the defaults shown above, which is fine for local development.
 
-**4. Start the Backend API Server**
+**5. Start the Backend API Server**
 ```bash
 npm run dev:api
 ```
 
-**5. Start the Frontend App**
+**6. Start the Frontend App**
 
 Keep the backend running. In a new terminal window:
 ```bash
 npm run dev
 ```
 
-**6. Access the Admin Page**
+**7. Access the Admin Page**
 
 Open `http://localhost:5173/admin` in your browser and log in with the superadmin credentials set in `.env` (defaults: `admin` / `changeme`).
 
@@ -169,33 +149,6 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 由于heiCO上的课程信息存在大量缺失和格式不规范等问题，2026夏季学期的4000+门课程里有超过700门没有可以直接下载的时间和地点信息，目前被放置在Other -> No Information中，还有部分信息不全的课程被放在Other里，都需要后续手动添加，欢迎感兴趣的同学邮件我(ht305)加入本项目一同编辑，也欢迎创建Issue提出反馈/建议或直接修改文件提交Pull Request。
 
-### 爬虫工具
-
-项目依赖 `crawler/` 目录下的 Python 脚本从heiCO下载课程数据。原始抓取的结果会以 JSON 文件的形式保存在 `data/2026SS/` 目录中。
-
-1. **全量爬取**：运行脚本 heico_crawler.py，程序将会遍历并下载全部2026年夏季学期课程，约4000条，此过程需要在校园网或大学VPN下进行，否则极容易被限制访问。
-
-1. **反向爬取**：该模式会先从 skip=4000 开始正向爬取，直到某一页课程数不足100，然后再从 skip=3900 逐步递减补全前面的数据。用法如下：
-
-	```python
-	python heico_crawler.py --reverse
-	```
-
-1. **少量测试**：在开发新功能或修复解析 BUG 时，可以使用以下命令爬取若干条课程信息进行小规模测试。
-	```python
-	python heico_crawler.py --limit-courses 10
-	```
-
-1. **单页爬取**：可使用以下命令爬取单一课程进行精准测试。
-
-	```python
-	python heico_crawler.py --course-url "<heiCO课程网址>"
-	```
-
-1. **增量爬取**：重复运行时，只在发现课程网页内容变化时才写入文件，避免无意义的写盘。检测到教室信息发生变化时才进一步爬取教室详情页，减少heiCO访问压力。
-
-
-
 ### 本地测试与开发
 
 **1. 安装依赖**
@@ -203,7 +156,15 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 npm install
 ```
 
-**2. 同步与构建数据库**
+**2. 爬取课程数据**
+
+运行爬虫获取本学期所有课程数据（需要在校园网或大学 VPN 环境下进行）：
+```bash
+python crawler/heico_crawler.py
+```
+重复运行时仅在内容发生变化时才写入文件（增量更新）。如需更新单门课程，可使用 `--course-url "<课程网址>"`。
+
+**3. 同步与构建数据库**
 
 在爬虫运行完毕并生成新的 JSON 文件后，请执行：
 
@@ -213,7 +174,7 @@ npm run db:sync
 
 新爬取的内容将自动同步至后端数据库。
 
-**3. 配置环境变量**
+**4. 配置环境变量**
 
 在项目根目录创建 `.env` 文件，然后再启动后端：
 ```bash
@@ -226,19 +187,19 @@ PORT=3001                 # API 服务端口（默认值：3001）
 
 若 `.env` 文件不存在，服务端会使用上述默认值，本地开发时无需额外配置。
 
-**4. 启动后端 API 服务**
+**5. 启动后端 API 服务**
 ```bash
 npm run dev:api
 ```
 
-**5. 启动前端应用**
+**6. 启动前端应用**
 
 保持后端终端运行，新开一个终端窗口执行：
 ```bash
 npm run dev
 ```
 
-**6. 访问管理页面**
+**7. 访问管理页面**
 
 在浏览器中打开 `http://localhost:5173/admin`，使用 `.env` 中设置的超级管理员账号登录（默认：`admin` / `changeme`）。
 

@@ -414,6 +414,68 @@ function createApp() {
     res.json({ ok: true, skip: list });
   });
 
+  // GET /api/admin/stale-overrides
+  // Returns override files whose source JSON in COURSE_DIR has been updated more recently.
+  app.get('/api/admin/stale-overrides', requireAdmin, (req, res) => {
+    try {
+      const stale = [];
+      let files;
+      try { files = fs.readdirSync(OVERRIDES_DIR); } catch (_) { files = []; }
+      for (const file of files) {
+        const m = file.match(/^course-(.+)\.json$/);
+        if (!m) continue;
+        const courseId = m[1];
+        const ovPath = path.join(OVERRIDES_DIR, file);
+        const srcPath = path.join(COURSE_DIR, file);
+        if (!fs.existsSync(srcPath)) continue;
+        const ovMtime = fs.statSync(ovPath).mtimeMs;
+        const srcMtime = fs.statSync(srcPath).mtimeMs;
+        if (srcMtime > ovMtime) {
+          stale.push({ courseId, srcMtime, ovMtime });
+        }
+      }
+      stale.sort((a, b) => b.srcMtime - a.srcMtime);
+      res.json(stale);
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // GET /api/admin/course-file-both/:courseId
+  // Returns both the source (COURSE_DIR) and override versions of a course file.
+  app.get('/api/admin/course-file-both/:courseId', requireAdmin, (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    const filename = `course-${courseId}.json`;
+    try {
+      const srcPath = path.join(COURSE_DIR, filename);
+      const ovPath = path.join(OVERRIDES_DIR, filename);
+      const source = fs.existsSync(srcPath) ? JSON.parse(fs.readFileSync(srcPath, 'utf8')) : null;
+      const override = fs.existsSync(ovPath) ? JSON.parse(fs.readFileSync(ovPath, 'utf8')) : null;
+      const srcMtime = fs.existsSync(srcPath) ? fs.statSync(srcPath).mtimeMs : null;
+      const ovMtime = fs.existsSync(ovPath) ? fs.statSync(ovPath).mtimeMs : null;
+      res.json({ source, override, srcMtime, ovMtime });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // POST /api/admin/stale-overrides/:courseId/dismiss
+  // Updates override file mtime to mark it as reviewed (touch the file).
+  app.post('/api/admin/stale-overrides/:courseId/dismiss', requireAdmin, (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    const ovPath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
+    if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
+    try {
+      const now = new Date();
+      fs.utimesSync(ovPath, now, now);
+      res.json({ ok: true });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
   app.get('/api/admin/course-file/:courseId', requireAdmin, (req, res) => {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
