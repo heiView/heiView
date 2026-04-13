@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+from datetime import datetime, timezone
 import json
 import re
 import sys
@@ -579,12 +580,14 @@ async def process_course_entry(
     if target_path.exists():
         try:
             existing_payload = json.loads(target_path.read_text(encoding='utf-8'))
-            if existing_payload == payload:
+            existing_for_cmp = {k: v for k, v in existing_payload.items() if k != 'last_updated'}
+            if existing_for_cmp == payload:
                 print(f'[{course_id}] unchanged {filename}, skipped write')
                 return course_id, filename, False
         except json.JSONDecodeError:
             pass
 
+    payload['last_updated'] = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     target_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f'[{course_id}] wrote {filename} with {len(weeks)} slot(s)')
     return course_id, filename, True

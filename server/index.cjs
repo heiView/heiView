@@ -136,6 +136,18 @@ function readSkipList() {
 function writeSkipList(list) {
   fs.writeFileSync(SKIP_LIST_PATH, JSON.stringify(list, null, 2), 'utf8');
 }
+
+function withLastUpdated(data) {
+  return { ...data, last_updated: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z') };
+}
+
+function getLastUpdatedMs(filePath) {
+  try {
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    if (data.last_updated) return new Date(data.last_updated).getTime();
+  } catch (_) {}
+  return fs.statSync(filePath).mtimeMs;
+}
 // ────────────────────────────────────────────────────────────────────────────
 
 function openDb() {
@@ -284,7 +296,7 @@ function createApp() {
           if (!snapshot.previousData) { res.status(400).json({ error: 'No previous data in snapshot' }); return; }
           const ovPath = path.join(OVERRIDES_DIR, `course-${snapshot.courseId}.json`);
           if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
-          fs.writeFileSync(ovPath, JSON.stringify(snapshot.previousData, null, 2), 'utf8');
+          fs.writeFileSync(ovPath, JSON.stringify(withLastUpdated(snapshot.previousData), null, 2), 'utf8');
           try { syncSingleCourse(snapshot.courseId); } catch (_) {} break;
         }
         case 'create_course': {
@@ -311,7 +323,7 @@ function createApp() {
             });
             const ovPath = path.join(OVERRIDES_DIR, `course-${cid}.json`);
             if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
-            fs.writeFileSync(ovPath, JSON.stringify({ ...data, weeks }, null, 2), 'utf8');
+            fs.writeFileSync(ovPath, JSON.stringify(withLastUpdated({ ...data, weeks }), null, 2), 'utf8');
             try { syncSingleCourse(cid); } catch (_) {}
           } break;
         }
@@ -428,8 +440,8 @@ function createApp() {
         const ovPath = path.join(OVERRIDES_DIR, file);
         const srcPath = path.join(COURSE_DIR, file);
         if (!fs.existsSync(srcPath)) continue;
-        const ovMtime = fs.statSync(ovPath).mtimeMs;
-        const srcMtime = fs.statSync(srcPath).mtimeMs;
+        const ovMtime = getLastUpdatedMs(ovPath);
+        const srcMtime = getLastUpdatedMs(srcPath);
         if (srcMtime > ovMtime) {
           stale.push({ courseId, srcMtime, ovMtime });
         }
@@ -452,8 +464,8 @@ function createApp() {
       const ovPath = path.join(OVERRIDES_DIR, filename);
       const source = fs.existsSync(srcPath) ? JSON.parse(fs.readFileSync(srcPath, 'utf8')) : null;
       const override = fs.existsSync(ovPath) ? JSON.parse(fs.readFileSync(ovPath, 'utf8')) : null;
-      const srcMtime = fs.existsSync(srcPath) ? fs.statSync(srcPath).mtimeMs : null;
-      const ovMtime = fs.existsSync(ovPath) ? fs.statSync(ovPath).mtimeMs : null;
+      const srcMtime = fs.existsSync(srcPath) ? getLastUpdatedMs(srcPath) : null;
+      const ovMtime = fs.existsSync(ovPath) ? getLastUpdatedMs(ovPath) : null;
       res.json({ source, override, srcMtime, ovMtime });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -468,8 +480,9 @@ function createApp() {
     const ovPath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
     if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
     try {
-      const now = new Date();
-      fs.utimesSync(ovPath, now, now);
+      const content = JSON.parse(fs.readFileSync(ovPath, 'utf8'));
+      content.last_updated = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+      fs.writeFileSync(ovPath, JSON.stringify(content, null, 2), 'utf8');
       res.json({ ok: true });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -508,7 +521,7 @@ function createApp() {
         if (fs.existsSync(prevPath)) previousData = JSON.parse(fs.readFileSync(prevPath, 'utf8'));
       } catch (_) {}
       if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
-      fs.writeFileSync(overridePath, JSON.stringify(req.body, null, 2), 'utf8');
+      fs.writeFileSync(overridePath, JSON.stringify(withLastUpdated(req.body), null, 2), 'utf8');
       try { syncSingleCourse(courseId); } catch (e) { console.error('[PUT course-file] SQLite sync failed:', e.message); }
       // Auto-upsert rooms into catalog so they appear on days with no courses
       try {
@@ -662,7 +675,7 @@ function createApp() {
       const overridePath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
       try {
         if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
-        fs.writeFileSync(overridePath, JSON.stringify({ ...data, weeks: newWeeks }, null, 2), 'utf8');
+        fs.writeFileSync(overridePath, JSON.stringify(withLastUpdated({ ...data, weeks: newWeeks }), null, 2), 'utf8');
         try { syncSingleCourse(courseId); } catch (e) { console.error(`[batch] sync failed for ${courseId}:`, e.message); }
         updatedCourseIds.push(courseId);
       } catch (e) { console.error(`[batch] write failed for ${courseId}:`, e.message); }
