@@ -79,10 +79,20 @@
       "room": "Unterrichtsraum (6227.02.402)",
       "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (6227.03.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14510",
+      "room": "Übungsraum (6227.03.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410211",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-13T09:58:22Z"
 }

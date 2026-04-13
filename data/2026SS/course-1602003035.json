@@ -53,6 +53,16 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: Bioquant, SR 042"
+    },
+    {
       "day_of_week": 2,
       "start_time": "10:00",
       "end_time": "16:00",
@@ -76,5 +86,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409425",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-13T10:04:38Z"
 }

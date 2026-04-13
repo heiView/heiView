@@ -69,7 +69,7 @@
       "location_link": null,
       "room": "AVP",
       "building": null,
-      "note": null
+      "note": "Selbststudium: Bitte die Folien in Moodle anschauen!"
     },
     {
       "day_of_week": 3,
@@ -109,11 +109,11 @@
       "location_link": null,
       "room": "AVP",
       "building": null,
-      "note": null
+      "note": "Selbststudium: Bitte die Folien in Moodle anschauen!"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402362",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-13T10:03:42Z"
 }
