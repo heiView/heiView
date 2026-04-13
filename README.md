@@ -156,13 +156,15 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 npm install
 ```
 
-**2. 爬取课程数据**
+**2.更新课程数据**
 
-运行爬虫获取本学期所有课程数据（需要在校园网或大学 VPN 环境下进行）：
+运行爬虫更新本学期所有课程数据（需要在校园网或大学 VPN 环境下进行）：
+
 ```bash
 python crawler/heico_crawler.py
 ```
-重复运行时仅在内容发生变化时才写入文件（增量更新）。如需更新单门课程，可使用 `--course-url "<课程网址>"`。
+
+仅在内容发生变化时才写入文件（增量更新）。如需更新单门课程，可使用 `--course-url "<课程网址>"`。
 
 **3. 同步与构建数据库**
 
