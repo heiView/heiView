@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "A102 - Konferenzraum (3010.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23229",
+      "room": "A102 - Konferenzraum (3010.01.102)",
+      "building": "Hauptstraße 47-51, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "A102 - Konferenzraum (3010.01.102)",
@@ -24,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/406434",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:45:23Z"
 }

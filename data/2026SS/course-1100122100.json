@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR 3 (6205.03.101)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR 3 (6205.03.101)",
@@ -34,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413816",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:53:01Z"
 }

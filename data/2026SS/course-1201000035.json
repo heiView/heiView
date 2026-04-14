@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "kHS (6252.EG.118)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Übungsraum (6270.EG.129)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Siehe Anmerkung",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Übungsraum (6270.EG.129)",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "kHS (6252.EG.118)",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Siehe Anmerkung",
@@ -73,6 +85,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "kHS (6252.EG.118)",
@@ -83,6 +97,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "HSW (6252.EG.122)",
@@ -90,10 +106,34 @@
       "room": "HSW (6252.EG.122)",
       "building": "HSW, Im Neuenheimer Feld 252, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 253 SR 211/211a"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 253 SR 211/211a"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412273",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:33:46Z"
 }

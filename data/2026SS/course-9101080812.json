@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
       "start_time": "13:30",
       "end_time": "14:15",
       "location": "Siehe Anmerkung",
@@ -23,6 +25,44 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-26",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 708 / 1. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 708 / 1. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 708 / 1. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-06-30",
       "start_time": "14:15",
       "end_time": "15:00",
       "location": "Siehe Anmerkung",
@@ -33,6 +73,68 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 718/719 / 3. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 718/719 / 3. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-02",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 718/719 / 3. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 718/719 / 3. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 718/719 / 3. Fall"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
       "start_time": "13:30",
       "end_time": "14:15",
       "location": "MED SR 708 (6410.EG.708)",
@@ -43,6 +145,32 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 708"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 708"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
       "start_time": "13:15",
       "end_time": "14:00",
       "location": "Siehe Anmerkung",
@@ -55,5 +183,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397330",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:08:42Z"
 }

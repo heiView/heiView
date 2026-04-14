@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-03-11",
+      "end_date": "2026-03-18",
       "start_time": "11:30",
       "end_time": "12:30",
       "location": "Siehe Anmerkung",
@@ -20,10 +22,106 @@
       "room": "NCT",
       "building": "Im Neuenheimer Feld 460, 2nd floor",
       "note": "Fakultatives Angebot/• NCT, 2. OG, Leitstelle D Gynäkologische Onkologie, INF 460"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-29",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "NCT",
+      "building": "Im Neuenheimer Feld 460, 2nd floor",
+      "note": "Fakultatives Angebot/• NCT, 2. OG, Leitstelle D Gynäkologische Onkologie, INF 460"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "NCT",
+      "building": "Im Neuenheimer Feld 460, 2nd floor",
+      "note": "Fakultatives Angebot/• NCT, 2. OG, Leitstelle D Gynäkologische Onkologie, INF 460"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "NCT",
+      "building": "Im Neuenheimer Feld 460, 2nd floor",
+      "note": "Fakultatives Angebot/• NCT, 2. OG, Leitstelle D Gynäkologische Onkologie, INF 460"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-08",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "NCT",
+      "building": "Im Neuenheimer Feld 460, 2nd floor",
+      "note": "Fakultatives Angebot/• NCT, 2. OG, Leitstelle D Gynäkologische Onkologie, INF 460"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-03-25",
+      "end_date": "2026-03-25",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Fakultatives Angebot / NCT 1. OG Leitstelle D"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Fakultatives Angebot / NCT 1. OG Leitstelle D"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Fakultatives Angebot / NCT 1. OG Leitstelle D"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Fakultatives Angebot / NCT 1. OG Leitstelle D"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392329",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:49Z"
+  "last_updated": "2026-04-14T21:31:19Z"
 }

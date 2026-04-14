@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
       "start_time": "18:00",
       "end_time": "19:00",
       "location": "Online",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "14:00",
       "end_time": "18:00",
       "location": "Seminarraum 700 (6700.EG.106)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-04-25",
+      "end_date": "2026-04-25",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Dreifachhalle 1 (6720.EG.001)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-04-25",
+      "end_date": "2026-04-25",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Seminarraum 700 (6700.EG.106)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-04-26",
+      "end_date": "2026-04-26",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Seminarraum 700 (6700.EG.106)",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-04-26",
+      "end_date": "2026-04-26",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Dreifachhalle 1 (6720.EG.001)",
@@ -74,5 +86,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414557",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:53:42Z"
 }

@@ -14,6 +14,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "15:15",
       "end_time": "18:15",
       "location": "GMMG-Studiensekretariat, Mannheimer Str.1, EG",
@@ -26,5 +28,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417754",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T10:13:12Z"
+  "last_updated": "2026-04-14T22:05:31Z"
 }

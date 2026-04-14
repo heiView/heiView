@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-02",
+      "end_date": "2026-03-02",
       "start_time": "08:45",
       "end_time": "09:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -23,6 +25,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
+      "start_time": "08:45",
+      "end_time": "09:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-03-02",
+      "end_date": "2026-03-02",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -33,6 +49,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-03-02",
+      "end_date": "2026-03-02",
       "start_time": "11:00",
       "end_time": "12:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -43,6 +73,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-03",
+      "end_date": "2026-03-10",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -53,6 +85,32 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-21",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-03",
+      "end_date": "2026-03-10",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-21",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -63,6 +121,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-04",
+      "end_date": "2026-03-11",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -73,6 +133,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-04-22",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-03-04",
+      "end_date": "2026-03-11",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-04-22",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -83,6 +169,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-05",
+      "end_date": "2026-03-12",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -93,6 +181,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-03-05",
+      "end_date": "2026-03-12",
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -103,6 +217,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-06",
+      "end_date": "2026-03-13",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -113,6 +229,32 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-03-06",
+      "end_date": "2026-03-13",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -123,6 +265,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-09",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -133,6 +277,32 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-09",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -143,6 +313,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-12",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "11:30",
       "end_time": "12:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -153,6 +337,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-13",
+      "end_date": "2026-03-13",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "location_link": null,
+      "room": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "12:00",
       "end_time": "13:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -163,6 +361,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "11:00",
       "end_time": "12:45",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -173,6 +373,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -183,6 +385,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -193,6 +397,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-17",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -203,6 +409,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-17",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Gebäude 4040 (Voßstraße 2, Heidelberg/Bergheim)",
@@ -215,5 +423,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/394810",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:56:57Z"
 }

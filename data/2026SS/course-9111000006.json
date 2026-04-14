@@ -12,6 +12,44 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-16",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Intensiv-2, Ebene 99",
+      "location_link": null,
+      "room": "INF 400 - Intensiv-2, Ebene 99",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Intensiv-2, Ebene 99",
+      "location_link": null,
+      "room": "INF 400 - Intensiv-2, Ebene 99",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-08",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Intensiv-2, Ebene 99",
+      "location_link": null,
+      "room": "INF 400 - Intensiv-2, Ebene 99",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
       "start_time": "15:00",
       "end_time": "16:00",
       "location": "INF 400 - Intensiv-2, Ebene 99",
@@ -22,6 +60,44 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
+      "start_time": "09:30",
+      "end_time": "12:00",
+      "location": "INF 400 - Schlaganfallstation, E00",
+      "location_link": null,
+      "room": "INF 400 - Schlaganfallstation, E00",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "09:30",
+      "end_time": "12:00",
+      "location": "INF 400 - Schlaganfallstation, E00",
+      "location_link": null,
+      "room": "INF 400 - Schlaganfallstation, E00",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "09:30",
+      "end_time": "12:00",
+      "location": "INF 400 - Schlaganfallstation, E00",
+      "location_link": null,
+      "room": "INF 400 - Schlaganfallstation, E00",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "09:30",
       "end_time": "12:00",
       "location": "INF 400 - Schlaganfallstation, E00",
@@ -32,6 +108,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-18",
+      "end_date": "2026-03-18",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -42,6 +120,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "INF 400 - Neuroambulanz, 1. OG",
@@ -49,10 +129,58 @@
       "room": "INF 400 - Neuroambulanz, 1. OG",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "INF 400 - Neuroambulanz, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - Neuroambulanz, 1. OG",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle; Ort: Marsilius-Arkaden, Foyer im 1. OG, Turm Süd, INF 130.2 (vor K13); Mindestteilnehmerzahl:"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-07-08",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung per Mail an: HeiCuMed.NEU@med.uni-heidelberg.de; Ort: Marsilius-Arkaden, Foyer im 1. OG; Turm"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393571",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:55:28Z"
 }

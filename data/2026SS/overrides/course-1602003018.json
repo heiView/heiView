@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-06",
       "start_time": "08:30",
       "end_time": "12:00",
       "location": "SR 1 (6327.EG.001)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "Siehe Anmerkung",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "Siehe Anmerkung",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "Siehe Anmerkung",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "09:00",
       "end_time": "12:30",
       "location": "Siehe Anmerkung",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "HS 2 (6306.EG.021)",
@@ -74,5 +86,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409448",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:49Z"
+  "last_updated": "2026-04-14T21:56:28Z"
 }

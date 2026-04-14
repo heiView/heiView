@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-08-19",
+      "end_date": "2026-08-19",
+      "start_time": "12:00",
+      "end_time": "18:30",
+      "location": "Seminarraum 014 (4140.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18834",
+      "room": "Seminarraum 014 (4140.EG.014)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-09-02",
+      "end_date": "2026-09-02",
       "start_time": "12:00",
       "end_time": "18:30",
       "location": "Seminarraum 014 (4140.EG.014)",
@@ -22,6 +36,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-08-20",
+      "end_date": "2026-08-20",
       "start_time": "09:00",
       "end_time": "15:30",
       "location": "Seminarraum 014 (4140.EG.014)",
@@ -34,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416555",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:45:19Z"
 }

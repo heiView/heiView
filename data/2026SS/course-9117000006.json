@@ -34,6 +34,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-16",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7a (6325.01.112A)",
@@ -44,6 +46,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-16",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7a (6325.01.112A)",
@@ -54,6 +58,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-16",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7a (6325.01.112A)",
@@ -64,6 +70,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7a (6325.01.112A)",
@@ -74,6 +82,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7a (6325.01.112A)",
@@ -84,6 +94,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "Selbststudium",
@@ -94,6 +106,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-18",
+      "end_date": "2026-03-18",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7a (6325.01.112A)",
@@ -104,6 +118,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-18",
+      "end_date": "2026-03-18",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7a (6325.01.112A)",
@@ -114,6 +130,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-18",
+      "end_date": "2026-03-18",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7a (6325.01.112A)",
@@ -124,6 +142,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7a (6325.01.112A)",
@@ -134,6 +154,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7a (6325.01.112A)",
@@ -144,6 +166,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7a (6325.01.112A)",
@@ -154,6 +178,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7a (6325.01.112A)",
@@ -164,6 +190,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7a (6325.01.112A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10667",
+      "room": "SR 7a (6325.01.112A)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7a (6325.01.112A)",
@@ -174,6 +214,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-23",
+      "end_date": "2026-03-23",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 13 (6306.EG.013)",
@@ -184,6 +226,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-23",
+      "end_date": "2026-03-23",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 13 (6306.EG.013)",
@@ -194,6 +238,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-23",
+      "end_date": "2026-03-23",
       "start_time": "13:30",
       "end_time": "15:00",
       "location": "SR 13 (6306.EG.013)",
@@ -204,6 +250,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-24",
+      "end_date": "2026-03-24",
       "start_time": "08:30",
       "end_time": "10:15",
       "location": "SR 13 (6306.EG.013)",
@@ -214,6 +262,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-24",
+      "end_date": "2026-03-24",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 13 (6306.EG.013)",
@@ -224,6 +274,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-24",
+      "end_date": "2026-03-24",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 13 (6306.EG.013)",
@@ -234,6 +286,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-24",
+      "end_date": "2026-03-24",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "SR 13 (6306.EG.013)",
@@ -244,6 +298,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-25",
+      "end_date": "2026-03-25",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 13 (6306.EG.013)",
@@ -254,6 +310,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-25",
+      "end_date": "2026-03-25",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 13 (6306.EG.013)",
@@ -264,6 +322,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-25",
+      "end_date": "2026-03-25",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 13 (6306.EG.013)",
@@ -274,6 +334,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-26",
+      "end_date": "2026-03-26",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 13 (6306.EG.013)",
@@ -284,6 +346,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-26",
+      "end_date": "2026-03-26",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 13 (6306.EG.013)",
@@ -294,6 +358,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-27",
+      "end_date": "2026-03-27",
       "start_time": "10:00",
       "end_time": "11:00",
       "location": "KOPF ZAHN HS (6400.02.120)",
@@ -304,6 +370,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-04",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7 (6325.01.112)",
@@ -314,6 +382,32 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-13",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-04",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7 (6325.01.112)",
@@ -324,6 +418,32 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-13",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-04",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7 (6325.01.112)",
@@ -334,6 +454,44 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-13",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-04",
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "SR 7 (6325.01.112)",
@@ -344,6 +502,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7 (6325.01.112)",
@@ -354,6 +514,32 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-05-05",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7 (6325.01.112)",
@@ -364,6 +550,44 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-16",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-14",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": "Bitte vor dem Impfseminar bearbeiten"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7 (6325.01.112)",
@@ -374,6 +598,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-06",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7 (6325.01.112)",
@@ -384,6 +610,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-06",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7 (6325.01.112)",
@@ -394,6 +646,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-06",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7 (6325.01.112)",
@@ -404,6 +682,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "SR 7 (6325.01.112)",
@@ -414,6 +718,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7 (6325.01.112)",
@@ -424,6 +730,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-18",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-16",
+      "start_time": "08:45",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7 (6325.01.112)",
@@ -434,6 +766,56 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-18",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-16",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7 (6325.01.112)",
@@ -444,6 +826,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
       "start_time": "08:30",
       "end_time": "10:15",
       "location": "SR 7 (6325.01.112)",
@@ -453,7 +837,81 @@
       "note": null
     },
     {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "08:30",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
+      "start_time": "08:30",
+      "end_time": "10:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-16",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "SR 7 (6325.01.112)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
+      "room": "SR 7 (6325.01.112)",
+      "building": "Im Neuenheimer Feld 325, 1st floor",
+      "note": null
+    },
+    {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Die Prüfung findet in der Chirugie Lehrtrakt Hörsaal INF 420 statt."
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
       "start_time": "10:00",
       "end_time": "11:00",
       "location": "Siehe Anmerkung",
@@ -464,6 +922,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-08",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "Selbststudium",
@@ -474,6 +934,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "SR 7 (6325.01.112)",
@@ -484,6 +946,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
       "start_time": "10:00",
       "end_time": "11:00",
       "location": "KOPF gHS (6400.EG.266)",
@@ -494,6 +958,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "08:45",
       "end_time": "10:15",
       "location": "SR 7 (6325.01.112)",
@@ -504,6 +970,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "SR 7 (6325.01.112)",
@@ -516,5 +984,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409359",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:56:03Z"
 }

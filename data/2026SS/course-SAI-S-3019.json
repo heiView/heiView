@@ -12,6 +12,32 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-30",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -22,6 +48,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
       "start_time": "14:00",
       "end_time": "20:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -32,6 +60,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-20",
+      "end_date": "2026-06-20",
       "start_time": "10:00",
       "end_time": "20:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -42,6 +72,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-21",
       "start_time": "10:00",
       "end_time": "20:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -54,5 +86,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416536",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T15:03:48Z"
+  "last_updated": "2026-04-14T20:37:44Z"
 }

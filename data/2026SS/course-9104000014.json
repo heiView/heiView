@@ -12,6 +12,44 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-02",
+      "end_date": "2026-03-09",
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-20",
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-18",
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-29",
       "start_time": "11:45",
       "end_time": "14:00",
       "location": "Siehe Anmerkung",
@@ -22,6 +60,44 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-03",
+      "end_date": "2026-03-10",
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-21",
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-19",
+      "start_time": "11:45",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist die OP Schleuse im 1 Untergeschoss der UFK"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-30",
       "start_time": "11:45",
       "end_time": "14:00",
       "location": "Siehe Anmerkung",
@@ -34,5 +110,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392333",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:56:45Z"
 }

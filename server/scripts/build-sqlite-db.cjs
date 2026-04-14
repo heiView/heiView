@@ -332,7 +332,9 @@ function main() {
       const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
       for (const week of weeks) {
         const dayOfWeek = Number.parseInt(String(week.day_of_week || ''), 10);
-        const meetingDates = collectMeetingDates(payload.start_date, payload.end_date, dayOfWeek);
+        const slotStart = week.start_date || payload.start_date;
+        const slotEnd = week.end_date || payload.end_date;
+        const meetingDates = collectMeetingDates(slotStart, slotEnd, dayOfWeek);
         const rawRoom = (week.room || week.location || '').trim() || null;
         let split = splitBuildingAndFloor(week.building || null);
         let currentRoom = rawRoom;
@@ -511,7 +513,9 @@ function syncSingleCourse(courseId) {
     const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
     for (const week of weeks) {
       const dayOfWeek = Number.parseInt(String(week.day_of_week || ''), 10);
-      const meetingDates = collectMeetingDates(payload.start_date, payload.end_date, dayOfWeek);
+      const slotStart = week.start_date || payload.start_date;
+      const slotEnd = week.end_date || payload.end_date;
+      const meetingDates = collectMeetingDates(slotStart, slotEnd, dayOfWeek);
       const rawRoom = week.room || week.location || null;
       let split = splitBuildingAndFloor(week.building || null);
       let currentRoom = rawRoom;

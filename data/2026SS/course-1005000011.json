@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Gymnastikhalle 700 (6700.EG.070)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Gymnastikhalle 700 (6700.EG.070)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "10:00",
       "end_time": "14:00",
       "location": "Gymnastikhalle 700 (6700.EG.070)",
@@ -43,6 +49,44 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "13:00",
       "end_time": "16:00",
       "location": "Gymnastikhalle 700 (6700.EG.070)",
@@ -53,6 +97,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-23",
+      "end_date": "2026-05-23",
       "start_time": "12:00",
       "end_time": "16:00",
       "location": "Gymnastikhalle 700 (6700.EG.070)",
@@ -60,10 +106,70 @@
       "room": "Gymnastikhalle 700 (6700.EG.070)",
       "building": "Im Neuenheimer Feld 700, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-06-06",
+      "end_date": "2026-06-06",
+      "start_time": "12:00",
+      "end_time": "16:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
+      "start_time": "12:00",
+      "end_time": "16:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-11",
+      "start_time": "12:00",
+      "end_time": "16:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": "Reservertermin"
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-07-25",
+      "end_date": "2026-07-25",
+      "start_time": "12:00",
+      "end_time": "16:00",
+      "location": "Gymnastikhalle 700 (6700.EG.070)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
+      "room": "Gymnastikhalle 700 (6700.EG.070)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": "Reservertermin"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414610",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:36:25Z"
 }

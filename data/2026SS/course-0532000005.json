@@ -14,46 +14,8 @@
   "weeks": [
     {
       "day_of_week": 1,
-      "start_time": "08:15",
-      "end_time": "09:45",
-      "location": "HS 1 (6306.EG.020)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
-      "room": "HS 1 (6306.EG.020)",
-      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 2,
-      "start_time": "08:15",
-      "end_time": "09:45",
-      "location": "HS 1 (6306.EG.020)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
-      "room": "HS 1 (6306.EG.020)",
-      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_time": "08:15",
-      "end_time": "09:45",
-      "location": "HS 1 (6306.EG.020)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
-      "room": "HS 1 (6306.EG.020)",
-      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_time": "08:15",
-      "end_time": "09:45",
-      "location": "HS 1 (6306.EG.020)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
-      "room": "HS 1 (6306.EG.020)",
-      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
+      "start_date": "2026-03-30",
+      "end_date": "2026-03-30",
       "start_time": "08:15",
       "end_time": "09:45",
       "location": "HS 1 (6306.EG.020)",
@@ -64,6 +26,104 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-18",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-31",
+      "end_date": "2026-04-07",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-19",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-08",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-20",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-04-09",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-10",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-05-04",
       "start_time": "07:30",
       "end_time": "09:00",
       "location": "HS 1 (6306.EG.020)",
@@ -74,6 +134,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-05-05",
       "start_time": "07:30",
       "end_time": "09:00",
       "location": "HS 1 (6306.EG.020)",
@@ -84,6 +146,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-05-06",
       "start_time": "07:30",
       "end_time": "09:00",
       "location": "HS 1 (6306.EG.020)",
@@ -94,6 +158,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-05-07",
       "start_time": "07:30",
       "end_time": "09:00",
       "location": "HS 1 (6306.EG.020)",
@@ -104,6 +170,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-24",
+      "start_time": "07:30",
+      "end_time": "09:00",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
       "start_time": "07:30",
       "end_time": "09:00",
       "location": "HS 1 (6306.EG.020)",
@@ -116,5 +196,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/386028",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:10Z"
 }

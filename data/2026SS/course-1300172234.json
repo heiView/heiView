@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
@@ -44,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412684",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:11:43Z"
+  "last_updated": "2026-04-14T15:54:36Z"
 }

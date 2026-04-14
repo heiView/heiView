@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-16",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-13",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "Übungsraum (8010.EG.056)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-16",
       "start_time": "16:00",
       "end_time": "17:30",
       "location": "Übungsraum (8010.EG.056)",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-16",
       "start_time": "16:00",
       "end_time": "17:30",
       "location": "Übungsraum (8010.EG.058)",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-16",
       "start_time": "16:00",
       "end_time": "17:30",
       "location": "Übungsraum (8010.EG.068)",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-13",
       "start_time": "16:00",
       "end_time": "17:30",
       "location": "Übungsraum (8010.EG.056)",
@@ -73,6 +85,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-13",
       "start_time": "16:00",
       "end_time": "17:30",
       "location": "Übungsraum (8010.EG.058)",
@@ -83,6 +97,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-17",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "Übungsraum (8010.EG.058)",
@@ -95,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410273",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:02:37Z"
 }

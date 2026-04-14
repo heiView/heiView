@@ -9,11 +9,25 @@
     "Eitel, Bernhard",
     "Hecht, Stefan"
   ],
-  "start_date": "2026-06-01",
-  "end_date": "2026-06-05",
+  "start_date": "2026-05-19",
+  "end_date": "2026-06-03",
   "weeks": [
     {
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (6348.01.132)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19340",
+      "room": "Übungsraum (6348.01.132)",
+      "building": "Im Neuenheimer Feld 348, 1st floor",
+      "note": "Vorbesprechung"
+    },
+    {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-03",
       "start_time": "08:00",
       "end_time": "18:00",
       "location": "Externer Ort",
@@ -26,5 +40,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413705",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:09:04Z"
 }

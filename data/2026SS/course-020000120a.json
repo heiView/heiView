@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
       "start_time": "19:00",
       "end_time": "21:45",
       "location": "Seminarraum 2 / Akademiestrasse 4",
@@ -22,6 +24,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
+      "start_time": "19:00",
+      "end_time": "21:45",
+      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
       "start_time": "19:00",
       "end_time": "21:45",
       "location": "HS 04a (2170.EG.044)",
@@ -32,6 +48,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
       "start_time": "19:00",
       "end_time": "21:45",
       "location": "HS 07 (2170.01.037)",
@@ -42,6 +60,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
       "start_time": "19:00",
       "end_time": "21:45",
       "location": "HS 02 (2170.EG.049)",
@@ -52,6 +72,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
       "start_time": "19:00",
       "end_time": "21:45",
       "location": "HS 06 (2170.01.036)",
@@ -62,6 +84,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
       "start_time": "19:00",
       "end_time": "21:45",
       "location": "Seminarraum 1 / Akademiestrasse 4",
@@ -74,5 +98,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417817",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:46:20Z"
 }

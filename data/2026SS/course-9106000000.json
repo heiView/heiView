@@ -12,16 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
-      "start_time": "09:00",
-      "end_time": "10:30",
-      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
-      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
-      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
+      "start_date": "2026-03-02",
+      "end_date": "2026-03-02",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -32,6 +24,80 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-16",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-20",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-03-06",
+      "end_date": "2026-03-06",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-17",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-09",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-03-23",
+      "end_date": "2026-03-23",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-04",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -42,6 +108,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-10",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -52,6 +120,20 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-10",
       "start_time": "10:30",
       "end_time": "11:15",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -62,6 +144,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-11",
+      "end_date": "2026-03-11",
       "start_time": "09:15",
       "end_time": "10:00",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -72,6 +156,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-12",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Seminarraum 118 (4250.EG.118)",
@@ -82,6 +168,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-13",
+      "end_date": "2026-03-13",
       "start_time": "09:15",
       "end_time": "09:45",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -92,6 +180,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-13",
+      "end_date": "2026-03-13",
+      "start_time": "09:45",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "09:45",
       "end_time": "10:30",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -102,6 +204,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
       "start_time": "09:30",
       "end_time": "10:30",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -112,6 +216,20 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -122,6 +240,32 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
+      "start_time": "12:15",
+      "end_time": "13:00",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
       "start_time": "12:15",
       "end_time": "13:00",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -132,6 +276,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
       "start_time": "09:00",
       "end_time": "09:45",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -142,6 +288,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
+      "start_time": "09:00",
+      "end_time": "09:45",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
+      "start_time": "09:45",
+      "end_time": "10:30",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
       "start_time": "09:45",
       "end_time": "10:30",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -152,6 +324,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -162,6 +336,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-25",
+      "end_date": "2026-03-25",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30804",
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Hörsaal PSIA Haus 1, Voßstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -172,6 +360,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-27",
+      "end_date": "2026-03-27",
       "start_time": "09:30",
       "end_time": "11:30",
       "location": "Siehe Anmerkung",
@@ -182,6 +372,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-27",
+      "end_date": "2026-03-27",
+      "start_time": "14:00",
+      "end_time": "18:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 105 - Altes Casino - 2. OG"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
       "start_time": "14:00",
       "end_time": "18:30",
       "location": "Siehe Anmerkung",
@@ -192,6 +396,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
       "start_time": "09:00",
       "end_time": "10:30",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -202,6 +408,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "10:30",
       "end_time": "11:30",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -212,6 +420,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-22",
       "start_time": "09:15",
       "end_time": "10:15",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -222,6 +432,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -232,6 +444,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "09:00",
       "end_time": "09:45",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -242,6 +456,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
       "start_time": "08:15",
       "end_time": "10:30",
       "location": "Siehe Anmerkung",
@@ -254,5 +470,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379492",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:56:03Z"
 }

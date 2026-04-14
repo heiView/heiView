@@ -13,6 +13,56 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Übungsraum (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-04",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Übungsraum (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Übungsraum (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-15",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Übungsraum (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Übungsraum (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-29",
+      "end_date": "2026-06-29",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "Übungsraum (6307.01.126)",
@@ -23,6 +73,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "AVP",
@@ -33,6 +85,56 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "HEIN VR Briefing (5410.02.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30200",
+      "room": "HEIN VR Briefing (5410.02.021)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "HEIN VR Briefing (5410.02.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30200",
+      "room": "HEIN VR Briefing (5410.02.021)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "HEIN VR Briefing (5410.02.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30200",
+      "room": "HEIN VR Briefing (5410.02.021)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-18",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "HEIN VR Briefing (5410.02.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30200",
+      "room": "HEIN VR Briefing (5410.02.021)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-02",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "HEIN VR Briefing (5410.02.021)",
@@ -43,6 +145,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
       "start_time": "12:00",
       "end_time": "13:30",
       "location": "Übungsraum (6307.01.126)",
@@ -53,6 +157,56 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-08",
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "Übungsraum (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Übungsraum (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "Übungsraum (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Übungsraum (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "Übungsraum (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Übungsraum (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "AVP",
+      "location_link": null,
+      "room": "AVP",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
       "start_time": "12:00",
       "end_time": "13:30",
       "location": "Unterrichtsraum (6307.01.120C)",
@@ -63,6 +217,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "Selbststudium",
@@ -70,10 +226,34 @@
       "room": "Selbststudium",
       "building": null,
       "note": "AVP: Bitte zur Vorbereitung die Folien in Moodle beachten!"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "start_time": "16:00",
+      "end_time": "19:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Selbststudium: Bitte zur Vorbereitung Folien in moodle beachten!"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402275",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:55:08Z"
 }

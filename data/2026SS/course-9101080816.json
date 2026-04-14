@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-05-05",
       "start_time": "13:30",
       "end_time": "15:00",
       "location": "MED SR 725 (6410.EG.725)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
       "start_time": "13:30",
       "end_time": "15:00",
       "location": "Siehe Anmerkung",
@@ -30,10 +34,34 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": "729"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-06-30",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 729"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-05-05",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 725"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397331",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:08:43Z"
 }

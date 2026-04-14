@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-14",
       "start_time": "15:15",
       "end_time": "16:00",
       "location": "Seminarraum K12 (6130.01.012)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-14",
       "start_time": "16:15",
       "end_time": "18:30",
       "location": "Seminarraum K12 (6130.01.012)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "15:00",
       "end_time": "16:30",
       "location": "Seminarraum K18 (6130.01.018)",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
       "start_time": "15:15",
       "end_time": "16:45",
       "location": "Seminarraum K12 (6130.01.012)",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
       "start_time": "15:15",
       "end_time": "16:45",
       "location": "Seminarraum K13 (6130.01.013)",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
       "start_time": "17:00",
       "end_time": "18:30",
       "location": "Seminarraum K13 (6130.01.013)",
@@ -73,6 +85,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
       "start_time": "15:15",
       "end_time": "17:30",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -83,6 +97,20 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "15:15",
+      "end_time": "17:30",
+      "location": "Seminarraum K15 (6130.01.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30620",
+      "room": "Seminarraum K15 (6130.01.015)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
       "start_time": "15:45",
       "end_time": "17:15",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -93,6 +121,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
       "start_time": "15:15",
       "end_time": "16:45",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -103,6 +133,20 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "start_time": "15:15",
+      "end_time": "16:45",
+      "location": "Seminarraum K15 (6130.01.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30620",
+      "room": "Seminarraum K15 (6130.01.015)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
       "start_time": "17:15",
       "end_time": "18:45",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -113,6 +157,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
       "start_time": "17:00",
       "end_time": "18:30",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -125,5 +171,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400444",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:23:06Z"
 }

@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-13",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Besprechungsraum 130.00.02 (4130.EG.002)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-15",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Hörsaal 010.01.05 (4010+4.01.005)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-16",
+      "end_date": "2026-05-16",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "Hörsaal 010.01.05 (4010+4.01.005)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-28",
+      "end_date": "2026-05-28",
       "start_time": "13:15",
       "end_time": "18:45",
       "location": "Hörsaal 010.01.05 (4010+4.01.005)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "Hörsaal 010.01.05 (4010+4.01.005)",
@@ -64,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418165",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:49:48Z"
+  "last_updated": "2026-04-14T20:31:29Z"
 }

@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-06-10",
+      "start_time": "13:30",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "20:15",
       "location": "Ort noch nicht bekannt",
@@ -22,6 +36,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-06",
       "start_time": "13:30",
       "end_time": "20:15",
       "location": "Ort noch nicht bekannt",
@@ -32,6 +48,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-29",
+      "start_time": "13:30",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "20:15",
       "location": "Ort noch nicht bekannt",
@@ -42,6 +72,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
+      "start_time": "13:30",
+      "end_time": "20:15",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "20:15",
       "location": "Ort noch nicht bekannt",
@@ -54,5 +98,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398528",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:06Z"
 }

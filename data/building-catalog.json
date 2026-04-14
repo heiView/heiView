@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-13T11:56:30.718Z",
+  "updatedAt": "2026-04-14T22:07:48.445Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -1384,6 +1384,18 @@
           "id": "bld-hauptstrasse-52::rm-002",
           "name": "002",
           "displayName": "",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-hauptstrasse-52::rm-205",
+          "name": "205",
           "floors": [
             "Unknown floor"
           ],
@@ -5642,6 +5654,18 @@
           "floors": [],
           "features": {},
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-700::rm-issw-bootshaus",
+          "name": "ISSW Bootshaus",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8719,6 +8743,40 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-landfriedstrasse-12::rm-seminarraum-3",
+          "name": "Seminarraum 3",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-landfriedstrasse-12::rm-seminarraum-2",
+          "name": "Seminarraum 2",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-landfriedstrasse-12::rm-bet-midrasch-n2-05",
+          "name": "Bet Midrasch, N2.05",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8775,6 +8833,18 @@
           "displayName": "",
           "floors": [
             "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-marstallstrasse-6-hcch::rm-hoersaal-413-hs-413",
+          "name": "Hörsaal 413 (HS 413)",
+          "floors": [
+            "4th floor"
           ],
           "features": {
             "hasAirConditioning": null,

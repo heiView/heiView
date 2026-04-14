@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-06-05",
       "start_time": "09:15",
       "end_time": "12:45",
       "location": "Siehe Anmerkung",
@@ -19,10 +21,34 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "09:15",
+      "end_time": "12:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Seminarraum des Musikwissenschaftlichen Seminars"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
+      "start_time": "09:15",
+      "end_time": "12:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Seminarraum des Musikwissenschaftlichen Seminars"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413459",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:54:05Z"
 }

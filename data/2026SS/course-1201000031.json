@@ -13,6 +13,20 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-05-18",
+      "start_time": "08:15",
+      "end_time": "09:00",
+      "location": "gHS (6252.EG.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7143",
+      "room": "gHS (6252.EG.110)",
+      "building": "gHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": "Mittwochs findet Übung statt."
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-20",
       "start_time": "08:15",
       "end_time": "09:00",
       "location": "gHS (6252.EG.110)",
@@ -23,6 +37,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "08:15",
       "end_time": "09:00",
       "location": "gHS (6252.EG.110)",
@@ -33,6 +49,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "08:15",
       "end_time": "09:00",
       "location": "gHS (6252.EG.110)",
@@ -43,6 +61,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-05-07",
+      "start_time": "08:15",
+      "end_time": "09:00",
+      "location": "gHS (6252.EG.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7143",
+      "room": "gHS (6252.EG.110)",
+      "building": "gHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": "Mittwochs findet Übung statt."
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
+      "start_time": "08:15",
+      "end_time": "09:00",
+      "location": "gHS (6252.EG.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7143",
+      "room": "gHS (6252.EG.110)",
+      "building": "gHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": "Mittwochs findet Übung statt."
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-07-23",
       "start_time": "08:15",
       "end_time": "09:00",
       "location": "gHS (6252.EG.110)",
@@ -53,6 +97,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-24",
+      "start_time": "08:15",
+      "end_time": "09:00",
+      "location": "gHS (6252.EG.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7143",
+      "room": "gHS (6252.EG.110)",
+      "building": "gHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": "Mittwochs findet Übung statt."
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-07-24",
       "start_time": "08:15",
       "end_time": "09:00",
       "location": "gHS (6252.EG.110)",
@@ -65,5 +123,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411996",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:11:01Z"
 }

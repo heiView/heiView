@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "ÜR B (3010.EG.019)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "A102 - Konferenzraum (3010.01.102)",
@@ -32,6 +36,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "A102 - Konferenzraum (3010.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23229",
+      "room": "A102 - Konferenzraum (3010.01.102)",
+      "building": "Hauptstraße 47-51, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "ÜR B (3010.EG.019)",
@@ -42,6 +60,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "ÜR B (3010.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23099",
+      "room": "ÜR B (3010.EG.019)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "UR C (3010.EG.020)",
@@ -52,6 +84,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "UR C (3010.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23100",
+      "room": "UR C (3010.EG.020)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "ÜR E 3010 EG 022 (3010.EG.023)",
@@ -62,6 +108,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "ÜR E 3010 EG 022 (3010.EG.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23102",
+      "room": "ÜR E 3010 EG 022 (3010.EG.023)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "ÜR D (3010.EG.021)",
@@ -72,6 +132,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
       "start_time": "13:00",
       "end_time": "19:00",
       "location": "UR C (3010.EG.020)",
@@ -82,6 +144,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
       "start_time": "13:00",
       "end_time": "19:00",
       "location": "ÜR D (3010.EG.021)",
@@ -92,6 +156,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
       "start_time": "13:00",
       "end_time": "19:00",
       "location": "ÜR E 3010 EG 022 (3010.EG.023)",
@@ -102,6 +168,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
       "start_time": "13:00",
       "end_time": "19:00",
       "location": "ÜR B (3010.EG.019)",
@@ -112,6 +180,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
       "start_time": "13:00",
       "end_time": "19:00",
       "location": "A102 - Konferenzraum (3010.01.102)",
@@ -122,6 +192,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "A102 - Konferenzraum (3010.01.102)",
@@ -132,6 +204,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "ÜR B (3010.EG.019)",
@@ -142,6 +216,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "UR C (3010.EG.020)",
@@ -152,6 +228,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "ÜR D (3010.EG.021)",
@@ -162,6 +240,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "ÜR E 3010 EG 022 (3010.EG.023)",
@@ -174,5 +254,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404041",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:11:18Z"
+  "last_updated": "2026-04-14T19:51:53Z"
 }

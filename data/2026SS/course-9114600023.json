@@ -13,6 +13,44 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "12:45",
+      "end_time": "13:30",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "12:45",
+      "end_time": "13:30",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
+      "start_time": "12:45",
+      "end_time": "13:30",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "12:45",
       "end_time": "13:30",
       "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
@@ -23,6 +61,44 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
+      "start_time": "11:45",
+      "end_time": "12:45",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "11:45",
+      "end_time": "12:45",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "11:45",
+      "end_time": "12:45",
+      "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30588",
+      "room": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
+      "building": "Schlierbacher Landstraße 200A, Ground floor",
+      "note": "obligat"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
       "start_time": "11:45",
       "end_time": "12:45",
       "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
@@ -33,6 +109,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
       "start_time": "11:45",
       "end_time": "12:30",
       "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
@@ -43,6 +121,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
       "start_time": "11:30",
       "end_time": "12:30",
       "location": "SCHLIERBACH Heicumed 2 (9005.EG.025)",
@@ -55,5 +135,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402346",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:55:16Z"
 }

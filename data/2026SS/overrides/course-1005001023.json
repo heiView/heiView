@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-14",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "Hörsaal 700 (6700.EG.012)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "ISSW Bootshaus",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-18",
       "start_time": "16:00",
       "end_time": "17:45",
       "location": "Schwimmhalle (6700.EG.085)",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-05",
       "start_time": "07:00",
       "end_time": "22:00",
       "location": "Siehe Anmerkung",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-09",
+      "end_date": "2026-05-09",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "ISSW Bootshaus",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-05-10",
+      "end_date": "2026-05-10",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "ISSW Bootshaus",
@@ -73,6 +85,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-18",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Schwimmhalle (6700.EG.085)",
@@ -83,6 +97,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-18",
+      "end_date": "2026-07-18",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "Externer Ort",
@@ -93,6 +109,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-19",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "Externer Ort",
@@ -105,5 +123,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414583",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T13:21:36Z"
+  "last_updated": "2026-04-14T21:12:16Z"
 }

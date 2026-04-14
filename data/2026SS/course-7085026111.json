@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "ÜR 353 (8020.03.353)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "15:15",
       "end_time": "16:45",
       "location": "Siehe Anmerkung",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "ÜR 353 (8020.03.353)",
@@ -45,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414270",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:54:16Z"
 }

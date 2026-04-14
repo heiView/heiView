@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-18",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "Online",
@@ -19,10 +21,34 @@
       "room": "Online",
       "building": null,
       "note": "Fakultativ, heiCONF Link siehe Moodle"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-29",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Fakultativ, heiCONF Link siehe Moodle"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Fakultativ, heiCONF Link siehe Moodle. Vortragende: Dr. Mäck, Mirjam"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397344",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:40:53Z"
 }

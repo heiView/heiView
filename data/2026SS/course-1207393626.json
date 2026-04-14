@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-22",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Hörsaal (7051.EG.012)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-01",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-02",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-03",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-04",
+      "end_date": "2026-06-04",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -73,6 +85,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-06",
+      "end_date": "2026-06-06",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -85,5 +99,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409733",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:05:25Z"
 }

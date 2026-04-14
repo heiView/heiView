@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-03-24",
+      "end_date": "2026-03-24",
       "start_time": "11:45",
       "end_time": "12:45",
       "location": "UFHK GYN SR (6440.EG.261)",
@@ -23,6 +25,44 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "11:45",
+      "end_time": "12:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "11:45",
+      "end_time": "12:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
+      "start_time": "11:45",
+      "end_time": "12:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-24",
+      "end_date": "2026-03-24",
       "start_time": "12:45",
       "end_time": "13:45",
       "location": "UFHK GYN SR (6440.EG.261)",
@@ -33,6 +73,80 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "12:45",
+      "end_time": "13:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "12:45",
+      "end_time": "13:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
+      "start_time": "12:45",
+      "end_time": "13:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-24",
+      "end_date": "2026-03-24",
+      "start_time": "14:15",
+      "end_time": "15:15",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "14:15",
+      "end_time": "15:15",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "14:15",
+      "end_time": "15:15",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Teilnahme an einer SkillsLab-Veranstaltung verpflichtend"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "14:15",
       "end_time": "15:15",
       "location": "UFHK GYN SR (6440.EG.261)",
@@ -45,5 +159,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392609",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:56:54Z"
 }

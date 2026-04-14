@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-07-22",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR 3 (6327.EG.003)",
@@ -22,6 +24,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 6 (6327.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16836",
+      "room": "SR 6 (6327.EG.006)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-07-22",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR 6 (6327.EG.006)",
@@ -32,6 +48,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR 18 (6306.01.112X)",
@@ -42,6 +60,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR 4 (6327.EG.004)",
@@ -52,6 +72,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR26 (6329.EG.001)",
@@ -62,6 +84,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR 5 (6327.EG.005)",
@@ -72,6 +96,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR 3 (6327.EG.003)",
@@ -84,5 +110,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409486",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-13T11:33:19Z"
+  "last_updated": "2026-04-14T20:37:57Z"
 }

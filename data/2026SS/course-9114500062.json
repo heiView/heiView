@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
       "start_time": "15:45",
       "end_time": "21:00",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -23,6 +25,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-06-25",
+      "start_time": "15:45",
+      "end_time": "21:00",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -33,6 +49,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-16",
       "start_time": "16:00",
       "end_time": "18:30",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -43,6 +61,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
       "start_time": "15:30",
       "end_time": "18:00",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -53,6 +73,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-23",
       "start_time": "15:30",
       "end_time": "18:00",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -65,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398427",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:28:03Z"
 }

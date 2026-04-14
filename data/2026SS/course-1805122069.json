@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-17",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Online",
@@ -22,6 +24,32 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
+      "start_time": "12:00",
+      "end_time": "19:00",
+      "location": "Unterrichtsraum (4310.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20512",
+      "room": "Unterrichtsraum (4310.02.023)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "12:00",
       "end_time": "19:00",
       "location": "Unterrichtsraum (4310.02.023)",
@@ -32,6 +60,20 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-04-25",
+      "end_date": "2026-04-25",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Unterrichtsraum (4310.02.023)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20512",
+      "room": "Unterrichtsraum (4310.02.023)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "Unterrichtsraum (4310.02.023)",
@@ -42,6 +84,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Online",
@@ -54,5 +98,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413216",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:37:23Z"
 }

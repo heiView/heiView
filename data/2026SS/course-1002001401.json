@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "UR C (3010.EG.020)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "G KiJu Neuro (3020.01.105)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "12:00",
       "end_time": "17:00",
       "location": "UR C (3010.EG.020)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "12:00",
       "end_time": "17:00",
       "location": "G KiJu Neuro (3020.01.105)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-13",
+      "end_date": "2026-06-13",
       "start_time": "09:00",
       "end_time": "15:00",
       "location": "UR C (3010.EG.020)",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-13",
+      "end_date": "2026-06-13",
       "start_time": "09:00",
       "end_time": "15:00",
       "location": "G KiJu Neuro (3020.01.105)",
@@ -72,6 +84,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "12:00",
+      "end_time": "17:00",
+      "location": "G KiJu Neuro (3020.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23390",
+      "room": "G KiJu Neuro (3020.01.105)",
+      "building": "Hauptstraße 47/51, 1st floor",
+      "note": "Block 2"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
       "start_time": "13:00",
       "end_time": "18:00",
       "location": "Seminarraum (3020.EG.038)",
@@ -82,6 +108,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "09:00",
       "end_time": "15:00",
       "location": "Seminarraum (3020.EG.038)",
@@ -89,10 +117,22 @@
       "room": "Seminarraum (3020.EG.038)",
       "building": "Hauptstraße 47/51, Ground floor",
       "note": "Alternativraum wenn GR Neuro noch nicht fertiggestellt"
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "location": "G KiJu Neuro (3020.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23390",
+      "room": "G KiJu Neuro (3020.01.105)",
+      "building": "Hauptstraße 47/51, 1st floor",
+      "note": "Block 2"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405008",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-13T11:29:10Z"
+  "last_updated": "2026-04-14T18:31:30Z"
 }

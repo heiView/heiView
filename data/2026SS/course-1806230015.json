@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-04",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Online",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-28",
+      "end_date": "2026-05-28",
       "start_time": "12:00",
       "end_time": "14:00",
       "location": "Übungsraum (4310.02.005)",
@@ -32,6 +36,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "Übungsraum (4310.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
+      "room": "Übungsraum (4310.02.005)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-28",
+      "end_date": "2026-05-28",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Übungsraum (4310.02.005)",
@@ -42,6 +60,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (4310.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
+      "room": "Übungsraum (4310.02.005)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Unterrichtsraum (4310.02.024)",
@@ -52,6 +84,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Unterrichtsraum (4310.02.024)",
@@ -62,6 +96,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
       "start_time": "14:00",
       "end_time": "18:00",
       "location": "Übungsraum (4310.02.005)",
@@ -72,6 +108,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "Übungsraum (4310.02.005)",
@@ -84,5 +122,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413174",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:35:37Z"
+  "last_updated": "2026-04-14T20:17:57Z"
 }

@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "08:00",
       "end_time": "10:00",
       "location": "HS 2 (6306.EG.021)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
       "start_time": "16:00",
       "end_time": "17:30",
       "location": "HS 2 (6306.EG.021)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-30",
+      "end_date": "2026-07-30",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "HS 1 (6306.EG.020)",
@@ -44,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409439",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:08:48Z"
 }

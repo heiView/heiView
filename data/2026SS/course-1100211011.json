@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR 4 (6205.03.102)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR 4 (6205.03.102)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Seminarraum SR Statistik (6205.02.103)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum SR Statistik (6205.02.103)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR 9 (6205.04.105)",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR 4 (6205.03.102)",
@@ -72,6 +84,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR 4 (6205.03.102)",
@@ -82,6 +96,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR 9 (6205.04.105)",
@@ -92,6 +108,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR 5 (6205.04.101)",
@@ -104,5 +122,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414016",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T15:01:13Z"
+  "last_updated": "2026-04-14T18:33:09Z"
 }

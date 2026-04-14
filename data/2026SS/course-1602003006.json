@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-26",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "SR 5 (6327.EG.005)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-26",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -33,6 +37,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-01",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "SR 5 (6327.EG.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16835",
+      "room": "SR 5 (6327.EG.005)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-27",
+      "end_date": "2026-05-29",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "SR 5 (6327.EG.005)",
@@ -43,6 +61,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-07-01",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "SR 5 (6327.EG.005)",
@@ -53,6 +73,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-07-03",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "SR 5 (6327.EG.005)",
@@ -63,6 +85,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "HS 1 (6306.EG.020)",
@@ -73,6 +97,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-22",
+      "end_date": "2026-07-22",
       "start_time": "12:30",
       "end_time": "15:00",
       "location": "HS 2 (6306.EG.021)",
@@ -85,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409471",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:27:20Z"
 }

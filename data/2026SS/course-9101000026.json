@@ -13,6 +13,20 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
+      "start_time": "09:00",
+      "end_time": "12:15",
+      "location": "Seminarraum K11 (6130.01.011)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30625",
+      "room": "Seminarraum K11 (6130.01.011)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
       "start_time": "09:00",
       "end_time": "12:15",
       "location": "Seminarraum K11 (6130.01.011)",
@@ -23,6 +37,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K9 (6130.01.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30628",
+      "room": "Seminarraum K9 (6130.01.009)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-27",
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K9 (6130.01.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30628",
+      "room": "Seminarraum K9 (6130.01.009)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
       "start_time": "13:00",
       "end_time": "16:15",
       "location": "Seminarraum K9 (6130.01.009)",
@@ -35,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400445",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:23:07Z"
 }

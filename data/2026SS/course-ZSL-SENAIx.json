@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-07-13",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (3120.02.220)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7121",
+      "room": "Übungsraum (3120.02.220)",
+      "building": "Plöck 79-81, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-07-20",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Übungsraum (3120.02.220)",
@@ -24,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413814",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:49Z"
+  "last_updated": "2026-04-14T16:04:03Z"
 }

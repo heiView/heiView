@@ -13,16 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
-      "start_time": "09:30",
-      "end_time": "13:00",
-      "location": "Großer Hörsaal (gHS) (8010.02.008X)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9690",
-      "room": "Großer Hörsaal (gHS) (8010.02.008X)",
-      "building": "Großer Hörsaal (gHS), Philosophenweg 12, 2nd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 1,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-07",
       "start_time": "09:30",
       "end_time": "13:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -33,6 +25,44 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-20",
+      "end_date": "2026-04-10",
+      "start_time": "09:30",
+      "end_time": "13:00",
+      "location": "Großer Hörsaal (gHS) (8010.02.008X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9690",
+      "room": "Großer Hörsaal (gHS) (8010.02.008X)",
+      "building": "Großer Hörsaal (gHS), Philosophenweg 12, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-03-23",
+      "end_date": "2026-03-30",
+      "start_time": "09:30",
+      "end_time": "13:00",
+      "location": "Großer Hörsaal (gHS) (8010.02.008X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9690",
+      "room": "Großer Hörsaal (gHS) (8010.02.008X)",
+      "building": "Großer Hörsaal (gHS), Philosophenweg 12, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-31",
+      "end_date": "2026-04-07",
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16724",
+      "room": "Kleiner Hörsaal (kHS) (8010.02.221)",
+      "building": "Philosophenweg 12, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-20",
+      "end_date": "2026-04-10",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
@@ -43,6 +73,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-23",
+      "end_date": "2026-03-30",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
@@ -55,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410310",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:15:00Z"
 }

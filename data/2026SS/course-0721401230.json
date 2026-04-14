@@ -15,6 +15,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -25,6 +27,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "10:00",
       "end_time": "11:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -35,6 +39,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -45,6 +51,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
@@ -55,6 +63,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -65,6 +75,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Übungsraum 010.01.13 (4010+4.01.013)",
@@ -75,6 +87,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "11:00",
       "end_time": "12:00",
       "location": "Übungsraum 120.01.10 (4120.01.010)",
@@ -85,6 +99,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "12:00",
       "end_time": "13:00",
       "location": "Übungsraum 120.01.10 (4120.01.010)",
@@ -95,6 +111,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-23",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-16",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -105,6 +135,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Übungsraum 010.01.13 (4010+4.01.013)",
@@ -115,6 +147,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-07-20",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Übungsraum 120.01.10 (4120.01.010)",
@@ -125,6 +159,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-07-20",
       "start_time": "11:00",
       "end_time": "12:00",
       "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
@@ -135,6 +171,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-07-20",
       "start_time": "12:00",
       "end_time": "13:00",
       "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
@@ -145,6 +183,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-20",
       "start_time": "11:00",
       "end_time": "12:00",
       "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
@@ -155,6 +195,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-13",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11573",
+      "room": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "12:00",
       "end_time": "13:00",
       "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
@@ -165,6 +219,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Übungsraum 010.01.13 (4010+4.01.013)",
@@ -175,6 +231,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
@@ -185,6 +243,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
@@ -195,6 +267,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
@@ -205,6 +279,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
@@ -215,6 +291,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
@@ -225,6 +303,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
@@ -237,5 +317,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408337",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:34:00Z"
 }

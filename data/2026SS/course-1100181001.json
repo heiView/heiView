@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-16",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "HS 1 (6227.EG.403)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Unterrichtsraum (6227.02.404)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR 9 (6205.04.105)",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Unterrichtsraum (6227.02.404)",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Unterrichtsraum (6227.02.404)",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "SR 7 (6205.04.103)",
@@ -73,6 +85,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Unterrichtsraum (6227.01.403)",
@@ -83,6 +97,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Unterrichtsraum (6227.01.404)",
@@ -93,6 +109,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR 7 (6205.04.103)",
@@ -103,6 +121,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Unterrichtsraum (6227.01.404)",
@@ -113,6 +133,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "SR 9 (6205.04.105)",
@@ -123,6 +145,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Unterrichtsraum (6227.01.404)",
@@ -133,6 +157,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Übungsraum (6227.03.404)",
@@ -145,5 +171,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414418",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:33:17Z"
 }

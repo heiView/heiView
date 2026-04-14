@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR B (6205.EG.203)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR 1 (6205.02.101)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "SR 2 (6205.02.102)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "SR 2 (6205.02.102)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "SR 2 (6205.02.102)",
@@ -64,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414065",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-13T11:30:37Z"
+  "last_updated": "2026-04-14T18:33:13Z"
 }

@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "11:00",
       "end_time": "12:00",
       "location": "Online",
@@ -23,6 +25,32 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-02",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Online",
@@ -35,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419527",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:17:05Z"
+  "last_updated": "2026-04-14T15:59:21Z"
 }

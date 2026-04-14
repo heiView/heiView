@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Siehe Anmerkung",
@@ -19,10 +21,22 @@
       "room": "Library",
       "building": "Albert-Ueberle-Straße 3-5, Lower level 1",
       "note": "Institut for Theoretical Astrophysics, Albert-Uelberle-Str. 3-5, basement, Library"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-28",
+      "end_date": "2026-09-22",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Library",
+      "building": "Albert-Ueberle-Straße 3-5, Lower level 1",
+      "note": "Institut für Theoretische Astrophysik, Albert-Ueberle-Str. 3-5, basement, Library"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410446",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:49Z"
+  "last_updated": "2026-04-14T21:57:46Z"
 }

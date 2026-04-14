@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-17",
       "start_time": "12:30",
       "end_time": "13:30",
       "location": "UR C (3010.EG.020)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "08:00",
       "end_time": "17:00",
       "location": "UR C (3010.EG.020)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "08:00",
       "end_time": "18:00",
       "location": "UR C (3010.EG.020)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-11",
       "start_time": "08:00",
       "end_time": "18:00",
       "location": "UR C (3010.EG.020)",
@@ -54,5 +62,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407545",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:08:42Z"
 }

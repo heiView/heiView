@@ -2,27 +2,16 @@
   "id": "IUDS26BU23",
   "title": "Culture and Communication (Gruppe 2)",
   "type": "PC",
-  "ects_credits": "3",
-  "course_languages": "English",
+  "ects_credits": null,
+  "course_languages": null,
   "lecturers": [
     "Vandermark, Neil"
   ],
-  "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_time": "10:15",
-      "end_time": "11:45",
-      "location": "HS 12 (2170.01.022)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20584",
-      "room": "HS 12 (2170.01.022)",
-      "building": "Grabengasse 3-5, 1st floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408356",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:59:30Z"
 }

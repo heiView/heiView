@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-09",
       "start_time": "13:15",
       "end_time": "16:00",
       "location": "Ort noch nicht bekannt",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-10",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Ort noch nicht bekannt",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "Ort noch nicht bekannt",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "14:00",
       "end_time": "16:30",
       "location": "Ort noch nicht bekannt",
@@ -55,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/394805",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:58:23Z"
 }

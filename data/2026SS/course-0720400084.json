@@ -13,6 +13,20 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Vorbesprechung per Zoom"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Online",
@@ -23,6 +37,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-09-29",
+      "end_date": "2026-10-05",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Florenz"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-04",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -35,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414337",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:06:35Z"
 }

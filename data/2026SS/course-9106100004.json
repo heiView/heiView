@@ -13,6 +13,20 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "17:15",
+      "end_time": "21:00",
+      "location": "Jaspers-Bibliothek (4270.02.235)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30179",
+      "room": "Jaspers-Bibliothek (4270.02.235)",
+      "building": "Voßstraße 4, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
       "start_time": "17:15",
       "end_time": "21:00",
       "location": "Jaspers-Bibliothek (4270.02.235)",
@@ -23,6 +37,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-04",
+      "end_date": "2026-07-04",
       "start_time": "09:15",
       "end_time": "14:00",
       "location": "Jaspers-Bibliothek (4270.02.235)",
@@ -33,6 +49,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-18",
+      "end_date": "2026-07-18",
       "start_time": "09:00",
       "end_time": "14:00",
       "location": "Jaspers-Bibliothek (4270.02.235)",
@@ -45,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415064",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:36:04Z"
 }

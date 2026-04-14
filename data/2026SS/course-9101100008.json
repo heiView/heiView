@@ -12,6 +12,56 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "10:45",
+      "end_time": "13:00",
+      "location": "Agaplesion Bethanien Krankenhaus",
+      "location_link": null,
+      "room": "Agaplesion Bethanien Krankenhaus",
+      "building": null,
+      "note": "Pflichtveranstaltung, Vortragende: Michaela Günther-Lange, Carl-Philipp Janssen, Christian Werner"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
+      "start_time": "10:45",
+      "end_time": "13:00",
+      "location": "Agaplesion Bethanien Krankenhaus",
+      "location_link": null,
+      "room": "Agaplesion Bethanien Krankenhaus",
+      "building": null,
+      "note": "Pflichtveranstaltung, Vortragende: Michaela Günther-Lange, Carl-Philipp Janssen, Christian Werner"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
+      "start_time": "10:45",
+      "end_time": "13:00",
+      "location": "Agaplesion Bethanien Krankenhaus",
+      "location_link": null,
+      "room": "Agaplesion Bethanien Krankenhaus",
+      "building": null,
+      "note": "Pflichtveranstaltung, Vortragende: Michaela Günther-Lange, Carl-Philipp Janssen, Christian Werner"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "10:45",
+      "end_time": "13:00",
+      "location": "Agaplesion Bethanien Krankenhaus",
+      "location_link": null,
+      "room": "Agaplesion Bethanien Krankenhaus",
+      "building": null,
+      "note": "Pflichtveranstaltung, Vortragende: Michaela Günther-Lange, Carl-Philipp Janssen, Christian Werner"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
       "start_time": "10:45",
       "end_time": "13:00",
       "location": "Agaplesion Bethanien Krankenhaus",
@@ -24,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397450",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:41:05Z"
 }

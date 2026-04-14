@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
       "start_time": "12:45",
       "end_time": "14:30",
       "location": "SCHLIERBACH Physiotherapieschule Seminarraum 3 (9031.01.014)",
@@ -22,6 +24,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "SCHLIERBACH Physiotherapieschule Seminarraum 3 (9031.01.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31075",
+      "room": "SCHLIERBACH Physiotherapieschule Seminarraum 3 (9031.01.014)",
+      "building": "Schlierbacher Landstraße 200A, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-06-25",
       "start_time": "08:30",
       "end_time": "10:00",
       "location": "SCHLIERBACH Physiotherapieschule Seminarraum 3 (9031.01.014)",
@@ -34,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417667",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:51:21Z"
 }

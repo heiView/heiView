@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Seminarraum 1 720 (6720.EG.049)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "INF 700 / Stadion B",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "Seminarraum 700 (6700.EG.106)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "Externer Ort",
@@ -54,5 +62,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414575",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:08:51Z"
 }

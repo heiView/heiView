@@ -12,6 +12,44 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-23",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-04",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-13",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Selbststudium",
@@ -22,6 +60,44 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-18",
+      "end_date": "2026-03-25",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-06",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Selbststudium",
@@ -32,6 +108,44 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-01",
+      "end_date": "2026-05-01",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Selbststudium",
@@ -44,5 +158,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/390524",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:56:41Z"
 }

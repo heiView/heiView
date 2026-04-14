@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-06-09",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "BioQuant INF267 SR043"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-07-07",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Siehe Anmerkung",
@@ -22,6 +36,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-09",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Siehe Anmerkung",
@@ -31,7 +47,21 @@
       "note": "BioQuant INF267 SR043"
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-09",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF231 SR005"
+    },
+    {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-07-10",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Siehe Anmerkung",
@@ -44,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414717",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:54:15Z"
 }

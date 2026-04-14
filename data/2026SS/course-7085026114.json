@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
       "start_time": "18:30",
       "end_time": "20:00",
       "location": "Online",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
       "start_time": "19:30",
       "end_time": "20:00",
       "location": "Online",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
       "start_time": "17:30",
       "end_time": "19:30",
       "location": "Siehe Anmerkung",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "Siehe Anmerkung",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-06-28",
+      "end_date": "2026-06-28",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Siehe Anmerkung",
@@ -59,10 +69,22 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": "Findet in der Schulgasse 2 (SEMITISTIK) statt."
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-20",
+      "start_time": "18:30",
+      "end_time": "20:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Nachbereitung"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414275",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:03:31Z"
 }

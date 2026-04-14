@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "ÜR K 2 (1040.01.109)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-04-25",
+      "end_date": "2026-04-25",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "ÜR K 2 (1040.01.109)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "KiGa I (1200.EG.024)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-20",
+      "end_date": "2026-06-20",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "KiGa I (1200.EG.024)",
@@ -54,5 +62,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411054",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:43:38Z"
 }

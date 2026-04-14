@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "11:00",
       "end_time": "15:00",
       "location": "Ort - siehe Anmerkung",
@@ -19,10 +21,22 @@
       "room": "Übungsraum (6267.EG.041)",
       "building": "Im Neuenheimer Feld 267, Ground floor",
       "note": "Ort: SR041 (BioQuant - Im Neuenheimer Feld 267)"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "11:00",
+      "end_time": "15:00",
+      "location": "Ort - siehe Anmerkung",
+      "location_link": null,
+      "room": "Übungsraum (6267.EG.043)",
+      "building": "Im Neuenheimer Feld 267, Ground floor",
+      "note": "Ort: SR043 (BioQuant - Im Neuenheimer Feld 267)"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413019",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T11:33:39Z"
+  "last_updated": "2026-04-14T22:04:38Z"
 }

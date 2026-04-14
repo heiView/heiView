@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-14",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "ÜR D (3010.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23101",
+      "room": "ÜR D (3010.EG.021)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-21",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "ÜR D (3010.EG.021)",
@@ -24,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405281",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:03:57Z"
 }

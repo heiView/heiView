@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K1 (6130.EG.001)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K1 (6130.EG.001)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K1 (6130.EG.001)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K42 (6130.EG.042)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K42 (6130.EG.042)",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K42 (6130.EG.042)",
@@ -72,6 +84,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K5 (6130.01.005)",
@@ -82,6 +96,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K5 (6130.01.005)",
@@ -92,6 +108,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K5 (6130.01.005)",
@@ -102,6 +120,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K9 (6130.01.009)",
@@ -112,6 +132,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K9 (6130.01.009)",
@@ -122,6 +144,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K9 (6130.01.009)",
@@ -132,6 +156,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K11 (6130.01.011)",
@@ -142,6 +168,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K11 (6130.01.011)",
@@ -152,6 +180,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K11 (6130.01.011)",
@@ -162,6 +192,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K13 (6130.01.013)",
@@ -172,6 +204,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K13 (6130.01.013)",
@@ -182,6 +216,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K13 (6130.01.013)",
@@ -192,6 +228,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -202,6 +240,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -212,6 +252,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K15 (6130.01.015)",
@@ -222,6 +264,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K16 (6130.01.016)",
@@ -232,6 +276,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K16 (6130.01.016)",
@@ -242,6 +288,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K16 (6130.01.016)",
@@ -252,6 +300,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K17 (6130.01.017)",
@@ -262,6 +312,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K17 (6130.01.017)",
@@ -272,6 +324,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K17 (6130.01.017)",
@@ -282,6 +336,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-23",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K18 (6130.01.018)",
@@ -292,6 +348,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-24",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum K18 (6130.01.018)",
@@ -302,6 +360,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-26",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum K18 (6130.01.018)",
@@ -312,6 +372,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-16",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum Naht, POL, MediKit (6105.01.115)",
@@ -322,6 +384,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-17",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum Naht, POL, MediKit (6105.01.115)",
@@ -332,6 +396,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-19",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum Naht, POL, MediKit (6105.01.115)",
@@ -342,6 +408,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-16",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum Naht, POL, MediKit (6105.01.116)",
@@ -352,6 +420,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-10",
+      "end_date": "2026-03-17",
       "start_time": "17:00",
       "end_time": "19:30",
       "location": "Seminarraum Naht, POL, MediKit (6105.01.116)",
@@ -362,6 +432,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-19",
       "start_time": "18:00",
       "end_time": "20:00",
       "location": "Seminarraum Naht, POL, MediKit (6105.01.116)",
@@ -374,5 +446,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/386528",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:10Z"
 }

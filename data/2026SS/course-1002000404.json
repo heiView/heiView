@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Raum: A 028, Gruppenraum der Allgemeinen Psychologie"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "Siehe Anmerkung",
@@ -22,6 +36,20 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-06",
+      "end_date": "2026-06-06",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Raum: A 028, Gruppenraum der Allgemeinen Psychologie"
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-11",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "Siehe Anmerkung",
@@ -34,5 +62,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407251",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:45:36Z"
 }

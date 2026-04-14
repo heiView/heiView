@@ -14,6 +14,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-05-18",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Seminarraum 700 (6700.EG.106)",
@@ -24,6 +26,32 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-20",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum 700 (6700.EG.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
+      "room": "Seminarraum 700 (6700.EG.106)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-05-18",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Hörsaal 700 (6700.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22439",
+      "room": "Hörsaal 700 (6700.EG.012)",
+      "building": "Hörsaal 700, Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-20",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Hörsaal 700 (6700.EG.012)",
@@ -36,5 +64,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414572",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:07:19Z"
 }

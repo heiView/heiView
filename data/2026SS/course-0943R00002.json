@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "HS 02 (2170.EG.049)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "Komenský-Raum (2190.02.216)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-07-20",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "Komenský-Raum (2190.02.216)",
@@ -45,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409159",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:38:42Z"
 }

@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-05-11",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17a (6328.01.117A)",
@@ -22,6 +24,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-04-16",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 17a (6328.01.117A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14885",
+      "room": "SR 17a (6328.01.117A)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17a (6328.01.117A)",
@@ -32,6 +48,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-24",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 16a (6328.01.116A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14883",
+      "room": "SR 16a (6328.01.116A)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16a (6328.01.116A)",
@@ -42,6 +72,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-01",
+      "end_date": "2026-05-13",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16a (6328.01.116A)",
@@ -52,6 +84,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 16b (6328.01.116B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14884",
+      "room": "SR 16b (6328.01.116B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-11",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16b (6328.01.116B)",
@@ -62,6 +108,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-05-07",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16a (6328.01.116A)",
@@ -72,6 +120,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-24",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 17b (6328.01.117B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14886",
+      "room": "SR 17b (6328.01.117B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17b (6328.01.117B)",
@@ -82,6 +144,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-01",
+      "end_date": "2026-05-13",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17b (6328.01.117B)",
@@ -92,6 +156,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-07",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17a (6328.01.117A)",
@@ -102,6 +168,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-30",
+      "end_date": "2026-03-30",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 16a (6328.01.116A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14883",
+      "room": "SR 16a (6328.01.116A)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-05-18",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16a (6328.01.116A)",
@@ -112,6 +192,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-07",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17b (6328.01.117B)",
@@ -122,6 +204,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-30",
+      "end_date": "2026-03-30",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 17b (6328.01.117B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14886",
+      "room": "SR 17b (6328.01.117B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-05-18",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17b (6328.01.117B)",
@@ -132,6 +228,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-15",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 17a (6328.01.117A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14885",
+      "room": "SR 17a (6328.01.117A)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-13",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17a (6328.01.117A)",
@@ -142,16 +252,8 @@
     },
     {
       "day_of_week": 4,
-      "start_time": "10:00",
-      "end_time": "12:30",
-      "location": "SR 16b (6328.01.116B)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14884",
-      "room": "SR 16b (6328.01.116B)",
-      "building": "Im Neuenheimer Feld 328, 1st floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
+      "start_date": "2026-04-02",
+      "end_date": "2026-04-16",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16b (6328.01.116B)",
@@ -162,16 +264,8 @@
     },
     {
       "day_of_week": 4,
-      "start_time": "10:00",
-      "end_time": "12:30",
-      "location": "SR 17b (6328.01.117B)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14886",
-      "room": "SR 17b (6328.01.117B)",
-      "building": "Im Neuenheimer Feld 328, 1st floor",
-      "note": null
-    },
-    {
-      "day_of_week": 3,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16b (6328.01.116B)",
@@ -182,6 +276,92 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-10",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 16b (6328.01.116B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14884",
+      "room": "SR 16b (6328.01.116B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 16b (6328.01.116B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14884",
+      "room": "SR 16b (6328.01.116B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-05-07",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 17b (6328.01.117B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14886",
+      "room": "SR 17b (6328.01.117B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 17b (6328.01.117B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14886",
+      "room": "SR 17b (6328.01.117B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 16b (6328.01.116B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14884",
+      "room": "SR 16b (6328.01.116B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-06",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 16b (6328.01.116B)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14884",
+      "room": "SR 16b (6328.01.116B)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-10",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "SR 17a (6328.01.117A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14885",
+      "room": "SR 17a (6328.01.117A)",
+      "building": "Im Neuenheimer Feld 328, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 17a (6328.01.117A)",
@@ -192,6 +372,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-07",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16a (6328.01.116A)",
@@ -202,6 +384,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-07",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "SR 16b (6328.01.116B)",
@@ -214,5 +398,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398526",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:14Z"
 }

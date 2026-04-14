@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -22,6 +24,20 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-19",
+      "start_time": "08:00",
+      "end_time": "10:00",
+      "location": "MED Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "MED Ort noch nicht bekannt",
+      "building": null,
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-07-14",
       "start_time": "08:00",
       "end_time": "10:00",
       "location": "MED Ort noch nicht bekannt",
@@ -32,6 +48,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "08:00",
       "end_time": "10:00",
       "location": "Online",
@@ -44,5 +62,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397362",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:54:12Z"
 }

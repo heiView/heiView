@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
       "start_time": "13:15",
       "end_time": "14:45",
       "location": "KOPF ZAHN HS (6400.02.120)",
@@ -20,10 +22,94 @@
       "room": "KOPF ZAHN HS (6400.02.120)",
       "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-28",
+      "end_date": "2026-05-28",
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-18",
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-23",
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": "Lückenschluss durch herausnehmbaren Zahnersatz: Verschiedene Verankerungselemente"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": "- Totalprothesen II - Abformung zahnloser Kiefer"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": "Versorgung zahnloser Kiefer - Totalprothesen IV – Zahnaufstellung in der Totalprothetik"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "13:15",
+      "end_time": "14:45",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": "Versorgung zahnloser Kiefer - Totalprothesen VI – Von der Wachseinprobe bis zur Fertigstellung"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415938",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:08:38Z"
 }

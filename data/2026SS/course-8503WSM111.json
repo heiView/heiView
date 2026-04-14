@@ -15,6 +15,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-18",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -24,7 +26,45 @@
       "note": null
     },
     {
+      "day_of_week": 1,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-09",
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-19",
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Part of Jeroen Krijgsveld: \"Proteomics\""
+    },
+    {
       "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -37,5 +77,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414753",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:11:46Z"
 }

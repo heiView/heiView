@@ -12,6 +12,32 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "MED SR 725 (6410.EG.725)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28768",
+      "room": "MED SR 725 (6410.EG.725)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "MED SR 725 (6410.EG.725)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28768",
+      "room": "MED SR 725 (6410.EG.725)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-25",
       "start_time": "13:30",
       "end_time": "15:00",
       "location": "MED SR 725 (6410.EG.725)",
@@ -22,6 +48,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-20",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "MED SR 725 (6410.EG.725)",
@@ -32,6 +60,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "MED SR 725 (6410.EG.725)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28768",
+      "room": "MED SR 725 (6410.EG.725)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "MED SR 725 (6410.EG.725)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28768",
+      "room": "MED SR 725 (6410.EG.725)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-20",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "MED SR 725 (6410.EG.725)",
@@ -42,6 +96,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "MED SR 725 (6410.EG.725)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28768",
+      "room": "MED SR 725 (6410.EG.725)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "MED SR 725 (6410.EG.725)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28768",
+      "room": "MED SR 725 (6410.EG.725)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "MED SR 719 Teil 2 (6410.EG.719)",
@@ -52,6 +132,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "MED SR 719 Teil 2 (6410.EG.719)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28767",
+      "room": "MED SR 719 Teil 2 (6410.EG.719)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "MED SR 719 Teil 2 (6410.EG.719)",
@@ -64,5 +158,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397445",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:54:07Z"
 }

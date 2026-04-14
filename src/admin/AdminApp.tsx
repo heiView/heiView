@@ -300,52 +300,93 @@ type BuildingEditState = {
 // ── Stale-override diff renderer ─────────────────────────────────────────────
 const STALE_IGNORED_FIELDS = new Set(['last_updated'])
 
+// Recursive line-level diff helpers
+type DiffLine = { text: string; bg: string }
+const DIFF_AMBER  = 'rgba(250,173,20,0.22)'
+const DIFF_GREEN  = 'rgba(82,196,26,0.18)'
+const DIFF_PURPLE = 'rgba(147,51,234,0.14)'
+const DIFF_GREY   = 'rgba(128,128,128,0.07)'
+const DIFF_NONE   = 'transparent'
+
+function isPlainObj(v: unknown): v is Record<string, unknown> {
+  return typeof v === 'object' && v !== null && !Array.isArray(v)
+}
+
+// Render a value (any JSON type) as lines with a uniform background color
+function renderValueLines(key: string | null, val: unknown, indent: string, isLast: boolean, bg: string): DiffLine[] {
+  const keyPart = key !== null ? `"${key}": ` : ''
+  const comma = isLast ? '' : ','
+  const raw = JSON.stringify(val, null, 2)
+  const parts = raw.split('\n')
+  if (parts.length === 1) return [{ text: `${indent}${keyPart}${raw}${comma}`, bg }]
+  return parts.map((part, i) => {
+    let text: string
+    if (i === 0) text = `${indent}${keyPart}${part}`
+    else if (i === parts.length - 1) text = `${indent}${part}${comma}`
+    else text = `${indent}${part}`
+    return { text, bg }
+  })
+}
+
+// Recursively produce diff lines for any value pair; used by the two functions below
+function buildDiffLines(key: string | null, a: unknown, b: unknown, side: 'source' | 'override', indent: string, isLast: boolean): DiffLine[] {
+  const keyPart = key !== null ? `"${key}": ` : ''
+  const comma = isLast ? '' : ','
+  // Missing on this side
+  if (a === undefined) return [{ text: `${indent}${keyPart}—${comma}`, bg: DIFF_GREY }]
+  // Only on this side
+  if (b === undefined) return renderValueLines(key, a, indent, isLast, side === 'source' ? DIFF_GREEN : DIFF_PURPLE)
+  // Equal — no highlight
+  if (JSON.stringify(a) === JSON.stringify(b)) return renderValueLines(key, a, indent, isLast, DIFF_NONE)
+  // Both objects → recurse into keys
+  if (isPlainObj(a) && isPlainObj(b)) return buildObjDiffLines(key, a, b, side, indent, isLast)
+  // Both arrays → recurse into elements
+  if (Array.isArray(a) && Array.isArray(b)) return buildArrDiffLines(key, a, b, side, indent, isLast)
+  // Primitive / type mismatch → highlight this line
+  return renderValueLines(key, a, indent, isLast, DIFF_AMBER)
+}
+
+function buildObjDiffLines(key: string | null, a: Record<string, unknown>, b: Record<string, unknown>, side: 'source' | 'override', indent: string, isLast: boolean): DiffLine[] {
+  const keyPart = key !== null ? `"${key}": ` : ''
+  const comma = isLast ? '' : ','
+  const childIndent = indent + '  '
+  const allKeys = Array.from(new Set([...Object.keys(a), ...Object.keys(b)]))
+  const lines: DiffLine[] = [{ text: `${indent}${keyPart}{`, bg: DIFF_NONE }]
+  allKeys.forEach((k, i) => {
+    const childIsLast = i === allKeys.length - 1
+    if (STALE_IGNORED_FIELDS.has(k)) {
+      if (k in a) lines.push(...renderValueLines(k, a[k], childIndent, childIsLast, DIFF_NONE))
+      return
+    }
+    lines.push(...buildDiffLines(k, a[k], b[k], side, childIndent, childIsLast))
+  })
+  lines.push({ text: `${indent}}${comma}`, bg: DIFF_NONE })
+  return lines
+}
+
+function buildArrDiffLines(key: string | null, a: unknown[], b: unknown[], side: 'source' | 'override', indent: string, isLast: boolean): DiffLine[] {
+  const keyPart = key !== null ? `"${key}": ` : ''
+  const comma = isLast ? '' : ','
+  const childIndent = indent + '  '
+  const maxLen = Math.max(a.length, b.length)
+  const lines: DiffLine[] = [{ text: `${indent}${keyPart}[`, bg: DIFF_NONE }]
+  for (let i = 0; i < maxLen; i++) {
+    lines.push(...buildDiffLines(null, a[i], b[i], side, childIndent, i === maxLen - 1))
+  }
+  lines.push({ text: `${indent}]${comma}`, bg: DIFF_NONE })
+  return lines
+}
+
 function renderJsonDiffSide(
   obj: Record<string, unknown> | null,
   other: Record<string, unknown> | null,
   side: 'source' | 'override',
 ): React.ReactNode {
   if (!obj) return <span style={{ color: 'var(--hei-text-secondary)' }}>(not found)</span>
-  const allKeys = Array.from(new Set([...Object.keys(obj), ...Object.keys(other ?? {})]))
-  const nodes: React.ReactNode[] = [<span key="__open">{'{\n'}</span>]
-  allKeys.forEach((key, idx) => {
-    const inObj = key in obj
-    const inOther = other != null && key in other
-    const isLast = idx === allKeys.length - 1
-    const isIgnored = STALE_IGNORED_FIELDS.has(key)
-    let bg = 'transparent'
-    if (!isIgnored) {
-      if (inObj && !inOther) {
-        bg = side === 'source' ? 'rgba(82,196,26,0.18)' : 'rgba(147,51,234,0.14)'
-      } else if (!inObj && inOther) {
-        bg = 'rgba(128,128,128,0.07)'
-      } else if (inObj && inOther && JSON.stringify(obj[key]) !== JSON.stringify(other![key])) {
-        bg = 'rgba(250,173,20,0.22)'
-      }
-    }
-    if (inObj) {
-      const valStr = JSON.stringify(obj[key], null, 2)
-      const valLines = valStr.split('\n')
-      const formatted = valLines.map((line, li) => {
-        if (li === 0) return `  "${key}": ${line}`
-        if (li === valLines.length - 1) return `  ${line}${isLast ? '' : ','}`
-        return `  ${line}`
-      }).join('\n') + (valLines.length === 1 ? (isLast ? '' : ',') : '')
-      nodes.push(
-        <span key={key} style={{ display: 'block', background: bg }}>
-          {formatted}
-        </span>
-      )
-    } else {
-      nodes.push(
-        <span key={key} style={{ display: 'block', background: bg, opacity: 0.45 }}>
-          {`  "${key}": —`}
-        </span>
-      )
-    }
-  })
-  nodes.push(<span key="__close">{'}'}</span>)
-  return nodes
+  const lines = buildObjDiffLines(null, obj, other ?? {}, side, '', true)
+  return lines.map((line, i) => (
+    <span key={i} style={{ display: 'block', background: line.bg }}>{line.text}</span>
+  ))
 }
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -446,6 +487,9 @@ function AdminApp() {
   const [staleOverrideEdit, setStaleOverrideEdit] = React.useState<string | null>(null) // null = view mode
   const [staleOverrideSaveLoading, setStaleOverrideSaveLoading] = React.useState(false)
   const [staleOverrideParseError, setStaleOverrideParseError] = React.useState<string | null>(null)
+  const [staleDiffWasSaved, setStaleDiffWasSaved] = React.useState(false)
+  const [staleDiffUndoSnapshot, setStaleDiffUndoSnapshot] = React.useState<Record<string, unknown> | null>(null)
+  const [staleUndoLoading, setStaleUndoLoading] = React.useState(false)
   // ─────────────────────────────────────────────────────────────────────────
 
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
@@ -1858,7 +1902,7 @@ function AdminApp() {
         {/* Stale Overrides modal */}
         <Modal
           open={staleOpen}
-          onCancel={() => { setStaleOpen(false); setStaleDiffCourseId(null); setStaleDiffData(null) }}
+          onCancel={() => { setStaleOpen(false); if (staleDiffWasSaved) { setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId)) } setStaleDiffCourseId(null); setStaleDiffData(null); setStaleDiffWasSaved(false); setStaleDiffUndoSnapshot(null) }}
           title="Stale Overrides — Source updated after override"
           width={staleDiffCourseId ? 900 : 600}
           footer={null}
@@ -1901,6 +1945,8 @@ function AdminApp() {
                                   setStaleDiffLoading(true)
                                   setStaleOverrideEdit(null)
                                   setStaleOverrideParseError(null)
+                                  setStaleDiffWasSaved(false)
+                                  setStaleDiffUndoSnapshot(null)
                                   try {
                                     const r = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(entry.courseId)}`)
                                     if (r.ok) setStaleDiffData(await r.json())
@@ -1911,31 +1957,17 @@ function AdminApp() {
                               </Button>
                               <Button
                                 size="small"
-                                loading={staleDismissLoading === entry.courseId}
-                                onClick={async () => {
-                                  setStaleDismissLoading(entry.courseId)
-                                  try {
-                                    const r = await adminFetch(`/api/admin/stale-overrides/${encodeURIComponent(entry.courseId)}/dismiss`, { method: 'POST' })
-                                    if (r.ok) setStaleList(prev => prev.filter(e => e.courseId !== entry.courseId))
-                                  } finally { setStaleDismissLoading(null) }
-                                }}
-                                title="Override 仍然有效，更新其时间戳，下次检测将跳过（除非 source 再次更新）"
-                              >
-                                Keep Override
-                              </Button>
-                              <Button
-                                size="small"
                                 danger
                                 loading={staleDeleteLoading === entry.courseId}
                                 onClick={async () => {
-                                  if (!window.confirm(`删除 course-${entry.courseId} 的 override？此操作不可撤销。`)) return
+                                  if (!window.confirm(`Delete override for course-${entry.courseId}? This action cannot be undone.`)) return
                                   setStaleDeleteLoading(entry.courseId)
                                   try {
                                     const r = await adminFetch(`/api/admin/overrides/${encodeURIComponent(entry.courseId)}`, { method: 'DELETE' })
                                     if (r.ok) setStaleList(prev => prev.filter(e => e.courseId !== entry.courseId))
                                   } finally { setStaleDeleteLoading(null) }
                                 }}
-                                title="删除 override 文件，课程恢复使用 source 数据"
+                                title="Delete override file; course will revert to source data"
                               >
                                 Delete Override
                               </Button>
@@ -1950,7 +1982,7 @@ function AdminApp() {
             ) : (
               <Spin spinning={staleDiffLoading}>
                 <div style={{ marginBottom: 12, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <Button size="small" onClick={() => { setStaleDiffCourseId(null); setStaleDiffData(null); setStaleOverrideEdit(null); setStaleOverrideParseError(null) }}>← Back</Button>
+                  <Button size="small" onClick={() => { if (staleDiffWasSaved) { setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId)) } setStaleDiffCourseId(null); setStaleDiffData(null); setStaleOverrideEdit(null); setStaleOverrideParseError(null); setStaleDiffWasSaved(false); setStaleDiffUndoSnapshot(null) }}>← Back</Button>
                   <Typography.Text strong>course-{staleDiffCourseId}.json</Typography.Text>
                   {/* Show Merge Weeks only when source.weeks differs from override.weeks */}
                   {staleDiffData?.source && staleDiffData?.override &&
@@ -1958,11 +1990,12 @@ function AdminApp() {
                     <Button
                       size="small"
                       loading={staleMergeLoading === staleDiffCourseId}
-                      title="取 source 的 weeks 结构，保留 override 里手动设置的 building 和 note"
+                      title="Use source weeks structure, preserving manually set building and note from override"
                       onClick={async () => {
                         if (!staleDiffCourseId) return
                         setStaleMergeLoading(staleDiffCourseId)
                         try {
+                          const snapshot = staleDiffData?.override ?? null
                           const r = await adminFetch(`/api/admin/stale-overrides/${encodeURIComponent(staleDiffCourseId)}/merge-weeks`, { method: 'POST' })
                           if (r.ok) {
                             // Refresh diff view to reflect merged result
@@ -1970,15 +2003,42 @@ function AdminApp() {
                             const r2 = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(staleDiffCourseId)}`)
                             if (r2.ok) setStaleDiffData(await r2.json())
                             setStaleDiffLoading(false)
-                            setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId))
-                            setStaleDiffCourseId(null)
-                            setStaleDiffData(null)
+                            setStaleDiffWasSaved(true)
+                            setStaleDiffUndoSnapshot(snapshot)
                           }
                         } finally { setStaleMergeLoading(null) }
                       }}
                       style={{ marginLeft: 'auto' }}
                     >
                       Merge Weeks
+                    </Button>
+                  )}
+                  {staleDiffUndoSnapshot && (
+                    <Button
+                      size="small"
+                      loading={staleUndoLoading}
+                      title="Undo last Save or Merge Weeks, restoring previous override"
+                      onClick={async () => {
+                        if (!staleDiffCourseId || !staleDiffUndoSnapshot) return
+                        setStaleUndoLoading(true)
+                        try {
+                          const r = await adminFetch(`/api/admin/course-file/${encodeURIComponent(staleDiffCourseId)}`, {
+                            method: 'PUT',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(staleDiffUndoSnapshot),
+                          })
+                          if (r.ok) {
+                            setStaleDiffLoading(true)
+                            const r2 = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(staleDiffCourseId)}`)
+                            if (r2.ok) setStaleDiffData(await r2.json())
+                            setStaleDiffLoading(false)
+                            setStaleDiffUndoSnapshot(null)
+                            setStaleDiffWasSaved(false)
+                          }
+                        } finally { setStaleUndoLoading(false) }
+                      }}
+                    >
+                      Undo
                     </Button>
                   )}
                   <Button
@@ -2006,7 +2066,7 @@ function AdminApp() {
                     loading={staleDeleteLoading === staleDiffCourseId}
                     onClick={async () => {
                       if (!staleDiffCourseId) return
-                      if (!window.confirm(`删除 course-${staleDiffCourseId} 的 override？此操作不可撤销。`)) return
+                      if (!window.confirm(`Delete override for course-${staleDiffCourseId}? This action cannot be undone.`)) return
                       setStaleDeleteLoading(staleDiffCourseId)
                       try {
                         const r = await adminFetch(`/api/admin/overrides/${encodeURIComponent(staleDiffCourseId)}`, { method: 'DELETE' })
@@ -2017,7 +2077,7 @@ function AdminApp() {
                         }
                       } finally { setStaleDeleteLoading(null) }
                     }}
-                    title="删除 override 文件，课程恢复使用 source 数据"
+                    title="Delete override file; course will revert to source data"
                   >
                     Delete Override
                   </Button>
@@ -2072,6 +2132,7 @@ function AdminApp() {
                                 setStaleOverrideParseError(e instanceof Error ? e.message : 'Invalid JSON')
                                 return
                               }
+                              const snapshot = staleDiffData?.override ?? null
                               setStaleOverrideSaveLoading(true)
                               try {
                                 const r = await adminFetch(`/api/admin/course-file/${encodeURIComponent(staleDiffCourseId)}`, {
@@ -2080,16 +2141,15 @@ function AdminApp() {
                                   body: JSON.stringify(parsed),
                                 })
                                 if (r.ok) {
-                                  // Refresh diff view
+                                  // Refresh diff — stay in view so user can review the result
                                   setStaleDiffLoading(true)
                                   const r2 = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(staleDiffCourseId)}`)
                                   if (r2.ok) setStaleDiffData(await r2.json())
                                   setStaleDiffLoading(false)
                                   setStaleOverrideEdit(null)
                                   setStaleOverrideParseError(null)
-                                  setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId))
-                                  setStaleDiffCourseId(null)
-                                  setStaleDiffData(null)
+                                  setStaleDiffWasSaved(true)
+                                  setStaleDiffUndoSnapshot(snapshot)
                                 }
                               } finally { setStaleOverrideSaveLoading(false) }
                             }}

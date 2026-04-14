@@ -17,6 +17,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-16",
       "start_time": "09:00",
       "end_time": "13:00",
       "location": "SR 5 (6231.EG.005)",
@@ -27,6 +29,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-20",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Übungsraum (6231.EG.008)",
@@ -37,6 +41,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-27",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "Übungsraum (6231.EG.007)",
@@ -47,6 +53,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-17",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Übungsraum (6231.U1.027)",
@@ -57,6 +65,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-03-18",
+      "end_date": "2026-03-18",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Kleiner Hörsaal (kHS) (6231.EG.001)",
@@ -67,6 +77,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
       "start_time": "09:00",
       "end_time": "10:00",
       "location": "Übungsraum (6231.U1.027)",
@@ -77,6 +89,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
       "start_time": "10:00",
       "end_time": "13:00",
       "location": "Übungsraum (6231.EG.007)",
@@ -87,6 +101,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
       "start_time": "13:00",
       "end_time": "18:00",
       "location": "SR 4 (6231.EG.004)",
@@ -97,6 +113,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-03-26",
+      "end_date": "2026-03-26",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Übungsraum (6231.EG.007)",
@@ -107,6 +125,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-10",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Übungsraum (6231.EG.007)",
@@ -117,6 +137,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "Kleiner Hörsaal (kHS) (6231.EG.001)",
@@ -127,6 +149,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-07",
       "start_time": "13:00",
       "end_time": "18:00",
       "location": "SR 4 (6231.EG.004)",
@@ -139,5 +163,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407787",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:46:45Z"
 }

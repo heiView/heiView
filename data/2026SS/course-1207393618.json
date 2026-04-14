@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Hörsaal (7051.EG.012)",
@@ -23,6 +25,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Hörsaal (7051.EG.012)",
@@ -33,6 +49,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-13",
+      "end_date": "2026-06-13",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Hörsaal (7051.EG.012)",
@@ -43,6 +61,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-24",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Exkursion"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-08-27",
+      "end_date": "2026-09-06",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -53,6 +85,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-08-25",
+      "end_date": "2026-08-25",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -63,6 +97,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-08-26",
+      "end_date": "2026-08-26",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -75,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409171",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:10:50Z"
 }

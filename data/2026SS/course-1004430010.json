@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "P18 (2100.EG.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13656",
+      "room": "P18 (2100.EG.009)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "P18 (2100.EG.009)",
@@ -22,6 +36,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-13",
+      "end_date": "2026-06-13",
       "start_time": "09:00",
       "end_time": "16:30",
       "location": "Ort noch nicht bekannt",
@@ -34,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407235",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:36:46Z"
+  "last_updated": "2026-04-14T20:19:03Z"
 }

@@ -14,6 +14,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-05-04",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 1 (6327.EG.001)",
@@ -24,6 +26,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-23",
+      "start_time": "13:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "13:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 20 (6306.01.110)",
@@ -34,6 +62,32 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-24",
+      "start_time": "16:15",
+      "end_time": "17:30",
+      "location": "HS 2 (6306.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18526",
+      "room": "HS 2 (6306.EG.021)",
+      "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "16:15",
+      "end_time": "17:30",
+      "location": "HS 2 (6306.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18526",
+      "room": "HS 2 (6306.EG.021)",
+      "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "16:15",
       "end_time": "17:30",
       "location": "HS 2 (6306.EG.021)",
@@ -44,6 +98,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-06",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "SR 13 (6306.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14798",
+      "room": "SR 13 (6306.EG.013)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 13 (6306.EG.013)",
@@ -54,6 +134,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-30",
       "start_time": "16:15",
       "end_time": "17:30",
       "location": "HS 2 (6306.EG.021)",
@@ -64,6 +146,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-11",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 19 (6306.01.111)",
@@ -74,6 +158,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-13",
       "start_time": "16:15",
       "end_time": "17:30",
       "location": "HS 2 (6306.EG.021)",
@@ -84,6 +170,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 18 (6306.01.112X)",
@@ -94,6 +182,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-04-22",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 7 (6325.01.112)",
@@ -104,6 +194,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-24",
+      "start_time": "13:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 20 (6306.01.110)",
@@ -114,6 +218,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-11",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 13 (6306.EG.013)",
@@ -124,6 +230,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 13 (6306.EG.013)",
@@ -134,6 +242,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-27",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 7 (6325.01.112)",
@@ -144,6 +254,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-09",
+      "end_date": "2026-04-09",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 14 (6306.EG.014)",
@@ -154,6 +266,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 20 (6306.01.110)",
@@ -164,6 +278,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-04-15",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 1 (6327.EG.001)",
@@ -174,6 +290,44 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "13:30",
+      "end_time": "17:00",
+      "location": "SR 1 (6327.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16707",
+      "room": "SR 1 (6327.EG.001)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-22",
+      "start_time": "13:30",
+      "end_time": "17:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "13:30",
+      "end_time": "17:00",
+      "location": "SR 14 (6306.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14799",
+      "room": "SR 14 (6306.EG.014)",
+      "building": "Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-27",
+      "end_date": "2026-05-27",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 14 (6306.EG.014)",
@@ -184,6 +338,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-10",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 14 (6306.EG.014)",
@@ -194,6 +350,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-23",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 19 (6306.01.111)",
@@ -204,6 +362,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-20",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 19 (6306.01.111)",
@@ -214,6 +374,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-13",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 18 (6306.01.112X)",
@@ -224,6 +386,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-24",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 19 (6306.01.111)",
@@ -234,6 +398,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 7 (6325.01.112)",
@@ -244,6 +410,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 1 (6327.EG.001)",
@@ -254,6 +422,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-29",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 1 (6327.EG.001)",
@@ -264,6 +434,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 14 (6306.EG.014)",
@@ -274,6 +446,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "16:15",
       "end_time": "17:30",
       "location": "HS 1 (6306.EG.020)",
@@ -284,6 +458,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 20 (6306.01.110)",
@@ -294,6 +470,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 19 (6306.01.111)",
@@ -304,6 +482,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 1 (6327.EG.001)",
@@ -314,6 +494,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-10",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "SR 13 (6306.EG.013)",
@@ -324,6 +506,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
       "start_time": "13:30",
       "end_time": "17:00",
       "location": "SR 7b (6325.01.112B)",
@@ -336,5 +520,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/386027",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:10Z"
 }

@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (1010.01.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17442",
+      "room": "Übungsraum (1010.01.123)",
+      "building": "Hauptstraße 207-209, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-15",
       "start_time": "14:00",
       "end_time": "18:00",
       "location": "Übungsraum (1010.01.123)",
@@ -24,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412330",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:36Z"
 }

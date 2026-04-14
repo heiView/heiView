@@ -25,6 +25,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "13:00",
       "location": "SR 3 (6327.EG.003)",
@@ -35,6 +37,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "13:00",
       "location": "SR 13 (6306.EG.013)",
@@ -45,6 +49,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "13:00",
       "location": "SR 1 (6327.EG.001)",
@@ -55,6 +61,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "13:00",
       "location": "SR 14 (6306.EG.014)",
@@ -65,6 +73,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "13:00",
       "location": "SR 5 (6327.EG.005)",
@@ -75,6 +85,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-06-22",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 27 (6326.02.220)",
@@ -85,6 +97,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-06-22",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 28 (6326.02.222)",
@@ -95,6 +109,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-06-22",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 6 (6327.EG.006)",
@@ -105,6 +121,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-06-22",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 19 (6306.01.111)",
@@ -115,6 +133,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-06-22",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 4 (6327.EG.004)",
@@ -125,6 +145,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-06-24",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 19 (6306.01.111)",
@@ -135,6 +157,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-06-24",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 28 (6326.02.222)",
@@ -145,6 +169,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-06-24",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 4 (6327.EG.004)",
@@ -155,6 +181,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-06-24",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 27 (6326.02.220)",
@@ -165,6 +193,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-06-24",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "SR 1 (6327.EG.001)",
@@ -177,5 +207,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409420",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:41:00Z"
 }

@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-15",
       "start_time": "08:00",
       "end_time": "09:30",
       "location": "SR 20 (6306.01.110)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-15",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-15",
       "start_time": "13:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-15",
       "start_time": "15:30",
       "end_time": "17:00",
       "location": "SR 20 (6306.01.110)",
@@ -52,6 +60,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-29",
       "start_time": "08:00",
       "end_time": "11:00",
       "location": "INF 307 - Präpsäle, EG/1.OG",
@@ -62,6 +84,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-16",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "SR 20 (6306.01.110)",
@@ -72,6 +96,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-16",
       "start_time": "12:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -82,6 +108,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-16",
       "start_time": "15:30",
       "end_time": "17:00",
       "location": "SR 20 (6306.01.110)",
@@ -92,6 +132,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-09",
       "start_time": "08:00",
       "end_time": "09:30",
       "location": "SR 20 (6306.01.110)",
@@ -102,6 +144,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-09",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -112,6 +156,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-09",
       "start_time": "13:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -122,6 +168,20 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-09",
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "15:30",
       "end_time": "17:00",
       "location": "SR 20 (6306.01.110)",
@@ -132,6 +192,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "08:00",
       "end_time": "11:00",
       "location": "INF 307 - Präpsäle, EG/1.OG",
@@ -142,6 +204,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "SR 20 (6306.01.110)",
@@ -152,6 +216,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "13:30",
       "end_time": "16:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -162,6 +228,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "SR 20 (6306.01.110)",
@@ -172,6 +240,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
       "start_time": "08:00",
       "end_time": "09:30",
       "location": "SR 20 (6306.01.110)",
@@ -182,6 +252,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -192,6 +264,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
       "start_time": "13:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -202,6 +276,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "15:30",
       "end_time": "17:00",
       "location": "SR 20 (6306.01.110)",
@@ -212,6 +300,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-07-02",
       "start_time": "08:00",
       "end_time": "11:00",
       "location": "INF 307 - Präpsäle, EG/1.OG",
@@ -222,6 +312,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "SR 20 (6306.01.110)",
@@ -232,6 +324,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "12:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -242,6 +336,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-26",
       "start_time": "08:00",
       "end_time": "11:00",
       "location": "INF 307 - Präpsäle, EG/1.OG",
@@ -252,6 +348,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "SR 20 (6306.01.110)",
@@ -262,6 +360,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
       "start_time": "12:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -272,6 +372,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-10",
       "start_time": "15:30",
       "end_time": "17:00",
       "location": "SR 20 (6306.01.110)",
@@ -282,6 +384,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-15",
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-10",
       "start_time": "08:00",
       "end_time": "09:30",
       "location": "SR 20 (6306.01.110)",
@@ -292,6 +408,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-10",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -302,6 +420,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-10",
       "start_time": "13:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -312,6 +432,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "SR 20 (6306.01.110)",
@@ -322,6 +444,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
       "start_time": "12:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -332,6 +456,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "SR 20 (6306.01.110)",
@@ -342,6 +468,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
       "start_time": "13:30",
       "end_time": "16:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -352,6 +480,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "SR 20 (6306.01.110)",
@@ -362,6 +492,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
       "start_time": "08:00",
       "end_time": "09:30",
       "location": "SR 20 (6306.01.110)",
@@ -372,6 +504,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
       "start_time": "09:30",
       "end_time": "11:00",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -382,6 +516,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
       "start_time": "13:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -392,6 +528,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
       "start_time": "08:00",
       "end_time": "11:00",
       "location": "INF 307 - Präpsäle, EG/1.OG",
@@ -402,6 +540,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "10:00",
       "end_time": "11:30",
       "location": "SR 20 (6306.01.110)",
@@ -412,6 +552,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "12:30",
       "end_time": "15:30",
       "location": "INF 326 - Praktikumsräume 1. OG",
@@ -424,5 +566,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/401517",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:08:54Z"
 }

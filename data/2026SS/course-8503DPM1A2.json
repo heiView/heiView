@@ -23,6 +23,20 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "mode decided by tutor: in person (ATV/IIC building INF242, seminar room on the ground floor) or via Zoom"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-14",
       "start_time": "18:00",
       "end_time": "19:30",
       "location": "Siehe Anmerkung",
@@ -35,5 +49,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418032",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:57:53Z"
 }

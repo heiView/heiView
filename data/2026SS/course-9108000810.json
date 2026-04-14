@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-23",
       "start_time": "09:30",
       "end_time": "12:30",
       "location": "HEIN Sim Multi (5410.02.026)",
@@ -23,6 +25,44 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "HEIN Sim Multi (5410.02.026)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30207",
+      "room": "HEIN Sim Multi (5410.02.026)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "HEIN Sim Multi (5410.02.026)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30207",
+      "room": "HEIN Sim Multi (5410.02.026)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-25",
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "HEIN Sim Multi (5410.02.026)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30207",
+      "room": "HEIN Sim Multi (5410.02.026)",
+      "building": "Wieblinger Weg 21, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
       "start_time": "09:30",
       "end_time": "12:30",
       "location": "KOPF SR 2 (6400.EG.269)",
@@ -33,6 +73,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
       "start_time": "09:30",
       "end_time": "12:30",
       "location": "KOPF ZAHN Trainingszentrum (6400.02.139)",
@@ -43,6 +97,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-02",
       "start_time": "09:30",
       "end_time": "12:30",
       "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
@@ -53,6 +109,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
       "start_time": "09:15",
       "end_time": "12:30",
       "location": "KOPF ZAHN Phantomsaal Ost (6400.02.123)",
@@ -63,6 +121,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
       "start_time": "09:30",
       "end_time": "12:30",
       "location": "Online",
@@ -75,5 +135,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420034",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:26:47Z"
+  "last_updated": "2026-04-14T20:08:41Z"
 }

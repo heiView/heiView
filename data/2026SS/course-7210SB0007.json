@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-17",
       "start_time": "12:15",
       "end_time": "17:00",
       "location": "Übungsraum (6231.EG.008)",
@@ -22,6 +24,68 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-24",
+      "start_time": "12:15",
+      "end_time": "17:00",
+      "location": "Übungsraum (6231.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11221",
+      "room": "Übungsraum (6231.EG.008)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-08",
+      "start_time": "12:15",
+      "end_time": "17:00",
+      "location": "Übungsraum (6231.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11221",
+      "room": "Übungsraum (6231.EG.008)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-22",
+      "start_time": "12:15",
+      "end_time": "17:00",
+      "location": "Übungsraum (6231.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11221",
+      "room": "Übungsraum (6231.EG.008)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-30",
+      "start_time": "12:15",
+      "end_time": "18:00",
+      "location": "Übungsraum (6231.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11221",
+      "room": "Übungsraum (6231.EG.008)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-15",
+      "start_time": "12:15",
+      "end_time": "18:00",
+      "location": "Übungsraum (6231.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11221",
+      "room": "Übungsraum (6231.EG.008)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-29",
       "start_time": "12:15",
       "end_time": "18:00",
       "location": "Übungsraum (6231.EG.008)",
@@ -34,5 +98,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412779",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:22:07Z"
 }

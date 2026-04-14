@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Übungsraum (6348.01.132)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Hörsaal (6348.EG.015)",
@@ -35,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409363",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:45:36Z"
 }

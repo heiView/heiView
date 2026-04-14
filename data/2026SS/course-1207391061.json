@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-21",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "Hörsaal (7051.EG.012)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Externer Ort",
@@ -32,6 +36,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
+      "start_time": "18:30",
+      "end_time": "20:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Sitzung zum Thema Digitalisierungsforschung in Kooperation mit der Universität Birmingham"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
       "start_time": "18:30",
       "end_time": "20:00",
       "location": "Online",
@@ -44,5 +62,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413578",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:38:13Z"
 }

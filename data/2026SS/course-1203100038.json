@@ -15,6 +15,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Übungsraum (6504.01.118)",
@@ -25,6 +27,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Übungsraum (6504.01.118)",
@@ -35,6 +39,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Übungsraum (6504.01.118)",
@@ -45,6 +51,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Übungsraum (6504.01.118)",
@@ -55,6 +63,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-03",
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (6504.01.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10263",
+      "room": "Übungsraum (6504.01.118)",
+      "building": "Im Neuenheimer Feld 504, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-07-24",
       "start_time": "09:00",
       "end_time": "16:00",
       "location": "Übungsraum (6504.01.118)",
@@ -67,5 +89,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410140",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:48:41Z"
 }

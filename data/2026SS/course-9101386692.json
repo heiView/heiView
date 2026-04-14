@@ -15,6 +15,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-20",
       "start_time": "13:00",
       "end_time": "16:15",
       "location": "Seminarraum K11 (6130.01.011)",
@@ -25,6 +27,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-04",
       "start_time": "13:00",
       "end_time": "16:15",
       "location": "Seminarraum K18 (6130.01.018)",
@@ -35,6 +39,44 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K18 (6130.01.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30623",
+      "room": "Seminarraum K18 (6130.01.018)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-15",
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K18 (6130.01.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30623",
+      "room": "Seminarraum K18 (6130.01.018)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-27",
+      "start_time": "13:00",
+      "end_time": "16:15",
+      "location": "Seminarraum K18 (6130.01.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30623",
+      "room": "Seminarraum K18 (6130.01.018)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
       "start_time": "12:45",
       "end_time": "16:00",
       "location": "Seminarraum K18 (6130.01.018)",
@@ -47,5 +89,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400471",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:23:19Z"
 }

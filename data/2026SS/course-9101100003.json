@@ -12,6 +12,32 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
+      "start_time": "11:50",
+      "end_time": "13:20",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "11:50",
+      "end_time": "13:20",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-07-16",
       "start_time": "11:50",
       "end_time": "13:20",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -22,6 +48,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-20",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-07-15",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -32,6 +72,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-07-16",
       "start_time": "13:30",
       "end_time": "15:00",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -42,6 +108,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-20",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -52,6 +120,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-07-15",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-20",
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-07-15",
       "start_time": "14:30",
       "end_time": "16:00",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -62,6 +156,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "MED Skillslab Endo (6410.EG.222)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28750",
+      "room": "MED Skillslab Endo (6410.EG.222)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": "Pflichtveranstaltung"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-07-16",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "MED Skillslab Endo (6410.EG.222)",
@@ -74,5 +194,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397434",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:53:48Z"
 }

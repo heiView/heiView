@@ -12,6 +12,32 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-05-07",
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "INF 400 - Leitstelle Zahn KFO",
+      "location_link": null,
+      "room": "INF 400 - Leitstelle Zahn KFO",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "INF 400 - Leitstelle Zahn KFO",
+      "location_link": null,
+      "room": "INF 400 - Leitstelle Zahn KFO",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-07-23",
       "start_time": "09:00",
       "end_time": "12:30",
       "location": "INF 400 - Leitstelle Zahn KFO",
@@ -24,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416252",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:08:48Z"
 }

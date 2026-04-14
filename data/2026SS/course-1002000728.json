@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-28",
       "start_time": "10:30",
       "end_time": "14:30",
       "location": "Therapieraum Landfried",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-19",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Therapieraum Landfried",
@@ -32,6 +36,44 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Therapieraum Landfried",
+      "location_link": null,
+      "room": "Therapieraum Landfried",
+      "building": null,
+      "note": "Raum 120"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Therapieraum Landfried",
+      "location_link": null,
+      "room": "Therapieraum Landfried",
+      "building": null,
+      "note": "TR 2"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Therapieraum Landfried",
+      "location_link": null,
+      "room": "Therapieraum Landfried",
+      "building": null,
+      "note": "TR 2"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "10:00",
       "end_time": "12:00",
       "location": "Therapieraum Landfried",
@@ -44,5 +86,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415908",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:50:51Z"
 }

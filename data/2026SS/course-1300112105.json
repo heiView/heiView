@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-21",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-07-20",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "Unterrichtsraum (7020.01.028)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Übungsraum (8010.EG.058)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Übungsraum (8010.EG.056)",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-21",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Übungsraum (8010.EG.068)",
@@ -72,6 +84,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-21",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
@@ -84,5 +98,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410129",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:52:24Z"
 }

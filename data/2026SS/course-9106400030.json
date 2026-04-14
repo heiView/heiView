@@ -12,6 +12,32 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-30",
+      "end_date": "2026-03-30",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-11",
       "start_time": "13:30",
       "end_time": "16:30",
       "location": "Ort noch nicht bekannt",
@@ -22,6 +48,20 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-17",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "13:30",
       "end_time": "16:30",
       "location": "Ort noch nicht bekannt",
@@ -32,6 +72,32 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-04-09",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-07",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
       "start_time": "13:30",
       "end_time": "16:30",
       "location": "Ort noch nicht bekannt",
@@ -42,6 +108,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-15",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-05-06",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-27",
       "start_time": "13:30",
       "end_time": "16:30",
       "location": "Ort noch nicht bekannt",
@@ -52,6 +144,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-03-31",
+      "end_date": "2026-04-14",
       "start_time": "13:30",
       "end_time": "16:30",
       "location": "Ort noch nicht bekannt",
@@ -64,5 +158,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398518",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:14Z"
 }

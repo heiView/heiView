@@ -14,6 +14,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Hörsaal 700 (6700.EG.012)",
@@ -24,6 +26,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-05-07",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Gymnastikhalle 700 (6700.EG.070)",
@@ -34,6 +38,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Sporthalle 700 (6700.EG.022)",
@@ -44,6 +50,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Turnhalle 700 (6700.EG.071)",
@@ -56,5 +64,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414566",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:01:25Z"
 }

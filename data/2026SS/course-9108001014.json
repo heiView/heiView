@@ -13,6 +13,32 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-14",
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF ZAHN kl. HS (6400.EG.114)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28815",
+      "room": "KOPF ZAHN kl. HS (6400.EG.114)",
+      "building": "KOPF ZAHN kl. HS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-05-26",
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF ZAHN kl. HS (6400.EG.114)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28815",
+      "room": "KOPF ZAHN kl. HS (6400.EG.114)",
+      "building": "KOPF ZAHN kl. HS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-07-21",
       "start_time": "10:15",
       "end_time": "11:00",
       "location": "KOPF ZAHN kl. HS (6400.EG.114)",
@@ -23,6 +49,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "KOPF gHS (6400.EG.266)",
@@ -35,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417250",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:26:36Z"
+  "last_updated": "2026-04-14T20:08:32Z"
 }

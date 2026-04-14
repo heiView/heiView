@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-07",
       "start_time": "14:00",
       "end_time": "18:30",
       "location": "ÜR K 3 (1040.04.403)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "08:30",
       "end_time": "10:45",
       "location": "ÜR K 2 (1040.01.109)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "08:30",
       "end_time": "10:45",
       "location": "KiGa II (1200.EG.002C)",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "08:30",
       "end_time": "10:45",
       "location": "ÖInst SR (1060.EG.014)",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "08:30",
       "end_time": "18:30",
       "location": "ÜR K 3 (1040.04.403)",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "14:00",
       "end_time": "16:45",
       "location": "KiGa II (1200.EG.002C)",
@@ -73,6 +85,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "14:00",
       "end_time": "16:45",
       "location": "ÜR K 2 (1040.01.109)",
@@ -83,6 +97,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-08",
       "start_time": "14:00",
       "end_time": "16:45",
       "location": "ÖInst SR (1060.EG.014)",
@@ -93,6 +109,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-09",
+      "end_date": "2026-04-09",
       "start_time": "08:30",
       "end_time": "12:30",
       "location": "ÜR K 3 (1040.04.403)",
@@ -105,5 +123,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411085",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:34:40Z"
 }

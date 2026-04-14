@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum (6348.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19178",
+      "room": "Übungsraum (6348.EG.004)",
+      "building": "Im Neuenheimer Feld 348, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-22",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Übungsraum (6348.EG.004)",
@@ -22,6 +36,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-10",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "Externer Ort",
@@ -32,6 +48,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-04",
+      "end_date": "2026-07-04",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "Übungsraum (6348.EG.004)",
@@ -42,6 +60,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-11",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "Externer Ort",
@@ -54,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413542",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:38Z"
 }

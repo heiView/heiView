@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "17:30",
       "end_time": "18:30",
       "location": "Online",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "205 Haus zum Riesen (15)",
@@ -35,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418750",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T12:58:24Z"
+  "last_updated": "2026-04-14T22:08:44Z"
 }

@@ -12,6 +12,20 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (3051.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19838",
+      "room": "Übungsraum (3051.EG.013)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-07-14",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Übungsraum (3051.EG.013)",
@@ -24,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416909",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:55:24Z"
+  "last_updated": "2026-04-14T18:37:31Z"
 }

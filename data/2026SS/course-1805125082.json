@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-27",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Unterrichtsraum (4310.02.023)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Unterrichtsraum (4310.02.023)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-11",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Unterrichtsraum (4310.02.023)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Unterrichtsraum (4310.02.034)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-18",
+      "end_date": "2026-07-18",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Unterrichtsraum (4310.02.034)",
@@ -64,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413220",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:36:25Z"
 }

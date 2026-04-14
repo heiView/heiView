@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Online",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-05-29",
       "start_time": "14:00",
       "end_time": "18:00",
       "location": "HS 1 (3020.01.127)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "HS 1 (3020.01.127)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "14:00",
       "end_time": "18:00",
       "location": "ÜR B (3010.EG.019)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-11",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "ÜR B (3010.EG.019)",
@@ -64,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408135",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:12:47Z"
 }

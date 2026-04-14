@@ -13,6 +13,20 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-05-18",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-13",
       "start_time": "08:15",
       "end_time": "09:15",
       "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
@@ -23,6 +37,20 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-07-14",
       "start_time": "08:15",
       "end_time": "09:15",
       "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
@@ -33,6 +61,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-22",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-20",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-07-15",
       "start_time": "08:15",
       "end_time": "09:15",
       "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
@@ -43,6 +97,20 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-07-16",
       "start_time": "08:15",
       "end_time": "09:15",
       "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
@@ -53,6 +121,56 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-07-10",
       "start_time": "08:15",
       "end_time": "09:15",
       "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
@@ -63,6 +181,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
       "start_time": "08:15",
       "end_time": "09:15",
       "location": "KOPF gHS (6400.EG.266)",
@@ -73,6 +193,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
       "start_time": "08:10",
       "end_time": "09:10",
       "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
@@ -85,5 +207,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402355",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T19:54:54Z"
 }

@@ -13,6 +13,32 @@
   "weeks": [
     {
       "day_of_week": 5,
+      "start_date": "2026-03-06",
+      "end_date": "2026-03-06",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-17",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "KOPF Spiegelsaal (6400.EG.276)",
@@ -23,6 +49,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "KOPF Spiegelsaal (6400.EG.276)",
@@ -33,6 +61,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-22",
       "start_time": "10:30",
       "end_time": "12:00",
       "location": "KOPF Spiegelsaal (6400.EG.276)",
@@ -43,6 +73,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "11:30",
       "end_time": "13:00",
       "location": "KOPF Spiegelsaal (6400.EG.276)",
@@ -55,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399209",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:57:50Z"
 }

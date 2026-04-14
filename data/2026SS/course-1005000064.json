@@ -14,6 +14,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Seminarraum 1 720 (6720.EG.049)",
@@ -24,6 +26,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "Seminarraum 1 720 (6720.EG.049)",
@@ -34,6 +38,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Seminarraum 1 720 (6720.EG.049)",
@@ -44,6 +50,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-24",
       "start_time": "10:00",
       "end_time": "16:00",
       "location": "Seminarraum 2 720 (6720.EG.048)",
@@ -54,6 +62,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-21",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Seminarraum 2 720 (6720.EG.048)",
@@ -64,6 +74,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-07-14",
       "start_time": "14:15",
       "end_time": "16:45",
       "location": "Seminarraum 1 720 (6720.EG.049)",
@@ -76,5 +88,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414607",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:34:52Z"
 }

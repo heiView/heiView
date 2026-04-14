@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "08:00",
       "end_time": "08:10",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "08:00",
       "end_time": "08:45",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
       "start_time": "08:10",
       "end_time": "08:45",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
       "start_time": "13:00",
       "end_time": "13:30",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
       "start_time": "13:30",
       "end_time": "14:20",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
       "start_time": "14:20",
       "end_time": "15:00",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -72,6 +84,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
       "start_time": "15:00",
       "end_time": "15:30",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -82,6 +96,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-04",
       "start_time": "13:30",
       "end_time": "14:00",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -92,6 +108,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-04",
       "start_time": "14:00",
       "end_time": "14:30",
       "location": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
@@ -104,5 +122,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397325",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:56:10Z"
 }

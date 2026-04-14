@@ -527,6 +527,76 @@ function createApp() {
     }
   });
 
+  // POST /api/admin/stale-overrides/:courseId/merge-weeks
+  // Merges source weeks into override, preserving manually-set fields (building, note).
+  // Match key: (day_of_week, start_time, end_time, room). For each source week:
+  //   - If a matching override week exists, use source as base but keep override's building/note.
+  //   - Otherwise use source week as-is.
+  // Top-level fields (title, type, etc.) remain as in the current override.
+  app.post('/api/admin/stale-overrides/:courseId/merge-weeks', requireAdmin, (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    const filename = `course-${courseId}.json`;
+    const srcPath = path.join(COURSE_DIR, filename);
+    const ovPath = path.join(OVERRIDES_DIR, filename);
+    if (!fs.existsSync(srcPath)) { res.status(404).json({ error: 'Source file not found' }); return; }
+    if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
+    try {
+      const src = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
+      const ov = JSON.parse(fs.readFileSync(ovPath, 'utf8'));
+
+      // Fields that are "manual" — preserve from override when a matching week is found.
+      const MANUAL_WEEK_FIELDS = ['building', 'note'];
+
+      // Build a lookup from override weeks: key -> week object
+      function weekKey(w) {
+        return [w.day_of_week, w.start_time, w.end_time, w.room || w.location].join('|');
+      }
+      const ovWeekMap = new Map();
+      for (const w of (Array.isArray(ov.weeks) ? ov.weeks : [])) {
+        ovWeekMap.set(weekKey(w), w);
+      }
+
+      const mergedWeeks = (Array.isArray(src.weeks) ? src.weeks : []).map(srcWeek => {
+        const key = weekKey(srcWeek);
+        const ovWeek = ovWeekMap.get(key);
+        if (!ovWeek) return { ...srcWeek };
+        const merged = { ...srcWeek };
+        for (const field of MANUAL_WEEK_FIELDS) {
+          if (ovWeek[field] != null) merged[field] = ovWeek[field];
+        }
+        return merged;
+      });
+
+      const updated = {
+        ...ov,
+        weeks: mergedWeeks,
+        last_updated: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
+      };
+      fs.writeFileSync(ovPath, JSON.stringify(updated, null, 2), 'utf8');
+      syncSingleCourse(courseId);
+      res.json({ ok: true, mergedWeeks: mergedWeeks.length });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // DELETE /api/admin/overrides/:courseId
+  // Deletes the override file so the course falls back to the source JSON.
+  app.delete('/api/admin/overrides/:courseId', requireAdmin, (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    const ovPath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
+    if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
+    try {
+      fs.unlinkSync(ovPath);
+      syncSingleCourse(courseId);
+      res.json({ ok: true });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
   app.get('/api/admin/course-file/:courseId', requireAdmin, (req, res) => {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }

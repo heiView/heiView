@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR A, 1.OG",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR E, 1.OG",
@@ -32,6 +36,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR B, 1.OG",
@@ -42,6 +48,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR F, 1.OG",
@@ -52,6 +60,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR C, 1.OG",
@@ -62,6 +72,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR G, 1.OG",
@@ -72,6 +84,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR D, 1.OG",
@@ -82,6 +96,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR H, 1.OG",
@@ -92,6 +108,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-29",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR A, 1.OG",
@@ -102,6 +120,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR E, 1.OG",
@@ -112,6 +132,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-29",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR B, 1.OG",
@@ -122,6 +144,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR F, 1.OG",
@@ -132,6 +156,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-29",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR C, 1.OG",
@@ -142,6 +168,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR G, 1.OG",
@@ -152,6 +180,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-29",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR D, 1.OG",
@@ -162,6 +192,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR H, 1.OG",
@@ -172,6 +204,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR A, 1.OG",
@@ -182,6 +216,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-06",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR E, 1.OG",
@@ -192,6 +228,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-07-03",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR B, 1.OG",
@@ -202,6 +240,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-06",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR F, 1.OG",
@@ -212,6 +252,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-26",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR C, 1.OG",
@@ -222,6 +264,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-29",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR G, 1.OG",
@@ -232,6 +276,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-26",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR D, 1.OG",
@@ -242,6 +288,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-29",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR H, 1.OG",
@@ -252,6 +300,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR E, 1.OG",
@@ -262,6 +312,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-25",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR F, 1.OG",
@@ -272,6 +324,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR G, 1.OG",
@@ -282,6 +336,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR H, 1.OG",
@@ -292,6 +348,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR A, 1.OG",
@@ -302,6 +360,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR B, 1.OG",
@@ -312,6 +372,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR C, 1.OG",
@@ -322,6 +384,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-01",
       "start_time": "13:30",
       "end_time": "17:15",
       "location": "INF 326 - PR D, 1.OG",
@@ -332,6 +396,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-02",
       "start_time": "13:30",
       "end_time": "17:50",
       "location": "INF 326 - PR F, 1.OG",
@@ -344,5 +410,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/386021",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:06Z"
 }

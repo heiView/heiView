@@ -21,6 +21,68 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-30",
+      "end_date": "2026-04-01",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-21",
+      "end_date": "2026-09-25",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-11",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-14",
+      "end_date": "2026-09-18",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "PC-Pool (6227.01.401)",
@@ -31,6 +93,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-09",
+      "end_date": "2026-04-09",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "PC-Pool (8011.EG.001)",
@@ -41,6 +105,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-10",
+      "end_date": "2026-04-10",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "PC-Pool (8011.EG.001)",
@@ -51,6 +117,8 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "PC-Pool (8011.EG.001)",
@@ -61,6 +129,32 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-08-31",
+      "end_date": "2026-09-04",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Meridiansaal (2811.EG.014X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14447",
+      "room": "Meridiansaal (2811.EG.014X)",
+      "building": "Meridiansaal, Königstuhl Sternwarte , Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-14",
+      "end_date": "2026-09-18",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Meridiansaal (2811.EG.014X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14447",
+      "room": "Meridiansaal (2811.EG.014X)",
+      "building": "Meridiansaal, Königstuhl Sternwarte , Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-21",
+      "end_date": "2026-09-25",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Meridiansaal (2811.EG.014X)",
@@ -73,5 +167,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410447",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:29:59Z"
 }

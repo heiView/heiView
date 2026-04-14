@@ -16,6 +16,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
       "start_time": "10:00",
       "end_time": "15:00",
       "location": "Seminarraum 2.8 (6517.EG.028)",
@@ -26,6 +28,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
       "start_time": "10:00",
       "end_time": "15:00",
       "location": "Seminarraum 2.8 (6517.EG.028)",
@@ -36,6 +40,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
       "start_time": "10:00",
       "end_time": "15:00",
       "location": "Seminarraum 2.8 (6517.EG.028)",
@@ -48,5 +54,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418370",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:26:42Z"
 }

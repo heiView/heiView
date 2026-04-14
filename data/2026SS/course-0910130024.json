@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
       "start_time": "14:30",
       "end_time": "17:45",
       "location": "Seminarraum K42 (6130.EG.042)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
       "start_time": "14:30",
       "end_time": "17:45",
       "location": "Selbststudium",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-28",
+      "end_date": "2026-05-28",
       "start_time": "14:30",
       "end_time": "17:45",
       "location": "Seminarraum K9 (6130.01.009)",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
       "start_time": "14:30",
       "end_time": "17:45",
       "location": "Seminarraum K1 (6130.EG.001)",
@@ -53,6 +61,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-06-25",
       "start_time": "14:30",
       "end_time": "17:45",
       "location": "Seminarraum K11 (6130.01.011)",
@@ -63,6 +73,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-23",
       "start_time": "14:30",
       "end_time": "17:45",
       "location": "Seminarraum K16 (6130.01.016)",
@@ -70,10 +82,22 @@
       "room": "Seminarraum K16 (6130.01.016)",
       "building": "Im Neuenheimer Feld 130, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-30",
+      "end_date": "2026-07-30",
+      "start_time": "14:30",
+      "end_time": "17:45",
+      "location": "Seminarraum K9 (6130.01.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30628",
+      "room": "Seminarraum K9 (6130.01.009)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": "Modulabschluss"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400456",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T18:50:44Z"
 }

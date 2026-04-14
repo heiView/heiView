@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "08:15",
       "end_time": "10:45",
       "location": "ÖInst SR (1060.EG.014)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
       "start_time": "08:15",
       "end_time": "10:45",
       "location": "Kapelle",
@@ -34,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411071",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T13:25:12Z"
+  "last_updated": "2026-04-14T22:05:37Z"
 }

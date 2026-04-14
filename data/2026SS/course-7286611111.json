@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
       "start_time": "13:00",
       "end_time": "16:00",
       "location": "Siehe Anmerkung",
@@ -23,6 +25,20 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-08",
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "*Working session for field trip (tutorial)*. Location of the session: HCIAS Meeting Room (Campus Bergheim:"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
       "start_time": "09:00",
       "end_time": "13:00",
       "location": "Siehe Anmerkung",
@@ -33,6 +49,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -43,6 +61,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-16",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -53,6 +73,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -60,10 +82,22 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": "*field trip* July 8 to 10 (outside Heidelberg)"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "*Follow-up of the field trip*. Location of the session: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407894",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:06:33Z"
 }

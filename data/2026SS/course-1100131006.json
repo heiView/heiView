@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-07",
       "start_time": "09:00",
       "end_time": "15:00",
       "location": "Seminarraum SR Statistik (6205.02.103)",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-09",
+      "end_date": "2026-04-09",
       "start_time": "09:00",
       "end_time": "15:00",
       "location": "Seminarraum SR Statistik (6205.02.103)",
@@ -33,6 +37,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-27",
+      "end_date": "2026-05-27",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Seminarraum SR Statistik (6205.02.103)",
@@ -43,6 +49,8 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-02",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Seminarraum SR Statistik (6205.02.103)",
@@ -55,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414360",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:11:15Z"
 }

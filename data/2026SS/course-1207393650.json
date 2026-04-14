@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-03-02",
+      "end_date": "2026-03-02",
       "start_time": "19:00",
       "end_time": "20:30",
       "location": "Online",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Externer Ort",
@@ -32,6 +36,32 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-24",
+      "start_time": "10:30",
+      "end_time": "19:00",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "10:30",
+      "end_time": "19:00",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "10:30",
       "end_time": "19:00",
       "location": "Hörsaal (7051.EG.012)",
@@ -42,6 +72,20 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
+      "start_time": "18:30",
+      "end_time": "20:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Sitzung zum Thema Digitalisierungsforschung in Kooperation mit der Universität Birmingham"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
       "start_time": "18:30",
       "end_time": "20:00",
       "location": "Online",
@@ -54,5 +98,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413580",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:09:39Z"
 }

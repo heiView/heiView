@@ -13,6 +13,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-04-15",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "Selbststudium",
@@ -23,6 +25,8 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "Seminarraum K12 (6130.01.012)",
@@ -33,6 +37,32 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Seminarraum K12 (6130.01.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30626",
+      "room": "Seminarraum K12 (6130.01.012)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Seminarraum K12 (6130.01.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30626",
+      "room": "Seminarraum K12 (6130.01.012)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
       "start_time": "16:30",
       "end_time": "18:00",
       "location": "Siehe Anmerkung",
@@ -45,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400446",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T13:41:02Z"
+  "last_updated": "2026-04-14T20:23:07Z"
 }

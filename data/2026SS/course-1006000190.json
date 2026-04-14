@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Übungsraum (4141.EG.045)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
       "start_time": "13:00",
       "end_time": "17:00",
       "location": "Übungsraum (4141.EG.045)",
@@ -32,6 +36,20 @@
     },
     {
       "day_of_week": 6,
+      "start_date": "2026-06-06",
+      "end_date": "2026-06-06",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (4141.EG.045)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19479",
+      "room": "Übungsraum (4141.EG.045)",
+      "building": "Bergheimer Straße 20, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-07-04",
+      "end_date": "2026-07-04",
       "start_time": "10:00",
       "end_time": "17:00",
       "location": "Übungsraum (4141.EG.045)",
@@ -42,6 +60,8 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
       "start_time": "13:00",
       "end_time": "17:00",
       "location": "Übungsraum (4141.EG.043)",
@@ -54,5 +74,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/380807",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T20:35:17Z"
 }

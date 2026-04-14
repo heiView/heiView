@@ -12,6 +12,8 @@
   "weeks": [
     {
       "day_of_week": 6,
+      "start_date": "2026-05-09",
+      "end_date": "2026-05-09",
       "start_time": "09:00",
       "end_time": "16:30",
       "location": "Seminarraum K2 (6460.02.304)",
@@ -22,6 +24,8 @@
     },
     {
       "day_of_week": 7,
+      "start_date": "2026-05-10",
+      "end_date": "2026-05-10",
       "start_time": "09:00",
       "end_time": "16:30",
       "location": "Seminarraum K2 (6460.02.304)",
@@ -34,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419751",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T16:04:19Z"
 }
