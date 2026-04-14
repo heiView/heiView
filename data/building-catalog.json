@@ -9291,6 +9291,58 @@
         }
       ],
       "notes": ""
+    },
+    {
+      "id": "bld-other-205-haus-zum-riesen-15",
+      "street": "205 Haus zum Riesen (15)",
+      "displayName": "205 Haus zum Riesen (15)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-205-haus-zum-riesen-15::rm-205-haus-zum-riesen-15",
+          "name": "205 Haus zum Riesen (15)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-a1-07",
+      "street": "A1.07",
+      "displayName": "A1.07",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-a1-07::rm-konferenzraum-a1-07",
+          "name": "Konferenzraum, A1.07",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-turm-1",
+      "street": "Turm 1",
+      "displayName": "Turm 1",
+      "campusId": "other",
+      "floors": [
+        "9.OG"
+      ],
+      "rooms": [
+        {
+          "id": "bld-other-turm-1::rm-bg-ludwigshafen-sr-1-2-turm-1-9-og",
+          "name": "BG Ludwigshafen, SR 1+2, Turm 1, 9.OG",
+          "floors": [
+            "9.OG"
+          ],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
     }
   ]
 }

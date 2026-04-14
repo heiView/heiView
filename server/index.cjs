@@ -229,7 +229,156 @@ function createApp() {
     res.json({ ok: true });
   });
 
-  // ── Admin endpoints ─────────────────────────────────────────────────────
+  app.get('/api/search', (req, res) => {
+    const q = typeof req.query.q === 'string' ? req.query.q.trim() : '';
+    if (!q) { res.json([]); return; }
+    if (q.length > 200) { res.status(400).json({ error: 'query too long' }); return; }
+
+    const qLower = q.toLowerCase();
+    const pattern = `%${qLower}%`;
+
+    // If query looks like "First Last", also try "Last, First" for lecturers_json matching.
+    // E.g. "richard wombacher" → also match "wombacher, richard".
+    let lecturerPattern = pattern;
+    const words = qLower.trim().split(/\s+/);
+    if (words.length === 2) {
+      lecturerPattern = `%${words[1]}, ${words[0]}%`;
+    }
+
+    const skipSet = new Set(readSkipList().map(String));
+
+    let db;
+    try {
+      db = openDb();
+
+      // For each matching course, return one row per (building_name, room) combination.
+      const rows = db.prepare(`
+        SELECT
+          c.id AS course_id,
+          c.title,
+          c.lecturers_json,
+          c.detail_link,
+          c.start_date,
+          c.end_date,
+          o.building_name,
+          o.room,
+          o.start_time,
+          o.end_time,
+          o.note,
+          o.next_date,
+          o.last_date
+        FROM courses c
+        LEFT JOIN (
+          SELECT course_id, building_name, room,
+                 start_time, end_time, note,
+                 MIN(CASE WHEN date >= date('now') THEN date END) AS next_date,
+                 MAX(date) AS last_date
+          FROM occurrences
+          GROUP BY course_id, building_name, room
+        ) o ON o.course_id = c.id
+        WHERE
+          LOWER(c.title) LIKE @p OR
+          LOWER(c.lecturers_json) LIKE @p OR
+          LOWER(c.lecturers_json) LIKE @lp OR
+          LOWER(COALESCE(o.note, '')) LIKE @p
+        ORDER BY c.title
+        LIMIT 300
+      `).all({ p: pattern, lp: lecturerPattern });
+
+      // Also search building/room names
+      const roomRows = db.prepare(`
+        SELECT
+          c.id AS course_id,
+          c.title,
+          c.lecturers_json,
+          c.detail_link,
+          c.start_date,
+          c.end_date,
+          o.building_name,
+          o.room,
+          o.start_time,
+          o.end_time,
+          o.note,
+          o.next_date,
+          o.last_date
+        FROM (
+          SELECT course_id, building_name, room,
+                 MIN(start_time) AS start_time, MIN(end_time) AS end_time,
+                 MIN(note) AS note,
+                 MIN(CASE WHEN date >= date('now') THEN date END) AS next_date,
+                 MAX(date) AS last_date
+          FROM occurrences
+          GROUP BY course_id, building_name, room
+        ) o
+        JOIN courses c ON c.id = o.course_id
+        WHERE
+          LOWER(COALESCE(o.building_name, '')) LIKE @p OR
+          LOWER(COALESCE(o.room, '')) LIKE @p
+        LIMIT 300
+      `).all({ p: pattern });
+
+      // Merge and deduplicate by (course_id, building_name, room)
+      const seen = new Set();
+      const merged = [];
+      for (const row of [...rows, ...roomRows]) {
+        const key = `${row.course_id}|${row.building_name || ''}|${row.room || ''}`;
+        if (!seen.has(key)) { seen.add(key); merged.push(row); }
+      }
+
+      const results = [];
+      for (const row of merged) {
+        if (skipSet.has(String(row.course_id))) continue;
+
+        let lecturers = [];
+        try { lecturers = JSON.parse(row.lecturers_json || '[]'); } catch (_) {}
+        const profStr = Array.isArray(lecturers)
+          ? lecturers.map(l => {
+              if (typeof l !== 'string') return l;
+              let name = l.trim();
+              const nnMatch = name.match(/<N\.N\.>\(([^)]+)\)/);
+              if (nnMatch) name = nnMatch[1].trim();
+              else name = name.replace(/,\s*\d+\.\d+$/, '').trim();
+              const parts = name.split(',');
+              if (parts.length === 2) return `${parts[1].trim()} ${parts[0].trim()}`;
+              return name;
+            }).join(', ')
+          : '';
+
+        const buildingId = (row.building_name || 'Unknown').trim();
+
+        results.push({
+          course: {
+            time: makeTimeRange(row.start_time, row.end_time),
+            name: makeCourseLabel(row.title, row.course_id),
+            prof: profStr,
+            link: row.detail_link || null,
+            note: row.note || null,
+            start_date: row.start_date || null,
+            end_date: row.end_date || null,
+          },
+          room: row.room || 'Unknown',
+          roomDisplayName: row.room || 'Unknown',
+          buildingId,
+          buildingLabel: buildingId,
+          startMinutes: row.start_time ? (() => { const [h, m] = row.start_time.split(':').map(Number); return h * 60 + m; })() : 0,
+          endMinutes: row.end_time ? (() => { const [h, m] = row.end_time.split(':').map(Number); return h * 60 + m; })() : 0,
+          hasValidTime: !!(row.start_time && row.end_time),
+          targetDate: row.next_date || row.last_date || null,
+        });
+      }
+
+      results.sort((a, b) => a.startMinutes - b.startMinutes);
+      res.setHeader('Cache-Control', 'no-store');
+      res.json(results);
+    } catch (err) {
+      console.error('/api/search error:', err);
+      res.status(500).json({ error: 'internal error' });
+    } finally {
+      if (db) db.close();
+    }
+  });
+
+
   app.post('/api/admin/login', (req, res) => {
     const { username, password } = req.body || {};
     const account = findAccount(username);

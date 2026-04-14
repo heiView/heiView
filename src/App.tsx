@@ -70,6 +70,9 @@ type CourseModalState = {
   course: Course
   startMinutes: number
   endMinutes: number
+  buildingId?: string
+  buildingLabel?: string
+  targetDate?: string | null
 }
 
 type TimelineEvent = {
@@ -83,6 +86,18 @@ type TimelineEvent = {
 type FloorGroup = {
   floor: string
   rooms: RoomEntry[]
+}
+
+type SearchResult = {
+  course: Course
+  room: string
+  roomDisplayName: string
+  buildingId: string
+  buildingLabel: string
+  startMinutes: number
+  endMinutes: number
+  hasValidTime: boolean
+  targetDate?: string | null
 }
 
 const UI_TEXT = {
@@ -108,6 +123,8 @@ const UI_TEXT = {
   reportError: 'Report Error',
   addToCalendar: 'Add to Calendar',
   downloadIcs: 'Download .ics',
+  searchResultsEmpty: 'No courses match your search',
+  viewInTimetable: 'View in timetable',
 } as const
 
 function toGoogleCalendarUrl(name: string, room: string, dateStr: string, startMin: number, endMin: number, prof: string, link: string, endDate?: string | null) {
@@ -405,6 +422,8 @@ function App() {
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
   const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
+  const [searchResults, setSearchResults] = React.useState<SearchResult[]>([])
+  const [searchLoading, setSearchLoading] = React.useState(false)
 
   const initializedRef = React.useRef(false)
   const campusSyncedRef = React.useRef(false)
@@ -609,6 +628,34 @@ function App() {
       }))
   }, [visibleRooms])
 
+  React.useEffect(() => {
+    const query = deferredSearch.trim()
+    if (!query) {
+      setSearchResults([])
+      return
+    }
+
+    let alive = true
+    setSearchLoading(true)
+
+    fetch(`/api/search?q=${encodeURIComponent(query)}`)
+      .then((r) => r.json())
+      .then((data: SearchResult[]) => {
+        if (!alive) return
+        setSearchResults(Array.isArray(data) ? data : [])
+      })
+      .catch(() => {
+        if (alive) setSearchResults([])
+      })
+      .finally(() => {
+        if (alive) setSearchLoading(false)
+      })
+
+    return () => {
+      alive = false
+    }
+  }, [deferredSearch])
+
   const appTheme = React.useMemo(
     () => ({
       algorithm: theme === 'dark' ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm,
@@ -621,6 +668,7 @@ function App() {
     [theme],
   )
 
+  const isSearchMode = !loading && deferredSearch.trim().length > 0
   const timelineMinWidth = 120 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
 
   return (
@@ -698,7 +746,7 @@ function App() {
               </div>
             </div>
 
-            {(!loading && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
+            {!isSearchMode && (!loading && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
               <div
                 className="hei-board-frame-header"
                 ref={headerScrollRef}
@@ -737,6 +785,44 @@ function App() {
                   <Spin size="large" />
                   <Typography.Text type="secondary">{text.loading}</Typography.Text>
                 </div>
+              ) : isSearchMode ? (
+                searchLoading ? (
+                  <div className="hei-board-loading">
+                    <Spin size="large" />
+                    <Typography.Text type="secondary">{text.loading}</Typography.Text>
+                  </div>
+                ) : searchResults.length === 0 ? (
+                  <div className="hei-empty-state">
+                    <Empty description={text.searchResultsEmpty} />
+                  </div>
+                ) : (
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', padding: '16px' }}>
+                    {searchResults.map((result, idx) => (
+                      <div
+                        key={`search-${idx}`}
+                        className="hei-event"
+                        style={{ position: 'relative', width: '100%', height: '140px', padding: '12px', cursor: 'pointer', overflow: 'hidden' }}
+                        onClick={() => setSelectedCourse({ room: result.room, course: result.course, startMinutes: result.startMinutes, endMinutes: result.endMinutes, buildingId: result.buildingId, buildingLabel: result.buildingLabel, targetDate: result.targetDate })}
+                      >
+                        <span className="hei-event-title" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', whiteSpace: 'normal' }}>
+                          {resolveLocalizedText(result.course.name, language)}
+                        </span>
+                        <span className="hei-event-meta" style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', display: 'block' }}>
+                          {resolveLocalizedText(result.course.prof, language) || '—'}
+                        </span>
+                        <span className="hei-event-time">
+                          {result.hasValidTime
+                            ? `${formatMinutesToTime(result.startMinutes)} – ${formatMinutesToTime(result.endMinutes)}`
+                            : result.course.time || '—'}
+                          {result.targetDate ? ` · ${dayjs(result.targetDate).isSame(dayjs(), 'day') ? 'Today' : dayjs(result.targetDate).format('MMM D')}` : ''}
+                        </span>
+                        <span style={{ fontSize: 11, opacity: 0.65, marginTop: 4, display: 'block', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+                          {result.buildingLabel} · {result.roomDisplayName}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )
               ) : activeBuildingId === 'No Information' ? (
                 <div className="hei-no-info-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px', padding: '16px' }}>
                   {(() => {
@@ -962,6 +1048,11 @@ function App() {
                   <Typography.Text strong>
                     {selectedCourse.room} · {formatMinutesToTime(selectedCourse.startMinutes)} - {formatMinutesToTime(selectedCourse.endMinutes)}
                   </Typography.Text>
+                  {selectedCourse.buildingLabel && (
+                    <Typography.Text type="secondary">
+                      {selectedCourse.buildingLabel}
+                    </Typography.Text>
+                  )}
                   <Typography.Text type="secondary">
                     {resolveLocalizedText(selectedCourse.course.prof, language) || '—'}
                   </Typography.Text>
@@ -979,6 +1070,25 @@ function App() {
                 </a>
               ) : (
                 <Typography.Text type="secondary">No course link provided.</Typography.Text>
+              )}
+
+              {selectedCourse.buildingId && (
+                <Button
+                  size="small"
+                  onClick={() => {
+                    setSelectedBuilding(selectedCourse.buildingId!)
+                    if (selectedCourse.targetDate) {
+                      setSelectedDate(dayjs(selectedCourse.targetDate))
+                    }
+                    setSearch('')
+                    setSelectedCourse(null)
+                  }}
+                >
+                  {text.viewInTimetable}
+                  {selectedCourse.targetDate
+                    ? ` · ${dayjs(selectedCourse.targetDate).isSame(dayjs(), 'day') ? 'Today' : dayjs(selectedCourse.targetDate).format('MMM D')}`
+                    : ''}
+                </Button>
               )}
 
               {selectedCourse.startMinutes > 0 && (
