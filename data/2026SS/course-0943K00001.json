@@ -14,10 +14,20 @@
       "day_of_week": 2,
       "start_time": "09:15",
       "end_time": "10:45",
-      "location": "Seminarraum (2190.01.104)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23066",
-      "room": "Seminarraum (2190.01.104)",
-      "building": "Schulgasse / Augustinergasse 6 / 15, 1st floor",
+      "location": "Komenský-Raum (2190.02.216)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23071",
+      "room": "Komenský-Raum (2190.02.216)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "Komenský-Raum (2190.02.216)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23071",
+      "room": "Komenský-Raum (2190.02.216)",
+      "building": "Schulgasse / Augustinergasse 6 / 15, 2nd floor",
       "note": null
     },
     {
@@ -34,5 +44,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410628",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:53:33Z"
 }

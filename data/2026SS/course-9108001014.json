@@ -20,10 +20,20 @@
       "room": "KOPF ZAHN kl. HS (6400.EG.114)",
       "building": "KOPF ZAHN kl. HS, Im Neuenheimer Feld 400, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417250",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-13T10:15:13Z"
+  "last_updated": "2026-04-14T13:26:36Z"
 }

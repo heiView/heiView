@@ -18,7 +18,7 @@
       "location_link": null,
       "room": "INF 420 - Pforte, Ebene 99",
       "building": null,
-      "note": "Obligat! Treffpunkt vor der OP Umkleide"
+      "note": "Treffpunkt vor der OP Umkleide"
     },
     {
       "day_of_week": 4,
@@ -28,7 +28,7 @@
       "location_link": null,
       "room": "INF 420 - Pforte, Ebene 99",
       "building": null,
-      "note": "Obligat! Treffpunkt vor der OP Umkleide"
+      "note": "Treffpunkt vor der OP Umkleide"
     },
     {
       "day_of_week": 5,
@@ -38,7 +38,7 @@
       "location_link": null,
       "room": "INF 420 - Pforte, Ebene 99",
       "building": null,
-      "note": "Obligat! Treffpunkt vor der OP Umkleide"
+      "note": "Treffpunkt vor der OP Umkleide"
     },
     {
       "day_of_week": 5,
@@ -48,7 +48,7 @@
       "location_link": null,
       "room": "INF 420 - Pforte, Ebene 99",
       "building": null,
-      "note": "Obligat! Treffpunkt vor der OP Umkleide"
+      "note": "Treffpunkt vor der OP Umkleide"
     },
     {
       "day_of_week": 5,
@@ -58,7 +58,7 @@
       "location_link": null,
       "room": "INF 420 - Pforte, Ebene 99",
       "building": null,
-      "note": "Obligat! Treffpunkt vor der OP Umkleide"
+      "note": "Treffpunkt vor der OP Umkleide"
     },
     {
       "day_of_week": 5,
@@ -68,11 +68,11 @@
       "location_link": null,
       "room": "INF 420 - Pforte, Ebene 99",
       "building": null,
-      "note": "Obligat! Treffpunkt vor der OP Umkleide"
+      "note": "Treffpunkt vor der OP Umkleide"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409967",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:14:25Z"
 }

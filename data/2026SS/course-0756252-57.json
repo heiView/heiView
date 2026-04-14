@@ -7,22 +7,11 @@
   "lecturers": [
     "Ayash, Nasser"
   ],
-  "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_time": "11:00",
-      "end_time": "13:00",
-      "location": "Übungsraum (2040.04.404)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28091",
-      "room": "Übungsraum (2040.04.404)",
-      "building": "Marstallhof 4, 4th floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408936",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:02:46Z"
 }

@@ -8,7 +8,7 @@
     "Guevara González, Yaatsil",
     "Lehmann, Rosa"
   ],
-  "start_date": "2026-04-14",
+  "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
     {
@@ -20,10 +20,20 @@
       "room": "SGU 1016 (2100.01.201X)",
       "building": "Grabengasse / Sandgasse 14-18 / 5-7, 1st floor",
       "note": "max. 30 TeilnehmerInnen"
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407882",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:28:35Z"
 }

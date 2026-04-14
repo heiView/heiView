@@ -9,7 +9,7 @@
     "Fuchs, Jennifer"
   ],
   "start_date": "2026-04-20",
-  "end_date": "2026-06-22",
+  "end_date": "2026-06-29",
   "weeks": [
     {
       "day_of_week": 1,
@@ -20,10 +20,20 @@
       "room": "KOPF ZAHN HS (6400.02.120)",
       "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_time": "12:15",
+      "end_time": "12:20",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416258",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:26:56Z"
 }

@@ -21,16 +21,6 @@
       "note": null
     },
     {
-      "day_of_week": 4,
-      "start_time": "16:00",
-      "end_time": "18:00",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
-      "note": "Ebenfalls P18 am Uniplatz"
-    },
-    {
       "day_of_week": 6,
       "start_time": "09:00",
       "end_time": "16:30",
@@ -44,5 +34,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407235",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-13T10:24:47Z"
+  "last_updated": "2026-04-14T13:36:46Z"
 }

@@ -7,11 +7,82 @@
   "lecturers": [
     "Zech, Jakob"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 7 (6205.04.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13688",
+      "room": "SR 7 (6205.04.103)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 7 (6205.04.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13688",
+      "room": "SR 7 (6205.04.103)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 2,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 6 (6205.04.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13687",
+      "room": "SR 6 (6205.04.102)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Seminarraum SR Statistik (6205.02.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12924",
+      "room": "Seminarraum SR Statistik (6205.02.103)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 2 (6205.02.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12923",
+      "room": "SR 2 (6205.02.102)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "SR 2 (6205.02.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12923",
+      "room": "SR 2 (6205.02.102)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 4,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 7 (6205.04.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13688",
+      "room": "SR 7 (6205.04.103)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414062",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T15:01:19Z"
 }

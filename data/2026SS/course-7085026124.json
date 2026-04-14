@@ -5,7 +5,7 @@
   "ects_credits": "3",
   "course_languages": "German",
   "lecturers": [
-    "N.N., Unbekannt"
+    "Louhichi, Soumaya"
   ],
   "start_date": "2026-04-24",
   "end_date": "2026-06-20",
@@ -22,8 +22,8 @@
     },
     {
       "day_of_week": 5,
-      "start_time": "10:00",
-      "end_time": "16:00",
+      "start_time": "09:00",
+      "end_time": "18:00",
       "location": "SR II (8020.02.203)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22272",
       "room": "SR II (8020.02.203)",
@@ -32,8 +32,8 @@
     },
     {
       "day_of_week": 6,
-      "start_time": "10:00",
-      "end_time": "16:00",
+      "start_time": "09:00",
+      "end_time": "14:00",
       "location": "SR II (8020.02.203)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22272",
       "room": "SR II (8020.02.203)",
@@ -44,5 +44,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414336",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:18:48Z"
 }

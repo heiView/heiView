@@ -12,8 +12,8 @@
   "weeks": [
     {
       "day_of_week": 4,
-      "start_time": "14:00",
-      "end_time": "16:00",
+      "start_time": "16:00",
+      "end_time": "18:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
       "room": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -54,5 +54,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416536",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:49Z"
+  "last_updated": "2026-04-14T15:03:48Z"
 }

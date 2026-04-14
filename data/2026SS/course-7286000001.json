@@ -5,14 +5,24 @@
   "ects_credits": null,
   "course_languages": "Spanish",
   "lecturers": [
-    "Loureda Lamas, Oscar",
     "Valero Fernández, María Pilar"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Schedule: Wednesdays, 10:15 - 11:45 Location: Institute of Translation and Interpreting (Plöck 57a),"
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416675",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:22:01Z"
 }

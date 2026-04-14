@@ -18,7 +18,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
       "room": "Seminarraum (2065.03.314)",
       "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
+      "note": "Der Termin am 15.04.26 findet krankheitsbedingt online statt. Hier der Teilnahmelink:"
     },
     {
       "day_of_week": 5,
@@ -44,5 +44,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417159",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:47:57Z"
 }

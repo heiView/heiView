@@ -5,8 +5,8 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "<N.N.>(Butzinger, Gianna), 070100.100",
-    "<N.N.>(Scharipow, Erik ), 070100.100"
+    "Butzinger, Gianna Gabriella",
+    "Scharipow, Erik"
   ],
   "start_date": "2026-04-20",
   "end_date": "2026-07-22",
@@ -35,5 +35,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409523",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:48:16Z"
 }

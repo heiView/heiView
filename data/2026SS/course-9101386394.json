@@ -30,10 +30,20 @@
       "room": "Seminarraum K12 (6130.01.012)",
       "building": "Im Neuenheimer Feld 130, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "M15/M16 Kolloquium / offene Sprechstunde, INF 130.3, 4.OG, Raum 350 (AMED, Konferenz- und Besprechungsraum)"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400446",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:41:02Z"
 }

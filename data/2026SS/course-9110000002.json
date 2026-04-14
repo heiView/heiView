@@ -59,30 +59,10 @@
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
       "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_time": "16:00",
-      "end_time": "17:30",
-      "location": "INF 400 - HNO-Klinik, 1. OG",
-      "location_link": null,
-      "room": "INF 400 - HNO-Klinik, 1. OG",
-      "building": null,
-      "note": "Freiwillig, Buchung über Moodle"
-    },
-    {
-      "day_of_week": 3,
-      "start_time": "16:15",
-      "end_time": "17:45",
-      "location": "INF 400 - HNO-Klinik, 1. OG",
-      "location_link": null,
-      "room": "INF 400 - HNO-Klinik, 1. OG",
-      "building": null,
-      "note": "Freiwilllig, Buchung über Moodle"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414205",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:15:01Z"
 }

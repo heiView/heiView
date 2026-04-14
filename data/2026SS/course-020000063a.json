@@ -13,6 +13,16 @@
   "weeks": [
     {
       "day_of_week": 2,
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "location": "Übungsraum (2150.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20578",
+      "room": "Übungsraum (2150.EG.008)",
+      "building": "Augustinergasse 9, Ground floor",
+      "note": "SemR I - Augustinergasse 9"
+    },
+    {
+      "day_of_week": 2,
       "start_time": "17:00",
       "end_time": "19:00",
       "location": "Übungsraum (2150.EG.008)",
@@ -29,17 +39,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20578",
       "room": "Übungsraum (2150.EG.008)",
       "building": "Augustinergasse 9, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 2,
-      "start_time": "17:00",
-      "end_time": "19:00",
-      "location": "Seminarraum 1 / Akademiestrasse 4",
-      "location_link": null,
-      "room": "Seminarraum 1 / Akademiestrasse 4",
-      "building": null,
-      "note": null
+      "note": "SemR I - Augustinergasse 9"
     },
     {
       "day_of_week": 2,
@@ -52,18 +52,8 @@
       "note": null
     },
     {
-      "day_of_week": 2,
-      "start_time": "18:00",
-      "end_time": "20:00",
-      "location": "HS 01 (2170.EG.051)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20448",
-      "room": "HS 01 (2170.EG.051)",
-      "building": "HS 01, Grabengasse 3-5, Ground floor",
-      "note": null
-    },
-    {
       "day_of_week": 4,
-      "start_time": "14:00",
+      "start_time": "14:15",
       "end_time": "16:00",
       "location": "Übungsraum (2150.EG.008)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20578",
@@ -75,5 +65,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418844",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:32:20Z"
 }

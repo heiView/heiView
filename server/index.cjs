@@ -2,6 +2,23 @@ const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
 const express = require('express');
+
+// Load .env manually so the server works when started via pm2/systemd without --env-file
+(function loadDotEnv() {
+  const envPath = path.resolve(__dirname, '..', '.env');
+  try {
+    const lines = fs.readFileSync(envPath, 'utf8').split('\n');
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+      const eqIdx = trimmed.indexOf('=');
+      if (eqIdx < 1) continue;
+      const key = trimmed.slice(0, eqIdx).trim();
+      const val = trimmed.slice(eqIdx + 1).trim().replace(/^["']|["']$/g, '');
+      if (!(key in process.env)) process.env[key] = val;
+    }
+  } catch (_) { /* .env not found — rely on actual environment variables */ }
+})();
 const Database = require('better-sqlite3');
 const { importBuildingCatalog } = require('./scripts/import-building-catalog.cjs');
 const { syncSingleCourse } = require('./scripts/build-sqlite-db.cjs');

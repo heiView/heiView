@@ -38,7 +38,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
       "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
       "building": "Im Neuenheimer Feld 420, Ground floor",
-      "note": "obligat"
+      "note": null
     },
     {
       "day_of_week": 5,
@@ -48,7 +48,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
       "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
       "building": "Im Neuenheimer Feld 420, Ground floor",
-      "note": "obligat"
+      "note": null
     },
     {
       "day_of_week": 5,
@@ -58,11 +58,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30790",
       "room": "Seminarraum 6 (INF 420, Chirurgische Klinik, EG) (6420.EG.065)",
       "building": "Im Neuenheimer Feld 420, Ground floor",
-      "note": "obligat"
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402269",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:14:06Z"
 }

@@ -69,10 +69,20 @@
       "room": "INF 400 - HNO-Klinik, 1. OG",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_time": "14:00",
+      "end_time": "15:45",
+      "location": "INF 400 - HNO-Klinik, 1. OG",
+      "location_link": null,
+      "room": "INF 400 - HNO-Klinik, 1. OG",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414206",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-14T13:14:49Z"
 }

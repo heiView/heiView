@@ -1,0 +1,38 @@
+{
+  "id": "0731000025",
+  "title": "Hanasukai/Tandemkai",
+  "type": "AG",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Fachschaft Japanologie), 072100.100"
+  ],
+  "start_date": "2026-04-24",
+  "end_date": "2026-04-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_time": "17:00",
+      "end_time": "23:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_time": "19:00",
+      "end_time": "23:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420501",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-14T13:29:23Z"
+}
