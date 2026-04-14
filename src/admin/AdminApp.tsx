@@ -297,6 +297,58 @@ type BuildingEditState = {
   data: Record<string, unknown>
 }
 
+// ── Stale-override diff renderer ─────────────────────────────────────────────
+const STALE_IGNORED_FIELDS = new Set(['last_updated'])
+
+function renderJsonDiffSide(
+  obj: Record<string, unknown> | null,
+  other: Record<string, unknown> | null,
+  side: 'source' | 'override',
+): React.ReactNode {
+  if (!obj) return <span style={{ color: 'var(--hei-text-secondary)' }}>(not found)</span>
+  const allKeys = Array.from(new Set([...Object.keys(obj), ...Object.keys(other ?? {})]))
+  const nodes: React.ReactNode[] = [<span key="__open">{'{\n'}</span>]
+  allKeys.forEach((key, idx) => {
+    const inObj = key in obj
+    const inOther = other != null && key in other
+    const isLast = idx === allKeys.length - 1
+    const isIgnored = STALE_IGNORED_FIELDS.has(key)
+    let bg = 'transparent'
+    if (!isIgnored) {
+      if (inObj && !inOther) {
+        bg = side === 'source' ? 'rgba(82,196,26,0.18)' : 'rgba(147,51,234,0.14)'
+      } else if (!inObj && inOther) {
+        bg = 'rgba(128,128,128,0.07)'
+      } else if (inObj && inOther && JSON.stringify(obj[key]) !== JSON.stringify(other![key])) {
+        bg = 'rgba(250,173,20,0.22)'
+      }
+    }
+    if (inObj) {
+      const valStr = JSON.stringify(obj[key], null, 2)
+      const valLines = valStr.split('\n')
+      const formatted = valLines.map((line, li) => {
+        if (li === 0) return `  "${key}": ${line}`
+        if (li === valLines.length - 1) return `  ${line}${isLast ? '' : ','}`
+        return `  ${line}`
+      }).join('\n') + (valLines.length === 1 ? (isLast ? '' : ',') : '')
+      nodes.push(
+        <span key={key} style={{ display: 'block', background: bg }}>
+          {formatted}
+        </span>
+      )
+    } else {
+      nodes.push(
+        <span key={key} style={{ display: 'block', background: bg, opacity: 0.45 }}>
+          {`  "${key}": —`}
+        </span>
+      )
+    }
+  })
+  nodes.push(<span key="__close">{'}'}</span>)
+  return nodes
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 function AdminApp() {
   const location = useLocation()
   const navigate = useNavigate()
@@ -389,12 +441,18 @@ function AdminApp() {
   const [staleDiffData, setStaleDiffData] = React.useState<BothFiles | null>(null)
   const [staleDiffLoading, setStaleDiffLoading] = React.useState(false)
   const [staleDismissLoading, setStaleDismissLoading] = React.useState<string | null>(null)
+  const [staleMergeLoading, setStaleMergeLoading] = React.useState<string | null>(null)
+  const [staleDeleteLoading, setStaleDeleteLoading] = React.useState<string | null>(null)
+  const [staleOverrideEdit, setStaleOverrideEdit] = React.useState<string | null>(null) // null = view mode
+  const [staleOverrideSaveLoading, setStaleOverrideSaveLoading] = React.useState(false)
+  const [staleOverrideParseError, setStaleOverrideParseError] = React.useState<string | null>(null)
   // ─────────────────────────────────────────────────────────────────────────
 
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
   const bodyScrollRef = React.useRef<HTMLDivElement>(null)
   const initializedRef = React.useRef(false)
   const campusSyncedRef = React.useRef(false)
+  const topbarRef = React.useRef<HTMLElement>(null)
 
   const handleHeaderScroll = (e: React.UIEvent<HTMLDivElement>) => {
     if (bodyScrollRef.current) bodyScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft
@@ -402,6 +460,19 @@ function AdminApp() {
   const handleBodyScroll = (e: React.UIEvent<HTMLDivElement>) => {
     if (headerScrollRef.current) headerScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft
   }
+
+  // Keep --topbar-h in sync so content isn't occluded when navbar wraps
+  React.useEffect(() => {
+    const el = topbarRef.current
+    if (!el) return
+    const update = () => {
+      document.documentElement.style.setProperty('--topbar-h', el.clientHeight + 'px')
+    }
+    update()
+    const ro = new ResizeObserver(update)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
 
   // Load skip list
   React.useEffect(() => {
@@ -1139,7 +1210,7 @@ function AdminApp() {
         <div className="hei-orb hei-orb-b" />
 
         <Layout.Content className="hei-content">
-          <header className="hei-topbar">
+          <header className="hei-topbar" ref={topbarRef}>
             <div className="hei-topbar-inner">
               <div className="hei-brand-cluster">
                 <div className="hei-brand-row">
@@ -1828,6 +1899,8 @@ function AdminApp() {
                                 onClick={async () => {
                                   setStaleDiffCourseId(entry.courseId)
                                   setStaleDiffLoading(true)
+                                  setStaleOverrideEdit(null)
+                                  setStaleOverrideParseError(null)
                                   try {
                                     const r = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(entry.courseId)}`)
                                     if (r.ok) setStaleDiffData(await r.json())
@@ -1850,6 +1923,22 @@ function AdminApp() {
                               >
                                 Keep Override
                               </Button>
+                              <Button
+                                size="small"
+                                danger
+                                loading={staleDeleteLoading === entry.courseId}
+                                onClick={async () => {
+                                  if (!window.confirm(`删除 course-${entry.courseId} 的 override？此操作不可撤销。`)) return
+                                  setStaleDeleteLoading(entry.courseId)
+                                  try {
+                                    const r = await adminFetch(`/api/admin/overrides/${encodeURIComponent(entry.courseId)}`, { method: 'DELETE' })
+                                    if (r.ok) setStaleList(prev => prev.filter(e => e.courseId !== entry.courseId))
+                                  } finally { setStaleDeleteLoading(null) }
+                                }}
+                                title="删除 override 文件，课程恢复使用 source 数据"
+                              >
+                                Delete Override
+                              </Button>
                             </Space>
                           </td>
                         </tr>
@@ -1861,8 +1950,37 @@ function AdminApp() {
             ) : (
               <Spin spinning={staleDiffLoading}>
                 <div style={{ marginBottom: 12, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <Button size="small" onClick={() => { setStaleDiffCourseId(null); setStaleDiffData(null) }}>← Back</Button>
+                  <Button size="small" onClick={() => { setStaleDiffCourseId(null); setStaleDiffData(null); setStaleOverrideEdit(null); setStaleOverrideParseError(null) }}>← Back</Button>
                   <Typography.Text strong>course-{staleDiffCourseId}.json</Typography.Text>
+                  {/* Show Merge Weeks only when source.weeks differs from override.weeks */}
+                  {staleDiffData?.source && staleDiffData?.override &&
+                    JSON.stringify(staleDiffData.source['weeks']) !== JSON.stringify(staleDiffData.override['weeks']) && (
+                    <Button
+                      size="small"
+                      loading={staleMergeLoading === staleDiffCourseId}
+                      title="取 source 的 weeks 结构，保留 override 里手动设置的 building 和 note"
+                      onClick={async () => {
+                        if (!staleDiffCourseId) return
+                        setStaleMergeLoading(staleDiffCourseId)
+                        try {
+                          const r = await adminFetch(`/api/admin/stale-overrides/${encodeURIComponent(staleDiffCourseId)}/merge-weeks`, { method: 'POST' })
+                          if (r.ok) {
+                            // Refresh diff view to reflect merged result
+                            setStaleDiffLoading(true)
+                            const r2 = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(staleDiffCourseId)}`)
+                            if (r2.ok) setStaleDiffData(await r2.json())
+                            setStaleDiffLoading(false)
+                            setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId))
+                            setStaleDiffCourseId(null)
+                            setStaleDiffData(null)
+                          }
+                        } finally { setStaleMergeLoading(null) }
+                      }}
+                      style={{ marginLeft: 'auto' }}
+                    >
+                      Merge Weeks
+                    </Button>
+                  )}
                   <Button
                     size="small"
                     loading={staleDismissLoading === staleDiffCourseId}
@@ -1878,28 +1996,126 @@ function AdminApp() {
                         }
                       } finally { setStaleDismissLoading(null) }
                     }}
-                    style={{ marginLeft: 'auto' }}
+                    style={staleDiffData?.source && staleDiffData?.override && JSON.stringify(staleDiffData.source['weeks']) !== JSON.stringify(staleDiffData.override['weeks']) ? {} : { marginLeft: 'auto' }}
                   >
                     Keep Override
+                  </Button>
+                  <Button
+                    size="small"
+                    danger
+                    loading={staleDeleteLoading === staleDiffCourseId}
+                    onClick={async () => {
+                      if (!staleDiffCourseId) return
+                      if (!window.confirm(`删除 course-${staleDiffCourseId} 的 override？此操作不可撤销。`)) return
+                      setStaleDeleteLoading(staleDiffCourseId)
+                      try {
+                        const r = await adminFetch(`/api/admin/overrides/${encodeURIComponent(staleDiffCourseId)}`, { method: 'DELETE' })
+                        if (r.ok) {
+                          setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId))
+                          setStaleDiffCourseId(null)
+                          setStaleDiffData(null)
+                        }
+                      } finally { setStaleDeleteLoading(null) }
+                    }}
+                    title="删除 override 文件，课程恢复使用 source 数据"
+                  >
+                    Delete Override
                   </Button>
                 </div>
                 {staleDiffData && (
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                    {/* Legend */}
+                    <div style={{ gridColumn: '1 / -1', display: 'flex', gap: 16, fontSize: 11, color: 'var(--hei-text-secondary)', marginBottom: -4 }}>
+                      <span><span style={{ display: 'inline-block', width: 10, height: 10, background: 'rgba(250,173,20,0.45)', borderRadius: 2, marginRight: 4 }} />Value changed</span>
+                      <span><span style={{ display: 'inline-block', width: 10, height: 10, background: 'rgba(82,196,26,0.4)', borderRadius: 2, marginRight: 4 }} />New in source</span>
+                      <span><span style={{ display: 'inline-block', width: 10, height: 10, background: 'rgba(147,51,234,0.3)', borderRadius: 2, marginRight: 4 }} />Only in override</span>
+                    </div>
                     <div>
                       <Typography.Text type="secondary" style={{ fontSize: 11, display: 'block', marginBottom: 4 }}>
                         SOURCE (crawler) — updated {staleDiffData.srcMtime ? new Date(staleDiffData.srcMtime).toLocaleString() : '—'}
                       </Typography.Text>
                       <pre style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: 10, fontSize: 11, overflowY: 'auto', maxHeight: 460, margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
-                        {staleDiffData.source ? JSON.stringify(staleDiffData.source, null, 2) : '(not found)'}
+                        {renderJsonDiffSide(staleDiffData.source, staleDiffData.override, 'source')}
                       </pre>
                     </div>
                     <div>
                       <Typography.Text type="secondary" style={{ fontSize: 11, display: 'block', marginBottom: 4 }}>
                         OVERRIDE — saved {staleDiffData.ovMtime ? new Date(staleDiffData.ovMtime).toLocaleString() : '—'}
+                        <Button
+                          size="small"
+                          type="link"
+                          style={{ fontSize: 11, padding: '0 4px', height: 'auto', marginLeft: 6 }}
+                          onClick={() => {
+                            if (staleOverrideEdit !== null) {
+                              setStaleOverrideEdit(null)
+                              setStaleOverrideParseError(null)
+                            } else {
+                              setStaleOverrideEdit(JSON.stringify(staleDiffData.override, null, 2))
+                              setStaleOverrideParseError(null)
+                            }
+                          }}
+                        >
+                          {staleOverrideEdit !== null ? 'Cancel' : 'Edit'}
+                        </Button>
+                        {staleOverrideEdit !== null && (
+                          <Button
+                            size="small"
+                            type="link"
+                            loading={staleOverrideSaveLoading}
+                            style={{ fontSize: 11, padding: '0 4px', height: 'auto' }}
+                            onClick={async () => {
+                              if (!staleDiffCourseId || staleOverrideEdit === null) return
+                              let parsed: Record<string, unknown>
+                              try {
+                                parsed = JSON.parse(staleOverrideEdit)
+                              } catch (e: unknown) {
+                                setStaleOverrideParseError(e instanceof Error ? e.message : 'Invalid JSON')
+                                return
+                              }
+                              setStaleOverrideSaveLoading(true)
+                              try {
+                                const r = await adminFetch(`/api/admin/course-file/${encodeURIComponent(staleDiffCourseId)}`, {
+                                  method: 'PUT',
+                                  headers: { 'Content-Type': 'application/json' },
+                                  body: JSON.stringify(parsed),
+                                })
+                                if (r.ok) {
+                                  // Refresh diff view
+                                  setStaleDiffLoading(true)
+                                  const r2 = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(staleDiffCourseId)}`)
+                                  if (r2.ok) setStaleDiffData(await r2.json())
+                                  setStaleDiffLoading(false)
+                                  setStaleOverrideEdit(null)
+                                  setStaleOverrideParseError(null)
+                                  setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId))
+                                  setStaleDiffCourseId(null)
+                                  setStaleDiffData(null)
+                                }
+                              } finally { setStaleOverrideSaveLoading(false) }
+                            }}
+                          >
+                            Save
+                          </Button>
+                        )}
                       </Typography.Text>
-                      <pre style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: 10, fontSize: 11, overflowY: 'auto', maxHeight: 460, margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
-                        {staleDiffData.override ? JSON.stringify(staleDiffData.override, null, 2) : '(not found)'}
-                      </pre>
+                      {staleOverrideParseError && (
+                        <Typography.Text type="danger" style={{ fontSize: 11, display: 'block', marginBottom: 4 }}>
+                          {staleOverrideParseError}
+                        </Typography.Text>
+                      )}
+                      {staleOverrideEdit !== null ? (
+                        <Input.TextArea
+                          value={staleOverrideEdit}
+                          onChange={e => { setStaleOverrideEdit(e.target.value); setStaleOverrideParseError(null) }}
+                          autoSize={false}
+                          style={{ fontFamily: 'monospace', fontSize: 11, height: 460, resize: 'none', background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6 }}
+                          spellCheck={false}
+                        />
+                      ) : (
+                        <pre style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: 10, fontSize: 11, overflowY: 'auto', maxHeight: 460, margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
+                          {renderJsonDiffSide(staleDiffData.override, staleDiffData.source, 'override')}
+                        </pre>
+                      )}
                     </div>
                   </div>
                 )}
