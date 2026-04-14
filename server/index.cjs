@@ -447,8 +447,21 @@ function createApp() {
   });
 
   // GET /api/admin/stale-overrides
-  // Returns override files whose source JSON in COURSE_DIR has been updated more recently.
+  // Returns override files whose source JSON in COURSE_DIR has been updated more recently,
+  // excluding cases where the only changed field is last_updated (crawler timestamp noise).
   app.get('/api/admin/stale-overrides', requireAdmin, (req, res) => {
+    // Fields that are irrelevant for staleness — changes to these alone are not reported.
+    const IGNORED_FIELDS = new Set(['last_updated']);
+
+    function hasMeaningfulChanges(srcObj, ovObj) {
+      const allKeys = new Set([...Object.keys(srcObj), ...Object.keys(ovObj)]);
+      for (const key of allKeys) {
+        if (IGNORED_FIELDS.has(key)) continue;
+        if (JSON.stringify(srcObj[key]) !== JSON.stringify(ovObj[key])) return true;
+      }
+      return false;
+    }
+
     try {
       const stale = [];
       let files;
@@ -462,9 +475,14 @@ function createApp() {
         if (!fs.existsSync(srcPath)) continue;
         const ovMtime = getLastUpdatedMs(ovPath);
         const srcMtime = getLastUpdatedMs(srcPath);
-        if (srcMtime > ovMtime) {
-          stale.push({ courseId, srcMtime, ovMtime });
-        }
+        if (srcMtime <= ovMtime) continue;
+        // Source is newer — check if any meaningful fields actually changed
+        try {
+          const srcObj = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
+          const ovObj = JSON.parse(fs.readFileSync(ovPath, 'utf8'));
+          if (!hasMeaningfulChanges(srcObj, ovObj)) continue;
+        } catch (_) { /* if parse fails, treat as stale to be safe */ }
+        stale.push({ courseId, srcMtime, ovMtime });
       }
       stale.sort((a, b) => b.srcMtime - a.srcMtime);
       res.json(stale);

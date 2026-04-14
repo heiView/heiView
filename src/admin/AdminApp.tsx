@@ -1846,8 +1846,9 @@ function AdminApp() {
                                     if (r.ok) setStaleList(prev => prev.filter(e => e.courseId !== entry.courseId))
                                   } finally { setStaleDismissLoading(null) }
                                 }}
+                                title="Override 仍然有效，更新其时间戳，下次检测将跳过（除非 source 再次更新）"
                               >
-                                Dismiss
+                                Keep Override
                               </Button>
                             </Space>
                           </td>
@@ -1879,7 +1880,7 @@ function AdminApp() {
                     }}
                     style={{ marginLeft: 'auto' }}
                   >
-                    Mark as Reviewed
+                    Keep Override
                   </Button>
                 </div>
                 {staleDiffData && (
