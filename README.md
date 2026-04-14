@@ -32,7 +32,7 @@ Whether you're looking for a quiet room to study, or exploring courses and activ
 - **Detailed Course Information**: Click on any course card in the timeline to view full details, including direct heiCO links.
 - **Add to Calendar**: Export any course to Google Calendar or download a standard `.ics` file compatible with Apple Calendar and Outlook. Recurring weekly courses are automatically set up with the correct end date.
 - **Building independent bookmarks**: Each building has its own exclusive URL. It is recommended to switch to a frequently visited building before saving the bookmark.
-- **Global cross-date search**: Search across all courses and all dates at once. Results are displayed as a card grid replacing the timetable view. Supports course name, professor (both "Last, First" and "First Last" formats), room, building, and note fields. Click any result to view details and jump directly to the corresponding building and date.
+- **Global cross-date search**: You can use course name, professor, room, building, and note infomation to search all the courses. Click any result to view details and jump directly to the corresponding building and date.
 
 ### Building Catalog
 
@@ -136,7 +136,7 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 - **课程详细信息**：点击时间轴上的课程卡片即可查看详细信息，包含课程的heiCO链接。
 - **加入个人日历**：可将任意课程导出到 Google 日历，或下载兼容苹果日历、Outlook 的标准 `.ics` 文件。每周重复的课程会自动设置正确的结束日期。
 - **建筑独立书签**：每栋建筑都有自己的专属网址，建议切换到常去的建筑后再保存书签。
-- **全局跨日期搜索**：可在所有课程和所有日期中同时检索，结果以卡片网格形式展示（替换当前时间轴视图）。支持按课程名、教授姓名（兼容"姓, 名"与"名 姓"两种格式）、教室、建筑及备注字段搜索。点击搜索结果可查看课程详情，并一键跳转至对应建筑与日期。
+- **全局跨日期搜索**：支持按课程名、教授姓名、教室、建筑及备注字段搜索所有课程。点击搜索结果可查看课程详情，并一键跳转至对应建筑与日期。
 
 
 ### 校园建筑数据库
