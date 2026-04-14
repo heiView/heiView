@@ -348,6 +348,7 @@ function createApp() {
 
         results.push({
           course: {
+            id: String(row.course_id),
             time: makeTimeRange(row.start_time, row.end_time),
             name: makeCourseLabel(row.title, row.course_id),
             prof: profStr,

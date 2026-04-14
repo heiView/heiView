@@ -76,6 +76,9 @@ type CourseModalState = {
   startMinutes: number
   endMinutes: number
   dayOfWeek: number
+  buildingId?: string
+  buildingLabel?: string
+  targetDate?: string | null
 }
 
 type TimelineEvent = {
@@ -89,6 +92,18 @@ type TimelineEvent = {
 type FloorGroup = {
   floor: string
   rooms: RoomEntry[]
+}
+
+type SearchResult = {
+  course: Course
+  room: string
+  roomDisplayName: string
+  buildingId: string
+  buildingLabel: string
+  startMinutes: number
+  endMinutes: number
+  hasValidTime: boolean
+  targetDate?: string | null
 }
 
 const TRACK_START_HOUR = 8
@@ -416,6 +431,8 @@ function AdminApp() {
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
   const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
+  const [searchResults, setSearchResults] = React.useState<SearchResult[]>([])
+  const [searchLoading, setSearchLoading] = React.useState(false)
   const [skipSet, setSkipSet] = React.useState<Set<string>>(new Set())
   const [skipLoading, setSkipLoading] = React.useState<string | null>(null)
   const [editFileState, setEditFileState] = React.useState<EditFileState | null>(null)
@@ -676,6 +693,20 @@ function AdminApp() {
       .then((data: { matches: { courseId: string; title: string; weeks: unknown[] }[]; totalWeeks: number } | null) => { if (data) setBatchEditCount(data) })
       .catch(() => {})
   }, [editFileState])
+
+  // Global search across all dates via backend
+  React.useEffect(() => {
+    const query = deferredSearch.trim()
+    if (!query) { setSearchResults([]); return }
+    let alive = true
+    setSearchLoading(true)
+    fetch(`/api/search?q=${encodeURIComponent(query)}`)
+      .then((r) => r.json())
+      .then((data: SearchResult[]) => { if (!alive) return; setSearchResults(Array.isArray(data) ? data : []) })
+      .catch(() => { if (alive) setSearchResults([]) })
+      .finally(() => { if (alive) setSearchLoading(false) })
+    return () => { alive = false }
+  }, [deferredSearch])
 
   const visibleRooms = React.useMemo(() => {
     const rooms = (schedule?.rooms[activeBuildingId] || []).filter((r) => r.room)
@@ -1215,6 +1246,7 @@ function AdminApp() {
   }
 
   const timelineMinWidth = 120 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+  const isSearchMode = !loading && deferredSearch.trim().length > 0
 
   function renderCourseCard(event: TimelineEvent, room: RoomEntry, left: number, top: number, width: number, key: string) {
     const professor = resolveLocalizedText(event.course.prof, language)
@@ -1418,7 +1450,7 @@ function AdminApp() {
 
               <div className="hei-board-controls-divider" />
 
-              {(!loading && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
+              {(!loading && !isSearchMode && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
                 <div className="hei-board-frame-header" ref={headerScrollRef} onScroll={handleHeaderScroll}>
                   <div className="hei-timetable" aria-hidden="true" style={{ width: `max(100%, ${timelineMinWidth}px)`, borderBottomLeftRadius: 0, borderBottomRightRadius: 0, minHeight: 'auto' }}>
                     <div className="hei-timetable-head" style={{ borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }}>
@@ -1445,6 +1477,48 @@ function AdminApp() {
                     <Spin size="large" />
                     <Typography.Text type="secondary">Loading course data...</Typography.Text>
                   </div>
+                ) : isSearchMode ? (
+                  searchLoading ? (
+                    <div className="hei-board-loading">
+                      <Spin size="large" />
+                      <Typography.Text type="secondary">Searching...</Typography.Text>
+                    </div>
+                  ) : searchResults.length === 0 ? (
+                    <div className="hei-empty-state">
+                      <Empty description="No courses match your search" />
+                    </div>
+                  ) : (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', padding: '16px' }}>
+                      {searchResults.map((result, idx) => {
+                        const courseId = result.course.id || ''
+                        const isSkipped = courseId ? skipSet.has(courseId) : false
+                        return (
+                          <div
+                            key={`search-${idx}`}
+                            className="hei-event"
+                            style={{ position: 'relative', width: '100%', height: '140px', padding: '12px', cursor: 'pointer', overflow: 'hidden', opacity: isSkipped ? 0.4 : 1, outline: isSkipped ? '2px dashed #ff4d4f' : undefined }}
+                            onClick={() => setSelectedCourse({ room: result.room, course: result.course, startMinutes: result.startMinutes, endMinutes: result.endMinutes, dayOfWeek: result.targetDate ? dayjs(result.targetDate).day() : selectedDate.day(), buildingId: result.buildingId, buildingLabel: result.buildingLabel, targetDate: result.targetDate })}
+                          >
+                            <span className="hei-event-title" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', whiteSpace: 'normal' }}>
+                              {resolveLocalizedText(result.course.name, language)}
+                            </span>
+                            <span className="hei-event-meta" style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', display: 'block' }}>
+                              {resolveLocalizedText(result.course.prof, language) || '—'}
+                            </span>
+                            <span className="hei-event-time">
+                              {result.hasValidTime
+                                ? `${formatMinutesToTime(result.startMinutes)} – ${formatMinutesToTime(result.endMinutes)}`
+                                : result.course.time || '—'}
+                              {result.targetDate ? ` · ${dayjs(result.targetDate).isSame(dayjs(), 'day') ? 'Today' : dayjs(result.targetDate).format('MMM D')}` : ''}
+                            </span>
+                            <span style={{ fontSize: 11, opacity: 0.65, marginTop: 4, display: 'block', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+                              {result.buildingLabel} · {result.roomDisplayName}
+                            </span>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  )
                 ) : activeBuildingId === 'No Information' ? (
                   <div className="hei-no-info-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px', padding: '16px' }}>
                     {(() => {
@@ -1602,6 +1676,11 @@ function AdminApp() {
                   <Typography.Text strong>
                     {selectedCourse.room} · {formatMinutesToTime(selectedCourse.startMinutes)} - {formatMinutesToTime(selectedCourse.endMinutes)}
                   </Typography.Text>
+                  {selectedCourse.buildingLabel && (
+                    <Typography.Text type="secondary">
+                      {selectedCourse.buildingLabel}
+                    </Typography.Text>
+                  )}
                   <Typography.Text type="secondary">
                     {resolveLocalizedText(selectedCourse.course.prof, language) || '—'}
                   </Typography.Text>
@@ -1625,6 +1704,22 @@ function AdminApp() {
                 <a href={selectedCourse.course.link} target="_blank" rel="noreferrer">{selectedCourse.course.link}</a>
               ) : (
                 <Typography.Text type="secondary">No course link provided.</Typography.Text>
+              )}
+              {selectedCourse.buildingId && (
+                <Button
+                  size="small"
+                  onClick={() => {
+                    if (selectedCourse.targetDate) setSelectedDate(dayjs(selectedCourse.targetDate))
+                    setSelectedBuilding(selectedCourse.buildingId!)
+                    setSearch('')
+                    setSelectedCourse(null)
+                  }}
+                >
+                  View in timetable
+                  {selectedCourse.targetDate
+                    ? ` · ${dayjs(selectedCourse.targetDate).isSame(dayjs(), 'day') ? 'Today' : dayjs(selectedCourse.targetDate).format('MMM D')}`
+                    : ''}
+                </Button>
               )}
             </Space>
           )}

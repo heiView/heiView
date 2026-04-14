@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-14T22:07:48.445Z",
+  "updatedAt": "2026-04-14T23:35:57.808Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -9319,26 +9319,6 @@
           "id": "bld-other-a1-07::rm-konferenzraum-a1-07",
           "name": "Konferenzraum, A1.07",
           "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-turm-1",
-      "street": "Turm 1",
-      "displayName": "Turm 1",
-      "campusId": "other",
-      "floors": [
-        "9.OG"
-      ],
-      "rooms": [
-        {
-          "id": "bld-other-turm-1::rm-bg-ludwigshafen-sr-1-2-turm-1-9-og",
-          "name": "BG Ludwigshafen, SR 1+2, Turm 1, 9.OG",
-          "floors": [
-            "9.OG"
-          ],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
