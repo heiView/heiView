@@ -177,11 +177,13 @@ def extract_course_languages_from_body(raw_text: str) -> str | None:
 
 
 def dedupe_weeks(weeks: list[dict[str, object]]) -> list[dict[str, object]]:
-    seen: set[tuple[object, object, object, object, object]] = set()
+    seen: set[tuple[object, object, object, object, object, object, object]] = set()
     deduped: list[dict[str, object]] = []
     for week in weeks:
         key = (
             week.get('day_of_week'),
+            week.get('start_date'),
+            week.get('end_date'),
             week.get('start_time'),
             week.get('end_time'),
             week.get('location_link'),
@@ -192,6 +194,99 @@ def dedupe_weeks(weeks: list[dict[str, object]]) -> list[dict[str, object]]:
         seen.add(key)
         deduped.append(week)
     return deduped
+
+
+def merge_consecutive_weeks(weeks: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Merge consecutive weekly slots with identical content into date ranges.
+
+    Two entries are mergeable when they share the same day_of_week, start_time,
+    end_time, room, location_link, building, and note AND their dates are exactly
+    7 days apart.  Entries whose start_date == end_date (single-day slots) are
+    treated as occurrences on that single day.  Entries that already span a
+    range (start_date != end_date) are left untouched.
+
+    Inter-group ordering follows the first appearance of each content key in the
+    input list, so the output order matches the original page order as closely
+    as possible.
+    """
+    from datetime import date as _date, timedelta as _td
+    from collections import defaultdict
+
+    CONTENT_KEY_FIELDS = ('day_of_week', 'start_time', 'end_time', 'room', 'location_link', 'building', 'note')
+
+    def content_key(w: dict) -> tuple:
+        return tuple(w.get(f) for f in CONTENT_KEY_FIELDS)
+
+    def to_date(s: object) -> _date | None:
+        if not isinstance(s, str):
+            return None
+        try:
+            return _date.fromisoformat(s)
+        except ValueError:
+            return None
+
+    # First pass: record first-seen index for each content key, split into
+    # single-day candidates vs already-ranged entries.
+    key_first_seen: dict[tuple, int] = {}
+    single_day: list[dict] = []
+    multi_day: list[tuple[int, dict]] = []  # (first_seen_index, week)
+
+    for i, w in enumerate(weeks):
+        ck = content_key(w)
+        if ck not in key_first_seen:
+            key_first_seen[ck] = i
+        sd = to_date(w.get('start_date'))
+        ed = to_date(w.get('end_date'))
+        if sd is not None and ed is not None and sd == ed:
+            single_day.append(w)
+        else:
+            multi_day.append((key_first_seen[ck], w))
+
+    # Group single-day slots by content key, sort each group by date, merge runs
+    groups: dict[tuple, list[tuple[_date, dict]]] = defaultdict(list)
+    for w in single_day:
+        sd = to_date(w.get('start_date'))
+        if sd is None:
+            multi_day.append((key_first_seen.get(content_key(w), len(weeks)), w))
+            continue
+        groups[content_key(w)].append((sd, w))
+
+    # Build merged entries per content-key group
+    merged_groups: list[tuple[int, list[dict]]] = []  # (first_seen_index, entries)
+    for ck, dated_entries in groups.items():
+        dated_entries.sort(key=lambda x: x[0])
+        runs: list[dict] = []
+        run_start: _date = dated_entries[0][0]
+        run_end: _date = dated_entries[0][0]
+        run_template: dict = dated_entries[0][1]
+
+        for current_date, current_w in dated_entries[1:]:
+            if current_date - run_end == _td(days=7):
+                run_end = current_date
+            else:
+                entry = dict(run_template)
+                entry['start_date'] = run_start.isoformat()
+                entry['end_date'] = run_end.isoformat()
+                runs.append(entry)
+                run_start = current_date
+                run_end = current_date
+                run_template = current_w
+
+        entry = dict(run_template)
+        entry['start_date'] = run_start.isoformat()
+        entry['end_date'] = run_end.isoformat()
+        runs.append(entry)
+        merged_groups.append((key_first_seen[ck], runs))
+
+    # Combine merged groups and untouched multi-day entries, sorted by first
+    # appearance in the original input to preserve page order.
+    all_items: list[tuple[int, list[dict]]] = merged_groups + [(idx, [w]) for idx, w in multi_day]
+    all_items.sort(key=lambda x: x[0])
+
+    result: list[dict] = []
+    for _, entries in all_items:
+        result.extend(entries)
+    return result
 
 
 async def safe_wait_networkidle(page) -> None:
@@ -537,6 +632,8 @@ async def process_course_entry(
     weeks = [
         {
             'day_of_week': (slot.get('weekday_index') + 1) if isinstance(slot.get('weekday_index'), int) else None,
+            'start_date': slot.get('start_date'),
+            'end_date': slot.get('end_date'),
             'start_time': slot.get('start_time'),
             'end_time': slot.get('end_time'),
             'location': slot.get('location'),
@@ -566,6 +663,7 @@ async def process_course_entry(
         weeks[slot_index]['building'] = building
 
     weeks = dedupe_weeks(weeks)
+    weeks = merge_consecutive_weeks(weeks)
 
     start_dates = [slot.get('start_date') for slot in slots if slot.get('start_date')]
     end_dates = [slot.get('end_date') for slot in slots if slot.get('end_date')]
