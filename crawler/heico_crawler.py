@@ -496,6 +496,13 @@ async def build_entry_from_course_url(browser, course_url: str) -> dict[str, obj
         raw_text = await open_course_page_with_warmup(page, course_url)
         raw_text_compact = compact_ws(raw_text)
 
+        # Detect login page redirect by final URL (Shibboleth/CAS/SSO redirect)
+        final_url = page.url
+        login_url_markers = ('login', 'signin', 'authenticate', 'shibboleth', '/idp/', 'cas?service')
+        if any(m in final_url.lower() for m in login_url_markers):
+            print(f'Course URL redirected to login page (course may have been deleted): {course_url}')
+            return None
+
         browser_warning_markers = (
             'Die Seite ist nicht für diesen Browser optimiert.',
             'This site is not optimised for your browser.',
@@ -528,6 +535,16 @@ async def build_entry_from_course_url(browser, course_url: str) -> dict[str, obj
             title = guess_title_from_text(raw_text)
         if not title:
             print(f'Could not determine title for {course_url}; skipping')
+            return None
+
+        # Detect in-app login pages (SPA shows login form without URL redirect)
+        # Typical: title = "Login", "Anmelden", "Anmeldung", "Sign in"
+        # "DEFAULT_PAGE" = heiCO SPA placeholder for deleted/inaccessible courses
+        non_course_titles = ('login', 'anmelden', 'anmeldung', 'sign in', 'einloggen',
+                             'zugriff verweigert', 'access denied', 'not found', 'nicht gefunden',
+                             'default_page')
+        if any(t in title.lower() for t in non_course_titles):
+            print(f'Course page shows "{title}" instead of a course (course may have been deleted): {course_url}')
             return None
 
         course_id = extract_course_id_from_number_field(raw_text)
@@ -883,6 +900,21 @@ async def main() -> None:
 
             skipped_count = processed_count - updated_count
             print(f'Processed {processed_count} course(s): wrote {updated_count}, skipped {skipped_count} unchanged.')
+
+            # Detect courses removed from the website (full crawl only)
+            if not args.course_url and args.limit_courses is None:
+                expected_filenames = {build_course_filename(cid) for cid in seen_course_ids}
+                deleted_dir = OUTPUT_DIR / 'deleted'
+                moved_count = 0
+                for path in sorted(OUTPUT_DIR.glob('course-*.json')):
+                    if path.name not in expected_filenames:
+                        deleted_dir.mkdir(parents=True, exist_ok=True)
+                        dest = deleted_dir / path.name
+                        path.rename(dest)
+                        print(f'[DELETED] {path.name} → deleted/')
+                        moved_count += 1
+                if moved_count:
+                    print(f'Moved {moved_count} deleted course(s) to deleted/')
         finally:
             await browser.close()
 
