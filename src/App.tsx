@@ -36,6 +36,7 @@ type RoomFeatures = {
 }
 
 type Course = {
+  id?: string
   time: string
   name: LocalizedText
   prof?: LocalizedText
@@ -43,6 +44,15 @@ type Course = {
   note?: string | null
   start_date?: string | null
   end_date?: string | null
+}
+
+type CourseSlot = {
+  start_time: string
+  end_time: string
+  room: string
+  building_name: string | null
+  first_date: string
+  last_date: string
 }
 
 type RoomEntry = {
@@ -160,6 +170,37 @@ function downloadIcsFile(name: string, room: string, dateStr: string, startMin: 
     'END:VEVENT', 'END:VCALENDAR',
   ].filter(Boolean).join('\r\n')
   const blob = new Blob([lines], { type: 'text/calendar;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `${name.replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '_').slice(0, 50)}.ics`
+  document.body.appendChild(a); a.click(); document.body.removeChild(a)
+  URL.revokeObjectURL(url)
+}
+
+function downloadMultiSlotIcsFile(name: string, prof: string, slots: CourseSlot[]) {
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const escape = (s: string) => s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n')
+  const vevents = slots.map(slot => {
+    const startMin = parseTimeToMinutes(slot.start_time)
+    const endMin = parseTimeToMinutes(slot.end_time)
+    const d = slot.first_date.replace(/-/g, '')
+    const start = `${d}T${pad(Math.floor(startMin / 60))}${pad(startMin % 60)}00`
+    const end = `${d}T${pad(Math.floor(endMin / 60))}${pad(endMin % 60)}00`
+    const isRecurring = slot.last_date !== slot.first_date
+    return [
+      'BEGIN:VEVENT',
+      `DTSTART;TZID=Europe/Berlin:${start}`,
+      `DTEND;TZID=Europe/Berlin:${end}`,
+      `SUMMARY:${escape(name)}`,
+      `LOCATION:${escape(slot.room)}`,
+      prof ? `DESCRIPTION:${escape(prof)}` : null,
+      isRecurring ? `RRULE:FREQ=WEEKLY;UNTIL=${slot.last_date.replace(/-/g, '')}T235959Z` : null,
+      'END:VEVENT',
+    ].filter(Boolean).join('\r\n')
+  })
+  const content = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//heiView//heiView//EN', ...vevents, 'END:VCALENDAR'].join('\r\n')
+  const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
@@ -423,6 +464,8 @@ function App() {
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
   const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
+  const [courseSlots, setCourseSlots] = React.useState<CourseSlot[]>([])
+  const [courseSlotsFetching, setCourseSlotsFetching] = React.useState(false)
   const [searchResults, setSearchResults] = React.useState<SearchResult[]>([])
   const [searchLoading, setSearchLoading] = React.useState(false)
 
@@ -595,6 +638,20 @@ function App() {
       setSelectedBuilding(filteredBuildingOptions[0].value)
     }
   }, [filteredBuildingOptions, selectedBuilding, selectedCampus])
+
+  // Fetch all time slots for the selected course (used for per-slot calendar buttons)
+  React.useEffect(() => {
+    const courseId = selectedCourse?.course.id
+    if (!courseId) { setCourseSlots([]); return }
+    setCourseSlotsFetching(true)
+    let alive = true
+    fetch(`/api/course/${encodeURIComponent(courseId)}/slots`)
+      .then(r => r.ok ? r.json() : [])
+      .then((data: unknown) => { if (alive) setCourseSlots(Array.isArray(data) ? (data as CourseSlot[]) : []) })
+      .catch(() => { if (alive) setCourseSlots([]) })
+      .finally(() => { if (alive) setCourseSlotsFetching(false) })
+    return () => { alive = false }
+  }, [selectedCourse?.course.id])
 
   const visibleRooms = React.useMemo(() => {
     const rooms = (schedule?.rooms[activeBuildingId] || []).filter((room) => room.room)
@@ -1092,45 +1149,100 @@ function App() {
                 </Button>
               )}
 
-              {selectedCourse.startMinutes > 0 && (
+              {(selectedCourse.startMinutes > 0 || courseSlots.length > 0 || courseSlotsFetching) && (
                 <>
                   <Divider style={{ margin: '4px 0' }} />
                   <div>
-                    <Typography.Text type="secondary" style={{ fontSize: 12, display: 'block', marginBottom: 8 }}>
+                    <Typography.Text strong style={{ fontSize: 13, display: 'block', marginBottom: 8 }}>
                       {text.addToCalendar}
                     </Typography.Text>
-                    <Space wrap>
-                      <a
-                        href={toGoogleCalendarUrl(
-                          resolveLocalizedText(selectedCourse.course.name, language),
-                          selectedCourse.room,
-                          selectedDate.format('YYYY-MM-DD'),
-                          selectedCourse.startMinutes,
-                          selectedCourse.endMinutes,
-                          resolveLocalizedText(selectedCourse.course.prof, language),
-                          selectedCourse.course.link || '',
-                          selectedCourse.course.end_date,
-                        )}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <Button size="small">Google Calendar</Button>
-                      </a>
-                      <Button
-                        size="small"
-                        onClick={() => downloadIcsFile(
-                          resolveLocalizedText(selectedCourse.course.name, language),
-                          selectedCourse.room,
-                          selectedDate.format('YYYY-MM-DD'),
-                          selectedCourse.startMinutes,
-                          selectedCourse.endMinutes,
-                          resolveLocalizedText(selectedCourse.course.prof, language),
-                          selectedCourse.course.end_date,
-                        )}
-                      >
-                        {text.downloadIcs}
-                      </Button>
-                    </Space>
+                    {courseSlotsFetching ? (
+                      <Spin size="small" />
+                    ) : courseSlots.length > 0 ? (
+                      <Space direction="vertical" size={6} style={{ width: '100%' }}>
+                        {courseSlots.map((slot, i) => {
+                          const startMin = parseTimeToMinutes(slot.start_time)
+                          const endMin = parseTimeToMinutes(slot.end_time)
+                          const isRecurring = slot.last_date !== slot.first_date
+                          const firstDay = dayjs(slot.first_date + 'T12:00:00')
+                          const lastDay = dayjs(slot.last_date + 'T12:00:00')
+                          const weekday = firstDay.format('dddd')
+                          const dateLabel = isRecurring
+                            ? `${firstDay.format('MMM D')} – ${lastDay.format('MMM D')}`
+                            : firstDay.format('MMM D')
+                          const slotLabel = `${dateLabel}, ${weekday}, ${slot.start_time}–${slot.end_time}`
+                          const courseName = resolveLocalizedText(selectedCourse.course.name, language)
+                          const prof = resolveLocalizedText(selectedCourse.course.prof, language)
+                          return (
+                            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                              <Typography.Text type="secondary" style={{ fontSize: 12, flex: 1, minWidth: 0 }}>
+                                {slotLabel}
+                              </Typography.Text>
+                              <a
+                                href={toGoogleCalendarUrl(
+                                  courseName,
+                                  slot.room,
+                                  slot.first_date,
+                                  startMin,
+                                  endMin,
+                                  prof,
+                                  selectedCourse.course.link || '',
+                                  slot.last_date,
+                                )}
+                                target="_blank"
+                                rel="noreferrer"
+                                style={{ flexShrink: 0 }}
+                              >
+                                <Button size="small">Google Calendar</Button>
+                              </a>
+                            </div>
+                          )
+                        })}
+                        <Button
+                          size="small"
+                          onClick={() => downloadMultiSlotIcsFile(
+                            resolveLocalizedText(selectedCourse.course.name, language),
+                            resolveLocalizedText(selectedCourse.course.prof, language),
+                            courseSlots,
+                          )}
+                        >
+                          {text.downloadIcs}{courseSlots.length > 1 ? ` (${courseSlots.length} slots)` : ''}
+                        </Button>
+                      </Space>
+                    ) : (
+                      <Space wrap>
+                        <a
+                          href={toGoogleCalendarUrl(
+                            resolveLocalizedText(selectedCourse.course.name, language),
+                            selectedCourse.room,
+                            selectedCourse.course.start_date || selectedDate.format('YYYY-MM-DD'),
+                            selectedCourse.startMinutes,
+                            selectedCourse.endMinutes,
+                            resolveLocalizedText(selectedCourse.course.prof, language),
+                            selectedCourse.course.link || '',
+                            selectedCourse.course.end_date,
+                          )}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <Button size="small">Google Calendar</Button>
+                        </a>
+                        <Button
+                          size="small"
+                          onClick={() => downloadIcsFile(
+                            resolveLocalizedText(selectedCourse.course.name, language),
+                            selectedCourse.room,
+                            selectedCourse.course.start_date || selectedDate.format('YYYY-MM-DD'),
+                            selectedCourse.startMinutes,
+                            selectedCourse.endMinutes,
+                            resolveLocalizedText(selectedCourse.course.prof, language),
+                            selectedCourse.course.end_date,
+                          )}
+                        >
+                          {text.downloadIcs}
+                        </Button>
+                      </Space>
+                    )}
                   </div>
                 </>
               )}

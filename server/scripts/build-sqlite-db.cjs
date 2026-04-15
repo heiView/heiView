@@ -189,6 +189,12 @@ function ensureOccurrencesSplitColumns(db) {
   if (!names.has('floor_label')) {
     db.exec('ALTER TABLE occurrences ADD COLUMN floor_label TEXT;');
   }
+  if (!names.has('slot_start_date')) {
+    db.exec('ALTER TABLE occurrences ADD COLUMN slot_start_date TEXT;');
+  }
+  if (!names.has('slot_end_date')) {
+    db.exec('ALTER TABLE occurrences ADD COLUMN slot_end_date TEXT;');
+  }
 }
 
 function ensureSchema(db) {
@@ -228,6 +234,8 @@ function ensureSchema(db) {
       start_time TEXT,
       end_time TEXT,
       note TEXT,
+      slot_start_date TEXT,
+      slot_end_date TEXT,
       FOREIGN KEY (course_id) REFERENCES courses(id)
     );
 
@@ -278,9 +286,9 @@ function main() {
 
     const insertOccurrence = db.prepare(`
       INSERT INTO occurrences (
-        course_id, date, building, building_name, floor_label, room, start_time, end_time, note
+        course_id, date, building, building_name, floor_label, room, start_time, end_time, note, slot_start_date, slot_end_date
       ) VALUES (
-        @course_id, @date, @building, @building_name, @floor_label, @room, @start_time, @end_time, @note
+        @course_id, @date, @building, @building_name, @floor_label, @room, @start_time, @end_time, @note, @slot_start_date, @slot_end_date
       );
     `);
 
@@ -429,6 +437,8 @@ function main() {
             start_time: week.start_time || null,
             end_time: week.end_time || null,
             note: week.note || null,
+            slot_start_date: slotStart || null,
+            slot_end_date: slotEnd || null,
           });
           occurrenceCount += 1;
         }
@@ -481,9 +491,9 @@ function syncSingleCourse(courseId) {
   `);
   const insertOccurrence = db.prepare(`
     INSERT INTO occurrences (
-      course_id, date, building, building_name, floor_label, room, start_time, end_time, note
+      course_id, date, building, building_name, floor_label, room, start_time, end_time, note, slot_start_date, slot_end_date
     ) VALUES (
-      @course_id, @date, @building, @building_name, @floor_label, @room, @start_time, @end_time, @note
+      @course_id, @date, @building, @building_name, @floor_label, @room, @start_time, @end_time, @note, @slot_start_date, @slot_end_date
     )
   `);
 
@@ -605,6 +615,8 @@ function syncSingleCourse(courseId) {
           start_time: week.start_time || null,
           end_time: week.end_time || null,
           note: week.note || null,
+          slot_start_date: slotStart || null,
+          slot_end_date: slotEnd || null,
         });
       }
     }

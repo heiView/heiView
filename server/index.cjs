@@ -273,7 +273,9 @@ function createApp() {
           SELECT course_id, building_name, room,
                  start_time, end_time, note,
                  MIN(CASE WHEN date >= date('now') THEN date END) AS next_date,
-                 MAX(date) AS last_date
+                 MAX(date) AS last_date,
+                 MIN(slot_start_date) AS slot_start_date,
+                 MAX(slot_end_date) AS slot_end_date
           FROM occurrences
           GROUP BY course_id, building_name, room
         ) o ON o.course_id = c.id
@@ -307,7 +309,9 @@ function createApp() {
                  MIN(start_time) AS start_time, MIN(end_time) AS end_time,
                  MIN(note) AS note,
                  MIN(CASE WHEN date >= date('now') THEN date END) AS next_date,
-                 MAX(date) AS last_date
+                 MAX(date) AS last_date,
+                 MIN(slot_start_date) AS slot_start_date,
+                 MAX(slot_end_date) AS slot_end_date
           FROM occurrences
           GROUP BY course_id, building_name, room
         ) o
@@ -355,8 +359,8 @@ function createApp() {
             prof: profStr,
             link: row.detail_link || null,
             note: row.note || null,
-            start_date: row.start_date || null,
-            end_date: row.end_date || null,
+            start_date: row.slot_start_date || row.start_date || null,
+            end_date: row.slot_end_date || row.end_date || null,
           },
           room: row.room || 'Unknown',
           roomDisplayName: row.room || 'Unknown',
@@ -1209,6 +1213,43 @@ function createApp() {
 
   // ────────────────────────────────────────────────────────────────────────
 
+  // GET /api/course/:courseId/slots
+  // Returns distinct weekly time slots for a course, grouped by day-of-week + time + room.
+  // Used by the frontend to show per-slot Google Calendar / ICS download buttons.
+  app.get('/api/course/:courseId/slots', (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    let db;
+    try {
+      db = openDb();
+      const rows = db.prepare(`
+        SELECT
+          start_time, end_time, room, building_name,
+          strftime('%w', date) AS js_dow,
+          MIN(date) AS first_date,
+          MAX(date) AS last_date
+        FROM occurrences
+        WHERE course_id = ?
+          AND start_time IS NOT NULL
+          AND end_time IS NOT NULL
+        GROUP BY start_time, end_time, room, building_name, strftime('%w', date)
+        ORDER BY first_date, start_time
+      `).all(String(courseId));
+      res.json(rows.map(r => ({
+        start_time: r.start_time,
+        end_time: r.end_time,
+        room: r.room || '',
+        building_name: r.building_name || null,
+        first_date: r.first_date,
+        last_date: r.last_date,
+      })));
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    } finally {
+      if (db) db.close();
+    }
+  });
+
   // In-memory response cache for /api/schedule (TTL: 60s)
   // Note: scheduleCache is declared at module level so writeCatalog can clear it.
   const SCHEDULE_CACHE_TTL = 60_000;
@@ -1453,6 +1494,8 @@ function createApp() {
                 o.start_time,
                 o.end_time,
                 o.note,
+                o.slot_start_date,
+                o.slot_end_date,
                 c.title,
                 c.id AS course_id,
                 c.detail_link,
@@ -1482,6 +1525,8 @@ function createApp() {
                 o.start_time,
                 o.end_time,
                 o.note,
+                o.slot_start_date,
+                o.slot_end_date,
                 c.title,
                 c.id AS course_id,
                 c.detail_link,
@@ -1543,8 +1588,8 @@ function createApp() {
               }).join(', ')
             : '',
           link: row.detail_link || undefined,
-          start_date: row.start_date || null,
-          end_date: row.end_date || null,
+          start_date: row.slot_start_date || row.start_date || null,
+          end_date: row.slot_end_date || row.end_date || null,
         };
 
         if (skipSet.has(String(row.course_id))) continue;
