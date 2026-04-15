@@ -216,6 +216,7 @@ function campusLabelFromId(value) {
   if (key === 'altstadt' || key === 'alterstadt') return 'Altstadt';
   if (key === 'bergheim') return 'Bergheim';
   if (key === 'im-neuenheimer-feld') return 'Im Neuenheimer Feld';
+  if (key === 'heidelberg') return 'Heidelberg';
   if (key === 'mannheim-and-ludwigshafen') return 'Mannheim & Ludwigshafen';
   if (key === 'other') return 'Other';
   return null;

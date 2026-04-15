@@ -1,4 +1,4 @@
-export type Campus = 'Altstadt' | 'Bergheim' | 'Im Neuenheimer Feld' | 'Mannheim & Ludwigshafen' | 'Other' | 'Online'
+export type Campus = 'Altstadt' | 'Bergheim' | 'Im Neuenheimer Feld' | 'Heidelberg' | 'Mannheim & Ludwigshafen' | 'Other' | 'Online'
 
 type CampusBuildingRule = {
   campus: Campus
@@ -19,6 +19,10 @@ export const CAMPUS_BUILDING_RULES: CampusBuildingRule[] = [
     patterns: ['Im Neuenheimer Feld', 'INF'],
   },
   {
+    campus: 'Heidelberg',
+    patterns: ['Heidelberg'],
+  },
+  {
     campus: 'Mannheim & Ludwigshafen',
     patterns: ['Mannheim', 'Ludwigshafen'],
   },
@@ -28,7 +32,7 @@ export const CAMPUS_BUILDING_RULES: CampusBuildingRule[] = [
   },
 ]
 
-export const CAMPUS_OPTIONS: Campus[] = ['Altstadt', 'Bergheim', 'Im Neuenheimer Feld', 'Mannheim & Ludwigshafen', 'Online', 'Other']
+export const CAMPUS_OPTIONS: Campus[] = ['Altstadt', 'Bergheim', 'Im Neuenheimer Feld', 'Heidelberg', 'Mannheim & Ludwigshafen', 'Online', 'Other']
 
 export function resolveCampusFromBuilding(buildingName: string): Campus | null {
   const normalized = (buildingName || '').trim().toLowerCase()

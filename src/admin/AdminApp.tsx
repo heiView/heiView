@@ -119,6 +119,7 @@ const BUILDING_CAMPUS_OPTIONS = [
   { value: 'altstadt', label: 'Altstadt' },
   { value: 'bergheim', label: 'Bergheim' },
   { value: 'im-neuenheimer-feld', label: 'Im Neuenheimer Feld' },
+  { value: 'heidelberg', label: 'Heidelberg' },
   { value: 'mannheim-and-ludwigshafen', label: 'Mannheim & Ludwigshafen' },
   { value: 'online', label: 'Online' },
   { value: 'other', label: 'Other' },
@@ -177,6 +178,7 @@ function normalizeCampusValue(value: string | null | undefined): Campus | null {
   if (text === 'altstadt') return 'Altstadt'
   if (text === 'bergheim') return 'Bergheim'
   if (text === 'im neuenheimer feld' || text === 'im-neuenheimer-feld') return 'Im Neuenheimer Feld'
+  if (text === 'heidelberg') return 'Heidelberg'
   if (text === 'mannheim & ludwigshafen' || text === 'mannheim-and-ludwigshafen') return 'Mannheim & Ludwigshafen'
   if (text === 'online') return 'Online'
   if (text === 'other') return 'Other'
@@ -453,6 +455,7 @@ function AdminApp() {
     return (allBuildingsList || [])
       .filter(b => !weekEditCampus || b.campusId === weekEditCampus)
       .map(b => ({ value: b.street, label: (b.displayName && b.displayName.trim()) ? b.displayName.trim() : b.street }))
+      .sort((a, b) => String(a.label).localeCompare(String(b.label)))
   }, [allBuildingsList, weekEditCampus])
   const [editRoomOptions, setEditRoomOptions] = React.useState<{ value: string }[]>([])
   const [newEventRoomOptions, setNewEventRoomOptions] = React.useState<{ value: string }[]>([])
@@ -803,6 +806,7 @@ function AdminApp() {
       Altstadt: 'altstadt',
       Bergheim: 'bergheim',
       'Im Neuenheimer Feld': 'im-neuenheimer-feld',
+      Heidelberg: 'heidelberg',
       'Mannheim & Ludwigshafen': 'mannheim-and-ludwigshafen',
       Online: 'online',
       Other: 'other',
@@ -2381,7 +2385,8 @@ function AdminApp() {
                     optionFilterProp="label"
                     options={(allBuildingsList || [])
                       .filter(b => !newEventCampus || b.campusId === newEventCampus)
-                      .map(b => ({ value: b.street, label: (b.displayName && b.displayName.trim()) ? b.displayName.trim() : b.street }))}
+                      .map(b => ({ value: b.street, label: (b.displayName && b.displayName.trim()) ? b.displayName.trim() : b.street }))
+                      .sort((a, b) => String(a.label).localeCompare(String(b.label)))}
                     style={{ flex: 1 }}
                     onChange={() => newEventForm.setFieldValue('week_room', undefined)}
                   />

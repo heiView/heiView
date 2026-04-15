@@ -252,6 +252,7 @@ function normalizeCampusValue(value: string | null | undefined): Campus | null {
   if (text === 'altstadt') return 'Altstadt'
   if (text === 'bergheim') return 'Bergheim'
   if (text === 'im neuenheimer feld' || text === 'im-neuenheimer-feld') return 'Im Neuenheimer Feld'
+  if (text === 'heidelberg') return 'Heidelberg'
   if (text === 'mannheim & ludwigshafen' || text === 'mannheim-and-ludwigshafen') return 'Mannheim & Ludwigshafen'
   if (text === 'online') return 'Online'
   if (text === 'other') return 'Other'
