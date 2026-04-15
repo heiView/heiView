@@ -133,6 +133,7 @@ export function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleRespon
     id: street, street, displayName: street,
     campus: (resolveCampusName(street) || 'Other') as Campus,
   }))
+  const seen = new Set<string>()
   const normalizedBuildings = (raw.buildings && raw.buildings.length > 0 ? raw.buildings : fallbackBuildings)
     .map((b) => {
       const street = b.id || resolveLocalizedText(b.street, 'en') || 'Unknown'
@@ -143,7 +144,11 @@ export function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleRespon
         campus: normalizeCampusValue(b.campus) || resolveCampusName(street) || (street.toLowerCase() === 'online' ? 'Online' : 'Other'),
       }
     })
-    .filter((b, i, arr) => arr.findIndex((x) => x.id === b.id) === i)
+    .filter((b) => {
+      if (seen.has(b.id)) return false
+      seen.add(b.id)
+      return true
+    })
   return { buildings: normalizedBuildings, rooms: roomGroups }
 }
 

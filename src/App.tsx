@@ -413,27 +413,31 @@ function App() {
     const query = deferredSearch.trim()
     if (!query) {
       setSearchResults([])
+      setSearchLoading(false)
       return
     }
 
     let alive = true
     setSearchLoading(true)
 
-    fetch(`/api/search?q=${encodeURIComponent(query)}`)
-      .then((r) => r.json())
-      .then((data: SearchResult[]) => {
-        if (!alive) return
-        setSearchResults(Array.isArray(data) ? data : [])
-      })
-      .catch(() => {
-        if (alive) setSearchResults([])
-      })
-      .finally(() => {
-        if (alive) setSearchLoading(false)
-      })
+    const timer = setTimeout(() => {
+      fetch(`/api/search?q=${encodeURIComponent(query)}`)
+        .then((r) => r.json())
+        .then((data: SearchResult[]) => {
+          if (!alive) return
+          setSearchResults(Array.isArray(data) ? data : [])
+        })
+        .catch(() => {
+          if (alive) setSearchResults([])
+        })
+        .finally(() => {
+          if (alive) setSearchLoading(false)
+        })
+    }, 300)
 
     return () => {
       alive = false
+      clearTimeout(timer)
     }
   }, [deferredSearch])
 
@@ -584,9 +588,9 @@ function App() {
                   </div>
                 ) : (
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', padding: '16px' }}>
-                    {searchResults.map((result, idx) => (
+                    {searchResults.map((result) => (
                       <div
-                        key={`search-${idx}`}
+                        key={`${result.course.id || ''}-${result.buildingId}-${result.room}`}
                         className="hei-event"
                         style={{ position: 'relative', width: '100%', height: '140px', padding: '12px', cursor: 'pointer', overflow: 'hidden' }}
                         onClick={() => setSelectedCourse({ room: result.room, course: result.course, startMinutes: result.startMinutes, endMinutes: result.endMinutes, buildingId: result.buildingId, buildingLabel: result.buildingLabel, targetDate: result.targetDate })}
@@ -618,7 +622,7 @@ function App() {
                     );
                     return allCourses.map((event, idx) => (
                       <div
-                        key={idx}
+                        key={`${event.id || idx}-${event.time}`}
                         className="hei-event"
                         style={{ position: 'relative', width: '100%', height: '140px', padding: '12px', cursor: 'pointer', overflow: 'hidden' }}
                         onClick={() => setSelectedCourse({ room: 'No Information', course: event, startMinutes: 0, endMinutes: 0 })}
