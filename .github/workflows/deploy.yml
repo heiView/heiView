@@ -30,19 +30,8 @@ jobs:
           npm ci
           npm run build
 
-      # 4. Upload dist/ to VPS (clears old files first)
-      - name: Upload dist to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: 92.5.99.210
-          username: ubuntu
-          key: ${{ secrets.DEPLOY_KEY }}
-          source: "dist"
-          target: "~/heiView"
-          rm: true
-
-      # 5. Update server code and restart (no build needed on VPS)
-      - name: Restart server
+      # 4. Update server code and install dependencies on VPS
+      - name: Update server on VPS
         uses: appleboy/ssh-action@master
         with:
           host: 92.5.99.210
@@ -54,4 +43,24 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             npm install --omit=dev
+
+      # 5. Upload dist/ to VPS (only replaces the dist subfolder, preserves .git)
+      - name: Upload dist to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: 92.5.99.210
+          username: ubuntu
+          key: ${{ secrets.DEPLOY_KEY }}
+          source: "dist/*"
+          target: "~/heiView/dist"
+          rm: true
+
+      # 6. Restart the API server
+      - name: Restart server
+        uses: appleboy/ssh-action@master
+        with:
+          host: 92.5.99.210
+          username: ubuntu
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: |
             pm2 restart heiview-api
