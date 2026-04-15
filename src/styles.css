@@ -484,7 +484,7 @@ textarea {
 }
 
 .hei-timetable-head-label {
-  width: 150px;
+  width: 140px;
   flex-shrink: 0;
 }
 
@@ -497,7 +497,7 @@ textarea {
 .hei-hour-label {
   position: absolute;
   top: 50%;
-  transform: translate(-75%, -50%);
+  transform: translate(-50%, -50%);
   color: var(--hei-muted);
   font-size: 13px;
   font-weight: 600;
@@ -558,6 +558,37 @@ textarea {
   width: 1px;
   background: linear-gradient(180deg, transparent, var(--hei-grid-strong) 20%, var(--hei-grid-strong) 80%, transparent);
   pointer-events: none;
+}
+
+.hei-now-line {
+  position: absolute;
+  inset-block: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: #e8333a;
+  opacity: 0.72;
+  z-index: 6;
+  pointer-events: none;
+  border-radius: 1px;
+}
+
+.hei-now-indicator {
+  position: absolute;
+  bottom: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: #e8333a;
+  z-index: 10;
+  pointer-events: none;
+  box-shadow: 0 0 0 2px rgba(232, 51, 58, 0.25);
+  animation: hei-now-pulse 2s ease-in-out infinite;
+}
+
+@keyframes hei-now-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(232, 51, 58, 0.25); }
+  50% { box-shadow: 0 0 0 5px rgba(232, 51, 58, 0.08); }
 }
 
 .hei-event {

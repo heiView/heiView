@@ -468,12 +468,25 @@ function App() {
   const [courseSlotsFetching, setCourseSlotsFetching] = React.useState(false)
   const [searchResults, setSearchResults] = React.useState<SearchResult[]>([])
   const [searchLoading, setSearchLoading] = React.useState(false)
+  const [nowMinutes, setNowMinutes] = React.useState(() => {
+    const n = dayjs()
+    return n.hour() * 60 + n.minute()
+  })
 
   const initializedRef = React.useRef(false)
   const campusSyncedRef = React.useRef(false)
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
   const bodyScrollRef = React.useRef<HTMLDivElement>(null)
   const topbarRef = React.useRef<HTMLElement>(null)
+
+  React.useEffect(() => {
+    const update = () => {
+      const n = dayjs()
+      setNowMinutes(n.hour() * 60 + n.minute())
+    }
+    const id = setInterval(update, 60_000)
+    return () => clearInterval(id)
+  }, [])
 
   React.useEffect(() => {
     const el = topbarRef.current
@@ -728,6 +741,9 @@ function App() {
 
   const isSearchMode = !loading && deferredSearch.trim().length > 0
   const timelineMinWidth = 120 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+  const isToday = selectedDate.isSame(dayjs(), 'day')
+  const nowLeft = (nowMinutes - TRACK_START_HOUR * 60) * PIXELS_PER_MINUTE
+  const showNowLine = isToday && nowLeft >= 0 && nowLeft <= (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
 
   return (
     <ConfigProvider theme={appTheme}>
@@ -827,6 +843,9 @@ function App() {
                           </div>
                         )
                       })}
+                      {showNowLine && (
+                        <div className="hei-now-indicator" style={{ left: nowLeft }} />
+                      )}
                     </div>
                   </div>
                 </div>
@@ -912,6 +931,9 @@ function App() {
                   aria-label={text.boardTitle}
                   style={{ width: `max(100%, ${timelineMinWidth}px)`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
                 >
+                  {showNowLine && (
+                    <div className="hei-now-line" style={{ left: 140 + nowLeft }} />
+                  )}
                   <div className="hei-timetable-body">
                     {visibleRoomGroups.map((group) => (
                       <div key={`floor-${group.floor}`} className="hei-floor-group">
