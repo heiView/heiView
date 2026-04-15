@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-15T01:06:48.748Z",
+  "updatedAt": "2026-04-15T04:14:41.722Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -8542,24 +8542,6 @@
       "notes": ""
     },
     {
-      "id": "bld-avp",
-      "street": "AVP",
-      "displayName": "AVP",
-      "campusId": "other",
-      "aliases": [],
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-avp::rm-avp",
-          "name": "AVP",
-          "displayName": "",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-station-gynaekologie",
       "street": "Station Gynäkologie",
       "displayName": "Station Gynäkologie",
@@ -8763,6 +8745,16 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-landfriedstrasse-12::rm-konferenzraum-a1-07",
+          "name": "Konferenzraum, A1.07",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8794,8 +8786,8 @@
     },
     {
       "id": "bld-marstallstrasse-6-hcch",
-      "street": "Marstallstraße. 6 HCCH",
-      "displayName": "Heidelberg Center for Cultural Heritage",
+      "street": "Marstallstraße. 6",
+      "displayName": "",
       "campusId": "altstadt",
       "aliases": [
         "Marstallstraße. 6",
@@ -8844,6 +8836,16 @@
           "floors": [
             "4th floor"
           ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-marstallstrasse-6-hcch::rm-raum-215",
+          "name": "Raum 215",
+          "floors": [],
           "features": {
             "hasAirConditioning": null,
             "hasAccessControl": null
@@ -9048,6 +9050,16 @@
           "floors": [
             "Unknown floor"
           ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-keplerstrasse-87::rm-raum-118",
+          "name": "Raum 118",
+          "floors": [],
           "features": {
             "hasAirConditioning": null,
             "hasAccessControl": null
@@ -9303,22 +9315,6 @@
       "notes": ""
     },
     {
-      "id": "bld-other-a1-07",
-      "street": "A1.07",
-      "displayName": "A1.07",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-a1-07::rm-konferenzraum-a1-07",
-          "name": "Konferenzraum, A1.07",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-roentgenstrasse-1",
       "street": "Röntgenstraße 1",
       "displayName": "Thoraxklinik Heidelberg",
@@ -9333,6 +9329,16 @@
       "street": "Stiftweg 2",
       "displayName": "Stift Neuburg",
       "campusId": "heidelberg",
+      "aliases": [],
+      "floors": [],
+      "rooms": [],
+      "notes": ""
+    },
+    {
+      "id": "bld-augustinergasse-7",
+      "street": "Augustinergasse 7",
+      "displayName": "",
+      "campusId": "altstadt",
       "aliases": [],
       "floors": [],
       "rooms": [],

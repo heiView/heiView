@@ -1,0 +1,30 @@
+{
+  "id": "020000043a",
+  "title": "Rechtsmedizin für Juristen",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "11:15",
+      "end_time": "12:15",
+      "location": "Ort - siehe Anmerkung",
+      "location_link": null,
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Voßstraße 4",
+      "note": "Hörsaal: Klinik für allgemeine Psychiatrie, Voßstraße 4, 69115 Heidelberg"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415600",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-15T03:51:53Z"
+}

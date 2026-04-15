@@ -19,7 +19,7 @@
       "location": "Konferenzraum, A1.07",
       "location_link": null,
       "room": "Konferenzraum, A1.07",
-      "building": null,
+      "building": "Landfriedstraße 12",
       "note": null
     },
     {
@@ -38,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416156",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T22:10:23Z"
+  "last_updated": "2026-04-15T03:30:53Z"
 }
