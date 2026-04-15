@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-15T00:08:12.842Z",
+  "updatedAt": "2026-04-15T01:06:48.748Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -8777,7 +8777,19 @@
         "HfK(A)"
       ],
       "floors": [],
-      "rooms": [],
+      "rooms": [
+        {
+          "id": "bld-hildastr-8::rm-hfk-a",
+          "name": "HfK (A)",
+          "displayName": "",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
       "notes": ""
     },
     {
