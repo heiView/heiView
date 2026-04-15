@@ -94,6 +94,7 @@ def extract_week_note(slot: dict) -> str | None:
         for label in ('Anmerkung:', 'Note:'):
             if segment.startswith(label):
                 note = segment[len(label):].strip()
+                note = re.sub(r'\s*\.\.\.\s*(Mehr anzeigen|Show more|Weitere anzeigen)\s*$', '', note, flags=re.IGNORECASE).strip()
                 return note or None
 
     for line in (compact_ws(line) for line in raw_text.splitlines()):
@@ -102,6 +103,7 @@ def extract_week_note(slot: dict) -> str | None:
         for label in ('Anmerkung:', 'Note:'):
             if label in line:
                 note = line.split(label, 1)[1].strip()
+                note = re.sub(r'\s*\.\.\.\s*(Mehr anzeigen|Show more|Weitere anzeigen)\s*$', '', note, flags=re.IGNORECASE).strip()
                 return note or None
     return None
 
@@ -490,6 +492,30 @@ async def expand_dates_and_groups_show_more(page) -> None:
             break
 
 
+async def expand_appointment_notes(page) -> None:
+    """Click all per-note 'Mehr anzeigen' / 'Show more' links inside individual appointments."""
+    group_list = page.locator('tm-course-group-list').first
+    note_selectors = (
+        '.compact-appointment a:has-text("Mehr anzeigen")',
+        '.compact-appointment a:has-text("Show more")',
+        '.compact-appointment a:has-text("Weitere anzeigen")',
+        '.compact-appointment button:has-text("Mehr anzeigen")',
+        '.compact-appointment button:has-text("Show more")',
+        '.compact-appointment button:has-text("Weitere anzeigen")',
+    )
+    for selector in note_selectors:
+        candidates = group_list.locator(selector)
+        count = await candidates.count()
+        for index in range(count):
+            try:
+                el = candidates.nth(index)
+                if await el.is_visible():
+                    await el.click(timeout=2000)
+                    await page.wait_for_timeout(150)
+            except Exception:
+                pass
+
+
 async def build_entry_from_course_url(browser, course_url: str) -> dict[str, object] | None:
     page = await browser.new_page()
     try:
@@ -625,6 +651,7 @@ async def process_course_entry(
             except Exception:
                 pass
             await expand_dates_and_groups_show_more(detail_page)
+            await expand_appointment_notes(detail_page)
             await detail_page.wait_for_timeout(800)
             appointment_nodes = detail_page.locator('tm-course-group-list div.compact-appointment')
             appointment_count = await appointment_nodes.count()
@@ -657,7 +684,7 @@ async def process_course_entry(
             'location_link': None,
             'room': slot.get('location'),
             'building': None,
-            'note': extract_week_note(slot),
+            'note': slot.get('note') or extract_week_note(slot),
         }
         for slot in slots
     ]

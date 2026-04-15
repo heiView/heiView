@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 from typing import Iterator, List, Optional
 
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 DATE_RANGE_RE = re.compile(r"von\s+(\d{2}\.\d{2}\.\d{4})\s+bis\s+(\d{2}\.\d{2}\.\d{4})", re.IGNORECASE)
 DATE_ANY_RE = re.compile(r"(\d{2}\.\d{2}\.\d{4})")
@@ -135,6 +135,30 @@ def parse_slot(group: Tag, appointment: Tag) -> dict:
             raw_parts.append(text)
     raw_text = " | ".join(raw_parts)
 
+    # Extract note from ca-more-less component (handles expanded/split text)
+    note = None
+    more_less = appointment.select_one("ca-more-less")
+    if more_less:
+        note_parts: List[str] = []
+        for child in more_less.descendants:
+            if not isinstance(child, NavigableString):
+                continue
+            parent = child.parent
+            # Skip text inside control links (Show less / Mehr anzeigen etc.)
+            if parent and parent.name == 'a':
+                continue
+            text = str(child).strip()
+            if text:
+                note_parts.append(text)
+        full_note = ' '.join(note_parts)
+        full_note = clean_text(full_note)
+        if full_note:
+            for prefix in ('Note:', 'Anmerkung:'):
+                if full_note.startswith(prefix):
+                    full_note = full_note[len(prefix):].strip()
+                    break
+            note = full_note or None
+
     return {
         "start_date": start_date,
         "end_date": end_date,
@@ -146,6 +170,7 @@ def parse_slot(group: Tag, appointment: Tag) -> dict:
         "group": group_name or None,
         "category": category or None,
         "raw": raw_text,
+        "note": note,
     }
 
 
