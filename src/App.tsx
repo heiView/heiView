@@ -21,94 +21,42 @@ import {
   SearchOutlined,
 } from '@ant-design/icons'
 import DarkModeButton from './components/DarkModeButton/DarkModeButton'
-import { CAMPUS_OPTIONS, resolveCampusFromBuilding, type Campus } from './campusConfig'
+import { CAMPUS_OPTIONS, type Campus } from './campusConfig'
 import useStore from './store'
-
-type Language = 'zh' | 'en' | 'de'
-
-type LocalizedText = string | Record<string, string> | null | undefined
-
-type RoomFeatures = {
-  hasAirConditioning?: boolean | null
-  hasAccessControl?: boolean | null
-  hasProjector?: boolean | null
-  hasMicrophone?: boolean | null
-}
-
-type Course = {
-  id?: string
-  time: string
-  name: LocalizedText
-  prof?: LocalizedText
-  link?: string
-  note?: string | null
-  start_date?: string | null
-  end_date?: string | null
-}
-
-type CourseSlot = {
-  start_time: string
-  end_time: string
-  room: string
-  building_name: string | null
-  first_date: string
-  last_date: string
-}
-
-type RoomEntry = {
-  room: string
-  displayName?: string | null
-  floor?: string | null
-  features?: RoomFeatures | null
-  courses: Course[]
-}
-
-type BuildingEntry = {
-  id: string
-  street?: LocalizedText
-  displayName?: LocalizedText
-  campus?: Campus | null
-}
-
-type ScheduleResponse = {
-  buildings: BuildingEntry[]
-  rooms: Record<string, RoomEntry[]>
-}
-
-type CourseModalState = {
-  room: string
-  course: Course
-  startMinutes: number
-  endMinutes: number
-  buildingId?: string
-  buildingLabel?: string
-  targetDate?: string | null
-}
-
-type TimelineEvent = {
-  course: Course
-  start: number
-  end: number
-  startOffset: number
-  endOffset: number
-}
-
-type FloorGroup = {
-  floor: string
-  rooms: RoomEntry[]
-}
-
-type SearchResult = {
-  course: Course
-  room: string
-  roomDisplayName: string
-  buildingId: string
-  buildingLabel: string
-  startMinutes: number
-  endMinutes: number
-  hasValidTime: boolean
-  targetDate?: string | null
-}
+import type {
+  Language,
+  LocalizedText,
+  Course,
+  CourseSlot,
+  RoomEntry,
+  ScheduleResponse,
+  CourseModalState,
+  TimelineEvent,
+  FloorGroup,
+  SearchResult,
+} from './types/schedule'
+import {
+  TRACK_START_HOUR,
+  TRACK_END_HOUR,
+  PIXELS_PER_MINUTE,
+  ROOM_ROW_HEIGHT,
+  EVENT_HEIGHT,
+  resolveLocalizedText,
+  resolveBuildingLabel,
+  resolveCampusName,
+  formatCampusOptionLabel,
+  normalizeFloorLabel,
+  compareFloors,
+  normalizeCampusValue,
+  parseTimeToMinutes,
+  formatMinutesToTime,
+  normalizeScheduleResponse,
+  toIsoDate,
+  getVisibleRoomCourses,
+  clusterEvents,
+  fetchSchedule,
+  groupRoomsByFloor,
+} from './utils/schedule'
 
 const UI_TEXT = {
   brand: 'heiView',
@@ -207,244 +155,6 @@ function downloadMultiSlotIcsFile(name: string, prof: string, slots: CourseSlot[
   a.download = `${name.replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '_').slice(0, 50)}.ics`
   document.body.appendChild(a); a.click(); document.body.removeChild(a)
   URL.revokeObjectURL(url)
-}
-
-const TRACK_START_HOUR = 8
-const TRACK_END_HOUR = 23
-const PIXELS_PER_MINUTE = 2
-const ROOM_ROW_HEIGHT = 126
-const EVENT_HEIGHT = 112
-
-function resolveLocalizedText(value: LocalizedText, language: Language) {
-  if (!value) return ''
-  if (typeof value === 'string') return value
-  return value[language] || value.zh || value.en || value.de || Object.values(value)[0] || ''
-}
-
-function resolveBuildingLabel(displayName: LocalizedText, language: Language, fallbackStreet: string) {
-  const localized = resolveLocalizedText(displayName, language)
-  return localized || fallbackStreet
-}
-
-function resolveCampusName(street: string): Campus | null {
-  return resolveCampusFromBuilding(street)
-}
-
-function formatCampusOptionLabel(campus: Campus) {
-  if (campus === 'Altstadt' || campus === 'Bergheim') {
-    return `${campus} Campus`
-  }
-  if (campus === 'Im Neuenheimer Feld') {
-    return 'INF Campus'
-  }
-  return campus
-}
-
-function normalizeFloorLabel(value: string | null | undefined) {
-  const text = (value || '').trim()
-  return text || 'Unknown floor'
-}
-
-function floorSortValue(floor: string) {
-  const normalized = floor.toLowerCase().trim()
-  if (!normalized || normalized === 'unknown floor') return 99999
-
-  if (/basement|untergeschoss|keller|\bug\b/.test(normalized)) {
-    const depthMatch = normalized.match(/(\d+)/)
-    const depth = depthMatch ? Number.parseInt(depthMatch[1], 10) : 1
-    return -100 - depth
-  }
-
-  if (/ground|erdgeschoss|\beg\b/.test(normalized)) {
-    return 0
-  }
-
-  if (/mezzanine|zwischen/.test(normalized)) {
-    return 0.5
-  }
-
-  const dotOgMatch = normalized.match(/(\d+)\s*\.?\s*og/)
-  if (dotOgMatch) {
-    return Number.parseInt(dotOgMatch[1], 10)
-  }
-
-  const ordinalMatch = normalized.match(/(-?\d+)\s*(st|nd|rd|th)?\s*(floor|level|stock|geschoss)?/)
-  if (ordinalMatch) {
-    return Number.parseInt(ordinalMatch[1], 10)
-  }
-
-  if (/attic|dach/.test(normalized)) {
-    return 9990
-  }
-
-  return 9999
-}
-
-function compareFloors(left: string, right: string) {
-  const leftValue = floorSortValue(left)
-  const rightValue = floorSortValue(right)
-  if (leftValue !== rightValue) return leftValue - rightValue
-  return left.localeCompare(right, undefined, { numeric: true, sensitivity: 'base' })
-}
-
-function normalizeCampusValue(value: string | null | undefined): Campus | null {
-  const text = (value || '').trim().toLowerCase()
-  if (!text) return null
-  if (text === 'altstadt') return 'Altstadt'
-  if (text === 'bergheim') return 'Bergheim'
-  if (text === 'im neuenheimer feld' || text === 'im-neuenheimer-feld') return 'Im Neuenheimer Feld'
-  if (text === 'heidelberg') return 'Heidelberg'
-  if (text === 'mannheim & ludwigshafen' || text === 'mannheim-and-ludwigshafen') return 'Mannheim & Ludwigshafen'
-  if (text === 'online') return 'Online'
-  if (text === 'other') return 'Other'
-  return null
-}
-
-function parseTimeToMinutes(time: string) {
-  const [hours, minutes] = time.split(':').map((value) => Number.parseInt(value, 10))
-  if (Number.isNaN(hours) || Number.isNaN(minutes)) return NaN
-  return hours * 60 + minutes
-}
-
-function formatMinutesToTime(totalMinutes: number) {
-  const hours = Math.floor(totalMinutes / 60)
-  const minutes = totalMinutes % 60
-  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`
-}
-
-function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleResponse {
-  const roomGroups: Record<string, RoomEntry[]> = {}
-
-  Object.entries(raw.rooms || {}).forEach(([street, entries]) => {
-    if (street.toLowerCase() === 'online') {
-      const allCourses = (entries || []).flatMap((e) => e.courses || [])
-      const sorted = [...allCourses].sort((a, b) => {
-        const startA = parseTimeToMinutes((a.time || '').split('-')[0]) || 0
-        const startB = parseTimeToMinutes((b.time || '').split('-')[0]) || 0
-        return startA - startB
-      })
-
-      const tracks: { end: number; courses: Course[] }[] = []
-
-      for (const course of sorted) {
-        const start = parseTimeToMinutes((course.time || '').split('-')[0])
-        const end = parseTimeToMinutes((course.time || '').split('-')[1])
-
-        if (Number.isNaN(start) || Number.isNaN(end)) {
-          if (tracks.length === 0) tracks.push({ end: 0, courses: [] })
-          tracks[0].courses.push(course)
-          continue
-        }
-
-        let placed = false
-        for (const track of tracks) {
-          if (start >= track.end) {
-            track.courses.push(course)
-            track.end = end
-            placed = true
-            break
-          }
-        }
-        if (!placed) {
-          tracks.push({ end, courses: [course] })
-        }
-      }
-
-      roomGroups[street] = tracks.map((track, i) => ({
-        room: `Online ${i + 1}`,
-        floor: 'Virtual Spaces',
-        features: null,
-        courses: track.courses,
-      }))
-    } else {
-      roomGroups[street] = (entries || []).map((entry) => ({
-        room: entry.room,
-        displayName: (entry as RoomEntry).displayName || null,
-        floor: normalizeFloorLabel(entry.floor),
-        features: entry.features || null,
-        courses: entry.courses || [],
-      }))
-    }
-  })
-
-  const fallbackBuildings = Object.keys(roomGroups).map((street) => ({
-    id: street,
-    street,
-    displayName: street,
-    campus: resolveCampusName(street) || 'Other' as Campus,
-  }))
-
-  const normalizedBuildings = (raw.buildings && raw.buildings.length > 0 ? raw.buildings : fallbackBuildings)
-    .map((building) => {
-      const street = building.id || resolveLocalizedText(building.street, 'en') || 'Unknown'
-      const displayName = resolveLocalizedText(building.displayName, 'en') || street
-      return {
-        id: street,
-        street,
-        displayName,
-        campus: normalizeCampusValue(building.campus) || resolveCampusName(street) || (street.toLowerCase() === 'online' ? 'Online' : 'Other'),
-      }
-    })
-    .filter((building, index, array) => array.findIndex((item) => item.id === building.id) === index)
-
-  return {
-    buildings: normalizedBuildings,
-    rooms: roomGroups,
-  }
-}
-
-function toIsoDate(value: Dayjs) {
-  return value.format('YYYY-MM-DD')
-}
-
-function getVisibleRoomCourses(room: RoomEntry, query: string, language: Language) {
-  if (!query) return room.courses
-  return room.courses.filter((course) => {
-    const courseName = resolveLocalizedText(course.name, language).toLowerCase()
-    const professor = resolveLocalizedText(course.prof, language).toLowerCase()
-    const note = (course.note || '').toLowerCase()
-    return courseName.includes(query) || professor.includes(query) || note.includes(query)
-  })
-}
-
-function clusterEvents(events: TimelineEvent[]) {
-  const clusters: TimelineEvent[][] = []
-  const sorted = [...events].sort((left, right) => left.start - right.start)
-
-  for (const event of sorted) {
-    const cluster = clusters[clusters.length - 1]
-    if (!cluster) {
-      clusters.push([event])
-      continue
-    }
-
-    const clusterEnd = Math.max(...cluster.map((item) => item.end))
-    if (event.start < clusterEnd) {
-      cluster.push(event)
-    } else {
-      clusters.push([event])
-    }
-  }
-
-  return clusters
-}
-
-async function fetchSchedule(date: string) {
-  const response = await fetch(`/api/schedule?date=${date}`, {
-    cache: 'default',
-  })
-
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`)
-  }
-
-  const contentType = response.headers.get('content-type') || ''
-  if (!contentType.includes('application/json')) {
-    throw new Error(`Unexpected content type: ${contentType || 'unknown'}`)
-  }
-
-  const payload = (await response.json()) as ScheduleResponse
-  return normalizeScheduleResponse(payload)
 }
 
 function App() {

@@ -27,90 +27,44 @@ import {
   SearchOutlined,
 } from '@ant-design/icons'
 import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
-import { CAMPUS_OPTIONS, resolveCampusFromBuilding, type Campus } from '../campusConfig'
+import { CAMPUS_OPTIONS, type Campus } from '../campusConfig'
 import useStore from '../store'
 import { clearToken, adminFetch, isSuperAdmin, getUsername } from './adminAuth'
+import type {
+  Language,
+  LocalizedText,
+  Course,
+  RoomEntry,
+  BuildingEntry,
+  ScheduleResponse,
+  CourseModalState,
+  TimelineEvent,
+  FloorGroup,
+  SearchResult,
+} from '../types/schedule'
+import {
+  TRACK_START_HOUR,
+  TRACK_END_HOUR,
+  PIXELS_PER_MINUTE,
+  ROOM_ROW_HEIGHT,
+  EVENT_HEIGHT,
+  resolveLocalizedText,
+  resolveBuildingLabel,
+  resolveCampusName,
+  formatCampusOptionLabel,
+  normalizeFloorLabel,
+  compareFloors,
+  normalizeCampusValue,
+  parseTimeToMinutes,
+  formatMinutesToTime,
+  normalizeScheduleResponse,
+  toIsoDate,
+  getVisibleRoomCourses,
+  clusterEvents,
+  fetchSchedule,
+  groupRoomsByFloor,
+} from '../utils/schedule'
 
-type Language = 'zh' | 'en' | 'de'
-type LocalizedText = string | Record<string, string> | null | undefined
-
-type RoomFeatures = {
-  hasAirConditioning?: boolean | null
-  hasAccessControl?: boolean | null
-  hasProjector?: boolean | null
-  hasMicrophone?: boolean | null
-}
-
-type Course = {
-  id?: string
-  time: string
-  name: LocalizedText
-  prof?: LocalizedText
-  link?: string
-  note?: string | null
-}
-
-type RoomEntry = {
-  room: string
-  displayName?: string | null
-  floor?: string | null
-  features?: RoomFeatures | null
-  courses: Course[]
-}
-
-type BuildingEntry = {
-  id: string
-  street?: LocalizedText
-  displayName?: LocalizedText
-  campus?: Campus | null
-}
-
-type ScheduleResponse = {
-  buildings: BuildingEntry[]
-  rooms: Record<string, RoomEntry[]>
-}
-
-type CourseModalState = {
-  room: string
-  course: Course
-  startMinutes: number
-  endMinutes: number
-  dayOfWeek: number
-  buildingId?: string
-  buildingLabel?: string
-  targetDate?: string | null
-}
-
-type TimelineEvent = {
-  course: Course
-  start: number
-  end: number
-  startOffset: number
-  endOffset: number
-}
-
-type FloorGroup = {
-  floor: string
-  rooms: RoomEntry[]
-}
-
-type SearchResult = {
-  course: Course
-  room: string
-  roomDisplayName: string
-  buildingId: string
-  buildingLabel: string
-  startMinutes: number
-  endMinutes: number
-  hasValidTime: boolean
-  targetDate?: string | null
-}
-
-const TRACK_START_HOUR = 8
-const TRACK_END_HOUR = 23
-const PIXELS_PER_MINUTE = 2
-const ROOM_ROW_HEIGHT = 126
-const EVENT_HEIGHT = 112
 const COMMON_FLOORS = [
   'Ground floor', '1st floor', '2nd floor', '3rd floor', '4th floor',
   'Lower level 1', 'Lower level 2', 'Unknown floor',
@@ -124,169 +78,6 @@ const BUILDING_CAMPUS_OPTIONS = [
   { value: 'online', label: 'Online' },
   { value: 'other', label: 'Other' },
 ]
-
-function resolveLocalizedText(value: LocalizedText, language: Language) {
-  if (!value) return ''
-  if (typeof value === 'string') return value
-  return value[language] || value.zh || value.en || value.de || Object.values(value)[0] || ''
-}
-
-function resolveBuildingLabel(displayName: LocalizedText, language: Language, fallbackStreet: string) {
-  return resolveLocalizedText(displayName, language) || fallbackStreet
-}
-
-function resolveCampusName(street: string): Campus | null {
-  return resolveCampusFromBuilding(street)
-}
-
-function formatCampusOptionLabel(campus: Campus) {
-  if (campus === 'Altstadt' || campus === 'Bergheim') return `${campus} Campus`
-  if (campus === 'Im Neuenheimer Feld') return 'INF Campus'
-  return campus
-}
-
-function normalizeFloorLabel(value: string | null | undefined) {
-  const text = (value || '').trim()
-  return text || 'Unknown floor'
-}
-
-function floorSortValue(floor: string) {
-  const normalized = floor.toLowerCase().trim()
-  if (!normalized || normalized === 'unknown floor') return 99999
-  if (/basement|untergeschoss|keller|\bug\b/.test(normalized)) {
-    const m = normalized.match(/(\d+)/)
-    return -100 - (m ? Number.parseInt(m[1], 10) : 1)
-  }
-  if (/ground|erdgeschoss|\beg\b/.test(normalized)) return 0
-  if (/mezzanine|zwischen/.test(normalized)) return 0.5
-  const og = normalized.match(/(\d+)\s*\.?\s*og/)
-  if (og) return Number.parseInt(og[1], 10)
-  const ord = normalized.match(/(-?\d+)\s*(st|nd|rd|th)?\s*(floor|level|stock|geschoss)?/)
-  if (ord) return Number.parseInt(ord[1], 10)
-  if (/attic|dach/.test(normalized)) return 9990
-  return 9999
-}
-
-function compareFloors(left: string, right: string) {
-  const diff = floorSortValue(left) - floorSortValue(right)
-  return diff !== 0 ? diff : left.localeCompare(right, undefined, { numeric: true, sensitivity: 'base' })
-}
-
-function normalizeCampusValue(value: string | null | undefined): Campus | null {
-  const text = (value || '').trim().toLowerCase()
-  if (!text) return null
-  if (text === 'altstadt') return 'Altstadt'
-  if (text === 'bergheim') return 'Bergheim'
-  if (text === 'im neuenheimer feld' || text === 'im-neuenheimer-feld') return 'Im Neuenheimer Feld'
-  if (text === 'heidelberg') return 'Heidelberg'
-  if (text === 'mannheim & ludwigshafen' || text === 'mannheim-and-ludwigshafen') return 'Mannheim & Ludwigshafen'
-  if (text === 'online') return 'Online'
-  if (text === 'other') return 'Other'
-  return null
-}
-
-function parseTimeToMinutes(time: string) {
-  const [h, m] = time.split(':').map((v) => Number.parseInt(v, 10))
-  if (Number.isNaN(h) || Number.isNaN(m)) return NaN
-  return h * 60 + m
-}
-
-function formatMinutesToTime(total: number) {
-  return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`
-}
-
-function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleResponse {
-  const roomGroups: Record<string, RoomEntry[]> = {}
-
-  Object.entries(raw.rooms || {}).forEach(([street, entries]) => {
-    if (street.toLowerCase() === 'online') {
-      const allCourses = (entries || []).flatMap((e) => e.courses || [])
-      const sorted = [...allCourses].sort((a, b) => {
-        const sa = parseTimeToMinutes((a.time || '').split('-')[0]) || 0
-        const sb = parseTimeToMinutes((b.time || '').split('-')[0]) || 0
-        return sa - sb
-      })
-      const tracks: { end: number; courses: Course[] }[] = []
-      for (const course of sorted) {
-        const start = parseTimeToMinutes((course.time || '').split('-')[0])
-        const end = parseTimeToMinutes((course.time || '').split('-')[1])
-        if (Number.isNaN(start) || Number.isNaN(end)) {
-          if (tracks.length === 0) tracks.push({ end: 0, courses: [] })
-          tracks[0].courses.push(course)
-          continue
-        }
-        let placed = false
-        for (const track of tracks) {
-          if (start >= track.end) { track.courses.push(course); track.end = end; placed = true; break }
-        }
-        if (!placed) tracks.push({ end, courses: [course] })
-      }
-      roomGroups[street] = tracks.map((track, i) => ({
-        room: `Online ${i + 1}`,
-        floor: 'Virtual Spaces',
-        features: null,
-        courses: track.courses,
-      }))
-    } else {
-      roomGroups[street] = (entries || []).map((entry) => ({
-        room: entry.room,
-        displayName: (entry as RoomEntry).displayName || null,
-        floor: normalizeFloorLabel(entry.floor),
-        features: entry.features || null,
-        courses: entry.courses || [],
-      }))
-    }
-  })
-
-  const fallbackBuildings = Object.keys(roomGroups).map((street) => ({
-    id: street, street, displayName: street,
-    campus: resolveCampusName(street) || ('Other' as Campus),
-  }))
-  const normalizedBuildings = (raw.buildings && raw.buildings.length > 0 ? raw.buildings : fallbackBuildings)
-    .map((b) => {
-      const street = b.id || resolveLocalizedText(b.street, 'en') || 'Unknown'
-      return {
-        id: street,
-        street,
-        displayName: resolveLocalizedText(b.displayName, 'en') || street,
-        campus: normalizeCampusValue(b.campus) || resolveCampusName(street) || (street.toLowerCase() === 'online' ? 'Online' : 'Other'),
-      }
-    })
-    .filter((b, i, arr) => arr.findIndex((x) => x.id === b.id) === i)
-  return { buildings: normalizedBuildings, rooms: roomGroups }
-}
-
-function toIsoDate(d: Dayjs) { return d.format('YYYY-MM-DD') }
-
-function getVisibleRoomCourses(room: RoomEntry, query: string, language: Language) {
-  if (!query) return room.courses
-  return room.courses.filter((course) => {
-    const name = resolveLocalizedText(course.name, language).toLowerCase()
-    const prof = resolveLocalizedText(course.prof, language).toLowerCase()
-    const note = (course.note || '').toLowerCase()
-    return name.includes(query) || prof.includes(query) || note.includes(query)
-  })
-}
-
-function clusterEvents(events: TimelineEvent[]) {
-  const clusters: TimelineEvent[][] = []
-  const sorted = [...events].sort((l, r) => l.start - r.start)
-  for (const event of sorted) {
-    const cluster = clusters[clusters.length - 1]
-    if (!cluster) { clusters.push([event]); continue }
-    const clusterEnd = Math.max(...cluster.map((e) => e.end))
-    if (event.start < clusterEnd) { cluster.push(event) } else { clusters.push([event]) }
-  }
-  return clusters
-}
-
-async function fetchSchedule(date: string) {
-  const res = await fetch(`/api/schedule?date=${date}`, { cache: 'no-store' })
-  if (!res.ok) throw new Error(`HTTP ${res.status}`)
-  const contentType = res.headers.get('content-type') || ''
-  if (!contentType.includes('application/json')) throw new Error(`Unexpected content type`)
-  return normalizeScheduleResponse((await res.json()) as ScheduleResponse)
-}
 
 // ── Admin-specific components ────────────────────────────────────────────────
 
@@ -579,7 +370,7 @@ function AdminApp() {
     const run = async () => {
       setLoading(true); setError(null)
       try {
-        const data = await fetchSchedule(toIsoDate(selectedDate))
+        const data = await fetchSchedule(toIsoDate(selectedDate), 'no-store')
         if (!alive) return
         setSchedule(data)
         setSelectedBuilding((cur) => {

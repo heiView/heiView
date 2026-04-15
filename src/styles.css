@@ -317,54 +317,16 @@ textarea {
   line-height: 1;
 }
 
-.hei-control-group {
-  width: 100%;
-}
-
-.hei-control-inline {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.hei-control-inline-right {
-  justify-content: flex-end;
-}
-
-.hei-control-label {
-  color: var(--hei-muted) !important;
-  font-size: 0.92rem;
-  flex: 0 0 72px;
-  white-space: nowrap;
-}
-
-.hei-date-picker,
 .hei-board-controls .ant-select,
 .hei-board-controls .ant-picker,
 .hei-board-controls .ant-input-affix-wrapper {
   width: 100%;
 }
 
-.hei-control-inline .ant-select,
-.hei-control-inline .ant-picker {
-  flex: none;
-  min-width: 0;
-}
-
-.hei-campus-select.ant-select {
-  width: 300px;
-  flex: 0 0 260px;
-}
-
 .hei-board-controls .ant-select-selector,
 .hei-board-controls .ant-picker,
 .hei-board-controls .ant-input-affix-wrapper {
   border-radius: 16px !important;
-}
-
-.hei-divider {
-  margin: 18px 0 !important;
-  border-color: var(--hei-border) !important;
 }
 
 .hei-error {
@@ -383,27 +345,6 @@ textarea {
 .hei-board-controls {
   margin-bottom: 10px;
   padding: 0 24px;
-}
-
-.hei-board-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--hei-border);
-}
-
-.hei-board-title {
-  margin: 0 !important;
-  color: var(--hei-text) !important;
-  font-weight: 700 !important;
-}
-
-.hei-board-hint {
-  color: var(--hei-muted) !important;
-  font-size: 0.92rem;
 }
 
 .hei-board-frame-header {
@@ -429,10 +370,6 @@ textarea {
   max-height: calc(100vh - 240px);
   overflow: auto;
   scrollbar-gutter: stable;
-}
-
-.hei-timetable-host {
-  min-height: 380px;
 }
 
 .hei-board-loading {
@@ -720,18 +657,6 @@ textarea {
     border-radius: 20px;
   }
 
-  .rooms-list,
-  .timeline-head .head-label {
-    width: 96px;
-  }
-
-  .room-row {
-    height: 116px;
-  }
-
-  .events-track {
-    height: 116px;
-  }
 }
 
 /* Footer */
@@ -806,22 +731,6 @@ textarea {
 
 .hei-footer-section li a:hover {
   color: var(--hei-primary);
-}
-
-.hei-footer-divider {
-  height: 1px;
-  background: var(--hei-border);
-  margin-bottom: 16px;
-}
-
-.hei-footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  color: var(--hei-muted);
-  font-size: 0.85rem;
 }
 
 .hei-footer-copyright {
