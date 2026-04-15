@@ -20,7 +20,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28091",
       "room": "Übungsraum (2040.04.404)",
       "building": "Marstallhof 4, 4th floor",
-      "note": "Anmeldung per-E-Mail ist obligatorisch! Alle müssen sich bei Anmeldung unverzüglich vor Beginn des"
+      "note": "Anmeldung per-E-Mail ist obligatorisch! Alle müssen sich bei Anmeldung unverzüglich vor Beginn des Sommersemesters per E-Mail mit Roman.Mueller@uni-heidelberg.de in Verbindung setzen wegen Arbeitsaufträgen, Vorbereitung und Referatsthemen."
     },
     {
       "day_of_week": 7,
@@ -32,11 +32,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28091",
       "room": "Übungsraum (2040.04.404)",
       "building": "Marstallhof 4, 4th floor",
-      "note": "Anmeldung per-E-Mail ist obligatorisch! Alle müssen sich bei Anmeldung unverzüglich vor Beginn des"
+      "note": "Anmeldung per-E-Mail ist obligatorisch! Alle müssen sich bei Anmeldung unverzüglich vor Beginn des Sommersemesters per E-Mail mit Roman.Mueller@uni-heidelberg.de in Verbindung setzen wegen Arbeitsaufträgen, Vorbereitung und Referatsthemen."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411938",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:10:58Z"
+  "last_updated": "2026-04-15T13:38:29Z"
 }

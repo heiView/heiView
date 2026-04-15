@@ -13,18 +13,30 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-20",
+      "end_date": "2026-05-18",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Übungsraum (3120.01.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22735",
+      "room": "Übungsraum (3120.01.120)",
+      "building": "Plöck 79-81, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
       "end_date": "2026-07-20",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
+      "location": "Übungsraum (3120.01.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22735",
+      "room": "Übungsraum (3120.01.120)",
+      "building": "Plöck 79-81, 1st floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414091",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:46:41Z"
+  "last_updated": "2026-04-15T13:54:06Z"
 }

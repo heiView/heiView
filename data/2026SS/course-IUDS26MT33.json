@@ -1,30 +1,17 @@
 {
   "id": "IUDS26MT33",
-  "title": "Übersetzen von Fachtexten (DE>RU): Medizin",
+  "title": "Übersetzen von Fachtexten (DE>RU): Medizin (ENTFÄLLT)",
   "type": "PC",
   "ects_credits": "3",
   "course_languages": "Russian",
   "lecturers": [
     "Hertfelder-Polschin, Olga"
   ],
-  "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
-  "weeks": [
-    {
-      "day_of_week": 4,
-      "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
-      "start_time": "10:15",
-      "end_time": "11:45",
-      "location": "Übungsraum (3051.01.114)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19868",
-      "room": "Übungsraum (3051.01.114)",
-      "building": "Plöck 57a, 1st floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417100",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:32:37Z"
+  "last_updated": "2026-04-15T14:07:30Z"
 }

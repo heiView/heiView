@@ -20,7 +20,7 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "Ein bis zwei der nachfolgenden Termine werden in Präsenz in Raum 107 stattfinden. Diese Termine werden"
+      "note": "Ein bis zwei der nachfolgenden Termine werden in Präsenz in Raum 107 stattfinden. Diese Termine werden dann in der ersten Sitzung besprochen."
     },
     {
       "day_of_week": 5,
@@ -158,5 +158,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411205",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T19:52:49Z"
+  "last_updated": "2026-04-15T13:20:46Z"
 }

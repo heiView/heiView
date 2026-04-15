@@ -2,16 +2,29 @@
   "id": "89ETH10261",
   "title": "Current Debates in Anthropology",
   "type": "SE",
-  "ects_credits": null,
-  "course_languages": null,
+  "ects_credits": "8",
+  "course_languages": "English",
   "lecturers": [
     "Sprenger, Guido"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum 110.02.05 (4110.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11026",
+      "room": "Übungsraum 110.02.05 (4110.02.005)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416869",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T19:59:31Z"
+  "last_updated": "2026-04-15T13:26:42Z"
 }

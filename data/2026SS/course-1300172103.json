@@ -7,31 +7,31 @@
   "lecturers": [
     "Heisenberg, Lavinia"
   ],
-  "start_date": "2026-04-13",
+  "start_date": "2026-04-14",
   "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 1,
-      "start_date": "2026-04-13",
+      "start_date": "2026-04-20",
       "end_date": "2026-07-20",
       "start_time": "09:15",
       "end_time": "11:00",
-      "location": "HS 2 (6308.EG.002)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22373",
-      "room": "HS 2 (6308.EG.002)",
-      "building": "HS 2, Im Neuenheimer Feld 308, Ground floor",
+      "location": "HS 1 (6227.EG.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16106",
+      "room": "HS 1 (6227.EG.403)",
+      "building": "HS 1, Im Neuenheimer Feld 227 / 227a, Ground floor",
       "note": null
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-04-14",
+      "start_date": "2026-04-21",
       "end_date": "2026-07-21",
       "start_time": "09:15",
       "end_time": "11:00",
-      "location": "HS 2 (6308.EG.002)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22373",
-      "room": "HS 2 (6308.EG.002)",
-      "building": "HS 2, Im Neuenheimer Feld 308, Ground floor",
+      "location": "HS 1 (6227.EG.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16106",
+      "room": "HS 1 (6227.EG.403)",
+      "building": "HS 1, Im Neuenheimer Feld 227 / 227a, Ground floor",
       "note": null
     },
     {
@@ -206,5 +206,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410297",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:09:14Z"
+  "last_updated": "2026-04-15T13:36:35Z"
 }

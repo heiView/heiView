@@ -21,7 +21,7 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "Die Einführungsveranstaltung wird als Web-Meeting stattfinden. Der Zugang wird den Teilnehmern (Anmeldung"
+      "note": "Die Einführungsveranstaltung wird als Web-Meeting stattfinden. Der Zugang wird den Teilnehmern (Anmeldung in heico!) per E-Mail bekanntgegeben."
     },
     {
       "day_of_week": 2,
@@ -39,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418750",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T22:08:44Z"
+  "last_updated": "2026-04-15T14:51:11Z"
 }

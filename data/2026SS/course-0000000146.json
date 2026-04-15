@@ -21,10 +21,22 @@
       "room": "ÜR K 3 (1040.04.403)",
       "building": "Karlstraße 16, 4th floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
+      "start_time": "14:00",
+      "end_time": "20:00",
+      "location": "ÜR K 2 (1040.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23185",
+      "room": "ÜR K 2 (1040.01.109)",
+      "building": "Karlstraße 16, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410819",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:47:47Z"
+  "last_updated": "2026-04-15T13:52:25Z"
 }

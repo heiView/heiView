@@ -20,7 +20,7 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "Vorbesprechung"
+      "note": "Vorbesprechung Besprechungs-ID: 327 427 989 308 15 Passcode: gk245zK6"
     },
     {
       "day_of_week": 4,
@@ -50,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416534",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:28:58Z"
+  "last_updated": "2026-04-15T14:14:06Z"
 }

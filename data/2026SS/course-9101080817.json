@@ -13,18 +13,6 @@
   "weeks": [
     {
       "day_of_week": 2,
-      "start_date": "2026-04-28",
-      "end_date": "2026-04-28",
-      "start_time": "13:30",
-      "end_time": "15:00",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
-      "note": "151 (VVK)"
-    },
-    {
-      "day_of_week": 2,
       "start_date": "2026-05-26",
       "end_date": "2026-05-26",
       "start_time": "13:30",
@@ -73,6 +61,18 @@
     },
     {
       "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "151 (VKK)"
+    },
+    {
+      "day_of_week": 2,
       "start_date": "2026-05-19",
       "end_date": "2026-05-19",
       "start_time": "13:30",
@@ -111,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397332",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:08:43Z"
+  "last_updated": "2026-04-15T13:35:21Z"
 }

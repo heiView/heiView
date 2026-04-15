@@ -20,11 +20,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17658",
       "room": "Übungsraum (2210.EG.019)",
       "building": "Seminarstraße 3, Ground floor",
-      "note": "Nach Vereinbarung steht die Zeit von 11 bis 13 Uhr im RS 110 zur Verfügung, welche alternierend benutzt"
+      "note": "Nach Vereinbarung steht die Zeit von 11 bis 13 Uhr im RS 110 zur Verfügung, welche alternierend benutzt werden kann."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413445",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:45:05Z"
+  "last_updated": "2026-04-15T13:55:21Z"
 }

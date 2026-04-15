@@ -9,7 +9,7 @@
     "Müller, Georg"
   ],
   "start_date": "2026-04-13",
-  "end_date": "2026-07-20",
+  "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 1,
@@ -22,10 +22,142 @@
       "room": "gHS (6252.EG.110)",
       "building": "gHS, Im Neuenheimer Feld 252, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
+      "start_time": "12:30",
+      "end_time": "14:00",
+      "location": "Seminarraum SR Statistik (6205.02.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12924",
+      "room": "Seminarraum SR Statistik (6205.02.103)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": "Fragestunde Lineare Algebra II"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 5 (6205.04.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13686",
+      "room": "SR 5 (6205.04.101)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 9 (6205.04.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13690",
+      "room": "SR 9 (6205.04.105)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 5 (6205.04.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13686",
+      "room": "SR 5 (6205.04.101)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR C (6205.EG.204)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12449",
+      "room": "SR C (6205.EG.204)",
+      "building": "Im Neuenheimer Feld 205, Ground floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR C (6205.EG.204)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12449",
+      "room": "SR C (6205.EG.204)",
+      "building": "Im Neuenheimer Feld 205, Ground floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 7 (6205.04.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13688",
+      "room": "SR 7 (6205.04.103)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "SR 6 (6205.04.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13687",
+      "room": "SR 6 (6205.04.102)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "SR 7 (6205.04.103)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13688",
+      "room": "SR 7 (6205.04.103)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 4 (6205.03.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13369",
+      "room": "SR 4 (6205.03.102)",
+      "building": "Im Neuenheimer Feld 205, 3rd floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 9 (6205.04.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13690",
+      "room": "SR 9 (6205.04.105)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414055",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:33:16Z"
+  "last_updated": "2026-04-15T14:08:11Z"
 }

@@ -20,7 +20,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Termin für alle Teilnehmenden. Der Kurs wird für den Zweittermin in zwei Gruppen geteilt. Die Anmeldung"
+      "note": "Termin für alle Teilnehmenden. Der Kurs wird für den Zweittermin in zwei Gruppen geteilt. Die Anmeldung zum Ersttermin erfolgt über die Anmeldung zum Zweittermin. Der Kurs findet im Konferenzraum der HSE statt: Voßstraße 2, Gebäude 4330, 69115 Heidelberg"
     },
     {
       "day_of_week": 6,
@@ -38,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416182",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:06:15Z"
+  "last_updated": "2026-04-15T13:32:47Z"
 }

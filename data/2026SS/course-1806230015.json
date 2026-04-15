@@ -20,7 +20,7 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "Zoom-Meeting für Vorbesprechung:"
+      "note": "Zoom-Meeting für Vorbesprechung: Meeting-ID: 673 8165 4047 Kenncode: 607398"
     },
     {
       "day_of_week": 4,
@@ -122,5 +122,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413174",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:17:57Z"
+  "last_updated": "2026-04-15T13:44:27Z"
 }

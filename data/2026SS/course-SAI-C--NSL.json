@@ -7,15 +7,15 @@
   "lecturers": [
     "Harder, Hans"
   ],
-  "start_date": "2026-04-17",
-  "end_date": "2026-07-24",
+  "start_date": "2026-05-08",
+  "end_date": "2026-07-17",
   "weeks": [
     {
       "day_of_week": 5,
-      "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
-      "start_time": "13:00",
-      "end_time": "16:00",
+      "start_date": "2026-05-08",
+      "end_date": "2026-07-17",
+      "start_time": "14:00",
+      "end_time": "18:00",
       "location": "Übungsraum 130.00.03 (4130.EG.003)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11327",
       "room": "Übungsraum 130.00.03 (4130.EG.003)",
@@ -26,5 +26,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407718",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T15:59:31Z"
+  "last_updated": "2026-04-15T13:25:43Z"
 }

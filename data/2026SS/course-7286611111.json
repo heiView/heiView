@@ -21,7 +21,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "*Preparation session of the field trip*. Location of the session: HCIAS Meeting Room (Campus Bergheim:"
+      "note": "*Preparation session of the field trip*. Location of the session: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
       "day_of_week": 1,
@@ -33,7 +33,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "*Working session for field trip (tutorial)*. Location of the session: HCIAS Meeting Room (Campus Bergheim:"
+      "note": "*Working session for field trip (tutorial)*. Location of the session: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
       "day_of_week": 1,
@@ -45,7 +45,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "*Working session for field trip (tutorial)*. Location of the session: HCIAS Meeting Room (Campus Bergheim:"
+      "note": "*Working session for field trip (tutorial)*. Location of the session: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
       "day_of_week": 3,
@@ -93,11 +93,11 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "*Follow-up of the field trip*. Location of the session: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr."
+      "note": "*Follow-up of the field trip*. Location of the session: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407894",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:06:33Z"
+  "last_updated": "2026-04-15T13:33:24Z"
 }

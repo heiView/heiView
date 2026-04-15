@@ -23,7 +23,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Location very likely CIMH (ZI Mannheim, laboratory building, seminar room 4.20) but will be communicated"
+      "note": "Location very likely CIMH (ZI Mannheim, laboratory building, seminar room 4.20) but will be communicated with the participants"
     },
     {
       "day_of_week": 5,
@@ -35,11 +35,11 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Location very likely CIMH (ZI Mannheim, laboratory building, seminar room 4.20) but will be communicated"
+      "note": "Location very likely CIMH (ZI Mannheim, laboratory building, seminar room 4.20) but will be communicated with the participants"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399083",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:42:55Z"
+  "last_updated": "2026-04-15T13:58:40Z"
 }

@@ -16,9 +16,9 @@
       "end_date": "2026-07-23",
       "start_time": "08:30",
       "end_time": "10:00",
-      "location": "Übungsraum (3030.01.004)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28142",
-      "room": "Übungsraum (3030.01.004)",
+      "location": "Übungsraum (3030.01.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28136",
+      "room": "Übungsraum (3030.01.007)",
       "building": "Hauptstraße 52, 1st floor",
       "note": null
     }
@@ -26,5 +26,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417026",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:32:25Z"
+  "last_updated": "2026-04-15T14:07:20Z"
 }

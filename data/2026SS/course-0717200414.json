@@ -13,6 +13,18 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (4410.02.210)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12823",
+      "room": "Übungsraum (4410.02.210)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
       "end_date": "2026-07-23",
       "start_time": "14:15",
       "end_time": "15:45",
@@ -26,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414077",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:43:13Z"
+  "last_updated": "2026-04-15T13:59:07Z"
 }

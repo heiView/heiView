@@ -8,27 +8,15 @@
     "Bereau, Tristan",
     "Ziebert, Falko"
   ],
-  "start_date": "2026-04-14",
+  "start_date": "2026-06-16",
   "end_date": "2026-07-07",
   "weeks": [
     {
       "day_of_week": 2,
-      "start_date": "2026-04-14",
-      "end_date": "2026-04-14",
-      "start_time": "13:00",
-      "end_time": "17:00",
-      "location": "Übungsraum (8010.EG.060)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15234",
-      "room": "Übungsraum (8010.EG.060)",
-      "building": "Philosophenweg 12, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 2,
       "start_date": "2026-06-16",
       "end_date": "2026-07-07",
-      "start_time": "13:00",
-      "end_time": "17:00",
+      "start_time": "14:00",
+      "end_time": "18:00",
       "location": "Übungsraum (8010.EG.060)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15234",
       "room": "Übungsraum (8010.EG.060)",
@@ -39,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410468",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:40:23Z"
+  "last_updated": "2026-04-15T14:01:36Z"
 }
