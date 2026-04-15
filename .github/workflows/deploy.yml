@@ -44,16 +44,15 @@ jobs:
             git reset --hard origin/main
             npm install --omit=dev
 
-      # 5. Upload dist/ to VPS (only replaces the dist subfolder, preserves .git)
+      # 5. Upload dist/ to VPS (overwrites in place, preserves .git)
       - name: Upload dist to VPS
         uses: appleboy/scp-action@v0.1.7
         with:
           host: 92.5.99.210
           username: ubuntu
           key: ${{ secrets.DEPLOY_KEY }}
-          source: "dist/*"
-          target: "~/heiView/dist"
-          rm: true
+          source: "dist"
+          target: "~/heiView"
 
       # 6. Restart the API server
       - name: Restart server
