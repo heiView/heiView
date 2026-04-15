@@ -12,8 +12,37 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Deploy via SSH
+      # 1. Checkout source code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Install dependencies and build frontend
+      - name: Build project
+        run: |
+          npm ci
+          npm run build
+
+      # 4. Upload dist/ to VPS (clears old files first)
+      - name: Upload dist to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: 92.5.99.210
+          username: ubuntu
+          key: ${{ secrets.DEPLOY_KEY }}
+          source: "dist"
+          target: "~/heiView"
+          rm: true
+
+      # 5. Update server code and restart (no build needed on VPS)
+      - name: Restart server
         uses: appleboy/ssh-action@master
         with:
           host: 92.5.99.210
@@ -24,6 +53,5 @@ jobs:
             cd ~/heiView
             git fetch origin
             git reset --hard origin/main
-            npm install
-            npm run build
+            npm install --omit=dev
             pm2 restart heiview-api
