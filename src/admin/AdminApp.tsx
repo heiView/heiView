@@ -493,7 +493,7 @@ function AdminApp() {
   const [undoLoadingSet, setUndoLoadingSet] = React.useState<Set<string>>(new Set())
 
   // Stale overrides — source JSON updated more recently than override
-  type StaleEntry = { courseId: string; srcMtime: number; ovMtime: number }
+  type StaleEntry = { courseId: string; srcMtime: number | null; ovMtime: number; sourceDeleted?: boolean; inDeleted?: boolean }
   type BothFiles = { source: Record<string, unknown> | null; override: Record<string, unknown> | null; srcMtime: number | null; ovMtime: number | null }
   const [staleOpen, setStaleOpen] = React.useState(false)
   const [staleList, setStaleList] = React.useState<StaleEntry[]>([])
@@ -1366,9 +1366,11 @@ function AdminApp() {
                           if (r.ok) setStaleList(await r.json())
                         } finally { setStaleLoading(false) }
                       }}
-                      style={staleList.length > 0 ? { borderColor: '#faad14', color: '#faad14' } : undefined}
+                      style={staleList.length > 0 ? (staleList.some(e => e.sourceDeleted) ? { borderColor: '#ff4d4f', color: '#ff4d4f' } : { borderColor: '#faad14', color: '#faad14' }) : undefined}
                     >
-                      {staleList.length > 0 ? `⚠ Stale Overrides (${staleList.length})` : 'Stale Overrides'}
+                      {staleList.length > 0
+                        ? `⚠ Stale Overrides (${staleList.length})`
+                        : 'Stale Overrides'}
                     </Button>
                   </>
                 )}
@@ -2002,7 +2004,7 @@ function AdminApp() {
         <Modal
           open={staleOpen}
           onCancel={() => { setStaleOpen(false); if (staleDiffWasSaved) { setStaleList(prev => prev.filter(e => e.courseId !== staleDiffCourseId)) } setStaleDiffCourseId(null); setStaleDiffData(null); setStaleDiffWasSaved(false); setStaleDiffUndoSnapshot(null) }}
-          title="Stale Overrides — Source updated after override"
+          title="Stale Overrides"
           width={staleDiffCourseId ? 900 : 600}
           footer={null}
           destroyOnClose
@@ -2013,69 +2015,130 @@ function AdminApp() {
                 {staleList.length === 0 && !staleLoading && (
                   <Typography.Text type="secondary">All overrides are up-to-date.</Typography.Text>
                 )}
-                {staleList.length > 0 && (
-                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
-                    <thead>
-                      <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
-                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Course ID</th>
-                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Source updated</th>
-                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Override saved</th>
-                        <th />
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {staleList.map(entry => (
-                        <tr key={entry.courseId} style={{ borderBottom: '1px solid var(--hei-border)', verticalAlign: 'middle' }}>
-                          <td style={{ padding: '5px 8px' }}>
-                            <Typography.Text code style={{ fontSize: 12 }}>{entry.courseId}</Typography.Text>
-                          </td>
-                          <td style={{ padding: '5px 8px', fontSize: 12, color: '#faad14' }}>
-                            {new Date(entry.srcMtime).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
-                          </td>
-                          <td style={{ padding: '5px 8px', fontSize: 12, color: 'var(--hei-text-secondary)' }}>
-                            {new Date(entry.ovMtime).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
-                          </td>
-                          <td style={{ padding: '5px 8px', whiteSpace: 'nowrap' }}>
-                            <Space>
-                              <Button
-                                size="small"
-                                onClick={async () => {
-                                  setStaleDiffCourseId(entry.courseId)
-                                  setStaleDiffLoading(true)
-                                  setStaleOverrideEdit(null)
-                                  setStaleOverrideParseError(null)
-                                  setStaleDiffWasSaved(false)
-                                  setStaleDiffUndoSnapshot(null)
-                                  try {
-                                    const r = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(entry.courseId)}`)
-                                    if (r.ok) setStaleDiffData(await r.json())
-                                  } finally { setStaleDiffLoading(false) }
-                                }}
-                              >
-                                Compare
-                              </Button>
+                {staleList.some(e => e.sourceDeleted) && (
+                  <>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                      <span style={{ color: '#ff4d4f', fontWeight: 700, fontSize: 13 }}>⛔ Source Deleted</span>
+                      <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                        These overrides have no source file — the course was removed by the crawler.
+                      </Typography.Text>
+                    </div>
+                    <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, marginBottom: 16 }}>
+                      <thead>
+                        <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                          <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Course ID</th>
+                          <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Override saved</th>
+                          <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>In deleted/</th>
+                          <th />
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {staleList.filter(e => e.sourceDeleted).map(entry => (
+                          <tr key={entry.courseId} style={{ borderBottom: '1px solid var(--hei-border)', verticalAlign: 'middle', background: 'rgba(255,77,79,0.04)' }}>
+                            <td style={{ padding: '5px 8px' }}>
+                              <Typography.Text code style={{ fontSize: 12 }}>{entry.courseId}</Typography.Text>
+                            </td>
+                            <td style={{ padding: '5px 8px', fontSize: 12, color: 'var(--hei-muted)' }}>
+                              {new Date(entry.ovMtime).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
+                            </td>
+                            <td style={{ padding: '5px 8px', fontSize: 12 }}>
+                              {entry.inDeleted ? <span style={{ color: '#faad14' }}>Yes</span> : <span style={{ color: 'var(--hei-muted)' }}>No</span>}
+                            </td>
+                            <td style={{ padding: '5px 8px', whiteSpace: 'nowrap' }}>
                               <Button
                                 size="small"
                                 danger
                                 loading={staleDeleteLoading === entry.courseId}
                                 onClick={async () => {
-                                  if (!window.confirm(`Delete override for course-${entry.courseId}? This action cannot be undone.`)) return
+                                  if (!window.confirm(`The source for course-${entry.courseId} has been deleted by the crawler.\n\nDelete the override file too?`)) return
                                   setStaleDeleteLoading(entry.courseId)
                                   try {
                                     const r = await adminFetch(`/api/admin/overrides/${encodeURIComponent(entry.courseId)}`, { method: 'DELETE' })
                                     if (r.ok) setStaleList(prev => prev.filter(e => e.courseId !== entry.courseId))
                                   } finally { setStaleDeleteLoading(null) }
                                 }}
-                                title="Delete override file; course will revert to source data"
+                                title="Delete this orphaned override file"
                               >
                                 Delete Override
                               </Button>
-                            </Space>
-                          </td>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </>
+                )}
+                {staleList.some(e => !e.sourceDeleted) && (
+                  <>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                      <span style={{ color: '#faad14', fontWeight: 700, fontSize: 13 }}>⚠ Source Updated</span>
+                      <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                        The crawler updated these source files after the override was saved.
+                      </Typography.Text>
+                    </div>
+                    <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+                      <thead>
+                        <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                          <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Course ID</th>
+                          <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Source updated</th>
+                          <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Override saved</th>
+                          <th />
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {staleList.filter(e => !e.sourceDeleted).map(entry => (
+                          <tr key={entry.courseId} style={{ borderBottom: '1px solid var(--hei-border)', verticalAlign: 'middle' }}>
+                            <td style={{ padding: '5px 8px' }}>
+                              <Typography.Text code style={{ fontSize: 12 }}>{entry.courseId}</Typography.Text>
+                            </td>
+                            <td style={{ padding: '5px 8px', fontSize: 12, color: '#faad14' }}>
+                              {entry.srcMtime ? new Date(entry.srcMtime).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }) : '—'}
+                            </td>
+                            <td style={{ padding: '5px 8px', fontSize: 12, color: 'var(--hei-text-secondary)' }}>
+                              {new Date(entry.ovMtime).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
+                            </td>
+                            <td style={{ padding: '5px 8px', whiteSpace: 'nowrap' }}>
+                              <Space>
+                                <Button
+                                  size="small"
+                                  onClick={async () => {
+                                    setStaleDiffCourseId(entry.courseId)
+                                    setStaleDiffLoading(true)
+                                    setStaleOverrideEdit(null)
+                                    setStaleOverrideParseError(null)
+                                    setStaleDiffWasSaved(false)
+                                    setStaleDiffUndoSnapshot(null)
+                                    try {
+                                      const r = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(entry.courseId)}`)
+                                      if (r.ok) setStaleDiffData(await r.json())
+                                    } finally { setStaleDiffLoading(false) }
+                                  }}
+                                >
+                                  Compare
+                                </Button>
+                                <Button
+                                  size="small"
+                                  danger
+                                  loading={staleDeleteLoading === entry.courseId}
+                                  onClick={async () => {
+                                    if (!window.confirm(`Delete override for course-${entry.courseId}? This action cannot be undone.`)) return
+                                    setStaleDeleteLoading(entry.courseId)
+                                    try {
+                                      const r = await adminFetch(`/api/admin/overrides/${encodeURIComponent(entry.courseId)}`, { method: 'DELETE' })
+                                      if (r.ok) setStaleList(prev => prev.filter(e => e.courseId !== entry.courseId))
+                                    } finally { setStaleDeleteLoading(null) }
+                                  }}
+                                  title="Delete override file; course will revert to source data"
+                                >
+                                  Delete Override
+                                </Button>
+                              </Space>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </>
                 )}
               </>
             ) : (

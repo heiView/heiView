@@ -604,9 +604,11 @@ function createApp() {
   // GET /api/admin/stale-overrides
   // Returns override files whose source JSON in COURSE_DIR has been updated more recently,
   // excluding cases where the only changed field is last_updated (crawler timestamp noise).
+  // Also returns overrides whose source file no longer exists (sourceDeleted: true).
   app.get('/api/admin/stale-overrides', requireAdmin, (req, res) => {
     // Fields that are irrelevant for staleness — changes to these alone are not reported.
     const IGNORED_FIELDS = new Set(['last_updated']);
+    const DELETED_DIR = path.join(COURSE_DIR, 'deleted');
 
     function hasMeaningfulChanges(srcObj, ovObj) {
       const allKeys = new Set([...Object.keys(srcObj), ...Object.keys(ovObj)]);
@@ -619,6 +621,7 @@ function createApp() {
 
     try {
       const stale = [];
+      const sourceDeleted = [];
       let files;
       try { files = fs.readdirSync(OVERRIDES_DIR); } catch (_) { files = []; }
       for (const file of files) {
@@ -627,7 +630,15 @@ function createApp() {
         const courseId = m[1];
         const ovPath = path.join(OVERRIDES_DIR, file);
         const srcPath = path.join(COURSE_DIR, file);
-        if (!fs.existsSync(srcPath)) continue;
+
+        // Source file missing — check whether it was moved to deleted/
+        if (!fs.existsSync(srcPath)) {
+          const ovMtime = getLastUpdatedMs(ovPath);
+          const inDeleted = fs.existsSync(path.join(DELETED_DIR, file));
+          sourceDeleted.push({ courseId, srcMtime: null, ovMtime, sourceDeleted: true, inDeleted });
+          continue;
+        }
+
         const ovMtime = getLastUpdatedMs(ovPath);
         const srcMtime = getLastUpdatedMs(srcPath);
         if (srcMtime <= ovMtime) continue;
@@ -637,10 +648,11 @@ function createApp() {
           const ovObj = JSON.parse(fs.readFileSync(ovPath, 'utf8'));
           if (!hasMeaningfulChanges(srcObj, ovObj)) continue;
         } catch (_) { /* if parse fails, treat as stale to be safe */ }
-        stale.push({ courseId, srcMtime, ovMtime });
+        stale.push({ courseId, srcMtime, ovMtime, sourceDeleted: false });
       }
       stale.sort((a, b) => b.srcMtime - a.srcMtime);
-      res.json(stale);
+      // Source-deleted overrides go first as they are more urgent
+      res.json([...sourceDeleted, ...stale]);
     } catch (e) {
       res.status(500).json({ error: e.message });
     }
