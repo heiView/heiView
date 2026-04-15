@@ -2572,66 +2572,6 @@ function AdminApp() {
                       </Button>
                     </Space.Compact>
                   </div>
-                  {/* ── Rooms section ── */}
-                  <div style={{ marginTop: 24, borderTop: '1px solid rgba(128,128,128,0.2)', paddingTop: 16 }}>
-                    <Typography.Text strong style={{ fontSize: 13, display: 'block', marginBottom: 12 }}>
-                      Rooms
-                    </Typography.Text>
-                    {(() => {
-                      const rooms = Array.isArray(buildingEditState.data.rooms)
-                        ? (buildingEditState.data.rooms as Record<string, unknown>[])
-                        : []
-                      if (rooms.length === 0) {
-                        return (
-                          <Typography.Text type="secondary" style={{ fontSize: 12 }}>
-                            No rooms defined for this building.
-                          </Typography.Text>
-                        )
-                      }
-                      return (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                          {rooms.map(room => {
-                            const roomId = room.id as string
-                            const roomName = room.name as string
-                            const roomFloors = Array.isArray(room.floors) ? (room.floors as string[]) : []
-                            return (
-                              <div
-                                key={roomId}
-                                style={{
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  gap: 8,
-                                  padding: '6px 10px',
-                                  borderRadius: 6,
-                                  background: 'rgba(128,128,128,0.06)',
-                                }}
-                              >
-                                <div style={{ flex: 1, minWidth: 0 }}>
-                                  <span style={{ fontSize: 13, fontWeight: 500 }}>{roomName}</span>
-                                  {roomFloors.length > 0 && (
-                                    <span style={{ marginLeft: 8, fontSize: 11, color: 'var(--color-text-secondary, #888)' }}>
-                                      {roomFloors.join(', ')}
-                                    </span>
-                                  )}
-                                </div>
-                                <Button size="small" onClick={() => openRoomEditModal(buildingEditState.buildingId, room)}>
-                                  Edit
-                                </Button>
-                                <Button
-                                  size="small"
-                                  danger
-                                  loading={roomDeleteLoading === roomId}
-                                  onClick={() => confirmDeleteRoom(buildingEditState.buildingId, roomId, roomName)}
-                                >
-                                  Delete
-                                </Button>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      )
-                    })()}
-                  </div>
                 </>
               )}
             </Form>
