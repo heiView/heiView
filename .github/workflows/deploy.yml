@@ -44,7 +44,7 @@ jobs:
             git reset --hard origin/main
             npm install --omit=dev
 
-      # 5. Upload dist/ to VPS (overwrites in place, preserves .git)
+      # 5. Upload dist/ to VPS
       - name: Upload dist to VPS
         uses: appleboy/scp-action@v0.1.7
         with:
