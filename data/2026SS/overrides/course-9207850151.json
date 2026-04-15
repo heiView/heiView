@@ -1,0 +1,54 @@
+{
+  "id": "9207850151",
+  "title": "WFT07-IO - Ethische und medizinische Dilemmata am Lebensende - interprofessionelle Fallbesprechungen",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Alt-Epping, Bernd"
+  ],
+  "start_date": "2026-07-03",
+  "end_date": "2026-07-05",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "13:00",
+      "end_time": "19:30",
+      "location": "Stift Neuburg",
+      "location_link": null,
+      "room": null,
+      "building": "Stiftweg 2",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-07-04",
+      "end_date": "2026-07-04",
+      "start_time": "09:30",
+      "end_time": "20:00",
+      "location": "Stift Neuburg",
+      "location_link": null,
+      "room": null,
+      "building": "Stiftweg 2",
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-05",
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "Stift Neuburg",
+      "location_link": null,
+      "room": null,
+      "building": "Stiftweg 2",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417494",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-14T23:59:10Z"
+}

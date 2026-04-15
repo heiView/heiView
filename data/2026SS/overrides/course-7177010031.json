@@ -1,0 +1,30 @@
+{
+  "id": "7177010031",
+  "title": "Aspekte von Gewalt im Frühneolithikum Mitteleuropas",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Zeeb-Lanz, Andrea"
+  ],
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Übungsraum (3030.02.010)",
+      "building": "Hauptstraße 52, 2nd floor",
+      "note": "Raum 303002010 (Übungsraum) Hauptstraße 52 (\"Haus zum Riesen\"), 2.OG"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419578",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-14T23:48:14Z"
+}

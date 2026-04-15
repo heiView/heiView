@@ -20,8 +20,8 @@
       "end_time": "14:00",
       "location": "Siehe Anmerkung",
       "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
+      "room": "Laborführung",
+      "building": "Im Neuenheimer Feld 671",
       "note": "Laborführung, INF 671"
     },
     {
@@ -76,5 +76,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/374963",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T21:32:35Z"
+  "last_updated": "2026-04-15T00:04:48Z"
 }

@@ -59,8 +59,8 @@
       "end_time": "20:00",
       "location": "Siehe Anmerkung",
       "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
+      "room": "HS 1 (3020.01.127)",
+      "building": "Hauptstraße 47-51",
       "note": "Der HS-I befindet sich im 1. OG, Raum Nr. 127, Hauptstr. 47-51"
     },
     {
@@ -103,5 +103,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409301",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T21:34:55Z"
+  "last_updated": "2026-04-15T00:12:01Z"
 }

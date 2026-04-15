@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-14T23:35:57.808Z",
+  "updatedAt": "2026-04-15T00:08:12.842Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -13,6 +13,10 @@
     {
       "id": "im-neuenheimer-feld",
       "name": "Im Neuenheimer Feld"
+    },
+    {
+      "id": "heidelberg",
+      "name": "Heidelberg"
     },
     {
       "id": "mannheim-and-ludwigshafen",
@@ -1278,7 +1282,7 @@
     {
       "id": "bld-hauptstrasse-52",
       "street": "Hauptstraße 52",
-      "displayName": "",
+      "displayName": "Hauptstraße 52 Haus zum Riesen",
       "campusId": "altstadt",
       "aliases": [
         "Hauptstr. 52",
@@ -5893,6 +5897,16 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-karlstrasse-16::rm-raum-308",
+          "name": "Raum 308",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8354,7 +8368,7 @@
       "id": "bld-therapieraum-altstadt",
       "street": "Therapieraum Altstadt",
       "displayName": "Therapieraum Altstadt",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -8366,13 +8380,14 @@
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-therapieraum-landfried",
       "street": "Therapieraum Landfried",
       "displayName": "Therapieraum Landfried",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -8384,7 +8399,8 @@
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-semesterplanung-sose-2026-unterrichtsbereich-nf",
@@ -8472,7 +8488,7 @@
       "id": "bld-agaplesion-bethanien-krankenhaus",
       "street": "Agaplesion Bethanien Krankenhaus",
       "displayName": "Agaplesion Bethanien Krankenhaus",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -8484,13 +8500,14 @@
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-krankenhaus-salem",
       "street": "Krankenhaus Salem",
       "displayName": "Krankenhaus Salem",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -8502,31 +8519,14 @@
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
-      ]
-    },
-    {
-      "id": "bld-thoraxklinik-pforte",
-      "street": "Thoraxklinik - Pforte",
-      "displayName": "Thoraxklinik - Pforte",
-      "campusId": "other",
-      "aliases": [],
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-thoraxklinik-pforte::rm-thoraxklinik-pforte",
-          "name": "Thoraxklinik - Pforte",
-          "displayName": "",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-srh-kurpfalzkrankenhaus-heidelberg",
       "street": "SRH Kurpfalzkrankenhaus Heidelberg",
       "displayName": "SRH Kurpfalzkrankenhaus Heidelberg",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -8538,7 +8538,8 @@
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-avp",
@@ -8598,7 +8599,7 @@
       "id": "bld-leonardo-hotel",
       "street": "Leonardo Hotel",
       "displayName": "Leonardo Hotel",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -8610,7 +8611,8 @@
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-op",
@@ -8634,7 +8636,7 @@
       "id": "bld-kliniken-schmieder-heidelberg",
       "street": "Kliniken Schmieder Heidelberg",
       "displayName": "Kliniken Schmieder Heidelberg",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -8646,13 +8648,14 @@
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-mannheimer-str-1",
       "street": "Mannheimer Str.1",
       "displayName": "Mannheimer Str.1",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [
         "Ground floor"
@@ -8671,25 +8674,8 @@
           },
           "notes": ""
         }
-      ]
-    },
-    {
-      "id": "bld-stift-neuburg",
-      "street": "Stift Neuburg",
-      "displayName": "Stift Neuburg",
-      "campusId": "other",
-      "aliases": [],
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-stift-neuburg::rm-stift-neuburg",
-          "name": "Stift Neuburg",
-          "displayName": "",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
+      ],
+      "notes": ""
     },
     {
       "id": "bld-ludwig-guttmann-strasse-13",
@@ -8711,7 +8697,7 @@
       "id": "bld-landfriedstrasse-12",
       "street": "Landfriedstraße 12",
       "displayName": "Hochschule für Jüdische Studien Heidelberg",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [
         "HfJS",
         "Landfriedstra 12"
@@ -8785,7 +8771,7 @@
       "id": "bld-hildastr-8",
       "street": "Hildastr. 8",
       "displayName": "Hochschule für Kirchenmusik Heidelberg",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [
         "HfK",
         "HfK(A)"
@@ -8930,7 +8916,7 @@
       "id": "bld-im-neuenheimer-feld-561",
       "street": "Im Neuenheimer Feld 561",
       "displayName": "Neubau Pädagogische Hochschule",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [
         "PH"
       ],
@@ -8969,7 +8955,7 @@
       "id": "bld-koenigstuhl-17",
       "street": "Königstuhl 17",
       "displayName": "Max Planck Institute for Astronomy",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -9015,7 +9001,7 @@
       "id": "bld-keplerstrasse-87",
       "street": "Keplerstraße 87",
       "displayName": "Altbau Pädagogische Hochschule",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -9164,6 +9150,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-366::rm-praktikumssaal-west",
+          "name": "Praktikumssaal West",
+          "floors": [
+            "Ground floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -9252,7 +9250,7 @@
       "id": "bld-jahnstrasse-29",
       "street": "Jahnstraße 29",
       "displayName": "MPI for Medical Research",
-      "campusId": "other",
+      "campusId": "heidelberg",
       "aliases": [],
       "floors": [],
       "rooms": [
@@ -9293,22 +9291,6 @@
       "notes": ""
     },
     {
-      "id": "bld-other-205-haus-zum-riesen-15",
-      "street": "205 Haus zum Riesen (15)",
-      "displayName": "205 Haus zum Riesen (15)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-205-haus-zum-riesen-15::rm-205-haus-zum-riesen-15",
-          "name": "205 Haus zum Riesen (15)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-other-a1-07",
       "street": "A1.07",
       "displayName": "A1.07",
@@ -9323,6 +9305,26 @@
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ]
+    },
+    {
+      "id": "bld-roentgenstrasse-1",
+      "street": "Röntgenstraße 1",
+      "displayName": "Thoraxklinik Heidelberg",
+      "campusId": "heidelberg",
+      "aliases": [],
+      "floors": [],
+      "rooms": [],
+      "notes": ""
+    },
+    {
+      "id": "bld-stiftweg-2",
+      "street": "Stiftweg 2",
+      "displayName": "Stift Neuburg",
+      "campusId": "heidelberg",
+      "aliases": [],
+      "floors": [],
+      "rooms": [],
+      "notes": ""
     }
   ]
 }
