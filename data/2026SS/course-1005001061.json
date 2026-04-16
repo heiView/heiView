@@ -1,0 +1,54 @@
+{
+  "id": "1005001061",
+  "title": "Tutorium Fußball",
+  "type": "T",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Tutor*in), 100500.100"
+  ],
+  "start_date": "2026-05-26",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-20",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "INF 700 / Stadion B",
+      "location_link": null,
+      "room": "INF 700 / Stadion B",
+      "building": null,
+      "note": "Tutor: Janis Neumann"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-26",
+      "end_date": "2026-07-21",
+      "start_time": "08:00",
+      "end_time": "10:00",
+      "location": "INF 700 / Stadion B",
+      "location_link": null,
+      "room": "INF 700 / Stadion B",
+      "building": null,
+      "note": "Tutor: Lukas Strobl"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-28",
+      "end_date": "2026-07-16",
+      "start_time": "08:00",
+      "end_time": "10:00",
+      "location": "INF 700 / Stadion B",
+      "location_link": null,
+      "room": "INF 700 / Stadion B",
+      "building": null,
+      "note": "Tutor: Mathis Härtling"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414616",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-16T08:27:08Z"
+}

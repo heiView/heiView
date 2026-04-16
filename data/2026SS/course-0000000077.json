@@ -1,0 +1,30 @@
+{
+  "id": "0000000077",
+  "title": "Tagesexkursion in das Weltkulturenmuseum in Frankfurt am Main",
+  "type": "FT",
+  "ects_credits": "2",
+  "course_languages": "German",
+  "lecturers": [
+    "Hoffmann, Stefan"
+  ],
+  "start_date": "2026-05-06",
+  "end_date": "2026-05-06",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420718",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-16T08:25:20Z"
+}

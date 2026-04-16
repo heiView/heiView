@@ -24,7 +24,7 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-04-17",
+      "start_date": "2026-04-24",
       "end_date": "2026-04-24",
       "start_time": "10:00",
       "end_time": "18:00",
@@ -36,7 +36,7 @@
     },
     {
       "day_of_week": 6,
-      "start_date": "2026-04-18",
+      "start_date": "2026-04-25",
       "end_date": "2026-04-25",
       "start_time": "10:00",
       "end_time": "18:00",
@@ -50,5 +50,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417159",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:29:44Z"
+  "last_updated": "2026-04-16T08:19:12Z"
 }

@@ -8,7 +8,7 @@
     "Wirtz, Markus"
   ],
   "start_date": "2026-04-15",
-  "end_date": "2026-04-15",
+  "end_date": "2026-08-10",
   "weeks": [
     {
       "day_of_week": 3,
@@ -21,10 +21,58 @@
       "room": "Übungsraum (6360.EG.007)",
       "building": "Im Neuenheimer Feld 360, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-10",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Übungsraum (6360.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10515",
+      "room": "Übungsraum (6360.EG.007)",
+      "building": "Im Neuenheimer Feld 360, Ground floor",
+      "note": "August Termin 2"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Übungsraum (6360.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10515",
+      "room": "Übungsraum (6360.EG.007)",
+      "building": "Im Neuenheimer Feld 360, Ground floor",
+      "note": "Mai Termin 1"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "13:00",
+      "end_time": "17:30",
+      "location": "Übungsraum (6360.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10515",
+      "room": "Übungsraum (6360.EG.007)",
+      "building": "Im Neuenheimer Feld 360, Ground floor",
+      "note": "Mai Termin 2"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-03",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Übungsraum (6360.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10515",
+      "room": "Übungsraum (6360.EG.007)",
+      "building": "Im Neuenheimer Feld 360, Ground floor",
+      "note": "August Termin 1"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/375315",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:10:17Z"
+  "last_updated": "2026-04-16T08:02:34Z"
 }
