@@ -749,6 +749,16 @@ function App() {
                 </div>
               )}
             </div>
+            {schedule?.lastSyncTime && (() => {
+                const syncDate = new Date(schedule.lastSyncTime!)
+                const opts: Intl.DateTimeFormatOptions = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Berlin' }
+                const formatted = syncDate.toLocaleString('de-DE', opts)
+                return (
+                  <div className="hei-sync-time">
+                    Synced with heiCO: {formatted}
+                  </div>
+                )
+              })()}
             </section>
           </div>
         </Layout.Content>

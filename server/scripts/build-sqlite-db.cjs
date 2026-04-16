@@ -247,6 +247,11 @@ function ensureSchema(db) {
 
     CREATE INDEX IF NOT EXISTS idx_occurrences_building_name
       ON occurrences(building_name);
+
+    CREATE TABLE IF NOT EXISTS meta (
+      key TEXT PRIMARY KEY,
+      value TEXT
+    );
   `);
 
   ensureOccurrencesSplitColumns(db);
@@ -442,6 +447,24 @@ function main() {
           });
           occurrenceCount += 1;
         }
+      }
+    }
+
+    // Import sync metadata (last crawl timestamp)
+    const SYNC_META_PATH = path.join(COURSE_DIR, 'sync-meta.json');
+    if (fs.existsSync(SYNC_META_PATH)) {
+      try {
+        const syncMeta = JSON.parse(fs.readFileSync(SYNC_META_PATH, 'utf8'));
+        const upsertMeta = db.prepare('INSERT OR REPLACE INTO meta (key, value) VALUES (@key, @value)');
+        if (syncMeta.lastSyncTime) {
+          upsertMeta.run({ key: 'lastSyncTime', value: syncMeta.lastSyncTime });
+        }
+        if (syncMeta.courseCount !== undefined) {
+          upsertMeta.run({ key: 'syncCourseCount', value: String(syncMeta.courseCount) });
+        }
+        console.log(`Imported sync metadata: lastSyncTime=${syncMeta.lastSyncTime}`);
+      } catch (e) {
+        console.warn('[meta] Failed to import sync-meta.json:', e.message);
       }
     }
 

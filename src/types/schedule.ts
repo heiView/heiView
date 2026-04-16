@@ -49,6 +49,7 @@ export type BuildingEntry = {
 export type ScheduleResponse = {
   buildings: BuildingEntry[]
   rooms: Record<string, RoomEntry[]>
+  lastSyncTime?: string | null
 }
 
 export type CourseModalState = {

@@ -928,6 +928,16 @@ async def main() -> None:
             skipped_count = processed_count - updated_count
             print(f'Processed {processed_count} course(s): wrote {updated_count}, skipped {skipped_count} unchanged.')
 
+            # Write sync metadata (timestamp of this crawl run)
+            if not args.course_url:
+                sync_meta = {
+                    'lastSyncTime': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+                    'courseCount': processed_count,
+                }
+                sync_meta_path = OUTPUT_DIR / 'sync-meta.json'
+                sync_meta_path.write_text(json.dumps(sync_meta, indent=2), encoding='utf-8')
+                print(f'Wrote sync metadata to {sync_meta_path}')
+
             # Detect courses removed from the website (full crawl only)
             if not args.course_url and args.limit_courses is None:
                 expected_filenames = {build_course_filename(cid) for cid in seen_course_ids}

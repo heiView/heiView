@@ -149,7 +149,7 @@ export function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleRespon
       seen.add(b.id)
       return true
     })
-  return { buildings: normalizedBuildings, rooms: roomGroups }
+  return { buildings: normalizedBuildings, rooms: roomGroups, lastSyncTime: raw.lastSyncTime }
 }
 
 export function toIsoDate(d: Dayjs) {

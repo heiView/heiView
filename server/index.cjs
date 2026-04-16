@@ -1696,6 +1696,13 @@ function createApp() {
         }));
 
       const responseData = { buildings, rooms };
+
+      // Attach sync metadata
+      try {
+        const metaRow = db.prepare("SELECT value FROM meta WHERE key = 'lastSyncTime'").get();
+        if (metaRow) responseData.lastSyncTime = metaRow.value;
+      } catch (_) { /* meta table may not exist yet */ }
+
       if (cacheKey) setScheduleCache(cacheKey, responseData);
       res.json(responseData);
     } catch (err) {
