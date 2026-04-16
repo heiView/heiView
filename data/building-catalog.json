@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-15T04:14:41.722Z",
+  "updatedAt": "2026-04-16T08:40:29.186Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -3307,6 +3307,18 @@
           ],
           "features": {},
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-307::rm-histosaal-6307-01-126",
+          "name": "Histosaal (6307.01.126)",
+          "floors": [
+            "1st floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -4892,6 +4904,16 @@
           "displayName": "",
           "floors": [],
           "features": {},
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-420::rm-avp",
+          "name": "AVP",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
           "notes": ""
         }
       ],
