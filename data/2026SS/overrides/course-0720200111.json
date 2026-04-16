@@ -1,0 +1,42 @@
+{
+  "id": "0720200111",
+  "title": "Between Heaven and Earth. Saints in Medieval Latin Literature",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Blume, Hanna Margarete Ursula"
+  ],
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Paläographieraum 027"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Paläographieraum 027",
+      "building": "Grabengasse 3-5",
+      "note": "Paläographieraum 027"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412417",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-16T15:08:25Z"
+}

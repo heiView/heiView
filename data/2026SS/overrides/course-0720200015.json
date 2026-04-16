@@ -1,0 +1,30 @@
+{
+  "id": "0720200015",
+  "title": "Palaeography IV: «Gothic» and «Humanistic» scripts",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Licht, Tino"
+  ],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Paläographieraum 027",
+      "building": "Grabengasse 3-5",
+      "note": "Paläographieraum 027"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410827",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-16T15:08:10Z"
+}

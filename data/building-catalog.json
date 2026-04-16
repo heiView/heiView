@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-16T08:40:29.186Z",
+  "updatedAt": "2026-04-16T15:06:57.919Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -707,7 +707,7 @@
     {
       "id": "bld-grabengasse-3-5",
       "street": "Grabengasse 3-5",
-      "displayName": "Neue Universität",
+      "displayName": "Grabengasse 3-5 Neue Universität",
       "campusId": "altstadt",
       "aliases": [
         "Grabengasse 3/5",
@@ -1065,6 +1065,19 @@
           "name": "Raum 229, Historisches Seminar.",
           "displayName": "",
           "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-grabengasse-3-5::rm-palaeographieraum-027",
+          "name": "Paläographieraum 027",
+          "displayName": "",
+          "floors": [
+            "Unknown floor"
+          ],
           "features": {
             "hasAirConditioning": null,
             "hasAccessControl": null
@@ -6101,6 +6114,16 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-kisselgasse-1::rm-raum-1",
+          "name": "Raum 1",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -9243,7 +9266,18 @@
       "campusId": "im-neuenheimer-feld",
       "aliases": [],
       "floors": [],
-      "rooms": [],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-563::rm-raum-c1-11",
+          "name": "Raum C1.11",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
       "notes": ""
     },
     {
