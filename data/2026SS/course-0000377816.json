@@ -7,12 +7,12 @@
   "lecturers": [
     "Gerhard, Ulrike"
   ],
-  "start_date": "2026-04-13",
+  "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
     {
       "day_of_week": 1,
-      "start_date": "2026-04-13",
+      "start_date": "2026-04-20",
       "end_date": "2026-05-18",
       "start_time": "09:00",
       "end_time": "11:00",
@@ -38,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413902",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:35:16Z"
+  "last_updated": "2026-04-17T09:51:03Z"
 }

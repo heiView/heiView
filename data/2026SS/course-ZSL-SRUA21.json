@@ -12,19 +12,55 @@
   "weeks": [
     {
       "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-07-22",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-20",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413738",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:43:06Z"
+  "last_updated": "2026-04-17T09:47:40Z"
 }

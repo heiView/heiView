@@ -26,18 +26,6 @@
       "day_of_week": 4,
       "start_date": "2026-05-28",
       "end_date": "2026-05-28",
-      "start_time": "13:00",
-      "end_time": "14:00",
-      "location": "HS 13 (2170.02.018)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20616",
-      "room": "HS 13 (2170.02.018)",
-      "building": "HS 13, Grabengasse 3-5, 2nd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-05-28",
-      "end_date": "2026-05-28",
       "start_time": "16:00",
       "end_time": "19:00",
       "location": "HS 10 (2170.01.040)",
@@ -50,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408804",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:46:52Z"
+  "last_updated": "2026-04-17T09:43:43Z"
 }

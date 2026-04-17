@@ -10,7 +10,7 @@
     "Sallen, Jeffrey"
   ],
   "start_date": "2026-04-13",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-20",
   "weeks": [
     {
       "day_of_week": 1,
@@ -63,7 +63,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-02",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Sporthalle 700 (6700.EG.022)",
@@ -75,7 +75,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-02",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Turnhalle 700 (6700.EG.071)",
@@ -88,5 +88,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414566",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-16T07:53:36Z"
+  "last_updated": "2026-04-17T09:20:36Z"
 }

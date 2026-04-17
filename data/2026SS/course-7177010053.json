@@ -1,0 +1,42 @@
+{
+  "id": "7177010053",
+  "title": "Bestimmungsübung Frühmittelalter",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Meier, Thomas"
+  ],
+  "start_date": "2026-05-08",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Reiss-Engelhorn-Museum Mannheim"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-07-24",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Reiss-Engelhorn-Museum Mannheim"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420674",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-17T09:15:08Z"
+}

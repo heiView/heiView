@@ -8,7 +8,7 @@
     "Fuchs, Jennifer"
   ],
   "start_date": "2026-04-13",
-  "end_date": "2026-07-22",
+  "end_date": "2026-07-15",
   "weeks": [
     {
       "day_of_week": 1,
@@ -37,7 +37,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-07-06",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-06",
       "start_time": "07:30",
       "end_time": "08:15",
       "location": "KOPF ZAHN HS (6400.02.120)",
@@ -61,7 +61,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-06-01",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "08:15",
       "end_time": "09:00",
       "location": "KOPF ZAHN HS (6400.02.120)",
@@ -97,7 +97,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-07-08",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-08",
       "start_time": "07:30",
       "end_time": "08:15",
       "location": "KOPF ZAHN HS (6400.02.120)",
@@ -109,7 +109,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-08",
       "start_time": "08:15",
       "end_time": "09:00",
       "location": "KOPF ZAHN HS (6400.02.120)",
@@ -165,10 +165,34 @@
       "room": "KOPF ZAHN HS (6400.02.120)",
       "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
       "note": "Dozierender Augenklinik"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
+      "start_time": "07:30",
+      "end_time": "08:15",
+      "location": "KOPF ZAHN HS (6400.02.120)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28736",
+      "room": "KOPF ZAHN HS (6400.02.120)",
+      "building": "KOPF ZAHN HS, Im Neuenheimer Feld 400, 2nd floor",
+      "note": "Augenklinik Kollegen"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "start_time": "07:30",
+      "end_time": "08:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": "gr. HS Ebene 00"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417237",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:08:31Z"
+  "last_updated": "2026-04-17T09:27:03Z"
 }

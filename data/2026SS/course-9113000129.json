@@ -1224,18 +1224,6 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-04-17",
-      "end_date": "2026-04-17",
-      "start_time": "13:15",
-      "end_time": "14:45",
-      "location": "UFHK SR (6440.EG.274)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28796",
-      "room": "UFHK SR (6440.EG.274)",
-      "building": "Im Neuenheimer Feld 440, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
       "start_date": "2026-06-26",
       "end_date": "2026-06-26",
       "start_time": "13:15",
@@ -1250,5 +1238,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393853",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T19:56:03Z"
+  "last_updated": "2026-04-17T09:17:08Z"
 }

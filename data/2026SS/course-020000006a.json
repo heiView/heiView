@@ -61,18 +61,18 @@
     {
       "day_of_week": 4,
       "start_date": "2026-07-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-16",
       "start_time": "14:00",
       "end_time": "18:00",
-      "location": "Übungsraum (3080.EG.009)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23669",
-      "room": "Übungsraum (3080.EG.009)",
-      "building": "Friedrich-Ebert-Platz 2, Ground floor",
-      "note": null
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Raum 108"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408714",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:01:11Z"
+  "last_updated": "2026-04-17T09:20:51Z"
 }

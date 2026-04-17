@@ -34,10 +34,14 @@ def parse_course_id(raw_text: str, title: str) -> str:
     spaced_title = ' ' + title
     if spaced_title in first_line:
         prefix = first_line.split(spaced_title, 1)[0]
-    elif title in first_line:
-        prefix = first_line.split(title, 1)[0]
     else:
-        prefix = first_line
+        # Use a word-boundary lookbehind so that e.g. title "DSH" does NOT
+        # match inside an ID like "7030000DSH" (preceded by a word char).
+        boundary = re.search(r'(?<!\w)' + re.escape(title), first_line)
+        if boundary:
+            prefix = first_line[:boundary.start()]
+        else:
+            prefix = first_line
     prefix = prefix.strip()
 
     # Keep full course ids with unicode letters and symbols like -, _, /
@@ -638,6 +642,27 @@ async def process_course_entry(
             detail_raw_text = await detail_page.inner_text('body')
             ects_credits = extract_ects_credits_from_body(detail_raw_text)
             course_languages = extract_course_languages_from_body(detail_raw_text)
+
+            # Correct course_id from the detail page Number field (more reliable than list parsing)
+            detail_course_id = extract_course_id_from_number_field(detail_raw_text)
+            if detail_course_id and detail_course_id != course_id:
+                print(f'[{course_id}] corrected ID to {detail_course_id} from detail page Number field')
+                course_id = detail_course_id
+                filename = build_course_filename(course_id)
+                target_path = OUTPUT_DIR / filename
+
+            # Correct title from the detail page heading
+            for selector in ('h1', 'h2'):
+                try:
+                    node = detail_page.locator(selector).first
+                    if await node.count() > 0:
+                        candidate = compact_ws((await node.text_content()) or '')
+                        if candidate and len(candidate) > len(title):
+                            title = candidate
+                            break
+                except Exception:
+                    pass
+
             for label in ('Termine und Gruppen', 'Dates and Groups'):
                 try:
                     locator = detail_page.locator(f'text={label}')

@@ -5,7 +5,8 @@
   "ects_credits": "10",
   "course_languages": "German",
   "lecturers": [
-    "Herrmann, Carl Michael"
+    "Herrmann, Carl Michael",
+    "Russell, Robert"
   ],
   "start_date": "2026-04-13",
   "end_date": "2026-05-08",
@@ -38,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409437",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:59:34Z"
+  "last_updated": "2026-04-17T09:33:00Z"
 }

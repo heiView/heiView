@@ -1,21 +1,33 @@
 {
   "id": "0731000003",
-  "title": "Fachwortschatz Japanisch (sozialwissenschaftlich)",
+  "title": "Fachwortschatz Japanisch (Staat, Gesellschaft, Politik)",
   "type": "PC",
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
     "Krämer, Hans Martin"
   ],
-  "start_date": "2026-04-15",
-  "end_date": "2026-07-22",
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
   "weeks": [
     {
-      "day_of_week": 3,
-      "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
-      "start_time": "11:00",
-      "end_time": "13:00",
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-24",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 120.02.11 (4120.02.011)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11108",
+      "room": "Übungsraum 120.02.11 (4120.02.011)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-07-24",
+      "start_time": "09:00",
+      "end_time": "11:00",
       "location": "Übungsraum 120.02.11 (4120.02.011)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11108",
       "room": "Übungsraum 120.02.11 (4120.02.011)",
@@ -26,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408117",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:06:22Z"
+  "last_updated": "2026-04-17T09:25:27Z"
 }

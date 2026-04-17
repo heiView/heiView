@@ -60,18 +60,6 @@
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-05-12",
-      "end_date": "2026-05-12",
-      "start_time": "09:15",
-      "end_time": "10:00",
-      "location": "KOPF SR 2 (6400.EG.269)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
-      "room": "KOPF SR 2 (6400.EG.269)",
-      "building": "Im Neuenheimer Feld 400, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 2,
       "start_date": "2026-06-23",
       "end_date": "2026-06-23",
       "start_time": "09:15",
@@ -122,18 +110,6 @@
       "day_of_week": 2,
       "start_date": "2026-04-28",
       "end_date": "2026-04-28",
-      "start_time": "10:15",
-      "end_time": "11:00",
-      "location": "KOPF SR 2 (6400.EG.269)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
-      "room": "KOPF SR 2 (6400.EG.269)",
-      "building": "Im Neuenheimer Feld 400, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 2,
-      "start_date": "2026-05-12",
-      "end_date": "2026-05-12",
       "start_time": "10:15",
       "end_time": "11:00",
       "location": "KOPF SR 2 (6400.EG.269)",
@@ -505,6 +481,18 @@
     {
       "day_of_week": 3,
       "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
       "end_date": "2026-05-20",
       "start_time": "10:15",
       "end_time": "11:00",
@@ -636,18 +624,6 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-05-13",
-      "end_date": "2026-05-13",
-      "start_time": "09:15",
-      "end_time": "10:00",
-      "location": "KOPF SR 1 (6400.EG.268)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
-      "room": "KOPF SR 1 (6400.EG.268)",
-      "building": "Im Neuenheimer Feld 400, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 3,
       "start_date": "2026-07-01",
       "end_date": "2026-07-01",
       "start_time": "09:15",
@@ -753,10 +729,58 @@
       "room": "KOPF SR 1 (6400.EG.268)",
       "building": "Im Neuenheimer Feld 400, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "09:15",
+      "end_time": "10:00",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": "Prof. Plath, Karim"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": "Prof. Plath, Karim"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "09:15",
+      "end_time": "10:00",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": "Prof. Plath, Karim"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "location": "KOPF SR 2 (6400.EG.269)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
+      "room": "KOPF SR 2 (6400.EG.269)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": "Prof. Plath, Karim"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414207",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T19:55:32Z"
+  "last_updated": "2026-04-17T09:16:40Z"
 }

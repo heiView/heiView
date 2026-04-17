@@ -52,13 +52,37 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-20",
+      "end_date": "2026-05-18",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Übungsraum (3120.01.116)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
+      "room": "Übungsraum (3120.01.116)",
+      "building": "Plöck 79-81, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-20",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "Übungsraum (3120.01.116)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
+      "room": "Übungsraum (3120.01.116)",
+      "building": "Plöck 79-81, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
       "end_date": "2026-07-22",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
+      "location": "Übungsraum (3120.01.116)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
+      "room": "Übungsraum (3120.01.116)",
+      "building": "Plöck 79-81, 1st floor",
       "note": null
     },
     {
@@ -137,5 +161,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413906",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-16T08:00:01Z"
+  "last_updated": "2026-04-17T09:26:48Z"
 }

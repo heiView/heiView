@@ -16,15 +16,15 @@
       "end_date": "2026-07-22",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
+      "location": "Übungsraum (3120.02.220)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7121",
+      "room": "Übungsraum (3120.02.220)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413909",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:07:45Z"
+  "last_updated": "2026-04-17T09:26:47Z"
 }
