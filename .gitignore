@@ -38,3 +38,10 @@ copilot-instructions.md
 
 data/admin-accounts.json
 data/admin-audit.json
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

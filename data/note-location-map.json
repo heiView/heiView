@@ -482,6 +482,126 @@
       ],
       "room": "Übungsraum 413",
       "building": "Marstallstraße. 6"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Säulensaal des Musikwissenschaftlichen Seminars"
+      ],
+      "room": "Säulensaal",
+      "building": "Augustinergasse 7"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum: Hörsaal des Musikwissenschaftlichen Seminars, Augustinergasse 7"
+      ],
+      "room": "Hörsaal",
+      "building": "Augustinergasse 7"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "HeFästuS (IEK, Raum 311)"
+      ],
+      "room": "Raum 311",
+      "building": "Seminarstraße 4"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "MPI Kphys / kHS"
+      ],
+      "room": "Kleine Hörsaal (kHS)",
+      "building": "Saupfercheckweg 1"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Institut für Psychosoziale Prävention Bergheimer Str. 54 3. OG Raum 301"
+      ],
+      "room": "301",
+      "building": "Bergheimer Straße 54, 3rd floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: INF 364, 2.OG, Praktikumssaal"
+      ],
+      "room": "Praktikumssaal",
+      "building": "Im Neuenheimer Feld 364, 2nd floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Historisches Seminar, Raum 148."
+      ],
+      "room": "Raum 148, Historisches Seminar",
+      "building": "Grabengasse 3-5"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "EthicsLab (Mathematikon, Berliner Straße 45)"
+      ],
+      "room": "EthicsLab",
+      "building": "Berliner Straße 43"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "RS 319"
+      ],
+      "room": "Raum 319",
+      "building": "Seminarstraße 3"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "KJC, Raum 400.02.12"
+      ],
+      "room": "Übungsraum (4400.02.212)",
+      "building": "Voßstraße 2 - 4400, 2nd floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum 149, Historisches Seminar"
+      ],
+      "room": "Raum 149, Historisches Seminar",
+      "building": "Grabengasse 3-5"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
+      ],
+      "room": "HCIAS Meeting Room",
+      "building": "Bergheimer Straße 58"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "MPIK Bothe-Seminarraum; Co-Dozent: Christian Medina"
+      ],
+      "room": "Bothe-Seminarraum",
+      "building": "Saupfercheckweg 1"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "A102, Hauptstr. 47-51"
+      ],
+      "room": "A102 - Konferenzraum (3010.01.102)",
+      "building": "Hauptstraße 47-51"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 227, KIP, BBox, 3. OG"
+      ],
+      "room": "BBox",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor"
     }
   ]
 }

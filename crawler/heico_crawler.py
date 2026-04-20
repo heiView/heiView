@@ -206,6 +206,50 @@ def extract_course_languages_from_body(raw_text: str) -> str | None:
     return value
 
 
+def extract_organisation_from_body(raw_text: str) -> str | None:
+    value = extract_body_field_value(raw_text, {'Organisation'})
+    if not value or value in {'-', '—'}:
+        return None
+    return value
+
+
+def extract_further_info_from_description(raw_text: str) -> str | None:
+    """Extract Zusatzinformationen/Further information from the Description tab text."""
+    lines = [compact_ws(line) for line in raw_text.splitlines() if compact_ws(line)]
+
+    # Major section/tab labels that mark the end of the Further information section
+    stop_labels = {
+        'Übersicht', 'Overview',
+        'Beschreibung', 'Description',
+        'Termine und Gruppen', 'Dates and Groups',
+        'Kommentar', 'Comment', 'Content',
+        'Literatur', 'Literature',
+        'Voraussetzungen', 'Prerequisites', 'Previous knowledge expected',
+        'Lernziele', 'Learning objectives', 'Objectives',
+        'Kurzbeschreibung', 'Short description',
+        'Zusatzinformationen', 'Further information',
+    }
+
+    # Sub-field labels within the Further information section — skip rather than stop
+    skip_labels = {'Hinweis', 'Note', 'Anmerkung'}
+
+    for index, line in enumerate(lines):
+        if line not in {'Zusatzinformationen', 'Further information'}:
+            continue
+        content_parts: list[str] = []
+        for next_line in lines[index + 1:]:
+            if next_line in stop_labels:
+                break
+            if next_line in skip_labels:
+                continue
+            if next_line:
+                content_parts.append(next_line)
+        result = ' '.join(content_parts).strip()
+        return result if result else None
+
+    return None
+
+
 def dedupe_weeks(weeks: list[dict[str, object]]) -> list[dict[str, object]]:
     seen: set[tuple[object, object, object, object, object, object, object]] = set()
     deduped: list[dict[str, object]] = []
@@ -667,6 +711,7 @@ async def process_course_entry(
             detail_raw_text = await detail_page.inner_text('body')
             ects_credits = extract_ects_credits_from_body(detail_raw_text)
             course_languages = extract_course_languages_from_body(detail_raw_text)
+            organisation = extract_organisation_from_body(detail_raw_text)
 
             # Correct course_id from the detail page Number field (more reliable than list parsing)
             detail_course_id = extract_course_id_from_number_field(detail_raw_text)
@@ -706,6 +751,33 @@ async def process_course_entry(
                             break
                 except Exception:
                     pass
+
+            # Navigate to Description tab to extract Zusatzinformationen/Further information
+            further_info = None
+            for desc_label in ('Beschreibung', 'Description'):
+                if further_info:
+                    break
+                try:
+                    clicked = False
+                    for tab_selector in (
+                        f'[role="tab"]:has-text("{desc_label}")',
+                        f'a:has-text("{desc_label}")',
+                        f'button:has-text("{desc_label}")',
+                        f'text="{desc_label}"',
+                    ):
+                        loc = detail_page.locator(tab_selector)
+                        if await loc.count() > 0:
+                            await loc.first.click()
+                            clicked = True
+                            break
+                    if not clicked:
+                        continue
+                    await safe_wait_networkidle(detail_page)
+                    await detail_page.wait_for_timeout(1500)
+                    desc_raw_text = await detail_page.inner_text('body')
+                    further_info = extract_further_info_from_description(desc_raw_text)
+                except Exception as exc:
+                    print(f'[{course_id}] Description tab navigation failed: {exc}')
 
             for label in ('Termine und Gruppen', 'Dates and Groups'):
                 try:
@@ -831,13 +903,15 @@ async def process_course_entry(
         'ects_credits': ects_credits,
         'course_languages': course_languages,
         'lecturers': lecturer_names,
+        'organisation': organisation,
         'start_date': min(start_dates) if start_dates else None,
         'end_date': max(end_dates) if end_dates else None,
         'weeks': weeks,
         'detail_link': href,
         'exceptions': [],
-        'notes': '',
     }
+    if further_info:
+        payload['further_info'] = further_info
 
     if target_path.exists():
         try:

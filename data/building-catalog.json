@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-16T15:06:57.919Z",
+  "updatedAt": "2026-04-20T17:21:18.673Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -7210,7 +7210,7 @@
     {
       "id": "bld-seminarstrasse-3",
       "street": "Seminarstraße 3",
-      "displayName": "",
+      "displayName": "Seminarstraße 3 Romanisches Seminar",
       "campusId": "altstadt",
       "aliases": [
         "Seminarstr. 3",
@@ -7280,6 +7280,16 @@
           "floors": [
             "Ground floor"
           ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-seminarstrasse-3::rm-raum-317",
+          "name": "Raum 317",
+          "floors": [],
           "features": {
             "hasAirConditioning": null,
             "hasAccessControl": null
@@ -9398,6 +9408,79 @@
       "aliases": [],
       "floors": [],
       "rooms": [],
+      "notes": ""
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-368",
+      "street": "Im Neuenheimer Feld 368",
+      "displayName": "INF 368",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [
+        "5th floor"
+      ],
+      "rooms": [
+        {
+          "id": "bld-im-neuenheimer-feld-368::rm-raum-524",
+          "name": "Raum 524",
+          "floors": [
+            "5th floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-saupfercheckweg-1",
+      "street": "Saupfercheckweg 1",
+      "displayName": "Max-Planck-Institut für Kernphysik",
+      "campusId": "other",
+      "aliases": [],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-saupfercheckweg-1::rm-kleine-hoersaal-khs",
+          "name": "Kleine Hörsaal (kHS)",
+          "displayName": "",
+          "floors": [],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-bergheimer-strasse-54",
+      "street": "Bergheimer Straße 54",
+      "displayName": "Institut für Psychosoziale Prävention",
+      "campusId": "bergheim",
+      "aliases": [],
+      "floors": [
+        "3rd floor"
+      ],
+      "rooms": [
+        {
+          "id": "bld-bergheimer-strasse-54::rm-301",
+          "name": "301",
+          "displayName": "",
+          "floors": [
+            "3rd floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        }
+      ],
       "notes": ""
     }
   ]
