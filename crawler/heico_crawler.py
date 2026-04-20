@@ -97,11 +97,11 @@ def build_page_url(skip: int) -> str:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='Crawl heiCO courses for 2026SS.')
-    parser.add_argument('--limit-courses', type=int, default=None, help='Stop after crawling this many courses.')
+    parser.add_argument('--number', '-n', type=int, default=None, help='Stop after crawling this many courses.')
     parser.add_argument('--concurrency', type=int, default=5, help='Max number of course/room pages to crawl in parallel.')
     parser.add_argument('--show-browser', action='store_true', help='Launch Chromium in headed mode.')
     parser.add_argument(
-        '--course-url',
+        '--url', '-u',
         action='append',
         default=[],
         help='Recrawl a specific course detail page URL. Can be provided multiple times.',
@@ -720,11 +720,11 @@ async def process_course_entry(
             except Exception:
                 pass
             await expand_dates_and_groups_show_more(detail_page)
-            await expand_appointment_notes(detail_page)
-            await detail_page.wait_for_timeout(800)
+            await detail_page.wait_for_timeout(400)
             appointment_nodes = detail_page.locator('tm-course-group-list div.compact-appointment')
             appointment_count = await appointment_nodes.count()
             appointment_room_hrefs: list[str | None] = []
+            appointment_notes_pw: list[str | None] = []
             for appointment_index in range(appointment_count):
                 appointment = appointment_nodes.nth(appointment_index)
                 room_link = None
@@ -737,6 +737,45 @@ async def process_course_entry(
                 except Exception:
                     room_link = None
                 appointment_room_hrefs.append(room_link)
+
+                # Expand note in-browser via JS, then read the full innerText.
+                # evaluate() with an async JS function lets us click the expand
+                # link and await Angular's DOM update before returning the text,
+                # which is more reliable than pre-clicking via Playwright selectors.
+                pw_note: str | None = None
+                try:
+                    raw_note_js: str | None = await appointment.evaluate("""async (el) => {
+                        const noteEl = el.querySelector('ca-more-less');
+                        if (!noteEl) return null;
+                        const roots = noteEl.shadowRoot ? [noteEl.shadowRoot, noteEl] : [noteEl];
+                        let clicked = false;
+                        for (const root of roots) {
+                            for (const link of root.querySelectorAll('a, button')) {
+                                const t = (link.textContent || '').trim();
+                                if (t.includes('Mehr anzeigen') || t.includes('Show more') || t.includes('Weitere anzeigen')) {
+                                    link.click();
+                                    clicked = true;
+                                    break;
+                                }
+                            }
+                            if (clicked) break;
+                        }
+                        if (clicked) await new Promise(r => setTimeout(r, 400));
+                        return (noteEl.innerText || noteEl.textContent || '').trim() || null;
+                    }""")
+                    if raw_note_js:
+                        raw_note = compact_ws(raw_note_js)
+                        for ctrl in ('Weniger anzeigen', 'Show less', 'Mehr anzeigen', 'Show more', 'Weitere anzeigen'):
+                            raw_note = re.sub(r'\s*' + re.escape(ctrl) + r'\s*', ' ', raw_note).strip()
+                        for prefix in ('Note:', 'Anmerkung:'):
+                            if raw_note.startswith(prefix):
+                                raw_note = raw_note[len(prefix):].strip()
+                                break
+                        pw_note = raw_note or None
+                except Exception:
+                    pass
+                appointment_notes_pw.append(pw_note)
+
             html = await detail_page.content()
         finally:
             await detail_page.close()
@@ -774,6 +813,11 @@ async def process_course_entry(
 
         weeks[slot_index]['location_link'] = location_link
         weeks[slot_index]['building'] = building
+
+        # Prefer Playwright-extracted note (captures full text after "Mehr anzeigen" expansion)
+        # over the BeautifulSoup-parsed note which may be truncated.
+        if slot_index < len(appointment_notes_pw) and appointment_notes_pw[slot_index] is not None:
+            weeks[slot_index]['note'] = appointment_notes_pw[slot_index]
 
     weeks = dedupe_weeks(weeks)
     weeks = merge_consecutive_weeks(weeks)
@@ -824,9 +868,9 @@ async def main() -> None:
             processed_count = 0
             updated_count = 0
             seen_course_ids: set[str] = set()
-            if args.course_url:
+            if args.url:
                 manual_entries: list[dict[str, object]] = []
-                for raw_url in args.course_url:
+                for raw_url in args.url:
                     course_url = normalize_course_url(raw_url)
                     entry = await build_entry_from_course_url(browser, course_url)
                     if entry is None:
@@ -871,7 +915,7 @@ async def main() -> None:
                             course_id = entry['course_id']  # type: ignore[index]
                             if course_id in seen_course_ids:
                                 continue
-                            if args.limit_courses is not None and processed_count + len(page_entries) >= args.limit_courses:
+                            if args.number is not None and processed_count + len(page_entries) >= args.number:
                                 break
                             seen_course_ids.add(course_id)
                             page_entries.append(entry)
@@ -889,7 +933,7 @@ async def main() -> None:
                             if written:
                                 updated_count += 1
 
-                        if args.limit_courses is not None and processed_count >= args.limit_courses:
+                        if args.number is not None and processed_count >= args.number:
                             break
 
                         if page_course_count < PAGE_SIZE:
@@ -920,7 +964,7 @@ async def main() -> None:
                                 course_id = entry['course_id']  # type: ignore[index]
                                 if course_id in seen_course_ids:
                                     continue
-                                if args.limit_courses is not None and processed_count + len(page_entries) >= args.limit_courses:
+                                if args.number is not None and processed_count + len(page_entries) >= args.number:
                                     break
                                 seen_course_ids.add(course_id)
                                 page_entries.append(entry)
@@ -938,7 +982,7 @@ async def main() -> None:
                                 if written:
                                     updated_count += 1
 
-                            if args.limit_courses is not None and processed_count >= args.limit_courses:
+                            if args.number is not None and processed_count >= args.number:
                                 break
 
                         finally:
@@ -967,7 +1011,7 @@ async def main() -> None:
                             course_id = entry['course_id']  # type: ignore[index]
                             if course_id in seen_course_ids:
                                 continue
-                            if args.limit_courses is not None and processed_count + len(page_entries) >= args.limit_courses:
+                            if args.number is not None and processed_count + len(page_entries) >= args.number:
                                 break
                             seen_course_ids.add(course_id)
                             page_entries.append(entry)
@@ -985,7 +1029,7 @@ async def main() -> None:
                             if written:
                                 updated_count += 1
 
-                        if args.limit_courses is not None and processed_count >= args.limit_courses:
+                        if args.number is not None and processed_count >= args.number:
                             break
 
                         if page_course_count < PAGE_SIZE:
@@ -998,7 +1042,7 @@ async def main() -> None:
             print(f'Processed {processed_count} course(s): wrote {updated_count}, skipped {skipped_count} unchanged.')
 
             # Write sync metadata (timestamp of this crawl run)
-            if not args.course_url:
+            if not args.url:
                 sync_meta = {
                     'lastSyncTime': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
                     'courseCount': processed_count,
@@ -1008,7 +1052,7 @@ async def main() -> None:
                 print(f'Wrote sync metadata to {sync_meta_path}')
 
             # Detect courses removed from the website (full crawl only)
-            if not args.course_url and args.limit_courses is None:
+            if not args.url and args.number is None:
                 expected_filenames = {build_course_filename(cid) for cid in seen_course_ids}
                 deleted_dir = OUTPUT_DIR / 'deleted'
                 moved_count = 0
