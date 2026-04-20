@@ -28,6 +28,26 @@ def compact_ws(value: str) -> str:
     return ' '.join(value.split())
 
 
+# heiCO detail-page <h1> elements often include a breadcrumb prefix such as
+# "Courses / <title>" or "Veranstaltungen / <title>".  Strip these so we
+# store only the actual course title.
+_TITLE_BREADCRUMB_RE = re.compile(
+    r'^(?:Courses|Veranstaltungen|Kurse)\s*/\s*',
+    re.IGNORECASE,
+)
+
+
+def strip_title_breadcrumb(title: str) -> str:
+    return _TITLE_BREADCRUMB_RE.sub('', title).strip()
+
+
+# SPA UI elements that may appear in <h1>/<h2> but are NOT course titles.
+_SPA_UI_TITLES = frozenset({
+    'Detail Navigation',
+    'Detailnavigation',
+})
+
+
 def parse_course_id(raw_text: str, title: str) -> str:
     first_line = compact_ws(raw_text.splitlines()[0]) if raw_text.splitlines() else compact_ws(raw_text)
     # Split on " <title>" (space-prefixed) to avoid splitting inside IDs that contain the title as a substring.
@@ -35,13 +55,17 @@ def parse_course_id(raw_text: str, title: str) -> str:
     if spaced_title in first_line:
         prefix = first_line.split(spaced_title, 1)[0]
     else:
-        # Use a word-boundary lookbehind so that e.g. title "DSH" does NOT
-        # match inside an ID like "7030000DSH" (preceded by a word char).
+        # Try word-boundary match first, then fall back to plain match.
+        # The title comes from the link text on the list page and is always
+        # the actual course title, never part of the course ID, so a plain
+        # match is safe even when the title starts with a word char directly
+        # after the ID (e.g. "020000053bAbgabenordnung").
         boundary = re.search(r'(?<!\w)' + re.escape(title), first_line)
         if boundary:
             prefix = first_line[:boundary.start()]
         else:
-            prefix = first_line
+            plain = re.search(re.escape(title), first_line)
+            prefix = first_line[:plain.start()] if plain else first_line
     prefix = prefix.strip()
 
     # Keep full course ids with unicode letters and symbols like -, _, /
@@ -387,7 +411,7 @@ def guess_title_from_text(raw_text: str) -> str | None:
     lines = [compact_ws(line) for line in raw_text.splitlines() if compact_ws(line)]
     for line in lines:
         # Skip generic navigation-like lines.
-        if line in {'heiCO', 'Termine und Gruppen', 'Dates and Groups'}:
+        if line in {'heiCO', 'Termine und Gruppen', 'Dates and Groups'} | _SPA_UI_TITLES:
             continue
         if len(line) < 3:
             continue
@@ -566,13 +590,14 @@ async def build_entry_from_course_url(browser, course_url: str) -> dict[str, obj
         if not title:
             print(f'Could not determine title for {course_url}; skipping')
             return None
+        title = strip_title_breadcrumb(title)
 
         # Detect in-app login pages (SPA shows login form without URL redirect)
         # Typical: title = "Login", "Anmelden", "Anmeldung", "Sign in"
         # "DEFAULT_PAGE" = heiCO SPA placeholder for deleted/inaccessible courses
         non_course_titles = ('login', 'anmelden', 'anmeldung', 'sign in', 'einloggen',
                              'zugriff verweigert', 'access denied', 'not found', 'nicht gefunden',
-                             'default_page')
+                             'default_page', 'detail navigation', 'detailnavigation')
         if any(t in title.lower() for t in non_course_titles):
             print(f'Course page shows "{title}" instead of a course (course may have been deleted): {course_url}')
             return None
@@ -651,13 +676,32 @@ async def process_course_entry(
                 filename = build_course_filename(course_id)
                 target_path = OUTPUT_DIR / filename
 
+                # Re-read existing data from the correct file so building
+                # cache and unchanged-check work against the right file.
+                existing_weeks = []
+                existing_building_map = {}
+                if target_path.exists():
+                    try:
+                        existing_payload = json.loads(target_path.read_text(encoding='utf-8'))
+                        raw_weeks = existing_payload.get('weeks') if isinstance(existing_payload, dict) else None
+                        if isinstance(raw_weeks, list):
+                            existing_weeks = [item for item in raw_weeks if isinstance(item, dict)]
+                    except json.JSONDecodeError:
+                        pass
+                for ew in existing_weeks:
+                    el = ew.get('location_link')
+                    eloc = ew.get('location')
+                    eb = ew.get('building')
+                    if isinstance(el, str) and isinstance(eloc, str) and isinstance(eb, str) and eb:
+                        existing_building_map[(el, eloc)] = eb
+
             # Correct title from the detail page heading
             for selector in ('h1', 'h2'):
                 try:
                     node = detail_page.locator(selector).first
                     if await node.count() > 0:
-                        candidate = compact_ws((await node.text_content()) or '')
-                        if candidate and len(candidate) > len(title):
+                        candidate = strip_title_breadcrumb(compact_ws((await node.text_content()) or ''))
+                        if candidate and len(candidate) > len(title) and candidate not in _SPA_UI_TITLES:
                             title = candidate
                             break
                 except Exception:
