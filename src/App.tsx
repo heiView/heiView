@@ -500,25 +500,27 @@ function App() {
                 />
               </div>
 
-              <Space size="middle" wrap align="center" className="hei-toolbar-actions">
-                <DatePicker
-                  size="large"
-                  allowClear={false}
-                  value={selectedDate}
-                  onChange={(value) => setSelectedDate(value || dayjs())}
-                  className="hei-topbar-date"
-                />
-                <DarkModeButton className="hei-toolbar-icon-button" />
-                <Input
-                  size="large"
-                  allowClear
-                  value={search}
-                  onChange={(event) => setSearch(event.target.value)}
-                  placeholder={text.searchPlaceholder}
-                  suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
-                  className="hei-toolbar-search"
-                />
-              </Space>
+              <div className="hei-toolbar-actions">
+                <div className="hei-toolbar-core">
+                  <DatePicker
+                    size="large"
+                    allowClear={false}
+                    value={selectedDate}
+                    onChange={(value) => setSelectedDate(value || dayjs())}
+                    className="hei-topbar-date"
+                  />
+                  <DarkModeButton className="hei-toolbar-icon-button" />
+                  <Input
+                    size="large"
+                    allowClear
+                    value={search}
+                    onChange={(event) => setSearch(event.target.value)}
+                    placeholder={text.searchPlaceholder}
+                    suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
+                    className="hei-toolbar-search"
+                  />
+                </div>
+              </div>
             </div>
           </header>
 

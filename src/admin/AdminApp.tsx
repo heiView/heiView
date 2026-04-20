@@ -1114,85 +1114,89 @@ function AdminApp() {
                 />
               </div>
 
-              <Space size="middle" wrap align="center" className="hei-toolbar-actions">
-                <DatePicker
-                  size="large"
-                  allowClear={false}
-                  value={selectedDate}
-                  onChange={(v) => {
-                    const d = v || dayjs()
-                    setSelectedDate(d)
-                    try { sessionStorage.setItem('admin-selected-date', d.format('YYYY-MM-DD')) } catch (_) { /* ignore */ }
-                  }}
-                  className="hei-topbar-date"
-                />
-                <DarkModeButton className="hei-toolbar-icon-button" />
-                <Input
-                  size="large"
-                  allowClear
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  placeholder="Course or lecturer"
-                  suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
-                  className="hei-toolbar-search"
-                />
-                {superAdmin && (
-                  <>
-                    <Button
-                      size="large"
-                      onClick={async () => {
-                        setAccountsOpen(true)
-                        setAccountsLoading(true)
-                        try {
-                          const r = await adminFetch('/api/admin/accounts')
-                          if (r.ok) setAccountsList(await r.json())
-                        } finally { setAccountsLoading(false) }
-                      }}
-                    >
-                      Accounts
-                    </Button>
-                    <Button
-                      size="large"
-                      onClick={async () => {
-                        setAuditOpen(true)
-                        setAuditLoading(true)
-                        try {
-                          const r = await adminFetch('/api/admin/audit-log?limit=200')
-                          if (r.ok) setAuditLog(await r.json())
-                        } finally { setAuditLoading(false) }
-                      }}
-                    >
-                      Audit Log
-                    </Button>
-                    <Button
-                      size="large"
-                      onClick={async () => {
-                        setStaleOpen(true)
-                        setStaleLoading(true)
-                        setStaleDiffCourseId(null)
-                        setStaleDiffData(null)
-                        try {
-                          const r = await adminFetch('/api/admin/stale-overrides')
-                          if (r.ok) setStaleList(await r.json())
-                        } finally { setStaleLoading(false) }
-                      }}
-                      style={staleList.length > 0 ? (staleList.some(e => e.sourceDeleted) ? { borderColor: '#ff4d4f', color: '#ff4d4f' } : { borderColor: '#faad14', color: '#faad14' }) : undefined}
-                    >
-                      {staleList.length > 0
-                        ? `⚠ Stale Overrides (${staleList.length})`
-                        : 'Stale Overrides'}
-                    </Button>
-                  </>
-                )}
-                <Button
-                  size="large"
-                  icon={<LogoutOutlined />}
-                  onClick={handleLogout}
-                  danger
-                >
-                  Logout
-                </Button>
-              </Space>
+              <div className="hei-toolbar-actions">
+                <div className="hei-toolbar-core">
+                  <DatePicker
+                    size="large"
+                    allowClear={false}
+                    value={selectedDate}
+                    onChange={(v) => {
+                      const d = v || dayjs()
+                      setSelectedDate(d)
+                      try { sessionStorage.setItem('admin-selected-date', d.format('YYYY-MM-DD')) } catch (_) { /* ignore */ }
+                    }}
+                    className="hei-topbar-date"
+                  />
+                  <DarkModeButton className="hei-toolbar-icon-button" />
+                  <Input
+                    size="large"
+                    allowClear
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    placeholder="Course or lecturer"
+                    suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
+                    className="hei-toolbar-search"
+                  />
+                </div>
+                <div className="hei-toolbar-admin">
+                  {superAdmin && (
+                    <>
+                      <Button
+                        size="large"
+                        onClick={async () => {
+                          setAccountsOpen(true)
+                          setAccountsLoading(true)
+                          try {
+                            const r = await adminFetch('/api/admin/accounts')
+                            if (r.ok) setAccountsList(await r.json())
+                          } finally { setAccountsLoading(false) }
+                        }}
+                      >
+                        Accounts
+                      </Button>
+                      <Button
+                        size="large"
+                        onClick={async () => {
+                          setAuditOpen(true)
+                          setAuditLoading(true)
+                          try {
+                            const r = await adminFetch('/api/admin/audit-log?limit=200')
+                            if (r.ok) setAuditLog(await r.json())
+                          } finally { setAuditLoading(false) }
+                        }}
+                      >
+                        Audit Log
+                      </Button>
+                      <Button
+                        size="large"
+                        onClick={async () => {
+                          setStaleOpen(true)
+                          setStaleLoading(true)
+                          setStaleDiffCourseId(null)
+                          setStaleDiffData(null)
+                          try {
+                            const r = await adminFetch('/api/admin/stale-overrides')
+                            if (r.ok) setStaleList(await r.json())
+                          } finally { setStaleLoading(false) }
+                        }}
+                        style={staleList.length > 0 ? (staleList.some(e => e.sourceDeleted) ? { borderColor: '#ff4d4f', color: '#ff4d4f' } : { borderColor: '#faad14', color: '#faad14' }) : undefined}
+                      >
+                        {staleList.length > 0
+                          ? `⚠ Stale Overrides (${staleList.length})`
+                          : 'Stale Overrides'}
+                      </Button>
+                    </>
+                  )}
+                  <Button
+                    size="large"
+                    icon={<LogoutOutlined />}
+                    onClick={handleLogout}
+                    danger
+                  >
+                    Logout
+                  </Button>
+                </div>
+              </div>
             </div>
           </header>
 

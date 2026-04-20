@@ -118,7 +118,8 @@ textarea {
   z-index: 30;
   background: color-mix(in srgb, var(--hei-bg) 78%, transparent);
   backdrop-filter: blur(18px);
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 .hei-topbar-inner {
@@ -136,23 +137,41 @@ textarea {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
   justify-content: flex-start;
 }
 
 .hei-toolbar-actions {
   display: flex;
-  align-items: center !important;
+  align-items: center;
   gap: 8px;
-  flex-wrap: nowrap !important;
-  flex: 1 1 0px;
+  flex-wrap: wrap;
+  flex: 1 1 356px;
   justify-content: flex-end;
-  min-width: max-content;
+  min-width: 420px;
+}
+
+.hei-toolbar-core {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  min-width: 356px;
+}
+
+.hei-toolbar-admin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
 }
 
 .hei-topbar-date {
   width: 150px;
+  flex: 0 0 150px;
   pointer-events: auto;
 }
 
@@ -253,9 +272,9 @@ textarea {
 
 .hei-toolbar-search {
   height: 40px;
-  width: 220px;
+  max-width: 220px;
   min-width: 150px;
-  flex: 1 1 180px;
+  flex: 1 1 150px;
 }
 
 .hei-toolbar-icon-button.ant-btn,
@@ -640,9 +659,8 @@ textarea {
 
   .hei-toolbar-search {
     flex: 1 1 80px;
-    min-width: 180px;
-    max-width: 220px;
-    width: auto;
+    min-width: 150px;
+    width: 220px;
   }
 
   .hei-controls-card,
