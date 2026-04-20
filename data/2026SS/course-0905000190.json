@@ -8,7 +8,7 @@
     "Herweg, Michael"
   ],
   "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
+  "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 2,
@@ -21,10 +21,22 @@
       "room": "SR 25 (6328.EG.005)",
       "building": "Im Neuenheimer Feld 328, Ground floor",
       "note": "60 TN"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-07-24",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "SR 4 (6327.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16834",
+      "room": "SR 4 (6327.EG.004)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": "Tutorium Logik"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409316",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-17T09:37:11Z"
+  "last_updated": "2026-04-20T08:31:47Z"
 }

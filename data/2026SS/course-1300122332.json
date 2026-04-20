@@ -1,0 +1,30 @@
+{
+  "id": "1300122332",
+  "title": "Photonic Computing (MVSem)",
+  "type": "SE",
+  "ects_credits": "6",
+  "course_languages": "English",
+  "lecturers": [
+    "Pernice, Wolfram Hans Peter"
+  ],
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "PC-Pool (6227.01.401)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14075",
+      "room": "PC-Pool (6227.01.401)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410427",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-20T08:37:51Z"
+}

@@ -7,11 +7,9 @@
   "lecturers": [
     "Bendszus, Martin",
     "Breckwoldt, Michael Oliver Reinhard",
-    "Brugnara, Gianluca",
-    "Foltyn-Dumitru, Martha",
     "Hähnel, Stefan",
-    "Hayes, Jennifer Constanze",
     "Hilgenfeld, Tim",
+    "Hohenstatt, Sophia Alessandra Anna Gerda",
     "Jende, Johann Malte Enno",
     "Karimian Jazi, Kianush",
     "Kronlage, Moritz",
@@ -22,10 +20,7 @@
     "Preisner, Fabian Dennis",
     "Schell, Marianne",
     "Schmitt, Niclas",
-    "Schregel, Katharina",
-    "Schwarz, Daniel",
-    "Vollherbst, Dominik",
-    "Vollmuth, Philipp"
+    "Schwarz, Daniel"
   ],
   "start_date": null,
   "end_date": null,
@@ -33,5 +28,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397155",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-20T08:36:06Z"
 }

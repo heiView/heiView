@@ -1,0 +1,42 @@
+{
+  "id": "1005000084",
+  "title": "Tutorium Basketball",
+  "type": "T",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Tutor*in), 100500.100"
+  ],
+  "start_date": "2026-05-05",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-07-21",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Dreifachhalle 1 (6720.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30769",
+      "room": "Dreifachhalle 1 (6720.EG.001)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": "Tutor: Dominik Hörmann"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-20",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Dreifachhalle 1 (6720.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30769",
+      "room": "Dreifachhalle 1 (6720.EG.001)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": "Tutor: Dominik Hörmann"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414615",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-20T08:50:07Z"
+}

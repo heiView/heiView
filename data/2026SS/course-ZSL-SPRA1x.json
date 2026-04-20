@@ -53,9 +53,9 @@
       "end_date": "2026-04-24",
       "start_time": "09:00",
       "end_time": "12:30",
-      "location": "Übungsraum (3120.01.107)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22732",
-      "room": "Übungsraum (3120.01.107)",
+      "location": "Übungsraum (3120.01.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22733",
+      "room": "Übungsraum (3120.01.118)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     },
@@ -65,9 +65,9 @@
       "end_date": "2026-07-24",
       "start_time": "09:00",
       "end_time": "12:30",
-      "location": "Übungsraum (3120.01.107)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22732",
-      "room": "Übungsraum (3120.01.107)",
+      "location": "Übungsraum (3120.01.118)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22733",
+      "room": "Übungsraum (3120.01.118)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     }
@@ -75,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413734",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-17T09:43:33Z"
+  "last_updated": "2026-04-20T08:38:47Z"
 }

@@ -1,0 +1,31 @@
+{
+  "id": "1300122306",
+  "title": "Bose-Einstein Condensate Journal Club (MVRS)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Oberthaler, Markus",
+    "Strobel, Helmut"
+  ],
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SB 1.107"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410247",
+  "exceptions": [],
+  "notes": "",
+  "last_updated": "2026-04-20T07:43:57Z"
+}

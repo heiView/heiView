@@ -6,8 +6,7 @@
   "course_languages": "German",
   "lecturers": [
     "Heiland, Sabine",
-    "Prager, Marcel",
-    "Vollmuth, Philipp"
+    "Prager, Marcel"
   ],
   "start_date": null,
   "end_date": null,
@@ -15,5 +14,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397149",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-20T08:23:05Z"
 }

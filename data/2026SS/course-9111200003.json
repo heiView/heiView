@@ -5,9 +5,7 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "Biller, Armin",
-    "Kurz, Felix Tobias",
-    "Vollmuth, Philipp"
+    "Biller, Armin"
   ],
   "start_date": null,
   "end_date": null,
@@ -15,5 +13,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397154",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "last_updated": "2026-04-20T08:35:09Z"
 }

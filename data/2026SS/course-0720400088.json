@@ -16,16 +16,40 @@
       "end_date": "2026-06-24",
       "start_time": "13:30",
       "end_time": "15:45",
-      "location": "Übungsraum 002 (Winsbekin - Raum) (2230.EG.002)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17961",
-      "room": "Übungsraum 002 (Winsbekin - Raum) (2230.EG.002)",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
       "building": "Seminarstraße 4, Ground floor",
       "note": null
     },
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
+      "end_date": "2026-05-06",
+      "start_time": "16:15",
+      "end_time": "18:30",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
       "end_date": "2026-06-24",
+      "start_time": "16:15",
+      "end_time": "18:30",
+      "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17960",
+      "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
       "start_time": "16:15",
       "end_time": "18:30",
       "location": "Übungsraum 002 (Winsbekin - Raum) (2230.EG.002)",
@@ -38,5 +62,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414523",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:02:20Z"
+  "last_updated": "2026-04-20T08:15:18Z"
 }

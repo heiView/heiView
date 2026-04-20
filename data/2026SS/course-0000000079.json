@@ -1,30 +1,17 @@
 {
   "id": "0000000079",
-  "title": "Ü AT: Predigt des Alten Testaments – Theoretische und praktische Herausforderungen",
+  "title": "Ü AT: Predigt des Alten Testaments – Theoretische und praktische Herausforderungen (fällt aus!)",
   "type": "PC",
   "ects_credits": "2",
   "course_languages": "German",
   "lecturers": [
     "Knittel, Ann-Kathrin"
   ],
-  "start_date": "2026-04-13",
-  "end_date": "2026-07-20",
-  "weeks": [
-    {
-      "day_of_week": 1,
-      "start_date": "2026-04-13",
-      "end_date": "2026-07-20",
-      "start_time": "09:15",
-      "end_time": "10:45",
-      "location": "ÜR K 2 (1040.01.109)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23185",
-      "room": "ÜR K 2 (1040.01.109)",
-      "building": "Karlstraße 16, 1st floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410730",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:34:20Z"
+  "last_updated": "2026-04-20T08:50:43Z"
 }

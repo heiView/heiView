@@ -14,7 +14,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-06-03",
+      "end_date": "2026-06-10",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
@@ -39,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415302",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-17T09:19:00Z"
+  "last_updated": "2026-04-20T07:44:43Z"
 }

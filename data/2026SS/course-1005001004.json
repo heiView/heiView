@@ -8,20 +8,8 @@
     "Lichtenthaler, Stephanie"
   ],
   "start_date": "2026-04-13",
-  "end_date": "2026-07-13",
+  "end_date": "2026-07-06",
   "weeks": [
-    {
-      "day_of_week": 1,
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-13",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "location": "Gymnastikhalle 700 (6700.EG.070)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
-      "room": "Gymnastikhalle 700 (6700.EG.070)",
-      "building": "Im Neuenheimer Feld 700, Ground floor",
-      "note": null
-    },
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
@@ -44,11 +32,35 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
       "room": "Gymnastikhalle 700 (6700.EG.070)",
       "building": "Im Neuenheimer Feld 700, Ground floor",
-      "note": "Kompakttermin zur Planung der Unterrichtreihe, die an den darauffolgenden Montagen mit den Schüler*innen des Bunsen Gymnasiums durchgeführt wird."
+      "note": "Kompakttermin zur Planung der Unterrichtreihe, die an den darauffolgenden Montagen mit den Schüler*innen"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-06-29",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Turnhalle 700 (6700.EG.071)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17710",
+      "room": "Turnhalle 700 (6700.EG.071)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-06-29",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Sporthalle 700 (6700.EG.022)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17699",
+      "room": "Sporthalle 700 (6700.EG.022)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414599",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-15T14:02:10Z"
+  "last_updated": "2026-04-20T08:46:33Z"
 }

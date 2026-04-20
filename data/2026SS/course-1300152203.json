@@ -24,10 +24,10 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-04-15",
+      "start_date": "2026-04-22",
       "end_date": "2026-07-22",
-      "start_time": "16:15",
-      "end_time": "17:00",
+      "start_time": "12:15",
+      "end_time": "13:00",
       "location": "Unterrichtsraum (6229.01.110)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14153",
       "room": "Unterrichtsraum (6229.01.110)",
@@ -38,5 +38,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410431",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T18:48:33Z"
+  "last_updated": "2026-04-20T08:37:57Z"
 }

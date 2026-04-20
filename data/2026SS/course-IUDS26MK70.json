@@ -45,10 +45,22 @@
       "room": "Übungsraum (3051.EG.013)",
       "building": "Plöck 57a, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Unterrichtsraum (3051.U1.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20005",
+      "room": "Unterrichtsraum (3051.U1.108)",
+      "building": "Plöck 57a, Lower level 1",
+      "note": "Nacholstunde"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417594",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T20:18:19Z"
+  "last_updated": "2026-04-20T08:29:49Z"
 }

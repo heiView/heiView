@@ -13,18 +13,30 @@
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
+      "end_date": "2026-04-24",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Besprechung/Aufenthalt (4120.02.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11100",
+      "room": "Besprechung/Aufenthalt (4120.02.002)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": "s.t."
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
       "end_date": "2026-07-24",
       "start_time": "14:00",
       "end_time": "15:30",
-      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
-      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
-      "building": "Voßstraße 2, Ground floor",
+      "location": "Besprechung/Aufenthalt (4120.02.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11100",
+      "room": "Besprechung/Aufenthalt (4120.02.002)",
+      "building": "Voßstraße 2, 2nd floor",
       "note": "s.t."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414501",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:06:22Z"
+  "last_updated": "2026-04-20T08:19:13Z"
 }
