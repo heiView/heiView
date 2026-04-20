@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-20T17:21:18.673Z",
+  "updatedAt": "2026-04-20T18:08:56.882Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -9250,8 +9250,14 @@
       "street": "Sandgasse 7",
       "displayName": "",
       "campusId": "altstadt",
-      "aliases": [],
-      "floors": [],
+      "aliases": [
+        "SgU",
+        "sgu",
+        "SGU"
+      ],
+      "floors": [
+        "Ground floor"
+      ],
       "rooms": [
         {
           "id": "bld-sandgasse-7::rm-raum-19",
@@ -9481,6 +9487,18 @@
           "notes": ""
         }
       ],
+      "notes": ""
+    },
+    {
+      "id": "bld-hauptstrasse-126",
+      "street": "Hauptstraße 126",
+      "displayName": "",
+      "campusId": "altstadt",
+      "aliases": [],
+      "floors": [
+        "Ground floor"
+      ],
+      "rooms": [],
       "notes": ""
     }
   ]

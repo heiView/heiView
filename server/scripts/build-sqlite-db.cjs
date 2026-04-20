@@ -206,6 +206,17 @@ function splitBuildingAndFloor(value) {
   return { buildingName: buildingName || null, floorLabel: normalizeFloorLabel(floorLabel) };
 }
 
+function ensureCoursesExtraColumns(db) {
+  const columns = db.prepare('PRAGMA table_info(courses);').all();
+  const names = new Set(columns.map((column) => column.name));
+  if (!names.has('organisation')) {
+    db.exec('ALTER TABLE courses ADD COLUMN organisation TEXT;');
+  }
+  if (!names.has('further_info')) {
+    db.exec('ALTER TABLE courses ADD COLUMN further_info TEXT;');
+  }
+}
+
 function ensureOccurrencesSplitColumns(db) {
   const columns = db.prepare('PRAGMA table_info(occurrences);').all();
   const names = new Set(columns.map((column) => column.name));
@@ -247,7 +258,9 @@ function ensureSchema(db) {
       lecturers_json TEXT,
       detail_link TEXT,
       start_date TEXT,
-      end_date TEXT
+      end_date TEXT,
+      organisation TEXT,
+      further_info TEXT
     );
 
     CREATE TABLE IF NOT EXISTS occurrences (
@@ -282,6 +295,7 @@ function ensureSchema(db) {
   `);
 
   ensureOccurrencesSplitColumns(db);
+  ensureCoursesExtraColumns(db);
 }
 
 function main() {
@@ -313,10 +327,12 @@ function main() {
     const insertCourse = db.prepare(`
       INSERT INTO courses (
         id, title, type, ects_credits, course_languages,
-        lecturers_json, detail_link, start_date, end_date
+        lecturers_json, detail_link, start_date, end_date,
+        organisation, further_info
       ) VALUES (
         @id, @title, @type, @ects_credits, @course_languages,
-        @lecturers_json, @detail_link, @start_date, @end_date
+        @lecturers_json, @detail_link, @start_date, @end_date,
+        @organisation, @further_info
       );
     `);
 
@@ -370,6 +386,8 @@ function main() {
         detail_link: payload.detail_link || null,
         start_date: payload.start_date || null,
         end_date: payload.end_date || null,
+        organisation: payload.organisation || null,
+        further_info: payload.further_info || null,
       });
       courseCount += 1;
 
@@ -551,10 +569,12 @@ function syncSingleCourse(courseId) {
   const insertCourse = db.prepare(`
     INSERT OR REPLACE INTO courses (
       id, title, type, ects_credits, course_languages,
-      lecturers_json, detail_link, start_date, end_date
+      lecturers_json, detail_link, start_date, end_date,
+      organisation, further_info
     ) VALUES (
       @id, @title, @type, @ects_credits, @course_languages,
-      @lecturers_json, @detail_link, @start_date, @end_date
+      @lecturers_json, @detail_link, @start_date, @end_date,
+      @organisation, @further_info
     )
   `);
   const insertOccurrence = db.prepare(`
@@ -586,6 +606,8 @@ function syncSingleCourse(courseId) {
       detail_link: payload.detail_link || null,
       start_date: payload.start_date || null,
       end_date: payload.end_date || null,
+      organisation: payload.organisation || null,
+      further_info: payload.further_info || null,
     });
 
     const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];

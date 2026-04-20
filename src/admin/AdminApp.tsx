@@ -237,6 +237,10 @@ function AdminApp() {
   const [batchEditCount, setBatchEditCount] = React.useState<{ matches: { courseId: string; title: string; weeks: unknown[] }[]; totalWeeks: number } | null>(null)
   const [batchEditSaving, setBatchEditSaving] = React.useState(false)
   const [noteMapSaving, setNoteMapSaving] = React.useState(false)
+  const [noteMapModalOpen, setNoteMapModalOpen] = React.useState(false)
+  const [noteMapPattern, setNoteMapPattern] = React.useState('')
+  const [noteMapOriginal, setNoteMapOriginal] = React.useState('')
+  const [noteMapMatchType, setNoteMapMatchType] = React.useState<'exact' | 'contains'>('exact')
   const [editForm] = Form.useForm()
   const [buildingEditState, setBuildingEditState] = React.useState<BuildingEditState | null>(null)
   const [buildingEditSaving, setBuildingEditSaving] = React.useState(false)
@@ -1055,15 +1059,31 @@ function AdminApp() {
     let building = (values.week_building as string) || null
     if (building && floor) building = `${building}, ${floor}`
     if (!room || !building) { void message.warning('Please set a room and building first.'); return }
+    setNoteMapOriginal(note.trim())
+    setNoteMapPattern(note.trim())
+    setNoteMapMatchType('exact')
+    setNoteMapModalOpen(true)
+  }
+
+  async function handleNoteMapConfirm() {
+    if (!editFileState || editFileState.weekIndex < 0) return
+    const values = editForm.getFieldsValue()
+    const room = (values.week_room as string) || null
+    const floorArr = Array.isArray(values.week_floor) ? values.week_floor as string[] : []
+    const floor = floorArr[0] ?? (typeof values.week_floor === 'string' ? values.week_floor : '')
+    let building = (values.week_building as string) || null
+    if (building && floor) building = `${building}, ${floor}`
+    if (!room || !building) return
     setNoteMapSaving(true)
     try {
       const res = await adminFetch('/api/admin/note-location-map', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ note, room, building }),
+        body: JSON.stringify({ note: noteMapPattern.trim(), room, building, match: noteMapMatchType }),
       })
       const result = await res.json()
       if (!res.ok) { void message.error(result.error || 'Failed to update note-location-map'); return }
+      setNoteMapModalOpen(false)
       void message.success(`Saved to note-location-map · ${result.syncedCourses} course(s) re-synced`)
     } catch (_) {
       void message.error('Network error')
@@ -1667,6 +1687,58 @@ function AdminApp() {
               </Form>
             )
           })() : null}
+        </Modal>
+
+        {/* Note-to-map confirmation modal */}
+        <Modal
+          open={noteMapModalOpen}
+          title="Add note to location map"
+          onCancel={() => setNoteMapModalOpen(false)}
+          onOk={handleNoteMapConfirm}
+          okText="Save mapping"
+          confirmLoading={noteMapSaving}
+          destroyOnClose
+          width={520}
+        >
+          <div style={{ marginBottom: 12 }}>
+            <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+              Original note text is pre-filled. Trim it to just the location-relevant part if needed.
+              If you shorten the pattern, switch match type to <b>contains</b>.
+            </Typography.Text>
+          </div>
+          <div style={{ marginBottom: 12 }}>
+            <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>Match pattern</Typography.Text>
+            <Input.TextArea
+              rows={3}
+              value={noteMapPattern}
+              onChange={e => {
+                const val = e.target.value
+                setNoteMapPattern(val)
+                if (val.trim() !== noteMapOriginal) {
+                  setNoteMapMatchType('contains')
+                } else {
+                  setNoteMapMatchType('exact')
+                }
+              }}
+            />
+            {noteMapPattern.trim() !== noteMapOriginal && (
+              <Typography.Text type="warning" style={{ fontSize: 12 }}>
+                Pattern differs from original note — match type switched to <b>contains</b>.
+              </Typography.Text>
+            )}
+          </div>
+          <div>
+            <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>Match type</Typography.Text>
+            <Select
+              value={noteMapMatchType}
+              onChange={v => setNoteMapMatchType(v)}
+              options={[
+                { value: 'exact', label: 'exact — note must equal pattern exactly' },
+                { value: 'contains', label: 'contains — note must contain pattern as substring' },
+              ]}
+              style={{ width: '100%' }}
+            />
+          </div>
         </Modal>
 
         {/* Accounts modal (superadmin only) */}

@@ -262,6 +262,8 @@ function createApp() {
           c.detail_link,
           c.start_date,
           c.end_date,
+          c.organisation,
+          c.further_info,
           o.building_name,
           o.room,
           o.start_time,
@@ -284,6 +286,8 @@ function createApp() {
           LOWER(c.title) LIKE @p OR
           LOWER(c.lecturers_json) LIKE @p OR
           LOWER(c.lecturers_json) LIKE @lp OR
+          LOWER(COALESCE(c.organisation, '')) LIKE @p OR
+          LOWER(COALESCE(c.further_info, '')) LIKE @p OR
           LOWER(COALESCE(o.note, '')) LIKE @p
         ORDER BY c.title
         LIMIT 300
@@ -298,6 +302,8 @@ function createApp() {
           c.detail_link,
           c.start_date,
           c.end_date,
+          c.organisation,
+          c.further_info,
           o.building_name,
           o.room,
           o.start_time,
@@ -968,10 +974,11 @@ function createApp() {
   // already exists, the note is appended to its notes array. Otherwise a new
   // entry is created. All courses containing the note in any week are re-synced.
   app.post('/api/admin/note-location-map', requireAdmin, (req, res) => {
-    const { note, room, building } = req.body || {};
+    const { note, room, building, match: matchType } = req.body || {};
     if (!note || typeof note !== 'string') { res.status(400).json({ error: 'note required' }); return; }
     if (!room || typeof room !== 'string') { res.status(400).json({ error: 'room required' }); return; }
     if (!building || typeof building !== 'string') { res.status(400).json({ error: 'building required' }); return; }
+    const resolvedMatchType = matchType === 'contains' ? 'contains' : 'exact';
 
     // Read current map
     let mapData = { _comment: 'Auto-generated from overrides. \'match\' can be \'exact\' or \'contains\'. Edit manually as needed.', entries: [] };
@@ -997,8 +1004,9 @@ function createApp() {
       if (!entry.notes.includes(trimmedNote)) {
         entry.notes.push(trimmedNote);
       }
+      entry.match = resolvedMatchType;
     } else {
-      mapData.entries.push({ match: 'exact', notes: [trimmedNote], room: trimmedRoom, building: trimmedBuilding });
+      mapData.entries.push({ match: resolvedMatchType, notes: [trimmedNote], room: trimmedRoom, building: trimmedBuilding });
       isNew = true;
     }
 
@@ -1006,7 +1014,7 @@ function createApp() {
       fs.writeFileSync(NOTE_LOCATION_MAP_PATH, JSON.stringify(mapData, null, 2), 'utf8');
     } catch (e) { res.status(500).json({ error: 'Failed to write note-location-map.json: ' + e.message }); return; }
 
-    // Sync all courses that have a week with this exact note
+    // Sync all courses whose weeks contain the note (exact match or substring for 'contains')
     const courseIds = getAllCourseIds();
     const syncedIds = [];
     for (const courseId of courseIds) {
@@ -1015,7 +1023,11 @@ function createApp() {
       let data;
       try { data = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) { continue; }
       const weeks = Array.isArray(data.weeks) ? data.weeks : [];
-      const hasNote = weeks.some(w => w.note && w.note.trim() === trimmedNote);
+      const hasNote = weeks.some(w => {
+        if (!w.note) return false;
+        const wNote = w.note.trim();
+        return resolvedMatchType === 'contains' ? wNote.includes(trimmedNote) : wNote === trimmedNote;
+      });
       if (!hasNote) continue;
       try { syncSingleCourse(courseId); syncedIds.push(courseId); } catch (e) { console.error(`[note-map] sync failed for ${courseId}:`, e.message); }
     }

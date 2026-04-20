@@ -602,6 +602,30 @@
       ],
       "room": "BBox",
       "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor"
+    },
+    {
+      "match": "contains",
+      "notes": [
+        "Institute of Translation and Interpreting (Plöck 57a), room 114"
+      ],
+      "room": "Übungsraum (3051.01.114)",
+      "building": "Plöck 57a"
+    },
+    {
+      "match": "contains",
+      "notes": [
+        "SGU1017"
+      ],
+      "room": "Raum 1017",
+      "building": "Sandgasse 7"
+    },
+    {
+      "match": "contains",
+      "notes": [
+        "Hauptstr. 126, EG, Raum 004"
+      ],
+      "room": "Raum 004",
+      "building": "Hauptstraße 126, Ground floor"
     }
   ]
 }
