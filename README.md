@@ -43,7 +43,7 @@ There are still some contents to be improved, such as incomplete building floors
 
 ### To Do List
 
-Due to incomplete and inconsistently formatted data in heiCO, over 700 out of the 4,000+ courses in the 2026 Summer Semester lack directly downloadable schedule and location information. These courses are currently placed under "Other → No Information" and some courses with incomplete information are placed in "Other"， require manual addition.
+Due to incomplete and inconsistently formatted data in heiCO, over 700 courses in the 2026 Summer Semester lack time and location information. These courses are currently placed under "Other → No Information" and some courses with incomplete information are also placed in "Other"， require manual updating.
 
 **We warmly welcome contributions!** You can:
 
@@ -64,7 +64,7 @@ Run the crawler to fetch all courses for the semester (requires campus network o
 ```bash
 python crawler/heico_crawler.py
 ```
-Repeated runs only write files when content changes. To update a single course, use `--course-url "<URL>"`.
+Repeated runs only write files when content changes. To update a single course, use `--url "URL"`.
 
 **3. Synchronize & Build Database**
 
@@ -148,7 +148,7 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 ### 待办事项
 
-由于heiCO上的课程信息存在大量缺失和格式不规范等问题，2026夏季学期的4000+门课程里有超过700门没有可以直接下载的时间和地点信息，目前被放置在Other -> No Information中，还有部分信息不全的课程被放在Other里，都需要后续手动添加，欢迎感兴趣的同学邮件我(ht305)加入本项目一同编辑，也欢迎创建Issue提出反馈/建议或直接修改文件提交Pull Request。
+由于heiCO上的课程信息存在大量缺失和格式不规范等问题，2026夏季学期有超过700门没有可以直接下载的时间和地点信息，目前被放置在Other -> No Information中，还有部分信息不全的课程被放在Other里，都需要后续手动更新，欢迎感兴趣的同学邮件我(ht305)加入本项目一同编辑，也欢迎创建Issue提出反馈/建议或直接修改文件提交Pull Request。
 
 ### 本地测试与开发
 
@@ -165,7 +165,7 @@ npm install
 python crawler/heico_crawler.py
 ```
 
-仅在内容发生变化时才写入文件（增量更新）。如需更新单门课程，可使用 `--course-url "<课程网址>"`。
+仅在内容发生变化时才写入文件（增量更新）。如需测试更新单门课程，可使用 `--url "课程网址"`。
 
 **3. 同步与构建数据库**
 
