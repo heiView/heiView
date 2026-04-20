@@ -10,6 +10,33 @@ const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const DB_DIR = path.join(ROOT, 'data');
 const DB_PATH = path.join(DB_DIR, 'heiview.db');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
+const NOTE_LOCATION_MAP_PATH = path.join(ROOT, 'data', 'note-location-map.json');
+
+function loadNoteLocationMap() {
+  if (!fs.existsSync(NOTE_LOCATION_MAP_PATH)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(NOTE_LOCATION_MAP_PATH, 'utf8'));
+    return Array.isArray(data.entries) ? data.entries : [];
+  } catch (e) {
+    console.warn('[note-map] Failed to load note-location-map.json:', e.message);
+    return [];
+  }
+}
+
+function resolveNoteToLocation(note, entries) {
+  if (!note || !entries.length) return null;
+  const trimmed = note.trim();
+  for (const entry of entries) {
+    const matchType = entry.match || 'exact';
+    const patterns = Array.isArray(entry.notes) ? entry.notes : [];
+    if (matchType === 'exact') {
+      if (patterns.some(p => p === trimmed)) return { room: entry.room, building: entry.building };
+    } else if (matchType === 'contains') {
+      if (patterns.some(p => trimmed.includes(p))) return { room: entry.room, building: entry.building };
+    }
+  }
+  return null;
+}
 
 function loadSkipSet() {
   if (!fs.existsSync(SKIP_LIST_PATH)) return new Set();
@@ -274,6 +301,10 @@ function main() {
 
     const aliasMap = buildAliasMap();
     const skipSet = loadSkipSet();
+    const noteLocationMap = loadNoteLocationMap();
+    if (noteLocationMap.length > 0) {
+      console.log(`[note-map] Loaded ${noteLocationMap.length} note-to-location entries.`);
+    }
 
     if (skipSet.size > 0) {
       console.log(`[skip] Loaded ${skipSet.size} course ID(s) to skip.`);
@@ -348,8 +379,22 @@ function main() {
         const slotStart = week.start_date || payload.start_date;
         const slotEnd = week.end_date || payload.end_date;
         const meetingDates = collectMeetingDates(slotStart, slotEnd, dayOfWeek);
-        const rawRoom = (week.room || week.location || '').trim() || null;
-        let split = splitBuildingAndFloor(week.building || null);
+
+        // Apply note-to-location mapping when room/building are vague
+        let resolvedRoom = week.room;
+        let resolvedBuilding = week.building;
+        const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
+        const isVagueBuilding = !resolvedBuilding;
+        if (isVagueRoom && isVagueBuilding && week.note) {
+          const mapped = resolveNoteToLocation(week.note, noteLocationMap);
+          if (mapped) {
+            resolvedRoom = mapped.room;
+            resolvedBuilding = mapped.building;
+          }
+        }
+
+        const rawRoom = (resolvedRoom || week.location || '').trim() || null;
+        let split = splitBuildingAndFloor(resolvedBuilding || null);
         let currentRoom = rawRoom;
         
         if (!split.buildingName && rawRoom) {
@@ -544,13 +589,25 @@ function syncSingleCourse(courseId) {
     });
 
     const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
+    const noteLocationMap = loadNoteLocationMap();
     for (const week of weeks) {
       const dayOfWeek = Number.parseInt(String(week.day_of_week || ''), 10);
       const slotStart = week.start_date || payload.start_date;
       const slotEnd = week.end_date || payload.end_date;
       const meetingDates = collectMeetingDates(slotStart, slotEnd, dayOfWeek);
-      const rawRoom = week.room || week.location || null;
-      let split = splitBuildingAndFloor(week.building || null);
+
+      // Apply note-to-location mapping when room/building are vague
+      let resolvedRoom = week.room;
+      let resolvedBuilding = week.building;
+      const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
+      const isVagueBuilding = !resolvedBuilding;
+      if (isVagueRoom && isVagueBuilding && week.note) {
+        const mapped = resolveNoteToLocation(week.note, noteLocationMap);
+        if (mapped) { resolvedRoom = mapped.room; resolvedBuilding = mapped.building; }
+      }
+
+      const rawRoom = (resolvedRoom || week.location || '').trim() || null;
+      let split = splitBuildingAndFloor(resolvedBuilding || null);
       let currentRoom = rawRoom;
 
       if (!split.buildingName && rawRoom) {

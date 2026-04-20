@@ -1,0 +1,487 @@
+{
+  "_comment": "Auto-generated from overrides. 'match' can be 'exact' or 'contains'. Edit manually as needed.",
+  "entries": [
+    {
+      "match": "exact",
+      "notes": [
+        "Berlinerstr. 43, 3OG, B128"
+      ],
+      "room": "B128",
+      "building": "Berliner Straße 43, 3rd floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "BioQuant INF267 SR043",
+        "Ort: SR043 (BioQuant - Im Neuenheimer Feld 267)",
+        "Ort: SR043 (BioQuant-Im Neuenheimer Feld 267)",
+        "SR 43 in the BioQuant"
+      ],
+      "room": "Übungsraum (6267.EG.043)",
+      "building": "Im Neuenheimer Feld 267, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Der HS-I befindet sich im 1. OG, Raum Nr. 127, Hauptstr. 47-51"
+      ],
+      "room": "HS 1 (3020.01.127)",
+      "building": "Hauptstraße 47-51"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Fakultatives Angebot/• NCT, 2. OG, Leitstelle D Gynäkologische Onkologie, INF 460"
+      ],
+      "room": "NCT",
+      "building": "Im Neuenheimer Feld 460, 2nd floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Findet in Raum U015 im OMZ (INF350) statt."
+      ],
+      "room": "Raum U015",
+      "building": "Im Neuenheimer Feld 350, Lower level 1"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Graduate Academy, INF 370"
+      ],
+      "room": "Graduate Academy",
+      "building": "Im Neuenheimer Feld 370, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Haus der Astronomie (HdA): SR H-308",
+        "HdA / SR H-308"
+      ],
+      "room": "HdA / SR H-308",
+      "building": "Königstuhl 17"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Hochschule für Jüdische Studien Heidelberg, Landfriedstraße 12, 69117 Heidelberg, Raum: S4"
+      ],
+      "room": "Seminarraum 4",
+      "building": "Landfriedstraße 12"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "HS 2, Hauptstr. 47-51"
+      ],
+      "room": "HS 2 Saal (3010.EG.013)",
+      "building": "Hauptstraße 47-51, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Hörsaal des Max-Planck-Instituts für Astronomie (MPIA); Lecture Theatre of the Max-Planck-Institute for"
+      ],
+      "room": "Hörsaal",
+      "building": "Königstuhl 17"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Hörsaal INF 410"
+      ],
+      "room": "Medizinische Klinik - großer Hörsaal (6410.EG.130)",
+      "building": "Im Neuenheimer Feld 410"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Hörsaal: Klinik für allgemeine Psychiatrie, Voßstraße 4, 69115 Heidelberg"
+      ],
+      "room": "Hörsaal PSIA Haus 1 (4270.EG.040)",
+      "building": "Voßstraße 4"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Idea Room (Im Neuenheimer Feld 370)"
+      ],
+      "room": "Idea room",
+      "building": "Im Neuenheimer Feld 370"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Idea room (Im Neuenheimer Feld 370)"
+      ],
+      "room": "Idea room",
+      "building": "Im Neuenheimer Feld 370, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 226 / CQD-Lounge"
+      ],
+      "room": "CQD-Lounge",
+      "building": "Im Neuenheimer Feld 226, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 226, EG Ost"
+      ],
+      "room": "EG Ost",
+      "building": "Im Neuenheimer Feld 226, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 226, EG, Goldbox"
+      ],
+      "room": "Goldbox",
+      "building": "Im Neuenheimer Feld 226, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 226, Goldbox"
+      ],
+      "room": "Goldbox",
+      "building": "Im Neuenheimer Feld 226"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 230 / HS 00.001"
+      ],
+      "room": "HS 00.001",
+      "building": "Im Neuenheimer Feld 230"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 256 (SR211)"
+      ],
+      "room": "SR211",
+      "building": "Im Neuenheimer Feld 256, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 267 (Bioquant), SR 041",
+        "Ort: SR041 (BioQuant - Im Neuenheimer Feld 267)",
+        "Ort: SR041 (BioQuant-Im Neuenheimer Feld 267)"
+      ],
+      "room": "Übungsraum (6267.EG.041)",
+      "building": "Im Neuenheimer Feld 267, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 267 (BioQuant), SR44",
+        "Ort: SR044 (BioQuant - Im Neuenheimer Feld 267)"
+      ],
+      "room": "Übungsraum (6267.EG.044)",
+      "building": "Im Neuenheimer Feld 267, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 366, 1.OG, SR111"
+      ],
+      "room": "SR111",
+      "building": "Im Neuenheimer Feld 366, 1st floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF 501:Praktikum"
+      ],
+      "room": "Praktikum",
+      "building": "Im Neuenheimer Feld 501, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "INF231 SR005"
+      ],
+      "room": "SR 5 (6231.EG.005)",
+      "building": "Im Neuenheimer Feld 231"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Institut for Theoretical Astrophysics, Albert-Uelberle-Str. 3-5, basement, Library",
+        "Institut für Theoretische Astrophysik, Albert-Ueberle-Str. 3-5, basement, Library"
+      ],
+      "room": "Library",
+      "building": "Albert-Ueberle-Straße 3-5, Lower level 1"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Keplerstr. 87, 69120 HD (Altbau der PH), Raum 118"
+      ],
+      "room": "Raum 118",
+      "building": "Keplerstraße 87"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Laborführung, INF 671"
+      ],
+      "room": "Laborführung",
+      "building": "Im Neuenheimer Feld 671"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "location: DKFZ TP3 Bldg., INF 580, Buchleither Seminar room"
+      ],
+      "room": "Buchleither Seminar room",
+      "building": "Im Neuenheimer Feld 580, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "MPI-MR, Jahnstr 29 Gulden Seminar Room"
+      ],
+      "room": "Seminar Room",
+      "building": "Jahnstraße 29"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "MPIA Seminar Room (306)"
+      ],
+      "room": "Seminar Room (306)",
+      "building": "Königstuhl 17, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Neuenheimer Feld INF519/TO111"
+      ],
+      "room": "TO111",
+      "building": "Im Neuenheimer Feld 519, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Neuenheimer Feld, INF519, TO111"
+      ],
+      "room": "TO111",
+      "building": "Im Neuenheimer Feld 519"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: Hybridveranstaltung, INF 223 / F.01.088 (siehe Homepage)"
+      ],
+      "room": "F.01.088",
+      "building": "Im Neuenheimer Feld 223"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: INF 364, 4.OG, Praktikumssaal"
+      ],
+      "room": "Praktikumssaal",
+      "building": "Im Neuenheimer Feld 364, 4th floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: INF 366, EG, Praktikumssaal West"
+      ],
+      "room": "Praktikumssaal West",
+      "building": "Im Neuenheimer Feld 366, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: Karl.str. 16, Raum 308",
+        "Ort: Zi. 308 in der Karlstr. 16"
+      ],
+      "room": "Raum 308",
+      "building": "Karlstraße 16"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: Raum 220 im Altbau der PH Heidelberg Keplerstraße 87 69120 Heidelberg"
+      ],
+      "room": "Raum 220",
+      "building": "Keplerstraße 87, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: Raum C1.11, INF 563"
+      ],
+      "room": "Raum C1.11",
+      "building": "Im Neuenheimer Feld 563"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ort: Völkerkundemuseum Heidelberg"
+      ],
+      "room": "Völkerkundemuseum",
+      "building": "Völkerkundemuseum, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Paläographieraum 027",
+        "Paläographieraum 027 (Grabengasse 3-5)"
+      ],
+      "room": "Paläographieraum 027",
+      "building": "Grabengasse 3-5"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "PH, INF 519 - TO111"
+      ],
+      "room": "TO111",
+      "building": "Im Neuenheimer Feld 561, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Praktikum. INF 326, 1.OG"
+      ],
+      "room": "Praktikum",
+      "building": "Im Neuenheimer Feld 326, 1st floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum 1, Theologische Fakultät: Kisselgasse 1."
+      ],
+      "room": "Raum 1",
+      "building": "Kisselgasse 1"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum 112, Marstallstr.6."
+      ],
+      "room": "Raum 112",
+      "building": "Marstallstraße. 6, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum 130, Altbau PH, Keplerstraße 87, 69121 HD"
+      ],
+      "room": "Raum 130",
+      "building": "Keplerstraße 87"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum 19, Sandgasse 7"
+      ],
+      "room": "Raum 19",
+      "building": "Sandgasse 7, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum 229, Historisches Seminar."
+      ],
+      "room": "Raum 229, Historisches Seminar.",
+      "building": "Grabengasse 3-5"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum 303002010 (Übungsraum) Hauptstraße 52 (\"Haus zum Riesen\"), 2.OG"
+      ],
+      "room": "Übungsraum (3030.02.010)",
+      "building": "Hauptstraße 52, 2nd floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum in der PH: INF 561, Raum A236"
+      ],
+      "room": "Raum A236",
+      "building": "Im Neuenheimer Feld 561"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Raum: INF 364, 5.OG, kleiner Seminarraum R520"
+      ],
+      "room": "kleiner Seminarraum R520",
+      "building": "Im Neuenheimer Feld 364, 5th floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Seminarraum 4 der Jüdischen Hochschule, Landfriedstraße 12 69117 Heidelberg"
+      ],
+      "room": "Seminarraum 4",
+      "building": "Landfriedstraße 12, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "series takes place in SR 42 in the BioQuant (INF 267)"
+      ],
+      "room": "Übungsraum (6267.EG.042)",
+      "building": "Im Neuenheimer Feld 267, Ground floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "TP3, INF 580"
+      ],
+      "room": "Unknown Room",
+      "building": "Im Neuenheimer Feld 580, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Universitätsarchiv, Akademiestraße 4, 69117 Heidelberg"
+      ],
+      "room": "Unknown Room",
+      "building": "Akademiestraße 4, Unknown floor"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "UR-C, Hauptstr. 47-51"
+      ],
+      "room": "UR C (3010.EG.020)",
+      "building": "Hauptstraße 47-51"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Veranstaltungsort: Bibliothek Papyrologie, Marstallstr. 6, Raum 215"
+      ],
+      "room": "Raum 215",
+      "building": "Marstallstraße. 6"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "ZSL Raum 220"
+      ],
+      "room": "Übungsraum (3120.02.220)",
+      "building": "Plöck 79-81"
+    },
+    {
+      "match": "exact",
+      "notes": [
+        "Ägyptische Sammlung, Marstallstraße 6, Raum 413"
+      ],
+      "room": "Übungsraum 413",
+      "building": "Marstallstraße. 6"
+    }
+  ]
+}

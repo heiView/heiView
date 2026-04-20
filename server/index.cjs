@@ -81,6 +81,7 @@ const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
 const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
 const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
+const NOTE_LOCATION_MAP_PATH = path.join(ROOT, 'data', 'note-location-map.json');
 
 const scheduleCache = new Map(); // key -> { data, ts } — module-level so writeCatalog can clear it
 
@@ -958,6 +959,69 @@ function createApp() {
 
     audit(req, 'batch_edit_room', null, `Batch room change: "${origRoom}" → "${newRoom || ''}", updated ${updatedCourseIds.length} course(s)`, { origRoom, origBuilding, newRoom: newRoom || null, newBuilding: newBuilding || null, courseIds: updatedCourseIds });
     res.json({ ok: true, updatedCourses: updatedCourseIds.length, courseIds: updatedCourseIds });
+  });
+  // ────────────────────────────────────────────────────────────────────────
+
+  // ── Note-Location Map ─────────────────────────────────────────────────────
+  // POST /api/admin/note-location-map
+  // Add a note→room/building mapping. If an entry with the same room+building
+  // already exists, the note is appended to its notes array. Otherwise a new
+  // entry is created. All courses containing the note in any week are re-synced.
+  app.post('/api/admin/note-location-map', requireAdmin, (req, res) => {
+    const { note, room, building } = req.body || {};
+    if (!note || typeof note !== 'string') { res.status(400).json({ error: 'note required' }); return; }
+    if (!room || typeof room !== 'string') { res.status(400).json({ error: 'room required' }); return; }
+    if (!building || typeof building !== 'string') { res.status(400).json({ error: 'building required' }); return; }
+
+    // Read current map
+    let mapData = { _comment: 'Auto-generated from overrides. \'match\' can be \'exact\' or \'contains\'. Edit manually as needed.', entries: [] };
+    try {
+      if (fs.existsSync(NOTE_LOCATION_MAP_PATH)) {
+        mapData = JSON.parse(fs.readFileSync(NOTE_LOCATION_MAP_PATH, 'utf8'));
+        if (!Array.isArray(mapData.entries)) mapData.entries = [];
+      }
+    } catch (e) { res.status(500).json({ error: 'Failed to read note-location-map.json: ' + e.message }); return; }
+
+    const trimmedNote = note.trim();
+    const trimmedRoom = room.trim();
+    const trimmedBuilding = building.trim();
+
+    // Find existing entry with same room + building
+    const existingIdx = mapData.entries.findIndex(
+      e => e.room === trimmedRoom && e.building === trimmedBuilding
+    );
+    let isNew = false;
+    if (existingIdx >= 0) {
+      const entry = mapData.entries[existingIdx];
+      if (!Array.isArray(entry.notes)) entry.notes = [];
+      if (!entry.notes.includes(trimmedNote)) {
+        entry.notes.push(trimmedNote);
+      }
+    } else {
+      mapData.entries.push({ match: 'exact', notes: [trimmedNote], room: trimmedRoom, building: trimmedBuilding });
+      isNew = true;
+    }
+
+    try {
+      fs.writeFileSync(NOTE_LOCATION_MAP_PATH, JSON.stringify(mapData, null, 2), 'utf8');
+    } catch (e) { res.status(500).json({ error: 'Failed to write note-location-map.json: ' + e.message }); return; }
+
+    // Sync all courses that have a week with this exact note
+    const courseIds = getAllCourseIds();
+    const syncedIds = [];
+    for (const courseId of courseIds) {
+      const p = resolveCoursePath(courseId);
+      if (!p) continue;
+      let data;
+      try { data = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) { continue; }
+      const weeks = Array.isArray(data.weeks) ? data.weeks : [];
+      const hasNote = weeks.some(w => w.note && w.note.trim() === trimmedNote);
+      if (!hasNote) continue;
+      try { syncSingleCourse(courseId); syncedIds.push(courseId); } catch (e) { console.error(`[note-map] sync failed for ${courseId}:`, e.message); }
+    }
+
+    audit(req, 'note_location_map', null, `Added note mapping: "${trimmedNote}" → room "${trimmedRoom}", building "${trimmedBuilding}" (synced ${syncedIds.length} courses)`, { note: trimmedNote, room: trimmedRoom, building: trimmedBuilding, isNew, syncedCourseIds: syncedIds });
+    res.json({ ok: true, isNew, syncedCourses: syncedIds.length });
   });
   // ────────────────────────────────────────────────────────────────────────
 

@@ -11,6 +11,7 @@ import {
   Empty,
   Input,
   Layout,
+  message,
   Modal,
   Form,
   Row,
@@ -24,6 +25,7 @@ import {
 } from 'antd'
 import {
   LogoutOutlined,
+  PushpinOutlined,
   SearchOutlined,
 } from '@ant-design/icons'
 import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
@@ -234,6 +236,7 @@ function AdminApp() {
   const [batchEditChecked, setBatchEditChecked] = React.useState(false)
   const [batchEditCount, setBatchEditCount] = React.useState<{ matches: { courseId: string; title: string; weeks: unknown[] }[]; totalWeeks: number } | null>(null)
   const [batchEditSaving, setBatchEditSaving] = React.useState(false)
+  const [noteMapSaving, setNoteMapSaving] = React.useState(false)
   const [editForm] = Form.useForm()
   const [buildingEditState, setBuildingEditState] = React.useState<BuildingEditState | null>(null)
   const [buildingEditSaving, setBuildingEditSaving] = React.useState(false)
@@ -1040,6 +1043,35 @@ function AdminApp() {
     }
   }
 
+  async function handleAddToNoteMap() {
+    if (!editFileState || editFileState.weekIndex < 0) return
+    const week = (editFileState.data.weeks as WeekEntry[])[editFileState.weekIndex]
+    const note = week.note
+    if (!note) { void message.warning('This occurrence has no note text to map.'); return }
+    const values = editForm.getFieldsValue()
+    const room = (values.week_room as string) || null
+    const floorArr = Array.isArray(values.week_floor) ? values.week_floor as string[] : []
+    const floor = floorArr[0] ?? (typeof values.week_floor === 'string' ? values.week_floor : '')
+    let building = (values.week_building as string) || null
+    if (building && floor) building = `${building}, ${floor}`
+    if (!room || !building) { void message.warning('Please set a room and building first.'); return }
+    setNoteMapSaving(true)
+    try {
+      const res = await adminFetch('/api/admin/note-location-map', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ note, room, building }),
+      })
+      const result = await res.json()
+      if (!res.ok) { void message.error(result.error || 'Failed to update note-location-map'); return }
+      void message.success(`Saved to note-location-map · ${result.syncedCourses} course(s) re-synced`)
+    } catch (_) {
+      void message.error('Network error')
+    } finally {
+      setNoteMapSaving(false)
+    }
+  }
+
   const timelineMinWidth = 120 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
   const isSearchMode = !loading && deferredSearch.trim().length > 0
 
@@ -1614,13 +1646,23 @@ function AdminApp() {
                     </Checkbox>
                   </Form.Item>
                 )}
-                <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
-                  <Space>
-                    <Button onClick={() => setEditFileState(null)}>Cancel</Button>
-                    <Button type="primary" htmlType="submit" loading={editFileSaving || batchEditSaving}>
-                      {batchEditChecked ? 'Save to all matching' : 'Save to overrides'}
+                <Form.Item style={{ marginBottom: 0 }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                    <Button
+                      icon={<PushpinOutlined />}
+                      loading={noteMapSaving}
+                      onClick={handleAddToNoteMap}
+                      title="Add the note text of this occurrence as a mapping key in note-location-map.json so other courses with the same note auto-resolve to this room/building"
+                    >
+                      Add note to map
                     </Button>
-                  </Space>
+                    <Space>
+                      <Button onClick={() => setEditFileState(null)}>Cancel</Button>
+                      <Button type="primary" htmlType="submit" loading={editFileSaving || batchEditSaving}>
+                        {batchEditChecked ? 'Save to all matching' : 'Save to overrides'}
+                      </Button>
+                    </Space>
+                  </div>
                 </Form.Item>
               </Form>
             )

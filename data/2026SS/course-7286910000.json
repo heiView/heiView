@@ -20,7 +20,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via"
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
       "day_of_week": 5,
@@ -32,7 +32,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via"
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
       "day_of_week": 5,
@@ -44,7 +44,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via"
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
       "day_of_week": 5,
@@ -56,7 +56,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via"
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
       "day_of_week": 1,
@@ -68,11 +68,11 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "ATTENTION: this session is on a different weekday (Monday) than the previous sessions (Fridays). Location"
+      "note": "ATTENTION: this session is on a different weekday (Monday) than the previous sessions (Fridays). Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407920",
   "exceptions": [],
   "notes": "",
-  "last_updated": "2026-04-14T16:11:03Z"
+  "last_updated": "2026-04-20T13:57:15Z"
 }
