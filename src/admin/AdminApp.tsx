@@ -1090,9 +1090,31 @@ function AdminApp() {
                   </a>
                   <Tag color="orange" style={{ marginLeft: 8, fontWeight: 600 }}>Admin</Tag>
                 </div>
+                <Select
+                  size="large"
+                  value={selectedCampus}
+                  options={CAMPUS_OPTIONS.map((c) => ({ value: c, label: formatCampusOptionLabel(c) }))}
+                  popupMatchSelectWidth={false}
+                  popupClassName="hei-campus-dropdown"
+                  onChange={(v) => setSelectedCampus(v as Campus)}
+                  className="hei-topbar-campus"
+                />
+                <Select
+                  size="large"
+                  value={activeBuildingId || undefined}
+                  placeholder="No building selected"
+                  options={filteredBuildingOptions.map(({ campus, ...o }) => o)}
+                  popupMatchSelectWidth={false}
+                  onChange={(v) => setSelectedBuilding(v)}
+                  disabled={filteredBuildingOptions.length === 0}
+                  className="hei-topbar-building"
+                  virtual={false}
+                  listHeight={500}
+                  popupClassName="hei-building-dropdown-multi"
+                />
               </div>
 
-              <div className="hei-topbar-center">
+              <Space size="middle" wrap align="center" className="hei-toolbar-actions">
                 <DatePicker
                   size="large"
                   allowClear={false}
@@ -1104,16 +1126,13 @@ function AdminApp() {
                   }}
                   className="hei-topbar-date"
                 />
-              </div>
-
-              <Space size="middle" wrap align="center" className="hei-toolbar-actions">
                 <DarkModeButton className="hei-toolbar-icon-button" />
                 <Input
                   size="large"
                   allowClear
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  placeholder="Room, course, or lecturer"
+                  placeholder="Course or lecturer"
                   suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
                   className="hei-toolbar-search"
                 />
@@ -1183,28 +1202,6 @@ function AdminApp() {
             <section className="hei-board-card">
               <div className="hei-board-controls">
                 <div className="hei-campus-building-row">
-                  <Select
-                    size="large"
-                    value={selectedCampus}
-                    options={CAMPUS_OPTIONS.map((c) => ({ value: c, label: formatCampusOptionLabel(c) }))}
-                    popupMatchSelectWidth={false}
-                    popupClassName="hei-campus-dropdown"
-                    onChange={(v) => setSelectedCampus(v as Campus)}
-                    className="hei-topbar-campus"
-                  />
-                  <Select
-                    size="large"
-                    value={activeBuildingId || undefined}
-                    placeholder="No building selected"
-                    options={filteredBuildingOptions.map(({ campus, ...o }) => o)}
-                    popupMatchSelectWidth={false}
-                    onChange={(v) => setSelectedBuilding(v)}
-                    disabled={filteredBuildingOptions.length === 0}
-                    className="hei-control-select"
-                    virtual={false}
-                    listHeight={500}
-                    popupClassName="hei-building-dropdown-multi"
-                  />
                   <Button
                     size="large"
                     disabled={!activeBuildingId || activeBuildingId === 'No Information'}

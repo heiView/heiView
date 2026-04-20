@@ -135,18 +135,10 @@ textarea {
 .hei-brand-cluster {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex: 1 1 0px;
-  min-width: max-content;
+  gap: 12px;
+  flex: 1 1 auto;
+  min-width: 0;
   justify-content: flex-start;
-}
-
-.hei-topbar-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: auto;
-  flex: 0 0 auto;
 }
 
 .hei-toolbar-actions {
@@ -261,7 +253,7 @@ textarea {
 
 .hei-toolbar-search {
   height: 40px;
-  width: 270px;
+  width: 220px;
   min-width: 150px;
   flex: 1 1 180px;
 }
@@ -334,7 +326,7 @@ textarea {
 }
 
 .hei-board-card {
-  padding: 24px 0;
+  padding: 0 0 24px;
   border-radius: 28px;
   background: var(--hei-surface) !important;
   border: 1px solid var(--hei-border) !important;
@@ -345,7 +337,7 @@ textarea {
 
 .hei-board-controls {
   margin-bottom: 10px;
-  padding: 0 24px;
+  padding: 24px 24px 0;
 }
 
 .hei-board-frame-header {
@@ -841,6 +833,12 @@ textarea {
 .hei-topbar-campus {
   flex: 0 0 180px !important;
   width: 180px !important;
+}
+
+.hei-topbar-building {
+  flex: 0 1 250px !important;
+  width: 250px !important;
+  min-width: 140px !important;
 }
 
 .hei-control-select {

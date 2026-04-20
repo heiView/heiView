@@ -75,7 +75,7 @@ const UI_TEXT = {
   empty: 'No course data is available for the selected date',
   ready: 'Ready',
   errorPrefix: 'Load failed: ',
-  searchPlaceholder: 'Room, course, or instructor',
+  searchPlaceholder: 'Course or instructor',
   selectedBuildingFallback: 'No building selected',
   noteLabel: 'Note: ',
   reportError: 'Report Error',
@@ -474,39 +474,6 @@ function App() {
                     <img src="/heiView_logo.png" alt={text.brand} className="hei-brand-logo" />
                   </a>
                 </div>
-              </div>
-
-              <div className="hei-topbar-center">
-                <DatePicker
-                  size="large"
-                  allowClear={false}
-                  value={selectedDate}
-                  onChange={(value) => setSelectedDate(value || dayjs())}
-                  className="hei-topbar-date"
-                />
-              </div>
-
-              <Space size="middle" wrap align="center" className="hei-toolbar-actions">
-                <DarkModeButton className="hei-toolbar-icon-button" />
-                <Input
-                  size="large"
-                  allowClear
-                  value={search}
-                  onChange={(event) => setSearch(event.target.value)}
-                  placeholder={text.searchPlaceholder}
-                  suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
-                  className="hei-toolbar-search"
-                />
-              </Space>
-            </div>
-          </header>
-
-          <div className="hei-shell">
-            {error && <Alert type="error" showIcon className="hei-error" message={`${text.errorPrefix}${error}`} />}
-
-            <section className="hei-board-card">
-            <div className="hei-board-controls">
-              <div className="hei-campus-building-row">
                 <Select
                   size="large"
                   value={selectedCampus}
@@ -527,12 +494,39 @@ function App() {
                   popupMatchSelectWidth={false}
                   onChange={(value) => setSelectedBuilding(value)}
                   disabled={filteredBuildingOptions.length === 0}
-                  className="hei-control-select"
+                  className="hei-topbar-building"
                   listHeight={500}
                   popupClassName="hei-building-dropdown-multi"
                 />
               </div>
+
+              <Space size="middle" wrap align="center" className="hei-toolbar-actions">
+                <DatePicker
+                  size="large"
+                  allowClear={false}
+                  value={selectedDate}
+                  onChange={(value) => setSelectedDate(value || dayjs())}
+                  className="hei-topbar-date"
+                />
+                <DarkModeButton className="hei-toolbar-icon-button" />
+                <Input
+                  size="large"
+                  allowClear
+                  value={search}
+                  onChange={(event) => setSearch(event.target.value)}
+                  placeholder={text.searchPlaceholder}
+                  suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
+                  className="hei-toolbar-search"
+                />
+              </Space>
             </div>
+          </header>
+
+          <div className="hei-shell">
+            {error && <Alert type="error" showIcon className="hei-error" message={`${text.errorPrefix}${error}`} />}
+
+            <section className="hei-board-card">
+
 
             {!isSearchMode && (!loading && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
               <div
