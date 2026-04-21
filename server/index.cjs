@@ -82,8 +82,63 @@ const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
 const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
 const NOTE_LOCATION_MAP_PATH = path.join(ROOT, 'data', 'note-location-map.json');
+const ORG_NAME_MAP_PATH = path.join(ROOT, 'data', 'org-name-map.json');
 
 const scheduleCache = new Map(); // key -> { data, ts } — module-level so writeCatalog can clear it
+
+// ── Org synonym expansion ────────────────────────────────────────────────────
+// Maps lowercase synonym → Set<string> of all synonyms for the same org.
+// Used to expand organisation searches across English/German names and abbreviations.
+function buildOrgSynonymLookup() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(ORG_NAME_MAP_PATH, 'utf8'));
+    const lookup = new Map(); // lowerSynonym -> Set of all synonyms for this org
+    for (const entry of Object.values(raw)) {
+      const synonyms = (entry.synonyms || []).map(s =>
+        s.replace(/&amp;/g, '&')
+      );
+      const en = (entry.en || '').replace(/&amp;/g, '&');
+      const de = (entry.de || '').replace(/&amp;/g, '&');
+      const abbrev = entry.abbrev;
+      // Include "name (abbrev)" compound variants that may appear in the organisation field
+      const allVariants = new Set(synonyms);
+      if (abbrev) {
+        allVariants.add(`${en} (${abbrev})`);
+        if (de !== en) allVariants.add(`${de} (${abbrev})`);
+      }
+      for (const syn of synonyms) {
+        const key = syn.toLowerCase();
+        if (!lookup.has(key)) lookup.set(key, new Set());
+        for (const v of allVariants) lookup.get(key).add(v);
+      }
+    }
+    return lookup;
+  } catch (_) { return new Map(); }
+}
+
+const orgSynonymLookup = buildOrgSynonymLookup();
+
+// Returns extra organisation LIKE patterns for synonyms of orgs matching the query.
+function getOrgExpansionPatterns(qLower) {
+  const extraPatterns = new Set();
+  for (const [synLower, variantSet] of orgSynonymLookup) {
+    let matches = false;
+    if (synLower === qLower) {
+      // Exact synonym match (handles abbreviations like "RS", "ZMBH")
+      matches = true;
+    } else if (qLower.length >= 4 && synLower.includes(qLower)) {
+      // Query is a meaningful substring of the synonym
+      matches = true;
+    } else if (synLower.length >= 4 && qLower.includes(synLower)) {
+      // Synonym is a meaningful substring of the query
+      matches = true;
+    }
+    if (matches) {
+      for (const v of variantSet) extraPatterns.add(`%${v.toLowerCase()}%`);
+    }
+  }
+  return Array.from(extraPatterns);
+}
 
 function readCatalog() {
   try { return JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8')); } catch (_) { return { buildings: [] }; }
@@ -249,6 +304,17 @@ function createApp() {
 
     const skipSet = new Set(readSkipList().map(String));
 
+    // Expand organisation search to include synonyms (English ↔ German ↔ abbreviations)
+    const orgExpansionPatterns = getOrgExpansionPatterns(qLower);
+    const orgExpansionParams = {};
+    const orgExpansionClauses = orgExpansionPatterns.map((p, i) => {
+      orgExpansionParams[`orgP${i}`] = p;
+      return `LOWER(COALESCE(c.organisation, '')) LIKE @orgP${i}`;
+    });
+    const orgExpansionSql = orgExpansionClauses.length > 0
+      ? ' OR ' + orgExpansionClauses.join(' OR ')
+      : '';
+
     let db;
     try {
       db = openDb();
@@ -289,9 +355,10 @@ function createApp() {
           LOWER(COALESCE(c.organisation, '')) LIKE @p OR
           LOWER(COALESCE(c.further_info, '')) LIKE @p OR
           LOWER(COALESCE(o.note, '')) LIKE @p
+          ${orgExpansionSql}
         ORDER BY c.title
         LIMIT 300
-      `).all({ p: pattern, lp: lecturerPattern });
+      `).all({ p: pattern, lp: lecturerPattern, ...orgExpansionParams });
 
       // Also search building/room names
       const roomRows = db.prepare(`
