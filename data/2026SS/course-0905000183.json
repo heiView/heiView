@@ -8,6 +8,7 @@
     "Kupietz, Marc",
     "Perkuhn, Rainer"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409312",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:53Z"
+  "further_info": "Recommended Reading Lothar Lemnitzer / Heike Zinsmeister (2006, 2010, 2015): Korpuslinguistik: Eine Einführung. Tübingen: Narr. Rainer Perkuhn / Holger Keibel / Marc Kupietz (2012): Korpuslinguistik. Paderborn: Fink. (Reihe LIBAC - Linguistik für Bachelor 3433) [Inhalt dieses Buchs wird im Laufe der Veranstaltung erarbeitet.] Carmen Scherer (2006, 2014): Korpuslinguistik. Heidelberg: Universitätsverlag Winter. further information actual information",
+  "last_updated": "2026-04-21T10:06:29Z"
 }

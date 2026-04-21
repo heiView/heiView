@@ -7,6 +7,7 @@
   "lecturers": [
     "Schneider, Maria"
   ],
+  "organisation": "Seminar for German Studies",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415256",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:08:58Z"
+  "further_info": "Recommended Reading Die sechs nominierten Stücke werden nach ihrer Veröffentlichung mit den Teilnehmenden geteilt. Manfred Pfister: Das Drama. Theorie und Analyse. München: Wilhelm Fink Verlag. 11. Auflage. 2001. Kontakt: maria.schneider@heidelberg.de",
+  "last_updated": "2026-04-21T10:15:03Z"
 }

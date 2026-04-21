@@ -7,6 +7,7 @@
   "lecturers": [
     "Prüßner, Luise"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408317",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:07:24Z"
+  "further_info": "Recommended Reading Bjureberg, J. (2026). The Role of Emotion Regulation in Clinical Interventions. Annual Review of Clinical Psychology, doi: 10.1146/annurev-clinpsy-061324-072853. Lincoln, T. M., Schulze, L., & Renneberg, B. (2022). The Role of Emotion Regulation in the Characterization, Development, and Treatment of Psychopathology. Nature Reviews Psychology, 1(5), 272-286. doi: 10.1038/s44159-022-00040-4.",
+  "last_updated": "2026-04-21T10:12:10Z"
 }

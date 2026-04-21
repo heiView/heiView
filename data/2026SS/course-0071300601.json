@@ -7,6 +7,7 @@
   "lecturers": [
     "Böller, Florian"
   ],
+  "organisation": "Heidelberg Center for American Studies (HCA)",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412368",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:55:40Z"
+  "further_info": "Raum: HCA, Oculus",
+  "last_updated": "2026-04-21T09:55:52Z"
 }

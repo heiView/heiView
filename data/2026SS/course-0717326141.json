@@ -7,6 +7,7 @@
   "lecturers": [
     "Ast, Rodney"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408233",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:00:10Z"
+  "further_info": "Recommended Reading ‘The anonymous Stadiasmus of the Great Sea’, translated by Brady Kiesling with Leif Isaksen (2014). Topos Texts. DOI: https://topostext.org/work.php?work_id=217. Banchetti, Sandra, Michele R. Cataudella, Hans-Joachim Gehrke. Brill’s Companion to Ancient Geography. The Inhabited World in Greek and Roman Tradition, Leiden 2016. Brodersen, Kai. Periplus maris Erythraei, Speyer 2021. Burstein, Stanley M. Agatharchides of Cnidus. On the Erythraean Sea, 1989. Casson, Lionel. The Periplus Maris Erythraei. Text with Introduction, Translation, and Commentary, Princeton 1989. Roller, Duane. Three Ancient Geographical Treatises in Translation. Hanno, the King Nikomedes Periodos, and Avienus, London 2022. Shipley, Graham. Pseudo-Skylax’s Periplous. The Circumnavigation of the Inhabited World, Exeter 2011. Stoneman, Richard. Megasthenes’ Indica. A New Translation of the Fragments with Commentary, London 2022.",
+  "last_updated": "2026-04-21T10:22:48Z"
 }

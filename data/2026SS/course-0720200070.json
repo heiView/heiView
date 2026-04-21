@@ -7,6 +7,7 @@
   "lecturers": [
     "Helfer, Florian"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412160",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:44Z"
+  "further_info": "Recommended Reading Barth, Steffen/Haasis, Lucas/Kratz, Philipp (Hg.): Geschichte Lernen 223 (2025): Digitale Geschichtskultur. Bernsen, Daniel/Kerber, Ulf (Hrsg.): Praxishandbuch Historisches Lernen und Medienbildung im digitalen Zeitalter. Opladen/Berlin/Toronto 2017. Burkhardt, Hannes: Digitale Erinnerungskultur. Chancen und Herausforderungen für den Geschichtsunterricht, Praxis Geschichte 2/2025, S. 4–9. Hartung, Olaf/Krebs, Alexandra/Meyer-Hamme, Johannes (Hg.): Geschichtskulturen im digitalen Wandel?, Schwalbach/Ts. 2024. Noiret, Serge/Tebeau, Mark/Zaagsma, Gerben (Hg.): Handbook of Digital Public History. Berlin/Boston 2022.",
+  "last_updated": "2026-04-21T10:04:52Z"
 }

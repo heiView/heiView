@@ -7,11 +7,12 @@
   "lecturers": [
     "Vögtle, Friederike-Nora"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385675",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Szczepanowska K, Trifunovic A. Mitochondrial matrix proteases: quality control and beyond. FEBS J. 2022 Nov;289(22):7128-7146. doi: 10.1111/febs.15964. Quirós PM, Langer T, López-Otín C. New roles for mitochondrial proteases in health, ageing and disease. Nat Rev Mol Cell Biol. 2015 Jun;16(6):345-59. doi: 10.1038/nrm3984 Thursdays, biweekly,1.00 p.m.. - 2.30 p.m., INF 345, 1. floor, seminar room",
+  "last_updated": "2026-04-21T10:30:35Z"
 }

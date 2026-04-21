@@ -1,0 +1,43 @@
+{
+  "id": "9114000006",
+  "title": "PB - Seminar Abdomen II - Bildgebende Verfahren, Strahlenbehandlung, Strahlenschutz",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Herfarth, Klaus Karl-Friedrich"
+  ],
+  "organisation": "University Hospital of Radiology",
+  "start_date": "2026-06-11",
+  "end_date": "2026-06-11",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/382748",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:35:24Z"
+}

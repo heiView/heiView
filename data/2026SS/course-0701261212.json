@@ -7,6 +7,7 @@
   "lecturers": [
     "Schmidt-Boddy, Philipp"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-05-05",
   "end_date": "2026-07-14",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413552",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:35Z"
+  "further_info": "Das Seminar findet alle 14 Tage 3-stündig statt, Beginn 5. Mai., mit einem Nachholtermin nach Absprache.",
+  "last_updated": "2026-04-21T10:03:18Z"
 }

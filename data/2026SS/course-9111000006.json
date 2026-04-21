@@ -7,6 +7,7 @@
   "lecturers": [
     "Purrucker, Jan"
   ],
+  "organisation": "Neurological Clinic",
   "start_date": "2026-03-16",
   "end_date": "2026-07-10",
   "weeks": [
@@ -116,7 +117,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Anmeldung per Mail an: HeiCuMed.NEU@med.uni-heidelberg.de; Ort: Marsilius-Arkaden, Foyer im 1. OG,"
+      "note": "Anmeldung per Mail an: HeiCuMed.NEU@med.uni-heidelberg.de; Ort: Marsilius-Arkaden, Foyer im 1. OG, Turm Süd, INF 130.2 (vor K13); Mindestteilnehmerzahl:"
     },
     {
       "day_of_week": 5,
@@ -164,7 +165,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Anmeldung über Moodle; Ort: Marsilius-Arkaden, Foyer im 1. OG, Turm Süd, INF 130.2 (vor K13); Mindestteilnehmerzahl:"
+      "note": "Anmeldung über Moodle; Ort: Marsilius-Arkaden, Foyer im 1. OG, Turm Süd, INF 130.2 (vor K13); Mindestteilnehmerzahl: 5"
     },
     {
       "day_of_week": 3,
@@ -176,11 +177,11 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Anmeldung per Mail an: HeiCuMed.NEU@med.uni-heidelberg.de; Ort: Marsilius-Arkaden, Foyer im 1. OG; Turm"
+      "note": "Anmeldung per Mail an: HeiCuMed.NEU@med.uni-heidelberg.de; Ort: Marsilius-Arkaden, Foyer im 1. OG; Turm SÜD, INF 130.2; Mindestteilnehmerzahl: 5"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393571",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:55:28Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:58:36Z"
 }

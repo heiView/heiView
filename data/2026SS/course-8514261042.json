@@ -7,6 +7,7 @@
   "lecturers": [
     "Liss, Hanna"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416149",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:54:24Z"
+  "further_info": "Recommended Reading A. Berlin/M. Z. Brettler (Hgg.),The Jewish Study Bible, Oxford 2004; H. Liss, Tanach. Lehrbuch der jüdischen Bibel, Heidelberg 42019; N. H. Tur-Sinai, Die Heilige Schrift ins Deutsche übertragen, Frankfurt/M. 1935–37 (Ndr. Neuhausen- Stuttgart 21995); J. Chr. Gertz (Hg.) Grundinformation Altes Testament: Eine Einführung in Literatur, Religion und Geschichte des Alten Testaments, Göttingen 62019. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
+  "last_updated": "2026-04-21T10:29:12Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Marquardt, Editha"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408731",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:09:39Z"
+  "further_info": "Erwartet wird eine aktive Teilnahme. Dazu gehören das Lesen von Texten, die Vorbereitung der einzelnen Sitzungen und die Beteiligung an der Diskussion. Die eigenständige Bearbeitung von Aufgaben wird vorausgesetzt. Vorbesprechung: 9.04.2025, 14.30-15.00 Uhr, Online",
+  "last_updated": "2026-04-21T10:15:08Z"
 }

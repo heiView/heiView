@@ -5,11 +5,12 @@
   "ects_credits": null,
   "course_languages": "English",
   "lecturers": [],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385690",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Young JC, Agashe VR, Siegers K, Hartl FU, Nat Rev Mol Cell Biol. 2004, 10:781-791; Pathways of chaperone-mediated protein folding in the cytosol Hartl FU, Bracher A, Hayer-Hartl M, Nature 475:324-332, 2011, Chaperones in protein folding and proteostasis",
+  "last_updated": "2026-04-21T10:39:40Z"
 }

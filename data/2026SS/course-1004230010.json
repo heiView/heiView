@@ -7,6 +7,7 @@
   "lecturers": [
     "Herbrechter, Dörthe"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405140",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:53:16Z"
+  "further_info": "Recommended Reading Die für das Seminar relevante Literatur wird Ihnen in Moodle zur Verfügung gestellt. 2LP Aktive Teilnahme sowie Vor- und Nachbereitung der Seminarsitzungen 2LP Recherche und Ergebnispräsentation während einer Gruppenarbeitsphase",
+  "last_updated": "2026-04-21T10:28:03Z"
 }

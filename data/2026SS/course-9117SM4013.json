@@ -7,11 +7,12 @@
   "lecturers": [
     "Wabnitz, Guido"
   ],
+  "organisation": "Zentrum für Infektiologie",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415386",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading 1. \"Cellular and Molecular Immunology\" by Abul K. Abbas, Andrew H. Lichtman, and Shiv Pillai: This book provides a comprehensive overview of immunology, including the latest understanding of innate and adaptive immunity, which is essential for studying PMNs. 2. \"Neutrophil Methods and Protocols\" edited by Mark T. Quinn and Frank R. DeLeo: A detailed guide on experimental approaches to study neutrophils, covering techniques from basic handling to advanced functional assays. 3. Neuenfeldt et al., Cell Reports, 2022: The Wabnitz group's landmark study in \"Cell Reports\" (2022) identifies a novel, pro-inflammatory CCR5+ PMN phenotype, linking it to exacerbated tissue damage in chronic inflammatory conditions and suggesting its potential as a marker for therapeutic response, particularly in the context of anti-TNF treatment failures in diseases like ulcerative colitis.",
+  "last_updated": "2026-04-21T10:28:21Z"
 }

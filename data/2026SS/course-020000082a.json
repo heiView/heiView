@@ -7,6 +7,7 @@
   "lecturers": [
     "Witteborg-Erdmann, Nika Valerie"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-23",
   "end_date": "2026-07-23",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418450",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:44:57Z"
+  "further_info": "Recommended Reading Erfolgen in der Veranstaltung The course will be held in English, if there is enough demand. The allocation of topics for the presentations will be made in the first sessions. Please see then also the papers on Moodle",
+  "last_updated": "2026-04-21T10:02:10Z"
 }

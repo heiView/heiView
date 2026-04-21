@@ -8,6 +8,7 @@
     "Lyko, Frank",
     "Raddatz, Günther"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-06-10",
   "end_date": "2026-06-12",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409433",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:04:20Z"
+  "further_info": "The seminar will be eligible for \"Wirkstoffforschung\" as well as for \"Bioinformatics\" (SPO 2022), \"Experimental Drug Research\" as well \"Data Science for Omics\" (SPO 2026)",
+  "last_updated": "2026-04-21T10:08:30Z"
 }

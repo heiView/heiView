@@ -7,6 +7,7 @@
   "lecturers": [
     "Paetzold, Anina"
   ],
+  "organisation": "Musicology Seminar",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410548",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:36:45Z"
+  "further_info": "Recommended Reading S. Chaker, „Busking in the Neo-Liberal City: A Critical Inventory of a Selection of Street Art Ordinances in Austria“, in: International Journal of Community Music (16/2), 2023, S. 155–175, <https://doi.org/10.1386/ijcm_00082_1>; S. Cohen, Sara, „Ethnography and Popular Music Studies“, in: Popular Music (12/2), 1993, S. 123–138; L. Gilman u. J. Fenn: Handbook for Folklore and Ethnomusicology Fieldwork, Bloomington (IN) 2019.",
+  "last_updated": "2026-04-21T11:47:08Z"
 }

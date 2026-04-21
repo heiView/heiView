@@ -7,6 +7,7 @@
   "lecturers": [
     "Müller, Ulrike"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-05-12",
   "end_date": "2026-06-03",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409491",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:01:45Z"
+  "further_info": "Gehört zum Vertiefungsmodul Wirkstoffforschung",
+  "last_updated": "2026-04-21T10:05:23Z"
 }

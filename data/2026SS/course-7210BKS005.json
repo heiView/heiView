@@ -7,6 +7,7 @@
   "lecturers": [
     "Centanin, Lazaro"
   ],
+  "organisation": "Centre for Organismal Studies Heidelberg (COS)",
   "start_date": "2026-07-14",
   "end_date": "2026-07-20",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416073",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:13Z"
+  "further_info": "\"WS Putative date: March 11th - 17th, 2025",
+  "last_updated": "2026-04-21T10:15:25Z"
 }

@@ -8,6 +8,7 @@
     "Fuchs, Jennifer",
     "Herpel, Christopher"
   ],
+  "organisation": "University Clinic of Dentistry",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -62,6 +63,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417250",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:08:32Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:13:41Z"
 }

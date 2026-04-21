@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Prof. Wada-Marciano), 728300.100"
   ],
+  "organisation": "Heidelberg Centre for Transcultural Studies",
   "start_date": "2026-05-29",
   "end_date": "2026-06-06",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415435",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:57:33Z"
+  "further_info": "Please note: This class is including a mandatory one-day excursion to the film festival Nippon Connection in Frankfurt on June 2nd or 3rd (to be announced in class)",
+  "last_updated": "2026-04-21T10:23:09Z"
 }

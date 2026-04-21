@@ -9,6 +9,7 @@
     "Pardo Ballester, Sara",
     "Perez Diaz, Jose Lucio"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-20",
   "end_date": "2026-07-23",
   "weeks": [
@@ -50,6 +51,18 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
+      "start_time": "16:15",
+      "end_time": "19:30",
+      "location": "HS 04 (2170.EG.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20319",
+      "room": "HS 04 (2170.EG.037)",
+      "building": "HS 04, Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
       "start_date": "2026-05-21",
       "end_date": "2026-05-28",
       "start_time": "16:15",
@@ -63,6 +76,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413946",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:50:23Z"
+  "further_info": "Recommended Reading Universo.ele intensivo B1/B2. ISBN: 978-3-19-154334-1 - zusätzliches Material anderer Lehrwerke Plataforma: Moodle, Campus Difusión y otras",
+  "last_updated": "2026-04-21T11:48:37Z"
 }

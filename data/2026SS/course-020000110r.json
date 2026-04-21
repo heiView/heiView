@@ -5,8 +5,10 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
+    "Dopf, Kilian Alexander",
     "<N.N.>(Dopf, Kilian), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-24",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409277",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:28:16Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:51:29Z"
 }

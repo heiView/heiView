@@ -7,6 +7,7 @@
   "lecturers": [
     "Joos, Felix Claudius"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -97,6 +98,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414005",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:33:12Z"
+  "further_info": "Für die Tutorien in Müsli registrieren.",
+  "last_updated": "2026-04-21T11:43:07Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Briesen, Jochen"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409508",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:44:09Z"
+  "further_info": "Recommended Reading Jay F. Rosenberg: Philosophieren. Ein Handbuch für Anfänger. Klostermann. Thomas Nagel: Was bedeutet das alles? Eine ganz kurze Einführung in die Philosophie. Reclam. Simon Blackburn: Think. A Compelling Introduction to Philosophie. Oxford University Press.",
+  "last_updated": "2026-04-21T10:40:33Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "University Hospital of Ophthalmology",
   "start_date": "2026-03-02",
   "end_date": "2026-06-19",
   "weeks": [
@@ -128,7 +129,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
       "room": "KOPF gHS (6400.EG.266)",
       "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 5,
@@ -140,7 +141,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
       "room": "KOPF gHS (6400.EG.266)",
       "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 5,
@@ -152,11 +153,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
       "room": "KOPF gHS (6400.EG.266)",
       "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399193",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:55:27Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:58:31Z"
 }

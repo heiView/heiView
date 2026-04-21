@@ -7,6 +7,7 @@
   "lecturers": [
     "Lüttin, Roman Norbert"
   ],
+  "organisation": "Musicology Seminar",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411312",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:54Z"
+  "further_info": "Recommended Reading Michele Calella: Musikalische Autorschaft. Der Komponist zwischen Mittelalter und Neuzeit, Kassel u.a. 2014; Arnold Jacobshagen u.a. (Hrsg.): Original und Fälschung. Umstrittene Autorschaft in Musik und Kunst, Würzburg 2025; Fotis Jannidis u. a. (Hrsg.): Texte zur Theorie der Autorschaft, Stuttgart 2000; Michael Wetzel: Der Autor-Künstler. Ein europäischer Gründungsmythos vom schöpferischen Individuum, Göttingen 2020.",
+  "last_updated": "2026-04-21T10:05:10Z"
 }

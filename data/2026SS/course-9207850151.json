@@ -7,6 +7,7 @@
   "lecturers": [
     "Alt-Epping, Bernd"
   ],
+  "organisation": "Clinic National Center for Tumour Diseases (NCT)",
   "start_date": "2026-07-03",
   "end_date": "2026-07-05",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417494",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:26:17Z"
+  "further_info": "Recommended Reading An- und Abreise in Eigenregie, keine Übernachtung Studierende der Humanmedizin, Zahnmedizin, Psychologie, Ethik, Theologie, Jura, u.a.; Studierende / Auszubildende der Pflege",
+  "last_updated": "2026-04-21T11:34:43Z"
 }

@@ -8,6 +8,7 @@
     "<N.N.>(Dahmen, Nicolaus), 120300.100",
     "<N.N.>(Henrich, Edmund), 120300.100"
   ],
+  "organisation": "Institute for Physical Chemistry",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414248",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:10:18Z"
+  "further_info": "ab Mittwoch, den 15. April alle 14 Tage eine volle Doppelstunde 17:00 - 19:00 Uhr",
+  "last_updated": "2026-04-21T10:16:58Z"
 }

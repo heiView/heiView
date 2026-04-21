@@ -7,6 +7,7 @@
   "lecturers": [
     "Schacht, Anastassiya"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-14",
   "end_date": "2026-07-22",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411283",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:08:18Z"
+  "further_info": "Recommended Reading NB: die vollständige Literaturliste wird zum Semesteranfang über Moodle-Plattform kommuniziert.",
+  "last_updated": "2026-04-21T10:13:23Z"
 }

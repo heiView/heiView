@@ -7,6 +7,7 @@
   "lecturers": [
     "Melber, Takuma"
   ],
+  "organisation": "Heidelberg Centre for Transcultural Studies",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415333",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:43Z"
+  "further_info": "There will be very likely 'additional time slots' for excursions - see description, to be announced in class.",
+  "last_updated": "2026-04-21T10:16:07Z"
 }

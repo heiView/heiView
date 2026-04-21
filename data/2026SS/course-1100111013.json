@@ -7,6 +7,7 @@
   "lecturers": [
     "Fuhrmann, Jan"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -85,6 +86,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414065",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T14:08:06Z"
+  "further_info": "Die Einteilung der Gruppen erfolgt in Müsli.",
+  "last_updated": "2026-04-21T11:43:08Z"
 }

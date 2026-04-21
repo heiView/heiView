@@ -10,6 +10,7 @@
     "Schindler, Daniel",
     "Schröder, Rasmus"
   ],
+  "organisation": "BioQuant",
   "start_date": "2026-04-14",
   "end_date": "2026-07-30",
   "weeks": [
@@ -40,6 +41,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412323",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:48:30Z"
+  "further_info": "Recommended Reading Meyer B Jackson, Molecular and Cellular Biophysics K. E. van Holde, W. C. Johnson & S. P. Ho, Principles of Physical Biochemistry 2nd edition, Prentice-Hall, 2006 C. Cantor & P. Schimmel, Biophysical Chemistry, Vol I, II & III, Freeman Press, 1980 V. A. Bloomfield, D. M. Crothers & I. Tinocco, Nucleic Acids Structures, Properties, and Functions, University Science Books, 2000 I. N. Serdyuk, N. R. Zaccai & J. Zaccai, Methods in Molecular Biophysics: Structure, Dynamics, Function, Cambridge, University Press, 2007 M. Daune, Molecular Biophysics, Oxford University Press, 1999 P. Nelson, Biological Physics, Freeman, 2004",
+  "last_updated": "2026-04-21T10:35:48Z"
 }

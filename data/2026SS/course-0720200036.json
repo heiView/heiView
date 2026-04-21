@@ -7,6 +7,7 @@
   "lecturers": [
     "Berg, Manfred"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411286",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:35:16Z"
+  "further_info": "Recommended Reading Michael Hochgeschwender, Die Amerikanische Revolution. Geburt einer Nation 1763-1815. München, 2016; Gordon S. Wood, The American Revolution: A History. New York, 2002; Richard D. Brown, ed., Major Problems in the Era of the American Revolution 1760-1791, Boston, 2000; Jack P. Greene, J.R. Pole, eds. A Companion to the American Revolution, Malden, MA., 2000; Charlotte Lerg, Die Amerikanische Revolution. Tübingen, 2010; Alan Gibson, Interpreting the Founding: A Guide to the Enduring Debates over the Origins and Foundations of the American Republic. Lawrence, KS, 2006.",
+  "last_updated": "2026-04-21T11:45:27Z"
 }

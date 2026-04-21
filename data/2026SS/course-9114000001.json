@@ -1,0 +1,67 @@
+{
+  "id": "9114000001",
+  "title": "PB - Fallsammlung - Bildgebende Verfahren, Strahlenbehandlung, Strahlenschutz",
+  "type": "P",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Herfarth, Klaus Karl-Friedrich"
+  ],
+  "organisation": "University Hospital of Radiology",
+  "start_date": "2026-06-11",
+  "end_date": "2026-06-12",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "13:00",
+      "end_time": "14:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/382741",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:35:18Z"
+}

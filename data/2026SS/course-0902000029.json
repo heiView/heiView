@@ -7,6 +7,7 @@
   "lecturers": [
     "Heyd, Theresa Christine"
   ],
+  "organisation": "English Department",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407547",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:54:51Z"
+  "further_info": "Recommended Reading Bucholtz, M., & Hall, K. (2016). Embodied sociolinguistics. In Nik Coupland (ed.): Sociolinguistics: theoretical debates. 173-200. Cambridge University Press. Butler, J. (1993). Bodies that matter. Routledge.",
+  "last_updated": "2026-04-21T10:26:26Z"
 }

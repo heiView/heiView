@@ -7,6 +7,7 @@
   "lecturers": [
     "Jaspert, Nikolas"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-21",
   "end_date": "2026-07-14",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410820",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:52:02Z"
+  "further_info": "Recommended Reading Gutgarts, Anna. Frankish Jerusalem: The Transformation of a Medieval City in the Latin East. Cambridge Studies in Medieval Life and Thought 123. Cambridge: Cambridge University Press, 2024. Pringle, Denys. The Churches of the Crusader Kingdom of Jerusalem. A Corpus 3: The City of Jerusalem. Cambridge: Cambridge Univ. Press, 2007. Sebag Montefiore, Simon. Jerusalem: Die Biographie. Frankfurt am Main: Fischer, 2011.",
+  "last_updated": "2026-04-21T10:29:51Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Gather, Johanna"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-15",
   "end_date": "2026-06-10",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416417",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:51Z"
+  "further_info": "Recommended Reading • Gertler, P. J., Martinez, S., Premand, P., Rawlings, L. B., & Vermeersch, C. M. J. (2016). Impact Evaluation in Practice, Second Edition. Washington, DC: World Bank. Additional reading materials and research papers will be provided during the seminar.",
+  "last_updated": "2026-04-21T10:07:49Z"
 }

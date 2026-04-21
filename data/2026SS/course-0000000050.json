@@ -7,6 +7,7 @@
   "lecturers": [
     "Moos, Peer Thorsten"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408887",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:20Z"
+  "further_info": "Recommended Reading • Reiner Anselm et al. (Hg.): Evangelische Ethik kompakt. Basiswissen in Grundbegriffen, Gütersloh 2015. • Martin Honecker: Einführung in die Theologische Ethik. Grundlagen und Grundbegriffe, Berlin/New York 1990. • Markus Düwell et al. (Hg.): Handbuch Ethik, Stuttgart 3. Aufl. 2011. • Fischer, Johannes et al.: Grundkurs Ethik : Grundbegriffe philosophischer und theologischer Ethik, 2. Aufl. Stuttgart 2008.",
+  "last_updated": "2026-04-21T11:41:01Z"
 }

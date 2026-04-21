@@ -9,6 +9,7 @@
     "Szamek, Levi",
     "Zipf, Alexander"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -27,6 +28,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413393",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:17Z"
+  "further_info": "online information course documents ECTS calculation: 1 ECTS for presence and weekly exercises (not graded), 1 ECTS for both graded tests, and 2 ECTS for the final project. ECTS will only be awarded together.",
+  "last_updated": "2026-04-21T10:15:31Z"
 }

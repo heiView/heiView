@@ -7,6 +7,7 @@
   "lecturers": [
     "Jude, Nina"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404995",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:55:06Z"
+  "further_info": "Recommended Reading Huber, M. & Döll, M. (Hrsg.) (2023). Bildungswissenschaft in Begriffen, Theorien und Diskursen. Springer. https://link.springer.com/book/10.1007/978-3-658-37858-5?page=2#toc",
+  "last_updated": "2026-04-21T09:55:15Z"
 }

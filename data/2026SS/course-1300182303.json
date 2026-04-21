@@ -1,0 +1,32 @@
+{
+  "id": "1300182303",
+  "title": "Journal Club Advanced Machine Learning (MVJC)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Hamprecht, Fred",
+    "Lippmann, Peter"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF205/R04/300"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410323",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:23:30Z"
+}

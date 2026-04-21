@@ -7,6 +7,7 @@
   "lecturers": [
     "Peltzer, Jörg Henning"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410815",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:36:07Z"
+  "further_info": "Recommended Reading Handbuch der baden-württembergischen Geschichte. Bd.1, Teile 1 und 2. P. Moraw, Von offener Verfassung zu gestalteter Verdichtung. Das Reich im späten Mittelalter 1250 bis 1490, Berlin 1985 Spezialliteratur werden wir im Seminar erarbeiten.",
+  "last_updated": "2026-04-21T11:46:26Z"
 }

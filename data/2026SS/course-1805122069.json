@@ -5,8 +5,9 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "<N.N.>(Eibisch), 180500.100"
+    "Eibisch, Jonathan"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-17",
   "end_date": "2026-06-26",
   "weeks": [
@@ -97,6 +98,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413216",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:37:23Z"
+  "further_info": "Recommended Reading - Heitmeyer, Wilhelm (2018): Autoritärer Nationalradikalismus, in: Möller, Kolja (Hrsg.) (2022): Populismus. Ein Reader, S. 300-328. - Wörsching, Mathias / Häusler, Alexander (2024): Faschismus: Begriff, Geschichte, Forschung, in: Virchow, Fabian et. al. (2024): Handbuch Rechtsextremismus. - Pelinka, Anton (2022): Faschismus. Zur Beliebigkeit eines politischen Begriffs, S. 13-37, 200-227 [-231]. - Paxton, Robert O. (2004): The Anatomy of Fascim, S. 3-20, 206-220. - Gentile, Emilio (2005): Faschism, Totalitarianism and Political Religion: Definitions and Critical Reflections on Criticism of an Interpretation, in: Griffin, Roger (Hrsg.): Faschism, Totalitarianism and Political Religion, Oxon/New York, S. 32-81. - Griffin, Roger (2020): Faschismus. Eine Einführung in die vergleichende Faschismusforschung, S. 71-84 [-103], 141-157 + 174-189, 191-201 [-213]. - Fabbri, Luigi (2022/1921): Die präventive Konterrevolution. Reflexionen über den Faschismus, S. 45-49, 54-57. 62-65, 69f., 70-82, 85-88, 92-94, 98-105, 130-137, 140ff., 146f.. -Thalheimer, August (1934): Über den Faschismus, in: Abendroth, Wolfgang et. al. (1967): Faschismus und Kapitalismus. Theorien über die sozialen Ursprünge und die Funktion des Faschismus, S. 19-38. - Bloch, Ernst (1962/1935): Faschismus als Erscheinungsform der Ungleichzeitigkeit, in Nolte, Ernst (1984): Theorie über den Faschismus, 6. Aufl., S. 182-204. - Neumann, Franz (1984 [1942]): Behemoth. Struktur und Praxis des Nationalsozialismus 1933-1944, Frankfurt a.M., S. 68-97. - Stanley, Jason (2018): How fascism works: the politics of us and them, S. xiv-xix, 57-77, 93-108, (141-155, 187-193). - Rasmussen, Mikkel Bolt (2022): Late capitalist fascism, S. 8-11, 21-29, 39-46; 65-73, 91-104, 112-132. - Amlinger, Carolin / Nachtwey, Oliver (2025): Zerstörungslust. Elemente des demokratischen Faschismus, Berlin.",
+  "last_updated": "2026-04-21T11:45:57Z"
 }

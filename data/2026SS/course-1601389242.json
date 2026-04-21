@@ -7,6 +7,7 @@
   "lecturers": [
     "Wölfl, Stefan"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-21",
   "end_date": "2026-04-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409430",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:58:19Z"
+  "further_info": "The preliminary meeting/introduction is currently scheduled for April 21, 2026, at 5:00 p.m. in INF 364, 5th floor seminar room, and online by appointment. The schedule will be determined during the preliminary meeting. The seminars will take place twice a week during the second half of the semester, tentatively on Tuesdays and Thursdays from 8:00 a.m. to 9:30 a.m. online.",
+  "last_updated": "2026-04-21T09:59:56Z"
 }

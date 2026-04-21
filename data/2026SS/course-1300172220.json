@@ -7,6 +7,7 @@
   "lecturers": [
     "Ziebert, Falko"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412785",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:49:47Z"
+  "further_info": "Recommended Reading Literature: - SH Strogatz, Nonlinear dynamics and chaos, Westview 1994 - Cross M C and Hohenberg P C, Rev. Mod. Phys. 1993. - Cross M C and Greenside H, Pattern formation and dynamics in nonequilibrium systems (Cambridge, Cambridge Univ. Press, 2009).",
+  "last_updated": "2026-04-21T10:33:52Z"
 }

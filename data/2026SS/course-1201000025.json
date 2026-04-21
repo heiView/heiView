@@ -7,6 +7,7 @@
   "lecturers": [
     "Seehafer, Kai"
   ],
+  "organisation": "Institute of Organic Chemistry",
   "start_date": "2026-08-17",
   "end_date": "2026-09-11",
   "weeks": [
@@ -20,11 +21,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7300",
       "room": "Freudenbergsaal (6271.EG.002)",
       "building": "Im Neuenheimer Feld 271, Ground floor",
-      "note": "INF 271 / FrS; Vorträge voraussichtlich in der letzten Praktikumswoche. Anmeldung: besuchen Sie im selben Semester die zugehörige Fachdidaktik bei Herrn Markus Seitz, sind Sie automatisch angemeldet. Siehe auch Lehramtsbrett (INF 270) und Hyperlink für weitere Infos."
+      "note": "INF 271 / FrS; Vorträge voraussichtlich in der letzten Praktikumswoche. Anmeldung: besuchen Sie im selben Semester die zugehörige Fachdidaktik bei Herrn Markus Seitz, sind Sie automatisch angemeldet. Siehe auch Lehramtsbrett (INF 270) und Hyperlink https://www.uni-heidelberg.de/fakultaeten/chemgeo/oci/akbunz/lab_courses.html für weitere Infos."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411993",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:27:10Z"
+  "further_info": "further information additional information Vorbesprechung: Fr. 14.08.2026, 9 - 14 Uhr, INF 252 kHS. Vorträge: 07.-10.09.26 Das Seminar zu VM_C2 leitet Herr Markus Seitz",
+  "last_updated": "2026-04-21T10:03:42Z"
 }

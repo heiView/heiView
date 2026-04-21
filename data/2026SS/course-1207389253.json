@@ -7,6 +7,7 @@
   "lecturers": [
     "Menzel, Lucas"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-23",
   "end_date": "2026-07-16",
   "weeks": [
@@ -85,6 +86,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409396",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:07:03Z"
+  "further_info": "Das Seminar richtet sich nicht nur an Studierende, die gerade ihre Abschlussarbeit anfertigen, sondern es sind auch Interessierte herzlich eingeladen.",
+  "last_updated": "2026-04-21T10:12:14Z"
 }

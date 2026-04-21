@@ -7,11 +7,61 @@
   "lecturers": [
     "Goeschl, Timo"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "organisation": "Alfred Weber Institute for Economics",
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-10",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (4140.02.215)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19286",
+      "room": "Übungsraum (4140.02.215)",
+      "building": "Bergheimer Straße 20, 2nd floor",
+      "note": "Inception Meeting"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (4140.02.215)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19286",
+      "room": "Übungsraum (4140.02.215)",
+      "building": "Bergheimer Straße 20, 2nd floor",
+      "note": "Mid-term exam"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (4140.02.215)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19286",
+      "room": "Übungsraum (4140.02.215)",
+      "building": "Bergheimer Straße 20, 2nd floor",
+      "note": "Seminar"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (4140.02.215)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19286",
+      "room": "Übungsraum (4140.02.215)",
+      "building": "Bergheimer Straße 20, 2nd floor",
+      "note": "Seminar"
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415748",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading The following four papers constitute the material for the midterm exam. [1] Aguilar-Gomez, Sandra, Holt Dwyer, Joshua Graff Zivin, Matthew Neidell (2022) This Is Air: The “Nonhealth” Effects of Air Pollution. Annual Review of Resource Economics 2022 14:1, 403-425 [2] Aldy, J. E., Auffhammer, M., Cropper, M., Fraas, A., & Morgenstern, R. (2022). Looking back at 50 years of the Clean Air Act. Journal of Economic Literature, 60(1), 179-232. [3] Brewer, D., Dench, D., & Taylor, L. O. (2023). Advances in causal inference at the intersection of air pollution and health outcomes. Annual Review of Resource Economics, 15(1), 455-469. [4] Mejino-Lopez, J. & Oliu-Barton, M. (2024). How much does Europe pay for clean air? Bruegel Working Paper 15/2024.",
+  "last_updated": "2026-04-21T10:42:17Z"
 }

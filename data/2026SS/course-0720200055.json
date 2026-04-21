@@ -7,6 +7,7 @@
   "lecturers": [
     "Prutsch, Markus Josef"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-17",
   "end_date": "2026-07-10",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412145",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:42:43Z"
+  "further_info": "Recommended Reading Graml, H. 1990. Europas Weg in den Krieg. Hitler und die Mächte 1939. München. Kennedy, P. 2013. Engineers of Victory: The Problem Solvers Who Turned the Tide in the Second World War. New York, NY. Militärgeschichtliches Forschungsamt (Hg.). 1979-2008. Das Deutsche Reich und der Zweite Weltkrieg [13 Bde.]. Stuttgart. Müller, R.-D. 2009. Militärgeschichte. Köln; Weimar; Wien.",
+  "last_updated": "2026-04-21T11:39:39Z"
 }

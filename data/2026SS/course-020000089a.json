@@ -7,6 +7,7 @@
   "lecturers": [
     "Schuhr, Jan"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-06-29",
   "end_date": "2026-06-30",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408814",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:41:44Z"
+  "further_info": "online information e-learning course",
+  "last_updated": "2026-04-21T10:44:35Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Tobler), 010000.100"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410762",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:43:45Z"
+  "further_info": "Recommended Reading Our primary course text is The Religious History of America, by Edwin Gaustad and Leigh Schmidt. Please obtain an edition published after 2002. Additional readings, including primary source documents and weblinks, will be provided via Moodle.",
+  "last_updated": "2026-04-21T10:40:02Z"
 }

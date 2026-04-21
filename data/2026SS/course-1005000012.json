@@ -7,6 +7,7 @@
   "lecturers": [
     "Wiehle, Markus"
   ],
+  "organisation": "Institute of Sports and Sports Sciences",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -145,6 +146,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414614",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:37:57Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T11:43:36Z"
 }

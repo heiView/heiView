@@ -7,6 +7,7 @@
   "lecturers": [
     "Zielinski, Filip Lukas"
   ],
+  "organisation": "Max Weber Institute for Sociology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -21,10 +22,22 @@
       "room": "Unterrichtsraum (4310.02.024)",
       "building": "Bergheimer Straße 58, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-07-20",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Unterrichtsraum (4310.02.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20517",
+      "room": "Unterrichtsraum (4310.02.025)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412973",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:58Z"
+  "further_info": "Recommended Reading Coleman, James S. 1988. „Social Capital in the Creation of Human Capital“. The American journal of sociology 94 (1988). Chicago: University of Chicago Press: S95–120. Anrechenbar für: - BA-M 2: 6 ECTS (benotet) - BA-M 9.1 oder 9.3: 2 ECTS (unbenotet), 6 ECTS (benotet) - BA-B 4: 6 ECTS (benotet) - BA-B 6: 2 ECTS (unbenotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich.",
+  "last_updated": "2026-04-21T11:48:28Z"
 }

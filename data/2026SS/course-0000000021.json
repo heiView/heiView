@@ -8,6 +8,7 @@
     "König, Melanie",
     "Lolicato, Fabio"
   ],
+  "organisation": "Heidelberg University Biochemistry Center",
   "start_date": "2026-05-11",
   "end_date": "2026-05-21",
   "weeks": [
@@ -74,6 +75,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415230",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:24:22Z"
+  "further_info": "Recommended Reading",
+  "last_updated": "2026-04-21T09:59:56Z"
 }

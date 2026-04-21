@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-20",
   "end_date": "2026-07-22",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413783",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-16T07:56:26Z"
+  "further_info": "Recommended Reading Lehrbuch wird im Kurs bekanntgegeben. Zusätzlich werden Artikel, Handouts, Podcasts, Videoaufnahmen behandelt.",
+  "last_updated": "2026-04-21T10:08:08Z"
 }

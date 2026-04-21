@@ -7,6 +7,7 @@
   "lecturers": [
     "Hagemann, Dirk"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-20",
   "end_date": "2026-07-21",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405366",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:41:12Z"
+  "further_info": "es finden 3 Gruppen zu unterschiedlichen Terminen statt (siehe Abhaltungstermine)",
+  "last_updated": "2026-04-21T10:43:45Z"
 }

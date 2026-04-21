@@ -5,8 +5,9 @@
   "ects_credits": null,
   "course_languages": "English",
   "lecturers": [
-    "<N.N.>(Kim), 180500.100"
+    "Kim, Stella Celine"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-15",
   "end_date": "2026-06-06",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413219",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:59:11Z"
+  "further_info": "Recommended Reading Baylis, J., Smith, S., Owens, P. (Eds.) (2023). The globalization of world politics, 9. Edition. Oxford: Oxford University Press. Bellamy, A., Williams, P., and Griffin, S. (2010). Understanding peacekeeping. 2nd ed. Cambridge, U.K. ; Malden, MA, U.S.A.: Polity Press. Davies, S., Pettersson, T., & Öberg, M. (2023). Organized violence 1989–2022, and the return of conflict between states. Journal of Peace Research, 60(4), 691-708. https://doi.org/10.1177/00223433231185169 Galtung, J. (1969). Violence, Peace, and Peace Research. Journal of Peace Research, 6(3), 167–191. http://www.jstor.org/stable/422690 Rioux, J., Neufeld Redekop, V. (2013). Introduction to Conflict Studies: Empirical, Theoretical and Ethical Dimensions. Oxford: Oxford University Press. Strachan, H., Scheipers S. (Eds.) (2011). The Changing Character of War. Oxford Academic. Wallensteen, P. (2003). Understanding Conflict Resolution. War, Peace and the Global System. SAGE Publications.",
+  "last_updated": "2026-04-21T10:21:39Z"
 }

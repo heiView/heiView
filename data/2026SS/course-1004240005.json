@@ -7,6 +7,7 @@
   "lecturers": [
     "Jude, Nina"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405115",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:53:19Z"
+  "further_info": "Recommended Reading CEDEFOP. Inventory of lifelong guidance systems and practices country reports. 2025 Skills Forecast Germany https://www.cedefop.europa.eu/files/skills_forecast_-_germany_2025.pdf Deutsche UNESCO Kommission. Meilensteine zur Umsetzung der Agenda Bildung 2030. https://www.unesco.de/bildung/agenda-bildung-2030/umsetzung-der-agenda European Commission. Digital Education Action Plan (2021-2027) https://education.ec.europa.eu/focus-topics/digital-education/action-plan OECD (2021). Continuing Education and Training in Germany https://www.oecd-ilibrary.org/employment/continuing-education-and-training-in-germany_1f552468-en Beatrice Rammstedt, Britta Gauly, Sanja Kapidzic, Débora B. Maehler, Silke Martin, Natascha Massing, Silke L. Schneider, Anouk Zabal. (2024). PIAAC 2023. Grundlegende Kompetenzen Erwachsener im internationalen Vergleich. Waxmann Verlag, Münster.",
+  "last_updated": "2026-04-21T10:28:07Z"
 }

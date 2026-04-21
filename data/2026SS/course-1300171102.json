@@ -7,6 +7,7 @@
   "lecturers": [
     "Schmidt, Richard"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-23",
   "weeks": [
@@ -301,6 +302,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410491",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T14:04:53Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T11:45:52Z"
 }

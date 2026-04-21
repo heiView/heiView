@@ -7,6 +7,7 @@
   "lecturers": [
     "Plack, Iris"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417123",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:32:52Z"
+  "further_info": "Recommended Reading Guidère, Mathieu (2016), Introduction à la Traductologie. 3e édition. Louvain-la-Neuve : De Boeck Supérieur. Oustinoff, Michaël (2003), La Traduction. Paris : Presses Universitaires de France (PUF). Weber Henking, Irene (2019), “Traduction des textes théoriques”, in: Bernard Banoun / Isabelle Poulin / Yves Chevrel (Hrsg.), Histoire des traductions en langue française. 20e siècle 1914-2000. Lagrasse: Verdier, 312-324.",
+  "last_updated": "2026-04-21T11:42:45Z"
 }

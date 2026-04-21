@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Dr. Laura Hering), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-06-18",
   "end_date": "2026-06-19",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416655",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:41:09Z"
+  "further_info": "Bitte melden Sie sich bis zum 13. März 2026 unter Angabe von drei Themen an. Zur Anmeldung schreiben Sie an Frau Gioseppina Klingmann (gioseppina.klingmann@jurs.uni-heidelberg.de). Bei Fragen schreiben Sie an hering@mpil.de.",
+  "last_updated": "2026-04-21T10:43:41Z"
 }

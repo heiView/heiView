@@ -8,6 +8,7 @@
     "Engler, Fabian",
     "Heinz-Fischer, Christin"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-14",
   "end_date": "2026-07-22",
   "weeks": [
@@ -86,6 +87,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408259",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:59:15Z"
+  "further_info": "Recommended Reading Backhaus, Klaus/Erichson, Bernd/Plinke, Wulff/Weiber, Rolf (2010): Multivariate Analysemethoden: Eine anwendungsorientierte Einführung: Springer. Benninghaus, Hans (2007): Deskriptive Statistik. Eine Einführung für Sozialwissenschaftler: VS Verlag. Kohler, Ulrich / Kreuter, Frauke (2016): Datenanalyse mit Stata: DeGruyter Oldenbourg. Kühnel, Steffen / Krebs, Dagmar (2012): Statistik für die Sozialwissenschaften, Reinbek bei Hamburg: Rowohlt. Wagschal, Uwe (1999): Statistik für Politikwissenschaftler: Oldenbourg. Wagschal, Uwe/Grasl, Maximilian/Jäckle, Sebastian (2012): Arbeitsbuch Empirische Politikforschung: LIT-Verlag. Wenzelburger, Georg/Jäckle, Sebastian/König, Pascal (2014): Weiterführende statistische Methoden für Politikwissenschaftler: Eine anwendungsbezogene Einführung mit Stata: De Gruyter Oldenbourg.",
+  "last_updated": "2026-04-21T10:21:43Z"
 }

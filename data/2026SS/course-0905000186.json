@@ -8,6 +8,7 @@
     "Plenz, Moritz Constantin",
     "Schuster, Jakob Thomas"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-13",
   "end_date": "2026-07-23",
   "weeks": [
@@ -74,6 +75,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409319",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:44:36Z"
+  "further_info": "Recommended Reading K. Cameron Newham (2005). \"Learning the bash Shell, 3rd Edition\". O'Reilly J. Ernesti & P. Kaiser (2012). \"Python 3: Das umfassende Handbuch\". Rheinwerk E. Freeman et al. (2004). \"Head First Design Patterns\". O'Reilly E. Gamma et al. (1994). \"Design Patterns. Elements of Reusable Object-Oriented Software\". Addison-Wesley Longman B. Öggl & M. Kofler (2022). \"Git - Projektverwaltung für Entwickler und DevOps-Teams\". Rheinwerk further information actual information",
+  "last_updated": "2026-04-21T10:38:23Z"
 }

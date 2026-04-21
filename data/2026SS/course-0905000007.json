@@ -7,6 +7,7 @@
   "lecturers": [
     "Seibold, Constantin Marc"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409594",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:12:52Z"
+  "further_info": "Recommended Reading General background and tutorials: Jurafsky & Martin, \"Speech and Language Processing\" (3rd ed., online): https://web.stanford.edu/~jurafsky/slp3/ Goodfellow, Bengio & Courville, \"Deep Learning\" (MIT Press): https://www.deeplearningbook.org/ scikit-learn User Guide: Clustering: https://scikit-learn.org/stable/modules/clustering.html scikit-learn User Guide: Manifold Learning & Dimensionality Reduction: https://scikit-learn.org/stable/modules/manifold.html McInnes et al., \"Understanding UMAP\" (interactive tutorial): https://pair-code.github.io/understanding-umap/ BERTopic documentation and tutorials: https://maartengr.github.io/BERTopic/ further information actual information Students must attend the introductory session where project topics are presented and groups are formed. Students are encouraged to propose their own project ideas within the seminar theme.",
+  "last_updated": "2026-04-21T10:20:16Z"
 }

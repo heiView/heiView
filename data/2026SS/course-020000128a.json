@@ -9,6 +9,7 @@
     "<N.N.>(Gallini), 020000.100",
     "<N.N.>(Petrack), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-27",
   "end_date": "2026-06-22",
   "weeks": [
@@ -63,6 +64,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417657",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:35:16Z"
+  "further_info": "Recommended Reading Literaturhinweise werden in der Vorlesung gegeben Die Veranstaltung findet nur bei mindestens 10 Teilnehmern statt. Weitere Informationen finden Sie auch unter: www.jura.uni-heidelberg.de/anwaltsorientierung",
+  "last_updated": "2026-04-21T11:49:33Z"
 }

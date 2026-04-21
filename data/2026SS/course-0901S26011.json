@@ -7,6 +7,7 @@
   "lecturers": [
     "Gubina, Oleksandra"
   ],
+  "organisation": "Seminar for German Studies",
   "start_date": "2026-04-17",
   "end_date": "2026-07-10",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408786",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:28:43Z"
+  "further_info": "Das Seminar findet als Blockveranstaltung an den folgenden Terminen statt: 17.04.: 11:15–14:45 (Einführungssitzung) 15.05.: 11:15–16:45 16.05.: 9:15–14:45 05.06.: 11:15–16:45 06.06.: 11:15–16:45 10.07.: 14:15–17:45",
+  "last_updated": "2026-04-21T11:37:46Z"
 }

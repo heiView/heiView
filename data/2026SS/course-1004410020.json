@@ -7,6 +7,7 @@
   "lecturers": [
     "Sliwka, Anne"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-21",
   "end_date": "2026-07-11",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404980",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:21:20Z"
+  "further_info": "Recommended Reading Für diesen Kurs gibt es einen Moodle-Kurs mit umfangreichen Medien/Materialien. Zum Einlesen eignet sich das folgende Buch: Heimlich, U., & Kiel, E. (Hrsg.). (2020). Studienbuch Inklusion: ein Wegweiser für die Lehrerbildung. Bad Heilbrunn: Verlag Julius Klinkhardt. Hattie, J. (2023). Visible learning, the sequel: a synthesis of over 2,100 meta-analyses relating to achievement (1. Aufl.). London ; New York: Routledge, Taylor & Francis Group. 10.4324/9781003380542",
+  "last_updated": "2026-04-21T10:29:16Z"
 }

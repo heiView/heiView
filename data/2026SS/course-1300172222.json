@@ -8,11 +8,12 @@
     "Graf, Isabella",
     "Schwarz, Ulrich"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410245",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T13:15:55Z"
+  "further_info": "Recommended Reading Phillips, R., Kondev, J., Theriot, J., & Garcia, H. G. (2012) Physical biology of the cell. Garland Science. Alberts, B., Heald, R., Johnson, A., Morgan, D., Raff, M., Roberts, K., and Walter, P. (2022). Molecular biology of the cell. WW Norton and Company. Bialek, William (2012) Biophysics: searching for principles. Princeton University Press. Alon, U. (2019). An introduction to systems biology: design principles of biological circuits. Chapman and Hall/CRC.",
+  "last_updated": "2026-04-21T09:59:59Z"
 }

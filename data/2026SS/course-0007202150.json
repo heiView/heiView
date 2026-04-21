@@ -7,6 +7,7 @@
   "lecturers": [
     "Baumann, Fabian"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409493",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:06:28Z"
+  "further_info": "Recommended Reading Bosworth, Richard James Boon (Hg.): The Oxford Handbook of Fascism, Oxford 2009. Clark, Roland: Holy Legionary Youth: Fascist Activism in Interwar Romania, Ithaca, NY 2015. Griffin, Roger: The Nature of Fascism, London 1991. Marcon, Federico: Fascism: The History of a Word, Chicago 2025. Oppermann, Paula: Thunder Cross: Fascist Antisemitism in Twentieth-Century Latvia, Madison 2025. Reichardt, Sven: Faschistische Kampfbünde: Gewalt und Gemeinschaft im italienischen Squadrismus und in der deutschen SA, Köln 2002.",
+  "last_updated": "2026-04-21T10:11:22Z"
 }

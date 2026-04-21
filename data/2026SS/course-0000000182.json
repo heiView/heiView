@@ -7,6 +7,7 @@
   "lecturers": [
     "Mautner, Martin Christian"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411076",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:55:58Z"
+  "further_info": "Recommended Reading Engemann/Lutz, Grundfragen der Predigt, Leipzig 2006; Grötzinger, Homiletik, Gütersloh 2008; Mayer-Blanck, Liturgie und Liturgik, Göttingen 3.2009; C. Albrecht, Einführung in die Liturgik, Göttingen 1995; Nejeinhuis, Liturgik, Göttingen 2012; Deeg, Das äußere Wort und seine liturgische Gestalt, Göttingen 2012; Agende I der Evangelischen Landeskirche in Baden",
+  "last_updated": "2026-04-21T10:27:55Z"
 }

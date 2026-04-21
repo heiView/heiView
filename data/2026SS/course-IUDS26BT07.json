@@ -7,6 +7,7 @@
   "lecturers": [
     "Stewart, John"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416774",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:24Z"
+  "further_info": "Recommended Reading Esselink, Bert. A Practical Guide to Software Localization for translators, engineers and project managers. Amsterdam: Benjamins, 1998. Bernal-Merino, Miguel. Translation and Localisation in Video Games: Making Entertainment Software Global. New York: Routledge, reading 2015. Chandler, Heather and Stephanie Deming. The Game Localization Handbook, second edition. Sudbury, MA: Jones & Bartlett Learning, 2012.",
+  "last_updated": "2026-04-21T11:48:23Z"
 }

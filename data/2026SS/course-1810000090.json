@@ -7,6 +7,7 @@
   "lecturers": [
     "Conrad, Christian"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-13",
   "end_date": "2026-07-22",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409139",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:51Z"
+  "further_info": "Recommended Reading Angrist, J.D., Pischke, J.-S., 2015. Mastering `Metrics’: The Path from Cause to Effect. Princeton University Press. Angrist, J.D., Pischke, J.-S., 2009. Mostly Harmless Econometrics. An Empiricist's Companion. Princeton University Press. Cunningham, S., 2021. Causal Inference: The Mixtape. Yale University Press. https://mixtape.scunning.com/ Huntington-Klein, N., (2022). The Effect: An Introduction to Research Design and Causality. Chapman and Hall/CRC. https://theeffectbook.net/ Stock, J. H., Watson, M. W., 2020. Introduction to Econometrics. Pearson. Wooldridge, J. M., 2019. Introductory Econometrics. Cengage Learning.",
+  "last_updated": "2026-04-21T10:07:50Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Neumann, Boris"
   ],
+  "organisation": "heiSKILLS - Study Skills & Teaching",
   "start_date": "2026-04-13",
   "end_date": "2026-04-13",
   "weeks": [
@@ -20,11 +21,11 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "Dieser Kurs ist ein vollständiger Selbstlernkurs. Der angegebene Termin markiert lediglich den Startpunkt,"
+      "note": "Dieser Kurs ist ein vollständiger Selbstlernkurs. Der angegebene Termin markiert lediglich den Startpunkt, ab dem Sie mit dem Kurs beginnen können. Sie haben die Freiheit, sich Ihre Zeit für die Bearbeitung selbst einzuteilen. Alle erforderlichen Leistungen müssen jedoch bis zum Ende des Semesters erbracht werden. Dazu gehört das Hochladen und Bearbeiten von Aufgaben im Moodle-Kurs. Weitere Informationen finden Sie direkt im Moodle-Kurs."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414813",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:54Z"
+  "further_info": "Sollte das Studium aufgrund individueller Bedürfnisse oder Beeinträchtigungen für Sie mit besonderen Herausforderungen verbunden sein, informieren Sie bitte die zuständige Lehrperson vorab bzw. zu Beginn der Lehrveranstaltung. Sehr gerne können wir dann gemeinsam besprechen, wie eine barrierefreie Teilnahme an der Lehrveranstaltung sowie das Erbringen von Prüfungsleistungen gestaltet werden kann. Für Fragen zur barrierefreien Lehre, zum Nachteilsausgleich bei Prüfungen sowie zu Unterstützungsmöglichkeiten an der Universität Heidelberg stehen Ihnen auch Susanne Kemmer und Julia Heyne (Studienberaterinnen) und Christoph Schlomach (Beauftragter für Studierende mit Behinderung und chronischer Erkrankung), gerne zur Verfügung. E-Mail: inklusiv.studieren@uni-heidelberg.de Wichtiger Hinweis: Wir haben festgestellt, dass die Unverbindlichkeit bei Anmeldungen zu unseren Kursen und Veranstaltungen zunimmt. Dies erschwert unsere Planungen erheblich. Unser Ziel ist es, auch weiterhin ein kostenloses Kursangebot ohne No-Show-Gebühren für Sie bereitzustellen. Dies ist jedoch langfristig nur möglich, wenn Ihre Anmeldungen verbindlich erfolgen. Bitte melden Sie sich daher vor Kursbeginn verbindlich an oder ab. Vielen Dank für Ihr Verständnis und Ihre Unterstützung!",
+  "last_updated": "2026-04-21T10:43:23Z"
 }

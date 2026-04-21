@@ -7,6 +7,7 @@
   "lecturers": [
     "Evers, Jörg"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -59,15 +60,15 @@
       "note": null
     },
     {
-      "day_of_week": 2,
-      "start_date": "2026-04-21",
-      "end_date": "2026-07-14",
-      "start_time": "14:15",
-      "end_time": "16:00",
-      "location": "Übungsraum (8010.01.105)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16711",
-      "room": "Übungsraum (8010.01.105)",
-      "building": "Philosophenweg 12, 1st floor",
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-07-15",
+      "start_time": "16:15",
+      "end_time": "18:00",
+      "location": "Unterrichtsraum (6227.01.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14077",
+      "room": "Unterrichtsraum (6227.01.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
       "note": null
     },
     {
@@ -85,6 +86,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410216",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:28:14Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:51:11Z"
 }

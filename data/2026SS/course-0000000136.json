@@ -7,6 +7,7 @@
   "lecturers": [
     "Stoellger, Philipp"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410793",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:32:10Z"
+  "further_info": "Recommended Reading W. Pannenberg, Anthropologie in theologischer Perspektive, Göttingen 1983; G. Ebeling, Disputatio de homine, 3 Bde., Tübingen 1977-1989; H. Plessner, Die Stufen des Organischen und der Mensch. Einleitung in die philosophische Anthropologie, Gesammelte Schriften IV, Frankfurt a.M. 1981; E. Lévinas, Humanismus des anderen Menschen, Hamburg 1989.",
+  "last_updated": "2026-04-21T11:38:52Z"
 }

@@ -1,30 +1,18 @@
 {
   "id": "IUDS26BU46",
-  "title": "Aufbaukurs Informationstechnologien",
+  "title": "Aufbaukurs Informationstechnologien (KURS ENTFÄLLT!)",
   "type": "PC",
   "ects_credits": "3",
   "course_languages": "German",
   "lecturers": [
     "Mayer-Dewor, Maurice"
   ],
-  "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
-      "start_time": "08:30",
-      "end_time": "10:00",
-      "location": "EDV-Übungsraum (3051.01.107)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19863",
-      "room": "EDV-Übungsraum (3051.01.107)",
-      "building": "Plöck 57a, 1st floor",
-      "note": null
-    }
-  ],
+  "organisation": "The Institute for Translation and Interpreting",
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417028",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:54:54Z"
+  "further_info": "Recommended Reading Begleitende Kursmaterialien werden über Moodle zur Verfügung gestellt.",
+  "last_updated": "2026-04-21T09:54:51Z"
 }

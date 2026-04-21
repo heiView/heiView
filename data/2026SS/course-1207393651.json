@@ -7,6 +7,7 @@
   "lecturers": [
     "Bork-Hüffer, Tabea"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-21",
   "end_date": "2026-07-01",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413586",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:17:11Z"
+  "further_info": "Vorbesprechung: Online; Link wird bekannt gegeben",
+  "last_updated": "2026-04-21T10:24:10Z"
 }

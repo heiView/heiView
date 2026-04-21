@@ -7,6 +7,7 @@
   "lecturers": [
     "Werle-Schneidereit, Dirk"
   ],
+  "organisation": "Seminar for German Studies",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412751",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:06:50Z"
+  "further_info": "Das Kolloquium findet zweiwöchig in den ungeraden Kalenderwochen statt. Ergänzend hierzu erfolgt die erste Sitzung für eine kurze Vorbesprechung bereits am 14.04.26 um 16 Uhr!",
+  "last_updated": "2026-04-21T10:11:55Z"
 }

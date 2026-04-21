@@ -7,6 +7,7 @@
   "lecturers": [
     "Kiefer, Michael"
   ],
+  "organisation": "Klassische und Byzantinische Archäologie",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408924",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:43:50Z"
+  "further_info": "Recommended Reading • B. Borg, Crisis and ambition. Tombs and burial customs in third-century CE Rome (Oxford 2013) • H. Brandenburg, Die frühchristlichen Kirchen in Rom. Vom 4. bis zum 7. Jahrhundert (Regensburg 2013) • F. W. Deichmann (Hrsg.), Repertorium der christlich-antiken Sarkophage I. Rom und Ostia (Wiesbaden 1967) • V. Fiocchi Nicolai – F. Bisconti – D. Mazzoleni, Roms christliche Katakomben. Geschichte, Bilderwelt, Inschriften (Regensburg 1998) • S. Schrumpf, Bestattung und Bestattungswesen im Römischen Reich. Ablauf, soziale Dimension und ökonomische Bedeutung der Totenfürsorge im lateinischen Westen (Göttingen 2006) • J. M. C. Toynbee, Death and Burial in the Roman World (Baltimore 1996) • P. Zanker – B.C. Ewald, Mit Mythen leben. Die Bilderwelt der römischen Sarkophage (München 2004)",
+  "last_updated": "2026-04-21T10:40:11Z"
 }

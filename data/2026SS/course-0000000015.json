@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Höfer, Alena), 010000.100"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413986",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:45:52Z"
+  "further_info": "Die Lehrveranstaltung findet im Büro von Prof. Bergunder statt (Karlstr. 16, Zi. 308).",
+  "last_updated": "2026-04-21T10:40:10Z"
 }

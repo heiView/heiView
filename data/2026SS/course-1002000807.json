@@ -7,13 +7,14 @@
   "lecturers": [
     "Keller, Kim Sophie"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-02",
   "weeks": [
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-02",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "ÜR E 3010 EG 022 (3010.EG.023)",
@@ -21,22 +22,10 @@
       "room": "ÜR E 3010 EG 022 (3010.EG.023)",
       "building": "Hauptstraße 47-51, Ground floor",
       "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-07-09",
-      "end_date": "2026-07-09",
-      "start_time": "14:15",
-      "end_time": "15:45",
-      "location": "Seminarraum (3020.EG.038)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
-      "room": "Seminarraum (3020.EG.038)",
-      "building": "Hauptstraße 47/51, Ground floor",
-      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407578",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:57Z"
+  "further_info": "online information e-learning course Sollte das Studium aufgrund individueller Bedürfnisse oder Beeinträchtigungen für Sie mit besonderen Herausforderungen verbunden sein, informieren Sie uns bitte vorab bzw. zu Beginn der Lehrveranstaltung. Sehr gerne können wir dann gemeinsam besprechen, wie eine barrierefreie Teilnahme an der Lehrveranstaltung sowie das Erbringen von Leistungen gestaltet werden kann. Für Fragen zur barrierefreien Lehre, zum Nachteilsausgleich bei Prüfungen sowie zu Unterstützungsmöglichkeiten an der Universität Heidelberg stehen Ihnen auch Susanne Kemmer und Julia Heyne (Studienberaterinnen) und Christoph Schlomach (Beauftragter für Studierende mit Behinderung und chronischer Erkrankung), gerne zur Verfügung. E-Mail: inklusiv.studieren@uni-heidelberg.de Sollte das Studium aufgrund individueller Bedürfnisse oder Beeinträchtigungen für Sie mit besonderen Herausforderungen verbunden sein, informieren Sie uns bitte vorab bzw. zu Beginn der Lehrveranstaltung. Sehr gerne können wir dann gemeinsam besprechen, wie eine barrierefreie Teilnahme an der Lehrveranstaltung sowie das Erbringen von Leistungen gestaltet werden kann. Für Fragen zur barrierefreien Lehre, zum Nachteilsausgleich bei Prüfungen sowie zu Unterstützungsmöglichkeiten an der Universität Heidelberg stehen Ihnen auch Susanne Kemmer und Julia Heyne (Studienberaterinnen) und Christoph Schlomach (Beauftragter für Studierende mit Behinderung und chronischer Erkrankung), gerne zur Verfügung. E-Mail: inklusiv.studieren@uni-heidelberg.de",
+  "last_updated": "2026-04-21T10:07:58Z"
 }

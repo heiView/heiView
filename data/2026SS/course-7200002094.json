@@ -7,6 +7,7 @@
   "lecturers": [
     "Fröning, Holger"
   ],
+  "organisation": "Institute of Computer Engineering (ZITI)",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416474",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:11:20Z"
+  "further_info": "Recommended Reading • G. Hager and G. Wellein: Introduction to High Performance Computing for Scientists and Engineers (Taylor & Francis Inc, 2011) • I. Goodfellow, Y. Bengio and A. Courville: Deep Learning (MIT Press, 2006) https://moodle.uni-heidelberg.de/course/view.php?id=26708. Klausur findet im gr. Hörsaal am COS, INF 230/231 am 31.07.2025 von 14-16 Uhr statt",
+  "last_updated": "2026-04-21T10:18:26Z"
 }

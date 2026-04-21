@@ -7,13 +7,14 @@
   "lecturers": [
     "<N.N.>(Inna Herlina), 100700.100"
   ],
+  "organisation": "Institute of Anthropology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Übungsraum 110.02.08 (4110.02.008)",
@@ -21,10 +22,22 @@
       "room": "Übungsraum 110.02.08 (4110.02.008)",
       "building": "Voßstraße 2, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-07-20",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419067",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:55:30Z"
+  "further_info": "online information e-learning course",
+  "last_updated": "2026-04-21T09:55:48Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Buchholz, Janine"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -20,7 +21,7 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "Ein bis zwei der nachfolgenden Termine werden in Präsenz in Raum 107 stattfinden. Diese Termine werden"
+      "note": "Ein bis zwei der nachfolgenden Termine werden in Präsenz in Raum 107 stattfinden. Diese Termine werden dann in der ersten Sitzung besprochen."
     },
     {
       "day_of_week": 5,
@@ -36,32 +37,8 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-05-29",
-      "end_date": "2026-05-29",
-      "start_time": "13:00",
-      "end_time": "17:00",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 5,
       "start_date": "2026-06-12",
       "end_date": "2026-06-12",
-      "start_time": "13:00",
-      "end_time": "17:00",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-06-26",
-      "end_date": "2026-06-26",
       "start_time": "13:00",
       "end_time": "17:00",
       "location": "Online",
@@ -96,32 +73,8 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-05-15",
-      "end_date": "2026-05-15",
-      "start_time": "13:00",
-      "end_time": "17:00",
-      "location": "Übungsraum 1. OG 107 (3041.01.007)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
-      "room": "Übungsraum 1. OG 107 (3041.01.007)",
-      "building": "Akademiestraße 3, 1st floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
       "start_date": "2026-05-29",
       "end_date": "2026-05-29",
-      "start_time": "13:00",
-      "end_time": "17:00",
-      "location": "Übungsraum 1. OG 107 (3041.01.007)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
-      "room": "Übungsraum 1. OG 107 (3041.01.007)",
-      "building": "Akademiestraße 3, 1st floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-06-12",
-      "end_date": "2026-06-12",
       "start_time": "13:00",
       "end_time": "17:00",
       "location": "Übungsraum 1. OG 107 (3041.01.007)",
@@ -141,22 +94,10 @@
       "room": "Übungsraum 1. OG 107 (3041.01.007)",
       "building": "Akademiestraße 3, 1st floor",
       "note": null
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-07-24",
-      "end_date": "2026-07-24",
-      "start_time": "13:00",
-      "end_time": "17:00",
-      "location": "Übungsraum 1. OG 107 (3041.01.007)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
-      "room": "Übungsraum 1. OG 107 (3041.01.007)",
-      "building": "Akademiestraße 3, 1st floor",
-      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411205",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:39:25Z"
+  "further_info": "Recommended Reading Döring, N. (2023). Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften. 6. vollständig überarbeitete, aktualisierte und erweiterte Auflage. Berlin: Springer. Reinders, H., Ditton, H., Gräsel, C. & Gniewosz, B. (Hrsg.) (2015). Empirische Bildungsforschung. Strukturen und Methoden. 2., überarbeitete Auflage. Springer. Aktive Teilnahme, Vorbereitung durch Lesen der Literatur, kurze mündliche Präsentationen (in Grup-penarbeit), schriftliche Ausarbeitung (in Gruppenarbeit)",
+  "last_updated": "2026-04-21T09:55:20Z"
 }

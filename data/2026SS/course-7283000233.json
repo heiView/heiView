@@ -7,6 +7,7 @@
   "lecturers": [
     "Hegenbart, Sarah"
   ],
+  "organisation": "Heidelberg Centre for Transcultural Studies",
   "start_date": "2026-04-22",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415846",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:59:39Z"
+  "further_info": "The colloquium will take place on 22 April, 6 May, 20 May, 10 June, 24 June, 8 July and 22 July.",
+  "last_updated": "2026-04-21T10:02:00Z"
 }

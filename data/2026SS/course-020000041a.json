@@ -7,6 +7,7 @@
   "lecturers": [
     "Grube, Andreas"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408776",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:54:21Z"
+  "further_info": "Recommended Reading Literaturhinweise werden in der Veranstaltung gegeben",
+  "last_updated": "2026-04-21T09:54:09Z"
 }

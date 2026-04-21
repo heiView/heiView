@@ -7,6 +7,7 @@
   "lecturers": [
     "Salmhofer, Manfred"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410283",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:54:10Z"
+  "further_info": "Recommended Reading Glimm and Jaffe, Quantum Physics Rivasseau, From Perturbative to Constructive Renormalization Salmhofer, Renormalization Various research articles, cited in class. There will be no lecture in the first week of the semester; all details about the course will be announced to registered participants via the phue system.",
+  "last_updated": "2026-04-21T10:28:59Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Peltzer, Jörg Henning"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409393",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:59:00Z"
+  "further_info": "Recommended Reading J. Schwarz, Das europäische Mittelalter, 2 Bde. (Grundkurs Geschichte), Stuttgart 2006; H. Müller, Mittelalter, Berlin 2008. Weitere Literatur wird im Rahmen der Vorlesung angegeben.",
+  "last_updated": "2026-04-21T10:21:25Z"
 }

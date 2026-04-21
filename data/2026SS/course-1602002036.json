@@ -7,6 +7,7 @@
   "lecturers": [
     "Wiegmann, Alexander"
   ],
+  "organisation": "Institute for Molecular Systems Engineering and Advanced Materials- IMSEAM",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413185",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:42:43Z"
+  "further_info": "Recommended Reading Field, A. P. (2016). An adventure in statistics: The reality enigma. London: Sage. (optional)",
+  "last_updated": "2026-04-21T10:42:12Z"
 }

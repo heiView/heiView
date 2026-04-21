@@ -7,6 +7,7 @@
   "lecturers": [
     "Salmhofer, Manfred"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -97,6 +98,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410339",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:52:26Z"
+  "further_info": "further information additional information Die Vorlesung findet als Block statt: 5 Stunden pro Woche Vorlesung bis Ende Juni, Montag 14-17 Uhr, Mittwoch 9-11 Uhr",
+  "last_updated": "2026-04-21T10:30:22Z"
 }

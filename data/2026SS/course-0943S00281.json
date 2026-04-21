@@ -7,6 +7,7 @@
   "lecturers": [
     "Biadala, Dorota"
   ],
+  "organisation": "The Institute of Slavic Studies",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409897",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:00Z"
+  "further_info": "Recommended Reading • Bartnicka, B. [u.a.]: Grammatik des Polnischen. München 2004. • Bąk, P.: Gramatyka jezyka polskiego. Warszawa 1989. • Grzegorczykowa, R.: Gramatyka współczesnego jezyka polskiego. Herausgegeben von R. Grzegorczykowa, R. Laskowski und H. Wróbel. Warszawa 1984. • Kotyczka, J.: Kurze polnische Sprachlehre. Berlin 1976. • Laskowski, R.: Polnische Grammatik. Warszawa 1979. • Skibicki, M.: Polnische Grammatik. Hamburg 2007.",
+  "last_updated": "2026-04-21T10:03:54Z"
 }

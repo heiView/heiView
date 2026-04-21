@@ -7,6 +7,7 @@
   "lecturers": [
     "Eitel, Bernhard"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413574",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:54Z"
+  "further_info": "Die Themenvergabe erfolgt per E-Mail. Alle Studierenden mit \"Fixplatz\" werden nach der Platzvergabe entsprechend informiert.",
+  "last_updated": "2026-04-21T10:39:26Z"
 }

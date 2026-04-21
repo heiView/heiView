@@ -1,0 +1,31 @@
+{
+  "id": "0000000108",
+  "title": "Gespräch statt KI: Übung für Studierende der Slavistik",
+  "type": "SE",
+  "ects_credits": "0",
+  "course_languages": "German",
+  "lecturers": [
+    "Heftrich, Urs"
+  ],
+  "organisation": "The Institute of Slavic Studies",
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "HS 02 (2170.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20446",
+      "room": "HS 02 (2170.EG.049)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409259",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-21T13:32:18Z"
+}

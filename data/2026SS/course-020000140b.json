@@ -7,6 +7,7 @@
   "lecturers": [
     "Akdag Güney, Necla"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-07-27",
   "end_date": "2026-07-31",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416580",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:23Z"
+  "further_info": "Recommended Reading werden zu Beginn der Vorlesung bekannt gegeben. Sprechstunde vor der Vorlesung IPR Raum 37",
+  "last_updated": "2026-04-21T10:05:58Z"
 }

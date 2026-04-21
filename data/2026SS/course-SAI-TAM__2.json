@@ -7,6 +7,7 @@
   "lecturers": [
     "Mohapatra, Anne-Christine"
   ],
+  "organisation": "Neusprachliche Südasienstudien",
   "start_date": "2026-04-14",
   "end_date": "2026-07-24",
   "weeks": [
@@ -21,10 +22,22 @@
       "room": "Übungsraum 010.01.14 (4010+4.01.014)",
       "building": "Voßstraße 2, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-11",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum 010.01.14 (4010+4.01.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11587",
+      "room": "Übungsraum 010.01.14 (4010+4.01.014)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379438",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:21Z"
+  "further_info": "Recommended Reading Thomas Lehmann, Lehrbuch des Tamil - Einführung in die Schrift- und Umgangssprache des Modernen Tamil, Heidelberg: SAI-Manuskript: www.sai.uni-heidelberg.de/de/abteilungen-und-aussenstellen/neusprachliche-suedasienstudien/tamil-lehrmaterialien Online Ressourcen u.a. http://learn.tamilnlp.com/ https://tamilcourse.uchicago.edu/",
+  "last_updated": "2026-04-21T11:47:49Z"
 }

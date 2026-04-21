@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Dr. Heuser, Martin), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408763",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:58:03Z"
+  "further_info": "Recommended Reading Literaturhinweise erfolgen in der Vorlesung bzw. via Moodle online information e-learning course Präsenzveranstaltung. Bitte beachten Sie etwaige Änderungsankündigungen via Moodle",
+  "last_updated": "2026-04-21T10:23:43Z"
 }

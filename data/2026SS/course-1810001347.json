@@ -7,6 +7,7 @@
   "lecturers": [
     "Vanberg, Christoph"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417498",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:28Z"
+  "further_info": "Recommended Reading Textbooks: Smaldino, Paul (2023), Modeling Social Behavior: Mathematical and Agent-Based Models of Social Dynamics and Cultural Evolution. Princeton University Press Uri Wilensky and William Rand (2015), An Introduction to Agent-Based Modeling: Modeling Natural, Social, and Engineered Complex Systems with NetLogo. MIT Press Introductory reading: Axtell, R. And J.D. Farmer (2025). Agent-Based Modeling in Economics and Finance: Past, Present, and Future. Journal of Economic Literature, 63(1), 197-287.",
+  "last_updated": "2026-04-21T09:52:50Z"
 }

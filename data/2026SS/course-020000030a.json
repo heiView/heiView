@@ -7,6 +7,7 @@
   "lecturers": [
     "Obst, Daniel"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-17",
   "end_date": "2026-07-17",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408749",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:52:08Z"
+  "further_info": "Recommended Reading Zu Beginn der Vorlesung",
+  "last_updated": "2026-04-21T09:54:17Z"
 }

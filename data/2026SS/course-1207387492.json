@@ -7,6 +7,7 @@
   "lecturers": [
     "Foshag, Kathrin"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-05-08",
   "end_date": "2026-07-21",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409596",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:49:00Z"
+  "further_info": "Weitere Informationen: Am Seminar nehmen Studierende der Universität und der Pädagogischen Hochschule teil. Verschränkungsmodul M.Ed. https://hse-heidelberg.de/nachhaltigkeit-lehren-lernen BNE-Ringvorlesung: Pädagogische Hochschule Heidelberg (ph-heidelberg.de) https://www.ph-heidelberg.de/bne-zentrum/veranstaltungen/bne-ringvorlesung/archiv/",
+  "last_updated": "2026-04-21T10:32:58Z"
 }

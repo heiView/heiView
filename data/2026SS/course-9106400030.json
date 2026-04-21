@@ -7,6 +7,7 @@
   "lecturers": [
     "Moog, Nora Katharina"
   ],
+  "organisation": "Institut für Medizinische Psychologie",
   "start_date": "2026-03-30",
   "end_date": "2026-05-28",
   "weeks": [
@@ -157,6 +158,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398518",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:09:14Z"
+  "further_info": "Die Gesamtübersicht mit allen Dozenten-Kontakten finden Sie in Moodle: https://elearning-med.uni-heidelberg.de/mod/resource/view.php?id=27477 Alle Seminartermine finden im Institut für Medizinische Psychologie statt, Bergheimer Str. 20, linker Eingang, 69115 Heidelberg",
+  "last_updated": "2026-04-21T10:14:34Z"
 }

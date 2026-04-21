@@ -7,6 +7,7 @@
   "lecturers": [
     "Braun, Bernd"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412141",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:48:12Z"
+  "further_info": "Recommended Reading Eberhard Kolb/Dirk Schumann: Die Weimarer Republik, 9. Aufl. Berlin 2022. Gottfried Niedhart: Die Außenpolitik der Weimarer Republik, 2. Aufl. München 2006. Karl Holl/Wolfram Wette (Hrsg.): Pazifismus in der Weimarer Republik, Paderborn u.a. 1981.",
+  "last_updated": "2026-04-21T10:35:26Z"
 }

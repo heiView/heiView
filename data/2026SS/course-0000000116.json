@@ -11,11 +11,49 @@
     "Patzel-Mattern, Katja",
     "Penter, Tanja"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "organisation": "ZEGK History Seminar",
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 13 (2170.02.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20616",
+      "room": "HS 13 (2170.02.018)",
+      "building": "HS 13, Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 13 (2170.02.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20616",
+      "room": "HS 13 (2170.02.018)",
+      "building": "HS 13, Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "HS 13 (2170.02.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20616",
+      "room": "HS 13 (2170.02.018)",
+      "building": "HS 13, Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409404",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:26:51Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:21:48Z"
 }

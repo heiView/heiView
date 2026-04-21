@@ -7,6 +7,7 @@
   "lecturers": [
     "Tolle, Ralf"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385689",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:46:25Z"
+  "further_info": "Das Seminar findet statt: Dienstags,18.15 - 19.45 Uhr, INF Die Vorbesprechung: Dienstag, den 14 April 2026,18.15 Uhr, INF",
+  "last_updated": "2026-04-21T10:36:36Z"
 }

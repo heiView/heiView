@@ -8,6 +8,7 @@
     "Becke, Johannes",
     "Kurtz, Joachim"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414838",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:44:38Z"
+  "further_info": "For the applicability of the course in different degree programs, please refer to the information under ‘Module / Applicability in Degree Programs’ in the Annotated Course Catalog (KVV) of the HfJS.",
+  "last_updated": "2026-04-21T10:41:18Z"
 }

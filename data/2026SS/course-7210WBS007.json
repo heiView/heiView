@@ -7,6 +7,7 @@
   "lecturers": [
     "Centanin, Lazaro"
   ],
+  "organisation": "Centre for Organismal Studies Heidelberg (COS)",
   "start_date": "2026-05-04",
   "end_date": "2026-05-07",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416089",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:39:03Z"
+  "further_info": "Bachelor Students from the 4th semester on.",
+  "last_updated": "2026-04-21T11:46:51Z"
 }

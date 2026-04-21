@@ -7,6 +7,7 @@
   "lecturers": [
     "Vanberg, Christoph"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409142",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:29:53Z"
+  "further_info": "Recommended Reading Blankart, C. (2011) Öffentliche Finanzen in der Demokratie (8. Auflage),Vahlen. Corneo, G. (2012). Öffentliche Finanzen: Ausgabenpolitik (4. Auflage),Siebeck. Homburg, S. (2010) Allgemeine Steuerlehre (6. Au), Vahlen. Wigger, B. (2006). Grundzüge der Finanzwissenschaft (2. Auflage), Springer.",
+  "last_updated": "2026-04-21T10:40:25Z"
 }

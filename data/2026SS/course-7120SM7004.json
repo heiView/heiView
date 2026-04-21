@@ -9,6 +9,7 @@
     "Schuster, Christoph",
     "Wiegert, Simon"
   ],
+  "organisation": "Interdisciplinary Center for Neurosciences (IZN)",
   "start_date": "2026-04-13",
   "end_date": "2026-05-11",
   "weeks": [
@@ -39,6 +40,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399079",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:59:23Z"
+  "further_info": "Recommended Reading Bear, Connors, Paradiso (2015) Neuroscience - Exploring the Brain (*) Kandel, Schwartz, Jessel (2013) Principles of Neural Science Purves, Augustine, Fitzpatrick (2012) Neuroscience Nicholls, Martin, Fuchs (2012) From Neuron to Brain Karnath, Thier (2012) Kognitive Neurowissenschaften Current reviews (*): around 10 copies of this book are available at the office of Victor Winter (winter@uni-heidelberg.de) for the duration of the course.",
+  "last_updated": "2026-04-21T10:21:52Z"
 }

@@ -1,54 +1,18 @@
 {
   "id": "0000000099",
-  "title": "HS KG: „Goethefreund, Berater des Zaren, begnadeter Augenarzt, Besteller-Autor und Patriarch der Erweckungsbewegung: Leben und Werk des Johann Heinrich Jung-Stilling“",
+  "title": "HS KG: „Goethefreund, Berater des Zaren, begnadeter Augenarzt, Besteller-Autor und Patriarch der Erweckungsbewegung: Leben und Werk des Johann Heinrich Jung-Stilling“ (fällt aus!)",
   "type": "SE",
   "ects_credits": "4",
   "course_languages": "German",
   "lecturers": [
     "Klein, Michael"
   ],
-  "start_date": "2026-04-18",
-  "end_date": "2026-06-13",
-  "weeks": [
-    {
-      "day_of_week": 6,
-      "start_date": "2026-04-18",
-      "end_date": "2026-04-18",
-      "start_time": "09:00",
-      "end_time": "17:00",
-      "location": "KiGa II (1200.EG.002C)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
-      "room": "KiGa II (1200.EG.002C)",
-      "building": "Kisselgasse 1, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 6,
-      "start_date": "2026-06-13",
-      "end_date": "2026-06-13",
-      "start_time": "09:00",
-      "end_time": "17:00",
-      "location": "KiGa II (1200.EG.002C)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
-      "room": "KiGa II (1200.EG.002C)",
-      "building": "Kisselgasse 1, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 6,
-      "start_date": "2026-05-09",
-      "end_date": "2026-05-09",
-      "start_time": "09:00",
-      "end_time": "17:00",
-      "location": "KiGa III (1200.02.214)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22593",
-      "room": "KiGa III (1200.02.214)",
-      "building": "Kisselgasse 1, 2nd floor",
-      "note": null
-    }
-  ],
+  "organisation": "Faculty of Theology",
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410771",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:13:10Z"
+  "further_info": "Recommended Reading Otto W. Hahn: Selig sind, die das Heimweh haben. Johann Heinrich Jung-Stilling – Patriarch der Erweckung, Gießen/Basel 1999 (Arbeitsgrundlage!)",
+  "last_updated": "2026-04-21T10:19:31Z"
 }

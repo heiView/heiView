@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Geyer), 180500.100"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-21",
   "end_date": "2026-06-27",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413230",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:00:00Z"
+  "further_info": "Recommended Reading Achour, Sabine u. a. (Hrsg.) (2020). Methodentraining für den Politikunterricht. Frankfurt/Main. Beutel, Wolfgang Beutel u. a. (Hrsg.) (2025). Monitor Demokratiebildung. Band 1: Demokratiebildung. Eine Orientierung. Frankfurt/Main. Sander, Wolfgang/Pohl, Kerstin (Hrsg.) (2022): Handbuch politische Bildung, 5. Aufl., Frankfurt/Main. Zick, Andreas u. a. (Hrsg.) (2025): Die angespannte Mitte. Rechtsextreme und demokratiegefährdende Einstellungen in Deutschland 2024/25, Bonn.",
+  "last_updated": "2026-04-21T10:03:41Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Zuber, Christopher Paul"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-13",
   "end_date": "2026-07-10",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417429",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:53:23Z"
+  "further_info": "Recommended Reading Recommended reading prior to the first meeting (ordered) Elliott, Graham and Allan Timmermann. 2008. “Economic Forecasting.” Journal of Economic Literature 46(1): 3–56. Chauvet, Marcelle and Simon Potter. 2013. “Forecasting Output.” Handbook of Economic Forecasting 2A, 141–194. Faust, Jon and Jonathan H. Wright. 2013. “Forecasting Inflation.” Handbook of Economic Forecasting 2A, 2–56. Helpful background information Elliott, Graham and Allan Timmermann. 2016. Economic Forecasting. Princeton University Press. Ghysels, Eric and Massimiliano Marcellino. 2018. Applied Economic Forecasting Using Time Series Methods. Oxford University Press.",
+  "last_updated": "2026-04-21T10:28:11Z"
 }

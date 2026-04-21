@@ -7,6 +7,7 @@
   "lecturers": [
     "Gertz, Jan Christian"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408881",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:11Z"
+  "further_info": "Recommended Reading Gängige Einleitungen und Lehrbücher: J.C. Gertz u.a., Grundinformation AT, Göttingen, 6. Aufl. 2019; T. Römer u.a. Einleitung in das Alte Testament, Zürich 2. Aufl. 2009; E. Zenger u.a., Einleitung in das Alte Testament, hg. von C. Frevel, 9. Aufl., Stuttgart 2016.",
+  "last_updated": "2026-04-21T11:40:50Z"
 }

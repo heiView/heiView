@@ -7,6 +7,7 @@
   "lecturers": [
     "Nunn, Christopher Alexander"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-05-15",
   "end_date": "2026-07-04",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410776",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:13Z"
+  "further_info": "Recommended Reading Die folgenden Titel dienen der optionalen Vertiefung einzelner Aspekte (z.B. Geschichtstheorie, KI-Ethik, epistemologische Grundlagen) und sind keinesfalls als Pflichtlektüre zu verstehen. Weitere Literatur wird in der Veranstaltung bekannt gegeben. ASSMANN, Aleida: Ist die Zeit aus den Fugen? Aufstieg und Fall des Zeitregimes der Moderne, München 2013. DE CERTEAU, Michael: Das Schreiben der Geschichte. Aus dem Französischen von Sylvia M. Schomburg-Scherff. Mit einem Nachwort von Roger Chartier, Historische Studien 4, Frankfurt a.M. 1991. CRAWFORD, Kate: Atlas der KI. Die materielle Wahrheit hinter den neuen Datenimperien. Aus dem Englischen von Frank Lachmann, München 2024. GRAMELSBERGER, Gabriele und Hans-Jörg SIGWART: Epistemologien zur Einführung, Hamburg 2025. HARTOG, François: Das antike Griechenland ist die schönste Erfindung der Neuzeit, Gunnar Hering Lectures 3, Göttingen 2021. MAYRING, Philipp: Qualitative Inhaltsanalyse. Grundlagen und Techniken, Weinheim/Basel 2022 (13. Aufl.). MÜHLHOFF, Rainer: Künstliche Intelligenz und der neue Faschismus, Ditzingen 2025 (4. Aufl.). ZWEIG, Katharina: Weiß die KI, dass sie nichts weiß? Wofür wir Chatbots und KI-Agenten nutzen sollten, wo sie sich irren und wo wir aufpassen müssen, München 2025.",
+  "last_updated": "2026-04-21T09:52:29Z"
 }

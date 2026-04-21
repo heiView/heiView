@@ -7,6 +7,7 @@
   "lecturers": [
     "Gerwien, Johannes"
   ],
+  "organisation": "Institute for German as a Foreign Language",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414684",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:12Z"
+  "further_info": "Recommended Reading Empfohlene Fachliteratur Zur Einführung: Dietrich & Gerwien (2017). Psycholinguistik – Eine Einführung, Metzler. SW-3 (6 LP) Aufbaumodul Begleitfach (6,5 LP) Certificate of Advanced Studies: Cognitive Science",
+  "last_updated": "2026-04-21T10:06:56Z"
 }

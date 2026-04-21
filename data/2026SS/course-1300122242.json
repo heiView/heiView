@@ -7,6 +7,7 @@
   "lecturers": [
     "Weidemüller, Matthias"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411271",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:13:10Z"
+  "further_info": "Recommended Reading David J.C. MacKay, Information Theory, Inference, and Learning Algorithms, Cambridge University Press (2003). Kevin P. Murphy, Probabilistic Machine Learning: An Introduction, MIT Press (2022). James P. Sethna, Statistical Mechanics: Entropy, Order Parameters, and Complexity:, Oxford University Press (2nd edition, 2021).",
+  "last_updated": "2026-04-21T10:20:40Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Puda, Ales"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-13",
   "end_date": "2026-07-22",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413808",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:32Z"
+  "further_info": "Recommended Reading Lehrbuch: Maidlová, Jana; Nekula, Marek. Tschechisch 1 kommunikativ. 2. Auflage. Schmetterling Verlag, Stuttgart 2009. Übungsbuch: Maidlová, Jana; Trnková, Eva. Tschechisch kommunikativ: Übungsbuch. 1. Auflage. Schmetterling Verlag, Stuttgart 2011. Schulgasse/Augustinergasse 6/15, Tschižewskij-Raum (219002210)",
+  "last_updated": "2026-04-21T10:03:14Z"
 }

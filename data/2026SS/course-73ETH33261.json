@@ -7,6 +7,7 @@
   "lecturers": [
     "Sprenger, Guido"
   ],
+  "organisation": "Institute of Anthropology",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416863",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:42:59Z"
+  "further_info": "Recommended Reading Literatur: Belliger, Andrea /David J. Krieger 2008 (Hrsg.) Ritualtheorien: ein einführendes Handbuch. Wiesbaden: VS Verlag für Sozialwissenschaften. Kreinath, Jens, Jan Snoek, Michael Stausberg 2006 (eds.) Theorizing Ritual: Issues, Topics, Approaches, Concepts. Leiden: Brill. Brosius, Christiane, Axel Michaels, Paula Schrode 2013 (Hrsg.) Ritual und Ritualdynamik. Göttingen: Vendenhoeck & Ruprecht. (z.T. Auszüge aus Kreinath e.a. 2006 auf Deutsch.)",
+  "last_updated": "2026-04-21T10:42:31Z"
 }

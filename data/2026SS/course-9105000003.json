@@ -7,8 +7,9 @@
   "lecturers": [
     "Lehmann, Ronny"
   ],
+  "organisation": "University Paediatric Hospital",
   "start_date": "2026-03-02",
-  "end_date": "2026-05-06",
+  "end_date": "2026-06-17",
   "weeks": [
     {
       "day_of_week": 1,
@@ -25,7 +26,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K3 Onkologie",
+      "location_link": null,
+      "room": "INF 440 - K3 Onkologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K3 Onkologie",
@@ -59,6 +72,18 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-20",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K Neonatologie",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-03-06",
       "end_date": "2026-03-20",
@@ -83,6 +108,30 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Neuropädiatrie",
+      "location_link": null,
+      "room": "INF 440 - K1 Neuropädiatrie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Neuropädiatrie",
+      "location_link": null,
+      "room": "INF 440 - K1 Neuropädiatrie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-02",
       "end_date": "2026-03-23",
@@ -97,7 +146,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Allgemein",
+      "location_link": null,
+      "room": "INF 440 - K1 Allgemein",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Allgemein",
@@ -121,7 +182,19 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-05-06",
+      "end_date": "2026-05-20",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Stoffwechsel",
+      "location_link": null,
+      "room": "INF 440 - K1 Stoffwechsel",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Stoffwechsel",
@@ -155,6 +228,30 @@
       "note": null
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-02",
       "end_date": "2026-03-23",
@@ -169,7 +266,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K2 Nephrologie",
+      "location_link": null,
+      "room": "INF 440 - K2 Nephrologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K2 Nephrologie",
@@ -193,7 +302,19 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-05-06",
+      "end_date": "2026-05-20",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Kardiologie",
+      "location_link": null,
+      "room": "INF 440 - K1 Kardiologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Kardiologie",
@@ -227,6 +348,30 @@
       "note": null
     },
     {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-18",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie IMC",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie IMC",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-08",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie IMC",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie IMC",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 4,
       "start_date": "2026-03-05",
       "end_date": "2026-03-12",
@@ -251,6 +396,18 @@
       "note": null
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Stoffwechsel",
+      "location_link": null,
+      "room": "INF 440 - K1 Stoffwechsel",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-03-06",
       "end_date": "2026-03-20",
@@ -275,6 +432,30 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Kardiologie",
+      "location_link": null,
+      "room": "INF 440 - K1 Kardiologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Kardiologie",
+      "location_link": null,
+      "room": "INF 440 - K1 Kardiologie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 3,
       "start_date": "2026-03-04",
       "end_date": "2026-03-25",
@@ -289,7 +470,19 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-05-06",
+      "end_date": "2026-05-20",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Allgemein",
+      "location_link": null,
+      "room": "INF 440 - K1 Allgemein",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Allgemein",
@@ -323,6 +516,30 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K3 Onkologie",
+      "location_link": null,
+      "room": "INF 440 - K3 Onkologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K3 Onkologie",
+      "location_link": null,
+      "room": "INF 440 - K3 Onkologie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-02",
       "end_date": "2026-03-23",
@@ -337,7 +554,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Neuropädiatrie",
+      "location_link": null,
+      "room": "INF 440 - K1 Neuropädiatrie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Neuropädiatrie",
@@ -371,6 +600,30 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Allgemein",
+      "location_link": null,
+      "room": "INF 440 - K1 Allgemein",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Allgemein",
+      "location_link": null,
+      "room": "INF 440 - K1 Allgemein",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-02",
       "end_date": "2026-03-23",
@@ -385,7 +638,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Kardiologie",
+      "location_link": null,
+      "room": "INF 440 - K1 Kardiologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Kardiologie",
@@ -409,7 +674,19 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-05-06",
+      "end_date": "2026-05-20",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Neuropädiatrie",
+      "location_link": null,
+      "room": "INF 440 - K1 Neuropädiatrie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Neuropädiatrie",
@@ -434,6 +711,30 @@
       "day_of_week": 5,
       "start_date": "2026-04-17",
       "end_date": "2026-04-24",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Stoffwechsel",
+      "location_link": null,
+      "room": "INF 440 - K1 Stoffwechsel",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Stoffwechsel",
+      "location_link": null,
+      "room": "INF 440 - K1 Stoffwechsel",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Stoffwechsel",
@@ -467,6 +768,30 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 430 - Kinderchirurgie",
+      "location_link": null,
+      "room": "INF 430 - Kinderchirurgie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 430 - Kinderchirurgie",
+      "location_link": null,
+      "room": "INF 430 - Kinderchirurgie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-02",
       "end_date": "2026-03-23",
@@ -481,7 +806,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Stoffwechsel",
+      "location_link": null,
+      "room": "INF 440 - K1 Stoffwechsel",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Stoffwechsel",
@@ -515,6 +852,30 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K2 Nephrologie",
+      "location_link": null,
+      "room": "INF 440 - K2 Nephrologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K2 Nephrologie",
+      "location_link": null,
+      "room": "INF 440 - K2 Nephrologie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-02",
       "end_date": "2026-03-23",
@@ -529,7 +890,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 430 - Kinderchirurgie",
+      "location_link": null,
+      "room": "INF 430 - Kinderchirurgie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 430 - Kinderchirurgie",
@@ -587,6 +960,30 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K3 Onkologie",
+      "location_link": null,
+      "room": "INF 440 - K3 Onkologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K3 Onkologie",
+      "location_link": null,
+      "room": "INF 440 - K3 Onkologie",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-23",
       "end_date": "2026-03-23",
@@ -602,6 +999,18 @@
       "day_of_week": 1,
       "start_date": "2026-05-04",
       "end_date": "2026-05-04",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-15",
       "start_time": "13:30",
       "end_time": "15:00",
       "location": "INF 440 - K Neonatologie",
@@ -649,7 +1058,19 @@
     {
       "day_of_week": 3,
       "start_date": "2026-05-06",
-      "end_date": "2026-05-06",
+      "end_date": "2026-05-20",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K2 Nephrologie",
+      "location_link": null,
+      "room": "INF 440 - K2 Nephrologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K2 Nephrologie",
@@ -697,7 +1118,19 @@
     {
       "day_of_week": 2,
       "start_date": "2026-05-05",
-      "end_date": "2026-05-05",
+      "end_date": "2026-05-12",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Neuropädiatrie",
+      "location_link": null,
+      "room": "INF 440 - K1 Neuropädiatrie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 440 - K1 Neuropädiatrie",
@@ -731,6 +1164,30 @@
       "note": null
     },
     {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-19",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie IMC",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie IMC",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-16",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie IMC",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie IMC",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-03-06",
       "end_date": "2026-03-20",
@@ -746,6 +1203,30 @@
       "day_of_week": 5,
       "start_date": "2026-04-17",
       "end_date": "2026-04-24",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 430 - Kinderchirurgie",
+      "location_link": null,
+      "room": "INF 430 - Kinderchirurgie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 430 - Kinderchirurgie",
+      "location_link": null,
+      "room": "INF 430 - Kinderchirurgie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "INF 430 - Kinderchirurgie",
@@ -779,6 +1260,18 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K Neonatologie IMC",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie IMC",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-03-06",
       "end_date": "2026-03-20",
@@ -794,6 +1287,30 @@
       "day_of_week": 5,
       "start_date": "2026-04-17",
       "end_date": "2026-04-24",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-22",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "location": "INF 440 - K Neonatologie",
+      "location_link": null,
+      "room": "INF 440 - K Neonatologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "13:30",
       "end_time": "15:00",
       "location": "INF 440 - K Neonatologie",
@@ -825,10 +1342,34 @@
       "room": "INF 440 - K2 Nephrologie",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K2 Nephrologie",
+      "location_link": null,
+      "room": "INF 440 - K2 Nephrologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K1 Stoffwechsel",
+      "location_link": null,
+      "room": "INF 440 - K1 Stoffwechsel",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400540",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:56:56Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:00:38Z"
 }

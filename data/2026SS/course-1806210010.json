@@ -7,6 +7,7 @@
   "lecturers": [
     "Schneickert, Christian"
   ],
+  "organisation": "Max Weber Institute for Sociology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413142",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:14Z"
+  "further_info": "Anrechenbar für: - MASoM 1: 2 ECTS (unbenotet), 4 ECTS (benotet), 6 ECTS (benotet) - MASoM 5: 2 ECTS (unbenotet), 4 ECTS (benotet), 6 ECTS (benotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich.",
+  "last_updated": "2026-04-21T11:47:42Z"
 }

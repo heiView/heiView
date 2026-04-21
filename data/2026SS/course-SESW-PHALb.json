@@ -7,6 +7,7 @@
   "lecturers": [
     "Nedlin, Kerstin"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -16,15 +17,15 @@
       "end_date": "2026-07-20",
       "start_time": "14:15",
       "end_time": "15:45",
-      "location": "Übungsraum (3120.01.105)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22613",
-      "room": "Übungsraum (3120.01.105)",
+      "location": "Übungsraum (3120.01.116)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
+      "room": "Übungsraum (3120.01.116)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414409",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:54:57Z"
+  "further_info": "Recommended Reading Mehlhorn, Grit: Möglichkeiten einer individuellen Aussprachelernberatung. Deutsch als Fremdsprache 2006; 43 (4): 228-232. Schwaiger, Helmut: Personenzentrierte Ausspracheberatung. sprechen 2016; 33 (62): 52-57. Bose, Ines / Hirschfeld, Ursula / Neuber, Baldur / Stock, Eberhard (2016): Einführung in die Sprechwissenschaft. Phonetik, Rhetorik, Sprechkunst. Narr Verlag Tübingen. Hirschfeld, Ursula/ Reinke, Kerstin (2018): Phonetik im Fach Deutsch als Fremd- und Zweitsprache. 2., neu bearbeitete Auflage. Erich Schmidt Verlag Berlin. Krech, Eva-Maria / Stock, Eberhard / Hirschfeld, Ursula / Anders, Lutz Christian (2010): Deutsches Aussprachwörterbuch. De Gruyter Verlag Berlin/New York. Raum 114 (3120.01.114)",
+  "last_updated": "2026-04-21T09:54:59Z"
 }

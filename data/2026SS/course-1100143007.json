@@ -9,6 +9,7 @@
     "Gonzalez Alvarado, Daniel Sebastian",
     "Petra, Stefania"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -27,6 +28,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417020",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:13:08Z"
+  "further_info": "further information additional information keywords: information geometry, hessian manifolds, dual flatness, entropy, divergences, kähler structure, image labeling, optimization, machine learning",
+  "last_updated": "2026-04-21T10:20:38Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Offringa, Rienk"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-06-09",
   "end_date": "2026-07-02",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409477",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:38:09Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T11:48:41Z"
 }

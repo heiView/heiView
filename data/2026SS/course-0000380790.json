@@ -10,6 +10,7 @@
     "Ludwig, Christina",
     "Szamek, Levi"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -52,6 +53,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413382",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:02:36Z"
+  "further_info": "Vorbesprechung: erste Vorlesungsstunde Voraussetzung: Bestandene Klausur zur Vorlesung Kartographie In der Exkursionswoche findet weder die VL noch die Übung statt.",
+  "last_updated": "2026-04-21T10:06:20Z"
 }

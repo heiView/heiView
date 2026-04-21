@@ -5,6 +5,7 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [],
+  "organisation": "University Hospital of Ophthalmology",
   "start_date": "2026-03-03",
   "end_date": "2026-06-17",
   "weeks": [
@@ -18,7 +19,7 @@
       "location_link": null,
       "room": "OP",
       "building": null,
-      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum"
+      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum 482"
     },
     {
       "day_of_week": 2,
@@ -30,7 +31,7 @@
       "location_link": null,
       "room": "OP",
       "building": null,
-      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum"
+      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum 482"
     },
     {
       "day_of_week": 2,
@@ -42,7 +43,7 @@
       "location_link": null,
       "room": "OP",
       "building": null,
-      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum"
+      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum 482"
     },
     {
       "day_of_week": 3,
@@ -299,14 +300,26 @@
     {
       "day_of_week": 4,
       "start_date": "2026-03-12",
-      "end_date": "2026-03-12",
+      "end_date": "2026-03-19",
       "start_time": "09:00",
       "end_time": "12:30",
       "location": "OP",
       "location_link": null,
       "room": "OP",
       "building": null,
-      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor"
+      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum 482"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "09:00",
+      "end_time": "12:30",
+      "location": "OP",
+      "location_link": null,
+      "room": "OP",
+      "building": null,
+      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum 482"
     },
     {
       "day_of_week": 3,
@@ -331,30 +344,6 @@
       "room": "OP",
       "building": null,
       "note": "Treffpunkt 1. OG, vor Raum 482"
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-03-19",
-      "end_date": "2026-03-19",
-      "start_time": "09:00",
-      "end_time": "12:30",
-      "location": "OP",
-      "location_link": null,
-      "room": "OP",
-      "building": null,
-      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum"
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-04-23",
-      "end_date": "2026-04-23",
-      "start_time": "09:00",
-      "end_time": "12:30",
-      "location": "OP",
-      "location_link": null,
-      "room": "OP",
-      "building": null,
-      "note": "Freiwillige Teilnahme nach Anmeldung über HeiCuMed.AUG@med.uni-heidelberg.de, Treffpunkt 1. OG, vor Raum"
     },
     {
       "day_of_week": 2,
@@ -443,6 +432,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399200",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:55:34Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:58:44Z"
 }

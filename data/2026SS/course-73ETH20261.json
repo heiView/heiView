@@ -7,8 +7,9 @@
   "lecturers": [
     "Sprenger, Guido"
   ],
+  "organisation": "Institute of Anthropology",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-20",
+  "end_date": "2026-07-23",
   "weeks": [
     {
       "day_of_week": 1,
@@ -21,10 +22,70 @@
       "room": "Hörsaal 010.01.05 (4010+4.01.005)",
       "building": "Hörsaal 010.01.05, Voßstraße 2, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-07-20",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "Übungsraum 110.02.08 (4110.02.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11028",
+      "room": "Übungsraum 110.02.08 (4110.02.008)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-07-20",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "Übungsraum 110.02.05 (4110.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11026",
+      "room": "Übungsraum 110.02.05 (4110.02.005)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-21",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "location": "Übungsraum 110.02.08 (4110.02.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11028",
+      "room": "Übungsraum 110.02.08 (4110.02.008)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-07-22",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "location": "Übungsraum 110.02.08 (4110.02.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11028",
+      "room": "Übungsraum 110.02.08 (4110.02.008)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "location": "Übungsraum 110.02.05 (4110.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11026",
+      "room": "Übungsraum 110.02.05 (4110.02.005)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/406095",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:28Z"
+  "further_info": "Recommended Reading Literatur: Bollig, Michael/Franz Krause 2023 Environmental Anthropology. Bern: Haupt. Carrier, James G. 2012 (ed.) A Handbook of Economic Anthropology, Second Edition. Cheltenham/Northampton: Elgar. Dove, Michael/Carol Carpenter 2008 (eds.) Environmental Anthropology: a historical reader. Oxford: Blackwell, 1-85. Mauss, Marcel, 1990 Die Gabe. Form und Funktion des Austauschs in archaischen Gesellschaften. Frankfurt am Main: Suhrkamp (11925, Essai sur le don: forme et raison de l’échange dans les sociétés archaïques. L’Année Sociologique N.S. 1 (1923-24): 30-186.)",
+  "last_updated": "2026-04-21T12:29:41Z"
 }

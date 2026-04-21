@@ -8,6 +8,7 @@
     "Sinning, Irmgard Maria",
     "Wild, Klemens"
   ],
+  "organisation": "Heidelberg University Biochemistry Center",
   "start_date": "2026-06-25",
   "end_date": "2026-07-30",
   "weeks": [
@@ -50,6 +51,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398732",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:22:33Z"
+  "further_info": "Seminarzeiten: Do ab 25.06.- 16.07. 15:00 - 16:30 Uhr SR 401, BZH INF 328 Di ab 07.07. - 28.07. 15:00 - 16:30 Uhr SR 401, BZH INF 328 Praktikumstag: Donnerstag, 30.07. 9:00 - 17:00 Uhr BZH INF 328",
+  "last_updated": "2026-04-21T10:30:49Z"
 }

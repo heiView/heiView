@@ -7,6 +7,7 @@
   "lecturers": [
     "Molnar-Gabor, Fruzsina"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413008",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:35:20Z"
+  "further_info": "Recommended Reading The course material will be developed specifically for the course and made available at the beginning of the lecture. Dates: 14.04.2026 05.05.2026 19.05.2026 26.05.2026 02.07.2026 Exams",
+  "last_updated": "2026-04-21T11:45:31Z"
 }

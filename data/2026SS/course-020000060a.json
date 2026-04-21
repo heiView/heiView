@@ -7,6 +7,7 @@
   "lecturers": [
     "Pracht, Robert"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408790",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:59:24Z"
+  "further_info": "Recommended Reading In der Veranstaltung wird eine Gesetzessammlung zu den Staats- und Verwaltungsgesetzen der Bundesrepublik Deutsch-land benötigt (z.B. dtv, Basistexte Öffentliches Recht, 37. Aufl. 2025 oder Kirchhof/Kreuter-Kirchhof, Staats- und Verwaltungs-recht Bundesrepublik Deutschland, 65. Auflag 2025). Weitere Hinweise werden in der Veranstaltung gegeben.",
+  "last_updated": "2026-04-21T10:21:53Z"
 }

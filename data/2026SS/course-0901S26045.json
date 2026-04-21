@@ -7,6 +7,7 @@
   "lecturers": [
     "Hennings, Thordis"
   ],
+  "organisation": "Seminar for German Studies",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411480",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:18Z"
+  "further_info": "Recommended Reading Die im Kurs zu übersetzenden althochdeutschen Textpassagen aus dem sog. ahd. Tatian werden auf Moodle zur Verfügung gestellt. Arbeitsbuch: R. Bergmann/C. Moulin/N. Ruge: Alt- und Mittelhochdeutsch. 11., überarbeitete Auflage. Göttingen 2023. -> online über HEIDI abrufbar Lesebuch: W. Braune: Althochdeutsches Lesebuch. Zusammengestellt und mit Wörterbuch versehen. 17. Aufl. Tübingen 2005 [alternativ: Nachdruck der Ausgabe von 1921 (Verlag Saxoniabuch 2014) oder andere ältere Auflagen]. Wörterbuch: R. Schützeichel: Althochdeutsches Wörterbuch. 7., durchgesehene und verbesserte Auflage. Tübingen 2012 [alternativ: Wörterbuchnetz: Althochdeutsches Wörterbuch: https://awb.saw-leipzig.de/].",
+  "last_updated": "2026-04-21T10:05:42Z"
 }

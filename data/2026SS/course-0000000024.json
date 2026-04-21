@@ -7,6 +7,7 @@
   "lecturers": [
     "Busch, Peter"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418699",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:12:21Z"
+  "further_info": "Recommended Reading Livesey, Nina E., The Letters of Paul in their Roman literary context: reassessing apostolic authorship, Cambridge 2024; Vinzent, Markus, Die älteste Sammlung paulinischer Briefe und die Entstehung der kanonischen Paulusbriefsammlung, Teile 1-3, Tübingen 2025",
+  "last_updated": "2026-04-21T10:19:41Z"
 }

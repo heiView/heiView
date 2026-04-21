@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Kirsten Weiss-Diener), 728950.100"
   ],
+  "organisation": "heiSKILLS - Career Service",
   "start_date": "2026-07-24",
   "end_date": "2026-08-03",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419568",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:38:09Z"
+  "further_info": "further information additional information Dozent*innen: Kirsten Weiss-Diener Kursgebühren: * 135 € für Studierende * 135 € für Doktorand*innen * 370 € für wissenschaftliche Mitarbeiter*innen",
+  "last_updated": "2026-04-21T09:53:21Z"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "9106100000",
+  "title": "WFT12-Psych- Menschenbildliche Orientierung und medizin-ethische Entscheidungsprozesse im Spannungsfeld zeitgeistiger, gesellschaftlicher Strömungen",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kick, Hermes Andreas"
+  ],
+  "organisation": "Klinik für Allgemeine Psychiatrie",
+  "start_date": "2026-05-29",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "Jaspers-Bibliothek (4270.02.235)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30179",
+      "room": "Jaspers-Bibliothek (4270.02.235)",
+      "building": "Voßstraße 4, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-29",
+      "end_date": "2026-07-17",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "Jaspers-Bibliothek (4270.02.235)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30179",
+      "room": "Jaspers-Bibliothek (4270.02.235)",
+      "building": "Voßstraße 4, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416973",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-21T11:36:59Z"
+}

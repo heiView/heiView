@@ -7,6 +7,7 @@
   "lecturers": [
     "Meisters, Stefan"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-23",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410538",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:54:59Z"
+  "further_info": "Recommended Reading Grundlage für den Sprachkurs sind Skripte (Texte-Übungen-Wortschatz-Skript <Lehrbuchskript> / Begleit-Grammatik-Skript); weitere Grammatiken, Wörterbücher, Vokabeltrainer, Hilfsmittel im Internet etc. werden Ihnen vorgestellt u. ggf. zur Anschaffung od. Leihe empfohlen.",
+  "last_updated": "2026-04-21T10:26:35Z"
 }

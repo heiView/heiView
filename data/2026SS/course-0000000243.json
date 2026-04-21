@@ -9,6 +9,7 @@
     "Brügger, Britta",
     "Nickel, Hans-Walter Karl"
   ],
+  "organisation": "Heidelberg University Biochemistry Center",
   "start_date": "2026-05-26",
   "end_date": "2026-06-12",
   "weeks": [
@@ -27,6 +28,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409577",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:10:40Z"
+  "further_info": "online information e-learning course",
+  "last_updated": "2026-04-21T09:59:32Z"
 }

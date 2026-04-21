@@ -7,6 +7,7 @@
   "lecturers": [
     "Conrad, Christian"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-24",
   "end_date": "2026-07-24",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418675",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:45:32Z"
+  "further_info": "Recommended Reading Cochrane, J.H. (2005). Writing Tips for Ph.D. Students. https://www.johnhcochrane.com/research-all/writing-tips-for-phd-studentsnbsp Cunningham, S., 2021. Causal Inference: The Mixtape. Yale University Press. https://mixtape.scunning.com/ Huntington-Klein, N., (2022). The Effect: An Introduction to Research Design and Causality. Chapman and Hall/CRC. https://theeffectbook.net/ Kole, E. (2019). Some Advice for Writing a Report or Thesis in Econometrics. https://personal.eur.nl/kole/WritingAdvice.pdf Wooldridge, J. M., 2015. Introductory Econometrics. Cengage Learning.",
+  "last_updated": "2026-04-21T11:37:33Z"
 }

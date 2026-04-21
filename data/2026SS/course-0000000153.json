@@ -7,6 +7,7 @@
   "lecturers": [
     "Maikranz, Elisabeth"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410837",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:34:52Z"
+  "further_info": "Recommended Reading - Anselm von Canterbury, Proslogion, Kap. I-IV. - Bromand, Joachim, und Guido Kreis, Gottesbeweise. Von Anselm bis Gödel, Berlin 2011. - Descartes, Rene, Meditationes de prima Philosophia, bes. Meditationen 3 und 5. - Göcke, Benedikt; Knapp, Markus (Hg.), Gotteserkenntnis und Gottesbeweise. Philosophische und theologische Zugänge, QD 320, Freiburg/Basel/Wien 2022. - Hermanni, Friedrich, Metaphysik. Versuch über letzte Fragen, Tübingen 2011, 15–92. - Thomas von Aquin, Summa Theologiae I, q.2. Weitere Literatur wird in der Übung bekannt gegeben. Die Übung ist auch im Philosophiemodul anrechenbar.",
+  "last_updated": "2026-04-21T11:41:55Z"
 }

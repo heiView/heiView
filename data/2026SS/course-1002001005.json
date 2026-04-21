@@ -7,6 +7,7 @@
   "lecturers": [
     "Beier, Susanne"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-17",
   "end_date": "2026-07-10",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412757",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:30:44Z"
+  "further_info": "von den Studierenden gewählter Lehrauftrag (LA)",
+  "last_updated": "2026-04-21T10:41:32Z"
 }

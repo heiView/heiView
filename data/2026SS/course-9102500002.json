@@ -8,6 +8,7 @@
     "Schneider, Paul Benedikt",
     "Schönberg, Gita"
   ],
+  "organisation": "Urologische Klinik",
   "start_date": "2026-04-27",
   "end_date": "2026-07-10",
   "weeks": [
@@ -381,7 +382,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
       "room": "KOPF SR 1 (6400.EG.268)",
       "building": "Im Neuenheimer Feld 400, Ground floor",
-      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien)"
+      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien) ärztliches Handeln, obligat"
     },
     {
       "day_of_week": 5,
@@ -465,7 +466,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28771",
       "room": "Seminarraum 2 (INF 420, Chirurgische Klinik, EG) (6420.EG.015)",
       "building": "Im Neuenheimer Feld 420, Ground floor",
-      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien)"
+      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien) ärztliches Handeln, obligat"
     },
     {
       "day_of_week": 2,
@@ -593,22 +594,10 @@
       "end_date": "2026-04-29",
       "start_time": "11:15",
       "end_time": "12:00",
-      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
-      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
-      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
-      "note": "obligat"
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-06-10",
-      "end_date": "2026-06-10",
-      "start_time": "11:15",
-      "end_time": "12:00",
-      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
-      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
-      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "location": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
+      "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
+      "building": "Im Neuenheimer Feld 420, Ground floor",
       "note": "obligat"
     },
     {
@@ -633,7 +622,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
       "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
       "building": "Im Neuenheimer Feld 420, Ground floor",
-      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien)"
+      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien) ärztliches Handeln, obligat"
     },
     {
       "day_of_week": 5,
@@ -645,7 +634,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28772",
       "room": "Seminarraum 3 (INF 420, Chirurgische Klinik, EG) (6420.EG.017)",
       "building": "Im Neuenheimer Feld 420, Ground floor",
-      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien)"
+      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien) ärztliches Handeln, obligat"
     },
     {
       "day_of_week": 5,
@@ -768,6 +757,18 @@
       "note": "obligat"
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "location": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
+      "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
+      "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
+      "note": "obligat"
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-06-12",
       "end_date": "2026-06-12",
@@ -789,7 +790,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28773",
       "room": "CHIR HS Neue Chirurgie (6420.EG.040)",
       "building": "CHIR HS Neue Chirurgie, Im Neuenheimer Feld 420, Ground floor",
-      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien)"
+      "note": "Einführung in die Arzt-Patienten-Beziehung, Shared-decision making und elementares (ethische Prinzipien) ärztliches Handeln, obligat"
     },
     {
       "day_of_week": 5,
@@ -830,6 +831,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402235",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:55:16Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:58:17Z"
 }

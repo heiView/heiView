@@ -7,6 +7,7 @@
   "lecturers": [
     "Wind, Christoph Nissen"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410557",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:43:34Z"
+  "further_info": "Recommended Reading Becker, U., Exegese des Alten Testaments. Ein Methoden- und Arbeitsbuch (UTB 2664), 5. Aufl., Tübingen 2021.",
+  "last_updated": "2026-04-21T10:39:51Z"
 }

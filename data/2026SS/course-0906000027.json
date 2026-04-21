@@ -7,6 +7,7 @@
   "lecturers": [
     "Klages, Hana"
   ],
+  "organisation": "Institute for German as a Foreign Language",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414739",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:00Z"
+  "further_info": "Recommended Reading Literaturhinweise werden fortlaufend auf Moodle gestellt. BA-GiK: Modul „Übergreifende Kompetenzen“ 4 LP MA-DaF/DaZ: DaF C 6 LP MA DaF/DaZ: Modul DaZ C: Schein DaZ-C-1 (4 LP)",
+  "last_updated": "2026-04-21T09:52:14Z"
 }

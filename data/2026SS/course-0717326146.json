@@ -7,6 +7,7 @@
   "lecturers": [
     "Essler, Holger"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419574",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:44:24Z"
+  "further_info": "Recommended Reading Jürgen Malitz: Nikolaos von Damaskus. Leben des Kaisers Augustus, WBG Darmstadt 2003. Klaus Bringmann, Dirk Wiegandt: Augustus. Schriften, Reden und Aussprüche, WBG Darmstadt 2008. David Wardle: Suetonius, Life of Augustus, OPU Oxford 2014.",
+  "last_updated": "2026-04-21T10:40:51Z"
 }

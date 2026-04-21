@@ -7,6 +7,7 @@
   "lecturers": [
     "Titov, Ivan"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418924",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:11Z"
+  "further_info": "Recommended Reading 1) Rodney G. Downey and Denis R. Hirschfeldt, Algorithmic Randomness and Complexity. Theory and Applications of Computability, Springer, New York, 2010. MR 2732288 2) Alexander Shen, Vladimir Andreevich Uspensky, Nikolay Vereshchagin. Kolmogorov Complexity and Algorithmic Randomness. AMS, 2017, ISBN 9781470431822 3) Klaus Weihrauch. Computable Analysis: An Introduction. Springer-Verlag, Berlin, Heidelberg, 2000. DOI:10.1007/978-3-642-56999-9",
+  "last_updated": "2026-04-21T09:52:32Z"
 }

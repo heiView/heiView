@@ -7,6 +7,7 @@
   "lecturers": [
     "Kern, Christoph"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408724",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:12:08Z"
+  "further_info": "Recommended Reading Jacoby, Zivilprozessrecht, 18. Aufl. 2022; Jauernig/Hess, Zivilprozessrecht, 30. Aufl. 2011; Meller-Hannich, Zivilprozessrecht, 3. Aufl. 2022; Murray/Stürner, German Civil Justice, 2004; Musielak/Voit, Grundkurs ZPO, 16. Aufl. 2022; Pohlmann, Zivilprozessrecht, 5. Aufl. 2022; Rosenberg/Schwab/Gottwald, Zivilprozessrecht, 18. Aufl. 2018; Schilken/Brinkmann, Zivilprozessrecht, 9. Aufl. 2026 (im Erscheinen); Schwab, Zivilprozessrecht, 6. Aufl. 2026 (im Erscheinen). online information e-learning course",
+  "last_updated": "2026-04-21T10:01:40Z"
 }

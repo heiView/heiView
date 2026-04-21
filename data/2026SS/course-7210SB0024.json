@@ -13,6 +13,7 @@
     "Pérez Acebron, Sergio",
     "Thumberger, Thomas"
   ],
+  "organisation": "Centre for Organismal Studies Heidelberg (COS)",
   "start_date": "2026-05-04",
   "end_date": "2026-05-30",
   "weeks": [
@@ -91,6 +92,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413192",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:05:48Z"
+  "further_info": "Recommended Reading Zur Vorbereitung und Versuchsbegleitung gibt es ein Skript. Wir empfehlen zusätzlich Lehrbücher der Entwicklungsbiologie zur Vertiefung des Stoffes zu nutzen.",
+  "last_updated": "2026-04-21T10:10:08Z"
 }

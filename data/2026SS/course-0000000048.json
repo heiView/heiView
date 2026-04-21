@@ -7,6 +7,7 @@
   "lecturers": [
     "Konradt, Matthias"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408885",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:32:06Z"
+  "further_info": "Recommended Reading Für die begleitende Lektüre sei verwiesen auf: Matthias Konradt, Das Evangelium nach Matthäus, NTD 1, 2. Aufl., Göttingen 2023. Eine ausführliche Literaturliste wird zu Beginn des Semesters auf Moodle zur Verfügung gestellt.",
+  "last_updated": "2026-04-21T11:38:48Z"
 }

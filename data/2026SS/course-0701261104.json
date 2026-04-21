@@ -7,6 +7,7 @@
   "lecturers": [
     "Brüllmann, Felix Philipp"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411158",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:35Z"
+  "further_info": "Recommended Reading Texte und Sekundärliteratur werden zu Beginn des Semesters bekannt gegeben. Zur ersten Einführung empfohlen: Anna Schriefl, Stoische Philosophie. Eine Einführung (Reclam).",
+  "last_updated": "2026-04-21T10:04:41Z"
 }

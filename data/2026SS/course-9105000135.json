@@ -7,11 +7,12 @@
   "lecturers": [
     "Sommerburg, Olaf"
   ],
+  "organisation": "University Paediatric Hospital",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407398",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Mittwochs, wöchentl.; 9:30 - 11:30 Uhr / INF 430 / Station K1 Infekt",
+  "last_updated": "2026-04-21T10:26:54Z"
 }

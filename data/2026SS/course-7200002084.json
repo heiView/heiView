@@ -13,11 +13,25 @@
     "Strzodka, Robert",
     "Taherinejad, Nima"
   ],
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "organisation": "Institute of Computer Engineering (ZITI)",
+  "start_date": "2026-04-20",
+  "end_date": "2026-04-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Seminarraum (6350.U1.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15351",
+      "room": "Seminarraum (6350.U1.014)",
+      "building": "Im Neuenheimer Feld 350, Lower level 1",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416486",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:00Z"
+  "further_info": "Recommended Reading Provided by supervisor and by own literature search",
+  "last_updated": "2026-04-21T09:52:23Z"
 }

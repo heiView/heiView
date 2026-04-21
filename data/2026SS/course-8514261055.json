@@ -7,6 +7,7 @@
   "lecturers": [
     "Trompelt, Kevin"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-15",
   "end_date": "2026-07-24",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416176",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:56:39Z"
+  "further_info": "Recommended Reading Hoffmann, H.W., Einführung ins biblische Hebräisch. Grammatik – Vokabular – Übungen. Studienausgabe. München: Akademische Verlagsgemeinschaft München 2016. Gesenius, W., Hebräisches und Aramäisches Handwörterbuch über das Alte Testament. 18. Auflage. Begonnen v. Rudolf Meyer. Bearb. und hrsg. v. Herbert Donner. Berlin/Heidelberg: Springer 2013. (Erstausgabe 1810-1812) KAHAL, Konzise und aktualisierte Ausgabe des Hebräischen und Aramäischen Lexikons zum Alten Testament. Ed. Walter Dietrich, Samuel Arnet. Leiden/Boston: Brill 2013. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
+  "last_updated": "2026-04-21T09:57:27Z"
 }

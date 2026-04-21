@@ -7,11 +7,12 @@
   "lecturers": [
     "Greb, Thomas"
   ],
+  "organisation": "Centre for Organismal Studies Heidelberg (COS)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412561",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Dieses Praktikum findet im Labor der AG Greb am COS, INF 360 statt.",
+  "last_updated": "2026-04-21T10:41:40Z"
 }

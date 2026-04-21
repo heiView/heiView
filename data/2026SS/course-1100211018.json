@@ -7,6 +7,7 @@
   "lecturers": [
     "Gertz, Michael"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-13",
   "end_date": "2026-07-16",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414002",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:45Z"
+  "further_info": "Bitte melden Sie sich sowohl über heiCo als auch über Müsli (https://muesli.mathi.uni-heidelberg.de/lecture/view/2134) zu den Übungen der Vorlesung an. Über Müsli werden auch die Übungsgruppen verwaltet und die Punkte zu den Übungen eingetragen.",
+  "last_updated": "2026-04-21T10:03:29Z"
 }

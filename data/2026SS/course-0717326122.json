@@ -7,6 +7,7 @@
   "lecturers": [
     "Osnabrügge, Jonas"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408219",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:35Z"
+  "further_info": "Recommended Reading M. Meier, Aristokraten und Damoden (Stuttgart 1998); A. Powell – S. Hodkinson (Hg.), Sparta. The Body Politic, Swansea 2010; L. Thommen, Sparta: Verfassungs- und Sozialgeschichte einer griechischen Polis, Stuttgart 2017 (2. Auflage); A. Powell (Hg.), A Companion to Sparta, Hoboken 2018; K.-W. Welwei, Sparta: Aufstieg und Niedergang einer antiken Großmacht, Stuttgart 2007.",
+  "last_updated": "2026-04-21T10:03:18Z"
 }

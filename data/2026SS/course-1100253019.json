@@ -8,11 +8,12 @@
     "Fransson, Peter",
     "Rocklöv, Per Joacim Gustav"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414484",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "further information additional information The Climate-Sensitive Infectious Diseases Lab (CSIDlab, https://csidlab.iwr.uni-heidelberg.de) focuses on developing models and algorithms to describe the effects of various drivers on the emergence of infectious diseases, with a special emphasis on how climate change impacts this emergence. The lab also develops predictive algorithms and models for early warning and projections of future health impacts related to interventions, climate change, and environmental factors. To achieve these goals, the lab applies a wide array of modeling approaches, including mathematical and statistical models as well as data-driven machine learning methods.",
+  "last_updated": "2026-04-21T10:28:42Z"
 }

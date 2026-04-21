@@ -7,6 +7,7 @@
   "lecturers": [
     "Brehm, Anne-Christine"
   ],
+  "organisation": "Institute of European Art History",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409329",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:29Z"
+  "further_info": "Recommended Reading Philipp, Klaus Jan: Das Buch der Architektur. Stuttgart 2006. Koepf, Hans / Binding, Günther: Bildwörterbuch der Architektur. Mit englischem, französischem, italienischem und spanischem Fachglossar. 4. Aufl. Stuttgart 2005. Binding, Günther: Architektonische Formenlehre. 6. Aufl. Darmstadt 2012.",
+  "last_updated": "2026-04-21T10:38:48Z"
 }

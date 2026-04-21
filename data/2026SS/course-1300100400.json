@@ -13,6 +13,7 @@
     "Schiller, Manuel Tobias",
     "Schmidt, Ulrich"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-03-23",
   "end_date": "2026-03-27",
   "weeks": [
@@ -26,7 +27,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Die Veranstaltungen der Studierendentage finden parallel in verschiedenen Räumen statt. Bitte informieren"
+      "note": "Die Veranstaltungen der Studierendentage finden parallel in verschiedenen Räumen statt. Bitte informieren Sie sich unter https://www.physi.uni-heidelberg.de/~marks/studierendentage/"
     },
     {
       "day_of_week": 1,
@@ -103,6 +104,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410480",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:36:59Z"
+  "further_info": "further information additional information",
+  "last_updated": "2026-04-21T11:47:24Z"
 }

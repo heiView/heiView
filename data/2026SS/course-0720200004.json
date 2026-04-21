@@ -7,6 +7,7 @@
   "lecturers": [
     "von den Driesch, Lena Maria"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-14",
   "end_date": "2026-07-24",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410803",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:28:21Z"
+  "further_info": "Recommended Reading Müsegades, Benjamin, Erreichtes und Erstrebenswertes. Forschungen zur Pfalzgrafschaft bei Rhein im Mittelalter, in: Blätter für deutsche Landesgeschichte 157, 2021, S. 455–505; Peltzer, Jörg, Der Rang der Pfalzgrafen bei Rhein. Die Gestaltung der politisch-sozialen Ordnung des Reichs im 13. und 14. Jahrhundert (RANK 2), Ostfildern 2013; Spindler, Max, Handbuch der bayerischen Geschichte, Bd. 2, 2. Aufl. München 1988.",
+  "last_updated": "2026-04-21T11:37:15Z"
 }

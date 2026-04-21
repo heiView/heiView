@@ -7,6 +7,7 @@
   "lecturers": [
     "Giele, Enno"
   ],
+  "organisation": "Institute of Chinese Studies",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412048",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:34:18Z"
+  "further_info": "Recommended Reading Siehe Literaturliste im Kursplan.",
+  "last_updated": "2026-04-21T11:44:27Z"
 }

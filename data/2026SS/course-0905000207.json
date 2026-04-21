@@ -7,6 +7,7 @@
   "lecturers": [
     "Zielinski, Andrea"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409322",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:42Z"
+  "further_info": "Recommended Reading * Daniel Jurafsky and James H. Martin, \"Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models\", 2025, 3rd edition, https://web.stanford.edu/~jurafsky/slp3/ * Ian Goodfellow and Yoshua Bengio and Aaron Courville “Deep Learning” An MIT Press book Deep, 2016, https://www.deeplearningbook.org/ * Lewis Tunstall, Leandro von Werra, Thomas Wolf, \"Natural Language Processing with Transformers\", O'Reilly Media, Inc.\", 2022 * Einzelne Publikationen aus der ACL Anthology (ACL, COLING, EMNLP, etc.), Conference and Labs of the Evaluation Forum (CLEF) sowie den SemEval Tracks Weitere Referenzen werden zu Beginn des Seminars bekannt gegeben. online information course documents further information actual information",
+  "last_updated": "2026-04-21T11:45:14Z"
 }

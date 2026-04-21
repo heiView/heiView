@@ -7,6 +7,7 @@
   "lecturers": [
     "Krieg, Dennis"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-05-04",
   "end_date": "2026-06-02",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409452",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:52:31Z"
+  "further_info": "Vorbesprechung Gehört zum Stoffgebiet C gem. AAppO",
+  "last_updated": "2026-04-21T10:30:27Z"
 }

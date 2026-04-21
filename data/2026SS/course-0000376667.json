@@ -7,6 +7,7 @@
   "lecturers": [
     "Höfle, Bernhard"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409540",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:23Z"
+  "further_info": "IMPORTANT: The full course program on “Geoscripting - Automation of Geographic Analyses” consists of a 1) lecture and the aligned 2) lab course for hands-on exercises. You need to register for both lecture and lab course separately.",
+  "last_updated": "2026-04-21T10:15:40Z"
 }

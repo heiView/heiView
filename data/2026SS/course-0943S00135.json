@@ -7,6 +7,7 @@
   "lecturers": [
     "Puda, Ales"
   ],
+  "organisation": "The Institute of Slavic Studies",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409599",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:23Z"
+  "further_info": "Recommended Reading Mehlig, Hans Robert (1999): Die grammatischen Kategorien des Verbs unter funktionalen Gesichtspunkten. – In: Jachnow, Helmut (eds.): Handbuch der sprachwissenschaftlichen Russistik und ihrer Grenzdisziplinen.Wiesbaden, S. 182-213.",
+  "last_updated": "2026-04-21T11:41:05Z"
 }

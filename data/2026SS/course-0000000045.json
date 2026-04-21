@@ -7,6 +7,7 @@
   "lecturers": [
     "Gertz, Jan Christian"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408882",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:57Z"
+  "further_info": "Recommended Reading Wird in der Vorlesung bekannt gegeben. Zur Vorbereitung empfiehlt sich die Lektüre von Gen 12-26 in einer guten Übersetzung.",
+  "last_updated": "2026-04-21T11:38:38Z"
 }

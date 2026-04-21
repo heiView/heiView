@@ -7,6 +7,7 @@
   "lecturers": [
     "Hägele, Axel"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415182",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:55:28Z"
+  "further_info": "Recommended Reading - Russell, Gillian K. (2023). Barriers to Entailment: Hume's Law and other limits on logical consequence. Oxford: Oxford University Press. Betreuter Lesekreis; es können Leistungspunkte erworben werden.",
+  "last_updated": "2026-04-21T10:27:11Z"
 }

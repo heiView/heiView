@@ -7,6 +7,7 @@
   "lecturers": [
     "Liss, Hanna"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416153",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:56:39Z"
+  "further_info": "Recommended Reading Wird rechtzeitig bekanntgegeben. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
+  "last_updated": "2026-04-21T09:57:27Z"
 }

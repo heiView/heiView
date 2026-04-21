@@ -7,6 +7,7 @@
   "lecturers": [
     "Vögele, Wolfgang"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410818",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:12:36Z"
+  "further_info": "Recommended Reading Hermann Erbacher, Die Innere Mission in Baden. Ein Beitrag zur Geschichte des 19. Und 20. Jahrhunderts in Baden, Karlsruhe 1957; Volker Herrmann, Diakonie und Kirche. Sozialtheologische Studien zur Gestalt diakonischer Arbeit, Gütersloh 2010; Traugott Jähnichen, Sozialtethik. Eine Einführung, Berlin 2017; Ulrich Körtner, Diakonie und öffentliche Theologie, o.O. o.J., https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vc.uni-bamberg.de/mod/resource/view.php; Jörg Winter, Wilhelm Ziegler (1901-1993). Landespfarrer für Diakonie in schwierigen Zeiten, in: G.Schwinge (Hg.), Lebensbilder aus der Evangelischen Landeskirche in Baden, IV, Heidelberger u.a. 2015, 301-321.",
+  "last_updated": "2026-04-21T10:19:58Z"
 }

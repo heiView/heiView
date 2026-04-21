@@ -7,11 +7,12 @@
   "lecturers": [
     "Gromes, Roland"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385733",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Die Sicherheitsbelehrung findet statt am 14.4.2026 um 18:00 Uhr im gHS, INF231",
+  "last_updated": "2026-04-21T10:44:44Z"
 }

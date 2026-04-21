@@ -7,6 +7,7 @@
   "lecturers": [
     "Fleischmann, Lorena"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405623",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:28:32Z"
+  "further_info": "Recommended Reading Döring, N. (2023). Metaanalyse. In N. Döring (Hrsg.), Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften (6. Aufl., S. 875–922). Springer. https://doi.org/10.1007/978-3-662-64762-2_16",
+  "last_updated": "2026-04-21T10:38:39Z"
 }

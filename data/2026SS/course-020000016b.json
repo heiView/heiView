@@ -7,6 +7,7 @@
   "lecturers": [
     "Aßfalg, Eric Robert"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-07-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416518",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:28:17Z"
+  "further_info": "Recommended Reading Schimmel, Juristische Klausuren und Hausarbeiten richtig formulieren, 15. Aufl. 2022 (weitere Hinweise in der Veranstaltung)",
+  "last_updated": "2026-04-21T11:37:08Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Jünger, Anna-Maria"
   ],
+  "organisation": "Institute for German as a Foreign Language",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414774",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:47Z"
+  "further_info": "Recommended Reading Die Literaturliste wird zu Beginn der Lehrveranstaltung bekannt gegeben. DaF-B-3 DaF/DaZ-BF-B-3",
+  "last_updated": "2026-04-21T10:04:56Z"
 }

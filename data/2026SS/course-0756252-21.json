@@ -7,6 +7,7 @@
   "lecturers": [
     "Fouquet, Johannes"
   ],
+  "organisation": "Klassische und Byzantinische Archäologie",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408922",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:43:35Z"
+  "further_info": "Recommended Reading • John Boardman, Rotfigurige Vasen aus Athen. Die archaische Zeit (1994) • John Boardman, Schwarzfigurige Vasen aus Athen (1994) • Wolfram Martini, Die archaische Plastik der Griechen (1990) • Marion Meyer – Gianfranco Adornato (Hrsg.), Innovations and Inventions in Athens c. 530 to 470 BCE – Two Crucial Generations (2020) • Elke Stein-Hölkeskamp, Das archaische Griechenland: Die Stadt und das Meer (2019) • Mark Wilson Jones, The Origins of Classical Architecture. Temples, orders and gifts to the gods in ancient Greece (2014) • Gabriel Zuchtriegel, The Making of the Doric Temple. Architecture, Religion, and Social Change in Archaic Greece (2023)",
+  "last_updated": "2026-04-21T10:39:49Z"
 }

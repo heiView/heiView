@@ -7,6 +7,7 @@
   "lecturers": [
     "Kahl, Wolfgang"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408782",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:26Z"
+  "further_info": "Recommended Reading Gesetzessammlungen zum Staats- und Verwaltungsrecht der Bundesrepublik Deutschland sowie zum Staats- und Verwaltungsrecht Baden-Württemberg sind in die Vorlesung mitzubringen. Eine Vorlesungsgliederung sowie eine Literaturliste werden vor Beginn der Vorlesung bereitgestellt (Moodle).",
+  "last_updated": "2026-04-21T10:15:43Z"
 }

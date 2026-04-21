@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Johnston), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-22",
   "end_date": "2026-07-01",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415051",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:29Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:52:51Z"
 }

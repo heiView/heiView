@@ -7,6 +7,7 @@
   "lecturers": [
     "Golinets, Viktor"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416035",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:11:07Z"
+  "further_info": "Recommended Reading J. Kaltner, The Use of Arabic in Biblical Hebrew Lexicography. Eugene, OR 1996. H. Filipowski, The First Hebrew and Chaldaic Lexicon to the Old Testament Compiled in the Tenth Century by Menahem ben Saruk the Spaniard. London/Leipzig: 1854. M. Ellenbogen, Foreign Words in the Old Testament. Their Origin and Etymology. London: 1962. P. V. Mankowski, Akkadian Loanwords in Biblical Hebrew. Winona Lake 2000. E. Klein, A Comprehensive Etymological Dictionary of the Hebrew Language for Readers of English. Jerusalem 1987. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
+  "last_updated": "2026-04-21T10:18:08Z"
 }

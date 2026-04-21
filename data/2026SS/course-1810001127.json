@@ -7,6 +7,7 @@
   "lecturers": [
     "Dreher, Axel"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-21",
   "end_date": "2026-04-21",
   "weeks": [
@@ -20,11 +21,11 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "First Meeting Meeting ID: 644 1602 0528 Passcode: 160013"
+      "note": "First Meeting https://eu02web.zoom-x.de/j/64416020528?pwd=jrgJxJbacHd6fsCaNSN91ULCmMfuGq.1 Meeting ID: 644 1602 0528 Passcode: 160013"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/389272",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:58:32Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:42:17Z"
 }

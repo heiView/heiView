@@ -7,6 +7,7 @@
   "lecturers": [
     "Klein, Christian"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-29",
   "end_date": "2026-08-07",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409419",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:04Z"
+  "further_info": "This internship is a prerequisite for the Drug Analysis Internship in the 8th semester. There is a corresponding seminar; the distribution of seminar topics will follow. Safety briefing and seminar attendance are mandatory. Hyperlink: https://www.ipmb.uni-heidelberg.de/chemie/studium/pharmazie/semester6/praktikum.html Further links: https://www.ipmb.uni-heidelberg.de/chemie/studium/ Belongs to subject area H according to AAppO.",
+  "last_updated": "2026-04-21T10:05:23Z"
 }

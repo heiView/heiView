@@ -7,6 +7,7 @@
   "lecturers": [
     "Riezler, Stefan"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409591",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:42:33Z"
+  "further_info": "Recommended Reading The course is based on a textbook, accompanied by code and example data. A reading list of papers on the topic will be made available in the first session of the seminar. Links: https://www.cl.uni-heidelberg.de/courses/ss26/reproducible_machine_learning_theory_and_practice/ further information actual information",
+  "last_updated": "2026-04-21T10:42:00Z"
 }

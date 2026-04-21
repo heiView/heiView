@@ -7,6 +7,7 @@
   "lecturers": [
     "Fuchs, Steffen"
   ],
+  "organisation": "Institute of European Art History",
   "start_date": "2026-04-17",
   "end_date": "2026-05-29",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415061",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:10:11Z"
+  "further_info": "Bei Erhalt eines Fixplatzes bitte umgehend per E-Mail beim Kursleiter melden! Sollte keine Rückmeldung erfolgen, wird der Platz anderweitig vergeben. An den ersten beiden Terminen müssen alle Teilnehmenden anwesend sein. Ab dem 3. Termin wird in 2 Gruppen unterteilt, sodass jede Gruppe noch 2 Termine hat, also 4 insgesamt.",
+  "last_updated": "2026-04-21T10:16:46Z"
 }

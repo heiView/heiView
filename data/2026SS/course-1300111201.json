@@ -8,6 +8,7 @@
     "Neumayer, Nadine",
     "Wylezalek, Dominika"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-17",
   "weeks": [
@@ -110,6 +111,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410273",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:37Z"
+  "further_info": "Recommended Reading Peter Schneider \"Einführung in die extragalaktische Astronomie und Kosmologie\" (2006) oder auf englisch \"Extragalactic Astronomy and Cosmology\" (2015) online information linkcollection / literature",
+  "last_updated": "2026-04-21T10:06:08Z"
 }

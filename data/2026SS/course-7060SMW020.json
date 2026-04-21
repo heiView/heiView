@@ -7,11 +7,12 @@
   "lecturers": [
     "Mogk, Axel"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385559",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Tyedmers J, Mogk A, Bukau B. Cellular strategies for controlling protein aggregation, Nat Rev Mol Cell Biol 2010, 11, 777-788. Block, 6-8 weeks, full day, time to be arranged, INF 345, 10 a.m.-6 p.m.",
+  "last_updated": "2026-04-21T10:14:45Z"
 }

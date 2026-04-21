@@ -7,6 +7,7 @@
   "lecturers": [
     "Lichtenthaler, Stephanie"
   ],
+  "organisation": "Institute of Sports and Sports Sciences",
   "start_date": "2026-04-13",
   "end_date": "2026-07-06",
   "weeks": [
@@ -32,7 +33,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17709",
       "room": "Gymnastikhalle 700 (6700.EG.070)",
       "building": "Im Neuenheimer Feld 700, Ground floor",
-      "note": "Kompakttermin zur Planung der Unterrichtreihe, die an den darauffolgenden Montagen mit den Schüler*innen"
+      "note": "Kompakttermin zur Planung der Unterrichtreihe, die an den darauffolgenden Montagen mit den Schüler*innen des Bunsen Gymnasiums durchgeführt wird."
     },
     {
       "day_of_week": 1,
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414599",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:46:33Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T11:48:51Z"
 }

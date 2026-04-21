@@ -7,6 +7,7 @@
   "lecturers": [
     "Bomm, Werner"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412184",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:58Z"
+  "further_info": "Recommended Reading Harald Müller, Mittelalter (Akademie Studienbücher Geschichte), Berlin 22015",
+  "last_updated": "2026-04-21T10:43:27Z"
 }

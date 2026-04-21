@@ -7,11 +7,12 @@
   "lecturers": [
     "Gertz, Michael"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414476",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Information about both beginners, advanced and master’s practicals our group offers in the summer semester 2026 will be presented in a single session online on April 15, 2026, at 2:15pm via Webex. Please enroll for the software practicals via Müsli at https://muesli.mathi.uni-heidelberg.de/lecture/view/2132 We will provide the link to the online session via the forum in Müsli.",
+  "last_updated": "2026-04-21T10:28:34Z"
 }

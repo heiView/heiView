@@ -7,6 +7,7 @@
   "lecturers": [
     "Liebich, Susann"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-20",
   "end_date": "2026-07-13",
   "weeks": [
@@ -97,6 +98,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411296",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:28:33Z"
+  "further_info": "Recommended Reading Friederike Neumann. Schreiben im Geschichtsstudium, Stuutgart, 2018; Ulrike Scheuermann: Schreibdenken. Schreiben als Denk- und Lernwerkzeug nutzen und vermitteln, Stuttgart, 2013; Ann Curthoys, Ann McCrath: How to Write History That People Want to Read, Sydney 2009. Burzlaff, J. (2025). Fragments, not prompts: five principles for writing history in the age of AI. Rethinking History, 1–18. https://doi.org/10.1080/13642529.2025.2546174",
+  "last_updated": "2026-04-21T11:37:37Z"
 }

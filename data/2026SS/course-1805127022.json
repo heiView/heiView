@@ -7,6 +7,7 @@
   "lecturers": [
     "Nolte genannt Jathe, Jan Leon"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413005",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:44:16Z"
+  "further_info": "Recommended Reading Kellstedt, Paul M./Whitten, Guy D. (2018): The fundamentals of political science research. Third Edition, Cambridge: Cambridge University Press. Wenzelburger, Georg/Jäckle, Sebastian/König, Pascal (2014): Weiterführende statistische Methoden für Politikwissenschaftler. München: Oldenbourg Wissenschaftsverlag.",
+  "last_updated": "2026-04-21T10:40:41Z"
 }

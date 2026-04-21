@@ -7,6 +7,7 @@
   "lecturers": [
     "Manstetten, Reiner"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409516",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:09Z"
+  "further_info": "Recommended Reading Albert, Karl (1986) Mystik und Philosophie. Richarz, Sankt Augustin. Beierwaltes, Walter (2004) Platonismus und Idealismus, 2., durchgesehene und erweiterte Auflage, Vittorio Klostermann, Frankfurt a. M. Halfwassen, Jens (2006) Der Aufstieg zum Einen. Untersuchungen zu Platon und Plotin . 2., um einen Forschungsbericht erweiterte Auflage, K. G. Saur, München und Leipzig. Jacobi, Klaus (Hg.) (2012), Mystik, Religion und intellektuelle Redlichkeit: Nachdenken über Thesen Ernst Tugendhats. Alber, Freiburg. Manstetten, Reiner (1993) Esse est Deus. Meister Eckharts christologische Versöhnung von Philosophie und Religion und ihre Ursprünge in der Tradition des Abendlandes. Alber, Freiburg. Tugendhat, Ernst (2003) Egozentrizität und Mystik. Eine anthropologische Studie. C. H. Beck, München.",
+  "last_updated": "2026-04-21T10:06:52Z"
 }

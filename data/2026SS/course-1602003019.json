@@ -7,6 +7,7 @@
   "lecturers": [
     "Fricker, Gert"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409440",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:55:36Z"
+  "further_info": "Belongs to subject area D according to AAppO.",
+  "last_updated": "2026-04-21T09:55:57Z"
 }

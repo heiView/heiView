@@ -7,6 +7,7 @@
   "lecturers": [
     "Licht, Tino"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410887",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:59:43Z"
+  "further_info": "Recommended Reading Textgrundlage: R.A.B.Mynors (ed.), Cassiodori senatoris Institutiones, 2. Aufl., Oxford1961. Die Veranstaltung findet im Paläographieraum 027 statt.",
+  "last_updated": "2026-04-21T10:02:03Z"
 }

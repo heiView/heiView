@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(N.N.), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-05-04",
   "end_date": "2026-05-12",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417515",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:54:28Z"
+  "further_info": "Recommended Reading Vertragstexte: Khan (Hrsg.), Sartorius II (75. Ergänzungslieferung 2025), Tomuschat/Walter (Hrsg.), Völkerrecht (10. Aufl. 2024). Lehrbücher: v. Arnauld, Völkerrecht (5. Aufl. 2023); Peters/Petrig, Völkerrecht: Allgemeiner Teil (6. Aufl. 2023); Krajewski, Völkerrecht (3. Aufl. 2023); Hernández, International Law (3. Aufl. 2025). Entscheidungssammlungen: Dörr, Kompendium völkerrechtlicher Rechtsprechung (2. Aufl. 2014). Fallbücher: v. Arnauld, Klausurenkurs im Völkerrecht (4. Aufl. 2023). Bitte bringen Sie eine aktuelle Sammlung völkerrechtlicher Vertragstexte sowie ein Grundgesetz mit.",
+  "last_updated": "2026-04-21T09:54:11Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Molteni, Sara"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-17",
   "end_date": "2026-07-17",
   "weeks": [
@@ -85,6 +86,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407525",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:24:43Z"
+  "further_info": "If your studies present particular challenges due to individual needs or impairments, please inform the responsible instructor in advance or at the beginning of the course. We would be happy to discuss how to ensure barrier-free participation in the course and the completion of examinations. For questions regarding barrier-free teaching, compensation for disadvantages in examinations, and support options at Heidelberg University, please contact Susanne Kemmer and Julia Heyne (student advisors) and Christoph Schlomach (representative for students with disabilities and chronic illnesses). Email: inklusiv.studieren@uni-heidelberg.de",
+  "last_updated": "2026-04-21T10:33:39Z"
 }

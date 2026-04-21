@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Hoffmann), 010000.100"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414650",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:12:33Z"
+  "further_info": "Recommended Reading The required literature will be announced in the first meeting. additional block seminar on 12th and 13th June 2026.",
+  "last_updated": "2026-04-21T10:19:55Z"
 }

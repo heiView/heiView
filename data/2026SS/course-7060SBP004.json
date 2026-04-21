@@ -14,6 +14,7 @@
     "Schling, Petra",
     "Vögtle, Friederike-Nora"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -32,6 +33,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385533",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:58:15Z"
+  "further_info": "Recommended Reading Unterlagen: Moodle, eLearning–Plattform der Universität Heidelberg https://moodle.uni-heidelberg.de/ , danach in der ‚Fakultät für Biologie’, Abteilung ‚Biologie’, sich für die Veranstaltung ‚Biologie II 2026’ einloggen. Einschreibeschlüssel/Passwort wird in der 1. Vorlesung am 13. April 2026 bekanntgegeben. Lehrbücher: Fluhrer, Hampe: Biochemie und Molekularbiologie hoch2, 1. Auflage, Elsevier-Verlag Nelson, Cox: Lehninger Biochemie, 4. Auflage (oder 7. Auflage englisch) Berg, Tymoczko, Stryer: Stryer Biochemie, 8. Auflage (oder 9. Auflage englisch) Knippers, Molekulare Genetik, 11 unveränderte Auflage, 2018; Thieme Verlag Watson et al., Molecular Biology of the Gene, 7th Ed., Pearson Verlag Alberts et al. Molecular Biology of the Cell (2014), 6th Ed., Garland Science Lodish et al. Molecular Cell Biology (2016), 8th Ed., W.H. Freeman Dozenten: Prof. Dr. Michael Brunner, BZH (INF 307), E-mail: michael.brunner@bzh.uni-heidelberg.de Dr. Petra Schling*1, BZH (INF 328), E-mail: petra.schling@bzh.uni-heidelberg.de Prof. Dr. Walter Nickel, BZH (INF 328), E-mail: walter.nickel@bzh.uni-heidelberg.de Prof. Dr. Matthias Mayer*2, ZMBH (INF 345), E-mail: m.mayer@zmbh.uni-heidelberg.de PD Dr. Axel Mogk**, ZMBH (INF 346), E-Mail: a.mogk@zmbh.uni-heidelberg.de Prof. Dr. Elmar Schiebel, ZMBH (INF 345), E-mail: schiebel.elmar@zmbh.uni-heidelberg.de Prof. Dr. Michael Knop, ZMBH (INF 345), E-mail: m.knop@zmbh.uni-heidelberg.de Prof. Dr. Nora Voegtle, ZMBH (INF 345), E-mail: n.voegtle@zmbh.uni-heidelberg.de Prof. Dr. Gislene Pereira*3, COS (INF 230) E-mail: gislene.pereira@cos.uni-heidelberg.de * Koordinatoren der Module Biochemie1, Molekularbiologie2, Zellbiologie3 ** Gesamtkoordination der Vorlesung",
+  "last_updated": "2026-04-21T09:59:51Z"
 }

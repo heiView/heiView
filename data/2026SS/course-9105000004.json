@@ -7,8 +7,9 @@
   "lecturers": [
     "Lehmann, Ronny"
   ],
+  "organisation": "University Paediatric Hospital",
   "start_date": "2026-03-06",
-  "end_date": "2026-05-04",
+  "end_date": "2026-06-15",
   "weeks": [
     {
       "day_of_week": 5,
@@ -36,6 +37,18 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "UFHK PÄD SR (6440.EG.264)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
+      "room": "UFHK PÄD SR (6440.EG.264)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Raumaufteilung vor Ort"
+    },
+    {
+      "day_of_week": 5,
       "start_date": "2026-03-06",
       "end_date": "2026-03-06",
       "start_time": "13:30",
@@ -59,6 +72,18 @@
       "note": "Raumaufteilung vor Ort"
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "13:30",
+      "end_time": "16:30",
+      "location": "UFHK Kleingruppenraum (6440.EG.271)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28793",
+      "room": "UFHK Kleingruppenraum (6440.EG.271)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Raumaufteilung vor Ort"
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-09",
       "end_date": "2026-03-23",
@@ -74,6 +99,30 @@
       "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-05-04",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "UFHK PÄD SR (6440.EG.264)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
+      "room": "UFHK PÄD SR (6440.EG.264)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Raumaufteilung vor Ort"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "UFHK PÄD SR (6440.EG.264)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
+      "room": "UFHK PÄD SR (6440.EG.264)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Raumaufteilung vor Ort"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "UFHK PÄD SR (6440.EG.264)",
@@ -98,6 +147,30 @@
       "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-05-04",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "UFHK Kleingruppenraum (6440.EG.271)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28793",
+      "room": "UFHK Kleingruppenraum (6440.EG.271)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Raumaufteilung vor Ort"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "UFHK Kleingruppenraum (6440.EG.271)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28793",
+      "room": "UFHK Kleingruppenraum (6440.EG.271)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": "Raumaufteilung vor Ort"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "UFHK Kleingruppenraum (6440.EG.271)",
@@ -109,6 +182,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400532",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:56:40Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:00:10Z"
 }

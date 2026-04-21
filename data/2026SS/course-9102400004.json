@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "Klinik für Gefäßchirurgie",
   "start_date": "2026-04-27",
   "end_date": "2026-07-13",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402304",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:41:33Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:57:36Z"
 }

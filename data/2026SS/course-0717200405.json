@@ -7,6 +7,7 @@
   "lecturers": [
     "Braun, Sarah"
   ],
+  "organisation": "Egyptology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414076",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:51:10Z"
+  "further_info": "Recommended Reading J. Černý/S.I. Groll, A Late Egyptian Grammar, Rom 41993. F. Junge, Neuägyptisch. Einführung in die Grammatik, Wiesbaden 32008. François Neveu, La langue des Ramsès: Grammaire du néo-égyptien, Paris 1996. (In englischer Übersetzung: The Language of Ramesses: Late Egyptian Grammar, Oxford 2015.) Sofern die Voraussetzungen erfüllt sind, kann die Veranstaltung auch als ÜK angerechnet werden.",
+  "last_updated": "2026-04-21T10:33:16Z"
 }

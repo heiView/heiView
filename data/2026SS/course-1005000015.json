@@ -7,6 +7,7 @@
   "lecturers": [
     "Bukac, Daniel"
   ],
+  "organisation": "Institute of Sports and Sports Sciences",
   "start_date": "2026-04-15",
   "end_date": "2026-07-24",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414559",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:55:50Z"
+  "further_info": "Es findet außerdem ein gemeinsames 3x3-Turnier aller Kurse an einem Samstag in der Dreifachhalle 720 statt. Der genaue Termin wird noch bekannt gegeben.",
+  "last_updated": "2026-04-21T09:55:57Z"
 }

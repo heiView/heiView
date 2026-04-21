@@ -7,6 +7,7 @@
   "lecturers": [
     "Cabezón Doty, Claudia"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417195",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:32:41Z"
+  "further_info": "Recommended Reading BENDEL, Oliver (ed.) (2018): Pflegeroboter. Wiesbaden: SpringerGabler. CASPER, Wolfgang (2007): Medizinische Terminologie. Stuttgart: Thieme. Diccionario de términos médicos Real Academia Nacional de Medicina (2012). Madrid Médica Panamericana. DUDEN (2012): Medizinische Fachausdrücke. Berlin; München: Langenscheidt.",
+  "last_updated": "2026-04-21T11:42:33Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Abraham, Nixon"
   ],
+  "organisation": "Interdisciplinary Center for Neurosciences (IZN)",
   "start_date": "2026-05-07",
   "end_date": "2026-06-25",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416844",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:24:31Z"
+  "further_info": "Recommended Reading 1. E. Burguiere, P. Monteiro, G. Feng, A. M. Graybiel, Optogenetic stimulation of lateral orbitofronto-striatal pathway suppresses compulsive behaviors. Science 340, 1243-1246 (2013). 2. M. Pardasani et al., Perceptual learning deficits mediated by somatostatin releasing inhibitory interneurons of olfactory bulb in an early life stress mouse model. Mol Psychiatry, (2023). 3. A. R. Adamantidis, F. Zhang, A. M. Aravanis, K. Deisseroth, L. de Lecea, Neural substrates of awakening probed with optogenetic control of hypocretin neurons. Nature 450, 420-424 (2007). 4. M. Smear, A. Resulaj, J. Zhang, T. Bozza, D. Rinberg, Multiple perceptible signals from a single olfactory glomerulus. Nat Neurosci 16, 1687-1691 (2013). 5. I. B. Witten et al., Cholinergic interneurons control local circuit activity and cocaine conditioning. Science 330, 1677-1681 (2010).",
+  "last_updated": "2026-04-21T10:33:25Z"
 }

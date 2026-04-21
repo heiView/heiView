@@ -7,6 +7,7 @@
   "lecturers": [
     "Klages, Hana"
   ],
+  "organisation": "Institute for German as a Foreign Language",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414740",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:18Z"
+  "further_info": "Recommended Reading Literaturhinweise werden auf der Moodle-Lernplattform zur Verfügung gestellt. SW-5 (6 LP) SW-9 (6 LP) DaF-DaZ-LING (6 LP) SW-10 (6 LP) LING-LIT-2 (6,5 LP) Aufbaumodul Begleitfach (6,5 LP) LING-3 (6 LP)",
+  "last_updated": "2026-04-21T10:07:06Z"
 }

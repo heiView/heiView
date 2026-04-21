@@ -7,11 +7,12 @@
   "lecturers": [
     "Hofmann, Matthias"
   ],
+  "organisation": "Department of Inorganic Chemistry",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410529",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "In der vorlesungsfreien Zeit vor dem Wintersemester, Anmeldung per E-Mail an matthias.hofmann@aci.uni-heidelberg.de",
+  "last_updated": "2026-04-21T10:01:26Z"
 }

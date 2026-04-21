@@ -7,6 +7,7 @@
   "lecturers": [
     "Maissen, Thomas"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409407",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:55:46Z"
+  "further_info": "Recommended Reading Dagmar Freist, Glaube - Liebe - Zwietracht. Religiös-konfessionell gemischte Ehen in der Frühen Neuzeit, München, Wien 2017; Richard van Dülmen, Religion, Magie, Aufklärung. 16.-18. Jahrhundert (Kultur und Alltag in der Frühen Neuzeit, Bd. 3), München 1994; Kaspar von Greyerz, Religion und Kultur. Europa 1500-1800, Göttingen 2000.",
+  "last_updated": "2026-04-21T09:56:11Z"
 }

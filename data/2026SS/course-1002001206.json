@@ -7,6 +7,7 @@
   "lecturers": [
     "Wrzus, Cornelia"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-08-19",
   "end_date": "2026-09-02",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416555",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:45:19Z"
+  "further_info": "online information e-learning course",
+  "last_updated": "2026-04-21T11:37:12Z"
 }

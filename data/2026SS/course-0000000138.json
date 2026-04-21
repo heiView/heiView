@@ -7,6 +7,7 @@
   "lecturers": [
     "Dietz, Alexander Michael"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-07-10",
   "end_date": "2026-07-18",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410795",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:13:46Z"
+  "further_info": "Recommended Reading Alexander Dietz, Der homo oeconomicus. Theologische und wirtschaftsethische Perspektiven auf ein ökonomisches Modell, Gütersloh 2005.",
+  "last_updated": "2026-04-21T10:20:04Z"
 }

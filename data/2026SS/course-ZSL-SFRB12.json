@@ -9,6 +9,7 @@
     "Armand, Delphine",
     "Krehl, Birgit"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-21",
   "end_date": "2026-07-24",
   "weeks": [
@@ -106,11 +107,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13656",
       "room": "P18 (2100.EG.009)",
       "building": "Grabengasse / Sandgasse 14-18 / 5-7, Ground floor",
-      "note": "R/KuM/D3: aufgrund von \"Kinderkrankheiten\" im Audimax/AUH findet der Kongress in der Neuen Uni statt"
+      "note": "R/KuM/D3: aufgrund von \"Kinderkrankheiten\" im Audimax/AUH findet der Kongress in der Neuen Uni statt - einmaliger Ausweichtermin"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413921",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:26:47Z"
+  "further_info": "Recommended Reading Le Bougnec, Jean-Thierry/Marie-José Lopes (Hgg.): Inspire 3. Paris: Hachette, 2021. ISBN 978-3-19-053387-9",
+  "last_updated": "2026-04-21T10:13:16Z"
 }

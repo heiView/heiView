@@ -7,6 +7,7 @@
   "lecturers": [
     "Otero Pereira, Eduardo"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410888",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:42:01Z"
+  "further_info": "Recommended Reading Textgrundlage: H.R.Luard (ed.), Matthaeus Parisiensis. Chronica majora, vol. VII, London 1872-1883. Die Veranstaltung findet im Paläographieraum 027 statt.",
+  "last_updated": "2026-04-21T10:41:18Z"
 }

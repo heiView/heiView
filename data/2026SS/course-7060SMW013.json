@@ -7,11 +7,12 @@
   "lecturers": [
     "Mogk, Axel"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385554",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Doyle, S.M., Genest, O., Wickner, S. Nat Rev Mol Cell Biol. 2013, 14: 617-629. Protein rescue from aggregates by powerful molecular chaperone machines. Tuesdays, INF 345, room 169, 3.00 p.m.- 4.00 p.m.",
+  "last_updated": "2026-04-21T10:14:38Z"
 }

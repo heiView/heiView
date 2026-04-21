@@ -9,6 +9,7 @@
     "N.N., Unbekannt",
     "Putz, Cornelia Marianne"
   ],
+  "organisation": "Zentrum für Orthopädie, Unfallchirurgie und Paraplegiologie",
   "start_date": "2026-05-04",
   "end_date": "2026-07-17",
   "weeks": [
@@ -555,6 +556,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402337",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:55:02Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:57:55Z"
 }

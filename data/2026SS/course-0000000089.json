@@ -7,6 +7,7 @@
   "lecturers": [
     "Hofius, Jan"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410749",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:34:37Z"
+  "further_info": "Recommended Reading Wird in der Lehrveranstaltung bekannt gegeben.",
+  "last_updated": "2026-04-21T11:44:46Z"
 }

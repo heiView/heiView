@@ -7,6 +7,7 @@
   "lecturers": [
     "Neuhausen, Miriam"
   ],
+  "organisation": "English Department",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407533",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:09Z"
+  "further_info": "Recommended Reading All readings will be provided. Moore, Emma. 2023. *Socio-Syntax: Exploring the Social Life of Grammar.* 1st edn. Cambridge University Press. https://doi.org/10.1017/9781108921299. Payne, Thomas E. 2006. *Exploring Language Structure: A Student’s Guide*. Cambridge University Press.",
+  "last_updated": "2026-04-21T11:47:34Z"
 }

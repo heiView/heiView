@@ -7,11 +7,12 @@
   "lecturers": [
     "Biller, Armin"
   ],
+  "organisation": "Neuroradiologie",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397154",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:35:09Z"
+  "further_info": "Mittwochs von 14:00 bis 16:00 INF 400, Eb. 99, R. 403",
+  "last_updated": "2026-04-21T10:32:17Z"
 }

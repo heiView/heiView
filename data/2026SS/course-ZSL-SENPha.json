@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413801",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:04:06Z"
+  "further_info": "Im Neuenheimer Feld 327, EG, SR 3 (6327.EG.003)",
+  "last_updated": "2026-04-21T10:08:11Z"
 }

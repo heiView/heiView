@@ -8,6 +8,7 @@
     "Schneider, Paul Benedikt",
     "Schönberg, Gita"
   ],
+  "organisation": "Urologische Klinik",
   "start_date": "2026-04-30",
   "end_date": "2026-07-09",
   "weeks": [
@@ -254,6 +255,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402228",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:55:22Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:58:23Z"
 }

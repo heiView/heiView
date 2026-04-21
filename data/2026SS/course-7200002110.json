@@ -8,11 +8,12 @@
     "Borras, Hendrik Walter Heinz",
     "Wang, Xiao"
   ],
+  "organisation": "Institute of Computer Engineering (ZITI)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419689",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Recommended literature Deep Learning by Goodfellow et al. freely available here: https://www.deeplearningbook.org/",
+  "last_updated": "2026-04-21T10:12:48Z"
 }

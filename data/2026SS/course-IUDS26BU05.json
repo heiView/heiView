@@ -7,6 +7,7 @@
   "lecturers": [
     "Koopman, Anne"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416387",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:34Z"
+  "further_info": "online information e-learning course Bitte melden Sie sich zum Moodle-Kurs an: https://moodle.uni-heidelberg.de/course/view.php?id=30628. Der Zugangsschlüssel wird in der ersten Sitzung bekannt gegeben.",
+  "last_updated": "2026-04-21T11:41:17Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Walisch, Raoul"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-05-08",
   "end_date": "2026-05-09",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411403",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:05:43Z"
+  "further_info": "Recommended Reading Meyer, Kirsten (Hrsg.): Texte zur Didaktik der Philosophie. Stuttgart: Reclam 2010. Pfister, Jonas: Fachdidaktik Philosophie. 3. Auflage. Bern: Haupt 2022. Eine ausführlichere Literaturliste wird zu Veranstaltungsbeginn besprochen.",
+  "last_updated": "2026-04-21T10:10:20Z"
 }

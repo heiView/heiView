@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Dr. Raphaël Fendrich), 090100.100"
   ],
+  "organisation": "Seminar for German Studies",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415114",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:28:44Z"
+  "further_info": "Recommended Reading Andreas Kramer: Regionalismus und Moderne. Studien zur deutschen Literatur 1900-1933. Berlin 2006 (Kapitel 2 und in Auszügen; wird zur Verfügung gestellt). Weitere Literatur wird in der ersten Sitzung bekannt gegeben.",
+  "last_updated": "2026-04-21T11:37:50Z"
 }

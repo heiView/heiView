@@ -8,6 +8,7 @@
     "Balschbach, Günther",
     "Butz, André"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-23",
   "weeks": [
@@ -134,6 +135,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410276",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:04:20Z"
+  "further_info": "Recommended Reading Atmosphere Ocean and Climate Dynamics, Marshall and Plumb, 2007 https://ebookcentral.proquest.com/lib/ub-heidelberg/detail.action?docID=534996 Physik unserer Umwelt; Die Atmosphäre, Roedel und Wagner, 2017 https://link.springer.com/book/10.1007/978-3-662-54258-3",
+  "last_updated": "2026-04-21T10:08:30Z"
 }

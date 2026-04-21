@@ -7,6 +7,7 @@
   "lecturers": [
     "Vandermark, Neil"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416893",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:41Z"
+  "further_info": "Recommended Reading Baker, M. (2018). In other words: A coursebook on translation (3rd ed.). Routledge. House, J. (2024). Translation: The Basics (2nd. Ed.). Taylor & Francis Group. online information e-learning course",
+  "last_updated": "2026-04-21T11:41:26Z"
 }

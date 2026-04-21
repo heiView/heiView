@@ -7,6 +7,7 @@
   "lecturers": [
     "Maissen, Thomas"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411288",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:42:55Z"
+  "further_info": "Recommended Reading Angela de Benedictis, Karl-Heinz Lingens (Hg.), Wissen, Gewissen und Wissenschaft im Widerstandsrecht (16. - 18. Jh.), Frankfurt a. M. 2003; Robert von Friedeburg (Hg.), Widerstandsrecht in der frühen Neuzeit. Erträge und Perspektiven der Forschung im deutsch-britischen Vergleich, Berlin 2022; Mario Turchetti, Tyrannie et tyrannicide de l'Antiquité à nos jours, Paris 2001.",
+  "last_updated": "2026-04-21T10:42:27Z"
 }

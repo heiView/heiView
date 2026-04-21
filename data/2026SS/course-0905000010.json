@@ -7,6 +7,7 @@
   "lecturers": [
     "Rehl, Danny"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-13",
   "end_date": "2026-07-22",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409318",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:08Z"
+  "further_info": "Recommended Reading Offizielle Python-Dokumentation unter https://docs.python.org Weitere Literatur wird in der Vorlesung bekannt gegeben. online information e-learning course further information actual information",
+  "last_updated": "2026-04-21T10:38:21Z"
 }

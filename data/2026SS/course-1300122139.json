@@ -7,6 +7,7 @@
   "lecturers": [
     "Schmitt, Julian Matthias"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411247",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:44:20Z"
+  "further_info": "Recommended Reading Selected literature will be distributed to each student based on the chosen topics.",
+  "last_updated": "2026-04-21T10:40:46Z"
 }

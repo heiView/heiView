@@ -7,11 +7,12 @@
   "lecturers": [
     "Herrmann, Carl Michael"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413771",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:28:52Z"
+  "further_info": "online (phase 1 &2) – on-site (phase 3) 16.02 – 5.06 Phase 1: Weekly Journal Clubs (online – 6 weeks) Phase 2: Project phase in teams Phase 3 : On-site workshop/Hackathon in Heidelberg (1.06-5.06)",
+  "last_updated": "2026-04-21T09:52:09Z"
 }

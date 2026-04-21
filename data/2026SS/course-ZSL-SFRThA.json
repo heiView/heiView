@@ -7,6 +7,7 @@
   "lecturers": [
     "Armand, Delphine"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-21",
   "end_date": "2026-07-23",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413913",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:34:53Z"
+  "further_info": "Recommended Reading Delcambre, Fabien (Hg. et al.): Odyssée C1-C2. Paris: CLE International, 2024. ISBN 978-3-12-528527-9 [Unité 1 à 6]",
+  "last_updated": "2026-04-21T10:13:21Z"
 }

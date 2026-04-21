@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-21",
   "end_date": "2026-07-23",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409488",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:05:18Z"
+  "further_info": "Je Termin nur eine Gruppe. Insgesamt 4 Gruppen. Die Einteilung erfolgt zu Beginn der Vorlesung. Die Übungsgruppen finden teilweise parallel zu anderen Übungsgruppen statt. Bitte bei der Einteilung bzw. Anmeldung beachten!!!",
+  "last_updated": "2026-04-21T10:09:45Z"
 }

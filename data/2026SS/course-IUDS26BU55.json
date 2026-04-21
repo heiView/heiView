@@ -7,6 +7,7 @@
   "lecturers": [
     "Mikeska, Libor"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417041",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:33Z"
+  "further_info": "Recommended Reading Tasks will be uploaded to Moodle on a weekly basis.",
+  "last_updated": "2026-04-21T11:41:16Z"
 }

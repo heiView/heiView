@@ -5,8 +5,9 @@
   "ects_credits": "3",
   "course_languages": "English",
   "lecturers": [
-    "Görtz, Florian"
+    "Goertz, Florian"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410271",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:15Z"
+  "further_info": "online information course documents",
+  "last_updated": "2026-04-21T10:05:37Z"
 }

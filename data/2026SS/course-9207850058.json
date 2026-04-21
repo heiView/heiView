@@ -1,6 +1,6 @@
 {
   "id": "9207850058",
-  "title": "WFT07-IO - Klinisch Technisches Radiologieseminar_Notfallradiologie: Schlüsselbefunde in CT und MRT anhand klinischer Fälle_05.05.2026",
+  "title": "WFT07-IO - Klinisch Technisches Radiologieseminar_Komponenten eines MRTs und Sicherheitsaspekte in der MRT_05.05.2026",
   "type": "SE",
   "ects_credits": null,
   "course_languages": "German",
@@ -8,6 +8,7 @@
     "Fiedler, Thomas Michael",
     "Platt, Tanja"
   ],
+  "organisation": "Clinic National Center for Tumour Diseases (NCT)",
   "start_date": "2026-05-05",
   "end_date": "2026-05-05",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418474",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:26:39Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T11:35:10Z"
 }

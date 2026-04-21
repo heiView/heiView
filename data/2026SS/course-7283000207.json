@@ -7,6 +7,7 @@
   "lecturers": [
     "Fujimoto, Hiroshi"
   ],
+  "organisation": "Heidelberg Centre for Transcultural Studies",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415316",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:56Z"
+  "further_info": "Knowledge of the Japanese language will be helpful but not required. Any inquiries should be sent to the instructor: Hiroshi Fujimoto <hiroshi.fujimoto@hcts.uni-heidelberg.de>",
+  "last_updated": "2026-04-21T10:29:47Z"
 }

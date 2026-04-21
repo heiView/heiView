@@ -7,6 +7,7 @@
   "lecturers": [
     "Haus, Michael"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-23",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412989",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:44:36Z"
+  "further_info": "Recommended Reading Lepold, Kristina/Martinez Mateo, Marina (Hrsg.) (2021): Critical philosophy of race. Ein Reader, Berlin: Suhrkamp. Melter, Claus/Mecheril, Paul (Hrsg.) (2009): Rassismuskritik. Band 1: Rassismustheorie und -forschung, Schwalbach/Ts.: Wochenschau Verlag. Loick, Daniel/Thompson, Vanessa E. (Hrsg.) (2022): Abolitionismus. Ein Reader, Berlin: Suhrkamp.",
+  "last_updated": "2026-04-21T10:41:14Z"
 }

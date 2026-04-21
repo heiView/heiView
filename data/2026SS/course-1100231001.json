@@ -7,6 +7,7 @@
   "lecturers": [
     "Wunderlich, Daniel"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-20",
   "end_date": "2026-04-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414423",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:54:54Z"
+  "further_info": "Studierende melden sich bitte beim Dozenten Daniel Wunderlich <wunderlich@informatik.uni-heidelberg.de> an.",
+  "last_updated": "2026-04-21T09:54:51Z"
 }

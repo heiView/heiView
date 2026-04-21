@@ -7,6 +7,7 @@
   "lecturers": [
     "Reuter, Frank"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412147",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:09Z"
+  "further_info": "Recommended Reading Gress, Daniela: Protest und Erinnerung: der Hungerstreik in Dachau 1980 und die Entstehung der Bürgerrechtsbewegung deutscher Sinti und Roma. In: Fings, Karola; Steinbacher, Sybille (Hrsg.): Sinti und Roma (Dachauer Symposien zur Zeitgeschichte, Bd. 19). Göttingen 2021, S. 190-219 Lotto-Kusche, Sebastian: Der Völkermord an den Sinti und Roma und die Bundesrepublik: der lange Weg zur Anerkennung 1949-1990. Berlin/Boston 2022 Margalit, Gilad: Die Nachkriegsdeutschen und \"ihre Zigeuner\". Die Behandlung der Sinti und Roma im Schatten von Auschwitz. Berlin 2002",
+  "last_updated": "2026-04-21T10:02:42Z"
 }

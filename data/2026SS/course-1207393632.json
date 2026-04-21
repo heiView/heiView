@@ -8,6 +8,7 @@
     "Lautenbach, Sven",
     "Zipf, Alexander"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413402",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:06:50Z"
+  "further_info": "Das Kolloquium findet auch außerhalb der Vorlesungszeiten statt. Termine finden sich im zugehörigen Moodle Kurs.",
+  "last_updated": "2026-04-21T10:11:55Z"
 }

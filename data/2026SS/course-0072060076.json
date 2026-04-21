@@ -7,6 +7,7 @@
   "lecturers": [
     "Klinke, Marcel"
   ],
+  "organisation": "Musicology Seminar",
   "start_date": "2026-04-23",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411416",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:52:22Z"
+  "further_info": "Recommended Reading Adler, Guido: „Umfang, Methode und Ziel der Musikwissenschaft“, in: Vierteljahresschrift für Musikwissenschaft 1 (1885), S. 5–20; Dahlhaus, Carl: „Musikwissenschaft und systematische Musikwissenschaft“, in: Systematische Musikwissenschaft, hg. von dems. und Helga de la Motte-Haber, Laaber 1982, S. 25–48.",
+  "last_updated": "2026-04-21T10:30:17Z"
 }

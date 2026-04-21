@@ -10,6 +10,7 @@
     "Pusch, Stefan René",
     "Sotillo, Rocio"
   ],
+  "organisation": "Deutsches Krebsforschungszentrum",
   "start_date": "2026-06-01",
   "end_date": "2026-06-23",
   "weeks": [
@@ -76,6 +77,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414753",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:11:46Z"
+  "further_info": "HP-F11: Tumor Heterogeneity and Proteomics Type: Practical Course with Student Seminars Date: 1-23 June 2026 Locations: various division labs in DKFZ Main Building (INF 280) and TP4 (INF 581) Hosts/Supervisors: Stefan Pusch (responsible organizer); Natalie Berghaus; Jeroen Krijgsveld; Rocio Sotillo",
+  "last_updated": "2026-04-21T10:18:59Z"
 }

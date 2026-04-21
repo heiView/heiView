@@ -7,6 +7,7 @@
   "lecturers": [
     "Schweighofer, Astrid"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-05-08",
   "end_date": "2026-07-10",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410775",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:38:55Z"
+  "further_info": "Recommended Reading Greschat, Martin (Hg.): Vom Konfessionalismus zur Moderne (Kirchen und Theologiegeschichte in Quellen, Bd. 4), Neukirchen-Vluyn 2005, 2008 (2. Aufl.).",
+  "last_updated": "2026-04-21T11:44:40Z"
 }

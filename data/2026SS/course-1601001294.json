@@ -7,6 +7,7 @@
   "lecturers": [
     "Feuerbach, Lars"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-22",
   "end_date": "2026-04-24",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409424",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:58:09Z"
+  "further_info": "MoBi BSc. Studierende mit dem Hauptfach Bioinformatik sind herzlich eingeladen, den Kurs als freiwillige Zusatzveranstaltung zu besuchen. Ein Abschluss des Kurses wirkt sich positiv bei der Bewerbung auf Praktika und Masterarbeiten am DKFZ aus.",
+  "last_updated": "2026-04-21T09:59:41Z"
 }

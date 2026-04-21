@@ -7,6 +7,7 @@
   "lecturers": [
     "Geibel, Stefan"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-22",
   "end_date": "2026-07-01",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408756",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:10:13Z"
+  "further_info": "Recommended Reading Da Lehrbücher zum Vereinsrecht fehlen, sei verwiesen auf die einschlägigen Kommentierungen zu §§ 21 ff. BGB sowie auf Praxisleitfäden wie Sauter/Schweyer/Waldner, Der eingetragene Verein, 22. Aufl. 2025, oder Handbücher wie Stöber/Otto, Handbuch zum Vereinsrecht, 12. Aufl. 2021, oder Dauernheim/Reichert/Schiffbauer/Schimke, Vereins- und Verbandsrecht, 15. Aufl. 2024. Um Anmeldung im Moodle-Kurs wird gebeten. Die Materialien samt Gliederungen zur Vorlesung werden sukzessive in Moodle hochgeladen.",
+  "last_updated": "2026-04-21T10:16:02Z"
 }

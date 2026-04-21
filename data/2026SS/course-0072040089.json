@@ -7,24 +7,49 @@
   "lecturers": [
     "Troll, Hartmut"
   ],
-  "start_date": "2026-04-13",
-  "end_date": "2026-04-13",
+  "organisation": "Institute of European Art History",
+  "start_date": "2026-05-18",
+  "end_date": "2026-05-21",
   "weeks": [
     {
       "day_of_week": 1,
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-13",
-      "start_time": "00:00",
-      "end_time": "00:00",
-      "location": "Ort/Zeit noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort/Zeit noch nicht bekannt",
-      "building": null,
-      "note": "Kompakt in einer Woche (in Absprache mit den Teilnehmer*innen) im Frühjahr"
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "11:30",
+      "end_time": "16:00",
+      "location": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17968",
+      "room": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
+      "start_time": "13:00",
+      "end_time": "17:30",
+      "location": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17963",
+      "room": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "08:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17963",
+      "room": "Übungsraum 003 (Turner - Raum) (2230.EG.003)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414233",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:10Z"
+  "further_info": "Recommended Reading Francis Bacon: Of Gardens, 1625 Nicole Bauer: Für und wider Wildnis. Soziale Dimensionen einer aktuellen gesellschaftlichen Debatte, Bern Stuttgart Wien 2005. Christoph Bertsch: Villa Garten Landschaft, Berlin 2012 Horst Bredekamp; Wolfram Janzer: Vicino Orsini und der Heilige Wald von Bomarzo: Ein Fürst als Künstler und Anarchist, Worms 1991 Arnold Esch: Landschaften der Frührenaissance. Auf Ausflug mit Pius dem II., München 2008. Christoph Girot: Landschaftsarchitektur gestern und heute. Eine Kulturgeschichte. Hermann Glaser: Hinterm Zaun das Paradies. Illustrierte Ideengeschichte des Gartens, Berlin 2011. Geza Hajos: Der Berg und der Garten, in: Ders. (hg.): Denkmalschutz und Öffentlichkeit. Zwischen Kunst, Kultur und Natur. Frankfurt 2005, S. 209-231. Günter Hartmann: Die Ruine im Landschaftsgarten. Ihre Bedeutung für den frühen Historismus und die Landschaftsmalerei der Romantik, Worms 1981. Uta Hassler (Hg.): Felsengärten, Gartengrotten, Kunstberge. Motive der Natur im Kunst und Garten, München 2014. Nadja Horsch: „Lustige Wildnis“ Echte und höfische Einsiedeleien, In: SSG Baden-Württemberg: Repräsentation und Rückzug. Die Ermitage von Schloss Favorite Rastatt, Petersberg 2018. Stefan Körner: Nature Conservation, Forestry, Landscape Architecture and Historic Preservation: Perspectives for a Conceptual Alliance, in: Kowarik / Körner (Hg.): Wild Urban Woodlands, Berlin Heidelberg 2005, S. 193-220. Kerstin Walter: Das Pittoreske. Die Theorie des englischen Landschaftsgartens als Baustein zum Verständnis der Kunst der Gegenwart, Worms 2006. Blockveranstaltung in einer Woche (nach Absprache) im Frühjahr 2026",
+  "last_updated": "2026-04-21T12:03:45Z"
 }

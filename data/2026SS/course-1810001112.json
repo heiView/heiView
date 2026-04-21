@@ -7,6 +7,7 @@
   "lecturers": [
     "Bulutay, Muhammed Veli"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -14,6 +15,30 @@
       "day_of_week": 2,
       "start_date": "2026-04-14",
       "end_date": "2026-07-21",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-02",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Übungsraum 00.010 (4310.EG.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18981",
+      "room": "Übungsraum 00.010 (4310.EG.010)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "09:00",
       "end_time": "12:00",
       "location": "Übungsraum 00.010 (4310.EG.010)",
@@ -25,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409149",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:13:08Z"
+  "further_info": "Recommended Reading The main textbook is: Birchler, Urs, and Monika Bütler (2007). Information Economics. Routledge. We will follow this textbook closely throughout the course and complement it occasionally with selected academic articles that provide additional insights. Purchasing the book is not required, as the lecture slides cover the main content.",
+  "last_updated": "2026-04-21T10:20:37Z"
 }

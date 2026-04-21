@@ -7,6 +7,7 @@
   "lecturers": [
     "Cheng, Yi-Ching"
   ],
+  "organisation": "Institute of Chinese Studies",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418743",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:45:47Z"
+  "further_info": "Recommended Reading Lehrbuch: 書名：當代中文課程課本6，語言：繁體中文，ISBN：9789570852189 主編：鄧守信教授 編輯老師 第五冊：作者： 王文娟, 洪秀蓉, 陳靜子 臺灣師範大學國語教學中心 2021） Das Lehrbuch ist in der CATS-Bibliothek vorhanden.",
+  "last_updated": "2026-04-21T11:51:04Z"
 }

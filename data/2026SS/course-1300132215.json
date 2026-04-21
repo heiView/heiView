@@ -7,6 +7,7 @@
   "lecturers": [
     "Zöllner, Frank Gerrit"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-15",
   "end_date": "2026-07-08",
   "weeks": [
@@ -20,11 +21,11 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Ort/Venue: Venue, Universitätsmedizin Mannheim, Haus 3, Ebene 4, Raum, 126 Information/Material : Prüfungsform/Exam: Klausur"
+      "note": "Ort/Venue: Venue, Universitätsmedizin Mannheim, Haus 3, Ebene 4, Raum, 126 Information/Material : https://moodle.umm.uni-heidelberg.de/moodle/course/view.php?id=678 Prüfungsform/Exam: Klausur"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410242",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:26:33Z"
+  "further_info": "online information course documents further information virtual consulting hour / contact Reports will have to be uploaded until xx of February 2025. Reports not submitted until the aforementioned date cannot be considered and the course is failed! If you fail to attend 75% of the course, then the course is failed! Organisation: This seminar will be held as a weekly course. We will have an initial meeting to distribute the topics and answer question regarding the course. The course will be held online : https://heiconf.uni-heidelberg.de/zoe-q4g-tj6 Please login with your full name so that the moderator can follow up the attendance of the participants! Preperatory meeting: xx October 2024, 11.15-12.45 am Presetations: start of presentation depends on the number of talks/ presenters and will be discussed at the first meeting, earliest date would be the xx 2024 Submission of report: xx of February 2025.",
+  "last_updated": "2026-04-21T09:51:03Z"
 }

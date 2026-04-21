@@ -7,6 +7,7 @@
   "lecturers": [
     "Yolcu, Nadja-Mira"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411153",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:38:34Z"
+  "further_info": "Recommended Reading Die Texte werden zu Beginn der Vorlesungszeit über Moodle bereitgestellt. Ein Großteil der Literatur ist auf Englisch.",
+  "last_updated": "2026-04-21T11:49:12Z"
 }

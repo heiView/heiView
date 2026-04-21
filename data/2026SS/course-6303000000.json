@@ -7,6 +7,7 @@
   "lecturers": [
     "Steinleitner, Wiebke"
   ],
+  "organisation": "Heidelberg School of Education (HSE)",
   "start_date": "2026-04-27",
   "end_date": "2026-07-20",
   "weeks": [
@@ -83,18 +84,6 @@
       "note": "heiSKILLS Seminarzentrum, SR 2"
     },
     {
-      "day_of_week": 2,
-      "start_date": "2026-06-09",
-      "end_date": "2026-06-09",
-      "start_time": "09:30",
-      "end_time": "17:30",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
-      "note": "heiSKILLS Seminarzentrum, SR 2"
-    },
-    {
       "day_of_week": 3,
       "start_date": "2026-04-29",
       "end_date": "2026-04-29",
@@ -110,18 +99,6 @@
       "day_of_week": 3,
       "start_date": "2026-05-27",
       "end_date": "2026-05-27",
-      "start_time": "09:00",
-      "end_time": "17:00",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
-      "note": "heiSKILLS Seminarzentrum, SR 3"
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-07-08",
-      "end_date": "2026-07-08",
       "start_time": "09:00",
       "end_time": "17:00",
       "location": "Siehe Anmerkung",
@@ -167,6 +144,18 @@
       "note": null
     },
     {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "09:30",
+      "end_time": "17:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 2 https://www.heiskills.uni-heidelberg.de/de/ueber-uns/wissenschaftliche-weiterbildung/heigrade-programme/unsere-veranstaltungsorte/seminarzentrum"
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-05-15",
       "end_date": "2026-05-15",
@@ -188,7 +177,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "heiSKILLS Seminarzentrum, SR 3"
+      "note": "heiSKILLS Seminarzentrum, SR 3 https://www.heiskills.uni-heidelberg.de/de/ueber-uns/wissenschaftliche-weiterbildung/heigrade-programme/unsere-veranstaltungsorte/seminarzentrum"
     },
     {
       "day_of_week": 2,
@@ -224,7 +213,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "heiSKILLS Seminarzentrum, SR 2"
+      "note": "heiSKILLS Seminarzentrum, SR 2 https://www.heiskills.uni-heidelberg.de/de/ueber-uns/wissenschaftliche-weiterbildung/heigrade-programme/unsere-veranstaltungsorte/seminarzentrum"
     },
     {
       "day_of_week": 4,
@@ -296,7 +285,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "heiSKILLS Seminarzentrum, SR 2"
+      "note": "heiSKILLS Seminarzentrum, SR 2 https://www.heiskills.uni-heidelberg.de/de/ueber-uns/wissenschaftliche-weiterbildung/heigrade-programme/unsere-veranstaltungsorte/seminarzentrum"
     },
     {
       "day_of_week": 1,
@@ -308,7 +297,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "heiSKILLS Seminarzentrum, SR 2"
+      "note": "heiSKILLS Seminarzentrum, SR 2 https://www.heiskills.uni-heidelberg.de/de/ueber-uns/wissenschaftliche-weiterbildung/heigrade-programme/unsere-veranstaltungsorte/seminarzentrum"
     },
     {
       "day_of_week": 2,
@@ -321,6 +310,18 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": "heiSKILLS Lehren und Lernen, Seminarraum 314, 3. OG"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "heiSKILLS Seminarzentrum, SR 3 https://www.heiskills.uni-heidelberg.de/de/ueber-uns/wissenschaftliche-weiterbildung/heigrade-programme/unsere-veranstaltungsorte/seminarzentrum"
     },
     {
       "day_of_week": 2,
@@ -416,7 +417,7 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "heiSKILLS Seminarzentrum, SR 2"
+      "note": "heiSKILLS Seminarzentrum, SR 2 https://www.heiskills.uni-heidelberg.de/de/ueber-uns/wissenschaftliche-weiterbildung/heigrade-programme/unsere-veranstaltungsorte/seminarzentrum"
     },
     {
       "day_of_week": 1,
@@ -433,6 +434,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416113",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:21:35Z"
+  "further_info": "Recommended Reading wird im Kurs bekannt gegeben Für die administrative Organisation dieser Veranstaltung ist das HSE Prüfungsamt zuständig. Rückfragen stellen Sie daher bitte an das Prüfungsamt. Email: hse-pruefungsamt@heiedu.uni-heidelberg.de Geben Sie bei schriftlichen Rückfragen bitte stets Ihre Matrikelnummer an. Sie erhalten alle weiteren Angaben zum Kurs nach der Platzvergabe.",
+  "last_updated": "2026-04-21T10:29:38Z"
 }

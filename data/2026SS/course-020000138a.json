@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Garofalo, Mariavittoria), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-15",
   "end_date": "2026-05-27",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415145",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:19Z"
+  "further_info": "Recommended Reading Bibliographische und normative Hinweise werden in der Einführungsvorlesung mitgeteilt. Ein Link wird auf Moodle aktiviert.",
+  "last_updated": "2026-04-21T10:05:46Z"
 }

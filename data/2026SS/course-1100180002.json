@@ -7,6 +7,7 @@
   "lecturers": [
     "Bartels, Johannes"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-02",
   "end_date": "2026-04-10",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412489",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:06:35Z"
+  "further_info": "Bitte tragen Sie sich in Müsli ein.",
+  "last_updated": "2026-04-21T10:11:33Z"
 }

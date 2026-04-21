@@ -7,6 +7,7 @@
   "lecturers": [
     "Borowski, Martin"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-14",
   "end_date": "2026-07-17",
   "weeks": [
@@ -20,7 +21,7 @@
       "location_link": null,
       "room": "Online",
       "building": null,
-      "note": "Vorbesprechung Zugangsdaten: Zugangscode:"
+      "note": "Vorbesprechung Zugangsdaten: https://heiconf.uni-heidelberg.de/xv2e-eyuj-fayc-vhxx Zugangscode: durable wagon extinct demeanor clique"
     },
     {
       "day_of_week": 4,
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417528",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T14:00:14Z"
+  "further_info": "Ich werde im Sommersemester 2026 ein Seminar zu ausgewählten Themen im Völkerrecht, Ver-fassungsrecht und der Rechtsphilosophie anbieten. Ein Teil der angebotenen Themen wird in Form von Studienarbeiten über das Prüfungsamt der Fakultät vergeben. Bei Fragen und Wünschen bzgl. der Vergabe der fünf frei zu vergebenden Themen können Sie sich gerne per E-Mail an meine Mitarbeiterin Frau Charlotte Stocker (Email: charlotte.stocker@jurs.uni-heidelberg.de)",
+  "last_updated": "2026-04-21T10:44:35Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Fischer von Weikersthal, Felicitas"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411300",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:41:49Z"
+  "further_info": "Recommended Reading Schößler, Franziska: Einführung in die Gender Studies, Berlin 2008; Opitz-Belakhal, Claudia: Geschlechtergeschichte, Frankfurt/New York 2018; Erica L. Fraser: “Gender and Sexuality in Russian History: New Directions”, in Journal of the CHA 25 (2014) 2, S. 319-328; Dan Healey: Russian Homophobia from Stalin to Sochi, London et al. 2018.",
+  "last_updated": "2026-04-21T10:44:40Z"
 }

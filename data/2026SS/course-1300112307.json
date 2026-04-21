@@ -7,6 +7,7 @@
   "lecturers": [
     "Britzen, Silke"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410458",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:58:48Z"
+  "further_info": "Recommended Reading Literatur wird jeweils themenspezifisch vorgestellt. https://blog.mpifr-bonn.mpg.de/silkebritzen/ https://blog.mpifr-bonn.mpg.de/silkebritzen/vorlesung-universitat-heidelberg/",
+  "last_updated": "2026-04-21T10:00:46Z"
 }

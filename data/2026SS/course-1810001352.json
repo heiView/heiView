@@ -7,6 +7,7 @@
   "lecturers": [
     "Deb, Moumita"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-07-10",
   "end_date": "2026-07-10",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418842",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:35:57Z"
+  "further_info": "Recommended Reading (1) Strategic abstention Grosser, J. and M. Seebauer (2016). The curse of uninformed voting: An experimental study, Games and Economic Behavior Mechtenberg, L. and J.-R. Tyran (2019). Voter motivation and the quality of democratic choice, Games and Economic Behavior (2) Endogenous information acquisition and Voting Bhattacharya, S., J. Duffy, and S. Kim (2017). Voting with endogenous information acquisition: Experimental evidence, Games and Economic Behavior Elbittar, A., A. Gomberg, C. Martinelli, and T. R. Palfrey (2020). Ignorance and bias in collective decisions, Journal of Economic Behavior & Organization (3) Experiments in Voting Mengel, F. and J. Rivas (2017). Common value elections with private information and informative priors: Theory and experiments, Games and Economic Behavior Fehrler, S. and N. Hughes (2018). How transparency kills information aggregation: theory and experiment, American Economic Journal: Microeconomics (4) Swing Voter’s Curse in Voting Morton, R. B. and J.-R. Tyran (2011). Let the experts decide? Asymmetric information, abstention, and coordination in standing committees, Games and Economic Behavior Battaglini, M., R. B. Morton, and T. R. Palfrey (2010). The swing voter's curse in the laboratory, The Review of Economic Studies (5) Expressive Voting Ambrus, A., B. Greiner, and A. Zednik (2025). The effect of a ‘None of the above’ ballot paper option on voting behavior and election outcomes, Journal of Public Economics DellaVigna, S., J. A. List, U. Malmendier, and G. Rao (2016). Voting to tell others, The Review of Economic Studies further information additional information",
+  "last_updated": "2026-04-21T11:46:14Z"
 }

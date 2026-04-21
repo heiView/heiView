@@ -7,6 +7,7 @@
   "lecturers": [
     "Neureither, Georg"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408717",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:11:52Z"
+  "further_info": "Recommended Reading Codex Iuris Canonici; de Wall/Muckel, Kirchenrecht, 6th ed. (2022); Hecke, Kanonisches Recht, 2017; Helmholz, Kanoni-sches Recht und europäische Rechtskultur, 2013; Konrad, Der Rang und die grundlegende Bedeutung des Kirchenrechts im Verständnis der evangelischen und katholischen Kirche, 2010; Haering/Rees/Schmitz (eds.), Handbuch des katholischen Kirchenrechts, 3rd ed. (2015); Religion – Weltanschauung – Recht [ RWR ] (www.religion-weltanschauung-recht.de). Fur-ther references will be provided in the course of the lecture.",
+  "last_updated": "2026-04-21T10:01:18Z"
 }

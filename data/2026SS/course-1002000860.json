@@ -7,8 +7,9 @@
   "lecturers": [
     "Keller, Kim Sophie"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-20",
-  "end_date": "2026-07-20",
+  "end_date": "2026-07-13",
   "weeks": [
     {
       "day_of_week": 1,
@@ -25,7 +26,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-27",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "HS 1 (3020.01.127)",
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407579",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:33:02Z"
+  "further_info": "online information e-learning course Sollte das Studium aufgrund individueller Bedürfnisse oder Beeinträchtigungen für Sie mit besonderen Herausforderungen verbunden sein, informieren Sie bitte die zuständige Lehrperson vorab bzw. zu Beginn der Lehrveranstaltung. Sehr gerne können wir dann gemeinsam besprechen, wie eine barrierefreie Teilnahme an der Lehrveranstaltung sowie das Erbringen von Prüfungsleistungen gestaltet werden kann. Für Fragen zur barrierefreien Lehre, zum Nachteilsausgleich bei Prüfungen sowie zu Unterstützungsmöglichkeiten an der Universität Heidelberg stehen Ihnen auch Susanne Kemmer und Julia Heyne (Studienberaterinnen) und Christoph Schlomach (Beauftragter für Studierende mit Behinderung und chronischer Erkrankung), gerne zur Verfügung. E-Mail: inklusiv.studieren@uni-heidelberg.de",
+  "last_updated": "2026-04-21T11:42:54Z"
 }

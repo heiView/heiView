@@ -7,6 +7,7 @@
   "lecturers": [
     "Schwarz, Ulrich"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-23",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410489",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:35:38Z"
+  "further_info": "Recommended Reading A script is availabe from earlier editions of this lecture. A standard textbook would be R. Phillips, J. Kondev and J. Theriot, Physical Biology of the Cell, 2nd edition, Garland Sci. 2012.",
+  "last_updated": "2026-04-21T11:45:49Z"
 }

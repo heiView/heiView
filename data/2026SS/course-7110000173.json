@@ -8,6 +8,7 @@
     "Sinning, Irmgard Maria",
     "Wild, Klemens"
   ],
+  "organisation": "Heidelberg University Biochemistry Center",
   "start_date": "2026-04-27",
   "end_date": "2026-07-13",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/391987",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:55:53Z"
+  "further_info": "Dieses Seminar bereitet auf das Praktikum zum Wahlpflichtmodul WI vor. Es ist Bestandteil des WI Moduls und verpflichtend zum Erhalt des Modulscheins.",
+  "last_updated": "2026-04-21T10:27:41Z"
 }

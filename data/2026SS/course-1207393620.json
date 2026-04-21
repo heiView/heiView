@@ -7,6 +7,7 @@
   "lecturers": [
     "Mächtle, Bertil"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409340",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T14:10:30Z"
+  "further_info": "Keine Lehrveranstaltung am 03.06.25 (Exkursionswoche!)",
+  "last_updated": "2026-04-21T11:39:27Z"
 }

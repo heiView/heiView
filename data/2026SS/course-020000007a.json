@@ -7,6 +7,7 @@
   "lecturers": [
     "Baldus, Christian"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408687",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:43:02Z"
+  "further_info": "Recommended Reading Grundlagen und Zentralthemen: Söllner / Baldus, Römisches Recht (Heidelberg 2022); weitere in der ersten Stunde online information e-learning course Fachfremde Studierende: Teilnahme am Kurs ohne Anmeldung möglich; bei regelmäßiger Anwesenheit Teilnahmeschein; benoteter Schein: s.o. Bitte klären Sie rechtzeitig mit dem Prüfungsamt Ihrer eigenen Fakultät, welche Anerkennungs-und Benotungsregeln bestehen.",
+  "last_updated": "2026-04-21T10:42:36Z"
 }

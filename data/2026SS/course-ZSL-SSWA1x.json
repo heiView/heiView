@@ -7,6 +7,7 @@
   "lecturers": [
     "Eriksson, Joacim"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-20",
   "end_date": "2026-07-24",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413742",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:07Z"
+  "further_info": "Recommended Reading Lehrbuch: Rivstart A1+A2: Textbok, 2. Auflage. ISBN: 978-3-12-527991-9. Kapitel 1-9 Übungsbuch: Rivstart A1+A2: Övningsbok, 2. Auflage. ISBN: 978-3-12-527992-6. Kapitel 1-9",
+  "last_updated": "2026-04-21T11:47:34Z"
 }

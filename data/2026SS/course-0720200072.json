@@ -7,6 +7,7 @@
   "lecturers": [
     "Popp, Markus"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412162",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:22Z"
+  "further_info": "Recommended Reading Monika Fenn u.a. (Hrsg.): Geschichtsdidaktik: Praxishandbuch, Berlin 2023. Michael Sauer: Geschichte unterrichten: Eine Einführung in die Didaktik und Methodik, 15. Aufl. Seelze 2025. Hans-Jürgen Pandel u.a. (Hrsg.): Handbuch Medien im Geschichtsunterricht. 7. Aufl. Schwalbach/Ts. 2017.",
+  "last_updated": "2026-04-21T10:04:23Z"
 }

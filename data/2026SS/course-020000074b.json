@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419236",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:28:05Z"
+  "further_info": "Recommended Reading Mitzubringen ist die aktuelle dtv-Ausgabe Ausländerrecht. Die Teilnehmenden werden gebeten, die Einführung der Gesetzessammlung bereits vor Beginn der Veranstaltung zu lesen Weitere Informationen finden Sie auch unter: www.jura.uni- heidelberg.de/anwaltsorientierung/veranstaltungen/",
+  "last_updated": "2026-04-21T10:38:04Z"
 }

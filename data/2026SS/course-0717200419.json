@@ -7,6 +7,7 @@
   "lecturers": [
     "Kühne, Carina"
   ],
+  "organisation": "Egyptology",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414394",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:10Z"
+  "further_info": "Recommended Reading Eine Literaturliste wird zu Beginn des Kurses zur Verfügung gestellt. Der Kurs richtet sich an Ägyptologiestudierende im 2. Fachsemester und interessierte fachfremde Gäste (insb. ÜK), die auch bereit sind, ein Referat zu übernehmen.",
+  "last_updated": "2026-04-21T10:05:32Z"
 }

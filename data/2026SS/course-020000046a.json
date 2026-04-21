@@ -7,6 +7,7 @@
   "lecturers": [
     "Kahl, Wolfgang"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-22",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408779",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:26:26Z"
+  "further_info": "Recommended Reading Will be provided at the beginning of the course. A structure of the course and references will be available in Moodle by the starting date of the course. Description: The 2 hour course Administrative Procedural Law in German Language will take place every Wednesday at 9 a.m., starting april the 22th. It gives an overview of the Administrative Procedural Law. The topics covered include procedural principles, administrative review, the conditions of admissibility of administrative court proceedings, different forms of actions, altered types and effects of judicial decisions and interim legal protection.",
+  "last_updated": "2026-04-21T09:50:50Z"
 }

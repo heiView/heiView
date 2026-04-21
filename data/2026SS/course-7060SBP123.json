@@ -7,6 +7,7 @@
   "lecturers": [
     "Kaessmann, Henrik"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": "2026-06-08",
   "end_date": "2026-06-26",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412278",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:49:51Z"
+  "further_info": "Dauer: 08.06.-26.06.2026, 10.00-18.00 Uhr, 3-wöchig, ganztägig, INF 329, 1. OG",
+  "last_updated": "2026-04-21T10:33:56Z"
 }

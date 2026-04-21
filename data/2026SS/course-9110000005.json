@@ -7,6 +7,7 @@
   "lecturers": [
     "Hohenberger, Ralph Christian"
   ],
+  "organisation": "University Hospital of Otolaryngology",
   "start_date": "2026-03-12",
   "end_date": "2026-07-17",
   "weeks": [
@@ -20,7 +21,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 4,
@@ -32,7 +33,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 4,
@@ -44,7 +45,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 4,
@@ -56,7 +57,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 4,
@@ -68,7 +69,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 4,
@@ -80,7 +81,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 4,
@@ -92,7 +93,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     },
     {
       "day_of_week": 5,
@@ -152,11 +153,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
       "room": "KOPF Spiegelsaal (6400.EG.276)",
       "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
-      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle"
+      "note": "Detaillierte Informationen zum Ablauf der Prüfung werden in der Einführungsveranstaltung oder in Moodle bekannt gegeben."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414204",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:55:42Z"
+  "further_info": "Danach Aufteilung in Untergruppen HNO und Augenheilkunde",
+  "last_updated": "2026-04-21T09:58:56Z"
 }

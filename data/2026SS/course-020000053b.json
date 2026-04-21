@@ -8,6 +8,7 @@
     "Pracht, Robert",
     "Reimer, Ekkehart"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-13",
   "end_date": "2026-06-15",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416208",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:51:31Z"
+  "further_info": "Recommended Reading In der Vorlesung.",
+  "last_updated": "2026-04-21T09:50:36Z"
 }

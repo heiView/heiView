@@ -7,6 +7,7 @@
   "lecturers": [
     "Pillepich, Annalisa"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-09-16",
   "end_date": "2026-09-25",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410261",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:13Z"
+  "further_info": "Recommended Reading Literature: to be announced by lecturer The first class time is 09:30am on Wed Sept. 16th, 2026 Both lectures and exercise classes will take place in Kirchhoff-Institut für Physik (KIP), INF 227 (Im Neuenheimer Feld) HS 2 (EG, ground floor).",
+  "last_updated": "2026-04-21T10:02:47Z"
 }

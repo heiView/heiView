@@ -7,6 +7,7 @@
   "lecturers": [
     "Menzel, Lucas"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-09-21",
   "end_date": "2026-09-26",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409394",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:05:27Z"
+  "further_info": "Organisation der Teilnehmerinnen und Teilnehmer in Fahrgemeinschaften. Übernachtungen in Jugend-herbergen bzw. Naturfreundehäusern. Vorbesprechung nach Bekanntgabe",
+  "last_updated": "2026-04-21T10:09:55Z"
 }

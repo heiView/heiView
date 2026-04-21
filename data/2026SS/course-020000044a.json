@@ -7,6 +7,7 @@
   "lecturers": [
     "Borowski, Martin"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-14",
   "end_date": "2026-07-23",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408777",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:10:08Z"
+  "further_info": "Recommended Reading werden in der Vorlesung gegeben Zu den Vorlesungen ist eine Gesetzessammlung zum Staatsrecht in aktueller Fassung mitzubringen.",
+  "last_updated": "2026-04-21T10:16:42Z"
 }

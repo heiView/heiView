@@ -5,11 +5,12 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [],
+  "organisation": "Institute for Global Health",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417279",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Weiterführende Literatur siehe: http://www.klinikum.uni-heidelberg.de/Literatur-zum-Thema.122125.0.html",
+  "last_updated": "2026-04-21T11:39:57Z"
 }

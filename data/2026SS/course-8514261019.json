@@ -7,6 +7,7 @@
   "lecturers": [
     "Golinets, Viktor"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416033",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:02Z"
+  "further_info": "Recommended Reading J. Barr, The Variable Spellings of the Hebrew Bible. Oxford 1989. G. Miletto, Textus Babylonicus. Die Textvarianten in den biblischen Handschriften der babylonisch-jemenitischen Tradition. Berlin 2022. D. Stern, The Jewish Bible. A Material History. Seattle/London 2017. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
+  "last_updated": "2026-04-21T10:03:56Z"
 }

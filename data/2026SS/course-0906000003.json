@@ -7,6 +7,7 @@
   "lecturers": [
     "Maier, Juliane"
   ],
+  "organisation": "Institute for German as a Foreign Language",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414515",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:31:25Z"
+  "further_info": "Recommended Reading Jeuk, S. & Settinieri, J. (2019). Sprachdiagnostik Deutsch als Zweitsprache. Berlin: De Gruyter. DAF-DaZ-B2 (6 LP) DaFDaZ-BF-B1 (4 LP)",
+  "last_updated": "2026-04-21T11:41:06Z"
 }

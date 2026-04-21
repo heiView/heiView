@@ -7,6 +7,7 @@
   "lecturers": [
     "Zlatanov Velichkov, Blagovest"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-14",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413804",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:11:49Z"
+  "further_info": "Recommended Reading Radeva, V. (Hrsg.). Bulgarische Grammatik: morphologisch-syntaktische Grundzüge. Helmut Buske Verlag, Hamburg 2003. Walter, H.; Karvanbasieva, E. Lehrbuch der bulgarischen Sprache. Leipzig 1989. Schulgasse/Augustinergasse 6/15, Komenský-Raum (2190.02.216)",
+  "last_updated": "2026-04-21T10:01:12Z"
 }

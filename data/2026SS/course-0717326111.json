@@ -7,6 +7,7 @@
   "lecturers": [
     "Havener, Wolfgang"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408215",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:36Z"
+  "further_info": "Recommended Reading H.J. Gehrke / H. Schneider (Hrsg.), Geschichte der Antike. Ein Studienbuch, 5. Aufl., Stuttgart 2019 (alle Auflagen sind nutzbar).",
+  "last_updated": "2026-04-21T10:06:07Z"
 }

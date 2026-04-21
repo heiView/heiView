@@ -7,6 +7,7 @@
   "lecturers": [
     "Albrecht, Andrea"
   ],
+  "organisation": "Seminar for German Studies",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409895",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:03:34Z"
+  "further_info": "Recommended Reading Silke Lahn, Jan Christoph Meister: Einführung in die Erzähltextanalyse. 2., aktualisierte Auflage, Stuttgart/Weimar, 2013; Dieter Burdorf: Einführung in die Gedichtanalyse. 3. Aufl. Stuttgart 2015; Bernhard Asmuth: Einführung in die Dramenanalyse. 8. Aufl. Stuttgart 2016",
+  "last_updated": "2026-04-21T10:07:36Z"
 }

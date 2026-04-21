@@ -7,6 +7,7 @@
   "lecturers": [
     "Wypior, Cajus"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412167",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:28:52Z"
+  "further_info": "Recommended Reading Michael Sauer: Geschichte unterrichten. Eine Einführung in die Didaktik und Methodik. Seelze 2018. Oliver Held: ChatGPT im Geschichtsunterricht. Frankfurt 2024. Oliver Held: Die Rolle des Geschichtsunterrichts in Zeiten von KI. In: Geschichte lernen Nr. 219/2024, S. 59-62. Christopher Muhler: Quellenproblematik in Zeiten von KI. Inwieweit verändert KI den Umgang mit „Quellen“ im Geschichtsunterricht? In: Geschichte lernen 221/2024, S 60-63. Hannes Burkhardt, Anja Neubert: Historisches Lernen mit Künstlicher Intelligenz? In: Geschichte für heute 2024 (1), S. 71-86. Alexander König: Geschichte zwischen Konstruktion und Halluzination. Visual History und KI-gestützte Bildpraxen im Geschichtsunterricht, in: Geschichte lernen 223/2025, S. 27-33.",
+  "last_updated": "2026-04-21T09:52:05Z"
 }

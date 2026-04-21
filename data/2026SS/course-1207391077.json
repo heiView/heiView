@@ -7,6 +7,7 @@
   "lecturers": [
     "Marquardt, Editha"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-20",
   "end_date": "2026-07-13",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408716",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:57:10Z"
+  "further_info": "Vorausgesetzt wird die Bereitschaft zur intensiven Lektüre und aktiven Teilnahme an den Diskussionen.",
+  "last_updated": "2026-04-21T10:25:56Z"
 }

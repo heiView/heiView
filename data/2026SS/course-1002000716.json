@@ -7,6 +7,7 @@
   "lecturers": [
     "Prüßner, Luise"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408329",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:28:01Z"
+  "further_info": "Recommended Reading Bandelow, B., Lichte, T., Rudolf, S., Wiltink, J., & Beutel, M. (2014). S3-Leitlinie Angststörungen. Berlin, Heidelberg: Springer-Verlag. Hagena, S. & Gebauer, M. (2023). Therapie-Tools Angststörungen. Weinheim, Basel: Beltz. Hamm, A. (2006). Spezifische Phobien. Fortschritte der Psychotherapie. Göttingen: Hogrefe.",
+  "last_updated": "2026-04-21T10:37:59Z"
 }

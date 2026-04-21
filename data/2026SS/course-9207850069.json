@@ -8,6 +8,7 @@
     "Heilig, Christoph",
     "Teleanu, Maria Veronica"
   ],
+  "organisation": "Clinic National Center for Tumour Diseases (NCT)",
   "start_date": "2026-04-17",
   "end_date": "2026-04-17",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417499",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:26:49Z"
+  "further_info": "Recommended Reading Keine Voraussetzungen. Nützliche Vorbereitung: NCT/DKFZ MASTER handbook of interpreting whole-genome, transcriptome, and methylome data for precision oncology. A Mock, V Teleanu, S Kreutzfeldt, C.E. Heilig et al, NPJ Precis Oncol (2023). Link zur Publikation: https://www.nature.com/articles/s41698-023-00458-w",
+  "last_updated": "2026-04-21T11:35:23Z"
 }

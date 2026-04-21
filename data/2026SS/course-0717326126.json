@@ -7,6 +7,7 @@
   "lecturers": [
     "Havener, Wolfgang"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408223",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:35Z"
+  "further_info": "Recommended Reading H. Börm: Westrom. Von Honorius bis Justinian. 2 . Aufl. Stuttgart 2018; S. Mitchell/G. Greatrex: A History of the Later Roman Empire. AD 284-700. 3. Aufl. Malden/MA 2023; G. Halsall: Barbarian Migrations and the Roman West. Cambridge 2007; J. Moorhead: The Roman Empire Divided. Edinburgh 2001.",
+  "last_updated": "2026-04-21T10:03:19Z"
 }

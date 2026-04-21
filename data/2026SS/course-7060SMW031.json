@@ -7,11 +7,12 @@
   "lecturers": [
     "Mayer, Matthias"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385566",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Wandinger SK, Richter K & Buchner J (2008) The Hsp90 chaperone machinery. J Biol Chem 283, 18473-18477 On Fridays, biweekly, 9.00-10.30 a.m., INF 345, 1. floor, seminar room",
+  "last_updated": "2026-04-21T10:20:11Z"
 }

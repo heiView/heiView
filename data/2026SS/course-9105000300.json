@@ -7,6 +7,7 @@
   "lecturers": [
     "Lehmann, Ronny"
   ],
+  "organisation": "University Paediatric Hospital",
   "start_date": "2026-01-14",
   "end_date": "2026-07-01",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407431",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:39:47Z"
+  "further_info": "Mittwochs, wöchentl.; 15:30 - 17:00 Uhr / INF 440 / Lehretrakt Neue Frauen-Hautklinik / Raum 273",
+  "last_updated": "2026-04-21T10:38:12Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Müller, Samira Kathrin"
   ],
+  "organisation": "Institute of Chinese Studies",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412046",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:47:40Z"
+  "further_info": "Recommended Reading K. J. DeWoskin. A Song for One or Two: Music and the Concept of Art in Early China. Ann Arbor 1982; L. von Falkenhausen. Suspended Music: Chime-Bells in Culture of Bronze Age China. Berkeley 1993; G. C. Cupchik, D. Stamatopoulou & S. Duan. “Finding Elusive Resonances Across Cultures and Time.” NOAD (2021) 139–156; R. Huang, B. L. T. Sturm & A. Holzapfel. De-Centering the West: East Asian Philosophies and the Ethics of Applying Artificial Intelligence to Music. Proceedings of the 22nd ISMIR Conference (2021) 301–309.",
+  "last_updated": "2026-04-21T10:34:42Z"
 }

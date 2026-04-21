@@ -7,6 +7,7 @@
   "lecturers": [
     "Dullemond, Cornelis"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
   "end_date": "2026-09-22",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410446",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:43:29Z"
+  "further_info": "online information course documents further information actual information",
+  "last_updated": "2026-04-21T10:39:41Z"
 }

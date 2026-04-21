@@ -7,6 +7,7 @@
   "lecturers": [
     "Albrecht, Anne-Grit"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-21",
   "end_date": "2026-07-30",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408137",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:22Z"
+  "further_info": "Recommended Reading Es werden alle wichtigen Informationen am 1. Termin 21.04.26, 9:15-10:45 Uhr im Raum GFS, 2. OG Hauptgebäude besprochen. Der Termin für die Trainingsdurchführung findet am 23. Juli 2026 von 9:00 bis 16:00 Uhr im Seminarzentrum Raum NN statt.",
+  "last_updated": "2026-04-21T10:38:40Z"
 }

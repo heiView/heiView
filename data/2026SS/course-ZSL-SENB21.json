@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-20",
   "end_date": "2026-07-22",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413782",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:23:14Z"
+  "further_info": "Recommended Reading Grammatikübungen, Handouts, Videoaufnahmen, Filme",
+  "last_updated": "2026-04-21T10:08:07Z"
 }

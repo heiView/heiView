@@ -7,6 +7,7 @@
   "lecturers": [
     "Osnabrügge, Jonas"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408260",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:56:58Z"
+  "further_info": "Recommended Reading K. Brodersen (Hrsg.), Virtuelle Antike. Wendepunkte der Alten Geschichte (Darmstadt 2000); Q. Deluermoz – P. Singaravélou, A Past of Possibilities: A History of What Could Have Been (Yale 2023); A. Demandt: Ungeschehene Geschichte. Ein Traktat über die Frage: Was wäre geschehen, wenn ...? (Göttingen 2011); J. Dillinger, Uchronie. Ungeschehene Geschichte von der Antike bis zum Steampunk (Paderborn 2015); R.J. Evans, Altered Pasts : Counterfactuals in History (Waltham, MA. 2013).",
+  "last_updated": "2026-04-21T10:25:43Z"
 }

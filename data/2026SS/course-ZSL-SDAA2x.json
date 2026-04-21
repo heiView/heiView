@@ -7,6 +7,7 @@
   "lecturers": [
     "Hjorth, Pernille"
   ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-24",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413724",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:35Z"
+  "further_info": "Recommended Reading Lehrbuch: Dansk for dig neu A1-A2. Kursbuch mit Audios. ISBN: 978-3-12-528971-0 (ab Kapitel 11) Übungsbuch: Dansk for dig neu A1-A2. Übungsbuch mit Audios. ISBN 978-3-12-528972-7 (Kapitel 11-) Lösungsheft: Dansk for dig neu A1-A2. Lösungsheft. ISBN 978-3-12-528973-4",
+  "last_updated": "2026-04-21T10:03:15Z"
 }

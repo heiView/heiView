@@ -7,11 +7,12 @@
   "lecturers": [
     "Rother, Carsten"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414475",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Normally, we only offer a Master Practical in combination with a Master’s thesis. You should also have prior knowledge of machine learning and have attended the ‘Computer Vision’ lecture. If you are interested, we kindly ask you to contact the lecturers. Normalerweise bieten wir das Masterpraktikum nur in Kombination mit einer Masterarbeit in unserer Gruppe an. Ausserdem sollte Vorwissen im Bereich Machinelles Lernen bestehen und die Vorlesung \"Computer Vision\" erfolgreich abgeschlossen sein. Bei Interesse bitte Kontakt mit dem Dozierenden aufnehmen.",
+  "last_updated": "2026-04-21T10:28:34Z"
 }

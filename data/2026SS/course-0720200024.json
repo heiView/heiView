@@ -7,6 +7,7 @@
   "lecturers": [
     "Berg, Manfred"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411051",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:35:27Z"
+  "further_info": "Recommended Reading Sean Wilentz, Major Problems in the Early Republic 1787-1848, Lexington, Mass., 1992; Sean Wilentz, The Rise of American Democracy: From Jefferson to Lincoln. New York, 2005; Gordon S. Wood, Empire of Liberty: A History of the Early Republic. New York, 2009; Daniel Walker Howe, What Hath God Wrought: The Transformation of America, 1815-1848. New York, 2007; Walter A. McDougall, Throes of Democracy: The American Civil War Era, 1829-1877. New York, 2008.",
+  "last_updated": "2026-04-21T11:45:36Z"
 }

@@ -7,12 +7,13 @@
   "lecturers": [
     "Strzodka, Robert"
   ],
-  "start_date": "2026-04-14",
+  "organisation": "Institute of Computer Engineering (ZITI)",
+  "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
     {
       "day_of_week": 2,
-      "start_date": "2026-04-14",
+      "start_date": "2026-04-21",
       "end_date": "2026-07-21",
       "start_time": "09:30",
       "end_time": "13:00",
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416484",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:52:49Z"
+  "further_info": "Recommended Reading • Bjarne Stroustrup: A Tour of C++ (2rd ed, Addison-Wesley, 2022) • Additional material will be provided through the learning platform",
+  "last_updated": "2026-04-21T10:35:26Z"
 }

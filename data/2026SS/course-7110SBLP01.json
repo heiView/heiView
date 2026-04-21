@@ -12,6 +12,7 @@
     "Schling, Petra",
     "Strahl, Sabine"
   ],
+  "organisation": "Heidelberg University Biochemistry Center",
   "start_date": "2026-03-23",
   "end_date": "2026-05-08",
   "weeks": [
@@ -78,6 +79,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409605",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:39:38Z"
+  "further_info": "Gruppe 1: 23.03.-27.03.26 11:00-12:00 Uhr, INF 328, EG, SR 25 Gruppe 2: 13.04.- 17.04.26 11:00-12:00 Uhr, INF 306, EG, SR 20 Gruppe 3: 20.04.-24.04.26 11:00-12:00 Uhr, INF 306, EG, SR 20 Gruppe 4: 27.04.-30.04.26 11:00-12:00 Uhr, INF 326, EG, SR 20 09.05. Samstags Kurs SR25 Gruppe 5: 04.05.-08.05.26 11:00-12:00 Uhr, INF 306, EG, SR 20 bzw. siehe E-Mail",
+  "last_updated": "2026-04-21T10:31:24Z"
 }

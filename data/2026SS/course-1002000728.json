@@ -7,6 +7,7 @@
   "lecturers": [
     "Stein, Miriam"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-21",
   "end_date": "2026-07-14",
   "weeks": [
@@ -85,6 +86,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415908",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:15Z"
+  "further_info": "Recommended Reading Wichtigste Quellen: Barnow, S., Blitzner, E., Borm, I., & Sauer, C. (2024). Emotionsregulation: Therapiemanual und Arbeitsbuch: Training zum flexibleren Umgang mit Gefühlen. Springer-Verlag. Scholz, L., Kiesewetter, J. (2023). Gruppenpsychotherapeutische Grundversorgung. Klett-Cotta.",
+  "last_updated": "2026-04-21T09:52:37Z"
 }

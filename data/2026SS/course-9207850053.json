@@ -7,6 +7,7 @@
   "lecturers": [
     "Grünewald, Thomas Georg Philipp"
   ],
+  "organisation": "Clinic National Center for Tumour Diseases (NCT)",
   "start_date": "2026-09-23",
   "end_date": "2026-09-25",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418424",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:58:59Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:00:58Z"
 }

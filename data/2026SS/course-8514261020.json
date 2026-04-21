@@ -7,6 +7,7 @@
   "lecturers": [
     "Golinets, Viktor"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416034",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:38:33Z"
+  "further_info": "Recommended Reading M. L. Chan, Language Consciousness in the Hebrew Bible during the Persian Period in Jerusalem. Los Angeles 2019. W. F. Smelik, Rabbis, Language and Translation in Late Antiquity. Cambridge 2013. J. Thon, G. Veltri, E.-J. Waschke, Sprachbewusstsein und Sprachkonzepte im Alten Orient, Alten Testament und rabbinischen Judentum. Halle 2012. Sprachliches Bewusstsein in der Hebräischen Bibel und in der rabbinischen Literatur | Linguistic Awareness in the Hebrew Bible and the Rabbinic Literature",
+  "last_updated": "2026-04-21T11:49:10Z"
 }

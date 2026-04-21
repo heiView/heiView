@@ -7,8 +7,9 @@
   "lecturers": [
     "Tzvetkova-Glaser, Anna Vaskova"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 1,
@@ -21,18 +22,6 @@
       "room": "HS 03 (2170.EG.048)",
       "building": "Grabengasse 3-5, Ground floor",
       "note": null
-    },
-    {
-      "day_of_week": 2,
-      "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
-      "start_time": "14:15",
-      "end_time": "15:45",
-      "location": "KiGa III (1200.02.214)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22593",
-      "room": "KiGa III (1200.02.214)",
-      "building": "Kisselgasse 1, 2nd floor",
-      "note": "Tutorium"
     },
     {
       "day_of_week": 3,
@@ -57,10 +46,22 @@
       "room": "HS 03 (2170.EG.048)",
       "building": "Grabengasse 3-5, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-24",
+      "end_date": "2026-07-24",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "KiGa II (1200.EG.002C)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
+      "room": "KiGa II (1200.EG.002C)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": "Tutorium bei Stephan Mende"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408893",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:47Z"
+  "further_info": "Recommended Reading - ein Griechisch-Deutsches Schulwörterbuch – Gemoll oder Benseler - eine altgriechische Grammatik (z.B. „Ars Graeca“ oder „Hellas“), falls noch nicht für Altgriechisch 1 erworben. Die zu übersetzenden Texte werden zur Verfügung gestellt.",
+  "last_updated": "2026-04-21T10:06:24Z"
 }

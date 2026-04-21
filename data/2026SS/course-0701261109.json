@@ -7,6 +7,7 @@
   "lecturers": [
     "Mantel, Susanne"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411170",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:24Z"
+  "further_info": "Recommended Reading zum Einstieg empfohlen: Philosophie der Gerechtigkeit - Texte von der Antike bis zur Gegenwart. Her-ausgegeben: Horn, Christoph; Scarano, Nico. 9. Aufl., Suhrkamp (2002).",
+  "last_updated": "2026-04-21T10:15:41Z"
 }

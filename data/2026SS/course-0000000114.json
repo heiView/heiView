@@ -7,11 +7,12 @@
   "lecturers": [
     "Rupp, Jan"
   ],
+  "organisation": "English Department",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412644",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Primary reading: Students will need to acquire a copy of the three book-length works. All additional reading will be made available on Moodle. Introductory secondary reading: Carolin Gebauer, Pavan Malreddy and Jan Rupp, \"Nomadworld: Global Mobility and the New Anglophones\", Anglistik 35.1 (2024): 9-18 (DOI https://doi.org/10.33675/ANGL/2024/1/5)",
+  "last_updated": "2026-04-21T11:46:59Z"
 }

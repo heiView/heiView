@@ -7,6 +7,7 @@
   "lecturers": [
     "Nolte, Karen"
   ],
+  "organisation": "Institute for Medical History and Ethics",
   "start_date": "2026-03-25",
   "end_date": "2026-07-15",
   "weeks": [
@@ -20,7 +21,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14886",
       "room": "SR 17b (6328.01.117B)",
       "building": "Im Neuenheimer Feld 328, 1st floor",
-      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger"
+      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger Medizingeschichte und der Prinzhornsammlung) erfolgt über Moodle. Die Zielorte der Seminarexkursionen können variieren. Beachten Sie hierzu die Fristen zur Anmeldung."
     },
     {
       "day_of_week": 3,
@@ -32,7 +33,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
       "room": "SR 2 (6327.EG.002)",
       "building": "Im Neuenheimer Feld 327, Ground floor",
-      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger"
+      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger Medizingeschichte und der Prinzhornsammlung) erfolgt über Moodle. Die Zielorte der Seminarexkursionen können variieren. Beachten Sie hierzu die Fristen zur Anmeldung."
     },
     {
       "day_of_week": 3,
@@ -44,7 +45,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
       "room": "SR 2 (6327.EG.002)",
       "building": "Im Neuenheimer Feld 327, Ground floor",
-      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger"
+      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger Medizingeschichte und der Prinzhornsammlung) erfolgt über Moodle. Die Zielorte der Seminarexkursionen können variieren. Beachten Sie hierzu die Fristen zur Anmeldung."
     },
     {
       "day_of_week": 3,
@@ -56,11 +57,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
       "room": "SR 2 (6327.EG.002)",
       "building": "Im Neuenheimer Feld 327, Ground floor",
-      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger"
+      "note": "Anmeldung zur Objektzentrierte Medizingeschichte sowie zu den Seminarexkursionen (Stadtrundgang APP Heidelberger Medizingeschichte und der Prinzhornsammlung) erfolgt über Moodle. Die Zielorte der Seminarexkursionen können variieren. Beachten Sie hierzu die Fristen zur Anmeldung."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409694",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:58:38Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:00:31Z"
 }

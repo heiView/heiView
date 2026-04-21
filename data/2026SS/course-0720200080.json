@@ -7,6 +7,7 @@
   "lecturers": [
     "Falkner, Christiane Ulrike"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-07-30",
   "end_date": "2026-07-31",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412170",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:54:25Z"
+  "further_info": "Recommended Reading Michael Sauer: Geschichte unterrichten. 10. Aufl., 2012",
+  "last_updated": "2026-04-21T10:29:15Z"
 }

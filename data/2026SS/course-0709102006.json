@@ -7,6 +7,7 @@
   "lecturers": [
     "Müller, Roman"
   ],
+  "organisation": "Department of Classical Philology",
   "start_date": "2026-06-06",
   "end_date": "2026-06-07",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411938",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:38:29Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:17:52Z"
 }

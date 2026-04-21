@@ -7,6 +7,7 @@
   "lecturers": [
     "Morack, Tobias"
   ],
+  "organisation": "Institute of Organic Chemistry",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412976",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:52:55Z"
+  "further_info": "online information e-learning course Anmeldung: bitte per E-Mail an tobias.morack@oci.uni-heidelberg.de Moodle-Kurs: https://moodle.uni-heidelberg.de/course/view.php?id=21493",
+  "last_updated": "2026-04-21T10:30:57Z"
 }

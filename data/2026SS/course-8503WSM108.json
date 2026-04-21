@@ -11,6 +11,7 @@
     "Liu, Haikun",
     "Schilling, Marcel"
   ],
+  "organisation": "Deutsches Krebsforschungszentrum",
   "start_date": "2026-04-27",
   "end_date": "2026-05-22",
   "weeks": [
@@ -29,6 +30,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415448",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:11:48Z"
+  "further_info": "HP-F8: Components and Mechanisms of Signal Transduction Type: Practical Course with Student Seminars Date: 27 April – 22 May 2026 (no course in 4-8 May) Locations: DKFZ Main Building division labs; DKFZ Teaching Lab Hosts/Supervisors: Tobias Dick (t.dick@dkfz.de); Haikun Liu (l.haikun@dkfz.de); Ursula Klingmüller (u.klingmueller@dkfz.de), Marcel Schilling (m.schilling@dkfz.de), Annalisa Addante (annalisa.addante@dkfz-heidelberg.de); and co-workers",
+  "last_updated": "2026-04-21T10:19:02Z"
 }

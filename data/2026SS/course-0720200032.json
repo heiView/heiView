@@ -7,6 +7,7 @@
   "lecturers": [
     "Rauschenberger, Joey"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-13",
   "end_date": "2026-07-23",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409412",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:55:56Z"
+  "further_info": "Recommended Reading Michael Zimmermann (Hg.): Zwischen Erziehung und Vernichtung. Zigeunerpolitik und Zigeunerforschung im Europa des 20. Jahrhunderts, Stuttgart 2007. Karola Fings: Sinti und Roma. Geschichte einer Minderheit, München 2016.",
+  "last_updated": "2026-04-21T09:56:28Z"
 }

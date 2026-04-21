@@ -7,6 +7,7 @@
   "lecturers": [
     "Briesen, Jochen"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411156",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:14Z"
+  "further_info": "Recommended Reading Wird in der ersten Sitzung erläutert.",
+  "last_updated": "2026-04-21T11:51:06Z"
 }

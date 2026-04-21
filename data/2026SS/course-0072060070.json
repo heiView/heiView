@@ -7,6 +7,7 @@
   "lecturers": [
     "Menzel, Stefan"
   ],
+  "organisation": "Musicology Seminar",
   "start_date": "2026-04-30",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412888",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:19Z"
+  "further_info": "Recommended Reading K. Küster: Musik im Namen Luthers. Kulturtraditionen seit der Reformation, Kassel u. Stuttgart 2016; C. Wiesenfeldt u. Stefan Menzel (Hgg.): Musik und Reformation – Politisierung, Medialisierung, Missionierung, Paderborn 2019; S. Menzel: Pforta, St. Afra und St. Augustin und die Transformation der mitteldeutschen Musiklandschaft (1543–1620), Heidelberg 2023.",
+  "last_updated": "2026-04-21T10:32:22Z"
 }

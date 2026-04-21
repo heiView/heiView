@@ -7,6 +7,7 @@
   "lecturers": [
     "Vandermark, Neil"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408356",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:26:43Z"
+  "further_info": "Recommended Reading Baldwin, J. et. al.: Intercultural Communication for Everyday Life (Wiley Blackwell: Chichester, West Sussex, 2024). online information e-learning course",
+  "last_updated": "2026-04-21T10:03:05Z"
 }

@@ -7,11 +7,12 @@
   "lecturers": [
     "Koss, Hans"
   ],
+  "organisation": "Deutsches Krebsforschungszentrum",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418791",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Datum / Uhrzeit: Vorlesungszeit, Einzeltermine nach Vereinbarung; z.B. samstags jeweils von 10 - 16 Uhr oder werktags vom 16 - 18:15 Uhr. Terminvereinbarung: hans.koss@dkfz.de Ort: Radiologisches Entwicklungszentrum, INF 223. Optional / alternativ: online",
+  "last_updated": "2026-04-21T11:38:59Z"
 }

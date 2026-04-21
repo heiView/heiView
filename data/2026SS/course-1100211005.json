@@ -7,6 +7,7 @@
   "lecturers": [
     "Meggendorfer, Stefan"
   ],
+  "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-03-23",
   "end_date": "2026-04-10",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412312",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:33:20Z"
+  "further_info": "Die Einteilung der Gruppen erfolgt in Moodle.",
+  "last_updated": "2026-04-21T11:43:17Z"
 }

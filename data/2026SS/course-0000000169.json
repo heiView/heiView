@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Hoffmann), 010000.100"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-15",
   "end_date": "2026-04-15",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411032",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:28Z"
+  "further_info": "Block und Einzelsitzungen n.V.",
+  "last_updated": "2026-04-21T11:48:25Z"
 }

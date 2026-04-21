@@ -7,6 +7,7 @@
   "lecturers": [
     "N.N., Unbekannt"
   ],
+  "organisation": "Heidelberg School of Education (HSE)",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415475",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:48Z"
+  "further_info": "Die Veranstaltung findet im Rahmen der Kooperation zwischen PH Heidelberg und Universität Heidelberg statt und ist für Unistudierende des M. Ed. geöffnet. Weitere Informationen finden Sie im elektronischen Vorlesungsverzeichnis der PH Heidelberg: Link folgt.",
+  "last_updated": "2026-04-21T10:29:33Z"
 }

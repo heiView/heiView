@@ -7,6 +7,7 @@
   "lecturers": [
     "Kreidl, Christian"
   ],
+  "organisation": "Institute of Computer Engineering (ZITI)",
   "start_date": "2026-07-27",
   "end_date": "2026-07-31",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416463",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:08Z"
+  "further_info": "online information course documents Ort: PC-Pool des ziti in INF350 (Otto-Meyerhof-Zentrum) Raum U012 im Keller. Bitte den Seiteneingang Ost benutzen!",
+  "last_updated": "2026-04-21T10:38:25Z"
 }

@@ -21,6 +21,7 @@
     "<N.N.>(Mooser, Andreas, Dr.), 130000.100",
     "<N.N.>(Soller, Henning), 130000.100"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -83,6 +84,30 @@
       "room": "Übungsraum (6227.03.402)",
       "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (8010.EG.059)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15233",
+      "room": "Übungsraum (8010.EG.059)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": "Ersatztermin für den Feiertag 01.05.2026"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (6227.03.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14510",
+      "room": "Übungsraum (6227.03.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": "Ersatztermin für den Feiertag am 01.05.2026"
     },
     {
       "day_of_week": 5,
@@ -219,6 +244,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410280",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:05:34Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:10:07Z"
 }

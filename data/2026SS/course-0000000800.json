@@ -5,6 +5,7 @@
   "ects_credits": null,
   "course_languages": "English",
   "lecturers": [],
+  "organisation": "Professorship Neurobiologie",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -35,6 +36,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412714",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:01Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:31:59Z"
 }

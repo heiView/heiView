@@ -7,6 +7,7 @@
   "lecturers": [
     "Borbáth, Endre"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413007",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:59:08Z"
+  "further_info": "Recommended Reading 1. Huntington-Klein, Nick. The Effect: An Introduction to Research Design and Causality. Taylor & Francis, 2025. 2. Cunningham, Scott. Causal Inference: The Mixtape. Yale University Press, 2021. 3. Angrist, Joshua D., and Jörn-Steffen Pischke. Mastering Metrics: The Path from Cause to Effect. Princeton Univers. Press, 2015.",
+  "last_updated": "2026-04-21T10:21:35Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Orbán, Wencke"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416379",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:53:47Z"
+  "further_info": "Recommended Reading Heribert Picht, Reiner Arntz, Felix Mayer: Einführung in die Terminologiearbeit (Studien zu Sprache und Technik), Georg Olms Verlag; 2., 6. verbesserte Auflage 2009",
+  "last_updated": "2026-04-21T09:53:30Z"
 }

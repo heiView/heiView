@@ -8,6 +8,7 @@
     "Herrmann, Carl Michael",
     "Russell, Robert"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-13",
   "end_date": "2026-05-08",
   "weeks": [
@@ -38,6 +39,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409437",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:33:00Z"
+  "further_info": "Slides/exercises in English, lecture in German or English",
+  "last_updated": "2026-04-21T10:22:05Z"
 }

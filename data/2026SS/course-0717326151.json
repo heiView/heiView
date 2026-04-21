@@ -8,6 +8,7 @@
     "Hensen, Andreas",
     "Witschel, Christian"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -17,15 +18,15 @@
       "end_date": "2026-07-23",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Fachschaftsraum (2040.02.262)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28001",
-      "room": "Fachschaftsraum (2040.02.262)",
-      "building": "Marstallhof 4, 2nd floor",
+      "location": "Übungsraum (2040.04.405)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28092",
+      "room": "Übungsraum (2040.04.405)",
+      "building": "Marstallhof 4, 4th floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408242",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:16Z"
+  "further_info": "Recommended Reading H. PROBST (Hrsg.), Ladenburg. Aus 1900 Jahren Stadtgeschichte (Ubstadt-Weiher 1998); E. u. S. KÜNZL (Hrsg.), Das römische Prunkportal von Ladenburg (Stuttgart 2003); E. KÜNZL, Das römische Portal von Ladenburg, in: Archäologisches Landesmuseum (Hrsg.), Imperium Romanum. Roms Provinzen an Neckar, Rhein und Donau (Esslingen am Neckar 2005) 181-185.",
+  "last_updated": "2026-04-21T10:05:41Z"
 }

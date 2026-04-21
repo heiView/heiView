@@ -7,11 +7,12 @@
   "lecturers": [
     "Staniek, Michael"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409313",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "online information e-learning course further information actual information",
+  "last_updated": "2026-04-21T10:08:35Z"
 }

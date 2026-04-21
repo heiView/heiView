@@ -8,6 +8,7 @@
     "Bereau, Tristan",
     "Ziebert, Falko"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-06-16",
   "end_date": "2026-07-07",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415018",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T14:01:36Z"
+  "further_info": "Recommended Reading will be given in the first meeting",
+  "last_updated": "2026-04-21T11:48:19Z"
 }

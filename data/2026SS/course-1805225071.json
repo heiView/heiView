@@ -7,6 +7,7 @@
   "lecturers": [
     "Haus, Michael"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-23",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413026",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:51Z"
+  "further_info": "Recommended Reading Buchstein, Hubertus (2011): Demokratie, in: Göhler, Gerhard/Iser, Mattias/Kerner, Ina (Hrsg.): Politische Theorie, Wiesbaden: VS Verlag, S. 46-62. Massing, Peter, Gotthard Breit, und Hubertus Buchstein (Hrsg.) (2017). Demokratietheorien: Von der Antike bis zur Gegenwart - Texte und Interpretationshilfen, 9. Aufl. Schwalbach/Ts.: Wochenschau Verlag. Schmidt, Manfred G. 2025. Demokratietheorien: Eine Einführung, 7. Aufl. Wiesbaden: Springer VS.",
+  "last_updated": "2026-04-21T10:03:38Z"
 }

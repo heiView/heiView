@@ -8,6 +8,7 @@
     "Untergasser, Andreas",
     "Winter, Victor"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": "2026-04-07",
   "end_date": "2026-04-10",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385568",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:59:24Z"
+  "further_info": "Recommended Reading The platform Datacamp (https://www.datacamp.com/) is being used as well",
+  "last_updated": "2026-04-21T10:21:53Z"
 }

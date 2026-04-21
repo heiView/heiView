@@ -7,11 +7,12 @@
   "lecturers": [
     "Mayer, Matthias"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385739",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Mayer 2010 Gymnastics of Molecular Chaperones, Molecular Cell, 39, 321-331. Graf et al. 2009 Spatially and kinetically resolved changes in the conformational dynamics of the Hsp90 chaperone machine, EMBO J. 28, 602-613. 6-8 weeks, full day, time to be arranged, INF 345, 1. floor, 10.00 a.m. - 6.00 p.m.",
+  "last_updated": "2026-04-21T11:47:21Z"
 }

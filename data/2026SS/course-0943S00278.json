@@ -7,6 +7,7 @@
   "lecturers": [
     "Puda, Ales"
   ],
+  "organisation": "The Institute of Slavic Studies",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409896",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:59Z"
+  "further_info": "Recommended Reading BISANG, W.; HIMMELMANN, N.; WIEMER, B. (2004): What makes grammaticalization: a look from its fringes and its components. Berlin [et al.]: Mouton de Gruyter. HOPPER, P.J.; TRAUGOTT, E.C. (2003): Grammaticalization. Second Edition. Cambridge: Cambridge University Press. KUTEVA, T., HEINE, B. [et al.] (2019): World lexicon of grammaticalization. 2nd ed. New York [et al.]: Cambridge University Press. MEILLET, A. (1912): L’évolution des formes grammaticales. In: Linguistique historique et linguistique générale. Paris. 130-48. (2nd ed. 1921). NARROG, H.; HEINE, B. [ed.] (2018): Grammaticalization from a typological perspective. Oxford: Oxford University Press. PAGLIUCA, W. [ed.] (1994): Perspectives on grammaticalization. Amsterdam/Philadelphia: John Benjamins. WIEMER, B. (2020): Grammaticalization in Slavic. In: Bisang, W.; Mal’čukov, A.L. (eds.): Grammaticalization Scenarios. Cross-linguistic Variation and Universal Tendencies. Berlin; Boston: De Gruyter Mouton, 249-307.",
+  "last_updated": "2026-04-21T10:16:29Z"
 }

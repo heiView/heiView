@@ -7,6 +7,7 @@
   "lecturers": [
     "Flynn-Diez, Robynne"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-27",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416433",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:49:43Z"
+  "further_info": "Recommended Reading A course reader will be provided.",
+  "last_updated": "2026-04-21T11:46:30Z"
 }

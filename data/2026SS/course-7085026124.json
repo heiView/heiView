@@ -7,6 +7,7 @@
   "lecturers": [
     "Louhichi, Soumaya"
   ],
+  "organisation": "Middle Eastern Studies",
   "start_date": "2026-04-24",
   "end_date": "2026-06-20",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414336",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:00:54Z"
+  "further_info": "Recommended Reading - Snouck Hurgronje, Christiaan, The Mecca Festival, translated and edited by Wolfgang H. Behn, Wiesbaden, Harrassowitz, 2012. - Tagliacozzo, Eric & Shawkat M. Toorawa (Hg.), The Hajj: Pilgrimage in Islam, Cambridge, Cambridge University Press, 2016. - Slight, John, The British Empire and the Ḥajj (1865–1956), Cambridge/London, Harvard University Press, 2015. - Buitelaar, Marjo & Richard van Leeuwen, Narrating the Pilgrimage to Mecca: Historical and Contemporary Accounts, Leiden, Brill, 2023. - Faroqhi, Suraiya, Pilgrims and Sultans: The Hajj under the Ottomans, London, I.B. Tauris, 1994. - Çelebi, Evliya, Seyahatname (Das Reisebuch), verschiedene Bände, Istanbul, 17. Jahrhundert; moderne Editionen u. a. Istanbul, Yapı Kredi Yayınları, 1996–2007. - al-Nābulusī, ʿAbd al-Ghanī, Riḥlat al-Ḥijāz, hg. u. kommentiert (verschiedene libanesische Editionen des 20. Jahrhunderts).",
+  "last_updated": "2026-04-21T10:03:45Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Maissen, Thomas"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -21,10 +22,34 @@
       "room": "Übungsraum IV (2170.EG.055X)",
       "building": "Grabengasse 3-5, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "16:00",
+      "end_time": "17:15",
+      "location": "Übungsraum IV (2170.EG.055X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20298",
+      "room": "Übungsraum IV (2170.EG.055X)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "16:00",
+      "end_time": "17:15",
+      "location": "Übungsraum IV (2170.EG.055X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20298",
+      "room": "Übungsraum IV (2170.EG.055X)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412137",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:00:13Z"
+  "further_info": "Recommended Reading Jacob Burckhardt, Weltgeschichtliche Betrachtungen, München 2018; ders., Über das Studium der Geschichte, hg. von Peter Ganz, München 2000 (Jacob Burckhardt Werke, 10); Jürgen Osterhammel, Jacob Burckhardts \"Über das Studium der Geschichte\" und die Weltgeschichtsschreibung der Gegenwart, Basel, Schweiz 2019.",
+  "last_updated": "2026-04-21T10:23:03Z"
 }

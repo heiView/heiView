@@ -7,6 +7,7 @@
   "lecturers": [
     "Reich, Gabriele"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409467",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:48:22Z"
+  "further_info": "Diese Veranstaltung ist Eingangsvoraussetzung für das Technologiepraktikum im 7. Fachsemester. Gehört zum Stoffgebiet F gem. AAppO",
+  "last_updated": "2026-04-21T10:35:38Z"
 }

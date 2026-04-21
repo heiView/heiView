@@ -7,11 +7,12 @@
   "lecturers": [
     "Kaessmann, Henrik"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385552",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading please bring your own laptop The course takes place: room 00.007 in ground floor, COS, INF 230 from April 13th to 17th 2026. You need your own laptop",
+  "last_updated": "2026-04-21T10:09:13Z"
 }

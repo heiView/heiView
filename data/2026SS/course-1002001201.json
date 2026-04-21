@@ -7,6 +7,7 @@
   "lecturers": [
     "Wrzus, Cornelia"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-05-27",
   "end_date": "2026-07-08",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407450",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:47:13Z"
+  "further_info": "online information e-learning course Das Seminar findet in drei Blockterminen statt, siehe Termine. Weitere Informationen zum Seminarablauf erhalten Sie ab 20.4. über Moodle (kein Schlüssel erforderlich).",
+  "last_updated": "2026-04-21T10:37:37Z"
 }

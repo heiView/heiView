@@ -8,6 +8,7 @@
     "Clarke, Brian",
     "Stegle, Oliver"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-06-08",
   "end_date": "2026-06-24",
   "weeks": [
@@ -38,6 +39,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418670",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:27:24Z"
+  "further_info": "Recommended Reading Students whose computational background is mostly in R may find the following resources useful as preparation: - https://andrewhalterman.com/post/python_for_r_users/ - https://www.datanovia.com/learn/programming/transition/python-for-r-users.html - https://rebeccabarter.com/blog/2023-09-11-from_r_to_python",
+  "last_updated": "2026-04-21T10:37:11Z"
 }

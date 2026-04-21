@@ -7,6 +7,7 @@
   "lecturers": [
     "Cheng, Yi-Ching"
   ],
+  "organisation": "Institute of Chinese Studies",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415444",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:08Z"
+  "further_info": "Recommended Reading Lehrbuch: 《中文报刊阅读教程》周上之 Susian Staehle，北京大学出版社出版，2004，ISBN：9787301066539 Bitte leihen Sie sich das Lehrbuch vor dem Unterricht aus. https://katalog.ub.uni-heidelberg.de/titel/67566868",
+  "last_updated": "2026-04-21T11:51:00Z"
 }

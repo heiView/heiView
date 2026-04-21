@@ -7,6 +7,7 @@
   "lecturers": [
     "Runde, Ingo"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410831",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:09:42Z"
+  "further_info": "Recommended Reading Friedrich Beck / Lorenz Friedrich Beck, Die lateinische Schrift. Schriftzeugnisse aus dem deutschen Sprachgebiet vom Mittelalter bis zur Gegenwart, Köln / Weimar / Wien 2007. Friedrich Beck / Eckart Henning (Hgg.), Die archivalischen Quellen. Mit einer Einführung in die Historischen Hilfswissenschaften (UTB 8273), 5. erw. und aktualisierte Aufl. Köln / Weimar / Wien 2012. Michael Hochedlinger, Aktenkunde: Urkunden- und Aktenlehre der Neuzeit (Oldenbourg Historische Hilfswissenschaften), Wien / Köln / Weimar 2009. Eike Wolgast, Die Universität Heidelberg 1386-1986, Berlin / Heidelberg / New York / Tokyo 1986.",
+  "last_updated": "2026-04-21T10:16:06Z"
 }

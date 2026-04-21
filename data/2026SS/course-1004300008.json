@@ -7,6 +7,7 @@
   "lecturers": [
     "Sliwka, Anne"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404989",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:54:51Z"
+  "further_info": "Recommended Reading Esslinger-Hinz, I., & Sliwka, A. (2011). Schulpädagogik. Weinheim, Basel: Beltz. Hatano, G., & Inagaki, K. (1986). Two courses of expertise. In: H. Stevenson, H. Azuma, & K. Hakuta (Hg.), Child development and education in Japan. New York: Freeman. S. 262–272. Hattie, J., Beywl, W., & Zierer, K. (2015). Lernen sichtbar machen: Überarbeitete deutschsprachige Ausgabe von „Visible Learning“ (3. Aufl.). Baltmannsweiler: Schneider.Hohengehren. Schön, D. A. (1983). The Reflexive Turn: Case Studies in and on Educational Practice. New York: Teachers Press, Columbia University",
+  "last_updated": "2026-04-21T10:26:26Z"
 }

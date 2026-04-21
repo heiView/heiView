@@ -7,6 +7,7 @@
   "lecturers": [
     "Oechssler, Jörg"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -97,6 +98,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409151",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:08:58Z"
+  "further_info": "Recommended Reading Reading List S. Tadelis: Game Theory – An Introduction, Princeton University Press, 2013. R. Gibbons: A Primer in Game Theory, FT Prentice Hall, 1992. M. J. Osborne: An Introduction to Game Theory, Oxford University Press, 2004. J. Eichberger: Game Theory. San Diego: Academic Press, 1993. Advanced Reading K.G. Binmore: Fun and Games, D.C. Heath & Co., 1992. J. Eichberger: Game Theory for Economists, Academic Press, San Diego, 1993. D. Fudenberg & J. Tirole: Game Theory, MIT Press, 1991. M. Osborne & A. Rubinstein: A Course in Game Theory, MIT Press, 1994. A marvelous book: Thomas Schelling: The Strategy of Conflict.",
+  "last_updated": "2026-04-21T10:15:03Z"
 }

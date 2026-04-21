@@ -7,6 +7,7 @@
   "lecturers": [
     "Cuevas Lozano, Carlos Alberto"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416714",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:13:09Z"
+  "further_info": "Recommended Reading O’Brien, S. (2017). \"Post-Editing of Machine Translation: Processes and Applications\". Routledge. The Oxford Handbook of Computational Linguistics. (2004). United Kingdom: OUP Oxford. Handbook of Translation Studies: Volume 1. (2010). Netherlands: John Benjamins Publishing Company. Brewster, Ryan C. L., Priscilla Gonzalez, Rohan Khazanchi, et al. ‘Performance of ChatGPT and Google Translate for Pediatric Discharge Instruction Translation’. Pediatrics 154, no. 1 (2024). https://doi.org/10.1542/peds.2023-065573. Farghal, Mohammed, and Ahmad S. Haider. ‘Translating Classical Arabic Verse: Human Translation vs. AI Large Language Models (Gemini and ChatGPT)’. Cogent Social Sciences 10, no. 1 (2024). https://doi.org/10.1080/23311886.2024.2410998. Gosavi, Purva Prasad, Vaishnavi Murlidhar Kulkarni, and Alan F. Smeaton. ‘Capturing Bias Diversity in LLMs’. 2024 2nd International Conference on Foundation and Large Language Models (FLLM), IEEE, 26 November 2024, 593–98. https://doi.org/10.1109/FLLM63129.2024.10852459. Lee, Jinsook, Yann Hicke, Renzhe Yu, Christopher Brooks, and René F. Kizilcec. ‘The Life Cycle of Large Language Models in Education: A Framework for Understanding Sources of Bias’. British Journal of Educational Technology 55, no. 5 (2024): 1982–2002. https://doi.org/10.1111/bjet.13505. Reddy, G. Pradeep, Y. V. Pavan Kumar, and K. Purna Prakash. ‘Hallucinations in Large Language Models (LLMs)’. 2024 IEEE Open Conference of Electrical, Electronic and Information Sciences (eStream), IEEE, 25 April 2024, 1–6. https://doi.org/10.1109/eStream61684.2024.10542617. Sakib, Shahnewaz Karim, and Anindya Bijoy Das. Challenging Fairness: A Comprehensive Exploration of Bias in LLM-Based Recommendations. n.d. https://doi.org/10.1109/BigData62323.2024.10825082. Valdeón, Roberto A. ‘Latest Trends in Audiovisual Translation’. Perspectives 30, no. 3 (2022): 369–81. https://doi.org/10.1080/0907676X.2022.2069226.",
+  "last_updated": "2026-04-21T10:20:38Z"
 }

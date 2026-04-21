@@ -7,6 +7,7 @@
   "lecturers": [
     "Zaumseil, Jana"
   ],
+  "organisation": "Institute for Physical Chemistry",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -21,10 +22,46 @@
       "room": "Seminarraum (6253.02.211)",
       "building": "Im Neuenheimer Feld 253, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum (6253.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7724",
+      "room": "Seminarraum (6253.02.211)",
+      "building": "Im Neuenheimer Feld 253, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum (6253.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7724",
+      "room": "Seminarraum (6253.02.211)",
+      "building": "Im Neuenheimer Feld 253, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum (6253.02.211)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7724",
+      "room": "Seminarraum (6253.02.211)",
+      "building": "Im Neuenheimer Feld 253, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411256",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:28:54Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T11:37:50Z"
 }

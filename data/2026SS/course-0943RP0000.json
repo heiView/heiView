@@ -7,6 +7,7 @@
   "lecturers": [
     "Mettel, Liubov"
   ],
+  "organisation": "The Institute of Slavic Studies",
   "start_date": "2026-03-24",
   "end_date": "2026-04-10",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412806",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:32Z"
+  "further_info": "Der Kurs findet online statt. Bitte melden Sie sich in heiCO an und schreiben Sie zusätzliche eine Mail an die Kursleiterin: liubov.mettel@slav.uni-heidelberg.de",
+  "last_updated": "2026-04-21T10:38:52Z"
 }

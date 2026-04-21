@@ -7,6 +7,7 @@
   "lecturers": [
     "Croissant, Aurel"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408248",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:44:57Z"
+  "further_info": "Recommended Reading • Caramani, Daniele (Hrsg.) 2023. Comparative Politics. Sixth edition. Oxford: Oxford University Press. • Lauth, Hans-Joachim/Kneuer, Marianne/Pickel, Gert (Hrsg.): Handbuch Vergleichende Politikwissenschaft, Wiesbaden: Springer VS, 2016. • Moller, Jorgen/ Skaaning, Svend-Erik. 2024. Democratization and Autocratization in Comparative Perspective. London and New York: Routledge.",
+  "last_updated": "2026-04-21T10:38:12Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Hänßgen, Eva"
   ],
+  "organisation": "English Department",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408454",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:29:27Z"
+  "further_info": "Recommended Reading Texts: Please purchase and read both books before the term starts, ideally in print (we’ll start with Glaspell). Make sure you order your copy of the anthology (ed. McKowen) early. Glaspell, Susan. *Plays*. North Charleston, SC: CreateSpace Independent Publishing Platform, 2014. McKowen, Peggy, and Ed Herendeen, editors. *Plays by Women from the Contemporary American Theater Festival*: Gidion’s Knot, The Niceties, Memoirs of a Forgotten Man, Dead and Breathing, 20th Century Blues. London et al.: Methuen Drama, 2019.",
+  "last_updated": "2026-04-21T09:52:50Z"
 }

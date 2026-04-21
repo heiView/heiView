@@ -30,6 +30,7 @@
     "Witt, Olaf",
     "Wühl, Elke Susanne"
   ],
+  "organisation": "University Paediatric Hospital",
   "start_date": "2026-01-13",
   "end_date": "2026-06-30",
   "weeks": [
@@ -120,6 +121,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407420",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:37:23Z"
+  "further_info": "Dienstags, wöchentl.; 15:00 - 16:00 Uhr",
+  "last_updated": "2026-04-21T10:35:04Z"
 }

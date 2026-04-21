@@ -7,6 +7,7 @@
   "lecturers": [
     "Stoffels, Markus"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-14",
   "end_date": "2026-07-22",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408720",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:10:09Z"
+  "further_info": "Recommended Reading Ein BGB-Text (vorzugsweise Bürgerliches Gesetzbuch, Beck-Texte im dtv) ist zur ersten Stunde mitzubringen. Empfehlenswert: Looschelders, Schuldrecht Allgemeiner Teil, 23. Aufl. 2025; Brox/Walker, Allgemeines Schuldrecht, 50. Aufl. 2026; Medicus/Lorenz, Schuldrecht I, 23. Aufl. 2026. Im Übrigen werden weitere Literaturhinweise in der Vorlesung gegeben. online information e-learning course Begleitmaterialien werden zum download auf der E-Learning-Plattform der Uni Heidelberg (moodle) zur Verfügung gestellt.",
+  "last_updated": "2026-04-21T10:16:44Z"
 }

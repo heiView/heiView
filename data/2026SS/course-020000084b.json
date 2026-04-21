@@ -7,11 +7,12 @@
   "lecturers": [
     "Witteborg-Erdmann, Nika Valerie"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-05-27",
   "end_date": "2026-07-17",
   "weeks": [
     {
-      "day_of_week": 2,
+      "day_of_week": 3,
       "start_date": "2026-05-27",
       "end_date": "2026-05-27",
       "start_time": "16:00",
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418589",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:18:41Z"
+  "further_info": "Recommended Reading Bibliography will be provided in the lecture. The course will be held in English and German, if desired also completely in english. The allocation of topics for the presentations will be generally made Friday, 26.06.2026. For presentations on the topics notion of art and actors please enquire in advance by email. Information about further talks and exhibitions will be provided during the lecture.",
+  "last_updated": "2026-04-21T10:26:00Z"
 }

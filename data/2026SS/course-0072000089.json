@@ -8,6 +8,7 @@
     "Fröning, Holger",
     "Klein, Bernhard"
   ],
+  "organisation": "Institute of Computer Engineering (ZITI)",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -26,6 +27,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416478",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:43Z"
+  "further_info": "Recommended Reading • Richard McElreath: Statistical Rethinking (2020, Chapman & Hall) •Kevin Patrick Murphy: Probabilistic Machine Learning – An Introduction (MIT Press, 2022) •Kevin Patrick Murphy: Probabilistic Machine Learning: Advanced Topics (MIT Press, 2023) Link zum moodle Kurs: https://moodle.uni-heidelberg.de/course/view.php?id=26956",
+  "last_updated": "2026-04-21T10:43:06Z"
 }

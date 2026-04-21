@@ -7,6 +7,7 @@
   "lecturers": [
     "Riemenschneider, Frederick"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-13",
   "end_date": "2026-07-22",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409315",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:06:39Z"
+  "further_info": "Recommended Reading Yehuda Falk (2001): Lexical-Functional Grammar. An Introduction to Parallel Constraint-Based Syntax. University of Chicago Press. Joan Bresnan (2001). Lexical-Functional Syntax. Oxford: Blackwell. Mary Dalrymple (2001). Lexical Functional Grammar. Volume 34, Syntax and Semantics. Academic Press. Börjas, K., Nordlinger, R., Sadler, L. (2019): Lexical-Functional Grammar. An Introduction. Cambridge University Press Tracy Holloway King, Stefanie Dipper, Anette Frank, Jonas Kuhn, John Maxwell (2004): \"Ambiguity Management in Grammar Writing\". In Research on Language and Computation, 2 (2): 259-280, Kluwer Academic Publications. Weitere Literatur wird im Laufe des Semesters bekannt gegeben. further information actual information",
+  "last_updated": "2026-04-21T10:11:39Z"
 }

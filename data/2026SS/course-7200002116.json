@@ -7,6 +7,7 @@
   "lecturers": [
     "Strzodka, Robert"
   ],
+  "organisation": "Institute of Computer Engineering (ZITI)",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419837",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:49:56Z"
+  "further_info": "INF 368, 5.OG room 524; Monday 2:00–4:00 p.m. Please note that this is not the Seminar course. Credits for this course cannot be counted toward the master’s degree program; instead, upon successful completion, it will be listed in the transcript of records as an additional course.",
+  "last_updated": "2026-04-21T10:34:01Z"
 }

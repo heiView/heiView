@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(Fachschaft Japanologie), 072100.100"
   ],
+  "organisation": "Institute of Japanese Studies",
   "start_date": "2026-04-24",
   "end_date": "2026-04-24",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420501",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:10:32Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:17:19Z"
 }

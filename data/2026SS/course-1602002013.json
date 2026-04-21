@@ -7,6 +7,7 @@
   "lecturers": [
     "Kemerink, Martijn"
   ],
+  "organisation": "Institute for Molecular Systems Engineering and Advanced Materials- IMSEAM",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413132",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:25:14Z"
+  "further_info": "Recommended Reading • Anna Köhler and Heinz Bässler, Electronic Processes in Organic Semiconductors (Wiley-VCH, 2015) • Additional material (e.g. lecture slides) will be provided through the learning platform. Exercises will start after the first lecture.",
+  "last_updated": "2026-04-21T10:34:32Z"
 }

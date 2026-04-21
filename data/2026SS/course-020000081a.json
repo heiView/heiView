@@ -7,6 +7,7 @@
   "lecturers": [
     "Sajnovits, Alexander"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-21",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408802",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:32:58Z"
+  "further_info": "Recommended Reading Wird in der Veranstaltung bekannt gegeben.",
+  "last_updated": "2026-04-21T11:42:50Z"
 }

@@ -7,11 +7,12 @@
   "lecturers": [
     "Dickmeis, Thomas"
   ],
+  "organisation": "Biosciences",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414634",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Tierphysiologie (Eckert), Developmental Biology (Gilbert), Principles of Neural Science (Kandel). Bockseminar, tTermine werden bei der Vorbesprechung festgelegt",
+  "last_updated": "2026-04-21T10:41:14Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Bork-Hüffer, Tabea"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-20",
   "end_date": "2026-07-06",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418845",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:07:13Z"
+  "further_info": "Recommended Reading Padlet der AG Humangeographie mit Hinweisen zu Abschlussarbeiten. Den Link erhalten Sie von Ihrer Betreuerin. Meier Kruker, V., & Rauh, J. (2005). Arbeitsmethoden der Humangeographie. Wissenschaftliche Buchgesellschaft. Erster Veranstaltungstermin: Wird per Email bekannt gegeben; dafür in heiCO anmelden! Ort: Sozialraum der AG Humangeographie, Berliner Str. 48, 2. Stock, Raum 201.",
+  "last_updated": "2026-04-21T10:11:57Z"
 }

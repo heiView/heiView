@@ -7,6 +7,7 @@
   "lecturers": [
     "Backenstraß, Matthias"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408323",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:13:35Z"
+  "further_info": "Recommended Reading Backenstraß M (2021): Cognitive Behavioral Analysis System of Psychotherapy (CBASP). Stuttgart: Kohlhammer. Guhn A, Köhler S, Brakemeier E-L (2019): Kiesler-Kreis-Training – Manual zur Behandlung interpersoneller Probleme. Weinheim: Beltz. Kiesler D J (1983): The 1982 Interpersonal Circle: A taxonomy for complementarity in human transactions. Psychological Review, 90, 185-214. Schramm E (2019): Interpersonelle Psychotherapie (4. Aufl.). Stuttgart: Schattauer. Wiggins JS (1996): An informal history of the interpersonal circumplex tradition. Journal of Personality Assessment, 66, 217-233.",
+  "last_updated": "2026-04-21T10:21:21Z"
 }

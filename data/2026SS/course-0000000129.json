@@ -7,6 +7,7 @@
   "lecturers": [
     "Bitzel, Alexander"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409672",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:32:01Z"
+  "further_info": "Recommended Reading Ulrich Gäbler: Auferstehungszeit. München 1991.",
+  "last_updated": "2026-04-21T11:38:42Z"
 }

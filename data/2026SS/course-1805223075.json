@@ -5,8 +5,9 @@
   "ects_credits": null,
   "course_languages": "English",
   "lecturers": [
-    "<N.N.>(Tas), 180500.100"
+    "Tas, Hakki"
   ],
+  "organisation": "Institute for Political Science",
   "start_date": "2026-04-16",
   "end_date": "2026-07-09",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413233",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:58:05Z"
+  "further_info": "Recommended Reading Cleveland, W., and Bunton, M. (2025). A History of the Modern Middle East, 7th ed. New York: Routledge. Lockman, Z. (2009). Contending Visions of the Middle East: The History and Politics of Orientalism. Cambridge: Cambridge University Press. Lust, Ellen, and Muasher, Marwan, eds. (2023). The Middle East, 16th ed. London: Sage. Owen, R. (2004). State, Power and Politics in the Making of the Modern Middle East. London: Routledge. Said, E. W. (1978). Orientalism. New York: Pantheon Books. Yom, Sean ed. (2020). Government and Politics of the Middle East and North Africa: Development, Democracy, and Dictatorship. New York: Routledge",
+  "last_updated": "2026-04-21T10:02:11Z"
 }

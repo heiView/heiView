@@ -7,6 +7,7 @@
   "lecturers": [
     "Unkel, Ingmar Björn"
   ],
+  "organisation": "Institute of Geography",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408448",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:41:31Z"
+  "further_info": "Das Seminar wird bei Bedarf auch in Englisch angeboten. Der Besuch der Vorlesung „Reconstructing Quaternary Environments“ (Sommersemester) als Grundlage für das Seminar wird empfohlen.",
+  "last_updated": "2026-04-21T10:44:10Z"
 }

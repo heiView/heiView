@@ -7,6 +7,7 @@
   "lecturers": [
     "Kiefer, Michael"
   ],
+  "organisation": "Klassische und Byzantinische Archäologie",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408945",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:43:54Z"
+  "further_info": "Recommended Reading • Heather A. Badamo, Saint George between empires. Image and encounter in the Medieval East (University Park 2023) • Patricia Blessing – Rachel Goshgarian (Hrsg.), Architecture and landscape in medieval Anatolia, 1100-1500 (Edinburgh 2017) • Antony Eastmond, Tamta’s world. The life and encounters of a medieval noblewoman from the Middle East to Mongolia (Delhi 2017) • Ivan Foletti – Erik Thunø (Hrsg.), The Medieval South Caucasus: Artistic Cultures of Albania, Armenia and Georgia. Convivium Supplementum (Brno 2016) • Ulrike Koenen – Martina Müller-Wiener (Hrsg.), Grenzgänge im östlichen Mittelmeerraum. Byzanz und die islamische Welt vom 9. bis 13. Jahrhundert (Wiesbaden 2008)",
+  "last_updated": "2026-04-21T10:40:14Z"
 }

@@ -7,11 +7,12 @@
   "lecturers": [
     "Baumann, Lukas"
   ],
+  "organisation": "Institut für Medizinische Biometrie",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/390261",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "This course is subject to a fee for participants not enrolled in the Master's program Medical Biometry/Biostatistics.",
+  "last_updated": "2026-04-21T09:56:01Z"
 }

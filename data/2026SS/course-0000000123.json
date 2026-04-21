@@ -7,6 +7,7 @@
   "lecturers": [
     "Janssen, Heinz"
   ],
+  "organisation": "Faculty of Theology",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410554",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:02Z"
+  "further_info": "Recommended Reading Nestle-Aland, Novum Testamentum Graece, 28. revidierte Auflage; als Begleitlektüre: der neueste deutschsprachige Kommentar: Angela Standhartinger, Der Philipperbrief, HNT 11/I, Tübingen 2021. Eine Bibliographie in Auswahl gebe ich in der konstituierenden Sitzung am 14.04.2026.",
+  "last_updated": "2026-04-21T10:03:53Z"
 }

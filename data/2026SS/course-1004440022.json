@@ -7,6 +7,7 @@
   "lecturers": [
     "Beisel, Louisa"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405910",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:52Z"
+  "further_info": "Die Leistungspunkte im Capstone-Modul werden wie folgt vergeben: 5 LPs erhalten Sie für die regelmäßige Teilnahme am Seminar, 1 LP für die Abgabe Ihres Capstone-Exposés. 3 weitere Leistungspunkte werden für die Modulprüfung in Form eines Bildungskongresses vergeben.",
+  "last_updated": "2026-04-21T10:29:38Z"
 }

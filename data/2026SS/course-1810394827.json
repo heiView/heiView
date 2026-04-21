@@ -7,6 +7,7 @@
   "lecturers": [
     "Altmann, Eric"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414056",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:52:07Z"
+  "further_info": "Recommended Reading Beyen, Wolfgang (2012). Neue Methoden im Wirtschaftslehreunterricht. Rinteln: Merkur. Kaminski, Hans (2017). Fachdidaktik der ökonomischen Bildung. Paderborn: Schöningh. May, Hermann (2009). Didaktik der ökonomischen Bildung. München: Oldenbourg. Ministry of Education, Youth and Sports (2016, ed.). Curriculum (Bildungsplan). Stuttgart.",
+  "last_updated": "2026-04-21T10:30:00Z"
 }

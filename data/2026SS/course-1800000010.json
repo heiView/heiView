@@ -7,6 +7,7 @@
   "lecturers": [
     "Conrad, Christian"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-14",
   "end_date": "2026-07-23",
   "weeks": [
@@ -145,6 +146,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409152",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:02:12Z"
+  "further_info": "Recommended Reading Mosler, K. and F. Schmid (2009). Beschreibende Statistik und Wirtschaftsstatistik. Springer. Behnke, J. and N. Behnke (2006). Grundlagen der statistischen Datenanalyse: Eine Einführung für Politikwissenschaftler. Wiesbaden: Springer VS.",
+  "last_updated": "2026-04-21T10:05:33Z"
 }

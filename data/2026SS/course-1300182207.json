@@ -8,6 +8,7 @@
     "Feiden, Johann-Friedrich",
     "Rother, Carsten"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-23",
   "weeks": [
@@ -50,6 +51,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410258",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:58:15Z"
+  "further_info": "Recommended Reading Online Informationen: Online Unterlagen e-learning Kurs (Link Moodle) interaktive Beispiele/Experimente (https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.11795&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&s) online information e-learning course interactive examples further information additional information",
+  "last_updated": "2026-04-21T10:02:24Z"
 }

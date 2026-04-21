@@ -7,11 +7,12 @@
   "lecturers": [
     "Kramer, Günter"
   ],
+  "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385528",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-12T22:26:48Z"
+  "further_info": "Recommended Reading Kramer G., Boehringer D., Ban N., Bukau B. (2009), The ribosome as a platform for co-translational processing, folding and targeting of newly synthesized proteins. Nat Struct Mol Biol 16: 589-597. Beginning: April the 15th, Tuesdays, INF 328, room 101, 2.00 p.m. - 3.30 p.m. Information: Dr. Guenter Kramer: g.kramer@zmbh.uni-heidelberg.de",
+  "last_updated": "2026-04-21T09:59:38Z"
 }

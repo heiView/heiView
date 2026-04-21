@@ -7,6 +7,7 @@
   "lecturers": [
     "Torres Santos, Maria de las Lourdes"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416889",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:58:59Z"
+  "further_info": "Si no es posible registrarse a través de Heico, basta con asistir el primer día de clase para tener constancia y tener una plaza.",
+  "last_updated": "2026-04-21T10:21:25Z"
 }

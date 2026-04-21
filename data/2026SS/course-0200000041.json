@@ -7,6 +7,7 @@
   "lecturers": [
     "Kube, Hanno"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408785",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:30:59Z"
+  "further_info": "Materialien (Gliederung, Literaturhinweise, Folien und Fälle) werden über Moodle zur Verfügung gestellt. Der Veranstaltungsstoff ist möglicher Prüfungsgegenstand in der Universitätsprüfung im SB 5a (Studienarbeit und mündliche Prüfung).",
+  "last_updated": "2026-04-21T11:40:39Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Schultz, Jobst-Hendrik"
   ],
+  "organisation": "Klinik für Endokrinologie, Diabetologie",
   "start_date": "2026-05-08",
   "end_date": "2026-07-17",
   "weeks": [
@@ -73,6 +74,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397450",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:41:05Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T09:57:05Z"
 }

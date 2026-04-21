@@ -5,6 +5,7 @@
   "ects_credits": "4",
   "course_languages": "English",
   "lecturers": [],
+  "organisation": "Institute of Anthropology",
   "start_date": "2026-05-08",
   "end_date": "2026-07-17",
   "weeks": [
@@ -83,6 +84,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418184",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:53:22Z"
+  "further_info": "Recommended Reading This course is offered in a teaching cooperation between Uni Tübingen, Uni Heidelberg, Uni Konstanz and Uni Freiburg. This semester's course \"Feminisms in Latin America\" is organized by the University of Freiburg.",
+  "last_updated": "2026-04-21T09:56:01Z"
 }

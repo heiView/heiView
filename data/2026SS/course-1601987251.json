@@ -7,6 +7,7 @@
   "lecturers": [
     "Lu, Junyan"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-05-18",
   "end_date": "2026-05-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408760",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:40:57Z"
+  "further_info": "online preparation meeting (~30 min) one week before the course",
+  "last_updated": "2026-04-21T10:20:47Z"
 }

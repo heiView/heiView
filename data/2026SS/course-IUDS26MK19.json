@@ -7,6 +7,7 @@
   "lecturers": [
     "Liepelt, Sandra"
   ],
+  "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-06-01",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416649",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:56:51Z"
+  "further_info": "Bitte beachten Sie das verkürzte Semester. Die Übung beginnt aufgrund des Feiertages am 01.06.2026.",
+  "last_updated": "2026-04-21T10:25:34Z"
 }

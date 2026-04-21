@@ -7,6 +7,7 @@
   "lecturers": [
     "Mohapatra, Anne-Christine"
   ],
+  "organisation": "Neusprachliche Südasienstudien",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -16,15 +17,15 @@
       "end_date": "2026-07-20",
       "start_time": "09:00",
       "end_time": "11:00",
-      "location": "Übungsraum 010.01.14 (4010+4.01.014)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11587",
-      "room": "Übungsraum 010.01.14 (4010+4.01.014)",
-      "building": "Voßstraße 2, 1st floor",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410572",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:35:35Z"
+  "further_info": "Recommended Reading Aruna, Aladi. 2017. Inti ēkātipattiyam / Ālaṭi Aruṇā. Mutaṟpatippu. Ceṉṉai: Vikaṭaṉ Piracuram. Aladi Aruna: Hindi imperialism / Aladi Aruna ; translated by R. Vijaya Sankar ; with forewords by C.N. Annadurai, M. Karunanidhi and … . - New Delhi: Speaking Tiger, 2024. > Note: These two will serve as our core comparative texts. Further Reading: Ramaswamy, Sumathi. Passions of the Tongue: Language Devotion in Tamil India, 1891–1970. University of California Press, 1997. Hardgrave, Robert L. The Dravidian Movement. Popular Prakashan, 1965.",
+  "last_updated": "2026-04-21T11:45:48Z"
 }

@@ -7,8 +7,9 @@
   "lecturers": [
     "Fuchs, Thomas"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-22",
-  "end_date": "2026-07-15",
+  "end_date": "2026-07-23",
   "weeks": [
     {
       "day_of_week": 3,
@@ -33,10 +34,22 @@
       "room": "HS 14 (2170.02.033)",
       "building": "HS 14, Grabengasse 3-5, 2nd floor",
       "note": "TN 80-100; unregelmäßig:22.04.26 / 06.05.26 / 13.05.26 / 20.05.26 / 17.06.26 / 01.07.26 / 08.07.26 / 15.07.26"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-23",
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "HS 10 (2170.01.040)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20595",
+      "room": "HS 10 (2170.01.040)",
+      "building": "HS 10, Grabengasse 3-5, 1st floor",
+      "note": "TN: ca. 130"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409521",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-16T08:15:54Z"
+  "further_info": "Recommended Reading Literatur: Thomas Arnold, Thomas Fuchs (2026). Das unersättliche Selbst. Phäno¬menologie des Narzissmus. Berlin: Suhrkamp",
+  "last_updated": "2026-04-21T10:35:35Z"
 }

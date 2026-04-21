@@ -7,6 +7,7 @@
   "lecturers": [
     "Krcal, Hans-Christian"
   ],
+  "organisation": "Alfred Weber Institute for Economics",
   "start_date": "2026-04-21",
   "end_date": "2026-07-22",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415504",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:04Z"
+  "further_info": "Recommended Reading Blohm, H./Beer, T./Seidenberg,U./Silber, H., Produktionswirtschaft, 3.Auflage (1997) Corsten, H., Produktionswirtschaft, 11.Auflage (2007) Dyckhoff, H., Betriebliche Produktion, 2. Auflage (1994) Ellinger, T./Haupt, R., Produktions- und Kostentheorie, 3.Auflage (1996) Steven, M., Produktionstheorie (1998) Additional remarks: Further reference and a detailed directory will be given at the beginning of lecture at the summer term.",
+  "last_updated": "2026-04-21T10:38:17Z"
 }

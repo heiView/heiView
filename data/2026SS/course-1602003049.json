@@ -7,6 +7,7 @@
   "lecturers": [
     "Kanschat, Guido"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-13",
   "end_date": "2026-07-22",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409449",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:54:11Z"
+  "further_info": "Achtung: Ort der Veranstaltung: INF 306, HS 2. Zeitslot: 11 - 13 h (Am 20.07. in SR 20)",
+  "last_updated": "2026-04-21T10:29:02Z"
 }

@@ -35,6 +35,7 @@
     "Weyd, Heiko",
     "Wiemann, Stefan"
   ],
+  "organisation": "Deutsches Krebsforschungszentrum",
   "start_date": "2026-04-08",
   "end_date": "2026-05-21",
   "weeks": [
@@ -65,6 +66,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415420",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:06:38Z"
+  "further_info": "Recommended Reading Robert A. Weinberg: \"The Biology of Cancer\" online information course documents",
+  "last_updated": "2026-04-21T10:11:37Z"
 }

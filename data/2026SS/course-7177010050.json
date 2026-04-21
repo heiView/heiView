@@ -1,30 +1,18 @@
 {
   "id": "7177010050",
-  "title": "Historische Karten als Quellen der Raumwahrnehmung und Landschaftsentwicklung",
+  "title": "Historische Karten als Quellen der Raumwahrnehmung und Landschaftsentwicklung - VERANSTALTUNG FÄLLT VOLLSTÄNDIG AUS",
   "type": "PC",
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
     "Meier, Thomas"
   ],
-  "start_date": "2026-04-21",
-  "end_date": "2026-07-21",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_date": "2026-04-21",
-      "end_date": "2026-07-21",
-      "start_time": "11:00",
-      "end_time": "13:00",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
-      "note": "Raum 303002010 (Übungsraum) Hauptstraße 52 (\"Haus zum Riesen\"), 2.OG"
-    }
-  ],
+  "organisation": "Prehistory, Protohistory and Near Eastern Archaeology",
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408844",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:11:29Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:18:37Z"
 }

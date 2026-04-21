@@ -7,6 +7,7 @@
   "lecturers": [
     "Schling, Petra"
   ],
+  "organisation": "Medizinische Biochemie",
   "start_date": "2026-03-30",
   "end_date": "2026-05-21",
   "weeks": [
@@ -397,6 +398,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/398526",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:09:14Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:14:34Z"
 }

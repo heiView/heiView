@@ -7,6 +7,7 @@
   "lecturers": [
     "Frey, Maximilian Florian Philipp"
   ],
+  "organisation": "Heidelberg University Biochemistry Center",
   "start_date": "2026-04-13",
   "end_date": "2026-06-30",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409581",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:33Z"
+  "further_info": "Aufgepasst - Knowledge for free! Biochemie - die große Unbekannte? Das musss nicht so bleiben. Im Seminar zur GV II beschränken wir uns auf die Vorlesungsthemen zur Biochemie. Hierzu setzt ihr euch gemeinsam mit einer Dozentin aus der Biochemie zeitnah zur jeweiligen Vorlesung mit den Inhalten auseinander, sodass offene Fragen geklärt werden und das biochemische Verständnis gefestigt und vertieft werden kann. Mit Fragen und Diskussionen wollen wir eine gute Vorbereitung auf die GVII-Klausur ermöglichen.",
+  "last_updated": "2026-04-21T10:32:49Z"
 }

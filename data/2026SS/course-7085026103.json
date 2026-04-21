@@ -7,6 +7,7 @@
   "lecturers": [
     "Zimmermann, Johannes"
   ],
+  "organisation": "Middle Eastern Studies",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413372",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-17T09:22:00Z"
+  "further_info": "Recommended Reading Reinhard Schulze: Geschichte der arabischen Welt im 20. Jahrhundert. München: C.H.Beck, 2003. Ulrich Haarmann (Hrsg.): Geschichte der arabischen Welt. München: C.H. Beck, 2001. Albrecht Noth und Jürgen Paul (Hrsg.): Der islamische Orient: Grundzüge seiner Geschichte. (MISK; 1). Würzburg: Ergon, 1998.",
+  "last_updated": "2026-04-21T10:06:25Z"
 }

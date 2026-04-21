@@ -7,6 +7,7 @@
   "lecturers": [
     "Vollmer, Michael"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411172",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:30:10Z"
+  "further_info": "Recommended Reading Howard, N. and Schroeder, M. (2024). The Fundamentals of Reasons. Oxford University Press.",
+  "last_updated": "2026-04-21T11:39:40Z"
 }

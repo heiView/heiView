@@ -7,6 +7,7 @@
   "lecturers": [
     "Henrichs, Tobias"
   ],
+  "organisation": "Philosophy Seminar",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411921",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:51:06Z"
+  "further_info": "Recommended Reading Literatur: Martens, E., Methodik des Ethik- und Philosophieunterrichts, Hannover, Siebert 2003Nida-Rümelin, J.; Spiegel, I.; Tiedemann M.: Handbuch Philosophie und Ethik. 2 Bde. Paderborn, Schöningh 2015 Pfeifer, V., Didaktik des Ethikunterricht, 2. Auflage. Stuttgart, Kohlhammer 2009 Modulzuordnung: verschränktes Hauptseminar",
+  "last_updated": "2026-04-21T10:32:08Z"
 }

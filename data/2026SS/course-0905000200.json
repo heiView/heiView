@@ -7,6 +7,7 @@
   "lecturers": [
     "Dahlmeier, Daniel"
   ],
+  "organisation": "Department of Computational Linguistics",
   "start_date": "2026-07-27",
   "end_date": "2026-07-31",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409333",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:49:42Z"
+  "further_info": "further information actual information",
+  "last_updated": "2026-04-21T10:33:47Z"
 }

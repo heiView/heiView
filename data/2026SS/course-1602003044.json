@@ -7,6 +7,7 @@
   "lecturers": [
     "Niopek, Dominik"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-06-15",
   "end_date": "2026-07-03",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409472",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:46:48Z"
+  "further_info": "Die Anmeldung zum Praktikum erfolgt über die Anmeldung zur Vorlesung \"Grundlagen der Biotechnologischen Verfahrenstechnik\". Der Leistungsnachweis erfolgt im Rahmen der Klausur zur Veranstaltung \"Grundlagen der Biotechnologischen Verfahrenstechnik\" Eine Vorbesprechung mit Sicherheitsbelehrung (Anwesenheitspflicht) erfolgt im Rahmen der Vorlesung Grundlagen die Biotechnologischen Verfahrenstechnik.",
+  "last_updated": "2026-04-21T10:37:07Z"
 }

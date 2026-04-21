@@ -7,6 +7,7 @@
   "lecturers": [
     "Bär, Stefan"
   ],
+  "organisation": "Max Weber Institute for Sociology",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413075",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:42Z"
+  "further_info": "Anrechenbar für: - BA-M 9.1 oder 9.3: 6 ECTS (benotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich.",
+  "last_updated": "2026-04-21T11:45:18Z"
 }

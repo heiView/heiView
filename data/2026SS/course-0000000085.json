@@ -1,30 +1,18 @@
 {
   "id": "0000000085",
-  "title": "HS NT: Community and Discipleship in the Gospel of Matthew",
+  "title": "HS NT: Community and Discipleship in the Gospel of Matthew (fällt aus!)",
   "type": "SE",
   "ects_credits": "4",
   "course_languages": "English",
   "lecturers": [
     "Ziethe, Carolin"
   ],
-  "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
-      "start_time": "11:15",
-      "end_time": "12:45",
-      "location": "KiGa II (1200.EG.002C)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
-      "room": "KiGa II (1200.EG.002C)",
-      "building": "Kisselgasse 1, Ground floor",
-      "note": null
-    }
-  ],
+  "organisation": "Faculty of Theology",
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410738",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:12:20Z"
+  "further_info": "Recommended Reading References to literature will be provided in the first session.",
+  "last_updated": "2026-04-21T10:19:41Z"
 }

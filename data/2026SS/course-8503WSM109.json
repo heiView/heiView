@@ -9,6 +9,7 @@
     "Erkut, Cihan",
     "Mayakonda Thippeswamy, Anand"
   ],
+  "organisation": "Deutsches Krebsforschungszentrum",
   "start_date": "2026-04-13",
   "end_date": "2026-05-22",
   "weeks": [
@@ -27,6 +28,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418819",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:11:48Z"
+  "further_info": "HP-F9: Bioinformatical Analysis of Large-scale Data in Modern Genomics Type: Computer Lab with Student Seminars Date: 13 April – 22 May 2026 Locations: Various seminar rooms of DKFZ Main and Doku Buildings and Mathematikon Hosts/Supervisors: Benedikt Brors (responsible organizer and part 2), Anand Mayakonda Thippeswamy (part 1), Cihan Erkut (part 3)",
+  "last_updated": "2026-04-21T10:19:02Z"
 }

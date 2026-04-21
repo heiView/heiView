@@ -8,6 +8,7 @@
     "Bürgy, Martin",
     "Seidl, Ulrich"
   ],
+  "organisation": "Klinik für Allgemeine Psychiatrie",
   "start_date": "2026-07-03",
   "end_date": "2026-07-18",
   "weeks": [
@@ -62,6 +63,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415064",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T20:36:04Z"
+  "further_info": "Anmeldung: Wegen begrenzter Teilnehmerzahl erbitten wir um Anmeldung, telefonisch unter 0711-278-22801, Prof. Bürgy oder per Mail unter s.roehner@klinikum-stuttgart.de",
+  "last_updated": "2026-04-21T11:47:25Z"
 }

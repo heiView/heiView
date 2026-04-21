@@ -9,6 +9,7 @@
     "Bachmann, Sebastian",
     "Masciocchi, Silvia"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
   "end_date": "2026-07-24",
   "weeks": [
@@ -39,6 +40,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410487",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:35:32Z"
+  "further_info": "Recommended Reading H.Kolanoski, N.Wermes: Particle Detectors, Oxford K.Kleinknecht: Detectors for Particle Radiation, Cambridge W.R.Leo: Techniques for Nuclear and Particle Physics Experiments, Springer T.Ferbel: Experimental Techniques in High Energy Physics F.Sauli: Instrumentation in High Energy Physics, World Scientific C.W.Fabjan and J.E.Pilcher: Instrumentation in Elementary Particle Physics, World Scientific R.Wigmans: Calorimetry: Energy Measurement in Particle Physics, Clarendon Press W.Blum und L.Rolandi, Particle Detection with Drift Chambers, Springer online information course documents",
+  "last_updated": "2026-04-21T11:45:44Z"
 }

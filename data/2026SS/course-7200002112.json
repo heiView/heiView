@@ -7,6 +7,7 @@
   "lecturers": [
     "Klein, Bernhard"
   ],
+  "organisation": "Institute of Computer Engineering (ZITI)",
   "start_date": "2026-04-13",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419701",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:50:01Z"
+  "further_info": "The Oberseminar will take place on Monday, 1:00 to 3:00 p.m.; Besprechungsraum 5.OG room 524. Please note that this is not the Seminar course. Credits for this course cannot be counted toward the master’s degree program; instead, upon successful completion, it will be listed in the transcript of records as an additional course.",
+  "last_updated": "2026-04-21T10:34:09Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Sæle, Rannveig Grøm"
   ],
+  "organisation": "Institute of Psychology",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/406146",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:11:43Z"
+  "further_info": "The password for Moodle will be given on the first day of the course.",
+  "last_updated": "2026-04-21T10:18:55Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Heisenberg, Lavinia"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
   "end_date": "2026-07-24",
   "weeks": [
@@ -205,6 +206,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410297",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-15T13:36:35Z"
+  "further_info": "-",
+  "last_updated": "2026-04-21T10:15:26Z"
 }

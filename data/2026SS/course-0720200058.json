@@ -7,6 +7,7 @@
   "lecturers": [
     "Schnabel, Thomas"
   ],
+  "organisation": "ZEGK History Seminar",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412148",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T07:26:11Z"
+  "further_info": "Recommended Reading Carsten Dams/Michael Stolle, Die Gestapo. Herrschaft und Terror im Dritten Reich, München 4. aktualisierte Auflage 2017. Michael Stolle, Die Geheime Staatspolizei in Baden. Personal, Organisation, Wirken und Nachwirken einer regionalen Verfolgungsbehörde im Dritten Reich, Konstanz 2001. Haus der Geschichte Baden-Württemberg, Hrsg., Hotel Silber. Eine Dauerausstellung zu Polizei und Verfolgung, Stuttgart 2021.",
+  "last_updated": "2026-04-21T09:50:31Z"
 }

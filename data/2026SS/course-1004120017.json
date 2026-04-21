@@ -7,6 +7,7 @@
   "lecturers": [
     "Korossy, Klaus"
   ],
+  "organisation": "Institute for Education Studies",
   "start_date": "2026-04-30",
   "end_date": "2026-07-23",
   "weeks": [
@@ -49,6 +50,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414232",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T19:52:45Z"
+  "further_info": "Recommended Reading Grundlegende Literatur: Mietzel, G. (20179). Pädagogische Psychologie des Lernens und Lehrens. Göttingen: Hogrefe. Seidel, T., & Krapp, A. (Hg.) (2014). Pädagogische Psychologie. Weinheim, Basel: Beltz. Wild, E., & Möller, J. (Hg.) (2015). Pädagogische Psychologie. Heidelberg: Springer. Weitere Literatur wird in der Veranstaltung angegeben. Die zu erwerbenden 6 Leistungspunkte setzen sich zusammen aus der intensiven Vor- und Nachbe-reitung jeder Sitzung (Literaturarbeit) (1 LP); der aktiven Beteiligung in der Sitzung und der Mitarbeit in den Kleingruppen (2 LP); der didaktisch-methodischen (Mit-)Gestaltung einer Sitzung sowie der Organisation, Moderation und Ergebnisaufbereitung der mit dem Sitzungsthema einhergehenden bzw. der Sitzung nachfolgenden Kleingruppenarbeiten (2+1 LP).",
+  "last_updated": "2026-04-21T09:55:14Z"
 }

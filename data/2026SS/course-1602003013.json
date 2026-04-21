@@ -7,6 +7,7 @@
   "lecturers": [
     "Müller, Ulrike"
   ],
+  "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-27",
   "end_date": "2026-07-21",
   "weeks": [
@@ -61,6 +62,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409458",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:48:08Z"
+  "further_info": "Gehört zum Stoffgebiet E gem. AAppO",
+  "last_updated": "2026-04-21T10:35:15Z"
 }

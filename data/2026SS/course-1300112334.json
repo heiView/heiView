@@ -7,6 +7,7 @@
   "lecturers": [
     "Spurzem, Rainer"
   ],
+  "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-07",
   "end_date": "2026-09-29",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410483",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:37:32Z"
+  "further_info": "further information additional information",
+  "last_updated": "2026-04-21T11:48:03Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Trampedach, Kai"
   ],
+  "organisation": "Ancient History and Epigraphy",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408291",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T16:01:35Z"
+  "further_info": "Recommended Reading A.R. Burn, Persia and the Greeks. The defence of the West, c. 546 - 478 B.C., London 1984; G. Proietti, Prima di Erodoto. Aspetti della memoria delle guerre persiane, Stuttgart 2021.",
+  "last_updated": "2026-04-21T10:04:41Z"
 }

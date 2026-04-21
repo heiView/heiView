@@ -7,6 +7,7 @@
   "lecturers": [
     "Hänßgen, Eva"
   ],
+  "organisation": "English Department",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408452",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T15:59:43Z"
+  "further_info": "Recommended Reading Please purchase and read the books in these editions (in print; we’ll be starting with *Brooklyn*): Tóibín, Colm. *Brooklyn*. 2009. London, Penguin Books, 2010. ---. *Long Island*. 2024. London, Picador, 2025.",
+  "last_updated": "2026-04-21T10:02:06Z"
 }

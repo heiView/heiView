@@ -7,6 +7,7 @@
   "lecturers": [
     "Schneickert, Christian"
   ],
+  "organisation": "Max Weber Institute for Sociology",
   "start_date": "2026-04-15",
   "end_date": "2026-07-15",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408644",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:40:21Z"
+  "further_info": "Anrechenbar für: - BA-M 7.1: 6 ECTS (benotet) - BA-M 9.1 oder 9.3: 2 ECTS (unbenotet), 6 ECTS (benotet) - BA-B 2: 6 ECTS (benotet) - BA-B 6: 2 ECTS (unbenotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich.",
+  "last_updated": "2026-04-21T11:48:19Z"
 }

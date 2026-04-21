@@ -7,6 +7,7 @@
   "lecturers": [
     "Spielhofer, Lukas"
   ],
+  "organisation": "Department of Classical Philology",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408528",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:45:40Z"
+  "further_info": "Recommended Reading Zur Einführung: Görgemanns, H.: “Art. Symposion-Literatur”, Der Neue Pauly Online, 2006. DOI: https://doi.org/10.1163/1574-9347_dnp_e1126920. König, J.: “Sympotic dialogue in the first to fifth centuries CE.”, in: The end of dialogue in Antiquity, ed. by S. Goldhill, Cambridge 2008, 85–113. Weitere Literatur wird am Beginn des Semesters bekanntgegeben.",
+  "last_updated": "2026-04-21T10:39:05Z"
 }

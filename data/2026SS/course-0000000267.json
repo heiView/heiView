@@ -7,6 +7,7 @@
   "lecturers": [
     "Jaw, Cheng-Wen"
   ],
+  "organisation": "hei_INNOVATION",
   "start_date": "2026-05-12",
   "end_date": "2026-06-30",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419132",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:55:05Z"
+  "further_info": "The module starts at the end of May/beginning of June. The dates will be published shortly in heiCO.",
+  "last_updated": "2026-04-21T10:26:44Z"
 }

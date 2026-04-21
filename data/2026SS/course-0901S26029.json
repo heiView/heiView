@@ -7,6 +7,7 @@
   "lecturers": [
     "Beßlich, Barbara"
   ],
+  "organisation": "Seminar for German Studies",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409889",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T18:29:56Z"
+  "further_info": "Recommended Reading Lektüre zur Einführung: Albert Meier: Novelle. Eine Einführung. Berlin 2014. Rolf Füllmann: Einführung in die Novelle. Darmstadt 2010. Silke Lahn, Jan Christoph Meister: Einführung in die Erzähltextanalyse. Stuttgart, Weimar ³2016.",
+  "last_updated": "2026-04-21T11:39:23Z"
 }
