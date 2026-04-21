@@ -1065,6 +1065,23 @@ function AdminApp() {
     setNoteMapModalOpen(true)
   }
 
+  async function handleAddFurtherInfoToNoteMap() {
+    if (!editFileState) return
+    const furtherInfo = editFileState.data.further_info as string | undefined | null
+    if (!furtherInfo) { void message.warning('This course has no further information text to map.'); return }
+    const values = editForm.getFieldsValue()
+    const room = (values.week_room as string) || null
+    const floorArr = Array.isArray(values.week_floor) ? values.week_floor as string[] : []
+    const floor = floorArr[0] ?? (typeof values.week_floor === 'string' ? values.week_floor : '')
+    let building = (values.week_building as string) || null
+    if (building && floor) building = `${building}, ${floor}`
+    if (!room || !building) { void message.warning('Please set a room and building first.'); return }
+    setNoteMapOriginal(furtherInfo.trim())
+    setNoteMapPattern(furtherInfo.trim())
+    setNoteMapMatchType('contains')
+    setNoteMapModalOpen(true)
+  }
+
   async function handleNoteMapConfirm() {
     if (!editFileState || editFileState.weekIndex < 0) return
     const values = editForm.getFieldsValue()
@@ -1540,6 +1557,12 @@ function AdminApp() {
                       {selectedCourse.course.note}
                     </Typography.Text>
                   )}
+                  {selectedCourse.course.further_info && selectedCourse.course.further_info !== '-' && (
+                    <Typography.Text type="secondary" style={{ whiteSpace: 'pre-wrap', marginTop: 8, display: 'block' }}>
+                      <span style={{ fontWeight: 'normal', color: 'var(--hei-text)' }}>Further information: </span>
+                      {selectedCourse.course.further_info}
+                    </Typography.Text>
+                  )}
                   {selectedCourse.course.id && (
                     <Typography.Text type="secondary" style={{ fontSize: 12 }}>
                       ID: <code>{selectedCourse.course.id}</code>
@@ -1647,6 +1670,23 @@ function AdminApp() {
                 <Form.Item name="week_note" label="Note">
                   <Input.TextArea rows={2} />
                 </Form.Item>
+                {editFileState.data.further_info && editFileState.data.further_info !== '-' && (
+                  <Form.Item label="Further information (course-level)">
+                    <Input.TextArea
+                      rows={3}
+                      value={editFileState.data.further_info as string}
+                      readOnly
+                      style={{ color: 'var(--hei-text-secondary)', background: 'var(--hei-bg-secondary, #f5f5f5)', cursor: 'default' }}
+                    />
+                    <Button
+                      size="small"
+                      style={{ marginTop: 6 }}
+                      onClick={handleAddFurtherInfoToNoteMap}
+                    >
+                      Add to Note Map
+                    </Button>
+                  </Form.Item>
+                )}
                 <Form.Item name="week_location" label="Location (raw string, optional override)">
                   <Input placeholder="Leave empty to keep original" />
                 </Form.Item>

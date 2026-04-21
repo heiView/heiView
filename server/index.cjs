@@ -1095,7 +1095,11 @@ function createApp() {
         const wNote = w.note.trim();
         return resolvedMatchType === 'contains' ? wNote.includes(trimmedNote) : wNote === trimmedNote;
       });
-      if (!hasNote) continue;
+      const hasFurtherInfo = !hasNote && data.further_info && (() => {
+        const fi = data.further_info.trim();
+        return resolvedMatchType === 'contains' ? fi.includes(trimmedNote) : fi === trimmedNote;
+      })();
+      if (!hasNote && !hasFurtherInfo) continue;
       try { syncSingleCourse(courseId); syncedIds.push(courseId); } catch (e) { console.error(`[note-map] sync failed for ${courseId}:`, e.message); }
     }
 
@@ -1656,7 +1660,8 @@ function createApp() {
                 c.detail_link,
                 c.lecturers_json,
                 c.start_date,
-                c.end_date
+                c.end_date,
+                c.further_info
               FROM occurrences o
               JOIN courses c ON c.id = o.course_id
               WHERE o.date = ? 
@@ -1687,7 +1692,8 @@ function createApp() {
                 c.detail_link,
                 c.lecturers_json,
                 c.start_date,
-                c.end_date
+                c.end_date,
+                c.further_info
               FROM occurrences o
               JOIN courses c ON c.id = o.course_id
               WHERE o.date = ?
@@ -1724,6 +1730,7 @@ function createApp() {
           time: makeTimeRange(row.start_time, row.end_time),
           name: makeCourseLabel(row.title, row.course_id),
           note: row.note || null,
+          further_info: row.further_info || null,
           prof: Array.isArray(lecturers)
             ? lecturers.map(l => {
                 if (typeof l === 'string') {

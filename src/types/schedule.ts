@@ -18,6 +18,7 @@ export type Course = {
   prof?: LocalizedText
   link?: string
   note?: string | null
+  further_info?: string | null
   start_date?: string | null
   end_date?: string | null
 }

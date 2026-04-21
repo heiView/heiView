@@ -403,8 +403,9 @@ function main() {
         let resolvedBuilding = week.building;
         const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
         const isVagueBuilding = !resolvedBuilding;
-        if (isVagueRoom && isVagueBuilding && week.note) {
-          const mapped = resolveNoteToLocation(week.note, noteLocationMap);
+        if (isVagueRoom && isVagueBuilding) {
+          const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap))
+            || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap));
           if (mapped) {
             resolvedRoom = mapped.room;
             resolvedBuilding = mapped.building;
@@ -623,8 +624,9 @@ function syncSingleCourse(courseId) {
       let resolvedBuilding = week.building;
       const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
       const isVagueBuilding = !resolvedBuilding;
-      if (isVagueRoom && isVagueBuilding && week.note) {
-        const mapped = resolveNoteToLocation(week.note, noteLocationMap);
+      if (isVagueRoom && isVagueBuilding) {
+        const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap))
+          || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap));
         if (mapped) { resolvedRoom = mapped.room; resolvedBuilding = mapped.building; }
       }
 

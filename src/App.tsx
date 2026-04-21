@@ -861,6 +861,11 @@ function App() {
                       <span style={{ fontWeight: 'normal', color: 'var(--hei-text)' }}>{text.noteLabel}</span> {selectedCourse.course.note}
                     </Typography.Text>
                   )}
+                  {selectedCourse.course.further_info && selectedCourse.course.further_info !== '-' && (
+                    <Typography.Text type="secondary" style={{ whiteSpace: 'pre-wrap', marginTop: 8, display: 'block' }}>
+                      <span style={{ fontWeight: 'normal', color: 'var(--hei-text)' }}>Further information: </span>{selectedCourse.course.further_info}
+                    </Typography.Text>
+                  )}
                 </Space>
               </div>
 
