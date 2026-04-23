@@ -1126,7 +1126,7 @@ async def main() -> None:
                 print(f'Wrote sync metadata to {sync_meta_path}')
 
             # Detect courses removed from the website (full crawl only)
-            if not args.url and args.number is None:
+            if not args.url and args.number is None and not args.reverse:
                 expected_filenames = {build_course_filename(cid) for cid in seen_course_ids}
                 deleted_dir = OUTPUT_DIR / 'deleted'
                 moved_count = 0
