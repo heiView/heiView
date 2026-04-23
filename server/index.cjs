@@ -82,6 +82,7 @@ const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
 const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
 const NOTE_LOCATION_MAP_PATH = path.join(ROOT, 'data', 'note-location-map.json');
+const FI_SKIP_PATH = path.join(ROOT, 'data', 'further-info-skip.json');
 const ORG_NAME_MAP_PATH = path.join(ROOT, 'data', 'org-name-map.json');
 
 const scheduleCache = new Map(); // key -> { data, ts } — module-level so writeCatalog can clear it
@@ -822,6 +823,30 @@ function createApp() {
     }
   });
 
+  // POST /api/admin/stale-overrides/:courseId/merge-non-weeks
+  // Copies all top-level fields from source into the override, keeping the override's 'weeks' unchanged.
+  // Use this when the crawler has updated metadata (e.g. further_info, title, type) but weeks were manually set.
+  app.post('/api/admin/stale-overrides/:courseId/merge-non-weeks', requireAdmin, (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    const filename = `course-${courseId}.json`;
+    const srcPath = path.join(COURSE_DIR, filename);
+    const ovPath = path.join(OVERRIDES_DIR, filename);
+    if (!fs.existsSync(srcPath)) { res.status(404).json({ error: 'Source file not found' }); return; }
+    if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
+    try {
+      const src = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
+      const ov = JSON.parse(fs.readFileSync(ovPath, 'utf8'));
+      // Start from source so any new/changed fields are picked up, then restore weeks from override.
+      const updated = { ...src, weeks: ov.weeks, last_updated: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z') };
+      fs.writeFileSync(ovPath, JSON.stringify(updated, null, 2), 'utf8');
+      syncSingleCourse(courseId);
+      res.json({ ok: true });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
   // DELETE /api/admin/overrides/:courseId
   // Deletes the override file so the course falls back to the source JSON.
   app.delete('/api/admin/overrides/:courseId', requireAdmin, (req, res) => {
@@ -964,6 +989,64 @@ function createApp() {
     return [...ids];
   }
 
+  // GET /api/admin/further-info-queue
+  // Returns courses with further_info set but no week entries in source (not override)
+  app.get('/api/admin/further-info-queue', requireAdmin, (req, res) => {
+    const results = [];
+    // Read from source files only (original + custom), not overrides
+    const sourceFiles = [];
+    try { for (const f of fs.readdirSync(COURSE_DIR)) { if (f.startsWith('course-') && f.endsWith('.json')) sourceFiles.push({ path: path.join(COURSE_DIR, f), id: f.slice(7, -5) }); } } catch (_) {}
+    try { for (const f of fs.readdirSync(CUSTOM_DIR)) { if (f.startsWith('course-') && f.endsWith('.json')) sourceFiles.push({ path: path.join(CUSTOM_DIR, f), id: f.slice(7, -5) }); } } catch (_) {}
+    for (const { path: p, id: courseId } of sourceFiles) {
+      let data;
+      try { data = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) { continue; }
+      const fi = data.further_info;
+      if (!fi || fi === '-' || !fi.trim()) continue;
+      const weeks = Array.isArray(data.weeks) ? data.weeks : [];
+      if (weeks.length > 0) continue;
+      // Check if override exists with weeks
+      const overridePath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
+      let hasOverride = false;
+      if (fs.existsSync(overridePath)) {
+        try {
+          const ov = JSON.parse(fs.readFileSync(overridePath, 'utf8'));
+          hasOverride = Array.isArray(ov.weeks) && ov.weeks.length > 0;
+        } catch (_) {}
+      }
+      results.push({ id: data.id || courseId, title: data.title, detail_link: data.detail_link, further_info: fi, organisation: data.organisation, hasOverride });
+    }
+    res.json(results);
+  });
+
+  // GET /api/admin/further-info-skip
+  app.get('/api/admin/further-info-skip', requireAdmin, (req, res) => {
+    try {
+      if (!fs.existsSync(FI_SKIP_PATH)) { res.json([]); return; }
+      res.json(JSON.parse(fs.readFileSync(FI_SKIP_PATH, 'utf8')));
+    } catch (_) { res.json([]); }
+  });
+
+  // POST /api/admin/further-info-skip/:courseId
+  app.post('/api/admin/further-info-skip/:courseId', requireAdmin, (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    let list = [];
+    try { if (fs.existsSync(FI_SKIP_PATH)) list = JSON.parse(fs.readFileSync(FI_SKIP_PATH, 'utf8')); } catch (_) {}
+    if (!list.includes(courseId)) { list.push(courseId); fs.writeFileSync(FI_SKIP_PATH, JSON.stringify(list, null, 2), 'utf8'); }
+    res.json({ ok: true });
+  });
+
+  // DELETE /api/admin/further-info-skip/:courseId
+  app.delete('/api/admin/further-info-skip/:courseId', requireAdmin, (req, res) => {
+    const { courseId } = req.params;
+    if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
+    let list = [];
+    try { if (fs.existsSync(FI_SKIP_PATH)) list = JSON.parse(fs.readFileSync(FI_SKIP_PATH, 'utf8')); } catch (_) {}
+    list = list.filter(id => id !== courseId);
+    fs.writeFileSync(FI_SKIP_PATH, JSON.stringify(list, null, 2), 'utf8');
+    res.json({ ok: true });
+  });
+
   // GET /api/admin/courses/with-room?room=X&building=Y
   // Preview: how many courses/weeks match originalRoom + originalBuilding
   app.get('/api/admin/courses/with-room', requireAdmin, (req, res) => {
@@ -1084,6 +1167,7 @@ function createApp() {
     // Sync all courses whose weeks contain the note (exact match or substring for 'contains')
     const courseIds = getAllCourseIds();
     const syncedIds = [];
+    const trimmedNoteLower = trimmedNote.toLowerCase();
     for (const courseId of courseIds) {
       const p = resolveCoursePath(courseId);
       if (!p) continue;
@@ -1092,12 +1176,12 @@ function createApp() {
       const weeks = Array.isArray(data.weeks) ? data.weeks : [];
       const hasNote = weeks.some(w => {
         if (!w.note) return false;
-        const wNote = w.note.trim();
-        return resolvedMatchType === 'contains' ? wNote.includes(trimmedNote) : wNote === trimmedNote;
+        const wNote = w.note.trim().toLowerCase();
+        return resolvedMatchType === 'contains' ? wNote.includes(trimmedNoteLower) : wNote === trimmedNoteLower;
       });
       const hasFurtherInfo = !hasNote && data.further_info && (() => {
-        const fi = data.further_info.trim();
-        return resolvedMatchType === 'contains' ? fi.includes(trimmedNote) : fi === trimmedNote;
+        const fi = data.further_info.trim().toLowerCase();
+        return resolvedMatchType === 'contains' ? fi.includes(trimmedNoteLower) : fi === trimmedNoteLower;
       })();
       if (!hasNote && !hasFurtherInfo) continue;
       try { syncSingleCourse(courseId); syncedIds.push(courseId); } catch (e) { console.error(`[note-map] sync failed for ${courseId}:`, e.message); }

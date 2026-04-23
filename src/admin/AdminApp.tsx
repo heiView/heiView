@@ -198,6 +198,12 @@ function renderJsonDiffSide(
     <span key={i} style={{ display: 'block', background: line.bg }}>{line.text}</span>
   ))
 }
+// Returns true if source and override differ in any field other than 'weeks' and 'last_updated'
+function hasNonWeeksDiff(source: Record<string, unknown>, override: Record<string, unknown>): boolean {
+  const IGNORED = new Set(['weeks', 'last_updated'])
+  const allKeys = Array.from(new Set([...Object.keys(source), ...Object.keys(override)])).filter(k => !IGNORED.has(k))
+  return allKeys.some(k => JSON.stringify(source[k]) !== JSON.stringify(override[k]))
+}
 // ─────────────────────────────────────────────────────────────────────────────
 
 function AdminApp() {
@@ -301,6 +307,7 @@ function AdminApp() {
   const [staleDiffLoading, setStaleDiffLoading] = React.useState(false)
   const [staleDismissLoading, setStaleDismissLoading] = React.useState<string | null>(null)
   const [staleMergeLoading, setStaleMergeLoading] = React.useState<string | null>(null)
+  const [staleMergeNonWeeksLoading, setStaleMergeNonWeeksLoading] = React.useState<string | null>(null)
   const [staleDeleteLoading, setStaleDeleteLoading] = React.useState<string | null>(null)
   const [staleOverrideEdit, setStaleOverrideEdit] = React.useState<string | null>(null) // null = view mode
   const [staleOverrideSaveLoading, setStaleOverrideSaveLoading] = React.useState(false)
@@ -308,6 +315,25 @@ function AdminApp() {
   const [staleDiffWasSaved, setStaleDiffWasSaved] = React.useState(false)
   const [staleDiffUndoSnapshot, setStaleDiffUndoSnapshot] = React.useState<Record<string, unknown> | null>(null)
   const [staleUndoLoading, setStaleUndoLoading] = React.useState(false)
+  // Further Info Queue — courses with further_info but no schedule weeks
+  type FurtherInfoEntry = { id: string; title: string | null; detail_link: string | null; further_info: string; organisation: string | null; hasOverride?: boolean }
+  type FiWeekEntry = { day_of_week: number | null; start_time: string; end_time: string; room: string; building: string; campus: string; floor: string; note: string }
+  const [fiQueueOpen, setFiQueueOpen] = React.useState(false)
+  const [fiQueueList, setFiQueueList] = React.useState<FurtherInfoEntry[]>([])
+  const [fiQueueLoading, setFiQueueLoading] = React.useState(false)
+  const [fiSkipSet, setFiSkipSet] = React.useState<Set<string>>(new Set())
+  const [fiSkipLoading, setFiSkipLoading] = React.useState<string | null>(null)
+  const [fiShowSkipped, setFiShowSkipped] = React.useState(false)
+  // Override editor
+  const [fiOverrideCourseId, setFiOverrideCourseId] = React.useState<string | null>(null)
+  const [fiOverrideCourseData, setFiOverrideCourseData] = React.useState<Record<string, unknown> | null>(null)
+  const [fiOverrideLoading, setFiOverrideLoading] = React.useState(false)
+  const [fiOverrideSaving, setFiOverrideSaving] = React.useState(false)
+  const [fiOverrideStartDate, setFiOverrideStartDate] = React.useState<Dayjs | null>(null)
+  const [fiOverrideEndDate, setFiOverrideEndDate] = React.useState<Dayjs | null>(null)
+  const [fiOverrideWeeks, setFiOverrideWeeks] = React.useState<FiWeekEntry[]>([])
+  const [fiOverrideRoomOptions, setFiOverrideRoomOptions] = React.useState<{ value: string }[][]>([])
+  const emptyFiWeek = (): FiWeekEntry => ({ day_of_week: null, start_time: '', end_time: '', room: '', building: '', campus: '', floor: '', note: '' })
   // ─────────────────────────────────────────────────────────────────────────
 
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
@@ -1049,10 +1075,9 @@ function AdminApp() {
 
   async function handleAddToNoteMap() {
     if (!editFileState || editFileState.weekIndex < 0) return
-    const week = (editFileState.data.weeks as WeekEntry[])[editFileState.weekIndex]
-    const note = week.note
-    if (!note) { void message.warning('This occurrence has no note text to map.'); return }
     const values = editForm.getFieldsValue()
+    const note = (values.week_note as string) || null
+    if (!note) { void message.warning('This occurrence has no note text to map.'); return }
     const room = (values.week_room as string) || null
     const floorArr = Array.isArray(values.week_floor) ? values.week_floor as string[] : []
     const floor = floorArr[0] ?? (typeof values.week_floor === 'string' ? values.week_floor : '')
@@ -1226,15 +1251,20 @@ function AdminApp() {
                       <Button
                         size="large"
                         onClick={async () => {
-                          setAuditOpen(true)
-                          setAuditLoading(true)
+                          setFiQueueOpen(true)
+                          setFiShowSkipped(false)
+                          setFiQueueLoading(true)
                           try {
-                            const r = await adminFetch('/api/admin/audit-log?limit=200')
-                            if (r.ok) setAuditLog(await r.json())
-                          } finally { setAuditLoading(false) }
+                            const [rq, rs] = await Promise.all([
+                              adminFetch('/api/admin/further-info-queue'),
+                              adminFetch('/api/admin/further-info-skip'),
+                            ])
+                            if (rq.ok) setFiQueueList(await rq.json())
+                            if (rs.ok) setFiSkipSet(new Set(await rs.json()))
+                          } finally { setFiQueueLoading(false) }
                         }}
                       >
-                        Audit Log
+                        Further Info Queue
                       </Button>
                       <Button
                         size="large"
@@ -1667,8 +1697,11 @@ function AdminApp() {
                     tokenSeparators={[',']}
                   />
                 </Form.Item>
-                <Form.Item name="week_note" label="Note">
-                  <Input.TextArea rows={2} />
+                <Form.Item label="Note">
+                  <Form.Item name="week_note" noStyle>
+                    <Input.TextArea rows={2} />
+                  </Form.Item>
+                  <Button size="small" style={{ marginTop: 6 }} onClick={handleAddToNoteMap}>Add to Note Map</Button>
                 </Form.Item>
                 {editFileState.data.further_info && editFileState.data.further_info !== '-' && (
                   <Form.Item label="Further information (course-level)">
@@ -1792,6 +1825,22 @@ function AdminApp() {
             destroyOnClose
           >
             <Spin spinning={accountsLoading}>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
+                <Button
+                  size="small"
+                  onClick={async () => {
+                    setAccountsOpen(false)
+                    setAuditOpen(true)
+                    setAuditLoading(true)
+                    try {
+                      const r = await adminFetch('/api/admin/audit-log?limit=200')
+                      if (r.ok) setAuditLog(await r.json())
+                    } finally { setAuditLoading(false) }
+                  }}
+                >
+                  Audit Log
+                </Button>
+              </div>
               <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: 20 }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
@@ -1942,6 +1991,388 @@ function AdminApp() {
                   </tbody>
                 </table>
               </div>
+            </Spin>
+          </Modal>
+        )}
+
+        {/* Further Info Queue modal */}
+        {superAdmin && (
+          <Modal
+            open={fiQueueOpen}
+            onCancel={() => setFiQueueOpen(false)}
+            title={`Further Info Queue${fiQueueList.length > 0 ? ` (${fiQueueList.length})` : ''}`}
+            width={740}
+            footer={null}
+            destroyOnClose
+          >
+            <Spin spinning={fiQueueLoading}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
+                <Typography.Text type="secondary" style={{ flex: 1, fontSize: 12 }}>
+                  Courses with time info in <code>further_info</code> but no schedule weeks. Add an override to place them in the timetable, or skip if there's nothing actionable.
+                </Typography.Text>
+                <Button
+                  size="small"
+                  type={fiShowSkipped ? 'primary' : 'default'}
+                  onClick={() => setFiShowSkipped(v => !v)}
+                >
+                  {fiShowSkipped ? '← Active' : `Skipped (${fiSkipSet.size})`}
+                </Button>
+              </div>
+              {(() => {
+                const visible = fiQueueList.filter(e => fiShowSkipped ? fiSkipSet.has(e.id) : !fiSkipSet.has(e.id))
+                if (visible.length === 0 && !fiQueueLoading) {
+                  return <Typography.Text type="secondary" style={{ display: 'block', textAlign: 'center', padding: 24 }}>
+                    {fiShowSkipped ? 'No skipped courses.' : 'No courses in queue.'}
+                  </Typography.Text>
+                }
+                return visible.map(entry => {
+                  const isSkipped = fiSkipSet.has(entry.id)
+                  const hasOv = entry.hasOverride
+                  return (
+                    <div key={entry.id} style={{ borderBottom: '1px solid var(--hei-border)', paddingBottom: 12, marginBottom: 12 }}>
+                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 4 }}>
+                        <Typography.Text strong style={{ flex: 1 }}>{entry.title || entry.id}</Typography.Text>
+                        {entry.detail_link && (
+                          <a href={entry.detail_link} target="_blank" rel="noreferrer" style={{ whiteSpace: 'nowrap', fontSize: 12 }}>HeiCO ↗</a>
+                        )}
+                      </div>
+                      {entry.organisation && (
+                        <Typography.Text type="secondary" style={{ fontSize: 12, display: 'block', marginBottom: 4 }}>{entry.organisation}</Typography.Text>
+                      )}
+                      <div style={{ background: 'var(--hei-bg-secondary, #f5f5f5)', borderRadius: 4, padding: '6px 10px', fontSize: 12, whiteSpace: 'pre-wrap', color: 'var(--hei-text)', marginBottom: 8 }}>
+                        {entry.further_info}
+                      </div>
+                      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                        <Button
+                          size="small"
+                          type={hasOv ? 'default' : 'primary'}
+                          onClick={async () => {
+                            setFiOverrideCourseId(entry.id)
+                            setFiOverrideLoading(true)
+                            let bldList = allBuildingsList
+                            if (!bldList) {
+                              const r = await adminFetch('/api/admin/buildings-list')
+                              if (r.ok) { bldList = await r.json(); setAllBuildingsList(bldList) }
+                            }
+                            try {
+                              const r = await adminFetch(`/api/admin/course-file/${encodeURIComponent(entry.id)}`)
+                              if (r.ok) {
+                                const data = await r.json()
+                                setFiOverrideCourseData(data)
+                                const r2 = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(entry.id)}`)
+                                if (r2.ok) {
+                                  const both = await r2.json()
+                                  const ov = both.override
+                                  let weeks: FiWeekEntry[]
+                                  if (ov && Array.isArray(ov.weeks) && ov.weeks.length > 0) {
+                                    setFiOverrideStartDate(ov.start_date ? dayjs(ov.start_date) : null)
+                                    setFiOverrideEndDate(ov.end_date ? dayjs(ov.end_date) : null)
+                                    weeks = ov.weeks.map((w: Record<string, unknown>) => {
+                                      const bldStreet = (w.building as string) ?? ''
+                                      const campus = (bldList || []).find(b => b.street === bldStreet)?.campusId ?? ''
+                                      return {
+                                        day_of_week: (w.day_of_week as number) ?? null,
+                                        start_time: (w.start_time as string) ?? '',
+                                        end_time: (w.end_time as string) ?? '',
+                                        room: (w.room as string) ?? '',
+                                        building: bldStreet,
+                                        campus,
+                                        floor: (w.floor as string) ?? '',
+                                        note: (w.note as string) ?? '',
+                                      }
+                                    })
+                                  } else {
+                                    setFiOverrideStartDate(data.start_date ? dayjs(data.start_date as string) : null)
+                                    setFiOverrideEndDate(data.end_date ? dayjs(data.end_date as string) : null)
+                                    weeks = [emptyFiWeek()]
+                                  }
+                                  setFiOverrideWeeks(weeks)
+                                  // Pre-load room options for each occurrence
+                                  const roomOpts = await Promise.all(weeks.map(async wk => {
+                                    if (!wk.building) return []
+                                    const bld = (bldList || []).find(b => b.street === wk.building)
+                                    if (!bld) return []
+                                    try {
+                                      const rr = await adminFetch(`/api/admin/building/${encodeURIComponent(bld.id)}/rooms`)
+                                      if (rr.ok) { const rms: { name: string }[] = await rr.json(); return rms.map(rm => ({ value: rm.name })) }
+                                    } catch (_) {}
+                                    return []
+                                  }))
+                                  setFiOverrideRoomOptions(roomOpts)
+                                }
+                              }
+                            } finally { setFiOverrideLoading(false) }
+                          }}
+                        >
+                          {hasOv ? 'Edit Override' : 'Add Override'}
+                        </Button>
+                        {isSkipped ? (
+                          <Button
+                            size="small"
+                            loading={fiSkipLoading === entry.id}
+                            onClick={async () => {
+                              setFiSkipLoading(entry.id)
+                              try {
+                                const r = await adminFetch(`/api/admin/further-info-skip/${encodeURIComponent(entry.id)}`, { method: 'DELETE' })
+                                if (r.ok) setFiSkipSet(prev => { const s = new Set(prev); s.delete(entry.id); return s })
+                              } finally { setFiSkipLoading(null) }
+                            }}
+                          >
+                            Unskip
+                          </Button>
+                        ) : (
+                          <Button
+                            size="small"
+                            loading={fiSkipLoading === entry.id}
+                            onClick={async () => {
+                              setFiSkipLoading(entry.id)
+                              try {
+                                const r = await adminFetch(`/api/admin/further-info-skip/${encodeURIComponent(entry.id)}`, { method: 'POST' })
+                                if (r.ok) setFiSkipSet(prev => new Set(prev).add(entry.id))
+                              } finally { setFiSkipLoading(null) }
+                            }}
+                          >
+                            Skip
+                          </Button>
+                        )}
+                        {hasOv && <Tag color="green" style={{ margin: 0, alignSelf: 'center' }}>Override saved</Tag>}
+                      </div>
+                    </div>
+                  )
+                })
+              })()}
+            </Spin>
+          </Modal>
+        )}
+
+        {/* Further Info Queue — Override editor modal */}
+        {superAdmin && (
+          <Modal
+            open={!!fiOverrideCourseId}
+            onCancel={() => { setFiOverrideCourseId(null); setFiOverrideCourseData(null); setFiOverrideWeeks([]); setFiOverrideRoomOptions([]) }}
+            title={fiOverrideCourseData ? `Override: ${fiOverrideCourseData.title || fiOverrideCourseId}` : 'Override editor'}
+            width={760}
+            footer={null}
+            destroyOnClose
+          >
+            <Spin spinning={fiOverrideLoading}>
+              {fiOverrideCourseData && (
+                <>
+                  {/* Further info reference */}
+                  {(fiOverrideCourseData.further_info as string) && (
+                    <div style={{ background: 'var(--hei-bg-secondary, #f5f5f5)', borderRadius: 4, padding: '6px 10px', fontSize: 12, whiteSpace: 'pre-wrap', color: 'var(--hei-text)', marginBottom: 16 }}>
+                      <Typography.Text strong style={{ fontSize: 12 }}>Further information: </Typography.Text>
+                      {fiOverrideCourseData.further_info as string}
+                    </div>
+                  )}
+
+                  {/* Semester date range */}
+                  <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
+                    <div style={{ flex: 1 }}>
+                      <Typography.Text strong style={{ display: 'block', marginBottom: 4, fontSize: 13 }}>Semester start</Typography.Text>
+                      <DatePicker
+                        style={{ width: '100%' }}
+                        value={fiOverrideStartDate}
+                        onChange={v => setFiOverrideStartDate(v)}
+                        placeholder="YYYY-MM-DD"
+                      />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <Typography.Text strong style={{ display: 'block', marginBottom: 4, fontSize: 13 }}>Semester end</Typography.Text>
+                      <DatePicker
+                        style={{ width: '100%' }}
+                        value={fiOverrideEndDate}
+                        onChange={v => setFiOverrideEndDate(v)}
+                        placeholder="YYYY-MM-DD"
+                      />
+                    </div>
+                  </div>
+
+                  <Typography.Text strong style={{ display: 'block', marginBottom: 8 }}>Occurrences</Typography.Text>
+                  {fiOverrideWeeks.map((wk, idx) => (
+                    <div key={idx} style={{ border: '1px solid var(--hei-border)', borderRadius: 6, padding: '10px 12px', marginBottom: 10, position: 'relative' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', marginBottom: 8, gap: 6 }}>
+                        <Typography.Text strong style={{ fontSize: 12 }}>#{idx + 1}</Typography.Text>
+                        <Button
+                          size="small"
+                          danger
+                          style={{ marginLeft: 'auto' }}
+                          disabled={fiOverrideWeeks.length <= 1}
+                          onClick={() => { setFiOverrideWeeks(prev => prev.filter((_, i) => i !== idx)); setFiOverrideRoomOptions(prev => prev.filter((_, i) => i !== idx)) }}
+                        >Remove</Button>
+                      </div>
+                      <Row gutter={8}>
+                        <Col span={7}>
+                          <Typography.Text style={{ fontSize: 12 }}>Day of week</Typography.Text>
+                          <Select
+                            style={{ width: '100%', marginTop: 2 }}
+                            value={wk.day_of_week ?? undefined}
+                            onChange={v => setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, day_of_week: v } : w))}
+                            options={[
+                              { value: 1, label: 'Monday' }, { value: 2, label: 'Tuesday' },
+                              { value: 3, label: 'Wednesday' }, { value: 4, label: 'Thursday' },
+                              { value: 5, label: 'Friday' }, { value: 6, label: 'Saturday' }, { value: 7, label: 'Sunday' },
+                            ]}
+                            placeholder="Day"
+                          />
+                        </Col>
+                        <Col span={8}>
+                          <Typography.Text style={{ fontSize: 12 }}>Start time</Typography.Text>
+                          <Input
+                            style={{ marginTop: 2 }}
+                            placeholder="09:00"
+                            value={wk.start_time}
+                            onChange={e => setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, start_time: e.target.value } : w))}
+                          />
+                        </Col>
+                        <Col span={9}>
+                          <Typography.Text style={{ fontSize: 12 }}>End time</Typography.Text>
+                          <Input
+                            style={{ marginTop: 2 }}
+                            placeholder="10:30"
+                            value={wk.end_time}
+                            onChange={e => setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, end_time: e.target.value } : w))}
+                          />
+                        </Col>
+                      </Row>
+                      <Row gutter={8} style={{ marginTop: 8 }}>
+                        <Col span={8}>
+                          <Typography.Text style={{ fontSize: 12 }}>Campus</Typography.Text>
+                          <Select
+                            style={{ width: '100%', marginTop: 2 }}
+                            allowClear
+                            placeholder="Campus…"
+                            value={wk.campus || undefined}
+                            options={BUILDING_CAMPUS_OPTIONS}
+                            onChange={v => {
+                              setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, campus: v ?? '', building: '', room: '' } : w))
+                              setFiOverrideRoomOptions(prev => { const next = [...prev]; next[idx] = []; return next })
+                            }}
+                          />
+                        </Col>
+                        <Col span={16}>
+                          <Typography.Text style={{ fontSize: 12 }}>Building</Typography.Text>
+                          <Select
+                            showSearch
+                            allowClear
+                            style={{ width: '100%', marginTop: 2 }}
+                            placeholder="Select building…"
+                            optionFilterProp="label"
+                            value={wk.building || undefined}
+                            onChange={async v => {
+                              setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, building: v ?? '', room: '' } : w))
+                              if (v) {
+                                const opts: { value: string }[] = []
+                                const bld = (allBuildingsList || []).find(b => b.street === v)
+                                if (bld) {
+                                  try {
+                                    const rr = await adminFetch(`/api/admin/building/${encodeURIComponent(bld.id)}/rooms`)
+                                    if (rr.ok) { const rms: { name: string }[] = await rr.json(); opts.push(...rms.map(rm => ({ value: rm.name }))) }
+                                  } catch (_) {}
+                                }
+                                setFiOverrideRoomOptions(prev => { const next = [...prev]; next[idx] = opts; return next })
+                              } else {
+                                setFiOverrideRoomOptions(prev => { const next = [...prev]; next[idx] = []; return next })
+                              }
+                            }}
+                            options={(allBuildingsList || [])
+                              .filter(b => !wk.campus || b.campusId === wk.campus)
+                              .map(b => ({ value: b.street, label: (b.displayName?.trim()) ? b.displayName.trim() : b.street }))
+                              .sort((a, b) => String(a.label).localeCompare(String(b.label)))}
+                          />
+                        </Col>
+                      </Row>
+                      <Row gutter={8} style={{ marginTop: 8 }}>
+                        <Col span={12}>
+                          <Typography.Text style={{ fontSize: 12 }}>Room</Typography.Text>
+                          <AutoComplete
+                            style={{ width: '100%', marginTop: 2 }}
+                            placeholder="e.g. 169"
+                            value={wk.room}
+                            options={fiOverrideRoomOptions[idx] || []}
+                            filterOption={(input, option) => (option?.value ?? '').toLowerCase().includes(input.toLowerCase())}
+                            onChange={v => setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, room: v } : w))}
+                          />
+                        </Col>
+                        <Col span={12}>
+                          <Typography.Text style={{ fontSize: 12 }}>Floor (optional)</Typography.Text>
+                          <Select
+                            mode="tags"
+                            maxCount={1}
+                            style={{ width: '100%', marginTop: 2 }}
+                            placeholder="Select or type a floor…"
+                            options={COMMON_FLOORS.map(f => ({ value: f, label: f }))}
+                            tokenSeparators={[',']}
+                            value={wk.floor ? [wk.floor] : []}
+                            onChange={v => setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, floor: v[0] ?? '' } : w))}
+                          />
+                        </Col>
+                      </Row>
+                      <Row gutter={8} style={{ marginTop: 8 }}>
+                        <Col span={24}>
+                          <Typography.Text style={{ fontSize: 12 }}>Note (optional)</Typography.Text>
+                          <Input
+                            style={{ marginTop: 2 }}
+                            value={wk.note}
+                            onChange={e => setFiOverrideWeeks(prev => prev.map((w, i) => i === idx ? { ...w, note: e.target.value } : w))}
+                          />
+                        </Col>
+                      </Row>
+                    </div>
+                  ))}
+                  <Button
+                    size="small"
+                    onClick={() => {
+                      setFiOverrideWeeks(prev => [...prev, emptyFiWeek()])
+                      setFiOverrideRoomOptions(prev => [...prev, []])
+                    }}
+                    style={{ marginBottom: 16 }}
+                  >+ Add Occurrence</Button>
+
+                  <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end' }}>
+                    <Button onClick={() => { setFiOverrideCourseId(null); setFiOverrideCourseData(null); setFiOverrideWeeks([]); setFiOverrideRoomOptions([]) }}>Cancel</Button>
+                    <Button
+                      type="primary"
+                      loading={fiOverrideSaving}
+                      onClick={async () => {
+                        const weeks = fiOverrideWeeks
+                          .filter(w => w.day_of_week !== null)
+                          .map(w => ({
+                            day_of_week: w.day_of_week,
+                            start_time: w.start_time.trim() || null,
+                            end_time: w.end_time.trim() || null,
+                            room: w.room.trim() || null,
+                            building: w.building.trim() || null,
+                            floor: w.floor.trim() || null,
+                            note: w.note.trim() || null,
+                          }))
+                        if (weeks.length === 0) { void message.warning('Add at least one occurrence with a day of week.'); return }
+                        const payload = {
+                          ...fiOverrideCourseData,
+                          start_date: fiOverrideStartDate ? fiOverrideStartDate.format('YYYY-MM-DD') : (fiOverrideCourseData.start_date ?? null),
+                          end_date: fiOverrideEndDate ? fiOverrideEndDate.format('YYYY-MM-DD') : (fiOverrideCourseData.end_date ?? null),
+                          weeks,
+                        }
+                        setFiOverrideSaving(true)
+                        try {
+                          const r = await adminFetch(`/api/admin/course-file/${encodeURIComponent(fiOverrideCourseId!)}`, {
+                            method: 'PUT',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload),
+                          })
+                          if (!r.ok) { const e = await r.json(); void message.error(e.error || 'Save failed'); return }
+                          void message.success('Override saved and synced')
+                          // Mark hasOverride in the list
+                          setFiQueueList(prev => prev.map(e => e.id === fiOverrideCourseId ? { ...e, hasOverride: true } : e))
+                          setFiOverrideCourseId(null)
+                          setFiOverrideCourseData(null)
+                          setFiOverrideWeeks([])
+                        } finally { setFiOverrideSaving(false) }
+                      }}
+                    >Save Override</Button>
+                  </div>
+                </>
+              )}
             </Spin>
           </Modal>
         )}
@@ -2121,6 +2552,36 @@ function AdminApp() {
                       Merge Weeks
                     </Button>
                   )}
+                  {/* Show Merge Non-Weeks when any non-weeks field differs (e.g. further_info updated) */}
+                  {staleDiffData?.source && staleDiffData?.override &&
+                    hasNonWeeksDiff(staleDiffData.source, staleDiffData.override) && (
+                    <Button
+                      size="small"
+                      loading={staleMergeNonWeeksLoading === staleDiffCourseId}
+                      title="Copy all non-weeks fields from source into override (weeks remain unchanged)"
+                      onClick={async () => {
+                        if (!staleDiffCourseId) return
+                        setStaleMergeNonWeeksLoading(staleDiffCourseId)
+                        try {
+                          const snapshot = staleDiffData?.override ?? null
+                          const r = await adminFetch(`/api/admin/stale-overrides/${encodeURIComponent(staleDiffCourseId)}/merge-non-weeks`, { method: 'POST' })
+                          if (r.ok) {
+                            setStaleDiffLoading(true)
+                            const r2 = await adminFetch(`/api/admin/course-file-both/${encodeURIComponent(staleDiffCourseId)}`)
+                            if (r2.ok) setStaleDiffData(await r2.json())
+                            setStaleDiffLoading(false)
+                            setStaleDiffWasSaved(true)
+                            setStaleDiffUndoSnapshot(snapshot)
+                          }
+                        } finally { setStaleMergeNonWeeksLoading(null) }
+                      }}
+                      style={staleDiffData?.source && staleDiffData?.override &&
+                        JSON.stringify(staleDiffData.source['weeks']) !== JSON.stringify(staleDiffData.override['weeks'])
+                        ? {} : { marginLeft: 'auto' }}
+                    >
+                      Merge Non-Weeks
+                    </Button>
+                  )}
                   {staleDiffUndoSnapshot && (
                     <Button
                       size="small"
@@ -2164,7 +2625,10 @@ function AdminApp() {
                         }
                       } finally { setStaleDismissLoading(null) }
                     }}
-                    style={staleDiffData?.source && staleDiffData?.override && JSON.stringify(staleDiffData.source['weeks']) !== JSON.stringify(staleDiffData.override['weeks']) ? {} : { marginLeft: 'auto' }}
+                    style={staleDiffData?.source && staleDiffData?.override &&
+                      (JSON.stringify(staleDiffData.source['weeks']) !== JSON.stringify(staleDiffData.override['weeks']) ||
+                       hasNonWeeksDiff(staleDiffData.source, staleDiffData.override))
+                      ? {} : { marginLeft: 'auto' }}
                   >
                     Keep Override
                   </Button>

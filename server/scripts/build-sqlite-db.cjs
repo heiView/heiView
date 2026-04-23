@@ -25,14 +25,14 @@ function loadNoteLocationMap() {
 
 function resolveNoteToLocation(note, entries) {
   if (!note || !entries.length) return null;
-  const trimmed = note.trim();
+  const trimmedLower = note.trim().toLowerCase();
   for (const entry of entries) {
     const matchType = entry.match || 'exact';
     const patterns = Array.isArray(entry.notes) ? entry.notes : [];
     if (matchType === 'exact') {
-      if (patterns.some(p => p === trimmed)) return { room: entry.room, building: entry.building };
+      if (patterns.some(p => p.toLowerCase() === trimmedLower)) return { room: entry.room, building: entry.building };
     } else if (matchType === 'contains') {
-      if (patterns.some(p => trimmed.includes(p))) return { room: entry.room, building: entry.building };
+      if (patterns.some(p => trimmedLower.includes(p.toLowerCase()))) return { room: entry.room, building: entry.building };
     }
   }
   return null;
