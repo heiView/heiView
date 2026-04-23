@@ -86,18 +86,6 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-05-13",
-      "end_date": "2026-05-13",
-      "start_time": "11:45",
-      "end_time": "13:15",
-      "location": "UFHK GYN SR (6440.EG.261)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
-      "room": "UFHK GYN SR (6440.EG.261)",
-      "building": "Im Neuenheimer Feld 440, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 3,
       "start_date": "2026-06-24",
       "end_date": "2026-06-24",
       "start_time": "11:45",
@@ -134,18 +122,6 @@
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-05-14",
-      "end_date": "2026-05-14",
-      "start_time": "11:45",
-      "end_time": "12:30",
-      "location": "UFHK GYN SR (6440.EG.261)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
-      "room": "UFHK GYN SR (6440.EG.261)",
-      "building": "Im Neuenheimer Feld 440, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
       "start_date": "2026-06-25",
       "end_date": "2026-06-25",
       "start_time": "11:45",
@@ -182,18 +158,6 @@
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-05-14",
-      "end_date": "2026-05-14",
-      "start_time": "12:30",
-      "end_time": "13:15",
-      "location": "UFHK GYN SR (6440.EG.261)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
-      "room": "UFHK GYN SR (6440.EG.261)",
-      "building": "Im Neuenheimer Feld 440, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
       "start_date": "2026-06-25",
       "end_date": "2026-06-25",
       "start_time": "12:30",
@@ -230,18 +194,6 @@
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-05-14",
-      "end_date": "2026-05-14",
-      "start_time": "14:00",
-      "end_time": "15:00",
-      "location": "UFHK GYN SR (6440.EG.261)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
-      "room": "UFHK GYN SR (6440.EG.261)",
-      "building": "Im Neuenheimer Feld 440, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
       "start_date": "2026-06-25",
       "end_date": "2026-06-25",
       "start_time": "14:00",
@@ -268,18 +220,6 @@
       "day_of_week": 4,
       "start_date": "2026-04-16",
       "end_date": "2026-04-16",
-      "start_time": "15:00",
-      "end_time": "16:00",
-      "location": "UFHK GYN SR (6440.EG.261)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
-      "room": "UFHK GYN SR (6440.EG.261)",
-      "building": "Im Neuenheimer Feld 440, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-05-14",
-      "end_date": "2026-05-14",
       "start_time": "15:00",
       "end_time": "16:00",
       "location": "UFHK GYN SR (6440.EG.261)",
@@ -390,6 +330,66 @@
       "end_date": "2026-06-26",
       "start_time": "13:30",
       "end_time": "15:30",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "14:00",
+      "end_time": "14:45",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "14:45",
+      "end_time": "15:30",
+      "location": "UFHK GYN SR (6440.EG.261)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
+      "room": "UFHK GYN SR (6440.EG.261)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "14:00",
+      "end_time": "15:00",
       "location": "UFHK GYN SR (6440.EG.261)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
       "room": "UFHK GYN SR (6440.EG.261)",
@@ -400,5 +400,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392341",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:00:25Z"
+  "last_updated": "2026-04-23T12:26:51Z"
 }

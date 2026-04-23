@@ -1,6 +1,6 @@
 {
   "id": "0000000157",
-  "title": "Repetitorium Philosophie",
+  "title": "Repetitorium Philosophie (fällt aus!)",
   "type": "RC",
   "ects_credits": "2",
   "course_languages": "German",
@@ -8,24 +8,11 @@
     "Kraft, Kevin"
   ],
   "organisation": "Faculty of Theology",
-  "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
-      "start_time": "14:15",
-      "end_time": "15:45",
-      "location": "KiGa I (1200.EG.024)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
-      "room": "KiGa I (1200.EG.024)",
-      "building": "Kisselgasse 1, Ground floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410848",
   "exceptions": [],
   "further_info": "Recommended Reading Wird in der konstituierenden Sitzung bekanntgegeben und über moodle bereitgestellt.",
-  "last_updated": "2026-04-21T10:41:55Z"
+  "last_updated": "2026-04-23T13:08:53Z"
 }

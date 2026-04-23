@@ -194,6 +194,18 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
+      "end_date": "2026-05-07",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Besprechungsraum Frauenklinik (6442.EG.163)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31072",
+      "room": "Besprechungsraum Frauenklinik (6442.EG.163)",
+      "building": "Im Neuenheimer Feld 442, Ground floor",
+      "note": "Anmeldung über Moodle/Treffpunkt für die Hospitation ist der Besprechungsraum der Universitäts-Frauenklinik (Raum 6442.00.163)"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
       "end_date": "2026-05-21",
       "start_time": "16:00",
       "end_time": "18:00",
@@ -399,5 +411,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392323",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:00:41Z"
+  "last_updated": "2026-04-23T12:27:06Z"
 }

@@ -2,7 +2,7 @@
   "id": "1300122242",
   "title": "Information, Uncertainty, and Learning in Complex Systems (MVSpec)",
   "type": "L",
-  "ects_credits": "4",
+  "ects_credits": "6",
   "course_languages": "German",
   "lecturers": [
     "Weidemüller, Matthias"
@@ -39,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411271",
   "exceptions": [],
   "further_info": "Recommended Reading David J.C. MacKay, Information Theory, Inference, and Learning Algorithms, Cambridge University Press (2003). Kevin P. Murphy, Probabilistic Machine Learning: An Introduction, MIT Press (2022). James P. Sethna, Statistical Mechanics: Entropy, Order Parameters, and Complexity:, Oxford University Press (2nd edition, 2021).",
-  "last_updated": "2026-04-21T10:20:40Z"
+  "last_updated": "2026-04-23T13:30:02Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Klein, Birgit"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-16",
   "end_date": "2026-07-23",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416122",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T21:48:46Z"
+  "further_info": "Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS. 3 LP bis max. 4 LP je nach Umfang der Extra-Leistungen (ohne praxisbezogene Extra-Leistungen ist eine Anrechnung als ÜK nicht möglich) Anrechnung je nach erbrachter Leistung entweder als Proseminar oder reguläre Übung oder ÜK",
+  "last_updated": "2026-04-23T12:57:09Z"
 }

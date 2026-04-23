@@ -8,6 +8,7 @@
     "Jaw, Cheng-Wen",
     "<N.N.>(Georg Fischer), 729500.100"
   ],
+  "organisation": "hei_INNOVATION",
   "start_date": "2026-04-15",
   "end_date": "2026-07-15",
   "weeks": [
@@ -74,6 +75,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419136",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T21:19:15Z"
+  "further_info": "The module serves as the foundational element for subsequent modules within the Entrepreneurial Skills Certificate (Entrepreneurial Skills Program). To receive ECTS points, students are required to maintain a minimum attendance rate of 80%, participate in a final presentation, and thoroughly document their learning experiences in a learning diary. This module is highly recommended for students pursuing a Bachelor's, Master's, or Doctoral degree, as well as postdoctoral researchers.",
+  "last_updated": "2026-04-23T13:01:04Z"
 }

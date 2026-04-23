@@ -29,9 +29,9 @@
       "end_date": "2026-05-08",
       "start_time": "08:00",
       "end_time": "14:00",
-      "location": "Übungsraum (4141.EG.045)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19479",
-      "room": "Übungsraum (4141.EG.045)",
+      "location": "Übungsraum (4141.EG.043)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19478",
+      "room": "Übungsraum (4141.EG.043)",
       "building": "Bergheimer Straße 20, Ground floor",
       "note": null
     },
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/380803",
   "exceptions": [],
   "further_info": "Sollten Sie aufgrund emotionaler und/oder psychischer Belastungen vor besonderen Herausforderungen stehen, (akute) Beeinträchtigungen in Ihrem Studium erfahren oder sich bestimmten Prüfungen oder Aufgaben nicht gewachsen sehen, sprechen Sie gerne am Institut für Gerontologie Herrn Gerdung an.",
-  "last_updated": "2026-04-21T10:35:32Z"
+  "last_updated": "2026-04-23T13:15:40Z"
 }

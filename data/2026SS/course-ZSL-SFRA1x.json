@@ -56,10 +56,10 @@
       "end_date": "2026-05-18",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Übungsraum (3120.01.116)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
-      "room": "Übungsraum (3120.01.116)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.02.220)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7121",
+      "room": "Übungsraum (3120.02.220)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     },
     {
@@ -68,10 +68,10 @@
       "end_date": "2026-07-20",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Übungsraum (3120.01.116)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
-      "room": "Übungsraum (3120.01.116)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.02.220)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7121",
+      "room": "Übungsraum (3120.02.220)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     },
     {
@@ -80,10 +80,10 @@
       "end_date": "2026-07-22",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Übungsraum (3120.01.116)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
-      "room": "Übungsraum (3120.01.116)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.02.220)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7121",
+      "room": "Übungsraum (3120.02.220)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     },
     {
@@ -161,6 +161,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413906",
   "exceptions": [],
-  "further_info": "Recommended Reading Le Bougnec, Jean-Thierry/Marie-José Lopes (Hgg.): Inspire 1. Paris: Hachette, 2021. ISBN 978-3-19-003387-4",
-  "last_updated": "2026-04-21T10:13:13Z"
+  "further_info": "Recommended Reading Le Bougnec, Jean-Thierry/Marie-José Lopes (Hgg.): Inspire 1. Paris: Hachette, 2021. ISBN 978-3-19-003387-4 Die Prüfung findet im IDF (Plöck 55) von 08:30-10:00 Uhr in HS10 statt.",
+  "last_updated": "2026-04-23T13:36:08Z"
 }

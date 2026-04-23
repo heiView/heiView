@@ -8,15 +8,15 @@
     "<N.N.>(Tutor*in), 100500.100"
   ],
   "organisation": "Institute of Sports and Sports Sciences",
-  "start_date": "2026-05-26",
+  "start_date": "2026-06-01",
   "end_date": "2026-07-21",
   "weeks": [
     {
       "day_of_week": 1,
       "start_date": "2026-06-01",
       "end_date": "2026-07-20",
-      "start_time": "14:00",
-      "end_time": "16:00",
+      "start_time": "14:15",
+      "end_time": "15:45",
       "location": "INF 700 / Stadion B",
       "location_link": null,
       "room": "INF 700 / Stadion B",
@@ -25,10 +25,10 @@
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-05-26",
+      "start_date": "2026-06-02",
       "end_date": "2026-07-21",
-      "start_time": "08:00",
-      "end_time": "10:00",
+      "start_time": "08:15",
+      "end_time": "09:45",
       "location": "INF 700 / Stadion B",
       "location_link": null,
       "room": "INF 700 / Stadion B",
@@ -37,10 +37,10 @@
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-05-28",
+      "start_date": "2026-06-11",
       "end_date": "2026-07-16",
-      "start_time": "08:00",
-      "end_time": "10:00",
+      "start_time": "08:15",
+      "end_time": "09:45",
       "location": "INF 700 / Stadion B",
       "location_link": null,
       "room": "INF 700 / Stadion B",
@@ -51,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414616",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:43:45Z"
+  "last_updated": "2026-04-23T12:58:09Z"
 }

@@ -15,7 +15,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Unterrichtsraum (2210.EG.017)",
@@ -23,6 +23,18 @@
       "room": "Unterrichtsraum (2210.EG.017)",
       "building": "Seminarstraße 3, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (2210.01.117)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17678",
+      "room": "Unterrichtsraum (2210.01.117)",
+      "building": "Seminarstraße 3, 1st floor",
+      "note": "Anstelle der Sitzung am 22.07.26."
     },
     {
       "day_of_week": 4,
@@ -40,5 +52,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410034",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:22:19Z"
+  "last_updated": "2026-04-23T13:28:17Z"
 }

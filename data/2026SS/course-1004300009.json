@@ -17,7 +17,7 @@
       "start_date": "2026-04-22",
       "end_date": "2026-07-22",
       "start_time": "11:15",
-      "end_time": "12:15",
+      "end_time": "12:45",
       "location": "HS 5 (3041.EG.005)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14590",
       "room": "HS 5 (3041.EG.005)",
@@ -28,5 +28,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/406207",
   "exceptions": [],
   "further_info": "Recommended Reading Grundlagenliteratur wird in der Vorlesung vorgestellt 4 LP aus der Lehrveranstaltung (2 LP für Anwesenheit und Mitarbeit, 1 LP für die Reflexionsjournale, 1 LP für die Erstellung und Präsentation eines Posters. Das Poster kann in Gruppenarbeit erstellt werden. Das Poster dient dann auch der im Modulhandbuch verlangten Notengebung.",
-  "last_updated": "2026-04-21T10:26:30Z"
+  "last_updated": "2026-04-23T13:22:45Z"
 }

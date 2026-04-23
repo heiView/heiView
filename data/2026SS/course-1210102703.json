@@ -15,8 +15,8 @@
       "day_of_week": 2,
       "start_date": "2026-04-14",
       "end_date": "2026-07-07",
-      "start_time": "09:15",
-      "end_time": "10:45",
+      "start_time": "09:00",
+      "end_time": "10:30",
       "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10986",
       "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
@@ -33,11 +33,23 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17078",
       "room": "Übungsraum (6236.01.101)",
       "building": "Im Neuenheimer Feld 236, 1st floor",
-      "note": null
+      "note": "Gruppe 2"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-07-07",
+      "start_time": "10:45",
+      "end_time": "12:15",
+      "location": "Übungsraum (6236.01.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17078",
+      "room": "Übungsraum (6236.01.101)",
+      "building": "Im Neuenheimer Feld 236, 1st floor",
+      "note": "Gruppe 1"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418551",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:15:33Z"
+  "last_updated": "2026-04-23T13:35:05Z"
 }

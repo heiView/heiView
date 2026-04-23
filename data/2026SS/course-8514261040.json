@@ -15,6 +15,18 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
+      "end_date": "2026-04-15",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "A2.08 (Altbau)",
+      "location_link": null,
+      "room": "A2.08 (Altbau)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
       "end_date": "2026-05-06",
       "start_time": "11:15",
       "end_time": "12:45",
@@ -47,10 +59,22 @@
       "room": "A2.08 (Altbau)",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-22",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "ZEGJ, Bergheimer Str. 147, Geb. C, 2. OG",
+      "location_link": null,
+      "room": "ZEGJ, Bergheimer Str. 147, Geb. C, 2. OG",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416124",
   "exceptions": [],
   "further_info": "Recommended Reading Zur Einführung: Geis, Jael, Übrig sein – Leben \"danach\". Juden deutscher Herkunft in der britischen und amerikanischen Zone Deutschlands 1945-1949, Berlin / Wien 2000; Stiftung Hamburger Gedenkstätten und Lernorte zur Erinnerung an die Opfer der NS-Verbrechen (Hg.), NS-Verfolgte nach der Befreiung. Ausgrenzungserfahrungen und Neubeginn, Göttingen 2022 (Beiträge zur Geschichte der nationalsozialistischen Verfolgung, Heft 3) Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
-  "last_updated": "2026-04-21T10:23:43Z"
+  "last_updated": "2026-04-23T13:26:24Z"
 }

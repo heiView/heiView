@@ -40,11 +40,11 @@
       "start_date": "2026-04-25",
       "end_date": "2026-04-25",
       "start_time": "10:00",
-      "end_time": "17:00",
-      "location": "Besprechung/Aufenthalt (4120.02.002)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11100",
-      "room": "Besprechung/Aufenthalt (4120.02.002)",
-      "building": "Voßstraße 2, 2nd floor",
+      "end_time": "16:00",
+      "location": "Fernerkundungsraum 010.01.01 (4010+4.01.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11576",
+      "room": "Fernerkundungsraum 010.01.01 (4010+4.01.001)",
+      "building": "Voßstraße 2, 1st floor",
       "note": null
     },
     {
@@ -87,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413995",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:39:40Z"
+  "last_updated": "2026-04-23T12:53:34Z"
 }

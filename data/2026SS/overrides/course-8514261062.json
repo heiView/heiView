@@ -7,6 +7,7 @@
   "lecturers": [
     "Gilinsky, David"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417174",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T21:58:53Z"
+  "further_info": "Recommended Reading Reading list can be requested in advance from David Gilinsky on email: david.gilinsky@hfjs.eu and will be distributed at the start of the course. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
+  "last_updated": "2026-04-23T12:54:58Z"
 }

@@ -9,12 +9,12 @@
   ],
   "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
+  "end_date": "2026-04-16",
   "weeks": [
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-04-16",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Konferenzsaal (KS III) (3051.02.207)",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416910",
   "exceptions": [],
   "further_info": "Recommended Reading Collados Aís, Ángela et al. (Hg.). 2011. *Qualitätsparameter beim Simultandolmetschen: interdisziplinäre Perspektiven.* Tübingen: Gunter Narr. Ericsson, K. Anders. 2000. Expertise in interpreting: An expert-performance perspective. *Interpreting* 5:2, 187–220. Setton, Robin; Dawrant, Andrew. 2016. *Conference interpreting: A complete course.* Amsterdam: John Benjamins.",
-  "last_updated": "2026-04-21T10:44:52Z"
+  "last_updated": "2026-04-23T13:05:11Z"
 }

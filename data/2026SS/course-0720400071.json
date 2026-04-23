@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute of European Art History",
   "start_date": "2026-04-22",
-  "end_date": "2026-04-22",
+  "end_date": "2026-07-01",
   "weeks": [
     {
       "day_of_week": 3,
@@ -22,10 +22,46 @@
       "room": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
       "building": "Seminarstraße 4, Ground floor",
       "note": "Vorbesprechung/erstes Treffen, weitere Termine nach Absprache"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "location": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17968",
+      "room": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-27",
+      "end_date": "2026-06-03",
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17968",
+      "room": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17968",
+      "room": "Übungsraum 016 (Marie Marcks - Raum) (2230.EG.016)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414833",
   "exceptions": [],
   "further_info": "Vorbesprechung bzw. erstes Treffen mit Gelegenheit zu Projektbesprechungen: Mi. 22.4., 11:30-13:00 Uhr (IEK, Raum 016), weitere Termine nach Absprache",
-  "last_updated": "2026-04-21T10:11:44Z"
+  "last_updated": "2026-04-23T13:37:58Z"
 }

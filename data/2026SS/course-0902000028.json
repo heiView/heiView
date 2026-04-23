@@ -8,18 +8,18 @@
     "Heyd, Theresa Christine"
   ],
   "organisation": "English Department",
-  "start_date": "2026-04-14",
+  "start_date": "2026-04-28",
   "end_date": "2026-07-21",
   "weeks": [
     {
       "day_of_week": 2,
-      "start_date": "2026-04-14",
+      "start_date": "2026-04-28",
       "end_date": "2026-07-21",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Übungsraum (2220.01.113)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22605",
-      "room": "Übungsraum (2220.01.113)",
+      "location": "Übungsraum (2220.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22602",
+      "room": "Übungsraum (2220.01.108)",
       "building": "Kettengasse 12-16, 1st floor",
       "note": null
     }
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407546",
   "exceptions": [],
   "further_info": "Recommended Reading Hall, K. (1996). Cyberfeminism. In Computer-mediated communication: Linguistic, social, and cross-cultural perspectives (pp. 147-172). John Benjamins publishing company. Ilbury, C. (2020). “Sassy Queens”: Stylistic orthographic variation in Twitter and the enregisterment of AAVE. Journal of sociolinguistics, 24(2), 245-264. Jones, L. (2025). Language and LGBTQ+ youth: Analysing marginalised identities through an intersectional lens. Bloomsbury Publishing. Kibbey, T. E. (Ed.). (2023). Linguistics out of the closet: The interdisciplinarity of gender and sexuality in language science (Vol. 3). Walter de Gruyter GmbH & Co KG. King, B. W., & Crowley, A. (2023). The future of pronouns in the online/offline nexus. In The Routledge Handbook of Pronouns (pp. 74-86). Routledge. Zottola, A. (2024). LGBTQ+ and feminist digital activism: A linguistic perspective. Cambridge University Press.",
-  "last_updated": "2026-04-21T11:45:44Z"
+  "last_updated": "2026-04-23T13:00:15Z"
 }

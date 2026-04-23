@@ -38,30 +38,18 @@
     {
       "day_of_week": 5,
       "start_date": "2026-07-03",
-      "end_date": "2026-07-17",
+      "end_date": "2026-07-10",
       "start_time": "09:00",
       "end_time": "13:00",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
-      "note": "RS 317"
-    },
-    {
-      "day_of_week": 6,
-      "start_date": "2026-07-04",
-      "end_date": "2026-07-04",
-      "start_time": "10:00",
-      "end_time": "14:00",
-      "location": "Übungsraum (2210.EG.019)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17658",
-      "room": "Übungsraum (2210.EG.019)",
+      "location": "Unterrichtsraum (2210.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17659",
+      "room": "Unterrichtsraum (2210.EG.020)",
       "building": "Seminarstraße 3, Ground floor",
       "note": null
     },
     {
       "day_of_week": 6,
-      "start_date": "2026-07-18",
+      "start_date": "2026-07-04",
       "end_date": "2026-07-18",
       "start_time": "10:00",
       "end_time": "14:00",
@@ -72,20 +60,20 @@
       "note": null
     },
     {
-      "day_of_week": 6,
-      "start_date": "2026-07-11",
-      "end_date": "2026-07-11",
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
       "start_time": "09:00",
-      "end_time": "10:00",
-      "location": "Übungsraum (2210.EG.019)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17658",
-      "room": "Übungsraum (2210.EG.019)",
-      "building": "Seminarstraße 3, Ground floor",
-      "note": null
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "RS 317"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413585",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:39:36Z"
+  "last_updated": "2026-04-23T13:09:53Z"
 }

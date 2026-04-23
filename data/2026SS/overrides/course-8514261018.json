@@ -7,6 +7,7 @@
   "lecturers": [
     "Gilinsky, David"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-14",
   "end_date": "2026-07-21",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416032",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T21:58:13Z"
+  "further_info": "Recommended Reading A full reading list will be distributed in the first lesson. For information on how this course can be applied within different degree programs, please refer to the section “Module / Applicability in Degree Programs” in the Commented Course Catalog (KVV) of the HfJS.",
+  "last_updated": "2026-04-23T12:56:34Z"
 }

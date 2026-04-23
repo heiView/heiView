@@ -161,6 +161,18 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
+      "end_date": "2026-05-07",
+      "start_time": "07:45",
+      "end_time": "09:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bitte Gruppeneinteilung in Moodle beachten"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
       "end_date": "2026-05-21",
       "start_time": "07:45",
       "end_time": "09:45",
@@ -438,5 +450,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392317",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:00:05Z"
+  "last_updated": "2026-04-23T12:26:31Z"
 }

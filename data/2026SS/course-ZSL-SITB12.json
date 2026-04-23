@@ -17,10 +17,10 @@
       "end_date": "2026-07-28",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Übungsraum (3120.02.207)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22736",
-      "room": "Übungsraum (3120.02.207)",
-      "building": "Plöck 79-81, 2nd floor",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
     {
@@ -29,10 +29,10 @@
       "end_date": "2026-05-07",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Übungsraum (3120.02.207)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22736",
-      "room": "Übungsraum (3120.02.207)",
-      "building": "Plöck 79-81, 2nd floor",
+      "location": "Übungsraum (3120.01.119)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22734",
+      "room": "Übungsraum (3120.01.119)",
+      "building": "Plöck 79-81, 1st floor",
       "note": null
     },
     {
@@ -41,10 +41,10 @@
       "end_date": "2026-05-28",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Übungsraum (3120.02.207)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22736",
-      "room": "Übungsraum (3120.02.207)",
-      "building": "Plöck 79-81, 2nd floor",
+      "location": "Übungsraum (3120.01.119)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22734",
+      "room": "Übungsraum (3120.01.119)",
+      "building": "Plöck 79-81, 1st floor",
       "note": null
     },
     {
@@ -53,15 +53,15 @@
       "end_date": "2026-07-30",
       "start_time": "18:00",
       "end_time": "19:30",
-      "location": "Übungsraum (3120.02.207)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22736",
-      "room": "Übungsraum (3120.02.207)",
-      "building": "Plöck 79-81, 2nd floor",
+      "location": "Übungsraum (3120.01.119)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22734",
+      "room": "Übungsraum (3120.01.119)",
+      "building": "Plöck 79-81, 1st floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413937",
   "exceptions": [],
   "further_info": "Recommended Reading Piotti / De Savorgnani / Carrara, \"Universitalia 2.0 B1/B2\". Ismaning: Hueber Verlag. ISBN: 978-3-19-105464-9. Unità 4-6",
-  "last_updated": "2026-04-21T10:22:44Z"
+  "last_updated": "2026-04-23T13:28:40Z"
 }

@@ -48,9 +48,9 @@
       "note": "Pflichtveranstaltung"
     },
     {
-      "day_of_week": 5,
-      "start_date": "2026-05-22",
-      "end_date": "2026-05-22",
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
       "start_time": "08:00",
       "end_time": "10:00",
       "location": "Online",
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397362",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:57:01Z"
+  "last_updated": "2026-04-23T12:23:26Z"
 }

@@ -269,9 +269,9 @@
       "end_date": "2026-04-30",
       "start_time": "11:00",
       "end_time": "12:30",
-      "location": "Seminarraum 102 (4240.01.102)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
-      "room": "Seminarraum 102 (4240.01.102)",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
       "building": "Thibautstraße 4, 1st floor",
       "note": null
     },
@@ -315,5 +315,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379490",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:59:13Z"
+  "last_updated": "2026-04-23T12:25:40Z"
 }

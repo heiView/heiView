@@ -102,9 +102,9 @@
       "end_date": "2026-07-28",
       "start_time": "08:30",
       "end_time": "12:00",
-      "location": "Übungsraum (3120.01.116)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7109",
-      "room": "Übungsraum (3120.01.116)",
+      "location": "Übungsraum (3120.01.117)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
+      "room": "Übungsraum (3120.01.117)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     },
@@ -160,5 +160,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413924",
   "exceptions": [],
   "further_info": "Recommended Reading Piotti / De Savorgnani / Carrara, \"Universitalia 2.0\". Ismaning: Hueber Verlag 2016. ISBN: 978-3-19-165463-4. Unità 5-8",
-  "last_updated": "2026-04-21T10:22:40Z"
+  "last_updated": "2026-04-23T13:28:37Z"
 }

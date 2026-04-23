@@ -34,10 +34,22 @@
       "room": "Hörsaal (6205.EG.205)",
       "building": "Hörsaal, Im Neuenheimer Feld 205, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Achtung: Am 23.4. findet die Vorlesung online statt."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414035",
   "exceptions": [],
   "further_info": "Recommended Reading L. C. Evans - Partial Differential Equations F. Sauvigny - Partielle Differentialgleichungen der Geometrie und der Physik 1 further information additional information",
-  "last_updated": "2026-04-21T10:35:14Z"
+  "last_updated": "2026-04-23T13:15:22Z"
 }

@@ -8,24 +8,11 @@
     "König, Julia Felicitas Leni"
   ],
   "organisation": "Clinic National Center for Tumour Diseases (NCT)",
-  "start_date": "2026-04-28",
-  "end_date": "2026-04-28",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_date": "2026-04-28",
-      "end_date": "2026-04-28",
-      "start_time": "15:30",
-      "end_time": "17:00",
-      "location": "Seminarraum K9 (6460.02.403)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31398",
-      "room": "Seminarraum K9 (6460.02.403)",
-      "building": "Im Neuenheimer Feld 460, 2nd floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417767",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:36:18Z"
+  "last_updated": "2026-04-23T12:49:39Z"
 }

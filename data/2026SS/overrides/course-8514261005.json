@@ -7,6 +7,7 @@
   "lecturers": [
     "Bindrim, David"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-17",
   "end_date": "2026-07-24",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414860",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:52:01Z"
+  "further_info": "Recommended Reading This will be announced at the seminar. Recommended introduction: Gzella, Holger (ed.), Languages of the Old Testament, 2nd revised edition, Darmstadt 2012; 490 GZELL (HfJS), or 2012 A 7528 (UB). For the applicability of the course in different degree programs, please refer to the information under ‘Module / Applicability in Degree Programs’ in the Annotated Course Catalog (KVV) of the HfJS.",
+  "last_updated": "2026-04-23T13:06:45Z"
 }

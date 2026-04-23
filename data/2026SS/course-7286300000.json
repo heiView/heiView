@@ -8,11 +8,24 @@
     "Guisantes Alonso, Miguel"
   ],
   "organisation": "Heidelberg Center for Ibero-American Studies (HCIAS)",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-04-27",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-07-20",
+      "start_time": "17:30",
+      "end_time": "19:00",
+      "location": "Übungsraum (3051.01.114)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19868",
+      "room": "Übungsraum (3051.01.114)",
+      "building": "Plöck 57a, 1st floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415683",
   "exceptions": [],
   "further_info": "Recommended Reading ***Das gesamte Material wird auf Moodle hochgeladen*** Texthandbuch: Chamorro, M., da Silva, I. e Núñez, X. (2008). Aula de Galego 1 (A1-A2). Xunta de Galicia, Barcelona: Editorial Difusión. Online verfügbar (kostenlos). Offizielles Vorbereitungsmaterial für die CELGA 1-Prüfung. Material de clase. Online verfügbar (kostenlos).",
-  "last_updated": "2026-04-21T10:15:00Z"
+  "last_updated": "2026-04-23T13:34:34Z"
 }

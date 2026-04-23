@@ -17,15 +17,15 @@
       "end_date": "2026-07-23",
       "start_time": "11:00",
       "end_time": "13:00",
-      "location": "Übungsraum (2210.EG.019)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17658",
-      "room": "Übungsraum (2210.EG.019)",
-      "building": "Seminarstraße 3, Ground floor",
+      "location": "UGX 61 (2170.U1.061)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21090",
+      "room": "UGX 61 (2170.U1.061)",
+      "building": "Grabengasse 3-5, Lower level 1",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413650",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:39:31Z"
+  "last_updated": "2026-04-23T13:09:52Z"
 }

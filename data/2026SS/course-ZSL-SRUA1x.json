@@ -18,9 +18,9 @@
       "end_date": "2026-05-18",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Übungsraum (3120.03.318)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10966",
-      "room": "Übungsraum (3120.03.318)",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
       "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
@@ -30,9 +30,9 @@
       "end_date": "2026-07-20",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Übungsraum (3120.03.318)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10966",
-      "room": "Übungsraum (3120.03.318)",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
       "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
@@ -42,9 +42,9 @@
       "end_date": "2026-07-22",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Übungsraum (3120.03.318)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10966",
-      "room": "Übungsraum (3120.03.318)",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
       "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
@@ -76,5 +76,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413737",
   "exceptions": [],
   "further_info": "Recommended Reading „Otlitschno! aktuell“, der Russischkurs A1. Hueber Verlag. ISBN 978-3-19-204477-9",
-  "last_updated": "2026-04-21T10:42:52Z"
+  "last_updated": "2026-04-23T13:06:26Z"
 }

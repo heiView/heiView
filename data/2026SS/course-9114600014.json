@@ -74,18 +74,6 @@
     },
     {
       "day_of_week": 1,
-      "start_date": "2026-04-20",
-      "end_date": "2026-04-20",
-      "start_time": "10:30",
-      "end_time": "11:15",
-      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
-      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
-      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 1,
       "start_date": "2026-05-04",
       "end_date": "2026-05-04",
       "start_time": "10:30",
@@ -126,18 +114,6 @@
       "end_date": "2026-06-29",
       "start_time": "10:30",
       "end_time": "11:15",
-      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
-      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
-      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 1,
-      "start_date": "2026-04-20",
-      "end_date": "2026-04-20",
-      "start_time": "11:30",
-      "end_time": "12:30",
       "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
       "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
@@ -851,10 +827,34 @@
       "room": "SCHLIERBACH Großer HS (9041.01.001)",
       "building": "SCHLIERBACH Großer HS, Schlierbacher Landstraße 200A, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
+      "start_time": "10:30",
+      "end_time": "11:15",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "Prof. Dr. Sven Vetter - heiCo-Karteikarte aktualisieren!"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-20",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "location": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30242",
+      "room": "SCHLIERBACH Vorstellungsraum (Kleiner HS) (9040.02.509)",
+      "building": "SCHLIERBACH Vorstellungsraum (Kleiner HS), Schlierbacher Landstraße 200A, 2nd floor",
+      "note": "Prof. Dr. Sven Vetter - heiCo-Karteikarte aktualisieren!"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402339",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:58:10Z"
+  "last_updated": "2026-04-23T12:24:36Z"
 }

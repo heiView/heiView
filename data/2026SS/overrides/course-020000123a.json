@@ -7,6 +7,7 @@
   "lecturers": [
     "<N.N.>(RA Dr. Jörg Hofmann), 020000.100"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-06-18",
   "end_date": "2026-07-09",
   "weeks": [
@@ -37,6 +38,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417818",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T22:09:55Z"
+  "further_info": "Recommended Reading Berberich, Koenig, „Unionsrechtliche Bewertung des Übergangs in das Regelwerk des GlüStV 2021“, ZfWG 2021, S. 157 ff. Ennuschat, „Die Verteidigung der digitalen Souveränität im Bereich des Online-Glücksspiels“, ZfWG 2020, S.2 ff. Jung, Kleibrink, Köster, „Die Entwicklung des Online-Glücksspiels in Deutschland“, Beiträge zum Glücksspielwesen 2019, S. 15 ff. Köstler-Messaoudi, „Sportwettkonzessionsverfahren im dritten Anlauf“, Beiträge zum Glücksspielwesen 2019, S. 20 ff. Weitere Informationen finden Sie auch unter: www.jura.uni-heidelberg.de/anwaltsorientierung",
+  "last_updated": "2026-04-23T13:02:01Z"
 }

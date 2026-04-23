@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute for Religious Studies",
   "start_date": "2026-04-15",
-  "end_date": "2026-04-25",
+  "end_date": "2026-04-15",
   "weeks": [
     {
       "day_of_week": 3,
@@ -22,34 +22,10 @@
       "room": "Seminarraum (2065.03.314)",
       "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
       "note": "Der Termin am 15.04.26 findet krankheitsbedingt online statt. Hier der Teilnahmelink:"
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-04-24",
-      "end_date": "2026-04-24",
-      "start_time": "10:00",
-      "end_time": "18:00",
-      "location": "Seminarraum (2065.03.314)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
-      "room": "Seminarraum (2065.03.314)",
-      "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 6,
-      "start_date": "2026-04-25",
-      "end_date": "2026-04-25",
-      "start_time": "10:00",
-      "end_time": "18:00",
-      "location": "Seminarraum (2065.03.314)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
-      "room": "Seminarraum (2065.03.314)",
-      "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417159",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:40:12Z"
+  "last_updated": "2026-04-23T13:10:31Z"
 }

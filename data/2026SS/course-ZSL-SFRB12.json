@@ -19,10 +19,10 @@
       "end_date": "2026-07-21",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     },
     {
@@ -31,10 +31,10 @@
       "end_date": "2026-05-07",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     },
     {
@@ -43,10 +43,10 @@
       "end_date": "2026-05-28",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     },
     {
@@ -55,10 +55,10 @@
       "end_date": "2026-07-23",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     },
     {
@@ -113,5 +113,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413921",
   "exceptions": [],
   "further_info": "Recommended Reading Le Bougnec, Jean-Thierry/Marie-José Lopes (Hgg.): Inspire 3. Paris: Hachette, 2021. ISBN 978-3-19-053387-9",
-  "last_updated": "2026-04-21T10:13:16Z"
+  "last_updated": "2026-04-23T13:36:12Z"
 }

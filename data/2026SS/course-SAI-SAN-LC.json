@@ -17,9 +17,9 @@
       "end_date": "2026-07-23",
       "start_time": "09:15",
       "end_time": "10:45",
-      "location": "Übungsraum 010.01.14 (4010+4.01.014)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11587",
-      "room": "Übungsraum 010.01.14 (4010+4.01.014)",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
       "building": "Voßstraße 2, 1st floor",
       "note": null
     }
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409871",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:08:35Z"
+  "last_updated": "2026-04-23T13:41:12Z"
 }

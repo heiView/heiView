@@ -5,7 +5,6 @@
   "ects_credits": null,
   "course_languages": "English (primary)",
   "lecturers": [
-    "Pereira, Gislene",
     "Schiebel, Elmar"
   ],
   "organisation": "Center for Molecular Biology (ZMBH)",
@@ -14,6 +13,6 @@
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385575",
   "exceptions": [],
-  "further_info": "On Mondays, INF 345, SR, 1. floor, 9.00 - 10.30 a.m.",
-  "last_updated": "2026-04-21T10:29:12Z"
+  "further_info": "Mondays, 9.00 - 10.30 a.m.",
+  "last_updated": "2026-04-23T13:22:20Z"
 }

@@ -17,15 +17,15 @@
       "end_date": "2026-07-21",
       "start_time": "14:00",
       "end_time": "16:00",
-      "location": "HS 05 (2170.01.033)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20589",
-      "room": "HS 05 (2170.01.033)",
-      "building": "HS 05, Grabengasse 3-5, 1st floor",
+      "location": "HS 15 (2170.03.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20773",
+      "room": "HS 15 (2170.03.025)",
+      "building": "HS 15, Grabengasse 3-5, 3rd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411314",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:26:26Z"
+  "last_updated": "2026-04-23T13:22:45Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Cranz, Isabel"
   ],
+  "organisation": "Hochschule für Jüdische Studien Heidelberg",
   "start_date": "2026-04-15",
   "end_date": "2026-07-22",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417455",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-14T22:08:06Z"
+  "further_info": "Recommended Reading Wird im Rahmen der Veranstaltung bekannt gegeben. 1 LP bei Übernahme einer Präsentation (nur möglich bei Kolloquien ab 7,5 Stunden Unterrichtszeit bzw. 5 Sitzungsterminen à 90 min) Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
+  "last_updated": "2026-04-23T13:01:40Z"
 }

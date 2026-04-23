@@ -23,10 +23,22 @@
       "room": "Unterrichtsraum (4310.02.025)",
       "building": "Bergheimer Straße 58, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-07-23",
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
+      "room": "Übungsraum (4310.02.005)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413058",
   "exceptions": [],
   "further_info": "Creditable for: - BA-M 6 (seminar): 6 ETCS (graded) - BA-M 9.1 or 9.3: 2 ETCS (ungraded), 6 ETCS (graded) - BA-B 6: 2 ETCS (ungraded) It is not possible to award ECTS credits that deviate from this.",
-  "last_updated": "2026-04-21T10:04:47Z"
+  "last_updated": "2026-04-23T12:31:10Z"
 }

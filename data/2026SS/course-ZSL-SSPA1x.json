@@ -47,9 +47,9 @@
       "end_date": "2026-05-18",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Übungsraum (3120.03.301)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
-      "room": "Übungsraum (3120.03.301)",
+      "location": "Übungsraum (3120.03.318)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10966",
+      "room": "Übungsraum (3120.03.318)",
       "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
@@ -59,9 +59,9 @@
       "end_date": "2026-07-20",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Übungsraum (3120.03.301)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
-      "room": "Übungsraum (3120.03.301)",
+      "location": "Übungsraum (3120.03.318)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10966",
+      "room": "Übungsraum (3120.03.318)",
       "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
@@ -71,9 +71,9 @@
       "end_date": "2026-07-22",
       "start_time": "16:15",
       "end_time": "17:45",
-      "location": "Übungsraum (3120.03.301)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
-      "room": "Übungsraum (3120.03.301)",
+      "location": "Übungsraum (3120.03.318)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10966",
+      "room": "Übungsraum (3120.03.318)",
       "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
@@ -273,5 +273,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413943",
   "exceptions": [],
   "further_info": "Recommended Reading Universo.ele intensivo A1/A2. Spanisch für Studierende. Kurs- und Arbeitsbuch plus interaktive Version. ISBN: 978-3-19-154333-4",
-  "last_updated": "2026-04-21T11:48:34Z"
+  "last_updated": "2026-04-23T13:03:26Z"
 }

@@ -7,6 +7,7 @@
   "lecturers": [
     "Kloth, Johannes"
   ],
+  "organisation": "Faculty of Law",
   "start_date": "2026-04-20",
   "end_date": "2026-07-20",
   "weeks": [
@@ -25,6 +26,6 @@
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409297",
   "exceptions": [],
-  "notes": "",
-  "last_updated": "2026-04-20T08:52:37Z"
+  "further_info": "-",
+  "last_updated": "2026-04-23T12:58:43Z"
 }

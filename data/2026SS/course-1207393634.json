@@ -14,7 +14,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-04-22",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Unterrichtsraum (7050.01.104)",
@@ -22,10 +22,34 @@
       "room": "Unterrichtsraum (7050.01.104)",
       "building": "Berliner Straße 48, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Unterrichtsraum (7050.01.104)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15743",
+      "room": "Unterrichtsraum (7050.01.104)",
+      "building": "Berliner Straße 48, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-07-22",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Hörsaal (7051.EG.012)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
+      "room": "Hörsaal (7051.EG.012)",
+      "building": "Hörsaal, Berliner Straße 48, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413535",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:53:30Z"
+  "last_updated": "2026-04-23T12:20:07Z"
 }

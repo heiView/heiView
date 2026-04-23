@@ -27,12 +27,24 @@
       "day_of_week": 4,
       "start_date": "2026-07-16",
       "end_date": "2026-07-16",
-      "start_time": "11:15",
-      "end_time": "16:30",
-      "location": "Seminarraum (3020.EG.038)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
-      "room": "Seminarraum (3020.EG.038)",
-      "building": "Hauptstraße 47/51, Ground floor",
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "GFS - Übungsraum (3020.02.204)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23543",
+      "room": "GFS - Übungsraum (3020.02.204)",
+      "building": "Hauptstraße 47/51, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "11:00",
+      "end_time": "18:00",
+      "location": "ÜR D (3010.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23101",
+      "room": "ÜR D (3010.EG.021)",
+      "building": "Hauptstraße 47-51, Ground floor",
       "note": null
     },
     {
@@ -51,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408137",
   "exceptions": [],
   "further_info": "Recommended Reading Es werden alle wichtigen Informationen am 1. Termin 21.04.26, 9:15-10:45 Uhr im Raum GFS, 2. OG Hauptgebäude besprochen. Der Termin für die Trainingsdurchführung findet am 23. Juli 2026 von 9:00 bis 16:00 Uhr im Seminarzentrum Raum NN statt.",
-  "last_updated": "2026-04-21T10:38:40Z"
+  "last_updated": "2026-04-23T13:12:16Z"
 }
