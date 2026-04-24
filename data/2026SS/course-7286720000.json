@@ -8,24 +8,72 @@
     "Porten-Cheé, Pablo Jorge"
   ],
   "organisation": "Heidelberg Center for Ibero-American Studies (HCIAS)",
-  "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
+  "start_date": "2026-04-27",
+  "end_date": "2026-07-20",
   "weeks": [
     {
-      "day_of_week": 4,
-      "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
       "start_time": "11:15",
       "end_time": "12:45",
-      "location": "ehem. Senatssaal (2170.02.038)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
-      "room": "ehem. Senatssaal (2170.02.038)",
-      "building": "Grabengasse 3-5, 2nd floor",
-      "note": null
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "11:15",
+      "end_time": "14:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "start_time": "10:00",
+      "end_time": "14:45",
+      "location": "Übungsraum (3030.01.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28142",
+      "room": "Übungsraum (3030.01.004)",
+      "building": "Hauptstraße 52, 1st floor",
+      "note": "Location of the room: Hauptstraße 52 (access via patio of the Institute of Translation and Interpreting), room number 104"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "11:15",
+      "end_time": "13:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-20",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408581",
   "exceptions": [],
   "further_info": "Recommended Reading Required reading will be provided at the beginning of the practice.",
-  "last_updated": "2026-04-21T11:43:28Z"
+  "last_updated": "2026-04-24T19:46:41Z"
 }

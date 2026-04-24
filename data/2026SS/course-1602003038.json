@@ -5,10 +5,11 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "Caudron-Herger, Maiwen",
     "Herrmann, Carl Michael",
     "Hübschmann, Daniel",
-    "Rohr, Karl"
+    "Rohr, Karl",
+    "Sasse, Alexander",
+    "Scherer, Michael"
   ],
   "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-15",
@@ -30,5 +31,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409415",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:53:56Z"
+  "last_updated": "2026-04-24T14:52:22Z"
 }

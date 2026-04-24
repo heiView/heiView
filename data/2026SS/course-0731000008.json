@@ -29,15 +29,15 @@
       "end_date": "2026-06-05",
       "start_time": "14:00",
       "end_time": "16:00",
-      "location": "Übungsraum 120.01.10 (4120.01.010)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11087",
-      "room": "Übungsraum 120.01.10 (4120.01.010)",
-      "building": "Voßstraße 2, 1st floor",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407486",
   "exceptions": [],
   "further_info": "- Unterrichtsbeginn: Freitag, der 17. April 2026 - Eine vorherige Anmeldung ist nicht notwendig.",
-  "last_updated": "2026-04-21T10:31:15Z"
+  "last_updated": "2026-04-24T18:56:10Z"
 }

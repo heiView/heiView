@@ -22,10 +22,22 @@
       "room": "Übungsraum (1010.EG.038)",
       "building": "Hauptstraße 207-209, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-07-24",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum (1010.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22576",
+      "room": "Übungsraum (1010.EG.038)",
+      "building": "Hauptstraße 207-209, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415231",
   "exceptions": [],
   "further_info": "Recommended Reading wird noch bekanntgegeben",
-  "last_updated": "2026-04-21T10:10:29Z"
+  "last_updated": "2026-04-24T15:07:52Z"
 }

@@ -132,9 +132,9 @@
       "note": "obligat"
     },
     {
-      "day_of_week": 2,
-      "start_date": "2026-04-28",
-      "end_date": "2026-04-28",
+      "day_of_week": 3,
+      "start_date": "2026-04-29",
+      "end_date": "2026-04-29",
       "start_time": "17:00",
       "end_time": "18:30",
       "location": "Online",
@@ -147,5 +147,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402320",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:57:48Z"
+  "last_updated": "2026-04-24T14:55:59Z"
 }

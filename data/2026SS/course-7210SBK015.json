@@ -23,10 +23,34 @@
       "room": "Großer Hörsaal (gHS) (6231.EG.006)",
       "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 231, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-08-24",
+      "end_date": "2026-09-05",
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "Übungsraum (6231.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11220",
+      "room": "Übungsraum (6231.EG.007)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-09-04",
+      "end_date": "2026-09-05",
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "Übungsraum (6231.U1.027)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22916",
+      "room": "Übungsraum (6231.U1.027)",
+      "building": "Im Neuenheimer Feld 231, Lower level 1",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415318",
   "exceptions": [],
   "further_info": "Recommended Reading Schäfer, M. (ab 2000) Brohmer – Fauna von Deutschland. Ab 20. Auflage. Quelle & Meyer, Wiebelsheim. Weitere Literatur wird in der Demonstration bzw. im Praktikum vorgestellt.",
-  "last_updated": "2026-04-21T10:16:38Z"
+  "last_updated": "2026-04-24T18:42:14Z"
 }

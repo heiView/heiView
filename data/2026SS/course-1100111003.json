@@ -49,6 +49,30 @@
     },
     {
       "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-27",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 1 (6205.02.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12922",
+      "room": "SR 1 (6205.02.101)",
+      "building": "Im Neuenheimer Feld 205, 2nd floor",
+      "note": "Achtung: SR 3 belegt. Bitte einmalig in SR 1 ausweichen!"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-07-20",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 3 (6205.03.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13368",
+      "room": "SR 3 (6205.03.101)",
+      "building": "Im Neuenheimer Feld 205, 3rd floor",
+      "note": "Die Tutorien werden in Müsli verwaltet."
+    },
+    {
+      "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-07-20",
       "start_time": "18:00",
@@ -159,5 +183,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414049",
   "exceptions": [],
   "further_info": "Für die Tutorien in MÜSLI registrieren.",
-  "last_updated": "2026-04-23T12:57:26Z"
+  "last_updated": "2026-04-24T19:49:48Z"
 }

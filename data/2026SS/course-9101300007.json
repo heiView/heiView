@@ -1,79 +1,17 @@
 {
   "id": "9101300007",
-  "title": "BI - EKG Hausarbeitsbefundbesprechung Kardiologie",
+  "title": "Die Seite ist nicht für diesen Browser optimiert. This site is not optimised for your browser.",
   "type": "SE",
   "ects_credits": null,
-  "course_languages": "German",
+  "course_languages": null,
   "lecturers": [
     "Schultz, Jobst-Hendrik"
   ],
-  "organisation": "Klinik für Kardio-, Angio-, Pneumologie",
-  "start_date": "2026-05-08",
-  "end_date": "2026-07-17",
-  "weeks": [
-    {
-      "day_of_week": 5,
-      "start_date": "2026-05-08",
-      "end_date": "2026-05-08",
-      "start_time": "15:30",
-      "end_time": "17:00",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
-      "note": "Nicht anwesenheitspflichtig Einmalig über Heiconf, Link in Moodle im Reiter \"Unterricht in 5 Fachbereichen\""
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-05-22",
-      "end_date": "2026-05-22",
-      "start_time": "15:30",
-      "end_time": "17:00",
-      "location": "MED SR 729 (6410.EG.729)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28769",
-      "room": "MED SR 729 (6410.EG.729)",
-      "building": "Im Neuenheimer Feld 410, Ground floor",
-      "note": "Nicht anwesenheitspflichtig"
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-06-19",
-      "end_date": "2026-06-19",
-      "start_time": "15:30",
-      "end_time": "17:00",
-      "location": "MED SR 729 (6410.EG.729)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28769",
-      "room": "MED SR 729 (6410.EG.729)",
-      "building": "Im Neuenheimer Feld 410, Ground floor",
-      "note": "Nicht anwesenheitspflichtig"
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-07-03",
-      "end_date": "2026-07-03",
-      "start_time": "15:30",
-      "end_time": "17:00",
-      "location": "MED SR 729 (6410.EG.729)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28769",
-      "room": "MED SR 729 (6410.EG.729)",
-      "building": "Im Neuenheimer Feld 410, Ground floor",
-      "note": "Nicht anwesenheitspflichtig"
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-07-17",
-      "end_date": "2026-07-17",
-      "start_time": "15:30",
-      "end_time": "17:00",
-      "location": "MED SR 729 (6410.EG.729)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28769",
-      "room": "MED SR 729 (6410.EG.729)",
-      "building": "Im Neuenheimer Feld 410, Ground floor",
-      "note": "Nicht anwesenheitspflichtig"
-    }
-  ],
+  "organisation": null,
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397341",
   "exceptions": [],
-  "further_info": "-",
-  "last_updated": "2026-04-21T09:56:50Z"
+  "last_updated": "2026-04-24T20:50:05Z"
 }

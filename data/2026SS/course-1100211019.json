@@ -34,10 +34,22 @@
       "room": "SR B (6205.EG.203)",
       "building": "Im Neuenheimer Feld 205, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-07-24",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 5 (6231.EG.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18343",
+      "room": "SR 5 (6231.EG.005)",
+      "building": "Im Neuenheimer Feld 231, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414001",
   "exceptions": [],
   "further_info": "Die Einteilung der Gruppen erfolgt in Müsli.",
-  "last_updated": "2026-04-21T11:43:06Z"
+  "last_updated": "2026-04-24T19:49:49Z"
 }

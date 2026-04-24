@@ -17,15 +17,15 @@
       "end_date": "2026-07-24",
       "start_time": "12:15",
       "end_time": "13:45",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
+      "location": "Übungsraum (3120.02.217)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7120",
+      "room": "Übungsraum (3120.02.217)",
+      "building": "Plöck 79-81, 2nd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414093",
   "exceptions": [],
   "further_info": "Recommended Reading Español C2. Curso superior. Hueber Verlag. ISBN: 978-3-19-554507-5 - material didáctico que se pondrá a disposición en el curso Plataforma: Moodle",
-  "last_updated": "2026-04-21T11:48:38Z"
+  "last_updated": "2026-04-24T19:41:53Z"
 }

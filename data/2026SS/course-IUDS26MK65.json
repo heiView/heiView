@@ -29,10 +29,10 @@
       "end_date": "2026-05-12",
       "start_time": "12:15",
       "end_time": "13:45",
-      "location": "Unterrichtsraum (3051.U1.109)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21698",
-      "room": "Unterrichtsraum (3051.U1.109)",
-      "building": "Plöck 57a, Lower level 1",
+      "location": "Übungsraum (3051.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19865",
+      "room": "Übungsraum (3051.01.109)",
+      "building": "Plöck 57a, 1st floor",
       "note": "Nachholstunde"
     },
     {
@@ -41,15 +41,15 @@
       "end_date": "2026-05-26",
       "start_time": "12:15",
       "end_time": "13:45",
-      "location": "Unterrichtsraum (3051.U1.109)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21698",
-      "room": "Unterrichtsraum (3051.U1.109)",
-      "building": "Plöck 57a, Lower level 1",
+      "location": "Übungsraum (3051.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19865",
+      "room": "Übungsraum (3051.01.109)",
+      "building": "Plöck 57a, 1st floor",
       "note": "Nachholstunde"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417600",
   "exceptions": [],
   "further_info": "Recommended Reading Arntz, Reiner et al. 2014. *Einführung in die Terminologiearbeit*. 7. Aufl. Hildesheim: Olms. Falbo, Caterina et al. 2012. *Interpretazione simultanea e consecutiva: problemi teorici e metodologie didattiche*. Milano: Hoepli. Gile, Daniel. 1995/2009. *Basic concepts and models for interpreter and translator training*. 2nd ed. Amsterdam: John Benjamins. Linklater, Kristin. 1976/2012. *Die persönliche Stimme entwickeln: ein ganzheitliches Übungsprogramm zur Befreiung der Stimme*. 4. Aufl. München: Reinhardt. Seleskovitch, Danica; Lederer, Marianne. 1995. *A systematic approach to teaching interpretation*. Silver Spring: Registry of Interpreters for the Deaf. Viaggio, Sergio. 1997. Kinesics and the simultaneous interpreter: The advantages of listening with one’s eyes and speaking with one’s body. In Fernando Poyatos (ed.), *Nonverbal communication and translation: New perspectives and challenges in literature, interpretation and the media*. Amsterdam: John Benjamins. 283–294. Żmudzki, Jerzy. 1998. *Konsekutivdolmetschen: Handlungen, Operationen, Strategien*. Frankfurt am Main: Peter Lang.",
-  "last_updated": "2026-04-21T10:25:21Z"
+  "last_updated": "2026-04-24T18:50:12Z"
 }

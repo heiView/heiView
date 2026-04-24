@@ -14,7 +14,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-04-16",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "Übungsraum (1010.01.133)",
@@ -25,13 +25,13 @@
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-04-16",
-      "end_date": "2026-07-16",
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
       "start_time": "11:15",
       "end_time": "12:45",
-      "location": "Übungsraum (1010.01.133)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22579",
-      "room": "Übungsraum (1010.01.133)",
+      "location": "Übungsraum (1010.01.123)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17442",
+      "room": "Übungsraum (1010.01.123)",
       "building": "Hauptstraße 207-209, 1st floor",
       "note": null
     }
@@ -39,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408459",
   "exceptions": [],
   "further_info": "Recommended Reading Das Nibelungenlied (Reclam) Stuttgart 2011, nach der Handschrift B, hg. v. Ursula Schulze. Ins Neuhochdeutsche übersetzt und kommentiert von Siegfried Grosse. (verpflichtend) Empfehlung zur vorbereitenden Lektüre: Otfrid Ehrismann, Nibelungenlied. Epoche- Werk-Wirkung. 2. neubearb. Aufl., München 2005.",
-  "last_updated": "2026-04-21T10:33:42Z"
+  "last_updated": "2026-04-24T18:58:30Z"
 }

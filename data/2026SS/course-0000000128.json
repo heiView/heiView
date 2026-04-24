@@ -58,10 +58,22 @@
       "room": "ÜR K 3 (1040.04.403)",
       "building": "Karlstraße 16, 4th floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "KiGa I (1200.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
+      "room": "KiGa I (1200.EG.024)",
+      "building": "Kisselgasse 1, Ground floor",
+      "note": "Tutorium bei Lavinia Jockers"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410541",
   "exceptions": [],
   "further_info": "Recommended Reading Grundlage sind die Skripte aus Latein I sowie ein Skript mit Cicero-Texten, Cicero-Spezialwortschatz, Hintergrundwissen zu den prüfungsrelevanten Cicero-Reden sowie Leben und Werk Ciceros sowie Rhetorik und Stilistik; weitere Hilfen (auch online), Grammatiken, Textausgaben, Wörterbücher, Vokabeltrainer, Wortschätze etc. werden Ihnen vorgestellt und ggf. zur Anschaffung / Leihe empfohlen.",
-  "last_updated": "2026-04-21T10:26:39Z"
+  "last_updated": "2026-04-24T18:51:32Z"
 }
