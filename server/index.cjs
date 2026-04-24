@@ -19,6 +19,7 @@ const express = require('express');
     }
   } catch (_) { /* .env not found — rely on actual environment variables */ }
 })();
+const compression = require('compression');
 const Database = require('better-sqlite3');
 const { importBuildingCatalog } = require('./scripts/import-building-catalog.cjs');
 const { syncSingleCourse } = require('./scripts/build-sqlite-db.cjs');
@@ -279,8 +280,32 @@ function campusLabelFromId(value) {
   return null;
 }
 
+// Formats a single lecturer entry from stored "Last, First" DB format to "First Last".
+// Handles the <N.N.>(FieldValue) pattern used for placeholder names.
+function formatLecturerName(l) {
+  if (typeof l !== 'string') return String(l ?? '');
+  let name = l.trim();
+  const nnMatch = name.match(/<N\.N\.>\(([^)]+)\)/);
+  if (nnMatch) {
+    name = nnMatch[1].trim();
+  } else {
+    name = name.replace(/,\s*\d+\.\d+$/, '').trim();
+  }
+  const parts = name.split(',');
+  if (parts.length === 2) return `${parts[1].trim()} ${parts[0].trim()}`;
+  return name;
+}
+
+// Parses lecturers_json and returns a formatted display string.
+function formatLecturersJson(lecturersJson) {
+  let lecturers = [];
+  try { lecturers = JSON.parse(lecturersJson || '[]'); } catch (_) {}
+  return Array.isArray(lecturers) ? lecturers.map(formatLecturerName).join(', ') : '';
+}
+
 function createApp() {
   const app = express();
+  app.use(compression());
   app.use(express.json());
 
   app.get('/api/health', (_req, res) => {
@@ -409,20 +434,7 @@ function createApp() {
       for (const row of merged) {
         if (skipSet.has(String(row.course_id))) continue;
 
-        let lecturers = [];
-        try { lecturers = JSON.parse(row.lecturers_json || '[]'); } catch (_) {}
-        const profStr = Array.isArray(lecturers)
-          ? lecturers.map(l => {
-              if (typeof l !== 'string') return l;
-              let name = l.trim();
-              const nnMatch = name.match(/<N\.N\.>\(([^)]+)\)/);
-              if (nnMatch) name = nnMatch[1].trim();
-              else name = name.replace(/,\s*\d+\.\d+$/, '').trim();
-              const parts = name.split(',');
-              if (parts.length === 2) return `${parts[1].trim()} ${parts[0].trim()}`;
-              return name;
-            }).join(', ')
-          : '';
+        const profStr = formatLecturersJson(row.lecturers_json);
 
         const buildingId = (row.building_name || 'Unknown').trim();
 
@@ -1535,7 +1547,9 @@ function createApp() {
         ? req.query.building.trim()
         : null;
 
-    res.setHeader('Cache-Control', 'no-store');
+    // Allow short-term browser caching for non-admin requests (server cache is 60s).
+    // Admin requests always get fresh data.
+    res.setHeader('Cache-Control', isAdmin ? 'no-store' : 'public, max-age=30');
 
     // Admin requests bypass cache (skip list excluded, may see hidden courses)
     const cacheKey = isAdmin ? null : `${date}|${buildingFilter || ''}`;
@@ -1815,24 +1829,7 @@ function createApp() {
           name: makeCourseLabel(row.title, row.course_id),
           note: row.note || null,
           further_info: row.further_info || null,
-          prof: Array.isArray(lecturers)
-            ? lecturers.map(l => {
-                if (typeof l === 'string') {
-                  let name = l.trim();
-                  
-                  const nnMatch = name.match(/<N\.N\.>\(([^)]+)\)/);
-                  if (nnMatch) {
-                    name = nnMatch[1].trim();
-                  } else {
-                    name = name.replace(/,\s*\d+\.\d+$/, '').trim();
-                  }
-                  const parts = name.split(',');
-                  if (parts.length === 2) return `${parts[1].trim()} ${parts[0].trim()}`;
-                  return name;
-                }
-                return l;
-              }).join(', ')
-            : '',
+          prof: Array.isArray(lecturers) ? lecturers.map(formatLecturerName).join(', ') : '',
           link: row.detail_link || undefined,
           start_date: row.slot_start_date || row.start_date || null,
           end_date: row.slot_end_date || row.end_date || null,
@@ -1872,26 +1869,9 @@ function createApp() {
               try { lecturers = JSON.parse(c.lecturers_json); } catch(err) {}
             }
             
-            let profStr = '—';
-            if (Array.isArray(lecturers) && lecturers.length > 0) {
-              profStr = lecturers.map(l => {
-                if (typeof l === 'string') {
-                  let name = l.trim();
-                  const nnMatch = name.match(/<N\.N\.>\(([^)]+)\)/);
-                  if (nnMatch) {
-                    name = nnMatch[1].trim();
-                  } else {
-                    name = name.replace(/,\s*\d+\.\d+$/, '').trim();
-                  }
-                  const parts = name.split(',').map(s => s.trim());
-                  if (parts.length === 2) {
-                    return `${parts[1]} ${parts[0]}`;
-                  }
-                  return name;
-                }
-                return l;
-              }).join(', ');
-            }
+            const profStr = (Array.isArray(lecturers) && lecturers.length > 0)
+              ? lecturers.map(formatLecturerName).join(', ')
+              : '—';
             
             return {
               time: '',

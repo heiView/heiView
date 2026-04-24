@@ -98,6 +98,7 @@ def build_page_url(skip: int) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='Crawl heiCO courses for 2026SS.')
     parser.add_argument('--number', '-n', type=int, default=None, help='Stop after crawling this many courses.')
+    parser.add_argument('--skip', type=int, default=0, help='Start from this offset in the course list (e.g. --skip 2000 to resume after an interruption).')
     parser.add_argument('--concurrency', type=int, default=5, help='Max number of course/room pages to crawl in parallel.')
     parser.add_argument('--show-browser', action='store_true', help='Launch Chromium in headed mode.')
     parser.add_argument(
@@ -1064,7 +1065,7 @@ async def main() -> None:
                         skip -= PAGE_SIZE
 
             else:
-                skip = 0
+                skip = args.skip
 
                 while True:
                     page = await browser.new_page()
@@ -1125,8 +1126,9 @@ async def main() -> None:
                 sync_meta_path.write_text(json.dumps(sync_meta, indent=2), encoding='utf-8')
                 print(f'Wrote sync metadata to {sync_meta_path}')
 
-            # Detect courses removed from the website (full crawl only)
-            if not args.url and args.number is None and not args.reverse:
+            # Detect courses removed from the website (full crawl only).
+            # Requires a complete run: no URL override, no count limit, no offset skip, not reverse mode.
+            if not args.url and args.number is None and args.skip == 0 and not args.reverse:
                 expected_filenames = {build_course_filename(cid) for cid in seen_course_ids}
                 deleted_dir = OUTPUT_DIR / 'deleted'
                 moved_count = 0
