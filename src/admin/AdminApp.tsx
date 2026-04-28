@@ -4,6 +4,7 @@ import dayjs, { Dayjs } from 'dayjs'
 import {
   Alert,
   AutoComplete,
+  Badge,
   Button,
   Checkbox,
   ConfigProvider,
@@ -20,13 +21,17 @@ import {
   Space,
   Spin,
   Tag,
+  Tooltip,
   Typography,
   theme as antdTheme,
 } from 'antd'
 import {
   LogoutOutlined,
+  MessageOutlined,
   PushpinOutlined,
   SearchOutlined,
+  UnorderedListOutlined,
+  WarningOutlined,
 } from '@ant-design/icons'
 import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
 import { CAMPUS_OPTIONS, type Campus } from '../campusConfig'
@@ -334,6 +339,24 @@ function AdminApp() {
   const [fiOverrideWeeks, setFiOverrideWeeks] = React.useState<FiWeekEntry[]>([])
   const [fiOverrideRoomOptions, setFiOverrideRoomOptions] = React.useState<{ value: string }[][]>([])
   const emptyFiWeek = (): FiWeekEntry => ({ day_of_week: null, start_time: '', end_time: '', room: '', building: '', campus: '', floor: '', note: '' })
+  // ─────────────────────────────────────────────────────────────────────────
+
+  // User Feedback queue
+  type FeedbackItem = {
+    id: string; courseId: string; courseTitle: string; email: string | null
+    message: string; files: string[]; proposedWeeks: unknown[]; submittedAt: string; status: string
+  }
+  const [feedbackOpen, setFeedbackOpen] = React.useState(false)
+  const [feedbackList, setFeedbackList] = React.useState<FeedbackItem[]>([])
+  const [feedbackLoading, setFeedbackLoading] = React.useState(false)
+  const [feedbackDetailId, setFeedbackDetailId] = React.useState<string | null>(null)
+  const [feedbackDetailData, setFeedbackDetailData] = React.useState<{ feedback: FeedbackItem; currentCourse: Record<string, unknown> | null } | null>(null)
+  const [feedbackDetailLoading, setFeedbackDetailLoading] = React.useState(false)
+  const [feedbackDismissLoading, setFeedbackDismissLoading] = React.useState<string | null>(null)
+  const [feedbackEmailOpen, setFeedbackEmailOpen] = React.useState(false)
+  const [feedbackEmailSubject, setFeedbackEmailSubject] = React.useState('')
+  const [feedbackEmailBody, setFeedbackEmailBody] = React.useState('')
+  const [feedbackEmailSending, setFeedbackEmailSending] = React.useState(false)
   // ─────────────────────────────────────────────────────────────────────────
 
   const headerScrollRef = React.useRef<HTMLDivElement>(null)
@@ -1231,6 +1254,74 @@ function AdminApp() {
                     suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
                     className="hei-toolbar-search"
                   />
+                  {superAdmin && (
+                    <div style={{ display: 'flex', gap: 4, alignItems: 'center', flexShrink: 0 }}>
+                      <Tooltip title="Further Info Queue">
+                        <Badge count={fiQueueList.length} size="small" overflowCount={99}>
+                          <Button
+                            size="large"
+                            icon={<UnorderedListOutlined />}
+                            className="hei-toolbar-icon-button"
+                            onClick={async () => {
+                              setFiQueueOpen(true)
+                              setFiShowSkipped(false)
+                              setFiQueueLoading(true)
+                              try {
+                                const [rq, rs] = await Promise.all([
+                                  adminFetch('/api/admin/further-info-queue'),
+                                  adminFetch('/api/admin/further-info-skip'),
+                                ])
+                                if (rq.ok) setFiQueueList(await rq.json())
+                                if (rs.ok) setFiSkipSet(new Set(await rs.json()))
+                              } finally { setFiQueueLoading(false) }
+                            }}
+                          />
+                        </Badge>
+                      </Tooltip>
+                      <Tooltip title={staleList.length > 0 ? `Stale Overrides (${staleList.length})` : 'Stale Overrides'}>
+                        <Badge
+                          count={staleList.length}
+                          size="small"
+                          color={staleList.some(e => e.sourceDeleted) ? '#ff4d4f' : staleList.length > 0 ? '#faad14' : undefined}
+                          overflowCount={99}
+                        >
+                          <Button
+                            size="large"
+                            icon={<WarningOutlined />}
+                            className="hei-toolbar-icon-button"
+                            style={staleList.length > 0 ? (staleList.some(e => e.sourceDeleted) ? { color: '#ff4d4f' } : { color: '#faad14' }) : undefined}
+                            onClick={async () => {
+                              setStaleOpen(true)
+                              setStaleLoading(true)
+                              setStaleDiffCourseId(null)
+                              setStaleDiffData(null)
+                              try {
+                                const r = await adminFetch('/api/admin/stale-overrides')
+                                if (r.ok) setStaleList(await r.json())
+                              } finally { setStaleLoading(false) }
+                            }}
+                          />
+                        </Badge>
+                      </Tooltip>
+                      <Tooltip title={feedbackList.filter(f => f.status === 'pending').length > 0 ? `User Feedback (${feedbackList.filter(f => f.status === 'pending').length} pending)` : 'User Feedback'}>
+                        <Badge count={feedbackList.filter(f => f.status === 'pending').length} size="small" overflowCount={99}>
+                          <Button
+                            size="large"
+                            icon={<MessageOutlined />}
+                            className="hei-toolbar-icon-button"
+                            onClick={async () => {
+                              setFeedbackOpen(true)
+                              setFeedbackLoading(true)
+                              try {
+                                const r = await adminFetch('/api/admin/feedback')
+                                if (r.ok) setFeedbackList(await r.json())
+                              } finally { setFeedbackLoading(false) }
+                            }}
+                          />
+                        </Badge>
+                      </Tooltip>
+                    </div>
+                  )}
                 </div>
                 <div className="hei-toolbar-admin">
                   {superAdmin && (
@@ -1247,42 +1338,6 @@ function AdminApp() {
                         }}
                       >
                         Accounts
-                      </Button>
-                      <Button
-                        size="large"
-                        onClick={async () => {
-                          setFiQueueOpen(true)
-                          setFiShowSkipped(false)
-                          setFiQueueLoading(true)
-                          try {
-                            const [rq, rs] = await Promise.all([
-                              adminFetch('/api/admin/further-info-queue'),
-                              adminFetch('/api/admin/further-info-skip'),
-                            ])
-                            if (rq.ok) setFiQueueList(await rq.json())
-                            if (rs.ok) setFiSkipSet(new Set(await rs.json()))
-                          } finally { setFiQueueLoading(false) }
-                        }}
-                      >
-                        Further Info Queue
-                      </Button>
-                      <Button
-                        size="large"
-                        onClick={async () => {
-                          setStaleOpen(true)
-                          setStaleLoading(true)
-                          setStaleDiffCourseId(null)
-                          setStaleDiffData(null)
-                          try {
-                            const r = await adminFetch('/api/admin/stale-overrides')
-                            if (r.ok) setStaleList(await r.json())
-                          } finally { setStaleLoading(false) }
-                        }}
-                        style={staleList.length > 0 ? (staleList.some(e => e.sourceDeleted) ? { borderColor: '#ff4d4f', color: '#ff4d4f' } : { borderColor: '#faad14', color: '#faad14' }) : undefined}
-                      >
-                        {staleList.length > 0
-                          ? `⚠ Stale Overrides (${staleList.length})`
-                          : 'Stale Overrides'}
                       </Button>
                     </>
                   )}
@@ -3115,6 +3170,276 @@ function AdminApp() {
             </Form>
           </div>
         </Modal>
+
+        {/* ── User Feedback Queue modal ── */}
+        <Modal
+          open={feedbackOpen}
+          onCancel={() => { setFeedbackOpen(false); setFeedbackDetailId(null); setFeedbackDetailData(null) }}
+          title={`User Feedback${feedbackList.filter(f => f.status === 'pending').length > 0 ? ` (${feedbackList.filter(f => f.status === 'pending').length} pending)` : ''}`}
+          width={700}
+          footer={null}
+        >
+          <Spin spinning={feedbackLoading}>
+            {feedbackDetailId && feedbackDetailData ? (
+              /* Detail / compare view */
+              <div>
+                <Button size="small" onClick={() => { setFeedbackDetailId(null); setFeedbackDetailData(null) }} style={{ marginBottom: 12 }}>
+                  ← Back to list
+                </Button>
+                <Spin spinning={feedbackDetailLoading}>
+                  <Space direction="vertical" size="middle" style={{ width: '100%' }}>
+                    <div>
+                      <Typography.Text strong>Course: </Typography.Text>
+                      <Typography.Text>{feedbackDetailData.feedback.courseTitle}</Typography.Text>
+                      <Typography.Text type="secondary" style={{ marginLeft: 8, fontSize: 12 }}>
+                        (ID: {feedbackDetailData.feedback.courseId})
+                      </Typography.Text>
+                    </div>
+                    <div>
+                      <Typography.Text strong>Submitted: </Typography.Text>
+                      <Typography.Text type="secondary">{new Date(feedbackDetailData.feedback.submittedAt).toLocaleString()}</Typography.Text>
+                      {feedbackDetailData.feedback.email && (
+                        <> · <Typography.Text type="secondary">{feedbackDetailData.feedback.email}</Typography.Text></>
+                      )}
+                      · <Tag color={feedbackDetailData.feedback.status === 'pending' ? 'blue' : feedbackDetailData.feedback.status === 'replied' ? 'green' : 'default'}>
+                        {feedbackDetailData.feedback.status}
+                      </Tag>
+                    </div>
+
+                    {feedbackDetailData.feedback.message && (
+                      <div>
+                        <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>Message:</Typography.Text>
+                        <div style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: '8px 12px', whiteSpace: 'pre-wrap', fontSize: 13 }}>
+                          {feedbackDetailData.feedback.message}
+                        </div>
+                      </div>
+                    )}
+
+                    {feedbackDetailData.feedback.files.length > 0 && (
+                      <div>
+                        <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>Uploaded files:</Typography.Text>
+                        <Space wrap>
+                          {feedbackDetailData.feedback.files.map(fname => (
+                            <a
+                              key={fname}
+                              href={`/api/admin/feedback/${feedbackDetailId}/file/${encodeURIComponent(fname)}`}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {fname}
+                            </a>
+                          ))}
+                        </Space>
+                      </div>
+                    )}
+
+                    {feedbackDetailData.feedback.proposedWeeks.length > 0 && (
+                      <div>
+                        <Typography.Text strong style={{ display: 'block', marginBottom: 8 }}>
+                          Proposed schedule corrections vs. current data:
+                        </Typography.Text>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                          <div>
+                            <Typography.Text type="secondary" style={{ fontSize: 11, display: 'block', marginBottom: 4 }}>
+                              USER PROPOSED
+                            </Typography.Text>
+                            <pre style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: 10, fontSize: 11, overflowY: 'auto', maxHeight: 300, margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
+                              {JSON.stringify(feedbackDetailData.feedback.proposedWeeks, null, 2)}
+                            </pre>
+                          </div>
+                          <div>
+                            <Typography.Text type="secondary" style={{ fontSize: 11, display: 'block', marginBottom: 4 }}>
+                              CURRENT DATA
+                            </Typography.Text>
+                            <pre style={{ background: 'var(--hei-surface)', border: '1px solid var(--hei-border)', borderRadius: 6, padding: 10, fontSize: 11, overflowY: 'auto', maxHeight: 300, margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
+                              {feedbackDetailData.currentCourse
+                                ? JSON.stringify((feedbackDetailData.currentCourse as Record<string, unknown>).weeks ?? [], null, 2)
+                                : '(course not found)'}
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                      {feedbackDetailData.feedback.status === 'pending' && (
+                        <Button
+                          size="small"
+                          loading={feedbackDismissLoading === feedbackDetailId}
+                          onClick={async () => {
+                            if (!feedbackDetailId) return
+                            setFeedbackDismissLoading(feedbackDetailId)
+                            try {
+                              const r = await adminFetch(`/api/admin/feedback/${feedbackDetailId}/dismiss`, { method: 'POST' })
+                              if (r.ok) {
+                                setFeedbackList(prev => prev.map(f => f.id === feedbackDetailId ? { ...f, status: 'dismissed' } : f))
+                                setFeedbackDetailData(prev => prev ? { ...prev, feedback: { ...prev.feedback, status: 'dismissed' } } : null)
+                              }
+                            } finally { setFeedbackDismissLoading(null) }
+                          }}
+                        >
+                          Dismiss
+                        </Button>
+                      )}
+                      {feedbackDetailData.feedback.email && (
+                        <Button
+                          size="small"
+                          type="primary"
+                          onClick={() => {
+                            const fb = feedbackDetailData.feedback
+                            setFeedbackEmailSubject('Re: Your heiView feedback')
+                            setFeedbackEmailBody(
+                              `Dear user,\n\nThank you for your feedback regarding the course "${fb.courseTitle}".\n\nYour information has been reviewed and added to our database.\n\nBest regards,\nThe heiView Team`
+                            )
+                            setFeedbackEmailOpen(true)
+                          }}
+                        >
+                          Reply by Email
+                        </Button>
+                      )}
+                      {feedbackDetailData.currentCourse && (
+                        <Button
+                          size="small"
+                          onClick={() => {
+                            // Open the course edit modal for this course
+                            const courseId = feedbackDetailData.feedback.courseId
+                            adminFetch(`/api/admin/course-file/${encodeURIComponent(courseId)}`)
+                              .then(r => r.ok ? r.json() : null)
+                              .then(data => {
+                                if (!data) return
+                                setEditFileState({ courseId, weekIndex: -1, data })
+                              })
+                              .catch(() => {})
+                            setFeedbackOpen(false)
+                          }}
+                        >
+                          Open in Edit
+                        </Button>
+                      )}
+                    </div>
+                  </Space>
+                </Spin>
+              </div>
+            ) : (
+              /* List view */
+              <div style={{ maxHeight: '60vh', overflowY: 'auto' }}>
+                {feedbackList.length === 0 ? (
+                  <div style={{ textAlign: 'center', color: '#999', padding: 24 }}>No feedback submissions yet.</div>
+                ) : (
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+                    <thead>
+                      <tr style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Status</th>
+                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Course</th>
+                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Submitted</th>
+                        <th style={{ textAlign: 'left', padding: '6px 8px', fontWeight: 600 }}>Email</th>
+                        <th />
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {feedbackList.map(item => (
+                        <tr key={item.id} style={{ borderBottom: '1px solid var(--hei-border)' }}>
+                          <td style={{ padding: '6px 8px' }}>
+                            <Tag color={item.status === 'pending' ? 'blue' : item.status === 'replied' ? 'green' : 'default'}>
+                              {item.status}
+                            </Tag>
+                          </td>
+                          <td style={{ padding: '6px 8px', maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                            <span title={item.courseTitle}>{item.courseTitle || item.courseId}</span>
+                          </td>
+                          <td style={{ padding: '6px 8px', whiteSpace: 'nowrap' }}>
+                            {new Date(item.submittedAt).toLocaleDateString('de-DE')}
+                          </td>
+                          <td style={{ padding: '6px 8px' }}>
+                            {item.email ? <span style={{ fontSize: 12, color: '#666' }}>{item.email}</span> : '—'}
+                          </td>
+                          <td style={{ padding: '6px 8px' }}>
+                            <Button
+                              size="small"
+                              onClick={async () => {
+                                setFeedbackDetailId(item.id)
+                                setFeedbackDetailLoading(true)
+                                try {
+                                  const r = await adminFetch(`/api/admin/feedback/${item.id}`)
+                                  if (r.ok) setFeedbackDetailData(await r.json())
+                                } finally { setFeedbackDetailLoading(false) }
+                              }}
+                            >
+                              View
+                            </Button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+            )}
+          </Spin>
+        </Modal>
+
+        {/* ── Email reply modal ── */}
+        <Modal
+          open={feedbackEmailOpen}
+          onCancel={() => setFeedbackEmailOpen(false)}
+          title="Send Reply Email"
+          footer={[
+            <Button key="cancel" onClick={() => setFeedbackEmailOpen(false)}>Cancel</Button>,
+            <Button
+              key="send"
+              type="primary"
+              loading={feedbackEmailSending}
+              onClick={async () => {
+                if (!feedbackDetailId) return
+                setFeedbackEmailSending(true)
+                try {
+                  const r = await adminFetch(`/api/admin/feedback/${feedbackDetailId}/send-email`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ subject: feedbackEmailSubject, body: feedbackEmailBody }),
+                  })
+                  const data = await r.json()
+                  if (r.ok) {
+                    void message.success('Email sent successfully')
+                    setFeedbackEmailOpen(false)
+                    setFeedbackList(prev => prev.map(f => f.id === feedbackDetailId ? { ...f, status: 'replied' } : f))
+                    setFeedbackDetailData(prev => prev ? { ...prev, feedback: { ...prev.feedback, status: 'replied' } } : null)
+                  } else {
+                    void message.error(data.error || 'Failed to send email')
+                  }
+                } catch (_) {
+                  void message.error('Network error')
+                } finally {
+                  setFeedbackEmailSending(false)
+                }
+              }}
+            >
+              Send
+            </Button>,
+          ]}
+          width={560}
+          destroyOnClose
+        >
+          <Space direction="vertical" style={{ width: '100%' }}>
+            <div>
+              <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>To:</Typography.Text>
+              <Typography.Text type="secondary">{feedbackDetailData?.feedback.email}</Typography.Text>
+            </div>
+            <div>
+              <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>Subject:</Typography.Text>
+              <Input value={feedbackEmailSubject} onChange={e => setFeedbackEmailSubject(e.target.value)} />
+            </div>
+            <div>
+              <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>Message:</Typography.Text>
+              <Input.TextArea
+                rows={8}
+                value={feedbackEmailBody}
+                onChange={e => setFeedbackEmailBody(e.target.value)}
+              />
+            </div>
+          </Space>
+        </Modal>
+
       </Layout>
     </ConfigProvider>
   )

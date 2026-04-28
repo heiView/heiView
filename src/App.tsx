@@ -21,6 +21,7 @@ import {
   SearchOutlined,
 } from '@ant-design/icons'
 import DarkModeButton from './components/DarkModeButton/DarkModeButton'
+import FeedbackModal from './components/FeedbackModal/FeedbackModal'
 import { CAMPUS_OPTIONS, type Campus } from './campusConfig'
 import useStore from './store'
 import type {
@@ -178,6 +179,7 @@ function App() {
   const [courseSlotsFetching, setCourseSlotsFetching] = React.useState(false)
   const [searchResults, setSearchResults] = React.useState<SearchResult[]>([])
   const [searchLoading, setSearchLoading] = React.useState(false)
+  const [feedbackOpen, setFeedbackOpen] = React.useState(false)
   const [nowMinutes, setNowMinutes] = React.useState(() => {
     const n = dayjs()
     return n.hour() * 60 + n.minute()
@@ -747,8 +749,8 @@ function App() {
             </div>
             {schedule?.lastSyncTime && (() => {
                 const syncDate = new Date(schedule.lastSyncTime!)
-                const opts: Intl.DateTimeFormatOptions = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Berlin' }
-                const formatted = syncDate.toLocaleString('de-DE', opts)
+                const opts: Intl.DateTimeFormatOptions = { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Europe/Berlin' }
+                const formatted = syncDate.toLocaleDateString('de-DE', opts)
                 return (
                   <div className="hei-sync-time">
                     Synced with heiCO: {formatted}
@@ -806,10 +808,7 @@ function App() {
                 {selectedCourse ? resolveLocalizedText(selectedCourse.course.name, language) : ''}
               </span>
               {selectedCourse && (
-                <a
-                  href="https://github.com/heiView/heiView/issues/new"
-                  target="_blank"
-                  rel="noreferrer"
+                <button
                   className="report-error-btn"
                   style={{
                     display: 'inline-flex',
@@ -825,7 +824,6 @@ function App() {
                     flexShrink: 0,
                     cursor: 'pointer',
                     userSelect: 'none',
-                    textDecoration: 'none'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#fff1f0';
@@ -833,9 +831,10 @@ function App() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.backgroundColor = 'transparent';
                   }}
+                  onClick={() => setFeedbackOpen(true)}
                 >
                   {text.reportError}
-                </a>
+                </button>
               )}
             </div>
           }
@@ -996,6 +995,19 @@ function App() {
             </Space>
           )}
         </Modal>
+
+        <FeedbackModal
+          open={feedbackOpen}
+          courseId={selectedCourse?.course.id ?? ''}
+          courseTitle={
+            selectedCourse
+              ? (typeof selectedCourse.course.name === 'string'
+                  ? selectedCourse.course.name
+                  : resolveLocalizedText(selectedCourse.course.name, language))
+              : ''
+          }
+          onClose={() => setFeedbackOpen(false)}
+        />
       </Layout>
     </ConfigProvider>
   )

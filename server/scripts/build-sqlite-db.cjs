@@ -515,7 +515,7 @@ function main() {
     }
 
     // Import sync metadata (last crawl timestamp)
-    const SYNC_META_PATH = path.join(COURSE_DIR, 'sync-meta.json');
+    const SYNC_META_PATH = path.join(ROOT, 'data', 'sync-meta.json');
     if (fs.existsSync(SYNC_META_PATH)) {
       try {
         const syncMeta = JSON.parse(fs.readFileSync(SYNC_META_PATH, 'utf8'));

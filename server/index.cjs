@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
 const express = require('express');
+const multer = require('multer');
 
 // Load .env manually so the server works when started via pm2/systemd without --env-file
 (function loadDotEnv() {
@@ -81,6 +82,7 @@ const COURSE_DIR = path.join(ROOT, 'data', SEASON);
 const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
 const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
 const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
+const FEEDBACK_DIR = path.join(COURSE_DIR, 'feedback');
 const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
 const NOTE_LOCATION_MAP_PATH = path.join(ROOT, 'data', 'note-location-map.json');
 const FI_SKIP_PATH = path.join(ROOT, 'data', 'further-info-skip.json');
@@ -1925,6 +1927,183 @@ function createApp() {
       if (db) db.close();
     }
   });
+
+  // ── User Feedback ─────────────────────────────────────────────────────────────
+  const ALLOWED_FEEDBACK_MIME = new Set([
+    'image/jpeg', 'image/png', 'image/gif', 'image/webp', 'image/bmp', 'image/tiff',
+    'application/pdf',
+  ]);
+  const ALLOWED_FEEDBACK_EXT = new Set(['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.tiff', '.tif', '.pdf']);
+
+  const feedbackStorage = multer.diskStorage({
+    destination: (_req, _file, cb) => {
+      if (!fs.existsSync(FEEDBACK_DIR)) fs.mkdirSync(FEEDBACK_DIR, { recursive: true });
+      cb(null, FEEDBACK_DIR);
+    },
+    filename: (req, file, cb) => {
+      // Extract extension from original name and validate against allowlist
+      const rawExt = path.extname(file.originalname).toLowerCase().replace(/[^a-z0-9.]/g, '');
+      const ext = ALLOWED_FEEDBACK_EXT.has(rawExt) ? rawExt : '';
+      req._feedbackFileIdx = (req._feedbackFileIdx || 0) + 1;
+      cb(null, `${req._feedbackId}-file${req._feedbackFileIdx}${ext}`);
+    },
+  });
+
+  const feedbackUpload = multer({
+    storage: feedbackStorage,
+    fileFilter: (_req, file, cb) => {
+      if (ALLOWED_FEEDBACK_MIME.has(file.mimetype)) cb(null, true);
+      else cb(new Error('Only images (JPG, PNG, GIF, WebP) and PDF files are allowed'));
+    },
+    limits: { fileSize: 2 * 1024 * 1024, files: 5 },
+  });
+
+  // POST /api/feedback — public endpoint, no auth required
+  app.post('/api/feedback', (req, res) => {
+    const id = `feedback-${Date.now()}-${crypto.randomBytes(4).toString('hex')}`;
+    req._feedbackId = id;
+    req._feedbackFileIdx = 0;
+    feedbackUpload.array('files', 5)(req, res, (err) => {
+      if (err) {
+        return res.status(400).json({ error: err.message });
+      }
+      const { courseId, courseTitle, proposedWeeks, email, message } = req.body || {};
+      if (!courseId || typeof courseId !== 'string' || !/^[\w\-\.]+$/.test(courseId)) {
+        if (req.files) req.files.forEach(f => { try { fs.unlinkSync(f.path); } catch (_) {} });
+        return res.status(400).json({ error: 'Valid courseId required' });
+      }
+      if (message && message.length > 5000) {
+        if (req.files) req.files.forEach(f => { try { fs.unlinkSync(f.path); } catch (_) {} });
+        return res.status(400).json({ error: 'Message too long (max 5000 chars)' });
+      }
+      let parsedWeeks = [];
+      if (proposedWeeks) {
+        try { parsedWeeks = JSON.parse(proposedWeeks); } catch (_) {}
+      }
+      const uploadedFiles = (req.files || []).map(f => path.basename(f.path));
+      const feedback = {
+        id,
+        courseId: courseId.slice(0, 100),
+        courseTitle: (courseTitle || '').slice(0, 300),
+        email: (email || '').slice(0, 200) || null,
+        message: (message || '').slice(0, 5000),
+        proposedWeeks: Array.isArray(parsedWeeks) ? parsedWeeks : [],
+        files: uploadedFiles,
+        submittedAt: new Date().toISOString(),
+        status: 'pending',
+      };
+      if (!fs.existsSync(FEEDBACK_DIR)) fs.mkdirSync(FEEDBACK_DIR, { recursive: true });
+      try {
+        fs.writeFileSync(path.join(FEEDBACK_DIR, `${id}.json`), JSON.stringify(feedback, null, 2), 'utf8');
+        res.json({ ok: true, id });
+      } catch (e) {
+        res.status(500).json({ error: 'Failed to save feedback' });
+      }
+    });
+  });
+
+  // GET /api/admin/feedback — list all feedback submissions
+  app.get('/api/admin/feedback', requireAdmin, (_req, res) => {
+    try {
+      if (!fs.existsSync(FEEDBACK_DIR)) { res.json([]); return; }
+      const items = [];
+      for (const file of fs.readdirSync(FEEDBACK_DIR)) {
+        if (!file.endsWith('.json')) continue;
+        try {
+          const data = JSON.parse(fs.readFileSync(path.join(FEEDBACK_DIR, file), 'utf8'));
+          items.push({
+            id: data.id, courseId: data.courseId, courseTitle: data.courseTitle,
+            email: data.email, message: data.message, files: data.files || [],
+            proposedWeeks: data.proposedWeeks || [], submittedAt: data.submittedAt,
+            status: data.status || 'pending',
+          });
+        } catch (_) {}
+      }
+      items.sort((a, b) => new Date(b.submittedAt) - new Date(a.submittedAt));
+      res.json(items);
+    } catch (e) { res.status(500).json({ error: e.message }); }
+  });
+
+  // GET /api/admin/feedback/:id — get full feedback details including current course data
+  app.get('/api/admin/feedback/:id', requireAdmin, (req, res) => {
+    const { id } = req.params;
+    if (!/^feedback-[\w\-]+$/.test(id)) { res.status(400).json({ error: 'Invalid ID' }); return; }
+    const feedbackPath = path.join(FEEDBACK_DIR, `${id}.json`);
+    if (!fs.existsSync(feedbackPath)) { res.status(404).json({ error: 'Feedback not found' }); return; }
+    try {
+      const feedback = JSON.parse(fs.readFileSync(feedbackPath, 'utf8'));
+      // Also load the current course data for comparison
+      const coursePath = resolveCoursePath(`course-${feedback.courseId}.json`);
+      const currentCourse = coursePath && fs.existsSync(coursePath)
+        ? JSON.parse(fs.readFileSync(coursePath, 'utf8'))
+        : null;
+      res.json({ feedback, currentCourse });
+    } catch (e) { res.status(500).json({ error: e.message }); }
+  });
+
+  // GET /api/admin/feedback/:id/file/:filename — serve uploaded proof file
+  app.get('/api/admin/feedback/:id/file/:filename', requireAdmin, (req, res) => {
+    const { filename } = req.params;
+    if (!/^[\w\-\.]+$/.test(filename)) { res.status(400).json({ error: 'Invalid filename' }); return; }
+    const filePath = path.resolve(FEEDBACK_DIR, filename);
+    if (!filePath.startsWith(path.resolve(FEEDBACK_DIR))) { res.status(400).json({ error: 'Invalid path' }); return; }
+    if (!fs.existsSync(filePath)) { res.status(404).json({ error: 'File not found' }); return; }
+    res.sendFile(filePath);
+  });
+
+  // POST /api/admin/feedback/:id/dismiss
+  app.post('/api/admin/feedback/:id/dismiss', requireAdmin, (req, res) => {
+    const { id } = req.params;
+    if (!/^feedback-[\w\-]+$/.test(id)) { res.status(400).json({ error: 'Invalid ID' }); return; }
+    const feedbackPath = path.join(FEEDBACK_DIR, `${id}.json`);
+    if (!fs.existsSync(feedbackPath)) { res.status(404).json({ error: 'Feedback not found' }); return; }
+    try {
+      const data = JSON.parse(fs.readFileSync(feedbackPath, 'utf8'));
+      data.status = 'dismissed';
+      data.reviewedAt = new Date().toISOString();
+      data.reviewedBy = req.adminUser;
+      fs.writeFileSync(feedbackPath, JSON.stringify(data, null, 2), 'utf8');
+      res.json({ ok: true });
+    } catch (e) { res.status(500).json({ error: e.message }); }
+  });
+
+  // POST /api/admin/feedback/:id/send-email
+  app.post('/api/admin/feedback/:id/send-email', requireAdmin, (req, res) => {
+    const { id } = req.params;
+    if (!/^feedback-[\w\-]+$/.test(id)) { res.status(400).json({ error: 'Invalid ID' }); return; }
+    const feedbackPath = path.join(FEEDBACK_DIR, `${id}.json`);
+    if (!fs.existsSync(feedbackPath)) { res.status(404).json({ error: 'Feedback not found' }); return; }
+    let feedbackData;
+    try { feedbackData = JSON.parse(fs.readFileSync(feedbackPath, 'utf8')); }
+    catch (e) { res.status(500).json({ error: 'Failed to read feedback' }); return; }
+    if (!feedbackData.email) { res.status(400).json({ error: 'No email address in this feedback' }); return; }
+    const { subject, body } = req.body || {};
+    if (!subject || !body) { res.status(400).json({ error: 'subject and body required' }); return; }
+    const SMTP_HOST = process.env.SMTP_HOST;
+    const SMTP_PORT = Number(process.env.SMTP_PORT || 587);
+    const SMTP_USER = process.env.SMTP_USER;
+    const SMTP_PASS = process.env.SMTP_PASS;
+    const SMTP_FROM = process.env.SMTP_FROM || SMTP_USER;
+    if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
+      res.status(503).json({ error: 'SMTP not configured. Set SMTP_HOST, SMTP_USER, SMTP_PASS in .env' });
+      return;
+    }
+    const nodemailer = require('nodemailer');
+    const transporter = nodemailer.createTransport({
+      host: SMTP_HOST, port: SMTP_PORT, secure: SMTP_PORT === 465,
+      auth: { user: SMTP_USER, pass: SMTP_PASS },
+    });
+    transporter.sendMail({ from: SMTP_FROM, to: feedbackData.email, subject, text: body })
+      .then(() => {
+        feedbackData.status = 'replied';
+        feedbackData.repliedAt = new Date().toISOString();
+        feedbackData.repliedBy = req.adminUser;
+        try { fs.writeFileSync(feedbackPath, JSON.stringify(feedbackData, null, 2), 'utf8'); } catch (_) {}
+        res.json({ ok: true });
+      })
+      .catch(err => res.status(500).json({ error: `Failed to send email: ${err.message}` }));
+  });
+  // ─────────────────────────────────────────────────────────────────────────────
 
   return app;
 }
