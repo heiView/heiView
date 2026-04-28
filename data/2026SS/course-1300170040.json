@@ -1,0 +1,31 @@
+{
+  "id": "1300170040",
+  "title": "Oberseminar:Theoretical Cosmology Group (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Heisenberg, Lavinia"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-02",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-09-24",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410422",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:06:50Z"
+}

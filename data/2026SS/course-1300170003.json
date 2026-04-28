@@ -1,0 +1,32 @@
+{
+  "id": "1300170003",
+  "title": "ITP Seminar on Fundamental Physics (Teilchentee)(OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English (primary)",
+  "lecturers": [
+    "Hebecker, Arthur",
+    "Pawlowski, Jan"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-02",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-09-24",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (8010.01.106A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21963",
+      "room": "Übungsraum (8010.01.106A)",
+      "building": "Philosophenweg 12, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410484",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:54:01Z"
+}

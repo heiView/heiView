@@ -1,0 +1,31 @@
+{
+  "id": "1300152017",
+  "title": "Oberseminar: Physics of Environmental Archives (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Frank, Norbert"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-03-31",
+  "end_date": "2026-09-22",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-03-31",
+      "end_date": "2026-09-22",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410397",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:06:19Z"
+}

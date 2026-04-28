@@ -1,0 +1,32 @@
+{
+  "id": "1300165360",
+  "title": "Mu3e Vertex Meeting (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schöning, André",
+    "Vigani, Luigi"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-15",
+  "end_date": "2026-09-23",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-09-23",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226, Raum 03.410"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410337",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:04:00Z"
+}

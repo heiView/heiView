@@ -1,0 +1,31 @@
+{
+  "id": "1300170029",
+  "title": "Oberseminar: mathematische Physik (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Salmhofer, Manfred"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-01",
+  "end_date": "2026-09-23",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-01",
+      "end_date": "2026-09-23",
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "Übungsraum (8080.EG.010)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18582",
+      "room": "Übungsraum (8080.EG.010)",
+      "building": "Philosophenweg 19, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410392",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:06:11Z"
+}

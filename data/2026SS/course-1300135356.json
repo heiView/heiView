@@ -1,0 +1,34 @@
+{
+  "id": "1300135356",
+  "title": "Aktuelle Probleme der Physik der bildgebenden Verfahren (OberSem)",
+  "type": "SE",
+  "ects_credits": "1",
+  "course_languages": "German",
+  "lecturers": [
+    "Bachert, Peter",
+    "Kuder, Tristan Anselm",
+    "Ladd, Mark",
+    "Schröder, Leif"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-16",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
+      "start_time": "12:30",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF 223 / F.02.082 oder siehe Homepage"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410218",
+  "exceptions": [],
+  "further_info": "online information course documents",
+  "last_updated": "2026-04-28T09:22:40Z"
+}

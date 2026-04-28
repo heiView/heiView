@@ -9,12 +9,12 @@
   ],
   "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-15",
-  "end_date": "2026-07-22",
+  "end_date": "2026-04-29",
   "weeks": [
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-04-29",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Unterrichtsraum (3051.U1.109)",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416882",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:38:17Z"
+  "last_updated": "2026-04-28T10:10:53Z"
 }

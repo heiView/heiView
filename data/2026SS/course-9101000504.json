@@ -1,19 +1,81 @@
 {
   "id": "9101000504",
-  "title": "Die Seite ist nicht für diesen Browser optimiert. This site is not optimised for your browser.",
+  "title": "BI - Laborführung Klinische Chemie",
   "type": "XC",
   "ects_credits": null,
-  "course_languages": null,
+  "course_languages": "German",
   "lecturers": [
     "Anker, Sophie Caroline",
     "Brings, Sebastian",
     "Zimmer, Holger"
   ],
-  "organisation": null,
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "organisation": "Klinik für Endokrinologie, Diabetologie",
+  "start_date": "2026-04-13",
+  "end_date": "2026-04-17",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-04-15",
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-17",
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-13",
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-04-14",
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-16",
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Laborführung, INF 671"
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/374963",
   "exceptions": [],
-  "last_updated": "2026-04-24T20:50:09Z"
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:27:18Z"
 }

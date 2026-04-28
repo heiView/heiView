@@ -9,7 +9,7 @@
   ],
   "organisation": "The Institute of Slavic Studies",
   "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
+  "end_date": "2026-07-23",
   "weeks": [
     {
       "day_of_week": 2,
@@ -46,10 +46,22 @@
       "room": "Seminarraum (2190.01.104)",
       "building": "Schulgasse / Augustinergasse 6 / 15, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-07-23",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "HS 04 (2170.EG.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20319",
+      "room": "HS 04 (2170.EG.037)",
+      "building": "HS 04, Grabengasse 3-5, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410628",
   "exceptions": [],
   "further_info": "Recommended Reading Marica Čilaš Mikulić, Milvia Gulešić Machata, Sanda Lucija Udier. 2022. RAZGOVARAJTE S NAMA! A1 – A2 Udžbenik hrvatskoga kao drugoga i stranog jezika. Zagreb: Hrvatska sveučilišna naklada. Marica Čilaš Mikulić, Milvia Gulešić Machata, Sanda Lucija Udier. 2022.",
-  "last_updated": "2026-04-23T13:04:05Z"
+  "last_updated": "2026-04-28T10:19:52Z"
 }

@@ -8,24 +8,11 @@
     "Sievert, Henning"
   ],
   "organisation": "Middle Eastern Studies",
-  "start_date": "2026-04-17",
-  "end_date": "2026-07-24",
-  "weeks": [
-    {
-      "day_of_week": 5,
-      "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
-      "start_time": "15:15",
-      "end_time": "16:45",
-      "location": "SR I (8020.02.210)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22280",
-      "room": "SR I (8020.02.210)",
-      "building": "Albert-Ueberle-Straße 3-5, 2nd floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414268",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:34:37Z"
+  "last_updated": "2026-04-28T10:07:11Z"
 }

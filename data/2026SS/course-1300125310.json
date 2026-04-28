@@ -1,0 +1,32 @@
+{
+  "id": "1300125310",
+  "title": "Oberseminar: Quantum Dynamics of Atomic and Molecular Systems (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Weidemüller, Matthias",
+    "Zürn, Gerhard"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-17",
+  "end_date": "2026-09-25",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-09-25",
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226 / CQD-Lounge"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410401",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:06:20Z"
+}

@@ -1,6 +1,6 @@
 {
   "id": "0000000093",
-  "title": "HS KG: Kirche als Organisation im antiken Christentum",
+  "title": "HS KG: Kirche als Organisation im antiken Christentum (fällt aus!)",
   "type": "SE",
   "ects_credits": "4",
   "course_languages": "German",
@@ -8,24 +8,11 @@
     "Löhr, Winrich"
   ],
   "organisation": "Faculty of Theology",
-  "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
-  "weeks": [
-    {
-      "day_of_week": 4,
-      "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
-      "start_time": "16:15",
-      "end_time": "17:45",
-      "location": "KiGa II (1200.EG.002C)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
-      "room": "KiGa II (1200.EG.002C)",
-      "building": "Kisselgasse 1, Ground floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410763",
   "exceptions": [],
   "further_info": "Recommended Reading Wird im Laufe des Seminars bekannt gegeben.",
-  "last_updated": "2026-04-21T10:19:34Z"
+  "last_updated": "2026-04-28T09:50:36Z"
 }

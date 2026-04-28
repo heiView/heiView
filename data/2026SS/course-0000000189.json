@@ -8,24 +8,48 @@
     "Neijenhuis, Jörg"
   ],
   "organisation": "Faculty of Theology",
-  "start_date": "2026-04-17",
+  "start_date": "2026-05-08",
   "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 5,
-      "start_date": "2026-04-17",
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR K 3 (1040.04.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19673",
+      "room": "ÜR K 3 (1040.04.403)",
+      "building": "Karlstraße 16, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-17",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "ÜR K 3 (1040.04.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19673",
+      "room": "ÜR K 3 (1040.04.403)",
+      "building": "Karlstraße 16, 4th floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
       "end_date": "2026-07-24",
       "start_time": "09:15",
       "end_time": "10:45",
-      "location": "KiGa III (1200.02.214)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22593",
-      "room": "KiGa III (1200.02.214)",
-      "building": "Kisselgasse 1, 2nd floor",
+      "location": "KiGa I (1200.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
+      "room": "KiGa I (1200.EG.024)",
+      "building": "Kisselgasse 1, Ground floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411089",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:41:55Z"
+  "last_updated": "2026-04-28T10:14:37Z"
 }

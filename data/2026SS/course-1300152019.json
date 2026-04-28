@@ -1,0 +1,31 @@
+{
+  "id": "1300152019",
+  "title": "Oberseminar: Aerosol in Climate Change (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Fiedler, Stephanie"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-02",
+  "end_date": "2026-09-17",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-09-17",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: Bibliothek des Instituts für Umweltphysik"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410354",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:05:36Z"
+}

@@ -10,24 +10,24 @@
     "Moos, Peer Thorsten"
   ],
   "organisation": "Faculty of Theology",
-  "start_date": "2026-04-13",
+  "start_date": "2026-04-27",
   "end_date": "2026-07-20",
   "weeks": [
     {
       "day_of_week": 1,
-      "start_date": "2026-04-13",
+      "start_date": "2026-04-27",
       "end_date": "2026-07-20",
       "start_time": "11:15",
       "end_time": "12:45",
-      "location": "ÖInst SR (1060.EG.014)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
-      "room": "ÖInst SR (1060.EG.014)",
-      "building": "Plankengasse 1-3, Ground floor",
+      "location": "KiGa III (1200.02.214)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22593",
+      "room": "KiGa III (1200.02.214)",
+      "building": "Kisselgasse 1, 2nd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410559",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:20:33Z"
+  "last_updated": "2026-04-28T09:51:36Z"
 }

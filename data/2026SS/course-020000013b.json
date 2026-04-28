@@ -44,6 +44,30 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "12:30",
+      "end_time": "13:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Die Teilnahme setzt eine vorherige Anmeldung voraus. Wir bitten um Anmeldung bis 18. Mai 2026 unter www.uni-ulm.de/steuerrecht/uws oder per E-Mail an: sabine.micka@edvgt.de Angemeldete Teilnehmer erhalten einen Einwahllink über das behördenspezifische Videokonferenzsystem des Bundes (CMS-Bund-Instanz der BDBOS) bereitgestellt."
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-26",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "HS 07 (2170.01.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20592",
+      "room": "HS 07 (2170.01.037)",
+      "building": "HS 07, Grabengasse 3-5, 1st floor",
+      "note": "Prof. Borges"
+    },
+    {
+      "day_of_week": 4,
       "start_date": "2026-05-28",
       "end_date": "2026-05-28",
       "start_time": "14:00",
@@ -80,6 +104,18 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-18",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "HS 07 (2170.01.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20592",
+      "room": "HS 07 (2170.01.037)",
+      "building": "HS 07, Grabengasse 3-5, 1st floor",
+      "note": "RA Tianyu Yuan, CEO"
+    },
+    {
+      "day_of_week": 4,
       "start_date": "2026-07-02",
       "end_date": "2026-07-02",
       "start_time": "18:00",
@@ -106,5 +142,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420055",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-23T13:25:32Z"
+  "last_updated": "2026-04-28T09:57:22Z"
 }

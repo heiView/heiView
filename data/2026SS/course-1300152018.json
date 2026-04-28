@@ -1,0 +1,31 @@
+{
+  "id": "1300152018",
+  "title": "Oberseminar: GHG and Watercycle (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schmidt, Martina"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-03-30",
+  "end_date": "2026-09-28",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-03-30",
+      "end_date": "2026-09-28",
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bibliothek des IUP"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410380",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:06:01Z"
+}

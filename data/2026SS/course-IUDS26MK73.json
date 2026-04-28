@@ -22,10 +22,22 @@
       "room": "Konferenzsaal (KS III) (3051.02.207)",
       "building": "Plöck 57a, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "location": "Konferenzsaal (KS I) (3051.02.208)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19993",
+      "room": "Konferenzsaal (KS I) (3051.02.208)",
+      "building": "Plöck 57a, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416719",
   "exceptions": [],
   "further_info": "Recommended Reading Gillies, Andrew (2013). Conference Interpreting – A Student’s Practice Book. Routledge, New York. Nolan, James (2012). Interpretation Techniques and Exercises. Multilingual Matters, Salisbury. Setton, Robin & Dawrant, Andrew (2016). Conference Interpreting: A Complete Course. Benjamins Translation Library, Amsterdam/Philadelphia.Gillies, Andrew (2013). Conference Interpreting – A Student’s Practice Book. Routledge, New York. Nolan, James (2012). Interpretation Techniques and Exercises. Multilingual Matters, Salisbury. Setton, Robin & Dawrant, Andrew (2016). Conference Interpreting: A Complete Course. Benjamins Translation Library, Amsterdam/Philadelphia.",
-  "last_updated": "2026-04-21T10:44:52Z"
+  "last_updated": "2026-04-28T10:17:33Z"
 }

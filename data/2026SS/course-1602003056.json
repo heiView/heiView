@@ -5,8 +5,11 @@
   "ects_credits": "10",
   "course_languages": "German",
   "lecturers": [
+    "Anders, Simon",
+    "Brors, Benedikt",
     "Herrmann, Carl Michael",
-    "Russell, Robert"
+    "Russell, Robert",
+    "Wade, Rebecca Claire"
   ],
   "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-13",
@@ -40,5 +43,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409437",
   "exceptions": [],
   "further_info": "Slides/exercises in English, lecture in German or English",
-  "last_updated": "2026-04-21T10:22:05Z"
+  "last_updated": "2026-04-28T09:53:08Z"
 }

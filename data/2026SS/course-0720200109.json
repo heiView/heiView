@@ -41,9 +41,9 @@
       "end_date": "2026-05-08",
       "start_time": "14:30",
       "end_time": "16:00",
-      "location": "Übungsraum III (2170.EG.026H)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=8455",
-      "room": "Übungsraum III (2170.EG.026H)",
+      "location": "Übungsraum II (2170.EG.024X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20301",
+      "room": "Übungsraum II (2170.EG.024X)",
       "building": "Grabengasse 3-5, Ground floor",
       "note": null
     },
@@ -75,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412415",
   "exceptions": [],
   "further_info": "Recommended Reading Blaney, Jonathan, Sarah Milligan, Marty Steer, and Jane Winters: Doing Digital History: A Beginner’s Guide to Working with Text as Data, (IHR Research Guides), Manchester 2021. Döring, Karoline Dominika, Stefan Haas, Mareike König, and Jörg Wettlaufer: Digital history: Konzepte, Methoden und Kritiken digitaler Geschichtswissenschaft. Studies, in: Digital history and hermeneutics, Berlin , Boston, 2022, unter: https://doi.org/10.1515/9783110757101 (14.12.2024). Bew, Paul: Ireland: The Politics of Enmity. 1789-2006, Oxford 2007. Townshend, Charles: Easter 1916: The Irish Rebellion, Chicago 2006.",
-  "last_updated": "2026-04-21T11:37:59Z"
+  "last_updated": "2026-04-28T10:34:44Z"
 }

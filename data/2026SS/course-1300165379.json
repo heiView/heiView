@@ -1,0 +1,43 @@
+{
+  "id": "1300165379",
+  "title": "LEPP Seminar (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Degenkolb, Skyler"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-13",
+  "end_date": "2026-09-28",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-09-28",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-09-24",
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 227a, Raum 01.554"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410330",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:58:39Z"
+}

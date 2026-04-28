@@ -36,6 +36,30 @@
       "note": null
     },
     {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-07-21",
+      "start_time": "10:45",
+      "end_time": "11:30",
+      "location": "Übungsraum (8010.EG.060)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15234",
+      "room": "Übungsraum (8010.EG.060)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-07-23",
+      "start_time": "10:45",
+      "end_time": "11:15",
+      "location": "Übungsraum (8010.EG.060)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15234",
+      "room": "Übungsraum (8010.EG.060)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    },
+    {
       "day_of_week": 3,
       "start_date": "2026-04-15",
       "end_date": "2026-07-22",
@@ -75,5 +99,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410489",
   "exceptions": [],
   "further_info": "Recommended Reading A script is availabe from earlier editions of this lecture. A standard textbook would be R. Phillips, J. Kondev and J. Theriot, Physical Biology of the Cell, 2nd edition, Garland Sci. 2012.",
-  "last_updated": "2026-04-21T11:45:49Z"
+  "last_updated": "2026-04-28T10:23:01Z"
 }

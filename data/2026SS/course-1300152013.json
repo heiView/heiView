@@ -1,0 +1,32 @@
+{
+  "id": "1300152013",
+  "title": "Remote Sensing of Greenhouse Gases",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German (primary)",
+  "lecturers": [
+    "Butz, André",
+    "Vardag, Sanam Noreen"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-01",
+  "end_date": "2026-09-23",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-01",
+      "end_date": "2026-09-23",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF229 SR120"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410407",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:14:30Z"
+}

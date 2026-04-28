@@ -1,0 +1,33 @@
+{
+  "id": "1300132046",
+  "title": "NMR spectroscopy and CEST imaging (OberSem)",
+  "type": "SE",
+  "ects_credits": "1",
+  "course_languages": "German",
+  "lecturers": [
+    "Bachert, Peter",
+    "Kuder, Tristan Anselm",
+    "Ladd, Mark"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF 223 / F.01.088 oder siehe Homepage"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410349",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:05:23Z"
+}

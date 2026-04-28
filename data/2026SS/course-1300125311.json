@@ -1,0 +1,32 @@
+{
+  "id": "1300125311",
+  "title": "Oberseminar: Experimental Methods for Quantum Dynamics and Ultracold Atom Experiments (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English",
+  "lecturers": [
+    "Weidemüller, Matthias",
+    "Zürn, Gerhard"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-15",
+  "end_date": "2026-09-16",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-09-16",
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226 / CQD-Lounge. Rhythmus: 14tägig"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410367",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:05:49Z"
+}

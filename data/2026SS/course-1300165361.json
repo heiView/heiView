@@ -1,0 +1,32 @@
+{
+  "id": "1300165361",
+  "title": "High Voltage Monolothic Active Pixel Sensors (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Augustin, Heiko Christian",
+    "Schöning, André"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-16",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-09-24",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226, Raum 03.410"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410306",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:49:27Z"
+}

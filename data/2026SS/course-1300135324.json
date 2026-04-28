@@ -1,0 +1,31 @@
+{
+  "id": "1300135324",
+  "title": "Neurophysik und biomorphe VLSI Systeme (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schemmel, Johannes"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-16",
+  "end_date": "2026-09-17",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-09-17",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF 227b / SR"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410346",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:04:53Z"
+}

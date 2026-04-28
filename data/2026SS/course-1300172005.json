@@ -1,0 +1,31 @@
+{
+  "id": "1300172005",
+  "title": "Oberseminar für die Tutoren der Vorlesung Methodern der mathematischen Physik 1 (MMP 1) (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Salmhofer, Manfred"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "18:00",
+      "end_time": "19:45",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410376",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:05:57Z"
+}

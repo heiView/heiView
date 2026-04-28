@@ -10,12 +10,12 @@
   ],
   "organisation": "Institute of Sports and Sports Sciences",
   "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-20",
   "weeks": [
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-16",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Turnhalle 700 (6700.EG.071)",
@@ -23,10 +23,34 @@
       "room": "Turnhalle 700 (6700.EG.071)",
       "building": "Im Neuenheimer Feld 700, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-11",
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Turnhalle 700 (6700.EG.071)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17710",
+      "room": "Turnhalle 700 (6700.EG.071)",
+      "building": "Im Neuenheimer Feld 700, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-20",
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Dreifachhalle 1c (6720.EG.001C)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=29920",
+      "room": "Dreifachhalle 1c (6720.EG.001C)",
+      "building": "Im Neuenheimer Feld 720, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414594",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:42:36Z"
+  "last_updated": "2026-04-28T10:15:28Z"
 }

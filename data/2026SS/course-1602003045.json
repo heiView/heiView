@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute of Pharmacy and Molecular Biotechnology",
   "start_date": "2026-04-13",
-  "end_date": "2026-09-30",
+  "end_date": "2026-10-05",
   "weeks": [
     {
       "day_of_week": 1,
@@ -50,7 +50,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-09-28",
-      "end_date": "2026-09-28",
+      "end_date": "2026-10-05",
       "start_time": "10:00",
       "end_time": "12:30",
       "location": "HS 2 (6306.EG.021)",
@@ -82,10 +82,34 @@
       "room": "HS 2 (6306.EG.021)",
       "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-01",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "HS 2 (6306.EG.021)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18526",
+      "room": "HS 2 (6306.EG.021)",
+      "building": "HS 2, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-10-02",
+      "end_date": "2026-10-02",
+      "start_time": "10:00",
+      "end_time": "12:30",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409478",
   "exceptions": [],
   "further_info": "Als Leistungsnachweis gilt eine bestandene Klausur.",
-  "last_updated": "2026-04-21T11:48:42Z"
+  "last_updated": "2026-04-28T10:19:20Z"
 }

@@ -1,0 +1,32 @@
+{
+  "id": "1300165326",
+  "title": "Pixel detectors for the application at the LHC (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bachmann, Sebastian",
+    "Uwer, Ulrich"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-13",
+  "end_date": "2026-09-21",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-09-21",
+      "start_time": "17:00",
+      "end_time": "18:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226, Raum 03.410"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410433",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:08:58Z"
+}

@@ -14,9 +14,21 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-21",
-      "end_date": "2026-07-21",
+      "end_date": "2026-04-21",
       "start_time": "16:15",
       "end_time": "17:45",
+      "location": "Unterrichtsraum (3051.U1.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20005",
+      "room": "Unterrichtsraum (3051.U1.108)",
+      "building": "Plöck 57a, Lower level 1",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-07-21",
+      "start_time": "14:15",
+      "end_time": "15:45",
       "location": "Unterrichtsraum (3051.U1.108)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20005",
       "room": "Unterrichtsraum (3051.U1.108)",
@@ -27,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417201",
   "exceptions": [],
   "further_info": "Recommended Reading > Jüngst, Heike Elisabeth: Audiovisuelles Übersetzen : ein Lehr- und Arbeitsbuch (2020) > Weitere Titel werden im Laufe des Semesters besprochen. Liebe Studierende/Teilnehmende , der Unterricht fängt am 21.04.2026 an. Den Einschreibeschlüssel/das Passwort zum Kurs auf Moodle sowie weitere Informationen zum Unterrichtsablauf schicke ich Ihnen ausschließlich auf Ihre offizielle E-Mail-Adresse an der Universität Heidelberg (...@stud.uni-heidelberg.de)",
-  "last_updated": "2026-04-21T10:11:30Z"
+  "last_updated": "2026-04-28T09:42:35Z"
 }

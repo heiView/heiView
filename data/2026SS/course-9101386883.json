@@ -55,9 +55,9 @@
       "end_date": "2026-04-28",
       "start_time": "09:00",
       "end_time": "12:15",
-      "location": "Seminarraum K16 (6130.01.016)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30621",
-      "room": "Seminarraum K16 (6130.01.016)",
+      "location": "Seminarraum K15 (6130.01.015)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30620",
+      "room": "Seminarraum K15 (6130.01.015)",
       "building": "Im Neuenheimer Feld 130, 1st floor",
       "note": null
     },
@@ -77,5 +77,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400435",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:31:32Z"
+  "last_updated": "2026-04-28T10:02:54Z"
 }

@@ -111,10 +111,34 @@
       "room": "204",
       "building": "Hauptstraße 52, Unknown floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-06-12",
+      "start_time": "13:00",
+      "end_time": "15:30",
+      "location": "204 Haus zum Riesen (45)",
+      "location_link": null,
+      "room": "204 Haus zum Riesen (45)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "204 Haus zum Riesen (45)",
+      "location_link": null,
+      "room": "204 Haus zum Riesen (45)",
+      "building": null,
+      "note": "Ausweichtermin"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409300",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-23T13:08:07Z"
+  "last_updated": "2026-04-28T15:12:28Z"
 }

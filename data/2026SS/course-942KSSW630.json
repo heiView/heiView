@@ -22,10 +22,46 @@
       "room": "Unterrichtsraum (2210.EG.017)",
       "building": "Seminarstraße 3, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-04",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "HS 02 (2170.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20446",
+      "room": "HS 02 (2170.EG.049)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-08",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "HS 02 (2170.EG.049)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20446",
+      "room": "HS 02 (2170.EG.049)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Unterrichtsraum (2210.01.117)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17678",
+      "room": "Unterrichtsraum (2210.01.117)",
+      "building": "Seminarstraße 3, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413698",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:39:13Z"
+  "last_updated": "2026-04-28T10:11:59Z"
 }

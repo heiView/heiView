@@ -1,0 +1,32 @@
+{
+  "id": "1300170026",
+  "title": "Oberseminar: BioQuant Seminar (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bischofs-Pfeifer, Ilka",
+    "Schwarz, Ulrich"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-14",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "16:15",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "room: BioQuant, lecture room 041"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410358",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:05:40Z"
+}

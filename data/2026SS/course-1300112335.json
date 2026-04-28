@@ -1,0 +1,31 @@
+{
+  "id": "1300112335",
+  "title": "Physics of Exo-Planets and Planet Formation (OberSem)",
+  "type": "SE",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Klahr, Hubertus"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-02",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-09-24",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "MPIA - Besprechungszimmer 2. OG Zi.-Nr. 336"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410432",
+  "exceptions": [],
+  "further_info": "Vortragsthemen werden beim ersten Termin verteilt.",
+  "last_updated": "2026-04-28T10:08:37Z"
+}

@@ -67,10 +67,10 @@
       "end_date": "2026-07-23",
       "start_time": "18:15",
       "end_time": "19:45",
-      "location": "UGX 60 (2170.U1.060)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21089",
-      "room": "UGX 60 (2170.U1.060)",
-      "building": "Grabengasse 3-5, Lower level 1",
+      "location": "HS 09 (2170.01.041)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20596",
+      "room": "HS 09 (2170.01.041)",
+      "building": "HS 09, Grabengasse 3-5, 1st floor",
       "note": null
     },
     {
@@ -113,5 +113,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413921",
   "exceptions": [],
   "further_info": "Recommended Reading Le Bougnec, Jean-Thierry/Marie-José Lopes (Hgg.): Inspire 3. Paris: Hachette, 2021. ISBN 978-3-19-053387-9",
-  "last_updated": "2026-04-23T13:36:12Z"
+  "last_updated": "2026-04-28T09:44:18Z"
 }

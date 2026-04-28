@@ -1,0 +1,31 @@
+{
+  "id": "1300170054",
+  "title": "Oberseminar: Bosman Weekly Group Meeting (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Bosman, Sarah Elena Ivana"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Übungsraum (8010.EG.061)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15236",
+      "room": "Übungsraum (8010.EG.061)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410359",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:05:43Z"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "1300172001",
+  "title": "Oberseminar für die Tutoren der Theoretischen Physik II (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Enss, Tilman"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16724",
+      "room": "Kleiner Hörsaal (kHS) (8010.02.221)",
+      "building": "Philosophenweg 12, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410374",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:05:54Z"
+}

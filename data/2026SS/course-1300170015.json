@@ -1,0 +1,31 @@
+{
+  "id": "1300170015",
+  "title": "Oberseminar: Nonlinear Dynamics in Soft and Bio Systems (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Ziebert, Falko"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-03-05",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-03-05",
+      "end_date": "2026-09-24",
+      "start_time": "16:15",
+      "end_time": "18:00",
+      "location": "Übungsraum (8050.01.106)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16735",
+      "room": "Übungsraum (8050.01.106)",
+      "building": "Philosophenweg 16, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410395",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:06:15Z"
+}

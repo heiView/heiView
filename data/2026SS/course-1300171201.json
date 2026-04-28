@@ -94,10 +94,22 @@
       "room": "HS 2 (6308.EG.002)",
       "building": "HS 2, Im Neuenheimer Feld 308, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
+      "start_time": "16:15",
+      "end_time": "18:00",
+      "location": "Übungsraum (8010.01.105)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16711",
+      "room": "Übungsraum (8010.01.105)",
+      "building": "Philosophenweg 12, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410339",
   "exceptions": [],
   "further_info": "further information additional information Die Vorlesung findet als Block statt: 5 Stunden pro Woche Vorlesung bis Ende Juni, Montag 14-17 Uhr, Mittwoch 9-11 Uhr",
-  "last_updated": "2026-04-21T10:30:22Z"
+  "last_updated": "2026-04-28T10:01:55Z"
 }

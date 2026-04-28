@@ -69,7 +69,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Raum wird bekannt gegeben."
+      "note": "HS 04a in der Neuen Uni"
     },
     {
       "day_of_week": 5,
@@ -81,7 +81,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "Raum wird bekannt gegeben."
+      "note": "ÜR III im Historischen Seminar"
     },
     {
       "day_of_week": 4,
@@ -111,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411287",
   "exceptions": [],
   "further_info": "Recommended Reading David Armitage (Hg.), Theories of empire, 1450–1800 (Ashgate, Variorum, 1998); Jennifer Pitts, Political Theory of Empire and Imperialism, Annual Review of Political Science 13 (2010), 211-235; Jane Burbank & Frederick Cooper (Hgg.), Empires in World History: Power and the Politics of Difference (Princeton University Press, 2011).",
-  "last_updated": "2026-04-21T10:07:49Z"
+  "last_updated": "2026-04-28T09:38:59Z"
 }

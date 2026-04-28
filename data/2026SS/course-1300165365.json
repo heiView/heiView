@@ -1,0 +1,32 @@
+{
+  "id": "1300165365",
+  "title": "ATLAS HW Meeting (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Schultz-Coulon, Hans-Christian",
+    "Stamen, Rainer"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-14",
+  "end_date": "2026-09-22",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-09-22",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 227, 3.107"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410238",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:25:08Z"
+}

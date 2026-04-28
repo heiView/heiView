@@ -1,0 +1,43 @@
+{
+  "id": "1300112338",
+  "title": "Theory and Observations of Stars (OberSem)",
+  "type": "SE",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Hekker, Saskia"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-07",
+  "end_date": "2026-09-29",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-09-29",
+      "start_time": "10:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "at HITS or Online"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-14",
+      "end_date": "2026-07-21",
+      "start_time": "10:30",
+      "end_time": "12:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "at HITS or Online"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410494",
+  "exceptions": [],
+  "further_info": "further information additional information Research group meeting; if you are interested, please contact saskia.hekker@h-its.org",
+  "last_updated": "2026-04-28T10:23:09Z"
+}

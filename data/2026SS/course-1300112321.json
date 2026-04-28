@@ -1,0 +1,31 @@
+{
+  "id": "1300112321",
+  "title": "The High Redshift Universe (OberSem)",
+  "type": "SE",
+  "ects_credits": "1",
+  "course_languages": "English",
+  "lecturers": [
+    "Glover, Simon"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-07",
+  "end_date": "2026-09-29",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-09-29",
+      "start_time": "14:15",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "ITA (Albert-Uelberle-Str. 2), Library"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410485",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:22:46Z"
+}

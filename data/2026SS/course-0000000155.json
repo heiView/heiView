@@ -1,6 +1,6 @@
 {
   "id": "0000000155",
-  "title": "Ü ST: Christian Perspectives on Post- and Transhumanism",
+  "title": "Ü ST: Christian Perspectives on Post- and Transhumanism (fällt aus!)",
   "type": "PC",
   "ects_credits": "2",
   "course_languages": "English",
@@ -9,24 +9,11 @@
     "<N.N.>(Mavropoulos), 010000.100"
   ],
   "organisation": "Faculty of Theology",
-  "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
-  "weeks": [
-    {
-      "day_of_week": 2,
-      "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
-      "start_time": "11:15",
-      "end_time": "12:45",
-      "location": "ÖInst SR (1060.EG.014)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
-      "room": "ÖInst SR (1060.EG.014)",
-      "building": "Plankengasse 1-3, Ground floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410843",
   "exceptions": [],
   "further_info": "Recommended Reading The relevant literature will be announced at the beginning of the course.",
-  "last_updated": "2026-04-21T11:44:58Z"
+  "last_updated": "2026-04-28T10:25:48Z"
 }

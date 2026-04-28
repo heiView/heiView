@@ -1,0 +1,31 @@
+{
+  "id": "1300161192",
+  "title": "Tutoren Oberseminar Experimentalphysik II (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Grübl, Andreas"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-17",
+  "end_date": "2026-07-24",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-04-17",
+      "end_date": "2026-07-24",
+      "start_time": "11:15",
+      "end_time": "13:00",
+      "location": "Besprechung/Aufenthalt (6227.02.107)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14194",
+      "room": "Besprechung/Aufenthalt (6227.02.107)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410497",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:24:08Z"
+}

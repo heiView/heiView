@@ -1,0 +1,31 @@
+{
+  "id": "1300112340",
+  "title": "Computational galaxy formation (OberSem)",
+  "type": "SE",
+  "ects_credits": "2",
+  "course_languages": "English",
+  "lecturers": [
+    "Nelson, Dylan"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-07",
+  "end_date": "2026-09-29",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-07",
+      "end_date": "2026-09-29",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "ITA"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410255",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:33:24Z"
+}

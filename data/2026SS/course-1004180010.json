@@ -25,6 +25,18 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "location": "Übungsraum 1. OG 130 (3040.01.130)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21411",
+      "room": "Übungsraum 1. OG 130 (3040.01.130)",
+      "building": "Akademiestraße 3, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
       "start_date": "2026-07-24",
       "end_date": "2026-07-24",
       "start_time": "10:00",
@@ -63,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411919",
   "exceptions": [],
   "further_info": "To achieve 6 LP, there are three conditions: regular attendance; a presentation in class; written homework inlcuding a final paper",
-  "last_updated": "2026-04-21T09:55:06Z"
+  "last_updated": "2026-04-28T09:25:28Z"
 }

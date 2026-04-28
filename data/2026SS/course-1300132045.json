@@ -1,0 +1,36 @@
+{
+  "id": "1300132045",
+  "title": "Medical Physics Seminar 2 (OberSem)",
+  "type": "SE",
+  "ects_credits": "1",
+  "course_languages": "German",
+  "lecturers": [
+    "Jäkel, Oliver",
+    "Kuder, Tristan Anselm",
+    "Ladd, Mark",
+    "Schröder, Leif",
+    "Seco, Joao Carlos",
+    "Wahl, Niklas"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: INF 223 / F.02.082 oder siehe Homepage"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410335",
+  "exceptions": [],
+  "further_info": "further information additional information",
+  "last_updated": "2026-04-28T10:01:11Z"
+}

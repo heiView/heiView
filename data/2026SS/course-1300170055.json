@@ -1,0 +1,31 @@
+{
+  "id": "1300170055",
+  "title": "Oberseminar: Many-body QCD phenomena in high-energy proton and nuclear collisions (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Mazeliauskas, Aleksas"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-02",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-02",
+      "end_date": "2026-09-24",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Übungsraum (8010.01.106A)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21963",
+      "room": "Übungsraum (8010.01.106A)",
+      "building": "Philosophenweg 12, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410390",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:06:10Z"
+}

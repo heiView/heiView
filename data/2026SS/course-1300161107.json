@@ -216,6 +216,18 @@
       "note": null
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-04-30",
+      "end_date": "2026-04-30",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (8010.EG.068)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15240",
+      "room": "Übungsraum (8010.EG.068)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": "Ersatz Maifeiertag"
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-04-17",
       "end_date": "2026-07-24",
@@ -291,5 +303,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410279",
   "exceptions": [],
   "further_info": "Weitere Informationen: https://uebungen.physik.uni-heidelberg.de/vorlesung/20241/pep2",
-  "last_updated": "2026-04-21T10:10:05Z"
+  "last_updated": "2026-04-28T09:41:15Z"
 }

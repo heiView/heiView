@@ -34,10 +34,34 @@
       "room": "Besprechungsraum 130.00.02 (4130.EG.002)",
       "building": "Voßstraße 2, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "location": "Übungsraum (4400.02.212)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22242",
+      "room": "Übungsraum (4400.02.212)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "location": "Übungsraum (4400.02.212)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22242",
+      "room": "Übungsraum (4400.02.212)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409874",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:41:23Z"
+  "last_updated": "2026-04-28T10:14:04Z"
 }

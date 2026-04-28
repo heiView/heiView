@@ -1,0 +1,31 @@
+{
+  "id": "1300165340",
+  "title": "Analysis of STAR FXT data (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Herrmann, Norbert"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-16",
+  "end_date": "2026-09-24",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-16",
+      "end_date": "2026-09-24",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226/ 1.106/ online"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410220",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:23:16Z"
+}

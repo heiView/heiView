@@ -1,17 +1,55 @@
 {
   "id": "9101300025",
-  "title": "Die Seite ist nicht für diesen Browser optimiert. This site is not optimised for your browser.",
+  "title": "BI - fakultative online-Vorlesung: Kardio EKG-Kurs",
   "type": "L",
   "ects_credits": null,
-  "course_languages": null,
+  "course_languages": "German",
   "lecturers": [
     "N.N., Unbekannt"
   ],
-  "organisation": null,
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "organisation": "Klinik für Kardio-, Angio-, Pneumologie",
+  "start_date": "2026-05-04",
+  "end_date": "2026-07-06",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Fakultativ, heiCONF Link siehe Moodle"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-29",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Fakultativ, heiCONF Link siehe Moodle"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": "Fakultativ, heiCONF Link siehe Moodle. Vortragende: Dr. Mäck, Mirjam"
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397344",
   "exceptions": [],
-  "last_updated": "2026-04-24T20:50:06Z"
+  "further_info": "-",
+  "last_updated": "2026-04-28T09:27:17Z"
 }

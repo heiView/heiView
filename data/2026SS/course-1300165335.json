@@ -1,0 +1,32 @@
+{
+  "id": "1300165335",
+  "title": "Physics analyses in the ALICE-experiment (OberSem)",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "English (primary)",
+  "lecturers": [
+    "Reygers, Klaus",
+    "Stachel, Johanna"
+  ],
+  "organisation": "Faculty for Physics and Astronomy",
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "INF 226, Raum 01.106"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410428",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-04-28T10:08:32Z"
+}
