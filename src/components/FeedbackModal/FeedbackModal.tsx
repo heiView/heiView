@@ -256,19 +256,19 @@ export default function FeedbackModal({ open, courseId, courseTitle, onClose }: 
           {/* Upload proof */}
           <Form.Item label={<strong>Upload Proof (optional)</strong>} style={{ marginBottom: 8 }}>
             <Typography.Text type="secondary" style={{ fontSize: 12, display: 'block', marginBottom: 8 }}>
-              Screenshots, PDFs, or other documents showing the correct schedule.
+              Supported formats: JPG, JPEG, PNG, WebP, BMP, PDF.
             </Typography.Text>
             <Upload
               fileList={fileList}
               beforeUpload={beforeUpload}
               onChange={({ fileList: newList }) => setFileList(newList.slice(0, 5))}
               multiple
-              accept=".jpg,.jpeg,.png,.gif,.webp,.bmp,.tiff,.pdf"
+              accept=".jpg,.jpeg,.png,.webp,.bmp,.pdf"
               listType="text"
             >
               {fileList.length < 5 && (
                 <Button icon={<UploadOutlined />} size="small">
-                  Select files (max 5, 10MB each)
+                  Select files (max 5, 2MB each)
                 </Button>
               )}
             </Upload>
