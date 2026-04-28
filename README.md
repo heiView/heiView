@@ -34,6 +34,7 @@ Whether you're looking for a quiet room to study, or exploring courses and activ
 - **Add to Calendar**: Export any course to Google Calendar or download a standard `.ics` file compatible with Apple Calendar and Outlook.
 - **Building independent bookmarks**: Each building has its own exclusive URL. It is recommended to switch to a frequently visited building before saving the bookmark.
 - **Global cross-date search**: Supports searching all courses by any keyword. Clicking on a search result allows you to view course details and jump directly to the corresponding building and date.
+- **User Feedback**: Users can report incorrect course times or rooms directly from the course card, optionally attaching screenshots and a contact email.
 
 ### Building Catalog
 
@@ -83,6 +84,13 @@ ADMIN_USER=admin          # superadmin username (default: admin)
 ADMIN_PASS=changeme       # superadmin password (default: changeme)
 ADMIN_SECRET=dev-secret   # JWT signing secret — change this in production
 PORT=3001                 # API server port (default: 3001)
+
+# Optional — required only if you want to reply to user feedback by email
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your@gmail.com
+SMTP_PASS=your-app-password
+SMTP_FROM=heiView <your@gmail.com>  # optional, defaults to SMTP_USER
 ```
 
 If `.env` is absent, the server falls back to the defaults shown above, which is fine for local development.
@@ -104,11 +112,13 @@ npm run dev
 Open `http://localhost:5173/admin` in your browser and log in with the superadmin credentials set in `.env` (defaults: `admin` / `changeme`).
 
 The admin page allows you to:
+
 - Edit course room and building assignments for individual occurrences
 - Hide courses from the public schedule
 - Manage the building catalog (add, edit, merge, or delete buildings and rooms)
 - Create additional editor accounts
 - View the audit log of all changes made by editor accounts
+- Review user-submitted report error
 
 ### License
 
@@ -138,6 +148,7 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 - **导入个人日历**：可将任意课程导入到 Google 日历，或下载兼容苹果日历、Outlook 的标准 `.ics` 文件。
 - **建筑独立书签**：每栋建筑都有自己的专属网址，建议切换到常去的建筑后再保存书签。
 - **全局课程搜索**：支持按任意关键词搜索所有课程。点击搜索结果查看课程详情，一键跳转至对应建筑与日期。
+- **用户反馈**：用户可直接在课程卡片中提交时间或教室错误的纠错报告，支持上传截图附件与填写联系邮箱。
 
 
 ### 校园建筑数据库
@@ -186,6 +197,13 @@ ADMIN_USER=admin          # 超级管理员用户名（默认值：admin）
 ADMIN_PASS=changeme       # 超级管理员密码（默认值：changeme）
 ADMIN_SECRET=dev-secret   # JWT 签名密钥，生产环境请务必修改
 PORT=3001                 # API 服务端口（默认值：3001）
+
+# 可选 —— 仅在需要通过邮件回复用户反馈时配置
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your@gmail.com
+SMTP_PASS=your-app-password
+SMTP_FROM=heiView <your@gmail.com>  # 可选，默认使用 SMTP_USER
 ```
 
 若 `.env` 文件不存在，服务端会使用上述默认值，本地开发时无需额外配置。
@@ -207,11 +225,13 @@ npm run dev
 在浏览器中打开 `http://localhost:5173/admin`，使用 `.env` 中设置的超级管理员账号登录（默认：`admin` / `changeme`）。
 
 管理页面支持以下操作：
+
 - 编辑单个课程条目的教室与建筑信息
 - 将课程从公开课表中隐藏
 - 管理建筑数据库（新增、编辑、合并或删除建筑与教室）
 - 创建普通编辑员账号
 - 查看所有编辑员账号的操作审计日志
+- 审核用户提交的反馈
 
 ### 协议
 
