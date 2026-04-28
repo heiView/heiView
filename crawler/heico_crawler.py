@@ -1121,8 +1121,9 @@ async def main() -> None:
                 sync_meta = {
                     'lastSyncTime': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
                     'courseCount': processed_count,
+                    'currentSeason': '2026SS',
                 }
-                sync_meta_path = OUTPUT_DIR / 'sync-meta.json'
+                sync_meta_path = PROJECT_ROOT / 'data' / 'sync-meta.json'
                 sync_meta_path.write_text(json.dumps(sync_meta, indent=2), encoding='utf-8')
                 print(f'Wrote sync metadata to {sync_meta_path}')
 
@@ -1132,13 +1133,35 @@ async def main() -> None:
                 expected_filenames = {build_course_filename(cid) for cid in seen_course_ids}
                 deleted_dir = OUTPUT_DIR / 'deleted'
                 moved_count = 0
-                for path in sorted(OUTPUT_DIR.glob('course-*.json')):
-                    if path.name not in expected_filenames:
-                        deleted_dir.mkdir(parents=True, exist_ok=True)
-                        dest = deleted_dir / path.name
-                        path.rename(dest)
-                        print(f'[DELETED] {path.name} → deleted/')
-                        moved_count += 1
+                for candidate_path in sorted(OUTPUT_DIR.glob('course-*.json')):
+                    if candidate_path.name in expected_filenames:
+                        continue
+                    # Before moving, re-verify that the course URL is truly inaccessible.
+                    # This guards against false-positives caused by SPA loading failures
+                    # or transient network errors during the full crawl.
+                    detail_link: str | None = None
+                    try:
+                        existing_data = json.loads(candidate_path.read_text(encoding='utf-8'))
+                        detail_link = existing_data.get('detail_link')
+                    except Exception:
+                        pass
+
+                    if detail_link:
+                        print(f'[VERIFY] {candidate_path.name}: re-checking {detail_link}')
+                        try:
+                            verify_entry = await build_entry_from_course_url(browser, detail_link)
+                        except Exception as exc:
+                            print(f'[VERIFY] {candidate_path.name}: check error ({exc}), treating as deleted')
+                            verify_entry = None
+                        if verify_entry is not None:
+                            print(f'[VERIFY] {candidate_path.name}: still accessible, skipping deletion')
+                            continue
+
+                    deleted_dir.mkdir(parents=True, exist_ok=True)
+                    dest = deleted_dir / candidate_path.name
+                    candidate_path.rename(dest)
+                    print(f'[DELETED] {candidate_path.name} → deleted/')
+                    moved_count += 1
                 if moved_count:
                     print(f'Moved {moved_count} deleted course(s) to deleted/')
         finally:
