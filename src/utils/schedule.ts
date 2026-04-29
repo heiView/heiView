@@ -31,8 +31,8 @@ export function resolveCampusName(street: string): Campus | null {
 }
 
 export function formatCampusOptionLabel(campus: Campus) {
-  if (campus === 'Altstadt' || campus === 'Bergheim') return `${campus} Campus`
-  if (campus === 'Im Neuenheimer Feld') return 'INF Campus'
+  if (campus === 'Im Neuenheimer Feld') return 'INF'
+  if (campus === 'Mannheim & Ludwigshafen') return 'Mannheim'
   return campus
 }
 

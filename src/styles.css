@@ -28,6 +28,10 @@
   --hei-grid-strong: rgba(255, 255, 255, 0.12);
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 html,
 body,
 #root {
@@ -58,7 +62,7 @@ textarea {
 .hei-layout {
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: transparent;
 }
 
@@ -420,6 +424,8 @@ textarea {
 }
 
 .hei-timetable-head {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   height: 42px;
@@ -849,8 +855,8 @@ textarea {
 }
 
 .hei-topbar-campus {
-  flex: 0 0 180px !important;
-  width: 180px !important;
+  flex: 0 0 123px !important;
+  width: 123px !important;
 }
 
 .hei-topbar-building {

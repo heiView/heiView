@@ -359,18 +359,9 @@ function AdminApp() {
   const [feedbackEmailSending, setFeedbackEmailSending] = React.useState(false)
   // ─────────────────────────────────────────────────────────────────────────
 
-  const headerScrollRef = React.useRef<HTMLDivElement>(null)
-  const bodyScrollRef = React.useRef<HTMLDivElement>(null)
   const initializedRef = React.useRef(false)
   const campusSyncedRef = React.useRef(false)
   const topbarRef = React.useRef<HTMLElement>(null)
-
-  const handleHeaderScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    if (bodyScrollRef.current) bodyScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft
-  }
-  const handleBodyScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    if (headerScrollRef.current) headerScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft
-  }
 
   // Keep --topbar-h in sync so content isn't occluded when navbar wraps
   React.useEffect(() => {
@@ -1157,7 +1148,7 @@ function AdminApp() {
     }
   }
 
-  const timelineMinWidth = 120 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+  const timelineMinWidth = 140 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
   const isSearchMode = !loading && deferredSearch.trim().length > 0
 
   function renderCourseCard(event: TimelineEvent, room: RoomEntry, left: number, top: number, width: number, key: string) {
@@ -1402,28 +1393,7 @@ function AdminApp() {
 
               <div className="hei-board-controls-divider" />
 
-              {(!loading && !isSearchMode && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
-                <div className="hei-board-frame-header" ref={headerScrollRef} onScroll={handleHeaderScroll}>
-                  <div className="hei-timetable" aria-hidden="true" style={{ width: `max(100%, ${timelineMinWidth}px)`, borderBottomLeftRadius: 0, borderBottomRightRadius: 0, minHeight: 'auto' }}>
-                    <div className="hei-timetable-head" style={{ borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }}>
-                      <div className="hei-timetable-head-label" />
-                      <div className="hei-timetable-head-track">
-                        {Array.from({ length: TRACK_END_HOUR - TRACK_START_HOUR + 1 }, (_, i) => TRACK_START_HOUR + i).map((hour) => {
-                          if (hour > 22) return null
-                          const left = (hour - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
-                          return (
-                            <div key={hour} className="hei-hour-label" style={{ left }}>
-                              {String(hour).padStart(2, '0')}:00
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              <div className="hei-board-frame" ref={bodyScrollRef} onScroll={handleBodyScroll}>
+              <div className="hei-board-frame">
                 {loading ? (
                   <div className="hei-board-loading">
                     <Spin size="large" />
@@ -1495,7 +1465,22 @@ function AdminApp() {
                     })()}
                   </div>
                 ) : visibleRoomGroups.length > 0 ? (
-                  <div className="hei-timetable" role="table" aria-label="Course timeline" style={{ width: `max(100%, ${timelineMinWidth}px)`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
+                  <>
+                    <div className="hei-timetable-head" style={{ width: `max(100%, ${timelineMinWidth}px)` }}>
+                      <div className="hei-timetable-head-label" />
+                      <div className="hei-timetable-head-track">
+                        {Array.from({ length: TRACK_END_HOUR - TRACK_START_HOUR + 1 }, (_, i) => TRACK_START_HOUR + i).map((hour) => {
+                          if (hour > 22) return null
+                          const left = (hour - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+                          return (
+                            <div key={hour} className="hei-hour-label" style={{ left }}>
+                              {String(hour).padStart(2, '0')}:00
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </div>
+                    <div className="hei-timetable" role="table" aria-label="Course timeline" style={{ width: `max(100%, ${timelineMinWidth}px)`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
                     <div className="hei-timetable-body">
                       {visibleRoomGroups.map((group) => (
                         <div key={`floor-${group.floor}`} className="hei-floor-group">
@@ -1553,6 +1538,7 @@ function AdminApp() {
                       ))}
                     </div>
                   </div>
+                  </>
                 ) : (
                   <div className="hei-empty-state">
                     <Empty description="No course data is available for the selected date" />

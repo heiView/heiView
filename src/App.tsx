@@ -187,8 +187,7 @@ function App() {
 
   const initializedRef = React.useRef(false)
   const campusSyncedRef = React.useRef(false)
-  const headerScrollRef = React.useRef<HTMLDivElement>(null)
-  const bodyScrollRef = React.useRef<HTMLDivElement>(null)
+
   const topbarRef = React.useRef<HTMLElement>(null)
 
   React.useEffect(() => {
@@ -211,18 +210,6 @@ function App() {
     ro.observe(el)
     return () => ro.disconnect()
   }, [])
-
-  const handleHeaderScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    if (bodyScrollRef.current && bodyScrollRef.current.scrollLeft !== (e.target as HTMLDivElement).scrollLeft) {
-      bodyScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft;
-    }
-  }
-
-  const handleBodyScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    if (headerScrollRef.current && headerScrollRef.current.scrollLeft !== (e.target as HTMLDivElement).scrollLeft) {
-      headerScrollRef.current.scrollLeft = (e.target as HTMLDivElement).scrollLeft;
-    }
-  }
 
   React.useEffect(() => {
     if (buildingFromUrl) {
@@ -456,7 +443,7 @@ function App() {
   )
 
   const isSearchMode = !loading && deferredSearch.trim().length > 0
-  const timelineMinWidth = 120 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+  const timelineMinWidth = 140 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
   const isToday = selectedDate.isSame(dayjs(), 'day')
   const nowLeft = (nowMinutes - TRACK_START_HOUR * 60) * PIXELS_PER_MINUTE
   const showNowLine = isToday && nowLeft >= 0 && nowLeft <= (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
@@ -532,43 +519,9 @@ function App() {
             <section className="hei-board-card">
 
 
-            {!isSearchMode && (!loading && activeBuildingId !== 'No Information' && visibleRoomGroups.length > 0) && (
-              <div
-                className="hei-board-frame-header"
-                ref={headerScrollRef}
-                onScroll={handleHeaderScroll}
-              >
-                <div
-                  className="hei-timetable"
-                  aria-hidden="true"
-                  style={{ width: `max(100%, ${timelineMinWidth}px)`, borderBottomLeftRadius: 0, borderBottomRightRadius: 0, minHeight: 'auto' }}
-                >
-                  <div className="hei-timetable-head" style={{ borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }}>
-                    <div className="hei-timetable-head-label" />
-                    <div className="hei-timetable-head-track">
-                      {Array.from({ length: TRACK_END_HOUR - TRACK_START_HOUR + 1 }, (_, index) => TRACK_START_HOUR + index).map((hour) => {
-                        if (hour > 22) return null
-                        const left = (hour - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
-                        return (
-                          <div key={hour} className="hei-hour-label" style={{ left }}>
-                            {String(hour).padStart(2, '0')}:00
-                          </div>
-                        )
-                      })}
-                      {showNowLine && (
-                        <div className="hei-now-indicator" style={{ left: nowLeft }} />
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
 
-            <div 
-              className="hei-board-frame"
-              ref={bodyScrollRef}
-              onScroll={handleBodyScroll}
-            >
+
+            <div className="hei-board-frame">
               {loading ? (
                 <div className="hei-board-loading">
                   <Spin size="large" />
@@ -637,16 +590,34 @@ function App() {
                   })()}
                 </div>
               ) : visibleRoomGroups.length > 0 ? (
-                <div
-                  className="hei-timetable"
-                  role="table"
-                  aria-label={text.boardTitle}
-                  style={{ width: `max(100%, ${timelineMinWidth}px)`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
-                >
-                  {showNowLine && (
-                    <div className="hei-now-line" style={{ left: 140 + nowLeft }} />
-                  )}
-                  <div className="hei-timetable-body">
+                <>
+                  <div className="hei-timetable-head" style={{ width: `max(100%, ${timelineMinWidth}px)` }}>
+                    <div className="hei-timetable-head-label" />
+                    <div className="hei-timetable-head-track">
+                      {Array.from({ length: TRACK_END_HOUR - TRACK_START_HOUR + 1 }, (_, index) => TRACK_START_HOUR + index).map((hour) => {
+                        if (hour > 22) return null
+                        const left = (hour - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
+                        return (
+                          <div key={hour} className="hei-hour-label" style={{ left }}>
+                            {String(hour).padStart(2, '0')}:00
+                          </div>
+                        )
+                      })}
+                      {showNowLine && (
+                        <div className="hei-now-indicator" style={{ left: nowLeft }} />
+                      )}
+                    </div>
+                  </div>
+                  <div
+                    className="hei-timetable"
+                    role="table"
+                    aria-label={text.boardTitle}
+                    style={{ width: `max(100%, ${timelineMinWidth}px)`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
+                  >
+                    {showNowLine && (
+                      <div className="hei-now-line" style={{ left: 140 + nowLeft }} />
+                    )}
+                    <div className="hei-timetable-body">
                     {visibleRoomGroups.map((group) => (
                       <div key={`floor-${group.floor}`} className="hei-floor-group">
                         <div className="hei-floor-header">{group.floor}</div>
@@ -741,6 +712,7 @@ function App() {
                     ))}
                   </div>
                 </div>
+                </>
               ) : (
                 <div className="hei-empty-state">
                   <Empty description={text.empty} />
