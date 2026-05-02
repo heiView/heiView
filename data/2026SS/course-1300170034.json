@@ -14,7 +14,7 @@
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
+      "end_date": "2026-07-17",
       "start_time": "12:00",
       "end_time": "16:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -39,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410414",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-28T10:06:33Z"
+  "last_updated": "2026-05-02T20:22:07Z"
 }

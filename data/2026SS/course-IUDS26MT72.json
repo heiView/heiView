@@ -38,6 +38,18 @@
     {
       "day_of_week": 5,
       "start_date": "2026-05-08",
+      "end_date": "2026-05-29",
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Übungsraum (3051.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19843",
+      "room": "Übungsraum (3051.EG.019)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
       "end_date": "2026-07-24",
       "start_time": "16:00",
       "end_time": "17:30",
@@ -46,10 +58,22 @@
       "room": "Übungsraum (3051.EG.019)",
       "building": "Plöck 57a, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-05",
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "location": "Übungsraum (3051.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19843",
+      "room": "Übungsraum (3051.EG.019)",
+      "building": "Plöck 57a, Ground floor",
+      "note": "Raum wird heute für die MUN Konferenz genutzt."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417397",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:46:31Z"
+  "last_updated": "2026-05-02T20:38:43Z"
 }

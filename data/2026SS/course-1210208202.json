@@ -10,11 +10,24 @@
     "Warken, Sophie Friederike"
   ],
   "organisation": "Institute of Earth Sciences",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-06-15",
+  "end_date": "2026-06-15",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-15",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "Ort/Zeit noch nicht bekannt.",
+      "location_link": null,
+      "room": "Ort/Zeit noch nicht bekannt.",
+      "building": null,
+      "note": "Weitere Termine werden von den Dozierenden bekannt gegeben."
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418285",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:40:17Z"
+  "last_updated": "2026-05-02T20:42:12Z"
 }

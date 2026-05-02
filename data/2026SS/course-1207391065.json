@@ -17,22 +17,10 @@
       "end_date": "2026-05-08",
       "start_time": "13:00",
       "end_time": "18:00",
-      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
-      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
-      "building": "Voßstraße 2, 1st floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-06-12",
-      "end_date": "2026-06-12",
-      "start_time": "13:00",
-      "end_time": "18:00",
-      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
-      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
-      "building": "Voßstraße 2, 1st floor",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
       "note": null
     },
     {
@@ -41,6 +29,18 @@
       "end_date": "2026-05-09",
       "start_time": "09:00",
       "end_time": "17:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "13:00",
+      "end_time": "18:00",
       "location": "Übungsraum 010.01.02 (4010+4.01.002)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
       "room": "Übungsraum 010.01.02 (4010+4.01.002)",
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411103",
   "exceptions": [],
   "further_info": "kindly also register via: elvira.graner@gmail.com",
-  "last_updated": "2026-04-21T10:16:22Z"
+  "last_updated": "2026-05-02T20:03:25Z"
 }

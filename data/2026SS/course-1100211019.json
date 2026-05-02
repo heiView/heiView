@@ -37,6 +37,18 @@
     },
     {
       "day_of_week": 5,
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "SR 13 (6205.05.104)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14010",
+      "room": "SR 13 (6205.05.104)",
+      "building": "Im Neuenheimer Feld 205, 5th floor",
+      "note": "Achtung: Am Freitag 8.5. einmalig im Konferenzraum im 5. OG im Mathematikon."
+    },
+    {
+      "day_of_week": 5,
       "start_date": "2026-05-15",
       "end_date": "2026-07-24",
       "start_time": "11:00",
@@ -51,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414001",
   "exceptions": [],
   "further_info": "Die Einteilung der Gruppen erfolgt in Müsli.",
-  "last_updated": "2026-04-24T19:49:49Z"
+  "last_updated": "2026-05-02T20:41:55Z"
 }

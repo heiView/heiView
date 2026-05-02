@@ -15,7 +15,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "HS 2 (6227.EG.402)",
@@ -27,7 +27,7 @@
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
+      "end_date": "2026-07-17",
       "start_time": "11:15",
       "end_time": "12:00",
       "location": "HS 2 (6227.EG.402)",
@@ -100,5 +100,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410275",
   "exceptions": [],
   "further_info": "online information e-learning course Students should summarize their answers to the exercises (graphs, values, text answers, etc) and provide them to the tutors (by sending a file, preferably PDF, or using our web facilities). Recommended tool to prepare the tutorial work and assignments is an jupyter (ipython) notebook. You may use any software and programming language to write and create your files and codes as long as at the end there is one file (most preferable: PDF) with the required content (including source files if applicable). But note that for the use of other very exotic or unusual programming languages, there may be less or no support available from the tutors. Students should also send their computer source programs to the tutor so they can be checked. We encourage to work in groups of two and submit the homework as group. One document per group is sufficient, but the names of all group members need to be included. Homework submitted by groups of three or more is not permitted. .",
-  "last_updated": "2026-04-21T10:21:35Z"
+  "last_updated": "2026-05-02T20:08:27Z"
 }

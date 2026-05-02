@@ -17,10 +17,10 @@
       "end_date": "2026-05-18",
       "start_time": "19:30",
       "end_time": "21:00",
-      "location": "Übungsraum (3120.01.117)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
-      "room": "Übungsraum (3120.01.117)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
     {
@@ -29,10 +29,10 @@
       "end_date": "2026-07-20",
       "start_time": "19:30",
       "end_time": "21:00",
-      "location": "Übungsraum (3120.01.117)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
-      "room": "Übungsraum (3120.01.117)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
     {
@@ -41,15 +41,15 @@
       "end_date": "2026-07-22",
       "start_time": "19:30",
       "end_time": "21:00",
-      "location": "Übungsraum (3120.01.117)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
-      "room": "Übungsraum (3120.01.117)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413733",
   "exceptions": [],
   "further_info": "Recommended Reading Witam! aktuell A1. Der Polnischkurs. Kursbuch + Arbeitsbuch + Audio-CD. Danuta Malota. Hueber Verlag. ISBN-13: 9783191053697",
-  "last_updated": "2026-04-21T10:36:42Z"
+  "last_updated": "2026-05-02T20:24:40Z"
 }

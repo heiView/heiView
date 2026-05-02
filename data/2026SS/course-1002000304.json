@@ -22,10 +22,22 @@
       "room": "ÜR B (3010.EG.019)",
       "building": "Hauptstraße 47-51, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-03",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "UR C (3010.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23100",
+      "room": "UR C (3010.EG.020)",
+      "building": "Hauptstraße 47-51, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408133",
   "exceptions": [],
   "further_info": "Sollte das Studium aufgrund individueller Bedürfnisse oder Beeinträchtigungen für Sie mit besonderen Herausforderungen verbunden sein, informieren Sie bitte die zuständige Lehrperson vorab bzw. zu Beginn der Lehrveranstaltung. Sehr gerne können wir dann gemeinsam besprechen, wie eine barrierefreie Teilnahme an der Lehrveranstaltung sowie das Erbringen von Prüfungsleistungen gestaltet werden kann. Für Fragen zur barrierefreien Lehre, zum Nachteilsausgleich bei Prüfungen sowie zu Unterstützungsmöglichkeiten an der Universität Heidelberg stehen Ihnen auch Susanne Kemmer und Julia Heyne (Studienberaterinnen) und Christoph Schlomach (Beauftragter für Studierende mit Behinderung und chronischer Erkrankung), gerne zur Verfügung. E-Mail: inklusiv.studieren@uni-heidelberg.de",
-  "last_updated": "2026-04-21T10:43:40Z"
+  "last_updated": "2026-05-02T20:31:38Z"
 }

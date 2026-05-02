@@ -5,7 +5,8 @@
   "ects_credits": null,
   "course_languages": "English",
   "lecturers": [
-    "Johannes, Jan"
+    "Johannes, Jan",
+    "Siebel, Maximilian"
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-14",
@@ -27,5 +28,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414878",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:33:43Z"
+  "last_updated": "2026-05-02T20:20:47Z"
 }

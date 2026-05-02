@@ -24,6 +24,18 @@
       "note": "Der Termin am 15.04.26 findet krankheitsbedingt online statt. Hier der Teilnahmelink:"
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "location": "Seminarraum (2065.03.314)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
+      "room": "Seminarraum (2065.03.314)",
+      "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-07-03",
       "end_date": "2026-07-03",
@@ -75,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417159",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-24T19:35:13Z"
+  "last_updated": "2026-05-02T20:28:04Z"
 }

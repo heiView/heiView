@@ -9,12 +9,12 @@
   ],
   "organisation": "Institute of Geography",
   "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-16",
   "weeks": [
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-16",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "HS 1 (6308.EG.001)",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413858",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:39:11Z"
+  "last_updated": "2026-05-02T20:44:22Z"
 }

@@ -15,7 +15,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "Hörsaal (8022.EG.005)",
@@ -40,5 +40,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410317",
   "exceptions": [],
   "further_info": "Recommended Reading s. Module Handbook",
-  "last_updated": "2026-04-21T10:22:07Z"
+  "last_updated": "2026-05-02T20:08:56Z"
 }

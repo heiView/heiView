@@ -9,7 +9,7 @@
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-20",
-  "end_date": "2026-04-20",
+  "end_date": "2026-07-31",
   "weeks": [
     {
       "day_of_week": 1,
@@ -22,10 +22,58 @@
       "room": "Besprechung/Aufenthalt (6205.EG.200)",
       "building": "Im Neuenheimer Feld 205, Ground floor",
       "note": "Vorbesprechung!"
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-05-23",
+      "end_date": "2026-05-23",
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "location": "SR 3 (6205.03.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13368",
+      "room": "SR 3 (6205.03.101)",
+      "building": "Im Neuenheimer Feld 205, 3rd floor",
+      "note": "Treffpunkt am Mathematikon Eingang südwest!"
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-06-06",
+      "end_date": "2026-06-06",
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "location": "SR 3 (6205.03.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13368",
+      "room": "SR 3 (6205.03.101)",
+      "building": "Im Neuenheimer Feld 205, 3rd floor",
+      "note": "Treffpunkt am Mathematikon Eingang südwest!"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "SR 5 (6205.04.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13686",
+      "room": "SR 5 (6205.04.101)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Zwischenpräsentationen"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-31",
+      "end_date": "2026-07-31",
+      "start_time": "10:15",
+      "end_time": "11:30",
+      "location": "SR 5 (6205.04.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13686",
+      "room": "SR 5 (6205.04.101)",
+      "building": "Im Neuenheimer Feld 205, 4th floor",
+      "note": "Abschlusspräsentationen"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414423",
   "exceptions": [],
   "further_info": "Studierende melden sich bitte beim Dozenten Daniel Wunderlich <wunderlich@informatik.uni-heidelberg.de> an.",
-  "last_updated": "2026-04-21T09:54:51Z"
+  "last_updated": "2026-05-02T19:42:41Z"
 }

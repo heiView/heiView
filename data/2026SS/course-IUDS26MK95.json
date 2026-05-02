@@ -38,7 +38,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-23",
-      "end_date": "2026-04-23",
+      "end_date": "2026-05-07",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "Konferenzsaal (KS II) (3052.EG.053)",
@@ -75,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416911",
   "exceptions": [],
   "further_info": "Recommended Reading Wird im Kurs mitgeteilt. Bevilacqua, Lorenzo (2009). \"The Position of the Verb in Germanic Languages and Simultaneous interpretation.\" In: Theinterpreters' Newsletter n. 14/2009, Trieste. Kalina, Sylvia (1998). \"Strategische Prozesse beim Dolmetschen. Theoretische Grundlagen, empirische Untersuchungen,didaktische Konsequenzen.\" Language in Performance Bd. 18. Tübingen: Gunter Narr.",
-  "last_updated": "2026-04-21T10:45:09Z"
+  "last_updated": "2026-05-02T20:33:03Z"
 }

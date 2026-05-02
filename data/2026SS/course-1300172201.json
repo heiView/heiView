@@ -9,12 +9,12 @@
   ],
   "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-14",
-  "end_date": "2026-07-24",
+  "end_date": "2026-07-22",
   "weeks": [
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
+      "end_date": "2026-07-14",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -26,7 +26,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-16",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -38,7 +38,7 @@
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
+      "end_date": "2026-07-17",
       "start_time": "14:15",
       "end_time": "16:00",
       "location": "HS 1 (6227.EG.403)",
@@ -111,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410215",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:51:08Z"
+  "last_updated": "2026-05-02T19:38:34Z"
 }

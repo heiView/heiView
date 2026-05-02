@@ -8,12 +8,12 @@
     "Gerhard, Ulrike"
   ],
   "organisation": "Institute of Geography",
-  "start_date": "2026-04-13",
+  "start_date": "2026-05-11",
   "end_date": "2026-07-20",
   "weeks": [
     {
       "day_of_week": 1,
-      "start_date": "2026-04-13",
+      "start_date": "2026-05-11",
       "end_date": "2026-07-20",
       "start_time": "14:00",
       "end_time": "16:00",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414015",
   "exceptions": [],
   "further_info": "Beginn: 20. April 2026 Obligatorische Veranstaltung für Studierende, die in der AG Nordamerika & Stadtgeographie eine Abschlussarbeit verfassen.",
-  "last_updated": "2026-04-21T10:12:17Z"
+  "last_updated": "2026-05-02T19:59:39Z"
 }

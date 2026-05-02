@@ -1,0 +1,103 @@
+{
+  "id": "020000077c",
+  "title": "Internationale Streitbeilegung",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Wolfrum, Rüdiger"
+  ],
+  "organisation": "Faculty of Law",
+  "start_date": "2026-05-18",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 04a (2170.EG.044)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20442",
+      "room": "HS 04a (2170.EG.044)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-20",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 04a (2170.EG.044)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20442",
+      "room": "HS 04a (2170.EG.044)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 03 (2170.EG.048)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20445",
+      "room": "HS 03 (2170.EG.048)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-02",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 03 (2170.EG.048)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20445",
+      "room": "HS 03 (2170.EG.048)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 03 (2170.EG.048)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20445",
+      "room": "HS 03 (2170.EG.048)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 04 (2170.EG.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20319",
+      "room": "HS 04 (2170.EG.037)",
+      "building": "HS 04, Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-01",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419137",
+  "exceptions": [],
+  "further_info": "Recommended Reading Zum IGH: von Arnauld, Völkerrecht, § 6 B; A.Peters, Allgemeines Völkerrecht, 13. Kapitel S. Rosenne, International Court of Justice, MPEPIL. Vol. V, p. 459 Zimmermann et. al, The Statute of the International Court of Justice, Zu ITLOS P.C. Rao and Ph. Gautier, The Rules of the International Tribunal for the Law of the Sea: A Commentary, 2006 Zu Arbitration: Charles H. Brower II. Arbitration, MPEPIL Vol. I, p. 531. Eher allgemein: Orrego Vicuna, International law in search of rebalance, 2015, (Wolfrum/Wood, eds.), Brill Cheng, Cia-Jui, New trends in international law, Festschrift Owada, 2024",
+  "last_updated": "2026-05-02T20:08:07Z"
+}

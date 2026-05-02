@@ -9,12 +9,12 @@
   ],
   "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-15",
-  "end_date": "2026-07-22",
+  "end_date": "2026-07-15",
   "weeks": [
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410374",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-28T10:05:54Z"
+  "last_updated": "2026-05-02T20:21:25Z"
 }

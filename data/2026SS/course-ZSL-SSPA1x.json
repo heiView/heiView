@@ -203,9 +203,9 @@
       "end_date": "2026-07-21",
       "start_time": "19:45",
       "end_time": "21:15",
-      "location": "Übungsraum (3120.01.107)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22732",
-      "room": "Übungsraum (3120.01.107)",
+      "location": "Übungsraum (3120.01.117)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
+      "room": "Übungsraum (3120.01.117)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     },
@@ -215,9 +215,9 @@
       "end_date": "2026-05-07",
       "start_time": "19:45",
       "end_time": "21:15",
-      "location": "Übungsraum (3120.01.107)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22732",
-      "room": "Übungsraum (3120.01.107)",
+      "location": "Übungsraum (3120.01.117)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
+      "room": "Übungsraum (3120.01.117)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     },
@@ -227,9 +227,9 @@
       "end_date": "2026-05-28",
       "start_time": "19:45",
       "end_time": "21:15",
-      "location": "Übungsraum (3120.01.107)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22732",
-      "room": "Übungsraum (3120.01.107)",
+      "location": "Übungsraum (3120.01.117)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
+      "room": "Übungsraum (3120.01.117)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     },
@@ -239,9 +239,9 @@
       "end_date": "2026-07-23",
       "start_time": "19:45",
       "end_time": "21:15",
-      "location": "Übungsraum (3120.01.107)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22732",
-      "room": "Übungsraum (3120.01.107)",
+      "location": "Übungsraum (3120.01.117)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
+      "room": "Übungsraum (3120.01.117)",
       "building": "Plöck 79-81, 1st floor",
       "note": null
     },
@@ -273,5 +273,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413943",
   "exceptions": [],
   "further_info": "Recommended Reading Universo.ele intensivo A1/A2. Spanisch für Studierende. Kurs- und Arbeitsbuch plus interaktive Version. ISBN: 978-3-19-154333-4",
-  "last_updated": "2026-04-23T13:03:26Z"
+  "last_updated": "2026-05-02T20:34:20Z"
 }

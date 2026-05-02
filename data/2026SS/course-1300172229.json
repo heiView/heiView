@@ -38,7 +38,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-20",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "16:15",
       "end_time": "18:00",
       "location": "Kleiner Hörsaal (kHS) (8010.02.221)",
@@ -51,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410315",
   "exceptions": [],
   "further_info": "online information course documents",
-  "last_updated": "2026-04-21T10:22:01Z"
+  "last_updated": "2026-05-02T20:08:48Z"
 }

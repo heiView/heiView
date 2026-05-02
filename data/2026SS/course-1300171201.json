@@ -9,12 +9,12 @@
   ],
   "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-24",
+  "end_date": "2026-07-23",
   "weeks": [
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "14:15",
       "end_time": "16:00",
       "location": "HS 2 (6227.EG.402)",
@@ -26,7 +26,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "HS 2 (6227.EG.402)",
@@ -38,7 +38,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "09:15",
       "end_time": "11:00",
       "location": "HS 2 (6308.EG.002)",
@@ -86,7 +86,7 @@
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
+      "end_date": "2026-07-17",
       "start_time": "11:15",
       "end_time": "13:00",
       "location": "HS 2 (6308.EG.002)",
@@ -111,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410339",
   "exceptions": [],
   "further_info": "further information additional information Die Vorlesung findet als Block statt: 5 Stunden pro Woche Vorlesung bis Ende Juni, Montag 14-17 Uhr, Mittwoch 9-11 Uhr",
-  "last_updated": "2026-04-28T10:01:55Z"
+  "last_updated": "2026-05-02T20:17:29Z"
 }

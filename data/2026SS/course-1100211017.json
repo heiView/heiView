@@ -5,7 +5,8 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "Joos, Felix Claudius"
+    "Joos, Felix Claudius",
+    "Smith, Zachary Voyne"
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-13",
@@ -99,5 +100,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414005",
   "exceptions": [],
   "further_info": "Für die Tutorien in Müsli registrieren.",
-  "last_updated": "2026-04-21T11:43:07Z"
+  "last_updated": "2026-05-02T20:41:56Z"
 }

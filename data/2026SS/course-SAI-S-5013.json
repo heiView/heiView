@@ -15,17 +15,17 @@
       "day_of_week": 2,
       "start_date": "2026-04-14",
       "end_date": "2026-07-21",
-      "start_time": "14:00",
-      "end_time": "16:00",
-      "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11573",
-      "room": "Übungsraum 010.00.07 (4010+4.EG.007)",
-      "building": "Voßstraße 2, Ground floor",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407717",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:47:46Z"
+  "last_updated": "2026-05-02T20:36:48Z"
 }

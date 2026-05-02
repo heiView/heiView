@@ -17,15 +17,15 @@
       "end_date": "2026-07-21",
       "start_time": "10:15",
       "end_time": "11:45",
-      "location": "Übungsraum (4310.EG.024)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
-      "room": "Übungsraum (4310.EG.024)",
-      "building": "Bergheimer Straße 58, Ground floor",
+      "location": "Übungsraum (4310.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
+      "room": "Übungsraum (4310.02.005)",
+      "building": "Bergheimer Straße 58, 2nd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413074",
   "exceptions": [],
   "further_info": "Anrechenbar für: - BA-M 9.1 oder 9.3: 2 ECTS (unbenotet), 6 ECTS (benotet) - BA-B 6: 2 ECTS (unbenotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich.",
-  "last_updated": "2026-04-21T10:10:13Z"
+  "last_updated": "2026-05-02T19:57:29Z"
 }

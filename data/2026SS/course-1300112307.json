@@ -9,12 +9,12 @@
   ],
   "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-17",
-  "end_date": "2026-07-24",
+  "end_date": "2026-07-17",
   "weeks": [
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
+      "end_date": "2026-07-17",
       "start_time": "14:00",
       "end_time": "17:00",
       "location": "HS 2 (6227.EG.402)",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410458",
   "exceptions": [],
   "further_info": "Recommended Reading Literatur wird jeweils themenspezifisch vorgestellt. https://blog.mpifr-bonn.mpg.de/silkebritzen/ https://blog.mpifr-bonn.mpg.de/silkebritzen/vorlesung-universitat-heidelberg/",
-  "last_updated": "2026-04-21T10:00:46Z"
+  "last_updated": "2026-05-02T19:48:27Z"
 }

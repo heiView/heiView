@@ -9,7 +9,7 @@
   ],
   "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-15",
-  "end_date": "2026-04-29",
+  "end_date": "2026-07-22",
   "weeks": [
     {
       "day_of_week": 3,
@@ -22,10 +22,22 @@
       "room": "Unterrichtsraum (3051.U1.109)",
       "building": "Plöck 57a, Lower level 1",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-07-22",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Übungsraum (3030.01.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28144",
+      "room": "Übungsraum (3030.01.006)",
+      "building": "Hauptstraße 52, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416882",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-28T10:10:53Z"
+  "last_updated": "2026-05-02T20:26:13Z"
 }

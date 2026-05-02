@@ -17,15 +17,27 @@
       "end_date": "2026-07-21",
       "start_time": "10:15",
       "end_time": "13:45",
-      "location": "Übungsraum (4310.02.005)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
-      "room": "Übungsraum (4310.02.005)",
-      "building": "Bergheimer Straße 58, 2nd floor",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-07-14",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413053",
   "exceptions": [],
   "further_info": "Teil 2 Anrechenbar für: - BA-M 5: 12 ECTS (benotet)",
-  "last_updated": "2026-04-21T10:37:00Z"
+  "last_updated": "2026-05-02T20:24:57Z"
 }

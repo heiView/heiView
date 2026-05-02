@@ -14,7 +14,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-13",
       "start_time": "14:15",
       "end_time": "16:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -26,7 +26,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "14:15",
       "end_time": "16:00",
       "location": "Großer Hörsaal (gHS) (8010.02.008X)",
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412785",
   "exceptions": [],
   "further_info": "Recommended Reading Literature: - SH Strogatz, Nonlinear dynamics and chaos, Westview 1994 - Cross M C and Hohenberg P C, Rev. Mod. Phys. 1993. - Cross M C and Greenside H, Pattern formation and dynamics in nonequilibrium systems (Cambridge, Cambridge Univ. Press, 2009).",
-  "last_updated": "2026-04-21T10:33:52Z"
+  "last_updated": "2026-05-02T20:20:56Z"
 }

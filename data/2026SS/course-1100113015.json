@@ -5,7 +5,9 @@
   "ects_credits": null,
   "course_languages": "English",
   "lecturers": [
-    "Johannes, Jan"
+    "Johannes, Jan",
+    "Neubert, Bianca Marie",
+    "Stein, Henning Christian"
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-15",
@@ -39,5 +41,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414033",
   "exceptions": [],
   "further_info": "Für die Tutorien in MÜSLI registrieren.",
-  "last_updated": "2026-04-21T11:40:13Z"
+  "last_updated": "2026-05-02T20:42:08Z"
 }

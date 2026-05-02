@@ -8,11 +8,24 @@
     "Jaw, Cheng-Wen"
   ],
   "organisation": "hei_INNOVATION",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-05-19",
+  "end_date": "2026-05-19",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-19",
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "hei_INNOVATION Studio, Im Neuenheimer Feld 370"
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419151",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:20:42Z"
+  "last_updated": "2026-05-02T20:07:38Z"
 }
