@@ -23,10 +23,17 @@ function loadNoteLocationMap() {
   }
 }
 
-function resolveNoteToLocation(note, entries) {
+function resolveNoteToLocation(note, entries, organisation) {
   if (!note || !entries.length) return null;
   const trimmedLower = note.trim().toLowerCase();
+  const orgLower = (organisation || '').trim().toLowerCase();
   for (const entry of entries) {
+    // If the entry has an organisation filter, only match courses whose organisation
+    // contains the entry's organisation as a substring (case-insensitive).
+    if (entry.organisation) {
+      const entryOrgLower = entry.organisation.trim().toLowerCase();
+      if (!orgLower.includes(entryOrgLower) && !entryOrgLower.includes(orgLower)) continue;
+    }
     const matchType = entry.match || 'exact';
     const patterns = Array.isArray(entry.notes) ? entry.notes : [];
     if (matchType === 'exact') {
@@ -404,8 +411,9 @@ function main() {
         const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
         const isVagueBuilding = !resolvedBuilding;
         if (isVagueRoom && isVagueBuilding) {
-          const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap))
-            || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap));
+          const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation))
+            || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation))
+            || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap, payload.organisation));
           if (mapped) {
             resolvedRoom = mapped.room;
             resolvedBuilding = mapped.building;
@@ -625,8 +633,9 @@ function syncSingleCourse(courseId) {
       const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
       const isVagueBuilding = !resolvedBuilding;
       if (isVagueRoom && isVagueBuilding) {
-        const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap))
-          || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap));
+        const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation))
+          || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation))
+          || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap, payload.organisation));
         if (mapped) { resolvedRoom = mapped.room; resolvedBuilding = mapped.building; }
       }
 

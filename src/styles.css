@@ -647,6 +647,14 @@ textarea {
     gap: 8px;
   }
 
+  /* Shrink building selector so brand-cluster fits within the mobile viewport
+     and the dropdown trigger doesn't extend beyond the screen edge. */
+  .hei-topbar-building {
+    flex: 0 1 140px !important;
+    width: 140px !important;
+    min-width: 100px !important;
+  }
+
   .hei-topbar-date {
     width: 150px;
   }
@@ -843,6 +851,19 @@ textarea {
 /* Adjust dropdown height so it doesn't force a scroll immediately */
 .hei-building-dropdown-multi .rc-virtual-list-holder {
   max-height: 60vh !important;
+}
+
+/* Mobile: pin the building dropdown to the right edge of the viewport so it
+   never extends beyond the screen and causes a document-width overflow that
+   shifts the fixed navbar. The left value injected by rc-align is overridden;
+   the top value (vertical placement) is preserved. */
+@media (max-width: 768px) {
+  .hei-building-dropdown-multi {
+    right: 0 !important;
+    left: auto !important;
+    width: min(300px, 96vw) !important;
+    min-width: 200px !important;
+  }
 }
 
 .hei-campus-building-row {

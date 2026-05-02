@@ -252,6 +252,7 @@ function AdminApp() {
   const [noteMapPattern, setNoteMapPattern] = React.useState('')
   const [noteMapOriginal, setNoteMapOriginal] = React.useState('')
   const [noteMapMatchType, setNoteMapMatchType] = React.useState<'exact' | 'contains'>('exact')
+  const [noteMapOrganisation, setNoteMapOrganisation] = React.useState('')
   const [editForm] = Form.useForm()
   const [buildingEditState, setBuildingEditState] = React.useState<BuildingEditState | null>(null)
   const [buildingEditSaving, setBuildingEditSaving] = React.useState(false)
@@ -1101,6 +1102,25 @@ function AdminApp() {
     setNoteMapOriginal(note.trim())
     setNoteMapPattern(note.trim())
     setNoteMapMatchType('exact')
+    setNoteMapOrganisation((editFileState.data.organisation as string) || '')
+    setNoteMapModalOpen(true)
+  }
+
+  async function handleAddLocationToNoteMap() {
+    if (!editFileState || editFileState.weekIndex < 0) return
+    const values = editForm.getFieldsValue()
+    const location = (values.week_location as string) || null
+    if (!location) { void message.warning('The Location field is empty — enter a value to map.'); return }
+    const room = (values.week_room as string) || null
+    const floorArr = Array.isArray(values.week_floor) ? values.week_floor as string[] : []
+    const floor = floorArr[0] ?? (typeof values.week_floor === 'string' ? values.week_floor : '')
+    let building = (values.week_building as string) || null
+    if (building && floor) building = `${building}, ${floor}`
+    if (!room || !building) { void message.warning('Please set a room and building first.'); return }
+    setNoteMapOriginal(location.trim())
+    setNoteMapPattern(location.trim())
+    setNoteMapMatchType('exact')
+    setNoteMapOrganisation((editFileState.data.organisation as string) || '')
     setNoteMapModalOpen(true)
   }
 
@@ -1118,6 +1138,7 @@ function AdminApp() {
     setNoteMapOriginal(furtherInfo.trim())
     setNoteMapPattern(furtherInfo.trim())
     setNoteMapMatchType('contains')
+    setNoteMapOrganisation((editFileState.data.organisation as string) || '')
     setNoteMapModalOpen(true)
   }
 
@@ -1135,7 +1156,7 @@ function AdminApp() {
       const res = await adminFetch('/api/admin/note-location-map', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ note: noteMapPattern.trim(), room, building, match: noteMapMatchType }),
+        body: JSON.stringify({ note: noteMapPattern.trim(), room, building, match: noteMapMatchType, organisation: noteMapOrganisation.trim() || undefined }),
       })
       const result = await res.json()
       if (!res.ok) { void message.error(result.error || 'Failed to update note-location-map'); return }
@@ -1764,6 +1785,15 @@ function AdminApp() {
                 <Form.Item name="week_location" label="Location (raw string, optional override)">
                   <Input placeholder="Leave empty to keep original" />
                 </Form.Item>
+                <Button
+                  size="small"
+                  loading={noteMapSaving}
+                  style={{ marginTop: -8, marginBottom: 16 }}
+                  onClick={handleAddLocationToNoteMap}
+                  title="Add the Location field value as a mapping key in note-location-map.json so courses with this text in their note or location fields auto-resolve to this room/building"
+                >
+                  Add to Location Map
+                </Button>
                 <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 16, fontSize: 12 }}>
                   Saved to <code>overrides/course-{editFileState.courseId}.json</code> and synced to SQLite automatically.
                 </Typography.Text>
@@ -1781,21 +1811,11 @@ function AdminApp() {
                   </Form.Item>
                 )}
                 <Form.Item style={{ marginBottom: 0 }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
-                    <Button
-                      icon={<PushpinOutlined />}
-                      loading={noteMapSaving}
-                      onClick={handleAddToNoteMap}
-                      title="Add the note text of this occurrence as a mapping key in note-location-map.json so other courses with the same note auto-resolve to this room/building"
-                    >
-                      Add note to map
+                  <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: 8 }}>
+                    <Button onClick={() => setEditFileState(null)}>Cancel</Button>
+                    <Button type="primary" htmlType="submit" loading={editFileSaving || batchEditSaving}>
+                      {batchEditChecked ? 'Save to all matching' : 'Save to overrides'}
                     </Button>
-                    <Space>
-                      <Button onClick={() => setEditFileState(null)}>Cancel</Button>
-                      <Button type="primary" htmlType="submit" loading={editFileSaving || batchEditSaving}>
-                        {batchEditChecked ? 'Save to all matching' : 'Save to overrides'}
-                      </Button>
-                    </Space>
                   </div>
                 </Form.Item>
               </Form>
@@ -1852,6 +1872,18 @@ function AdminApp() {
               ]}
               style={{ width: '100%' }}
             />
+          </div>
+          <div style={{ marginTop: 12 }}>
+            <Typography.Text strong style={{ display: 'block', marginBottom: 4 }}>Organisation (optional)</Typography.Text>
+            <Input
+              value={noteMapOrganisation}
+              onChange={e => setNoteMapOrganisation(e.target.value)}
+              placeholder="Leave blank to match any organisation"
+              allowClear
+            />
+            <Typography.Text type="secondary" style={{ fontSize: 12, display: 'block', marginTop: 4 }}>
+              When set, this mapping only applies to courses whose organisation contains this string (case-insensitive).
+            </Typography.Text>
           </div>
         </Modal>
 

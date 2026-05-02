@@ -1134,15 +1134,16 @@ function createApp() {
 
   // ── Note-Location Map ─────────────────────────────────────────────────────
   // POST /api/admin/note-location-map
-  // Add a note→room/building mapping. If an entry with the same room+building
+  // Add a note→room/building mapping. If an entry with the same room+building+organisation
   // already exists, the note is appended to its notes array. Otherwise a new
   // entry is created. All courses containing the note in any week are re-synced.
   app.post('/api/admin/note-location-map', requireAdmin, (req, res) => {
-    const { note, room, building, match: matchType } = req.body || {};
+    const { note, room, building, match: matchType, organisation } = req.body || {};
     if (!note || typeof note !== 'string') { res.status(400).json({ error: 'note required' }); return; }
     if (!room || typeof room !== 'string') { res.status(400).json({ error: 'room required' }); return; }
     if (!building || typeof building !== 'string') { res.status(400).json({ error: 'building required' }); return; }
     const resolvedMatchType = matchType === 'contains' ? 'contains' : 'exact';
+    const trimmedOrganisation = (typeof organisation === 'string' ? organisation.trim() : '') || '';
 
     // Read current map
     let mapData = { _comment: 'Auto-generated from overrides. \'match\' can be \'exact\' or \'contains\'. Edit manually as needed.', entries: [] };
@@ -1157,9 +1158,10 @@ function createApp() {
     const trimmedRoom = room.trim();
     const trimmedBuilding = building.trim();
 
-    // Find existing entry with same room + building
+    // Find existing entry with same room + building + organisation
     const existingIdx = mapData.entries.findIndex(
-      e => e.room === trimmedRoom && e.building === trimmedBuilding
+      e => e.room === trimmedRoom && e.building === trimmedBuilding &&
+           (e.organisation || '') === trimmedOrganisation
     );
     let isNew = false;
     if (existingIdx >= 0) {
@@ -1170,7 +1172,9 @@ function createApp() {
       }
       entry.match = resolvedMatchType;
     } else {
-      mapData.entries.push({ match: resolvedMatchType, notes: [trimmedNote], room: trimmedRoom, building: trimmedBuilding });
+      const newEntry = { match: resolvedMatchType, notes: [trimmedNote], room: trimmedRoom, building: trimmedBuilding };
+      if (trimmedOrganisation) newEntry.organisation = trimmedOrganisation;
+      mapData.entries.push(newEntry);
       isNew = true;
     }
 
@@ -1189,9 +1193,12 @@ function createApp() {
       try { data = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) { continue; }
       const weeks = Array.isArray(data.weeks) ? data.weeks : [];
       const hasNote = weeks.some(w => {
-        if (!w.note) return false;
-        const wNote = w.note.trim().toLowerCase();
-        return resolvedMatchType === 'contains' ? wNote.includes(trimmedNoteLower) : wNote === trimmedNoteLower;
+        const wNote = (w.note || '').trim().toLowerCase();
+        const wLocation = (w.location || '').trim().toLowerCase();
+        if (resolvedMatchType === 'contains') {
+          return (wNote && wNote.includes(trimmedNoteLower)) || (wLocation && wLocation.includes(trimmedNoteLower));
+        }
+        return wNote === trimmedNoteLower || wLocation === trimmedNoteLower;
       });
       const hasFurtherInfo = !hasNote && data.further_info && (() => {
         const fi = data.further_info.trim().toLowerCase();
@@ -1201,7 +1208,7 @@ function createApp() {
       try { syncSingleCourse(courseId); syncedIds.push(courseId); } catch (e) { console.error(`[note-map] sync failed for ${courseId}:`, e.message); }
     }
 
-    audit(req, 'note_location_map', null, `Added note mapping: "${trimmedNote}" → room "${trimmedRoom}", building "${trimmedBuilding}" (synced ${syncedIds.length} courses)`, { note: trimmedNote, room: trimmedRoom, building: trimmedBuilding, isNew, syncedCourseIds: syncedIds });
+    audit(req, 'note_location_map', null, `Added note mapping: "${trimmedNote}" → room "${trimmedRoom}", building "${trimmedBuilding}"${trimmedOrganisation ? `, organisation "${trimmedOrganisation}"` : ''} (synced ${syncedIds.length} courses)`, { note: trimmedNote, room: trimmedRoom, building: trimmedBuilding, organisation: trimmedOrganisation || null, isNew, syncedCourseIds: syncedIds });
     res.json({ ok: true, isNew, syncedCourses: syncedIds.length });
   });
   // ────────────────────────────────────────────────────────────────────────
