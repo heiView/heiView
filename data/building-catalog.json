@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-20T18:08:56.882Z",
+  "updatedAt": "2026-05-02T23:33:29.150Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -9500,38 +9500,6 @@
       ],
       "rooms": [],
       "notes": ""
-    },
-    {
-      "id": "bld-other-204-haus-zum-riesen-45",
-      "street": "204 Haus zum Riesen (45)",
-      "displayName": "204 Haus zum Riesen (45)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-204-haus-zum-riesen-45::rm-204-haus-zum-riesen-45",
-          "name": "204 Haus zum Riesen (45)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-a2-08-altbau",
-      "street": "A2.08 (Altbau)",
-      "displayName": "A2.08 (Altbau)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-a2-08-altbau::rm-a2-08-altbau",
-          "name": "A2.08 (Altbau)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
     },
     {
       "id": "bld-other-geb-c",

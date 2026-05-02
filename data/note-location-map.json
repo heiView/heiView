@@ -7,7 +7,8 @@
         "Berlinerstr. 43, 3OG, B128"
       ],
       "room": "B128",
-      "building": "Berliner Straße 43, 3rd floor"
+      "building": "Berliner Straße 43, 3rd floor",
+      "organisation": "Faculty for Physics and Astronomy"
     },
     {
       "match": "exact",
@@ -59,7 +60,8 @@
         "HdA / SR H-308"
       ],
       "room": "HdA / SR H-308",
-      "building": "Königstuhl 17"
+      "building": "Königstuhl 17",
+      "organisation": "Faculty for Physics and Astronomy"
     },
     {
       "match": "exact",
@@ -83,7 +85,8 @@
         "Hörsaal des Max-Planck-Instituts für Astronomie (MPIA); Lecture Theatre of the Max-Planck-Institute for"
       ],
       "room": "Hörsaal",
-      "building": "Königstuhl 17"
+      "building": "Königstuhl 17",
+      "organisation": "Faculty for Physics and Astronomy"
     },
     {
       "match": "exact",
@@ -255,7 +258,8 @@
         "MPIA Seminar Room (306)"
       ],
       "room": "Seminar Room (306)",
-      "building": "Königstuhl 17, Unknown floor"
+      "building": "Königstuhl 17, Unknown floor",
+      "organisation": "Faculty for Physics and Astronomy"
     },
     {
       "match": "exact",
@@ -473,7 +477,8 @@
         "ZSL Raum 220"
       ],
       "room": "Übungsraum (3120.02.220)",
-      "building": "Plöck 79-81"
+      "building": "Plöck 79-81",
+      "organisation": "The Institute for Translation and Interpreting"
     },
     {
       "match": "exact",
@@ -513,7 +518,8 @@
         "MPI Kphys / kHS"
       ],
       "room": "Kleine Hörsaal (kHS)",
-      "building": "Saupfercheckweg 1"
+      "building": "Saupfercheckweg 1",
+      "organisation": "Faculty for Physics and Astronomy"
     },
     {
       "match": "exact",
@@ -521,7 +527,8 @@
         "Institut für Psychosoziale Prävention Bergheimer Str. 54 3. OG Raum 301"
       ],
       "room": "301",
-      "building": "Bergheimer Straße 54, 3rd floor"
+      "building": "Bergheimer Straße 54, 3rd floor",
+      "organisation": "Center of Psychosocial Medicine"
     },
     {
       "match": "exact",
@@ -545,7 +552,8 @@
         "EthicsLab (Mathematikon, Berliner Straße 45)"
       ],
       "room": "EthicsLab",
-      "building": "Berliner Straße 43"
+      "building": "Berliner Straße 43",
+      "organisation": "Philosophy Seminar"
     },
     {
       "match": "exact",
@@ -553,7 +561,8 @@
         "RS 319"
       ],
       "room": "Raum 319",
-      "building": "Seminarstraße 3"
+      "building": "Seminarstraße 3",
+      "organisation": "Seminar for Romance Studies"
     },
     {
       "match": "exact",
@@ -561,7 +570,8 @@
         "KJC, Raum 400.02.12"
       ],
       "room": "Übungsraum (4400.02.212)",
-      "building": "Voßstraße 2 - 4400, 2nd floor"
+      "building": "Voßstraße 2 - 4400, 2nd floor",
+      "organisation": "ZEGK History Seminar"
     },
     {
       "match": "exact",
@@ -577,7 +587,8 @@
         "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
       ],
       "room": "HCIAS Meeting Room",
-      "building": "Bergheimer Straße 58"
+      "building": "Bergheimer Straße 58",
+      "organisation": "Heidelberg Center for Ibero-American Studies (HCIAS)"
     },
     {
       "match": "exact",
@@ -585,7 +596,8 @@
         "MPIK Bothe-Seminarraum; Co-Dozent: Christian Medina"
       ],
       "room": "Bothe-Seminarraum",
-      "building": "Saupfercheckweg 1"
+      "building": "Saupfercheckweg 1",
+      "organisation": "Faculty for Physics and Astronomy"
     },
     {
       "match": "exact",
@@ -601,7 +613,8 @@
         "INF 227, KIP, BBox, 3. OG"
       ],
       "room": "BBox",
-      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor"
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "organisation": "Faculty for Physics and Astronomy"
     },
     {
       "match": "contains",
@@ -626,6 +639,24 @@
       ],
       "room": "Raum 004",
       "building": "Hauptstraße 126, Ground floor"
+    },
+    {
+      "match": "contains",
+      "notes": [
+        "204 Haus zum Riesen (45)"
+      ],
+      "room": "204",
+      "building": "Hauptstraße 52",
+      "organisation": "Faculty of Law"
+    },
+    {
+      "match": "contains",
+      "notes": [
+        "A2.08 (Altbau)"
+      ],
+      "room": "A2.08 (Altbau)",
+      "building": "Landfriedstraße 12, Unknown floor",
+      "organisation": "Hochschule für Jüdische Studien Heidelberg"
     }
   ]
 }
