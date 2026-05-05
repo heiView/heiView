@@ -7,22 +7,25 @@
   "lecturers": [
     "Arnold, Raoul",
     "Assmann, Birgit Ellen",
-    "Beedgen, Bernhard",
+    "Berges, Julian",
+    "Erb, Larissa",
     "Greil, Johann",
     "Haas, Dorothea",
     "Höcker, Britta",
-    "Hudalla, Hannes",
     "Kölker, Stefan",
     "Kuß, Navina",
     "Lehmann, Ronny",
-    "Milde, Till",
     "Müller, Andreas",
     "Opladen, Thomas",
     "Pajtler, Kristian Wilfried",
     "Ries, Markus",
+    "Saffari, Afshin",
     "Schaefer, Franz",
     "Schmitt, Claus Peter",
+    "Seitz, Christian Martin",
     "Sommerburg, Olaf",
+    "Stich, Maximilian Georg",
+    "Sturm, Dominik",
     "Syrbe, Steffen",
     "Tönshoff, Burkhard",
     "van Tilburg, Cornelis Martinus",
@@ -37,18 +40,6 @@
     {
       "day_of_week": 2,
       "start_date": "2026-01-13",
-      "end_date": "2026-01-13",
-      "start_time": "15:00",
-      "end_time": "15:45",
-      "location": "UFHK PÄD SR (6440.EG.264)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
-      "room": "UFHK PÄD SR (6440.EG.264)",
-      "building": "Im Neuenheimer Feld 440, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 2,
-      "start_date": "2026-01-27",
       "end_date": "2026-01-27",
       "start_time": "15:00",
       "end_time": "15:45",
@@ -85,7 +76,7 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-07",
-      "end_date": "2026-05-26",
+      "end_date": "2026-04-21",
       "start_time": "15:00",
       "end_time": "15:45",
       "location": "UFHK PÄD SR (6440.EG.264)",
@@ -96,7 +87,7 @@
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-06-09",
+      "start_date": "2026-05-05",
       "end_date": "2026-06-30",
       "start_time": "15:00",
       "end_time": "15:45",
@@ -122,5 +113,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407420",
   "exceptions": [],
   "further_info": "Dienstags, wöchentl.; 15:00 - 16:00 Uhr",
-  "last_updated": "2026-04-21T10:35:04Z"
+  "last_updated": "2026-05-05T10:52:12Z"
 }

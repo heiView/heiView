@@ -13,20 +13,20 @@
   "weeks": [
     {
       "day_of_week": 4,
-      "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-23",
       "start_time": "16:00",
       "end_time": "18:00",
-      "location": "SR 2 (6205.02.102)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12923",
-      "room": "SR 2 (6205.02.102)",
+      "location": "SR 1 (6205.02.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12922",
+      "room": "SR 1 (6205.02.101)",
       "building": "Im Neuenheimer Feld 205, 2nd floor",
       "note": null
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-04-23",
-      "end_date": "2026-04-23",
+      "start_date": "2026-04-16",
+      "end_date": "2026-07-23",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR 1 (6205.02.101)",
@@ -39,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418924",
   "exceptions": [],
   "further_info": "Recommended Reading 1) Rodney G. Downey and Denis R. Hirschfeldt, Algorithmic Randomness and Complexity. Theory and Applications of Computability, Springer, New York, 2010. MR 2732288 2) Alexander Shen, Vladimir Andreevich Uspensky, Nikolay Vereshchagin. Kolmogorov Complexity and Algorithmic Randomness. AMS, 2017, ISBN 9781470431822 3) Klaus Weihrauch. Computable Analysis: An Introduction. Springer-Verlag, Berlin, Heidelberg, 2000. DOI:10.1007/978-3-642-56999-9",
-  "last_updated": "2026-04-21T09:52:32Z"
+  "last_updated": "2026-05-05T10:06:28Z"
 }

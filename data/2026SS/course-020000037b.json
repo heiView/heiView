@@ -9,7 +9,7 @@
   ],
   "organisation": "Faculty of Law",
   "start_date": "2026-04-30",
-  "end_date": "2026-05-22",
+  "end_date": "2026-05-27",
   "weeks": [
     {
       "day_of_week": 4,
@@ -48,14 +48,14 @@
       "note": null
     },
     {
-      "day_of_week": 5,
-      "start_date": "2026-05-22",
-      "end_date": "2026-05-22",
+      "day_of_week": 3,
+      "start_date": "2026-05-27",
+      "end_date": "2026-05-27",
       "start_time": "14:00",
-      "end_time": "17:00",
-      "location": "Seminarraum 2 / Akademiestrasse 4",
+      "end_time": "18:00",
+      "location": "106 Haus zum Riesen (10)",
       "location_link": null,
-      "room": "Seminarraum 2 / Akademiestrasse 4",
+      "room": "106 Haus zum Riesen (10)",
       "building": null,
       "note": null
     }
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416969",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:54:09Z"
+  "last_updated": "2026-05-05T10:08:15Z"
 }

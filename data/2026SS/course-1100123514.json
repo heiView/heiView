@@ -9,12 +9,12 @@
     "Zech, Jakob"
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
-  "start_date": "2026-04-23",
+  "start_date": "2026-05-07",
   "end_date": "2026-07-23",
   "weeks": [
     {
       "day_of_week": 4,
-      "start_date": "2026-04-23",
+      "start_date": "2026-05-07",
       "end_date": "2026-07-23",
       "start_time": "16:00",
       "end_time": "18:00",
@@ -28,5 +28,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/421782",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-24T19:38:27Z"
+  "last_updated": "2026-05-05T11:01:06Z"
 }

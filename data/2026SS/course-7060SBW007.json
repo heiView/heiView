@@ -14,13 +14,13 @@
     "Vögtle, Friederike-Nora"
   ],
   "organisation": "Center for Molecular Biology (ZMBH)",
-  "start_date": "2026-07-29",
-  "end_date": "2026-09-02",
+  "start_date": "2026-06-24",
+  "end_date": "2026-08-07",
   "weeks": [
     {
       "day_of_week": 3,
       "start_date": "2026-07-29",
-      "end_date": "2026-09-02",
+      "end_date": "2026-07-29",
       "start_time": "08:15",
       "end_time": "09:45",
       "location": "SR 20 (6306.01.110)",
@@ -28,10 +28,58 @@
       "room": "SR 20 (6306.01.110)",
       "building": "Im Neuenheimer Feld 306, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-07-15",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-22",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-07-24",
+      "start_time": "08:15",
+      "end_time": "09:45",
+      "location": "SR 25 (6328.EG.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14744",
+      "room": "SR 25 (6328.EG.005)",
+      "building": "Im Neuenheimer Feld 328, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-08-07",
+      "end_date": "2026-08-07",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "HS 1 (6306.EG.020)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22347",
+      "room": "HS 1 (6306.EG.020)",
+      "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385684",
   "exceptions": [],
   "further_info": "Recommended Reading Alberts et al. Cell Biology, 5th edition (2008), Lodish et al. Molecular Cell Biology, 6th edition (2008) online information e-learning course UNTERRICHTSSPRACHE: Die Vorlesung kann in deutscher oder englischer Sprache gehalten werden. Koordination: Prof. Dr. Henrik Kaessmann, Dr. Stefan Pfeffer h.kaessmann@zmbh.uni-heidelberg.de, s.pfeffer@zmbh.uni-heidelberg.de Zeitraum: vom Mi, den 25.6. bis Mi, den 30.07.2025: mittwochs und freitags, 8.15 – 9.45 Uhr",
-  "last_updated": "2026-04-28T10:03:33Z"
+  "last_updated": "2026-05-05T10:47:52Z"
 }

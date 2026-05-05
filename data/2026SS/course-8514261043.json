@@ -23,10 +23,22 @@
       "room": "Seminarraum 4",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "Seminarraum 2",
+      "location_link": null,
+      "room": "Seminarraum 2",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416152",
   "exceptions": [],
   "further_info": "Recommended Reading Wird zu Beginn des Kurses bekanntgegeben. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
-  "last_updated": "2026-04-21T10:04:32Z"
+  "last_updated": "2026-05-05T10:19:04Z"
 }

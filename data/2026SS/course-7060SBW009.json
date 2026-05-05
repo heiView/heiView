@@ -1,18 +1,17 @@
 {
   "id": "7060SBW009",
-  "title": "Evolutionary genomics practical",
+  "title": "Die Seite ist nicht für diesen Browser optimiert. This site is not optimised for your browser.",
   "type": "C",
   "ects_credits": null,
-  "course_languages": "English",
+  "course_languages": null,
   "lecturers": [
     "Kaessmann, Henrik"
   ],
-  "organisation": "Center for Molecular Biology (ZMBH)",
+  "organisation": null,
   "start_date": null,
   "end_date": null,
   "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385552",
   "exceptions": [],
-  "further_info": "Recommended Reading please bring your own laptop The course takes place: room 00.007 in ground floor, COS, INF 230 from April 13th to 17th 2026. You need your own laptop",
-  "last_updated": "2026-04-21T10:09:13Z"
+  "last_updated": "2026-05-05T10:24:02Z"
 }

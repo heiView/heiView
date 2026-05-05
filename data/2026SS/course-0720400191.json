@@ -22,10 +22,22 @@
       "room": "Übungsraum 001 (Graimberg - Raum) (2230.EG.001)",
       "building": "Seminarstraße 4, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "09:30",
+      "end_time": "12:30",
+      "location": "Übungsraum 002 (Winsbekin - Raum) (2230.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17961",
+      "room": "Übungsraum 002 (Winsbekin - Raum) (2230.EG.002)",
+      "building": "Seminarstraße 4, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414242",
   "exceptions": [],
   "further_info": "Recommended Reading Zum Überblick: - Inventing abstraction 1910 - 1925 : how a radical idea changed modern art , Ausst.-Kat. New York, Museum of Modern Art, 2012/2013, hg. v. Leah Dickerman, London 2012 - Paths to abstraction 1867 – 1917, Ausst.-Kat. Sydney, Art Gallery of New South Wales 2010, hg. v. Terence Maloon, Sydney 2010 - Turner - Hugo - Moreau - Entdeckung der Abstraktion, Ausst.-Kat. Frankfurt a.M., Schirn-Kunsthalle 2007/2008, hg. v. Raphael Rosenberg, Frankfurt a.M. 2007 - Aux origines de l'abstraction, 1800 - 1914 , Ausst.-Kat. Paris, Musée d'Orsay 2003/2004 , hg. v. Sophie Laporte, Paris 2003 - Elles font l’abstraction (engl. Ausgabe: Women in Abstraction), Ausst.-Kat. Paris, Centre Pompidou 2021, hg. v. Christine Macel, Paris 2021 - Abstraction : towards a new art ; painting 1910 - 20 , Ausst.-Kat. London, Tate Gallery 1980, London 1980 Aus dem breiten Spektrum möglicher Themen (behandelter Zeitraum ca. 1900-1925) wird in Absprache mit den Teilnehmer:innen in der ersten Sitzung das konkrete Referatsprogramm zusammengestellt. Vorschläge werden vorher in Moodle zu sehen sein, aber auch darüberhinausgehende Ideen können in Absprache mit dem Seminarleiter aufgenommen werden! Einzelne Themen, insbesondere zur populären Rezeption der frühen Abstraktion, eignen sich auch für Studierende im Master „Populärkulturen“.",
-  "last_updated": "2026-04-21T09:52:59Z"
+  "last_updated": "2026-05-05T10:07:04Z"
 }

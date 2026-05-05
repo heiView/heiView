@@ -9,11 +9,24 @@
     "Diernfellner, Axel"
   ],
   "organisation": "Heidelberg University Biochemistry Center",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-06-15",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-07-03",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "8020.01.160",
+      "location_link": null,
+      "room": "8020.01.160",
+      "building": null,
+      "note": "Vorbesprechung am 15.6.26 um 10:00 in INF 328 SRS 505"
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409578",
   "exceptions": [],
-  "further_info": "-",
-  "last_updated": "2026-04-21T09:59:32Z"
+  "further_info": "Vorbesprechung am 15.6.26 um 10:00 in INF 328 SRS 505",
+  "last_updated": "2026-05-05T10:13:40Z"
 }

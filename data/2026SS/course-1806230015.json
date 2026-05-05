@@ -27,49 +27,25 @@
       "day_of_week": 4,
       "start_date": "2026-05-28",
       "end_date": "2026-05-28",
-      "start_time": "12:00",
-      "end_time": "14:00",
-      "location": "Übungsraum (4310.02.005)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
-      "room": "Übungsraum (4310.02.005)",
-      "building": "Bergheimer Straße 58, 2nd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-07-09",
-      "end_date": "2026-07-09",
-      "start_time": "12:00",
-      "end_time": "14:00",
-      "location": "Übungsraum (4310.02.005)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
-      "room": "Übungsraum (4310.02.005)",
-      "building": "Bergheimer Straße 58, 2nd floor",
-      "note": null
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bibliotheksraum 01.034"
     },
     {
       "day_of_week": 4,
       "start_date": "2026-05-28",
       "end_date": "2026-05-28",
-      "start_time": "16:00",
-      "end_time": "18:00",
-      "location": "Übungsraum (4310.02.005)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
-      "room": "Übungsraum (4310.02.005)",
-      "building": "Bergheimer Straße 58, 2nd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-07-09",
-      "end_date": "2026-07-09",
-      "start_time": "16:00",
-      "end_time": "18:00",
-      "location": "Übungsraum (4310.02.005)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
-      "room": "Übungsraum (4310.02.005)",
-      "building": "Bergheimer Straße 58, 2nd floor",
-      "note": null
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Bibliotheksraum 01.034"
     },
     {
       "day_of_week": 4,
@@ -96,11 +72,59 @@
       "note": null
     },
     {
+      "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Unterrichtsraum (4310.02.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20514",
+      "room": "Unterrichtsraum (4310.02.024)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-30",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Unterrichtsraum (4310.02.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20514",
+      "room": "Unterrichtsraum (4310.02.024)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
       "day_of_week": 3,
       "start_date": "2026-07-08",
       "end_date": "2026-07-08",
       "start_time": "14:00",
       "end_time": "18:00",
+      "location": "Übungsraum (4310.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
+      "room": "Übungsraum (4310.02.005)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (4310.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
+      "room": "Übungsraum (4310.02.005)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "location": "Übungsraum (4310.02.005)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
       "room": "Übungsraum (4310.02.005)",
@@ -123,5 +147,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413174",
   "exceptions": [],
   "further_info": "Anrechenbar für: - MASoM 3.2: 2 ECTS (unbenotet), 4 ECTS (benotet), 6 ECTS (benotet) - MASoM 5: 2 ECTS (unbenotet), 4 ECTS (benotet), 6 ECTS (benotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich.",
-  "last_updated": "2026-04-21T10:25:05Z"
+  "last_updated": "2026-05-05T10:40:25Z"
 }

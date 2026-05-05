@@ -34,10 +34,22 @@
       "room": "Seminarraum 2",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "ZLS, Plöck 79 - 81",
+      "location_link": null,
+      "room": "ZLS, Plöck 79 - 81",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416175",
   "exceptions": [],
   "further_info": "Recommended Reading Chayat, S./ Israeli, S./ Kobliner, H., עברית מן ההתחלה החדש. Part I. Jerusalem: Academon. 2019. (hebr.) Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
-  "last_updated": "2026-04-21T10:31:10Z"
+  "last_updated": "2026-05-05T10:46:43Z"
 }

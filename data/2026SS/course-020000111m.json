@@ -9,12 +9,12 @@
   ],
   "organisation": "Faculty of Law",
   "start_date": "2026-04-22",
-  "end_date": "2026-07-22",
+  "end_date": "2026-07-21",
   "weeks": [
     {
       "day_of_week": 3,
       "start_date": "2026-04-22",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "HS 07 (2170.01.037)",
@@ -22,10 +22,46 @@
       "room": "HS 07 (2170.01.037)",
       "building": "HS 07, Grabengasse 3-5, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-26",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "210 Haus zum Riesen"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "210 Haus zum Riesen"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "210 haus zum Riesen"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409293",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:51:38Z"
+  "last_updated": "2026-05-05T10:05:35Z"
 }

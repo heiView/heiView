@@ -9,7 +9,7 @@
   ],
   "organisation": "Center of Psychosocial Medicine",
   "start_date": "2026-03-02",
-  "end_date": "2026-05-05",
+  "end_date": "2026-05-04",
   "weeks": [
     {
       "day_of_week": 1,
@@ -298,22 +298,10 @@
       "room": "Seminarraum 009 (4270.EG.009)",
       "building": "Voßstraße 4, Ground floor",
       "note": null
-    },
-    {
-      "day_of_week": 2,
-      "start_date": "2026-05-05",
-      "end_date": "2026-05-05",
-      "start_time": "11:00",
-      "end_time": "12:30",
-      "location": "Seminarraum 113 (4250.02.113)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30801",
-      "room": "Seminarraum 113 (4250.02.113)",
-      "building": "Voßstraße 9, 2nd floor",
-      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379490",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-23T12:25:40Z"
+  "last_updated": "2026-05-05T10:13:20Z"
 }
