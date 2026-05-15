@@ -24,9 +24,9 @@
       "note": null
     },
     {
-      "day_of_week": 4,
-      "start_date": "2026-05-21",
-      "end_date": "2026-05-28",
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Online",
@@ -37,26 +37,26 @@
     },
     {
       "day_of_week": 1,
-      "start_date": "2026-05-11",
+      "start_date": "2026-05-18",
       "end_date": "2026-05-18",
       "start_time": "09:00",
       "end_time": "11:00",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
+      "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11573",
+      "room": "Übungsraum 010.00.07 (4010+4.EG.007)",
+      "building": "Voßstraße 2, Ground floor",
       "note": null
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-05-14",
-      "end_date": "2026-05-14",
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
       "start_time": "09:00",
-      "end_time": "10:00",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
+      "end_time": "11:00",
+      "location": "Besprechungsraum 130.00.02 (4130.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11326",
+      "room": "Besprechungsraum 130.00.02 (4130.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
       "note": null
     },
     {
@@ -99,5 +99,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408399",
   "exceptions": [],
   "further_info": "Online class",
-  "last_updated": "2026-04-21T09:50:32Z"
+  "last_updated": "2026-05-15T10:07:59Z"
 }

@@ -9,7 +9,7 @@
   ],
   "organisation": "Center of Psychosocial Medicine",
   "start_date": "2026-03-05",
-  "end_date": "2026-05-04",
+  "end_date": "2026-06-15",
   "weeks": [
     {
       "day_of_week": 1,
@@ -27,6 +27,18 @@
       "day_of_week": 1,
       "start_date": "2026-04-27",
       "end_date": "2026-05-04",
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "11:00",
       "end_time": "12:30",
       "location": "Seminarraum 102 (4240.01.102)",
@@ -70,10 +82,34 @@
       "room": "Seminarraum 102 (4240.01.102)",
       "building": "Thibautstraße 4, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-21",
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379486",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:58:44Z"
+  "last_updated": "2026-05-15T10:16:18Z"
 }

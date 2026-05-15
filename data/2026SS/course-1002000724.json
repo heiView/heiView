@@ -33,7 +33,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23099",
       "room": "ÜR B (3010.EG.019)",
       "building": "Hauptstraße 47-51, Ground floor",
-      "note": null
+      "note": "Treffpunkt für Seminarbeginn in ÜR B"
     },
     {
       "day_of_week": 5,
@@ -147,5 +147,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408854",
   "exceptions": [],
   "further_info": "Recommended Reading Buch: Noyon & Heidenreich (2025). Schwierige Therapiesituationen in Therapie und Beratung - 40 Probleme und Lösungsvorschläge. Weinheim: BELTZ.",
-  "last_updated": "2026-04-21T10:24:18Z"
+  "last_updated": "2026-05-15T10:42:53Z"
 }

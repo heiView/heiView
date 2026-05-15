@@ -16,7 +16,7 @@
       "start_date": "2026-04-14",
       "end_date": "2026-07-21",
       "start_time": "16:00",
-      "end_time": "18:00",
+      "end_time": "19:00",
       "location": "SR 5 (6205.04.101)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13686",
       "room": "SR 5 (6205.04.101)",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414919",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:34:27Z"
+  "last_updated": "2026-05-15T10:54:18Z"
 }

@@ -24,6 +24,18 @@
       "note": null
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-18",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "location": "HS 13 (2170.02.018)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20616",
+      "room": "HS 13 (2170.02.018)",
+      "building": "HS 13, Grabengasse 3-5, 2nd floor",
+      "note": "Midterm"
+    },
+    {
       "day_of_week": 2,
       "start_date": "2026-04-21",
       "end_date": "2026-07-21",
@@ -99,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409151",
   "exceptions": [],
   "further_info": "Recommended Reading Reading List S. Tadelis: Game Theory – An Introduction, Princeton University Press, 2013. R. Gibbons: A Primer in Game Theory, FT Prentice Hall, 1992. M. J. Osborne: An Introduction to Game Theory, Oxford University Press, 2004. J. Eichberger: Game Theory. San Diego: Academic Press, 1993. Advanced Reading K.G. Binmore: Fun and Games, D.C. Heath & Co., 1992. J. Eichberger: Game Theory for Economists, Academic Press, San Diego, 1993. D. Fudenberg & J. Tirole: Game Theory, MIT Press, 1991. M. Osborne & A. Rubinstein: A Course in Game Theory, MIT Press, 1994. A marvelous book: Thomas Schelling: The Strategy of Conflict.",
-  "last_updated": "2026-04-21T10:15:03Z"
+  "last_updated": "2026-05-15T10:33:09Z"
 }

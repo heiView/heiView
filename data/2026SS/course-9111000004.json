@@ -37,18 +37,6 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-05-13",
-      "end_date": "2026-05-13",
-      "start_time": "13:45",
-      "end_time": "15:15",
-      "location": "INF 400 - Foyer des großen Hörsaals",
-      "location_link": null,
-      "room": "INF 400 - Foyer des großen Hörsaals",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 3,
       "start_date": "2026-06-24",
       "end_date": "2026-06-24",
       "start_time": "13:45",
@@ -75,18 +63,6 @@
       "day_of_week": 3,
       "start_date": "2026-04-15",
       "end_date": "2026-04-15",
-      "start_time": "12:00",
-      "end_time": "13:30",
-      "location": "INF 400 - Foyer des großen Hörsaals",
-      "location_link": null,
-      "room": "INF 400 - Foyer des großen Hörsaals",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-05-13",
-      "end_date": "2026-05-13",
       "start_time": "12:00",
       "end_time": "13:30",
       "location": "INF 400 - Foyer des großen Hörsaals",
@@ -133,8 +109,8 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-05-13",
-      "end_date": "2026-05-13",
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "INF 400 - Foyer des großen Hörsaals",
@@ -145,19 +121,43 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-06-24",
-      "end_date": "2026-06-24",
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "13:45",
+      "end_time": "15:15",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
       "start_time": "10:15",
       "end_time": "11:45",
-      "location": "INF 400 - Foyer des großen Hörsaals",
-      "location_link": null,
-      "room": "INF 400 - Foyer des großen Hörsaals",
-      "building": null,
+      "location": "KOPF SR 1 (6400.EG.268)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28746",
+      "room": "KOPF SR 1 (6400.EG.268)",
+      "building": "Im Neuenheimer Feld 400, Ground floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393583",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:59:14Z"
+  "last_updated": "2026-05-15T10:16:37Z"
 }

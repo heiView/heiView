@@ -9,7 +9,7 @@
   ],
   "organisation": "Heidelberg Center for Ibero-American Studies (HCIAS)",
   "start_date": "2026-04-20",
-  "end_date": "2026-07-13",
+  "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 1,
@@ -60,6 +60,18 @@
       "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "09:30",
+      "end_time": "13:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Location of the course: HCIAS Meeting Room (Campus Bergheim: Bergheimerstr. 58a, access to building via Fehrentzstraße)"
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-07-13",
       "end_date": "2026-07-13",
@@ -75,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407920",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:18:03Z"
+  "last_updated": "2026-05-15T10:36:10Z"
 }

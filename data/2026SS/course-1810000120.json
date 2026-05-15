@@ -37,8 +37,8 @@
     },
     {
       "day_of_week": 1,
-      "start_date": "2026-05-18",
-      "end_date": "2026-05-18",
+      "start_date": "2026-04-27",
+      "end_date": "2026-07-20",
       "start_time": "09:00",
       "end_time": "12:00",
       "location": "Übungsraum 00.010 (4310.EG.010)",
@@ -49,13 +49,13 @@
     },
     {
       "day_of_week": 1,
-      "start_date": "2026-04-27",
-      "end_date": "2026-07-20",
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-18",
       "start_time": "09:00",
       "end_time": "12:00",
-      "location": "Übungsraum 00.010 (4310.EG.010)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18981",
-      "room": "Übungsraum 00.010 (4310.EG.010)",
+      "location": "Übungsraum 00.028 (4310.EG.028)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19002",
+      "room": "Übungsraum 00.028 (4310.EG.028)",
       "building": "Bergheimer Straße 58, Ground floor",
       "note": null
     },
@@ -75,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409142",
   "exceptions": [],
   "further_info": "Recommended Reading Blankart, C. (2011) Öffentliche Finanzen in der Demokratie (8. Auflage),Vahlen. Corneo, G. (2012). Öffentliche Finanzen: Ausgabenpolitik (4. Auflage),Siebeck. Homburg, S. (2010) Allgemeine Steuerlehre (6. Au), Vahlen. Wigger, B. (2006). Grundzüge der Finanzwissenschaft (2. Auflage), Springer.",
-  "last_updated": "2026-04-21T10:40:25Z"
+  "last_updated": "2026-05-15T11:00:08Z"
 }

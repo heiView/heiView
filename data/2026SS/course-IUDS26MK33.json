@@ -14,7 +14,31 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
+      "end_date": "2026-04-28",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Konferenzsaal (KS II) (3052.EG.053)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20017",
+      "room": "Konferenzsaal (KS II) (3052.EG.053)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
       "end_date": "2026-07-21",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Konferenzsaal (KS II) (3052.EG.053)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20017",
+      "room": "Konferenzsaal (KS II) (3052.EG.053)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-05",
+      "end_date": "2026-05-05",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "Konferenzsaal (KS I) (3051.02.208)",
@@ -27,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416804",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:44:52Z"
+  "last_updated": "2026-05-15T11:04:20Z"
 }

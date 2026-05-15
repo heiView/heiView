@@ -218,18 +218,6 @@
     {
       "day_of_week": 4,
       "start_date": "2026-07-02",
-      "end_date": "2026-07-02",
-      "start_time": "09:30",
-      "end_time": "11:45",
-      "location": "INF 400 - HNO-Klinik, 1. OG",
-      "location_link": null,
-      "room": "INF 400 - HNO-Klinik, 1. OG",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-07-16",
       "end_date": "2026-07-16",
       "start_time": "09:30",
       "end_time": "11:45",
@@ -291,18 +279,6 @@
       "day_of_week": 3,
       "start_date": "2026-06-24",
       "end_date": "2026-06-24",
-      "start_time": "09:30",
-      "end_time": "11:45",
-      "location": "INF 400 - HNO-Klinik, 1. OG",
-      "location_link": null,
-      "room": "INF 400 - HNO-Klinik, 1. OG",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-07-08",
-      "end_date": "2026-07-08",
       "start_time": "09:30",
       "end_time": "11:45",
       "location": "INF 400 - HNO-Klinik, 1. OG",
@@ -375,5 +351,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414206",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:58:34Z"
+  "last_updated": "2026-05-15T10:15:58Z"
 }

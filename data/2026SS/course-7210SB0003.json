@@ -51,8 +51,8 @@
       "day_of_week": 1,
       "start_date": "2026-05-18",
       "end_date": "2026-05-18",
-      "start_time": "13:00",
-      "end_time": "17:30",
+      "start_time": "10:00",
+      "end_time": "14:00",
       "location": "Übungsraum (6360.EG.007)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10515",
       "room": "Übungsraum (6360.EG.007)",
@@ -75,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/375315",
   "exceptions": [],
   "further_info": "Recommended Reading Fachliteratur wird nach der Vorbesprechung am 15.04.2026 um 12:30 Uhr im Raum 007 im Gebäude INF 360 verteilt. Blockseminar, Terminvereinbarung und Themenvergabe erfolgt während der Vorbesprechung am 15.04.2026 um 12:30 Uhr im Raum 007 im Gebäude INF 360. Die Seminare werden in 2 - 3 Blockterminen stattfinden. Achtung: Die Teilnahme an der Vorbesprechung ist zwingend erforderlich!",
-  "last_updated": "2026-04-21T10:16:57Z"
+  "last_updated": "2026-05-15T10:35:15Z"
 }

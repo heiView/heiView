@@ -9,11 +9,24 @@
     "Wang, Xiao"
   ],
   "organisation": "Institute of Computer Engineering (ZITI)",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-04-15",
+  "end_date": "2026-07-22",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "13:30",
+      "end_time": "15:30",
+      "location": "Seminarraum (6350.U1.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15351",
+      "room": "Seminarraum (6350.U1.014)",
+      "building": "Im Neuenheimer Feld 350, Lower level 1",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417847",
   "exceptions": [],
   "further_info": "Recommended Reading Recommended literature Deep Learning by Goodfellow et al. freely available here: https://www.deeplearningbook.org/",
-  "last_updated": "2026-04-21T09:53:08Z"
+  "last_updated": "2026-05-15T10:10:36Z"
 }

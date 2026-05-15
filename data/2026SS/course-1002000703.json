@@ -27,8 +27,8 @@
       "day_of_week": 4,
       "start_date": "2026-05-07",
       "end_date": "2026-05-07",
-      "start_time": "09:15",
-      "end_time": "10:45",
+      "start_time": "11:15",
+      "end_time": "12:45",
       "location": "ÜR D (3010.EG.021)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23101",
       "room": "ÜR D (3010.EG.021)",
@@ -267,5 +267,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404041",
   "exceptions": [],
   "further_info": "Recommended Reading Relevante Literatur sowie Leseempfehlungen werden über Moodle bekannt gegeben. Quelle zu den Kriterien für die Gesprächssequenz-Beurteilung: Scheffer, S. (2009). Validierung des „Berliner Global Rating“ (BGR) [Dissertation, Charité – Universitätsmedizin Berlin]. https://refubium.fu- berlin.de/handle/fub188/5707 Sollte das Studium aufgrund individueller Bedürfnisse oder Beeinträchtigungen für Sie mit besonderen Herausforderungen verbunden sein, informieren Sie bitte die zuständige Lehrperson vorab bzw. zu Beginn der Lehrveranstaltung. Sehr gerne können wir dann gemeinsam besprechen, wie eine barrierefreie Teilnahme an der Lehrveranstaltung sowie das Erbringen von Prüfungsleistungen gestaltet werden kann. Für Fragen zur barrierefreien Lehre, zum Nachteilsausgleich bei Prüfungen sowie zu Unterstützungsmöglichkeiten an der Universität Heidelberg stehen Ihnen auch Susanne Kemmer und Julia Heyne (Studienberaterinnen) und Christoph Schlomach (Beauftragter für Studierende mit Behinderung und chronischer Erkrankung), gerne zur Verfügung. E-Mail: inklusiv.studieren@uni-heidelberg.de",
-  "last_updated": "2026-05-05T10:08:01Z"
+  "last_updated": "2026-05-15T10:11:25Z"
 }

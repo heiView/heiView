@@ -9,11 +9,23 @@
   ],
   "organisation": "Institute of Earth Sciences",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-06",
+  "end_date": "2026-10-28",
   "weeks": [
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
+      "end_date": "2026-05-04",
+      "start_time": "11:30",
+      "end_time": "13:45",
+      "location": "Unterrichtsraum (6234.01.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23079",
+      "room": "Unterrichtsraum (6234.01.101)",
+      "building": "Im Neuenheimer Feld 234, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-18",
       "end_date": "2026-05-18",
       "start_time": "11:30",
       "end_time": "13:45",
@@ -34,10 +46,46 @@
       "room": "Unterrichtsraum (6234.01.101)",
       "building": "Im Neuenheimer Feld 234, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "11:30",
+      "end_time": "13:45",
+      "location": "Übungsraum (6236.01.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17078",
+      "room": "Übungsraum (6236.01.101)",
+      "building": "Im Neuenheimer Feld 236, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
+      "start_time": "11:30",
+      "end_time": "13:45",
+      "location": "Unterrichtsraum (6234.01.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23079",
+      "room": "Unterrichtsraum (6234.01.101)",
+      "building": "Im Neuenheimer Feld 234, 1st floor",
+      "note": "Hauptklausur"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-10-28",
+      "end_date": "2026-10-28",
+      "start_time": "14:00",
+      "end_time": "16:15",
+      "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10986",
+      "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 235, Ground floor",
+      "note": "Nachklausur"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418093",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:14:48Z"
+  "last_updated": "2026-05-15T10:32:53Z"
 }

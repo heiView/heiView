@@ -29,10 +29,10 @@
       "end_date": "2026-05-15",
       "start_time": "09:00",
       "end_time": "11:00",
-      "location": "Übungsraum 00.010 (4310.EG.010)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18981",
-      "room": "Übungsraum 00.010 (4310.EG.010)",
-      "building": "Bergheimer Straße 58, Ground floor",
+      "location": "Unterrichtsraum 02.036 (4310.02.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20521",
+      "room": "Unterrichtsraum 02.036 (4310.02.036)",
+      "building": "Bergheimer Straße 58, 2nd floor",
       "note": "Seminar"
     },
     {
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418546",
   "exceptions": [],
   "further_info": "further information additional information",
-  "last_updated": "2026-04-21T11:46:10Z"
+  "last_updated": "2026-05-15T11:09:58Z"
 }

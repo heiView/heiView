@@ -22,10 +22,22 @@
       "room": "HS 03 (2170.EG.048)",
       "building": "Grabengasse 3-5, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-03",
+      "start_time": "18:00",
+      "end_time": "19:30",
+      "location": "UGX 61 (2170.U1.061)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21090",
+      "room": "UGX 61 (2170.U1.061)",
+      "building": "Grabengasse 3-5, Lower level 1",
+      "note": "Rektorats-Veranstaltung bedingter einmaliger Ausweichtermin nach UGX61"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408526",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:33:21Z"
+  "last_updated": "2026-05-15T10:52:13Z"
 }

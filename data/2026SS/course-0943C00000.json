@@ -10,7 +10,7 @@
   ],
   "organisation": "The Institute of Slavic Studies",
   "start_date": "2026-04-15",
-  "end_date": "2026-07-22",
+  "end_date": "2026-07-29",
   "weeks": [
     {
       "day_of_week": 3,
@@ -23,10 +23,22 @@
       "room": "HS 04 (2170.EG.037)",
       "building": "HS 04, Grabengasse 3-5, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-29",
+      "end_date": "2026-07-29",
+      "start_time": "18:15",
+      "end_time": "19:45",
+      "location": "Heuscheuer I (2050.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9375",
+      "room": "Heuscheuer I (2050.01.102)",
+      "building": "Heuscheuer I, Große Mantelgasse 2, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409160",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:25:56Z"
+  "last_updated": "2026-05-15T10:44:34Z"
 }

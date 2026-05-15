@@ -10,11 +10,60 @@
     "Sievert, Henning"
   ],
   "organisation": "Middle Eastern Studies",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-05-07",
+  "end_date": "2026-07-14",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-07",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Findet nach Möglichkeit in Raum 353 statt."
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-02",
+      "start_time": "11:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Das Kolloquium findet in der HfJS (Konferenzraum) statt, mit der Roadshow des FID ab 15.30 Uhr."
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "11:00",
+      "end_time": "17:00",
+      "location": "ÜR 353 (8020.03.353)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22293",
+      "room": "ÜR 353 (8020.03.353)",
+      "building": "Albert-Ueberle-Straße 3-5, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
+      "start_time": "11:00",
+      "end_time": "14:30",
+      "location": "ÜR 353 (8020.03.353)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22293",
+      "room": "ÜR 353 (8020.03.353)",
+      "building": "Albert-Ueberle-Straße 3-5, 3rd floor",
+      "note": "Im Anschluss an das Kolloquium findet um 17.00 Uhr ein Vortrag von Frau Dr. Christiane Czygan statt."
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414528",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:24:46Z"
+  "last_updated": "2026-05-15T10:43:15Z"
 }

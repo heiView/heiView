@@ -9,7 +9,7 @@
   ],
   "organisation": "Center of Psychosocial Medicine",
   "start_date": "2026-03-02",
-  "end_date": "2026-05-06",
+  "end_date": "2026-06-17",
   "weeks": [
     {
       "day_of_week": 1,
@@ -26,7 +26,19 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-05-04",
+      "end_date": "2026-05-18",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "ZPM-Bibliothek (4240.01.108)",
@@ -50,7 +62,19 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-05-06",
+      "end_date": "2026-05-20",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "ZPM-Bibliothek (4240.01.108)",
@@ -87,6 +111,30 @@
       "day_of_week": 5,
       "start_date": "2026-04-17",
       "end_date": "2026-04-17",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "ZPM-Bibliothek (4240.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30805",
+      "room": "ZPM-Bibliothek (4240.01.108)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "ZPM-Bibliothek (4240.01.108)",
@@ -156,6 +204,30 @@
       "note": null
     },
     {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-18",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 205 (4240.02.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28808",
+      "room": "Seminarraum 205 (4240.02.205)",
+      "building": "Thibautstraße 4, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-15",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 205 (4240.02.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28808",
+      "room": "Seminarraum 205 (4240.02.205)",
+      "building": "Thibautstraße 4, 2nd floor",
+      "note": null
+    },
+    {
       "day_of_week": 3,
       "start_date": "2026-03-04",
       "end_date": "2026-03-11",
@@ -180,6 +252,30 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-20",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 205 (4240.02.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28808",
+      "room": "Seminarraum 205 (4240.02.205)",
+      "building": "Thibautstraße 4, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 205 (4240.02.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28808",
+      "room": "Seminarraum 205 (4240.02.205)",
+      "building": "Thibautstraße 4, 2nd floor",
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-03-06",
       "end_date": "2026-03-06",
@@ -195,6 +291,30 @@
       "day_of_week": 5,
       "start_date": "2026-04-17",
       "end_date": "2026-04-17",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 205 (4240.02.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28808",
+      "room": "Seminarraum 205 (4240.02.205)",
+      "building": "Thibautstraße 4, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 205 (4240.02.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28808",
+      "room": "Seminarraum 205 (4240.02.205)",
+      "building": "Thibautstraße 4, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
       "start_time": "13:30",
       "end_time": "16:00",
       "location": "Seminarraum 205 (4240.02.205)",
@@ -230,7 +350,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-29",
-      "end_date": "2026-05-06",
+      "end_date": "2026-04-29",
       "start_time": "13:30",
       "end_time": "17:30",
       "location": "Seminarraum 205 (4240.02.205)",
@@ -238,10 +358,22 @@
       "room": "Seminarraum 205 (4240.02.205)",
       "building": "Thibautstraße 4, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379491",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:59:13Z"
+  "last_updated": "2026-05-15T10:16:34Z"
 }

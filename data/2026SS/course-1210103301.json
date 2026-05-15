@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute of Earth Sciences",
   "start_date": "2026-04-21",
-  "end_date": "2026-07-07",
+  "end_date": "2026-10-21",
   "weeks": [
     {
       "day_of_week": 2,
@@ -22,10 +22,22 @@
       "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
       "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 235, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-10-21",
+      "end_date": "2026-10-21",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10986",
+      "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 235, Ground floor",
+      "note": "Nachklausur"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418065",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-23T13:33:18Z"
+  "last_updated": "2026-05-15T10:35:20Z"
 }

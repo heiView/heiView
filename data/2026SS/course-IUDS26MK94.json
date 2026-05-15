@@ -5,11 +5,11 @@
   "ects_credits": "2",
   "course_languages": "Spanish",
   "lecturers": [
-    "Ferreiro Castineira, Rosa"
+    "Moser, Christina"
   ],
   "organisation": "The Institute for Translation and Interpreting",
   "start_date": "2026-04-16",
-  "end_date": "2026-04-16",
+  "end_date": "2026-07-21",
   "weeks": [
     {
       "day_of_week": 4,
@@ -22,10 +22,22 @@
       "room": "Konferenzsaal (KS III) (3051.02.207)",
       "building": "Plöck 57a, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-07-21",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Konferenzsaal (KS I) (3051.02.208)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19993",
+      "room": "Konferenzsaal (KS I) (3051.02.208)",
+      "building": "Plöck 57a, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416910",
   "exceptions": [],
   "further_info": "Recommended Reading Collados Aís, Ángela et al. (Hg.). 2011. *Qualitätsparameter beim Simultandolmetschen: interdisziplinäre Perspektiven.* Tübingen: Gunter Narr. Ericsson, K. Anders. 2000. Expertise in interpreting: An expert-performance perspective. *Interpreting* 5:2, 187–220. Setton, Robin; Dawrant, Andrew. 2016. *Conference interpreting: A complete course.* Amsterdam: John Benjamins.",
-  "last_updated": "2026-04-23T13:05:11Z"
+  "last_updated": "2026-05-15T11:04:20Z"
 }

@@ -9,18 +9,42 @@
   ],
   "organisation": "Institute of Earth Sciences",
   "start_date": "2026-05-11",
-  "end_date": "2026-05-16",
+  "end_date": "2026-05-15",
   "weeks": [
     {
       "day_of_week": 1,
       "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Unterrichtsraum (6234.01.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23079",
+      "room": "Unterrichtsraum (6234.01.101)",
+      "building": "Im Neuenheimer Feld 234, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10986",
+      "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 235, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
       "end_date": "2026-05-13",
       "start_time": "09:00",
       "end_time": "12:00",
-      "location": "Übungsraum (6234.04.404)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22920",
-      "room": "Übungsraum (6234.04.404)",
-      "building": "Im Neuenheimer Feld 234, 4th floor",
+      "location": "Unterrichtsraum (6234.01.101)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23079",
+      "room": "Unterrichtsraum (6234.01.101)",
+      "building": "Im Neuenheimer Feld 234, 1st floor",
       "note": null
     },
     {
@@ -29,10 +53,10 @@
       "end_date": "2026-05-14",
       "start_time": "09:00",
       "end_time": "12:00",
-      "location": "Übungsraum (6234.04.404)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22920",
-      "room": "Übungsraum (6234.04.404)",
-      "building": "Im Neuenheimer Feld 234, 4th floor",
+      "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10986",
+      "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 235, Ground floor",
       "note": null
     },
     {
@@ -41,27 +65,15 @@
       "end_date": "2026-05-15",
       "start_time": "09:00",
       "end_time": "12:00",
-      "location": "Übungsraum (6234.04.404)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22920",
-      "room": "Übungsraum (6234.04.404)",
-      "building": "Im Neuenheimer Feld 234, 4th floor",
-      "note": null
-    },
-    {
-      "day_of_week": 6,
-      "start_date": "2026-05-16",
-      "end_date": "2026-05-16",
-      "start_time": "09:00",
-      "end_time": "12:00",
-      "location": "Übungsraum (6234.04.404)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22920",
-      "room": "Übungsraum (6234.04.404)",
-      "building": "Im Neuenheimer Feld 234, 4th floor",
+      "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10986",
+      "room": "Großer Hörsaal (gHS) (6235.EG.015X)",
+      "building": "Großer Hörsaal (gHS), Im Neuenheimer Feld 235, Ground floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418290",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:54:00Z"
+  "last_updated": "2026-05-15T10:11:35Z"
 }

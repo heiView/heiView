@@ -9536,6 +9536,70 @@
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ]
+    },
+    {
+      "id": "bld-other-8020-01-160",
+      "street": "8020.01.160",
+      "displayName": "8020.01.160",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-8020-01-160::rm-8020-01-160",
+          "name": "8020.01.160",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-106-haus-zum-riesen-10",
+      "street": "106 Haus zum Riesen (10)",
+      "displayName": "106 Haus zum Riesen (10)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-106-haus-zum-riesen-10::rm-106-haus-zum-riesen-10",
+          "name": "106 Haus zum Riesen (10)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-204-haus-zum-riesen-45",
+      "street": "204 Haus zum Riesen (45)",
+      "displayName": "204 Haus zum Riesen (45)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-204-haus-zum-riesen-45::rm-204-haus-zum-riesen-45",
+          "name": "204 Haus zum Riesen (45)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-a2-08-altbau",
+      "street": "A2.08 (Altbau)",
+      "displayName": "A2.08 (Altbau)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-a2-08-altbau::rm-a2-08-altbau",
+          "name": "A2.08 (Altbau)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
     }
   ]
 }

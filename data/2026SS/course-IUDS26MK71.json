@@ -8,12 +8,24 @@
     "Grigull, Christine"
   ],
   "organisation": "The Institute for Translation and Interpreting",
-  "start_date": "2026-05-29",
-  "end_date": "2026-07-17",
+  "start_date": "2026-05-08",
+  "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 5,
-      "start_date": "2026-05-29",
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Übungsraum (3051.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19839",
+      "room": "Übungsraum (3051.EG.014)",
+      "building": "Plöck 57a, Ground floor",
+      "note": "Nachholstunde"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-05",
       "end_date": "2026-07-17",
       "start_time": "08:30",
       "end_time": "10:00",
@@ -22,10 +34,46 @@
       "room": "Konferenzsaal (KS II) (3052.EG.053)",
       "building": "Plöck 57a, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Übungsraum (3051.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19839",
+      "room": "Übungsraum (3051.EG.014)",
+      "building": "Plöck 57a, Ground floor",
+      "note": "Ausweichraum, da KS II belegt"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Übungsraum (3051.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19839",
+      "room": "Übungsraum (3051.EG.014)",
+      "building": "Plöck 57a, Ground floor",
+      "note": "Ausweichraum, da KS II belegt"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Konferenzsaal (KS II) (3052.EG.053)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20017",
+      "room": "Konferenzsaal (KS II) (3052.EG.053)",
+      "building": "Plöck 57a, Ground floor",
+      "note": "Raum wird heute anderweitig benötigt. Evtl. gibt es eine Raumänderung oder einen Ersatztermin."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416717",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-02T20:32:50Z"
+  "last_updated": "2026-05-15T11:04:21Z"
 }

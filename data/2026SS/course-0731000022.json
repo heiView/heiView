@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute of Japanese Studies",
   "start_date": "2026-04-24",
-  "end_date": "2026-07-10",
+  "end_date": "2026-07-24",
   "weeks": [
     {
       "day_of_week": 5,
@@ -37,10 +37,10 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-07-10",
-      "end_date": "2026-07-10",
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
       "start_time": "11:15",
-      "end_time": "15:45",
+      "end_time": "16:00",
       "location": "Übungsraum 010.00.07 (4010+4.EG.007)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11573",
       "room": "Übungsraum 010.00.07 (4010+4.EG.007)",
@@ -51,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419728",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:05:14Z"
+  "last_updated": "2026-05-15T10:22:53Z"
 }

@@ -11,7 +11,8 @@
     "Syrbe, Steffen",
     "van Tilburg, Cornelis Martinus",
     "Westhoff, Jens",
-    "Wühl, Elke Susanne"
+    "Wühl, Elke Susanne",
+    "Zielonka, Matthias"
   ],
   "organisation": "University Paediatric Hospital",
   "start_date": "2026-01-13",
@@ -20,7 +21,55 @@
     {
       "day_of_week": 2,
       "start_date": "2026-01-13",
-      "end_date": "2026-02-10",
+      "end_date": "2026-01-13",
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "auf Station"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-01-20",
+      "end_date": "2026-01-20",
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Treffpunkt Station K1 Neuro"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-01-27",
+      "end_date": "2026-01-27",
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Treffpunkt Station K2 Nephro/Gastro"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-02-03",
+      "end_date": "2026-02-03",
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Treffpunkt auf Station K3 Onko"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-02-10",
+      "end_date": "2026-05-19",
       "start_time": "08:30",
       "end_time": "09:15",
       "location": "Siehe Anmerkung",
@@ -31,8 +80,8 @@
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-03-24",
-      "end_date": "2026-06-30",
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-16",
       "start_time": "08:30",
       "end_time": "09:15",
       "location": "Siehe Anmerkung",
@@ -40,10 +89,46 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": "Treffpunkt auf der Station"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-26",
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Treffpunkt auf Station"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
+      "start_time": "08:30",
+      "end_time": "09:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Treffpunkt auf Station"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "start_time": "08:30",
+      "end_time": "09:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Treffpunkt auf Station"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407392",
   "exceptions": [],
   "further_info": "Dienstags, wöchentl.; 8:30 - 9:30 / INF 430 / Bibliothek Kinderklinik / 2. OG",
-  "last_updated": "2026-04-21T10:26:53Z"
+  "last_updated": "2026-05-15T10:45:25Z"
 }

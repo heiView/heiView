@@ -39,13 +39,13 @@
       "day_of_week": 1,
       "start_date": "2026-06-22",
       "end_date": "2026-06-22",
-      "start_time": "10:00",
-      "end_time": "14:45",
-      "location": "Übungsraum (3030.01.004)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28142",
-      "room": "Übungsraum (3030.01.004)",
-      "building": "Hauptstraße 52, 1st floor",
-      "note": "Location of the room: Hauptstraße 52 (access via patio of the Institute of Translation and Interpreting), room number 104"
+      "start_time": "14:00",
+      "end_time": "17:30",
+      "location": "Übungsraum (3051.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19843",
+      "room": "Übungsraum (3051.EG.019)",
+      "building": "Plöck 57a, Ground floor",
+      "note": "Location of this session: the room is at the Institute of Translation and Interpreting (Plöck 57a), ground floor"
     },
     {
       "day_of_week": 1,
@@ -75,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408581",
   "exceptions": [],
   "further_info": "Recommended Reading Required reading will be provided at the beginning of the practice.",
-  "last_updated": "2026-04-24T19:46:41Z"
+  "last_updated": "2026-05-15T11:10:27Z"
 }

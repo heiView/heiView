@@ -25,6 +25,18 @@
     },
     {
       "day_of_week": 3,
+      "start_date": "2026-04-15",
+      "end_date": "2026-07-22",
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "location": "Unterrichtsraum (6229.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14153",
+      "room": "Unterrichtsraum (6229.01.110)",
+      "building": "Im Neuenheimer Feld 229, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
       "start_date": "2026-04-22",
       "end_date": "2026-07-22",
       "start_time": "12:15",
@@ -39,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410431",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-28T10:08:36Z"
+  "last_updated": "2026-05-15T10:55:49Z"
 }

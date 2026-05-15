@@ -9,7 +9,7 @@
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-20",
   "weeks": [
     {
       "day_of_week": 1,
@@ -26,7 +26,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-16",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "Hörsaal (6205.EG.205)",
@@ -51,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414035",
   "exceptions": [],
   "further_info": "Recommended Reading L. C. Evans - Partial Differential Equations F. Sauvigny - Partielle Differentialgleichungen der Geometrie und der Physik 1 further information additional information",
-  "last_updated": "2026-04-23T13:15:22Z"
+  "last_updated": "2026-05-15T10:55:01Z"
 }

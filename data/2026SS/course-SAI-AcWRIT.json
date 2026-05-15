@@ -22,10 +22,22 @@
       "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
       "building": "Voßstraße 2, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11580",
+      "room": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "building": "Hörsaal 010.01.05, Voßstraße 2, 1st floor",
+      "note": "Ausweichraum"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412345",
   "exceptions": [],
   "further_info": "Please note that there will only be five scheduled sessions this semester. While the room is currently reserved for the entire term, these are placeholder bookings. We will finalize the five specific dates by April and remove the remaining entries at that time. Please check the schedule again in April for the confirmed dates.",
-  "last_updated": "2026-04-21T09:50:40Z"
+  "last_updated": "2026-05-15T10:08:04Z"
 }

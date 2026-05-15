@@ -25,6 +25,18 @@
       "note": "TN 30-35"
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-03",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "HS 05 (2170.01.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20589",
+      "room": "HS 05 (2170.01.033)",
+      "building": "HS 05, Grabengasse 3-5, 1st floor",
+      "note": "TN 30-35 - Rektorats-Veranstaltung bedingter einmaliger Ausweichtermin nach Hörsaal05 (altUGX61)-soorry"
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-07-20",
@@ -40,5 +52,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409523",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:40:36Z"
+  "last_updated": "2026-05-15T11:00:21Z"
 }

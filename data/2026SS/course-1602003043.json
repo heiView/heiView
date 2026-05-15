@@ -85,6 +85,18 @@
       "note": "Tutorium"
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 6 (6327.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16836",
+      "room": "SR 6 (6327.EG.006)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-08-03",
       "end_date": "2026-08-03",
@@ -100,5 +112,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409468",
   "exceptions": [],
   "further_info": "Woche 1-8: Prof. Dr. Peer Fischer Woche 9-12: Dr. Fabian Grünewald Hauptklausur: 30.07.2025 (Mittwoch), 10 - 12 h, INF 306, HS1 Nachklausur:",
-  "last_updated": "2026-04-21T10:35:46Z"
+  "last_updated": "2026-05-15T10:55:41Z"
 }

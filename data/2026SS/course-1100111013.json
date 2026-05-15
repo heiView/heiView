@@ -9,12 +9,12 @@
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-24",
+  "end_date": "2026-07-21",
   "weeks": [
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
+      "end_date": "2026-07-17",
       "start_time": "09:00",
       "end_time": "11:00",
       "location": "SR B (6205.EG.203)",
@@ -99,5 +99,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414065",
   "exceptions": [],
   "further_info": "Die Einteilung der Gruppen erfolgt in Müsli.",
-  "last_updated": "2026-04-23T12:57:27Z"
+  "last_updated": "2026-05-15T11:13:34Z"
 }

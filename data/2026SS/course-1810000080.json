@@ -94,10 +94,22 @@
       "room": "Heuscheuer II (2050.02.202)",
       "building": "Heuscheuer II, Große Mantelgasse 2, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-01",
+      "start_time": "11:00",
+      "end_time": "14:00",
+      "location": "Heuscheuer II (2050.02.202)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9376",
+      "room": "Heuscheuer II (2050.02.202)",
+      "building": "Heuscheuer II, Große Mantelgasse 2, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409147",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:30:28Z"
+  "last_updated": "2026-05-15T10:49:19Z"
 }

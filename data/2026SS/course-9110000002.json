@@ -278,19 +278,7 @@
     {
       "day_of_week": 2,
       "start_date": "2026-06-23",
-      "end_date": "2026-06-23",
-      "start_time": "16:00",
-      "end_time": "17:30",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
-      "note": "Veranstaltung zusammen mit WFT Notfallmedizin in INF 105 (siehe Moodle)"
-    },
-    {
-      "day_of_week": 2,
-      "start_date": "2026-07-07",
-      "end_date": "2026-07-07",
+      "end_date": "2026-06-30",
       "start_time": "16:00",
       "end_time": "17:30",
       "location": "Ort noch nicht bekannt",
@@ -483,18 +471,6 @@
       "day_of_week": 1,
       "start_date": "2026-05-11",
       "end_date": "2026-05-11",
-      "start_time": "08:30",
-      "end_time": "09:00",
-      "location": "KOPF gHS (6400.EG.266)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
-      "room": "KOPF gHS (6400.EG.266)",
-      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 1,
-      "start_date": "2026-05-11",
-      "end_date": "2026-05-11",
       "start_time": "09:30",
       "end_time": "13:00",
       "location": "KOPF SR 2 (6400.EG.269)",
@@ -502,10 +478,22 @@
       "room": "KOPF SR 2 (6400.EG.269)",
       "building": "Im Neuenheimer Feld 400, Ground floor",
       "note": "Prof. Plath, Karim"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "start_time": "08:30",
+      "end_time": "09:00",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414205",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:58:49Z"
+  "last_updated": "2026-05-15T10:16:23Z"
 }

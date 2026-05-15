@@ -1,6 +1,6 @@
 {
   "id": "IUDS26BU73",
-  "title": "Thème grammatical II",
+  "title": "Thème grammatical II ENTFÄLLT LEIDER!",
   "type": "PC",
   "ects_credits": "3",
   "course_languages": "French",
@@ -8,24 +8,11 @@
     "Baillod, Sophie"
   ],
   "organisation": "The Institute for Translation and Interpreting",
-  "start_date": "2026-04-17",
-  "end_date": "2026-07-24",
-  "weeks": [
-    {
-      "day_of_week": 5,
-      "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
-      "start_time": "10:15",
-      "end_time": "11:45",
-      "location": "Übungsraum (3051.01.111)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19866",
-      "room": "Übungsraum (3051.01.111)",
-      "building": "Plöck 57a, 1st floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416721",
   "exceptions": [],
   "further_info": "Recommended Reading Praktische Grammatik der französischen Sprache. Neubearbeitung 2020. 3. Auflage 2020: 3-936496-50-5 Ce cours n'est pas ouvert aux étudiant·e·s Erasmus francophones.",
-  "last_updated": "2026-04-21T11:45:48Z"
+  "last_updated": "2026-05-15T11:09:34Z"
 }

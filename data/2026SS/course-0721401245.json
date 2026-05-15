@@ -5,8 +5,8 @@
   "ects_credits": null,
   "course_languages": "English (primary)",
   "lecturers": [
-    "Min, In Young",
-    "<N.N.>(Lee, Ji Eun), 072140.100"
+    "Lee, Ji Eun",
+    "Min, In Young"
   ],
   "organisation": "Institute of Chinese Studies",
   "start_date": "2026-04-16",
@@ -35,10 +35,22 @@
       "room": "Übungsraum 010.00.01 (4010+4.EG.001)",
       "building": "Voßstraße 2, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": "Ausweichraum wegen Auswahlverfahren Global Art History"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415461",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:50:58Z"
+  "last_updated": "2026-05-15T11:05:16Z"
 }

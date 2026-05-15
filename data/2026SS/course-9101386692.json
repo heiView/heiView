@@ -5,10 +5,8 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "Fuchs, Gerhard Emmanuel",
-    "N.N., Unbekannt",
-    "Stöbich, Nicole",
-    "Trickes, Claudia"
+    "Denninger, Natascha-Elisabeth Ramona",
+    "Stöbich, Nicole"
   ],
   "organisation": "Lehre Interprofessionelle Gesundheitsversorgung",
   "start_date": "2026-04-13",
@@ -90,5 +88,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400471",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:31:50Z"
+  "last_updated": "2026-05-15T10:50:28Z"
 }

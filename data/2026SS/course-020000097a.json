@@ -8,24 +8,11 @@
     "Dölling, Dieter"
   ],
   "organisation": "Faculty of Law",
-  "start_date": "2026-07-03",
-  "end_date": "2026-07-03",
-  "weeks": [
-    {
-      "day_of_week": 5,
-      "start_date": "2026-07-03",
-      "end_date": "2026-07-03",
-      "start_time": "09:00",
-      "end_time": "15:00",
-      "location": "Seminarraum 2 / Akademiestrasse 4",
-      "location_link": null,
-      "room": "Seminarraum 2 / Akademiestrasse 4",
-      "building": null,
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416822",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:25:51Z"
+  "last_updated": "2026-05-15T10:44:33Z"
 }

@@ -9,12 +9,12 @@
   ],
   "organisation": "Faculty of Mathematics and Computer Science",
   "start_date": "2026-04-14",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-16",
   "weeks": [
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
+      "end_date": "2026-07-14",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR B (6205.EG.203)",
@@ -26,7 +26,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "SR B (6205.EG.203)",
@@ -38,7 +38,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-15",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR B (6205.EG.203)",
@@ -50,7 +50,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-16",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "SR A (6205.EG.202)",
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414021",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:43:06Z"
+  "last_updated": "2026-05-15T11:13:30Z"
 }

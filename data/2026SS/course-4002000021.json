@@ -8,13 +8,49 @@
     "Barthelmes, Lisa-Sophia"
   ],
   "organisation": "Physiotherapy Science (B.Sc.)",
-  "start_date": "2026-06-08",
+  "start_date": "2026-06-17",
   "end_date": "2026-07-27",
   "weeks": [
     {
-      "day_of_week": 1,
-      "start_date": "2026-06-08",
-      "end_date": "2026-06-15",
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-24",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31079",
+      "room": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "building": "Schlierbacher Landstraße 200A, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-09",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31079",
+      "room": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "building": "Schlierbacher Landstraße 200A, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31079",
+      "room": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "building": "Schlierbacher Landstraße 200A, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
       "start_time": "10:15",
       "end_time": "11:45",
       "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
@@ -46,34 +82,10 @@
       "room": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
       "building": "Schlierbacher Landstraße 200A, 3rd floor",
       "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-06-17",
-      "end_date": "2026-06-24",
-      "start_time": "10:15",
-      "end_time": "11:45",
-      "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31079",
-      "room": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
-      "building": "Schlierbacher Landstraße 200A, 3rd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-07-02",
-      "end_date": "2026-07-09",
-      "start_time": "08:30",
-      "end_time": "10:00",
-      "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31079",
-      "room": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
-      "building": "Schlierbacher Landstraße 200A, 3rd floor",
-      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416563",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:32:30Z"
+  "last_updated": "2026-05-15T10:51:27Z"
 }

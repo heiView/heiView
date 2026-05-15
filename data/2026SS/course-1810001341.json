@@ -34,10 +34,22 @@
       "room": "Übungsraum 00.010 (4310.EG.010)",
       "building": "Bergheimer Straße 58, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-05-15",
+      "end_date": "2026-05-15",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Unterrichtsraum 01.030 (4310.01.030)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20225",
+      "room": "Unterrichtsraum 01.030 (4310.01.030)",
+      "building": "Bergheimer Straße 58, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409354",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:03:33Z"
+  "last_updated": "2026-05-15T10:21:15Z"
 }

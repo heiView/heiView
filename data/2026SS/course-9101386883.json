@@ -6,12 +6,11 @@
   "course_languages": "German",
   "lecturers": [
     "Krug, Katja",
-    "Mink, Johanna",
-    "N.N., Unbekannt"
+    "Mink, Johanna"
   ],
   "organisation": "Lehre Interprofessionelle Gesundheitsversorgung",
   "start_date": "2026-04-14",
-  "end_date": "2026-05-19",
+  "end_date": "2026-06-16",
   "weeks": [
     {
       "day_of_week": 2,
@@ -29,18 +28,6 @@
       "day_of_week": 2,
       "start_date": "2026-04-21",
       "end_date": "2026-04-21",
-      "start_time": "09:00",
-      "end_time": "12:15",
-      "location": "Seminarraum K9 (6130.01.009)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30628",
-      "room": "Seminarraum K9 (6130.01.009)",
-      "building": "Im Neuenheimer Feld 130, 1st floor",
-      "note": null
-    },
-    {
-      "day_of_week": 2,
-      "start_date": "2026-05-05",
-      "end_date": "2026-05-05",
       "start_time": "09:00",
       "end_time": "12:15",
       "location": "Seminarraum K9 (6130.01.009)",
@@ -72,10 +59,22 @@
       "room": "Seminarraum K12 (6130.01.012)",
       "building": "Im Neuenheimer Feld 130, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "09:00",
+      "end_time": "12:15",
+      "location": "Seminarraum K9 (6130.01.009)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30628",
+      "room": "Seminarraum K9 (6130.01.009)",
+      "building": "Im Neuenheimer Feld 130, 1st floor",
+      "note": "Nachholtermin für 05.05."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400435",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-28T10:02:54Z"
+  "last_updated": "2026-05-15T10:50:09Z"
 }

@@ -34,10 +34,34 @@
       "room": "Unterrichtsraum 01.030 (4310.01.030)",
       "building": "Bergheimer Straße 58, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Übungsraum 110.02.08 (4110.02.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11028",
+      "room": "Übungsraum 110.02.08 (4110.02.008)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-27",
+      "end_date": "2026-05-27",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11580",
+      "room": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "building": "Hörsaal 010.01.05, Voßstraße 2, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415169",
   "exceptions": [],
   "further_info": "Recommended Reading Texts: Main Text Armendáriz, Beatriz and Jonathan Morduch, The Economics of Microfinance, 2nd edition, MIT Press, 2010. (see Moodle site) A copy of this book and other materials will be put on reserve in the instructor’s Semesterapparat in the WISO library. Additional Texts Armendáriz, Beatriz, and Marc Labie (eds.). The Handbook of Microfinance. Singapore: World Scientific, 2011. Banerjee, Abhijit and Esther Duflo. Poor Economics. Philadelphia: PublicAffairs Books, 2011. (Chapters 7-9; see Moodle site) Bardhan, Pranab, and Christopher Udry. Development Microeconomics. Oxford: Oxford University Press, 1999. Collins, Daryl, Jonathan Morduch, Stuart Rutherford, and Orlanda Ruthven. 2009. Portfolios of the Poor: How the World’s Poor Live on $2 a Day. Princeton, NJ: Princeton University Press. Possibly available online on JSTOR Deaton, Angus. 1992. Understanding Consumption. Oxford: Oxford University Press. (see Moodle site) Ledgerwood, Joanna (ed.). The New Microfinance Handbook: A Financial Market System Perspective. The World Bank, 2013. Available online: https://openknowledge.worldbank.org/handle/10986/12272.pdf Ledgerwood, Joanna (ed.). The Microfinance Handbook: An Institutional and Financial Perspective. The World Bank, 1999. Available online: https://openknowledge.worldbank.org/bitstream/handle/10986/12383/18771.pdf Ray, Debraj. Development Economics, Princeton University Press, 1999. (see Moodle site for relevant chapters)",
-  "last_updated": "2026-04-21T10:18:53Z"
+  "last_updated": "2026-05-15T10:37:14Z"
 }

@@ -10,7 +10,7 @@
   ],
   "organisation": "Institute of Geography",
   "start_date": "2026-04-15",
-  "end_date": "2026-04-15",
+  "end_date": "2026-07-10",
   "weeks": [
     {
       "day_of_week": 3,
@@ -23,10 +23,34 @@
       "room": "Übungsraum (6348.EG.013)",
       "building": "Im Neuenheimer Feld 348, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
+      "start_time": "09:00",
+      "end_time": "14:00",
+      "location": "Übungsraum (6348.01.132)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19340",
+      "room": "Übungsraum (6348.01.132)",
+      "building": "Im Neuenheimer Feld 348, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
+      "start_time": "09:00",
+      "end_time": "14:00",
+      "location": "Übungsraum (6348.01.132)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19340",
+      "room": "Übungsraum (6348.01.132)",
+      "building": "Im Neuenheimer Feld 348, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413690",
   "exceptions": [],
   "further_info": "Bitte senden sie uns bis zum 18.02.2026 ein ca. einseitiges Motivationsschreiben zu!",
-  "last_updated": "2026-04-21T10:16:35Z"
+  "last_updated": "2026-05-15T10:34:45Z"
 }

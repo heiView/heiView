@@ -134,7 +134,7 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
+      "end_date": "2026-07-14",
       "start_time": "08:00",
       "end_time": "11:00",
       "location": "HS 13 (2170.02.018)",
@@ -147,5 +147,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409152",
   "exceptions": [],
   "further_info": "Recommended Reading Mosler, K. and F. Schmid (2009). Beschreibende Statistik und Wirtschaftsstatistik. Springer. Behnke, J. and N. Behnke (2006). Grundlagen der statistischen Datenanalyse: Eine Einführung für Politikwissenschaftler. Wiesbaden: Springer VS.",
-  "last_updated": "2026-04-21T10:05:33Z"
+  "last_updated": "2026-05-15T10:23:19Z"
 }
