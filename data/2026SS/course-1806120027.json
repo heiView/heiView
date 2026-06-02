@@ -14,7 +14,7 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-13",
-      "end_date": "2026-07-20",
+      "end_date": "2026-04-27",
       "start_time": "16:15",
       "end_time": "17:45",
       "location": "Übungsraum (4310.EG.024)",
@@ -22,10 +22,46 @@
       "room": "Übungsraum (4310.EG.024)",
       "building": "Bergheimer Straße 58, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-11",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-13",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-20",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Unterrichtsraum (4310.02.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20514",
+      "room": "Unterrichtsraum (4310.02.024)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413040",
   "exceptions": [],
   "further_info": "Recommended Reading Senge,K. et al (Hrsg.) (2012): Schlüsselwerke der Emotionssoziologie. Wiesbaden: Springer Anrechenbar für: - BA-M 2: 6 ECTS (benotet) - BA-M 9.1 oder 9.3: 2 ECTS (unbenotet), 6 ECTS (benotet) - BA-B 4: 6 ECTS (benotet) - BA-B 6: 2 ECTS (unbenotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich.",
-  "last_updated": "2026-04-21T11:48:32Z"
+  "last_updated": "2026-06-02T10:29:58Z"
 }

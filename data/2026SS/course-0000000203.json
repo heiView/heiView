@@ -25,27 +25,39 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-10-16",
+      "start_date": "2026-10-23",
       "end_date": "2026-10-23",
       "start_time": "09:00",
       "end_time": "17:00",
-      "location": "Ort noch nicht bekannt",
+      "location": "Siehe Anmerkung",
       "location_link": null,
-      "room": "Ort noch nicht bekannt",
+      "room": "Siehe Anmerkung",
       "building": null,
-      "note": null
+      "note": "HSE Konferenzraum, Voßstraße 2, Geb. 4330"
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-11-06",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-13",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "HSE Konferenzraum, Voßstraße 2, Geb. 4330"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-12-04",
       "end_date": "2026-12-04",
       "start_time": "09:00",
       "end_time": "17:00",
-      "location": "Ort noch nicht bekannt",
+      "location": "Siehe Anmerkung",
       "location_link": null,
-      "room": "Ort noch nicht bekannt",
+      "room": "Siehe Anmerkung",
       "building": null,
-      "note": null
+      "note": "HSE Konferenzraum, Voßstraße 2, Geb. 4330"
     },
     {
       "day_of_week": 2,
@@ -87,5 +99,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408654",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:50:37Z"
+  "last_updated": "2026-06-01T13:54:39Z"
 }

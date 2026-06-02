@@ -22,10 +22,22 @@
       "room": "Übungsraum (4400.02.212)",
       "building": "Voßstraße 2, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 400.00.02 (4400.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22071",
+      "room": "Übungsraum 400.00.02 (4400.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415324",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:32:22Z"
+  "last_updated": "2026-06-02T10:12:22Z"
 }

@@ -22,22 +22,10 @@
       "room": "HS 08 (2170.01.038)",
       "building": "HS 08, Grabengasse 3-5, 1st floor",
       "note": null
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-06-05",
-      "end_date": "2026-06-05",
-      "start_time": "09:00",
-      "end_time": "12:00",
-      "location": "Heuscheuer II (2050.02.202)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9376",
-      "room": "Heuscheuer II (2050.02.202)",
-      "building": "Heuscheuer II, Große Mantelgasse 2, 2nd floor",
-      "note": "Beginn s.t.!"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408687",
   "exceptions": [],
   "further_info": "Recommended Reading Grundlagen und Zentralthemen: Söllner / Baldus, Römisches Recht (Heidelberg 2022); weitere in der ersten Stunde online information e-learning course Fachfremde Studierende: Teilnahme am Kurs ohne Anmeldung möglich; bei regelmäßiger Anwesenheit Teilnahmeschein; benoteter Schein: s.o. Bitte klären Sie rechtzeitig mit dem Prüfungsamt Ihrer eigenen Fakultät, welche Anerkennungs-und Benotungsregeln bestehen.",
-  "last_updated": "2026-04-21T10:42:36Z"
+  "last_updated": "2026-06-02T10:25:38Z"
 }

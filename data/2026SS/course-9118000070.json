@@ -5,7 +5,8 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "Baumann, Lukas"
+    "Baumann, Lukas",
+    "Sauer, Lukas Daniel"
   ],
   "organisation": "Institut für Medizinische Biometrie",
   "start_date": null,
@@ -14,5 +15,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/390261",
   "exceptions": [],
   "further_info": "This course is subject to a fee for participants not enrolled in the Master's program Medical Biometry/Biostatistics.",
-  "last_updated": "2026-04-21T09:56:01Z"
+  "last_updated": "2026-06-01T14:04:31Z"
 }

@@ -312,18 +312,6 @@
       "note": "Ort: Bibliothek, INF 307, 4.OG"
     },
     {
-      "day_of_week": 4,
-      "start_date": "2026-06-11",
-      "end_date": "2026-06-11",
-      "start_time": "08:30",
-      "end_time": "10:45",
-      "location": "Siehe Anmerkung",
-      "location_link": null,
-      "room": "Siehe Anmerkung",
-      "building": null,
-      "note": "Ort: Bibliothek, INF 307, 4.OG"
-    },
-    {
       "day_of_week": 5,
       "start_date": "2026-05-29",
       "end_date": "2026-05-29",
@@ -353,6 +341,18 @@
       "end_date": "2026-06-10",
       "start_time": "08:30",
       "end_time": "10:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: Bibliothek, INF 307, 4.OG"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "10:45",
+      "end_time": "13:00",
       "location": "Siehe Anmerkung",
       "location_link": null,
       "room": "Siehe Anmerkung",
@@ -1311,5 +1311,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/386345",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:14:24Z"
+  "last_updated": "2026-06-01T14:35:24Z"
 }

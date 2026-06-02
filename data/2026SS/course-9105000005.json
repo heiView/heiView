@@ -9,7 +9,7 @@
   ],
   "organisation": "University Paediatric Hospital",
   "start_date": "2026-03-04",
-  "end_date": "2026-06-17",
+  "end_date": "2026-07-15",
   "weeks": [
     {
       "day_of_week": 3,
@@ -38,7 +38,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-06-10",
-      "end_date": "2026-06-17",
+      "end_date": "2026-07-15",
       "start_time": "14:00",
       "end_time": "16:15",
       "location": "UFHK Kleingruppenraum (6440.EG.250)",
@@ -96,6 +96,18 @@
       "note": null
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-07-09",
+      "start_time": "12:00",
+      "end_time": "14:15",
+      "location": "UFHK PÄD SR (6440.EG.264)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
+      "room": "UFHK PÄD SR (6440.EG.264)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
+    },
+    {
       "day_of_week": 3,
       "start_date": "2026-03-11",
       "end_date": "2026-03-11",
@@ -134,7 +146,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-06-10",
-      "end_date": "2026-06-17",
+      "end_date": "2026-07-15",
       "start_time": "14:00",
       "end_time": "16:15",
       "location": "UFHK Kleingruppenraum (6440.EG.252)",
@@ -170,7 +182,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-06-10",
-      "end_date": "2026-06-17",
+      "end_date": "2026-07-15",
       "start_time": "14:00",
       "end_time": "16:15",
       "location": "UFHK Kleingruppenraum (6440.EG.253)",
@@ -218,7 +230,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-06-10",
-      "end_date": "2026-06-17",
+      "end_date": "2026-07-15",
       "start_time": "12:30",
       "end_time": "14:00",
       "location": "UFHK PÄD SR (6440.EG.264)",
@@ -262,10 +274,22 @@
       "room": "UFHK PÄD SR (6440.EG.264)",
       "building": "Im Neuenheimer Feld 440, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
+      "start_time": "12:15",
+      "end_time": "14:30",
+      "location": "UFHK PÄD SR (6440.EG.264)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28791",
+      "room": "UFHK PÄD SR (6440.EG.264)",
+      "building": "Im Neuenheimer Feld 440, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400539",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:00:34Z"
+  "last_updated": "2026-06-01T14:12:27Z"
 }

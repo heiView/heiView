@@ -1,0 +1,33 @@
+{
+  "id": "703SBKFilm",
+  "title": "German in Films (B2/C1)",
+  "type": "C",
+  "ects_credits": "8",
+  "course_languages": "German",
+  "lecturers": [
+    "Bürkert, Joachim",
+    "Sayyad, Nina",
+    "Steimer, Daniel"
+  ],
+  "organisation": "Internationales Studienzentrum",
+  "start_date": "2026-04-23",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-07-23",
+      "start_time": "13:45",
+      "end_time": "17:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/423630",
+  "exceptions": [],
+  "further_info": "further information additional information",
+  "last_updated": "2026-06-01T14:38:45Z"
+}

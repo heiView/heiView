@@ -9,7 +9,7 @@
   ],
   "organisation": "Physiotherapy Science (B.Sc.)",
   "start_date": "2026-04-17",
-  "end_date": "2026-07-30",
+  "end_date": "2026-07-23",
   "weeks": [
     {
       "day_of_week": 5,
@@ -38,8 +38,20 @@
     {
       "day_of_week": 4,
       "start_date": "2026-07-23",
-      "end_date": "2026-07-30",
+      "end_date": "2026-07-23",
       "start_time": "08:30",
+      "end_time": "11:45",
+      "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31079",
+      "room": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
+      "building": "Schlierbacher Landstraße 200A, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-24",
+      "start_time": "10:15",
       "end_time": "11:45",
       "location": "SCHLIERBACH Seminarraum KLH (9034.03.307)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31079",
@@ -51,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416572",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:32:27Z"
+  "last_updated": "2026-06-02T10:12:31Z"
 }

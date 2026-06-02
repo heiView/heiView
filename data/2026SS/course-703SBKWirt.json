@@ -1,0 +1,33 @@
+{
+  "id": "703SBKWirt",
+  "title": "German for Economics/Business (C1/B2)",
+  "type": "C",
+  "ects_credits": "8",
+  "course_languages": "German",
+  "lecturers": [
+    "Ruhm, Rainer",
+    "Sayyad, Nina",
+    "Steimer, Daniel"
+  ],
+  "organisation": "Internationales Studienzentrum",
+  "start_date": "2026-04-21",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-21",
+      "end_date": "2026-07-23",
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/423638",
+  "exceptions": [],
+  "further_info": "further information additional information",
+  "last_updated": "2026-06-01T14:38:37Z"
+}

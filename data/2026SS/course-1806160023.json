@@ -14,7 +14,7 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
+      "end_date": "2026-07-14",
       "start_time": "12:15",
       "end_time": "13:45",
       "location": "Unterrichtsraum (4310.02.024)",
@@ -22,10 +22,22 @@
       "room": "Unterrichtsraum (4310.02.024)",
       "building": "Bergheimer Straße 58, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "12:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20379",
+      "room": "Übungsraum (4310.02.005)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413056",
   "exceptions": [],
-  "further_info": "Anrechenbar für: - BA-M 6 (Seminar): 6 ECTS (benotet) - BA-M 9.1 oder 9.3: 2 ECTS (unbenotet), 6 ECTS (benotet) - BA-B 6: 2 ECTS (unbenotet) Eine hiervon abweichende ECTS-Vergabe ist nicht mögliich.",
-  "last_updated": "2026-04-21T10:24:02Z"
+  "further_info": "Anrechenbar für: - BA-M 6 (Seminar): 6 ECTS (benotet) - BA-M 9.1 oder 9.3: 2 ECTS (unbenotet), 6 ECTS (benotet) - BA-B 6: 2 ECTS (unbenotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich. Hinweis: In BA-M 6 sind eine Vorlesung und zwei Seminare oder zwei Seminare und eine Vorlesung zu erbringen.",
+  "last_updated": "2026-06-01T14:51:09Z"
 }

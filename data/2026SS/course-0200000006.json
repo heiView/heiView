@@ -1,0 +1,32 @@
+{
+  "id": "0200000006",
+  "title": "Seminar: Aktuelle Fragen des deutschen und internationalen Deliktsrechts",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Pfeiffer, Thomas",
+    "Tochtermann, Peter Micheal"
+  ],
+  "organisation": "Faculty of Law",
+  "start_date": "2026-07-23",
+  "end_date": "2026-07-23",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-23",
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "Seminarraum 1 / Akademiestrasse 4",
+      "location_link": null,
+      "room": "Seminarraum 1 / Akademiestrasse 4",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/424134",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-06-02T10:26:44Z"
+}

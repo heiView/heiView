@@ -8,11 +8,24 @@
     "Hornung, Aljoscha Jakob Dominik"
   ],
   "organisation": "Department of Classical Philology",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-06-02",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-02",
+      "end_date": "2026-07-21",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum (2040.04.406)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28093",
+      "room": "Übungsraum (2040.04.406)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408539",
   "exceptions": [],
   "further_info": "der Kurs findet dienstags, von 9 bis 11 Uhr statt. Der Ort wird rechtzeitig bekanntgegeben.",
-  "last_updated": "2026-04-21T11:44:10Z"
+  "last_updated": "2026-06-02T10:36:26Z"
 }

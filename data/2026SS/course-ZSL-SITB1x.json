@@ -30,10 +30,10 @@
       "end_date": "2026-04-24",
       "start_time": "08:30",
       "end_time": "12:00",
-      "location": "Übungsraum (3120.01.117)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
-      "room": "Übungsraum (3120.01.117)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
     {
@@ -42,15 +42,15 @@
       "end_date": "2026-07-31",
       "start_time": "08:30",
       "end_time": "12:00",
-      "location": "Übungsraum (3120.01.117)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7110",
-      "room": "Übungsraum (3120.01.117)",
-      "building": "Plöck 79-81, 1st floor",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413925",
   "exceptions": [],
   "further_info": "Recommended Reading Piotti / De Savorgnani / Carrara, \"Universitalia 2.0 B1/B2\". Ismaning: Hueber Verlag. ISBN: 978-3-19-105464-9. Unità 1-6",
-  "last_updated": "2026-04-21T10:22:39Z"
+  "last_updated": "2026-06-01T14:48:58Z"
 }

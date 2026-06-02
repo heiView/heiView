@@ -341,10 +341,10 @@
       "end_date": "2026-06-26",
       "start_time": "08:00",
       "end_time": "11:00",
-      "location": "INF 307 - Präpsäle, EG/1.OG",
-      "location_link": null,
-      "room": "INF 307 - Präpsäle, EG/1.OG",
-      "building": null,
+      "location": "Übungsraum (6346.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=17338",
+      "room": "Übungsraum (6346.01.108)",
+      "building": "Im Neuenheimer Feld 346, 1st floor",
       "note": null
     },
     {
@@ -567,5 +567,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/401517",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:14:18Z"
+  "last_updated": "2026-06-01T14:35:21Z"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "9101000018",
+  "title": "PB - BP Innere Medizin & Chirurgie - Einführungen",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "organisation": "Zentrum für Innere Medizin (Krehl-Klinik)",
+  "start_date": "2026-06-22",
+  "end_date": "2026-06-22",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "start_time": "08:45",
+      "end_time": "09:30",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort: Medizinische Klinik"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "start_time": "09:30",
+      "end_time": "10:00",
+      "location": "MED SR 718 Teil 1 (6410.EG.718)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28766",
+      "room": "MED SR 718 Teil 1 (6410.EG.718)",
+      "building": "Im Neuenheimer Feld 410, Ground floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399499",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-06-02T10:17:09Z"
+}

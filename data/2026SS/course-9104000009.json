@@ -134,8 +134,8 @@
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-06-16",
-      "end_date": "2026-06-16",
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
       "start_time": "14:15",
       "end_time": "15:15",
       "location": "UFHK GYN SR (6440.EG.261)",
@@ -146,10 +146,10 @@
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-07-14",
-      "end_date": "2026-07-14",
-      "start_time": "14:15",
-      "end_time": "15:15",
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "15:15",
+      "end_time": "16:15",
       "location": "UFHK GYN SR (6440.EG.261)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28789",
       "room": "UFHK GYN SR (6440.EG.261)",
@@ -160,5 +160,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/392609",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:00:32Z"
+  "last_updated": "2026-06-02T09:38:13Z"
 }

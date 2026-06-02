@@ -541,8 +541,8 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-06-17",
-      "end_date": "2026-06-17",
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-20",
       "start_time": "09:15",
       "end_time": "10:45",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -649,8 +649,8 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-05-20",
-      "end_date": "2026-05-20",
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
       "start_time": "09:15",
       "end_time": "10:15",
       "location": "Hörsaal PSIA Haus 1 (4270.EG.040)",
@@ -723,5 +723,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379492",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-15T10:16:42Z"
+  "last_updated": "2026-06-01T14:10:00Z"
 }

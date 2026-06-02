@@ -34,10 +34,34 @@
       "room": "Lab 3 (6329.01.109)",
       "building": "Im Neuenheimer Feld 329, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "SR 2 (6327.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
+      "room": "SR 2 (6327.EG.002)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": "14 Teilnehmer, bevorzugt SR 26 INF 329"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-06-25",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "SR 2 (6327.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
+      "room": "SR 2 (6327.EG.002)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": "14 Teilnehmer, bevorzugt SR 26 INF 329"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412278",
   "exceptions": [],
-  "further_info": "Dauer: 08.06.-26.06.2026, 10.00-18.00 Uhr, 3-wöchig, ganztägig, INF 329, 1. OG",
-  "last_updated": "2026-04-21T10:33:56Z"
+  "further_info": "Dauer: 08.06.-26.06.2026, 10.00-18.00 Uhr, 3-wöchig, ganztägig, INF 329, 1. OG Begleitseminare: Mi 10.6.2026 von 13.00 bis 15.00 Uhr, Bioquant, INF 267, SR 044, EG Do 11.06.2026 von 9.00 bis 12.00 Uhr, INF 327, SR 02, ground floor Fr 19.06.2026 von 10.00 bis 12.00 Uhr, will noch bekannt gegeben Mo, 22.06.2026 von⋅13:00 bis 15:00 Uhr, Bioquant, INF 267, SR 044, EG Do 25.06.2026 von 9.00 bis 12.00 Uhr, INF 327, SR 02, ground floor",
+  "last_updated": "2026-06-02T10:14:14Z"
 }

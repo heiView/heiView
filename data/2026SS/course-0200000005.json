@@ -1,0 +1,31 @@
+{
+  "id": "0200000005",
+  "title": "RECHTSVERGLEICHUNG UND RECHTSANGLEICHUNG IN DER EUROPÄISCHEN UNION",
+  "type": "CO",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Prof.Dr.Ádám Fuglinszky), 020000.100"
+  ],
+  "organisation": "Faculty of Law",
+  "start_date": "2026-06-10",
+  "end_date": "2026-06-10",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "16:00",
+      "end_time": "21:00",
+      "location": "Ort - siehe Anmerkung",
+      "location_link": null,
+      "room": "Ort - siehe Anmerkung",
+      "building": null,
+      "note": "Die Veranstaltung findet im Institut für deutsches und europäisches Gesellschafts- und Wirtschaftsrecht statt (Friedrich-Ebert-Platz 2; Raum 108)"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/423959",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-06-02T10:24:30Z"
+}

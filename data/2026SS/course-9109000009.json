@@ -10,7 +10,7 @@
   ],
   "organisation": "University Hospital of Ophthalmology",
   "start_date": "2026-03-06",
-  "end_date": "2026-06-12",
+  "end_date": "2026-07-10",
   "weeks": [
     {
       "day_of_week": 5,
@@ -40,6 +40,30 @@
       "day_of_week": 5,
       "start_date": "2026-04-17",
       "end_date": "2026-04-17",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "KOPF Spiegelsaal (6400.EG.276)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28745",
+      "room": "KOPF Spiegelsaal (6400.EG.276)",
+      "building": "KOPF Spiegelsaal, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "KOPF Spiegelsaal (6400.EG.276)",
@@ -88,5 +112,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399209",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:59:13Z"
+  "last_updated": "2026-06-01T14:09:47Z"
 }

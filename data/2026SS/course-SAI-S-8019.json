@@ -8,21 +8,9 @@
     "Mishra, Anand"
   ],
   "organisation": "Cultural and Religious History of South Asia (Classical Indology)",
-  "start_date": "2026-07-05",
+  "start_date": "2026-07-06",
   "end_date": "2026-07-10",
   "weeks": [
-    {
-      "day_of_week": 7,
-      "start_date": "2026-07-05",
-      "end_date": "2026-07-05",
-      "start_time": "09:00",
-      "end_time": "18:00",
-      "location": "Besprechungsraum 130.00.02 (4130.EG.002)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11326",
-      "room": "Besprechungsraum 130.00.02 (4130.EG.002)",
-      "building": "Voßstraße 2, Ground floor",
-      "note": null
-    },
     {
       "day_of_week": 1,
       "start_date": "2026-07-06",
@@ -63,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409874",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-28T10:14:04Z"
+  "last_updated": "2026-06-02T10:24:15Z"
 }

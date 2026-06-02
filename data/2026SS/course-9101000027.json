@@ -1,0 +1,31 @@
+{
+  "id": "9101000027",
+  "title": "PB - Abschlussübung: Blockpraktikum Innere Medizin & Chirurgie",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "organisation": "Zentrum für Innere Medizin (Krehl-Klinik)",
+  "start_date": "2026-07-03",
+  "end_date": "2026-07-03",
+  "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "09:00",
+      "end_time": "12:15",
+      "location": "Seminarraum BP, POL (6105.02.203)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30605",
+      "room": "Seminarraum BP, POL (6105.02.203)",
+      "building": "Im Neuenheimer Feld 105, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/399495",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-06-02T10:17:08Z"
+}

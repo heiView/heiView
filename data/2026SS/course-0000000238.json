@@ -29,9 +29,9 @@
       "end_date": "2026-06-12",
       "start_time": "14:00",
       "end_time": "20:00",
-      "location": "KiGa I (1200.EG.024)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
-      "room": "KiGa I (1200.EG.024)",
+      "location": "KiGa II (1200.EG.002C)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
+      "room": "KiGa II (1200.EG.002C)",
       "building": "Kisselgasse 1, Ground floor",
       "note": null
     },
@@ -41,9 +41,9 @@
       "end_date": "2026-06-13",
       "start_time": "09:00",
       "end_time": "13:30",
-      "location": "KiGa I (1200.EG.024)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9995",
-      "room": "KiGa I (1200.EG.024)",
+      "location": "KiGa II (1200.EG.002C)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7443",
+      "room": "KiGa II (1200.EG.002C)",
       "building": "Kisselgasse 1, Ground floor",
       "note": null
     }
@@ -51,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414650",
   "exceptions": [],
   "further_info": "Recommended Reading The required literature will be announced in the first meeting. additional block seminar on 12th and 13th June 2026.",
-  "last_updated": "2026-04-21T10:19:55Z"
+  "last_updated": "2026-06-01T14:44:25Z"
 }

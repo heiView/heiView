@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute of Geography",
   "start_date": "2026-05-20",
-  "end_date": "2026-07-03",
+  "end_date": "2026-06-21",
   "weeks": [
     {
       "day_of_week": 3,
@@ -26,7 +26,31 @@
     {
       "day_of_week": 5,
       "start_date": "2026-06-19",
-      "end_date": "2026-07-03",
+      "end_date": "2026-06-19",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-06-20",
+      "end_date": "2026-06-20",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-21",
       "start_time": "09:00",
       "end_time": "18:00",
       "location": "Externer Ort",
@@ -39,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/421703",
   "exceptions": [],
   "further_info": "Teilnehmer: min 6 – max 14 Kosten: ca. 120,00 EUR (Fahrtkosten, Übernachtung, HP) Anzahlung: 100,00 EUR (bis 15.05.2026) Körperliche Fitness für 1 Wanderung (400 Höhenmeter, ca. 5-6 h)",
-  "last_updated": "2026-04-23T13:39:22Z"
+  "last_updated": "2026-06-01T14:28:10Z"
 }

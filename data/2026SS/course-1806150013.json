@@ -14,7 +14,79 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
+      "end_date": "2026-04-14",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-04-28",
+      "end_date": "2026-04-28",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-26",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
+      "building": "Bergheimer Straße 58, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
       "start_time": "10:15",
       "end_time": "13:45",
       "location": "Übungsraum (4310.EG.024)",
@@ -34,10 +106,22 @@
       "room": "Übungsraum (4310.EG.024)",
       "building": "Bergheimer Straße 58, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "10:15",
+      "end_time": "13:45",
+      "location": "Unterrichtsraum (4310.02.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20514",
+      "room": "Unterrichtsraum (4310.02.024)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413053",
   "exceptions": [],
   "further_info": "Teil 2 Anrechenbar für: - BA-M 5: 12 ECTS (benotet)",
-  "last_updated": "2026-05-02T20:24:57Z"
+  "last_updated": "2026-06-02T10:19:17Z"
 }

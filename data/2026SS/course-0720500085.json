@@ -25,9 +25,9 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-07-01",
-      "end_date": "2026-07-01",
-      "start_time": "18:00",
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "18:15",
       "end_time": "19:00",
       "location": "Seminarraum (2065.03.314)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
@@ -37,8 +37,8 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-07-03",
-      "end_date": "2026-07-03",
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "Seminarraum (2065.03.314)",
@@ -61,8 +61,8 @@
     },
     {
       "day_of_week": 6,
-      "start_date": "2026-07-04",
-      "end_date": "2026-07-04",
+      "start_date": "2026-06-27",
+      "end_date": "2026-06-27",
       "start_time": "10:00",
       "end_time": "18:00",
       "location": "Seminarraum (2065.03.314)",
@@ -87,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417159",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-02T20:28:04Z"
+  "last_updated": "2026-06-02T10:22:55Z"
 }

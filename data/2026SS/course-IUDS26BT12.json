@@ -1,0 +1,43 @@
+{
+  "id": "IUDS26BT12",
+  "title": "Automatisierungstechnik",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "<N.N.>(Dozent Hochschule Mannheim), 090900.100"
+  ],
+  "organisation": "The Institute for Translation and Interpreting",
+  "start_date": "2026-03-19",
+  "end_date": "2026-07-02",
+  "weeks": [
+    {
+      "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-07-02",
+      "start_time": "11:30",
+      "end_time": "13:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Hochschule Mannheim, L013"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-03-19",
+      "end_date": "2026-07-02",
+      "start_time": "13:45",
+      "end_time": "15:15",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Hochschule Mannheim, L013"
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419606",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-06-01T14:02:49Z"
+}

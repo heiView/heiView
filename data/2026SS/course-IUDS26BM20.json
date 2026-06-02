@@ -1,0 +1,43 @@
+{
+  "id": "IUDS26BM20",
+  "title": "Exploring Ideology and Culture in Literature through Translation [Ідеології та культура в літературі крізь призму перекладу]",
+  "type": "SE",
+  "ects_credits": "1",
+  "course_languages": "Ukrainian (primary)",
+  "lecturers": [
+    "Vardanian, Maryna"
+  ],
+  "organisation": "The Institute for Translation and Interpreting",
+  "start_date": "2026-06-24",
+  "end_date": "2026-06-24",
+  "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Übungsraum (3051.EG.013)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19838",
+      "room": "Übungsraum (3051.EG.013)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "12:30",
+      "end_time": "14:00",
+      "location": "Übungsraum (3051.01.114)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19868",
+      "room": "Übungsraum (3051.01.114)",
+      "building": "Plöck 57a, 1st floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/423880",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-06-01T14:28:59Z"
+}

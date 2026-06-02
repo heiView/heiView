@@ -8,18 +8,30 @@
     "Freiberger, Oliver"
   ],
   "organisation": "Cultural and Religious History of South Asia (Classical Indology)",
-  "start_date": "2026-06-19",
+  "start_date": "2026-06-03",
   "end_date": "2026-06-20",
   "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-03",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": "Preparatory Meeting"
+    },
     {
       "day_of_week": 5,
       "start_date": "2026-06-19",
       "end_date": "2026-06-19",
       "start_time": "14:00",
       "end_time": "17:00",
-      "location": "Übungsraum 130.00.04 (4130.EG.004)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11328",
-      "room": "Übungsraum 130.00.04 (4130.EG.004)",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
       "building": "Voßstraße 2, Ground floor",
       "note": null
     },
@@ -29,9 +41,9 @@
       "end_date": "2026-06-20",
       "start_time": "09:00",
       "end_time": "17:00",
-      "location": "Übungsraum 130.00.04 (4130.EG.004)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11328",
-      "room": "Übungsraum 130.00.04 (4130.EG.004)",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
       "building": "Voßstraße 2, Ground floor",
       "note": null
     }
@@ -39,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412542",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-02T19:42:15Z"
+  "last_updated": "2026-06-01T14:01:53Z"
 }

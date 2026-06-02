@@ -133,8 +133,8 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-06-10",
-      "end_date": "2026-06-10",
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Übungsraum (6227.03.403)",
@@ -315,5 +315,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410279",
   "exceptions": [],
   "further_info": "Weitere Informationen: https://uebungen.physik.uni-heidelberg.de/vorlesung/20241/pep2",
-  "last_updated": "2026-05-15T10:27:52Z"
+  "last_updated": "2026-06-01T14:28:33Z"
 }

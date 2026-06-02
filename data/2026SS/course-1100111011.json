@@ -24,6 +24,18 @@
       "note": "Plenarübung"
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "gHS (6252.EG.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7143",
+      "room": "gHS (6252.EG.110)",
+      "building": "gHS, Im Neuenheimer Feld 252, Ground floor",
+      "note": "Achtung: Am 09.07. einmalig im großen Hörsaal der Chemie!"
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-07-20",
@@ -123,5 +135,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414062",
   "exceptions": [],
   "further_info": "Für die Tutorien in MÜSLI registrieren.",
-  "last_updated": "2026-04-24T19:49:53Z"
+  "last_updated": "2026-06-02T10:39:08Z"
 }

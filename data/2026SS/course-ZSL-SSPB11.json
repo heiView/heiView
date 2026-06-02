@@ -40,13 +40,49 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-21",
+      "end_date": "2026-07-21",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-04-23",
+      "end_date": "2026-05-07",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
       "end_date": "2026-07-23",
       "start_time": "08:30",
       "end_time": "10:00",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
+      "location": "Übungsraum (3120.03.301)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=10965",
+      "room": "Übungsraum (3120.03.301)",
+      "building": "Plöck 79-81, 3rd floor",
       "note": null
     },
     {
@@ -77,5 +113,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413946",
   "exceptions": [],
   "further_info": "Recommended Reading Universo.ele intensivo B1/B2. ISBN: 978-3-19-154334-1 - zusätzliches Material anderer Lehrwerke Plataforma: Moodle, Campus Difusión y otras",
-  "last_updated": "2026-04-21T11:48:37Z"
+  "last_updated": "2026-06-02T10:30:04Z"
 }

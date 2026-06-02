@@ -15,7 +15,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-04-30",
       "start_time": "11:00",
       "end_time": "13:00",
       "location": "Hörsaal 010.01.05 (4010+4.01.005)",
@@ -38,6 +38,30 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-05-28",
+      "end_date": "2026-05-28",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-07",
+      "end_date": "2026-07-23",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
       "start_date": "2026-07-09",
       "end_date": "2026-07-09",
       "start_time": "11:00",
@@ -52,5 +76,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415461",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-15T11:05:16Z"
+  "last_updated": "2026-06-02T10:29:12Z"
 }

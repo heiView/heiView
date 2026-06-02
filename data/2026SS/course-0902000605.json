@@ -22,10 +22,22 @@
       "room": "Übungsraum (2220.01.122)",
       "building": "Kettengasse 12-16, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum (2220.01.116)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22608",
+      "room": "Übungsraum (2220.01.116)",
+      "building": "Kettengasse 12-16, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408212",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:08:39Z"
+  "last_updated": "2026-06-01T14:26:10Z"
 }

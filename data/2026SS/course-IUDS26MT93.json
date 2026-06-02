@@ -1,0 +1,43 @@
+{
+  "id": "IUDS26MT93",
+  "title": "Wie mache ich mich selbstständig? Vorüberlegungen zur Unternehmensgründung",
+  "type": "PC",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Höflich, Isa"
+  ],
+  "organisation": "The Institute for Translation and Interpreting",
+  "start_date": "2026-06-01",
+  "end_date": "2026-06-12",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-08",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417611",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-06-02T10:45:58Z"
+}

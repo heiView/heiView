@@ -22,10 +22,22 @@
       "room": "Konferenzsaal (KS I) (3051.02.208)",
       "building": "Plöck 57a, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
+      "start_time": "08:30",
+      "end_time": "10:00",
+      "location": "Konferenzsaal (KS III) (3051.02.207)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19992",
+      "room": "Konferenzsaal (KS III) (3051.02.207)",
+      "building": "Plöck 57a, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417601",
   "exceptions": [],
   "further_info": "Recommended Reading Wird in der LV bekanntgegeben. Der Kurs ist sprachübergreifend und richtet sich an alle Studierenden mit Englisch in der Sprachkombination, insbesondere mit der Sprachkombination B=DE / C=EN.",
-  "last_updated": "2026-04-21T11:50:47Z"
+  "last_updated": "2026-06-02T10:28:59Z"
 }

@@ -8,9 +8,21 @@
     "Koutsodendris, Andreas"
   ],
   "organisation": "Institute of Earth Sciences",
-  "start_date": "2026-09-12",
+  "start_date": "2026-09-11",
   "end_date": "2026-09-17",
   "weeks": [
+    {
+      "day_of_week": 5,
+      "start_date": "2026-09-11",
+      "end_date": "2026-09-11",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": "Anreisetag"
+    },
     {
       "day_of_week": 1,
       "start_date": "2026-09-12",
@@ -27,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412743",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:40:49Z"
+  "last_updated": "2026-06-02T10:23:36Z"
 }

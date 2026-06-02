@@ -1,6 +1,6 @@
 {
   "id": "0000000051",
-  "title": "VL DW: Diakonie im Horizont jüdischer Tradition",
+  "title": "VL DW: Diakonie im Horizont jüdischer Tradition (fällt aus!)",
   "type": "L",
   "ects_credits": "2",
   "course_languages": "German",
@@ -8,24 +8,11 @@
     "Müller, Klaus"
   ],
   "organisation": "Faculty of Theology",
-  "start_date": "2026-04-16",
-  "end_date": "2026-07-23",
-  "weeks": [
-    {
-      "day_of_week": 4,
-      "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
-      "start_time": "11:15",
-      "end_time": "12:45",
-      "location": "ÜR K 2 (1040.01.109)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23185",
-      "room": "ÜR K 2 (1040.01.109)",
-      "building": "Karlstraße 16, 1st floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408888",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:38:37Z"
+  "last_updated": "2026-06-02T10:41:12Z"
 }

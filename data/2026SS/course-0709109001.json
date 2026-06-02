@@ -8,11 +8,24 @@
     "Nesemann, Anna Miriam Elisabeth"
   ],
   "organisation": "Department of Classical Philology",
-  "start_date": null,
-  "end_date": null,
-  "weeks": [],
+  "start_date": "2026-08-01",
+  "end_date": "2026-08-01",
+  "weeks": [
+    {
+      "day_of_week": 6,
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-01",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "location": "Übungsraum (2040.04.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28091",
+      "room": "Übungsraum (2040.04.404)",
+      "building": "Marstallhof 4, 4th floor",
+      "note": null
+    }
+  ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408484",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:44:18Z"
+  "last_updated": "2026-06-02T10:36:36Z"
 }

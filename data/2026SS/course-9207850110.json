@@ -1,6 +1,6 @@
 {
   "id": "9207850110",
-  "title": "WFT07-IO - Strukturierte Sonographie_28.04.2026",
+  "title": "WFT07-IO - Strukturierte Sonographie_12.05.2026",
   "type": "SE",
   "ects_credits": null,
   "course_languages": "German",
@@ -8,13 +8,13 @@
     "Stelmach, Ramona"
   ],
   "organisation": "Clinic National Center for Tumour Diseases (NCT)",
-  "start_date": "2026-04-28",
-  "end_date": "2026-04-28",
+  "start_date": "2026-05-12",
+  "end_date": "2026-05-12",
   "weeks": [
     {
       "day_of_week": 2,
-      "start_date": "2026-04-28",
-      "end_date": "2026-04-28",
+      "start_date": "2026-05-12",
+      "end_date": "2026-05-12",
       "start_time": "15:00",
       "end_time": "18:00",
       "location": "Behandlungsraum Sono-Raum (6460.EG.258)",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417489",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:36:09Z"
+  "last_updated": "2026-06-02T10:44:52Z"
 }
