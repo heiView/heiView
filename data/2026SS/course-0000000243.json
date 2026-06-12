@@ -24,10 +24,22 @@
       "room": "Übungsraum (6328.EG.025)",
       "building": "Im Neuenheimer Feld 328, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "SR 20 (6306.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22348",
+      "room": "SR 20 (6306.01.110)",
+      "building": "Im Neuenheimer Feld 306, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409577",
   "exceptions": [],
   "further_info": "online information e-learning course",
-  "last_updated": "2026-04-21T09:59:32Z"
+  "last_updated": "2026-06-12T09:58:26Z"
 }

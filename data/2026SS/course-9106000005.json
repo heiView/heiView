@@ -265,7 +265,7 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-06-10",
+      "start_date": "2026-06-17",
       "end_date": "2026-06-17",
       "start_time": "13:30",
       "end_time": "16:00",
@@ -370,10 +370,22 @@
       "room": "Seminarraum 102 (4240.01.102)",
       "building": "Thibautstraße 4, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-10",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "location": "Seminarraum 102 (4240.01.102)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28806",
+      "room": "Seminarraum 102 (4240.01.102)",
+      "building": "Thibautstraße 4, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/379491",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-15T10:16:34Z"
+  "last_updated": "2026-06-12T09:58:08Z"
 }

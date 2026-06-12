@@ -38,7 +38,7 @@
     {
       "day_of_week": 5,
       "start_date": "2026-05-22",
-      "end_date": "2026-06-12",
+      "end_date": "2026-06-05",
       "start_time": "11:45",
       "end_time": "13:15",
       "location": "Übungsraum (3051.01.109)",
@@ -46,10 +46,22 @@
       "room": "Übungsraum (3051.01.109)",
       "building": "Plöck 57a, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "start_time": "11:45",
+      "end_time": "13:15",
+      "location": "EDV-Übungsraum (3051.01.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19864",
+      "room": "EDV-Übungsraum (3051.01.108)",
+      "building": "Plöck 57a, 1st floor",
+      "note": "Verschiebung wegen der Eignungstests im MA KD, per E-Mail kam keine Rückmeldung, bei Rückfragen bitte Mail an simona.fueger@iued.uni-heidelberg.de"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417166",
   "exceptions": [],
   "further_info": "Recommended Reading COSTA, Marcos Nunes. Mulheres Intelectuais na Idade Média: Hildegarda de Bingen – entre a medicina, a filosofia e a mística. Trans / Form / Ação. Marília, v. 35, 2012. MARTINS, Maria Cristina. Hildegarda de Bingen: Physica e Causae et Curae. Cadernos de Tradução. Número Especial, 2019, p. 159-174 SILVA, Andréia Cristina Lopes Frazão da. Reflexões históricas sobre o saber médico e a prática da assistência. Anais da 4ª Jornada Científica CMS Waldir Franco. 2002.",
-  "last_updated": "2026-04-21T10:11:03Z"
+  "last_updated": "2026-06-12T10:09:51Z"
 }

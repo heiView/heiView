@@ -10,7 +10,7 @@
   ],
   "organisation": "Department of Computational Linguistics",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-23",
+  "end_date": "2026-07-22",
   "weeks": [
     {
       "day_of_week": 1,
@@ -63,7 +63,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-16",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "SR 25 (6328.EG.005)",
@@ -76,5 +76,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409319",
   "exceptions": [],
   "further_info": "Recommended Reading K. Cameron Newham (2005). \"Learning the bash Shell, 3rd Edition\". O'Reilly J. Ernesti & P. Kaiser (2012). \"Python 3: Das umfassende Handbuch\". Rheinwerk E. Freeman et al. (2004). \"Head First Design Patterns\". O'Reilly E. Gamma et al. (1994). \"Design Patterns. Elements of Reusable Object-Oriented Software\". Addison-Wesley Longman B. Öggl & M. Kofler (2022). \"Git - Projektverwaltung für Entwickler und DevOps-Teams\". Rheinwerk further information actual information",
-  "last_updated": "2026-04-21T10:38:23Z"
+  "last_updated": "2026-06-12T10:39:19Z"
 }

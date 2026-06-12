@@ -1,0 +1,43 @@
+{
+  "id": "ZSL-IENC1x",
+  "title": "English C1 (Intensive Course: XX.XX.-XX.XX.2026)",
+  "type": "PC",
+  "ects_credits": "4",
+  "course_languages": "English",
+  "lecturers": [
+    "N.N., Unbekannt"
+  ],
+  "organisation": "heiSKILLS - Language Centre (ZSL)",
+  "start_date": "2026-09-28",
+  "end_date": "2026-10-09",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-28",
+      "end_date": "2026-09-28",
+      "start_time": "09:00",
+      "end_time": "14:00",
+      "location": "Ort/Zeit noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort/Zeit noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-29",
+      "end_date": "2026-10-09",
+      "start_time": "09:00",
+      "end_time": "14:00",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417259",
+  "exceptions": [],
+  "further_info": "Recommended Reading Lehrmaterial wird in der Veranstaltung genannt bzw. zur Verfügung gestellt. The course will utilize a variety of materials and sources to provide a comprehensive learning experience.",
+  "last_updated": "2026-06-12T10:07:03Z"
+}

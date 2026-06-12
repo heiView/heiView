@@ -22,10 +22,22 @@
       "room": "ÖInst SR (1060.EG.014)",
       "building": "Plankengasse 1-3, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "09:00",
+      "end_time": "18:00",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410821",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:34:50Z"
+  "last_updated": "2026-06-12T10:35:33Z"
 }

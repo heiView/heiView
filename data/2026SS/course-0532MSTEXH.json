@@ -14,19 +14,43 @@
     {
       "day_of_week": 3,
       "start_date": "2026-09-02",
-      "end_date": "2026-09-16",
+      "end_date": "2026-09-02",
       "start_time": "08:30",
       "end_time": "12:30",
       "location": "Ort noch nicht bekannt",
       "location_link": null,
       "room": "Ort noch nicht bekannt",
       "building": null,
-      "note": null
+      "note": "Präpsaal 020 - INF 307 EG"
     },
     {
       "day_of_week": 3,
       "start_date": "2026-09-02",
-      "end_date": "2026-09-16",
+      "end_date": "2026-09-02",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Präpsaal 120 - INF 307 1.OG"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-09-03",
+      "end_date": "2026-09-03",
+      "start_time": "08:30",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "SR 108 - INF 346 1.OG"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-09-03",
+      "end_date": "2026-09-03",
       "start_time": "13:30",
       "end_time": "17:30",
       "location": "Ort noch nicht bekannt",
@@ -37,19 +61,7 @@
     },
     {
       "day_of_week": 4,
-      "start_date": "2026-09-03",
-      "end_date": "2026-09-10",
-      "start_time": "08:30",
-      "end_time": "12:30",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 4,
-      "start_date": "2026-09-03",
+      "start_date": "2026-09-17",
       "end_date": "2026-09-17",
       "start_time": "13:30",
       "end_time": "17:30",
@@ -62,18 +74,138 @@
     {
       "day_of_week": 5,
       "start_date": "2026-09-04",
-      "end_date": "2026-09-11",
+      "end_date": "2026-09-04",
       "start_time": "08:30",
       "end_time": "12:30",
       "location": "Ort noch nicht bekannt",
       "location_link": null,
       "room": "Ort noch nicht bekannt",
       "building": null,
-      "note": null
+      "note": "SR 108 - INF 346 1.OG"
     },
     {
       "day_of_week": 5,
       "start_date": "2026-09-04",
+      "end_date": "2026-09-04",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Präpsaal 020 - INF 307 EG"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-07",
+      "start_time": "08:30",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Präpsaal 020 - INF 307 EG"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-07",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "SR 108 - INF 346 1.OG"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-08",
+      "start_time": "08:30",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-08",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-09-09",
+      "end_date": "2026-09-09",
+      "start_time": "08:30",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Präpsaal 120 - INF 307 1.OG"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-09-09",
+      "end_date": "2026-09-09",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Präpsaal 020 - INF 307 EG"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-09-10",
+      "end_date": "2026-09-10",
+      "start_time": "08:30",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Präpsaal 020 - INF 307 EG"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-09-10",
+      "end_date": "2026-09-10",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "SR 9 - INF 307 EG"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-09-11",
+      "end_date": "2026-09-11",
+      "start_time": "08:30",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "Präpsaal 020 - INF 307 EG"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-09-11",
       "end_date": "2026-09-11",
       "start_time": "13:30",
       "end_time": "17:30",
@@ -81,11 +213,11 @@
       "location_link": null,
       "room": "Ort noch nicht bekannt",
       "building": null,
-      "note": null
+      "note": "SR 108 - INF 346 1.OG"
     },
     {
       "day_of_week": 1,
-      "start_date": "2026-09-07",
+      "start_date": "2026-09-14",
       "end_date": "2026-09-14",
       "start_time": "08:30",
       "end_time": "12:30",
@@ -93,11 +225,11 @@
       "location_link": null,
       "room": "Ort noch nicht bekannt",
       "building": null,
-      "note": null
+      "note": "Präpsaal 120 - INF 307 1.OG"
     },
     {
       "day_of_week": 1,
-      "start_date": "2026-09-07",
+      "start_date": "2026-09-14",
       "end_date": "2026-09-14",
       "start_time": "13:30",
       "end_time": "17:30",
@@ -105,12 +237,36 @@
       "location_link": null,
       "room": "Ort noch nicht bekannt",
       "building": null,
-      "note": null
+      "note": "SR 9 - INF 307 EG"
     },
     {
       "day_of_week": 2,
-      "start_date": "2026-09-08",
+      "start_date": "2026-09-15",
       "end_date": "2026-09-15",
+      "start_time": "08:30",
+      "end_time": "12:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "SR 9 - INF 307 EG"
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-15",
+      "start_time": "13:30",
+      "end_time": "17:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": "SR 9 - INF 307 EG"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-16",
       "start_time": "08:30",
       "end_time": "12:30",
       "location": "Ort noch nicht bekannt",
@@ -120,9 +276,9 @@
       "note": null
     },
     {
-      "day_of_week": 2,
-      "start_date": "2026-09-08",
-      "end_date": "2026-09-15",
+      "day_of_week": 3,
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-16",
       "start_time": "13:30",
       "end_time": "17:30",
       "location": "Ort noch nicht bekannt",
@@ -135,5 +291,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/404968",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-15T10:48:42Z"
+  "last_updated": "2026-06-12T10:28:57Z"
 }

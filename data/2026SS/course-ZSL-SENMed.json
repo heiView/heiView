@@ -5,7 +5,8 @@
   "ects_credits": null,
   "course_languages": "English",
   "lecturers": [
-    "Bueno Reynoso, Natia"
+    "Bueno Reynoso, Natia",
+    "Sadlier, Robin"
   ],
   "organisation": "heiSKILLS - Language Centre (ZSL)",
   "start_date": "2026-04-21",
@@ -39,5 +40,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413792",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-23T13:40:51Z"
+  "last_updated": "2026-06-12T10:07:06Z"
 }

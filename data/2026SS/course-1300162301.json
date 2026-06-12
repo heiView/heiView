@@ -84,10 +84,22 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum (6227.03.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14510",
+      "room": "Übungsraum (6227.03.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410425",
   "exceptions": [],
   "further_info": "further information additional information",
-  "last_updated": "2026-05-02T20:23:10Z"
+  "last_updated": "2026-06-12T10:35:56Z"
 }

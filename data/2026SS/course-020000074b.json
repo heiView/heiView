@@ -9,7 +9,7 @@
   ],
   "organisation": "Faculty of Law",
   "start_date": "2026-04-21",
-  "end_date": "2026-07-21",
+  "end_date": "2026-07-25",
   "weeks": [
     {
       "day_of_week": 2,
@@ -70,10 +70,34 @@
       "room": "HS 14 (2170.02.033)",
       "building": "HS 14, Grabengasse 3-5, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "14:00",
+      "end_time": "18:30",
+      "location": "HS 03 (2170.EG.048)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20445",
+      "room": "HS 03 (2170.EG.048)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 6,
+      "start_date": "2026-07-25",
+      "end_date": "2026-07-25",
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "location": "HS 03 (2170.EG.048)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20445",
+      "room": "HS 03 (2170.EG.048)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419236",
   "exceptions": [],
   "further_info": "Recommended Reading Mitzubringen ist die aktuelle dtv-Ausgabe Ausländerrecht. Die Teilnehmenden werden gebeten, die Einführung der Gesetzessammlung bereits vor Beginn der Veranstaltung zu lesen Weitere Informationen finden Sie auch unter: www.jura.uni- heidelberg.de/anwaltsorientierung/veranstaltungen/",
-  "last_updated": "2026-04-21T10:38:04Z"
+  "last_updated": "2026-06-12T10:39:00Z"
 }

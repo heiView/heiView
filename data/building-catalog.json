@@ -9600,6 +9600,38 @@
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ]
+    },
+    {
+      "id": "bld-other-205-haus-zum-riesen-15",
+      "street": "205 Haus zum Riesen (15)",
+      "displayName": "205 Haus zum Riesen (15)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-205-haus-zum-riesen-15::rm-205-haus-zum-riesen-15",
+          "name": "205 Haus zum Riesen (15)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-1",
+      "street": "Seminarraum 1",
+      "displayName": "Seminarraum 1",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-1::rm-seminarraum-1",
+          "name": "Seminarraum 1",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
     }
   ]
 }

@@ -3,7 +3,7 @@
   "title": "Non-linear cosmological perturbation theory (MVSpec)",
   "type": "L",
   "ects_credits": "2",
-  "course_languages": "German",
+  "course_languages": "English",
   "lecturers": [
     "Amendola, Luca"
   ],
@@ -14,7 +14,7 @@
     {
       "day_of_week": 2,
       "start_date": "2026-06-09",
-      "end_date": "2026-07-14",
+      "end_date": "2026-06-09",
       "start_time": "16:15",
       "end_time": "18:00",
       "location": "HS 2 (6227.EG.402)",
@@ -22,10 +22,22 @@
       "room": "HS 2 (6227.EG.402)",
       "building": "HS 2, Im Neuenheimer Feld 227 / 227a, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-07-14",
+      "start_time": "16:15",
+      "end_time": "18:00",
+      "location": "Übungsraum (8010.EG.058)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15232",
+      "room": "Übungsraum (8010.EG.058)",
+      "building": "Philosophenweg 12, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416695",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-02T20:20:56Z"
+  "last_updated": "2026-06-12T10:33:01Z"
 }

@@ -414,10 +414,10 @@
       "end_date": "2026-06-12",
       "start_time": "13:00",
       "end_time": "13:45",
-      "location": "Histosaal (6221.EG.999)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28783",
-      "room": "Histosaal (6221.EG.999)",
-      "building": "Im Neuenheimer Feld 221, Ground floor",
+      "location": "Histosaal (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Histosaal (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
       "note": "obligat"
     },
     {
@@ -426,10 +426,10 @@
       "end_date": "2026-06-26",
       "start_time": "13:00",
       "end_time": "13:45",
-      "location": "Histosaal (6221.EG.999)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28783",
-      "room": "Histosaal (6221.EG.999)",
-      "building": "Im Neuenheimer Feld 221, Ground floor",
+      "location": "Histosaal (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Histosaal (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
       "note": "obligat"
     },
     {
@@ -438,10 +438,10 @@
       "end_date": "2026-07-10",
       "start_time": "13:00",
       "end_time": "13:45",
-      "location": "Histosaal (6221.EG.999)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28783",
-      "room": "Histosaal (6221.EG.999)",
-      "building": "Im Neuenheimer Feld 221, Ground floor",
+      "location": "Histosaal (6307.01.126)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=18670",
+      "room": "Histosaal (6307.01.126)",
+      "building": "Im Neuenheimer Feld 307, 1st floor",
       "note": "obligat"
     },
     {
@@ -832,5 +832,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402235",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:58:17Z"
+  "last_updated": "2026-06-12T09:57:16Z"
 }

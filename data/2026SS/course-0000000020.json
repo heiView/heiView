@@ -9,7 +9,7 @@
   ],
   "organisation": "Heidelberg University Biochemistry Center",
   "start_date": "2026-04-15",
-  "end_date": "2026-06-17",
+  "end_date": "2026-06-15",
   "weeks": [
     {
       "day_of_week": 3,
@@ -26,9 +26,21 @@
     {
       "day_of_week": 3,
       "start_date": "2026-06-10",
-      "end_date": "2026-06-17",
+      "end_date": "2026-06-10",
       "start_time": "10:15",
       "end_time": "12:00",
+      "location": "Besprechung/Aufenthalt (6328.02.207)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15043",
+      "room": "Besprechung/Aufenthalt (6328.02.207)",
+      "building": "Im Neuenheimer Feld 328, 2nd floor",
+      "note": "BZH 2. OG SR 207"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-15",
+      "start_time": "09:15",
+      "end_time": "11:00",
       "location": "Besprechung/Aufenthalt (6328.02.207)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15043",
       "room": "Besprechung/Aufenthalt (6328.02.207)",
@@ -39,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415232",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:43:50Z"
+  "last_updated": "2026-06-12T10:44:56Z"
 }

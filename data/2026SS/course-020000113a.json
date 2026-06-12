@@ -9,7 +9,7 @@
   ],
   "organisation": "Faculty of Law",
   "start_date": "2026-04-13",
-  "end_date": "2026-06-08",
+  "end_date": "2026-06-11",
   "weeks": [
     {
       "day_of_week": 1,
@@ -34,10 +34,34 @@
       "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
       "building": "Grabengasse 3-5, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/383771",
   "exceptions": [],
   "further_info": "further information additional information actual information Weitere Informationen zu den Heidelpräp!-Veranstaltungen finden Sie auf der Heidelpräp!-Website (siehe oben, Zusatzinformationen). Die konkreten Termine und Räumlichkeiten verifizieren Sie bitte in unserem Jahreskalender (siehe oben, Aktuelle Informationen).",
-  "last_updated": "2026-04-21T10:26:50Z"
+  "last_updated": "2026-06-12T10:25:43Z"
 }
