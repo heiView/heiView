@@ -42,9 +42,9 @@
       "end_date": "2026-07-23",
       "start_time": "16:15",
       "end_time": "18:00",
-      "location": "Unterrichtsraum (6227.01.403)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14076",
-      "room": "Unterrichtsraum (6227.01.403)",
+      "location": "Unterrichtsraum (6227.01.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14077",
+      "room": "Unterrichtsraum (6227.01.404)",
       "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
       "note": null
     },
@@ -54,9 +54,9 @@
       "end_date": "2026-07-23",
       "start_time": "16:15",
       "end_time": "18:00",
-      "location": "Unterrichtsraum (6227.01.404)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14077",
-      "room": "Unterrichtsraum (6227.01.404)",
+      "location": "Unterrichtsraum (6227.01.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14076",
+      "room": "Unterrichtsraum (6227.01.403)",
       "building": "Im Neuenheimer Feld 227 / 227a, 1st floor",
       "note": null
     },
@@ -100,5 +100,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410277",
   "exceptions": [],
   "further_info": "The lecture webpage is located at: https://uebungen.physik.uni-heidelberg.de/vorlesung/20261/2188",
-  "last_updated": "2026-06-12T10:08:54Z"
+  "last_updated": "2026-06-15T09:33:45Z"
 }

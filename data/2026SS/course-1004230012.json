@@ -75,7 +75,7 @@
       "day_of_week": 3,
       "start_date": "2026-06-24",
       "end_date": "2026-06-24",
-      "start_time": "14:00",
+      "start_time": "15:00",
       "end_time": "18:15",
       "location": "Übungsraum 1. OG 107 (3041.01.007)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14599",
@@ -87,5 +87,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412086",
   "exceptions": [],
   "further_info": "Recommended Reading Huber, A.: Personalmanagement, 2. Auflage, München 2018 Keller, K.: Nachhaltige Personal- und Organisationsentwicklung, Berlin 2018",
-  "last_updated": "2026-06-12T10:26:54Z"
+  "last_updated": "2026-06-15T09:53:03Z"
 }
