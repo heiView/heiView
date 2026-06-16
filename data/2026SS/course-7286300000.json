@@ -34,10 +34,22 @@
       "room": "Unterrichtsraum (3051.U1.108)",
       "building": "Plöck 57a, Lower level 1",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Unterrichtsraum (3051.U1.108)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20005",
+      "room": "Unterrichtsraum (3051.U1.108)",
+      "building": "Plöck 57a, Lower level 1",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415683",
   "exceptions": [],
   "further_info": "Recommended Reading ***Das gesamte Material wird auf Moodle hochgeladen*** Texthandbuch: Chamorro, M., da Silva, I. e Núñez, X. (2008). Aula de Galego 1 (A1-A2). Xunta de Galicia, Barcelona: Editorial Difusión. Online verfügbar (kostenlos). Offizielles Vorbereitungsmaterial für die CELGA 1-Prüfung. Material de clase. Online verfügbar (kostenlos).",
-  "last_updated": "2026-05-15T10:33:07Z"
+  "last_updated": "2026-06-16T09:54:10Z"
 }

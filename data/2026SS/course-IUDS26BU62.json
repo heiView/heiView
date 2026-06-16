@@ -14,6 +14,42 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
+      "end_date": "2026-05-07",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (3051.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19843",
+      "room": "Übungsraum (3051.EG.019)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-28",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (3051.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19843",
+      "room": "Übungsraum (3051.EG.019)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-11",
+      "end_date": "2026-07-09",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (3051.EG.019)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19843",
+      "room": "Übungsraum (3051.EG.019)",
+      "building": "Plöck 57a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-23",
       "end_date": "2026-07-23",
       "start_time": "16:15",
       "end_time": "17:45",
@@ -22,10 +58,22 @@
       "room": "Übungsraum (3051.EG.019)",
       "building": "Plöck 57a, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-16",
+      "start_time": "16:15",
+      "end_time": "17:45",
+      "location": "Übungsraum (3051.01.114)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19868",
+      "room": "Übungsraum (3051.01.114)",
+      "building": "Plöck 57a, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417053",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:41:30Z"
+  "last_updated": "2026-06-16T10:38:37Z"
 }

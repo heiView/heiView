@@ -5,9 +5,9 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
+    "Bleß, Valentin Maximilian",
     "Damm, Thorsten",
-    "Smith, Rebecca Louise",
-    "<N.N.>(Bless, Valentin), 100500.100"
+    "Smith, Rebecca Louise"
   ],
   "organisation": "Institute of Sports and Sports Sciences",
   "start_date": "2026-04-14",
@@ -89,5 +89,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414573",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:14:52Z"
+  "last_updated": "2026-06-16T09:53:58Z"
 }
