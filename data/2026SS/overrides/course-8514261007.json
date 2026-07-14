@@ -22,10 +22,22 @@
       "room": "Seminarraum 3",
       "building": "Landfriedstraße 12, Unknown floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Seminarraum 4",
+      "location_link": null,
+      "room": "Seminarraum 4",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414880",
   "exceptions": [],
   "further_info": "Recommended Reading Wird im Rahmen der Veranstaltung bekannt gegeben. Für die Verwendbarkeit des Kurses in den verschiedenen Studiengängen beachten Sie bitte die Angaben unter \"Modul / Verwendbarkeit in Studiengang\" im Kommentierten Vorlesungsverzeichnis (KVV) der HfJS.",
-  "last_updated": "2026-04-23T13:02:06Z"
+  "last_updated": "2026-07-14T16:57:13Z"
 }

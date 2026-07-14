@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-05-02T23:33:29.150Z",
+  "updatedAt": "2026-07-14T16:56:59.018Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -6124,6 +6124,18 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-kisselgasse-1::rm-kapelle",
+          "name": "Kapelle",
+          "floors": [
+            "Unknown floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
         }
       ],
       "notes": ""
@@ -9628,6 +9640,170 @@
           "id": "bld-other-seminarraum-1::rm-seminarraum-1",
           "name": "Seminarraum 1",
           "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-002-haus-zum-riesen-40",
+      "street": "002 Haus zum Riesen (40)",
+      "displayName": "002 Haus zum Riesen (40)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-002-haus-zum-riesen-40::rm-002-haus-zum-riesen-40",
+          "name": "002 Haus zum Riesen (40)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-issw-bootshaus",
+      "street": "ISSW Bootshaus",
+      "displayName": "ISSW Bootshaus",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-issw-bootshaus::rm-issw-bootshaus",
+          "name": "ISSW Bootshaus",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-4",
+      "street": "Seminarraum 4",
+      "displayName": "Seminarraum 4",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-4::rm-seminarraum-4",
+          "name": "Seminarraum 4",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-n2-05",
+      "street": "N2.05",
+      "displayName": "N2.05",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-n2-05::rm-bet-midrasch-n2-05",
+          "name": "Bet Midrasch, N2.05",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-3",
+      "street": "Seminarraum 3",
+      "displayName": "Seminarraum 3",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-3::rm-seminarraum-3",
+          "name": "Seminarraum 3",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-seminarraum-2",
+      "street": "Seminarraum 2",
+      "displayName": "Seminarraum 2",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-seminarraum-2::rm-seminarraum-2",
+          "name": "Seminarraum 2",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-a1-07",
+      "street": "A1.07",
+      "displayName": "A1.07",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-a1-07::rm-konferenzraum-a1-07",
+          "name": "Konferenzraum, A1.07",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-raum-hinten",
+      "street": "Raum hinten",
+      "displayName": "Raum hinten",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-raum-hinten::rm-mensa-raum-hinten",
+          "name": "Mensa, Raum hinten",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-pl-ck-79-81",
+      "street": "Plöck 79 - 81",
+      "displayName": "Plöck 79 - 81",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-pl-ck-79-81::rm-zls-pl-ck-79-81",
+          "name": "ZLS, Plöck 79 - 81",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-turm-1",
+      "street": "Turm 1",
+      "displayName": "Turm 1",
+      "campusId": "other",
+      "floors": [
+        "9.OG"
+      ],
+      "rooms": [
+        {
+          "id": "bld-other-turm-1::rm-bg-ludwigshafen-sr-1-2-turm-1-9-og",
+          "name": "BG Ludwigshafen, SR 1+2, Turm 1, 9.OG",
+          "floors": [
+            "9.OG"
+          ],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }

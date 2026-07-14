@@ -34,10 +34,22 @@
       "room": "Kapelle",
       "building": "Kisselgasse 1, Unknown floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "08:15",
+      "end_time": "10:45",
+      "location": "ÜR K 2 (1040.01.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23185",
+      "room": "ÜR K 2 (1040.01.109)",
+      "building": "Karlstraße 16, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411071",
   "exceptions": [],
   "further_info": "Recommended Reading Wird in der ersten Sitzung bekanntgegeben.",
-  "last_updated": "2026-04-23T13:01:07Z"
+  "last_updated": "2026-07-14T16:57:01Z"
 }

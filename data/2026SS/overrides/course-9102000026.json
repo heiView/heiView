@@ -5,8 +5,7 @@
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
-    "Glassen, Katharina Maria",
-    "Schiltenwolf, Marcus"
+    "Glassen, Katharina Maria"
   ],
   "organisation": "Surgical Hospital",
   "start_date": "2026-04-13",
@@ -136,5 +135,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402362",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-23T13:05:01Z"
+  "last_updated": "2026-07-14T16:55:45Z"
 }
