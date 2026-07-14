@@ -49,6 +49,18 @@
       "note": "SemR I - Augustinergasse 9"
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-16",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "location": "Übungsraum (2150.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20578",
+      "room": "Übungsraum (2150.EG.008)",
+      "building": "Augustinergasse 9, Ground floor",
+      "note": null
+    },
+    {
       "day_of_week": 2,
       "start_date": "2026-07-21",
       "end_date": "2026-07-21",
@@ -76,5 +88,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418844",
   "exceptions": [],
   "further_info": "Recommended Reading N. Blackaby/C. Paratasides/A. Redfern, Redfern and Hunter on International Arbitration, 7th ed., Oxford 2022; G. Born, International Arbitration. Law and Practice, 3rd ed., Alphen aan den Rijn 2025; W. Buchwitz, Schiedsverfahrensrecht Berlin 2019; Schack, Haimo, Internationales Zivilverfahrensrecht, 9. Aufl., München 2025; R. Schütze/R. Thümmel, Schiedsgericht und Schiedsverfahren, 7. Aufl., München 2021; R. Schütze (Hrsg.), Institutionelle Schiedsgerichtsbarkeit. Kommentar, 3. Aufl., Köln 2018. Additional bibliography and materials will be provided in the lecture. Please see then also the papers on Moodle.",
-  "last_updated": "2026-04-21T10:21:02Z"
+  "last_updated": "2026-07-14T15:43:26Z"
 }

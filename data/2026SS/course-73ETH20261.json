@@ -24,6 +24,18 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
+      "start_time": "14:30",
+      "end_time": "18:00",
+      "location": "Übungsraum 110.02.05 (4110.02.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11026",
+      "room": "Übungsraum 110.02.05 (4110.02.005)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-04-27",
       "end_date": "2026-07-20",
@@ -87,5 +99,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/406095",
   "exceptions": [],
   "further_info": "Recommended Reading Literatur: Bollig, Michael/Franz Krause 2023 Environmental Anthropology. Bern: Haupt. Carrier, James G. 2012 (ed.) A Handbook of Economic Anthropology, Second Edition. Cheltenham/Northampton: Elgar. Dove, Michael/Carol Carpenter 2008 (eds.) Environmental Anthropology: a historical reader. Oxford: Blackwell, 1-85. Mauss, Marcel, 1990 Die Gabe. Form und Funktion des Austauschs in archaischen Gesellschaften. Frankfurt am Main: Suhrkamp (11925, Essai sur le don: forme et raison de l’échange dans les sociétés archaïques. L’Année Sociologique N.S. 1 (1923-24): 30-186.)",
-  "last_updated": "2026-04-21T12:29:41Z"
+  "last_updated": "2026-07-14T15:29:14Z"
 }

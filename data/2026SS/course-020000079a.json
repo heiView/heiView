@@ -34,10 +34,46 @@
       "room": "HS 13 (2170.02.018)",
       "building": "HS 13, Grabengasse 3-5, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-02",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": "verschoben und um 1 Stunde vorgezogen, wegen Ausfall Klimatisierung in HS 13"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-23",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408804",
   "exceptions": [],
   "further_info": "Recommended Reading Literaturhinweise werden in der Übung bekanntgegeben online information e-learning course",
-  "last_updated": "2026-06-02T10:19:27Z"
+  "last_updated": "2026-07-14T16:01:30Z"
 }

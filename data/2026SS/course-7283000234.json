@@ -9,7 +9,7 @@
   ],
   "organisation": "Heidelberg Centre for Transcultural Studies",
   "start_date": "2026-04-24",
-  "end_date": "2026-06-21",
+  "end_date": "2026-07-15",
   "weeks": [
     {
       "day_of_week": 5,
@@ -46,10 +46,34 @@
       "room": "Übungsraum (4400.02.212)",
       "building": "Voßstraße 2, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "16:00",
+      "end_time": "20:00",
+      "location": "Übungsraum 400.00.02 (4400.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22071",
+      "room": "Übungsraum 400.00.02 (4400.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "start_time": "11:30",
+      "end_time": "13:30",
+      "location": "Übungsraum (4400.02.212)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22242",
+      "room": "Übungsraum (4400.02.212)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417588",
   "exceptions": [],
   "further_info": "The seminar will be offered as an intensive block course and will take place from 19 to 21 June. The seminar may include an excursion to WELT/BÜHNE-Festival in Munich. A initial meeting to discuss the seminar programme will be held online on Friday, 24 April, at 1:00 pm. The link to the online session will be sent to all registered participants in April.",
-  "last_updated": "2026-06-02T10:35:29Z"
+  "last_updated": "2026-07-14T16:17:40Z"
 }

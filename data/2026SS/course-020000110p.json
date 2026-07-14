@@ -14,9 +14,21 @@
     {
       "day_of_week": 1,
       "start_date": "2026-04-20",
-      "end_date": "2026-07-20",
+      "end_date": "2026-07-06",
       "start_time": "14:00",
       "end_time": "16:00",
+      "location": "002 Haus zum Riesen (40)",
+      "location_link": null,
+      "room": "002 Haus zum Riesen (40)",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-20",
+      "start_time": "14:00",
+      "end_time": "18:00",
       "location": "002 Haus zum Riesen (40)",
       "location_link": null,
       "room": "002 Haus zum Riesen (40)",
@@ -27,5 +39,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409275",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:51:26Z"
+  "last_updated": "2026-07-14T15:12:15Z"
 }

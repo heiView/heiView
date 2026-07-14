@@ -10,7 +10,7 @@
   ],
   "organisation": "General Medicine and Health Services Research",
   "start_date": "2026-03-09",
-  "end_date": "2026-05-19",
+  "end_date": "2026-07-06",
   "weeks": [
     {
       "day_of_week": 1,
@@ -71,10 +71,22 @@
       "room": "Ort noch nicht bekannt",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "13:15",
+      "end_time": "15:30",
+      "location": "Ort noch nicht bekannt",
+      "location_link": null,
+      "room": "Ort noch nicht bekannt",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/394805",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-15T10:17:24Z"
+  "last_updated": "2026-07-14T15:21:14Z"
 }

@@ -230,7 +230,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-07-09",
-      "end_date": "2026-07-16",
+      "end_date": "2026-07-09",
       "start_time": "09:30",
       "end_time": "10:30",
       "location": "UFHK SR (6440.EG.274)",
@@ -408,6 +408,18 @@
       "note": null
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-16",
+      "start_time": "09:30",
+      "end_time": "10:30",
+      "location": "Besprechungsraum (6430.U1.042)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=31471",
+      "room": "Besprechungsraum (6430.U1.042)",
+      "building": "Im Neuenheimer Feld 430, Lower level 1",
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-07-17",
       "end_date": "2026-07-17",
@@ -423,5 +435,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402261",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:58:08Z"
+  "last_updated": "2026-07-14T15:19:23Z"
 }

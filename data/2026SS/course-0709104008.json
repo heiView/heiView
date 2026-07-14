@@ -22,10 +22,22 @@
       "room": "Übungsraum (2040.04.404)",
       "building": "Marstallhof 4, 4th floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-24",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "UGX 60 (2170.U1.060)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21089",
+      "room": "UGX 60 (2170.U1.060)",
+      "building": "Grabengasse 3-5, Lower level 1",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408522",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:27:01Z"
+  "last_updated": "2026-07-14T15:49:43Z"
 }

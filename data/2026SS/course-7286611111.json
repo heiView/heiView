@@ -58,7 +58,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "*field trip* July 8 to 10 (outside Heidelberg)"
+      "note": "*field trip* July 15 to 17 (outside Heidelberg)"
     },
     {
       "day_of_week": 4,
@@ -70,7 +70,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "*field trip* July 8 to 10 (outside Heidelberg)"
+      "note": "*field trip* July 15 to 17 (outside Heidelberg)"
     },
     {
       "day_of_week": 5,
@@ -82,7 +82,7 @@
       "location_link": null,
       "room": "Siehe Anmerkung",
       "building": null,
-      "note": "*field trip* July 8 to 10 (outside Heidelberg)"
+      "note": "*field trip* July 15 to 17 (outside Heidelberg)"
     },
     {
       "day_of_week": 2,
@@ -100,5 +100,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407894",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-01T14:30:40Z"
+  "last_updated": "2026-07-14T15:33:20Z"
 }

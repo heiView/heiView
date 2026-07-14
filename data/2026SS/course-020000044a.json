@@ -34,10 +34,58 @@
       "room": "HS 13 (2170.02.018)",
       "building": "HS 13, Grabengasse 3-5, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-07-16",
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "start_time": "19:00",
+      "end_time": "21:30",
+      "location": "HS 08 (2170.01.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20593",
+      "room": "HS 08 (2170.01.038)",
+      "building": "HS 08, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "start_time": "19:00",
+      "end_time": "21:30",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408777",
   "exceptions": [],
   "further_info": "Recommended Reading werden in der Vorlesung gegeben Zu den Vorlesungen ist eine Gesetzessammlung zum Staatsrecht in aktueller Fassung mitzubringen.",
-  "last_updated": "2026-04-21T10:16:42Z"
+  "last_updated": "2026-07-14T15:38:54Z"
 }

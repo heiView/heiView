@@ -14,7 +14,7 @@
     {
       "day_of_week": 5,
       "start_date": "2026-04-17",
-      "end_date": "2026-07-24",
+      "end_date": "2026-07-17",
       "start_time": "11:15",
       "end_time": "12:45",
       "location": "Übungsraum IV (2170.EG.055X)",
@@ -22,10 +22,22 @@
       "room": "Übungsraum IV (2170.EG.055X)",
       "building": "Grabengasse 3-5, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-24",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Übungsraum III (2170.EG.026H)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=8455",
+      "room": "Übungsraum III (2170.EG.026H)",
+      "building": "Grabengasse 3-5, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420041",
   "exceptions": [],
   "further_info": "Recommended Reading Eike WOLGAST, Reformierte Konfession und Politik im 16. Jahrhundert. Studien zur Geschichte der Kurpfalz im Reformationszeitalter, Heidelberg 1998 (Schriften der Philosophisch-historischen Klasse der Heidelberger Akademie der Wissenschaften 10); als Einstieg in die kurpfälzische Geschichte: Armin KOHNLE, Kleine Geschichte der Kurpfalz, Karlsruhe 52014; Meinrad SCHAAB, Geschichte der Kurpfalz, Band 2: Neuzeit, Stuttgart / Berlin / Köln 1992. Weitere Literatur wird in der Veranstaltung bekanntgegeben.",
-  "last_updated": "2026-06-01T14:17:32Z"
+  "last_updated": "2026-07-14T15:25:14Z"
 }

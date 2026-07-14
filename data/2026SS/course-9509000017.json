@@ -12,54 +12,6 @@
   "end_date": "2026-07-16",
   "weeks": [
     {
-      "day_of_week": 3,
-      "start_date": "2026-04-22",
-      "end_date": "2026-04-22",
-      "start_time": "17:00",
-      "end_time": "18:30",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-05-13",
-      "end_date": "2026-05-13",
-      "start_time": "17:00",
-      "end_time": "18:30",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-06-10",
-      "end_date": "2026-06-10",
-      "start_time": "17:00",
-      "end_time": "18:30",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
-      "note": null
-    },
-    {
-      "day_of_week": 3,
-      "start_date": "2026-06-24",
-      "end_date": "2026-06-24",
-      "start_time": "17:00",
-      "end_time": "18:30",
-      "location": "Online",
-      "location_link": null,
-      "room": "Online",
-      "building": null,
-      "note": null
-    },
-    {
       "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-04-20",
@@ -360,6 +312,54 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-22",
+      "start_time": "17:00",
+      "end_time": "18:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-17",
+      "start_time": "17:00",
+      "end_time": "18:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "17:00",
+      "end_time": "18:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "start_time": "17:00",
+      "end_time": "18:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 4,
       "start_date": "2026-04-23",
       "end_date": "2026-04-23",
@@ -423,5 +423,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/402325",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-24T14:56:21Z"
+  "last_updated": "2026-07-14T15:19:22Z"
 }

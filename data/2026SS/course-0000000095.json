@@ -14,7 +14,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-04-16",
-      "end_date": "2026-07-23",
+      "end_date": "2026-06-18",
       "start_time": "14:15",
       "end_time": "15:45",
       "location": "ÜR K 3 (1040.04.403)",
@@ -22,10 +22,34 @@
       "room": "ÜR K 3 (1040.04.403)",
       "building": "Karlstraße 16, 4th floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-06-25",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-23",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "ÖInst SR (1060.EG.014)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7060",
+      "room": "ÖInst SR (1060.EG.014)",
+      "building": "Plankengasse 1-3, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410765",
   "exceptions": [],
   "further_info": "Recommended Reading Wird im Seminar bekanntgegeben.",
-  "last_updated": "2026-04-21T10:19:32Z"
+  "last_updated": "2026-07-14T15:41:41Z"
 }

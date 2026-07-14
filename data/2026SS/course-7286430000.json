@@ -10,12 +10,12 @@
   ],
   "organisation": "Heidelberg Center for Ibero-American Studies (HCIAS)",
   "start_date": "2026-04-14",
-  "end_date": "2026-07-21",
+  "end_date": "2026-07-22",
   "weeks": [
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
+      "end_date": "2026-07-07",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "Siehe Anmerkung",
@@ -23,10 +23,22 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": "Location: Bergheimer Str. 20, Seminarraum 215"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-22",
+      "end_date": "2026-07-22",
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "ONLY HCIAS STUDENTS: EXAM. Location: Bergheimer Str. 20, Seminarraum 215"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407888",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:26:49Z"
+  "last_updated": "2026-07-14T15:49:30Z"
 }

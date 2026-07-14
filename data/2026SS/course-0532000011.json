@@ -62,7 +62,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-06-18",
-      "end_date": "2026-06-25",
+      "end_date": "2026-07-02",
       "start_time": "07:45",
       "end_time": "10:00",
       "location": "SR 27 (6326.02.220)",
@@ -110,7 +110,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-06-24",
-      "end_date": "2026-07-01",
+      "end_date": "2026-06-24",
       "start_time": "07:45",
       "end_time": "10:00",
       "location": "SR 27 (6326.02.220)",
@@ -135,5 +135,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/386022",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:14:25Z"
+  "last_updated": "2026-07-14T15:36:07Z"
 }

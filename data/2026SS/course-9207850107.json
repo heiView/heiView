@@ -8,24 +8,24 @@
     "Winkler, Frank"
   ],
   "organisation": "Clinic National Center for Tumour Diseases (NCT)",
-  "start_date": "2026-06-25",
-  "end_date": "2026-06-25",
+  "start_date": "2026-07-16",
+  "end_date": "2026-07-16",
   "weeks": [
     {
       "day_of_week": 4,
-      "start_date": "2026-06-25",
-      "end_date": "2026-06-25",
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-16",
       "start_time": "17:00",
       "end_time": "18:30",
-      "location": "KOPF SR 2 (6400.EG.269)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28747",
-      "room": "KOPF SR 2 (6400.EG.269)",
-      "building": "Im Neuenheimer Feld 400, Ground floor",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418612",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:34:39Z"
+  "last_updated": "2026-07-14T16:25:58Z"
 }

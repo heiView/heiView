@@ -22,10 +22,70 @@
       "room": "HS 2 Saal (3010.EG.013)",
       "building": "HS 2 Saal, Hauptstraße 47-51, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-13",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Seminarraum (3020.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
+      "room": "Seminarraum (3020.EG.038)",
+      "building": "Hauptstraße 47/51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "Seminarraum (3020.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
+      "room": "Seminarraum (3020.EG.038)",
+      "building": "Hauptstraße 47/51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "14:00",
+      "end_time": "18:00",
+      "location": "Seminarraum (3020.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
+      "room": "Seminarraum (3020.EG.038)",
+      "building": "Hauptstraße 47/51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "11:00",
+      "end_time": "15:00",
+      "location": "Seminarraum (3020.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
+      "room": "Seminarraum (3020.EG.038)",
+      "building": "Hauptstraße 47/51, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "location": "Seminarraum (3020.EG.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23367",
+      "room": "Seminarraum (3020.EG.038)",
+      "building": "Hauptstraße 47/51, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/405620",
   "exceptions": [],
   "further_info": "Recommended Reading wird in der Veranstaltung bekanntgegeben online information e-learning course",
-  "last_updated": "2026-04-21T10:06:47Z"
+  "last_updated": "2026-07-14T15:28:36Z"
 }

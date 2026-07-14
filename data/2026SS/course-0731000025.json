@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute of Japanese Studies",
   "start_date": "2026-04-24",
-  "end_date": "2026-05-29",
+  "end_date": "2026-06-26",
   "weeks": [
     {
       "day_of_week": 5,
@@ -27,6 +27,18 @@
       "day_of_week": 5,
       "start_date": "2026-05-29",
       "end_date": "2026-05-29",
+      "start_time": "17:00",
+      "end_time": "23:00",
+      "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11572",
+      "room": "Übungsraum 010.00.06 (4010+4.EG.006)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
       "start_time": "17:00",
       "end_time": "23:00",
       "location": "Übungsraum 010.00.06 (4010+4.EG.006)",
@@ -58,10 +70,22 @@
       "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
       "building": "Voßstraße 2, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-06-26",
+      "end_date": "2026-06-26",
+      "start_time": "18:00",
+      "end_time": "23:00",
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420501",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-05T10:32:28Z"
+  "last_updated": "2026-07-14T15:39:31Z"
 }

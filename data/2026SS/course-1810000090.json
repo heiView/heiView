@@ -36,6 +36,30 @@
       "note": "Ersatztermin für 20.04."
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "08:00",
+      "end_time": "09:00",
+      "location": "Heuscheuer II (2050.02.202)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9376",
+      "room": "Heuscheuer II (2050.02.202)",
+      "building": "Heuscheuer II, Große Mantelgasse 2, 2nd floor",
+      "note": "Vorlesung von 8:30 bis 10:00"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Heuscheuer II (2050.02.202)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9376",
+      "room": "Heuscheuer II (2050.02.202)",
+      "building": "Heuscheuer II, Große Mantelgasse 2, 2nd floor",
+      "note": "Vorlesung"
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-04-13",
       "end_date": "2026-07-20",
@@ -87,5 +111,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409139",
   "exceptions": [],
   "further_info": "Recommended Reading Angrist, J.D., Pischke, J.-S., 2015. Mastering `Metrics’: The Path from Cause to Effect. Princeton University Press. Angrist, J.D., Pischke, J.-S., 2009. Mostly Harmless Econometrics. An Empiricist's Companion. Princeton University Press. Cunningham, S., 2021. Causal Inference: The Mixtape. Yale University Press. https://mixtape.scunning.com/ Huntington-Klein, N., (2022). The Effect: An Introduction to Research Design and Causality. Chapman and Hall/CRC. https://theeffectbook.net/ Stock, J. H., Watson, M. W., 2020. Introduction to Econometrics. Pearson. Wooldridge, J. M., 2019. Introductory Econometrics. Cengage Learning.",
-  "last_updated": "2026-04-23T13:40:29Z"
+  "last_updated": "2026-07-14T15:29:36Z"
 }

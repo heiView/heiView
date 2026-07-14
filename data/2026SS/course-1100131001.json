@@ -14,7 +14,7 @@
     {
       "day_of_week": 2,
       "start_date": "2026-04-14",
-      "end_date": "2026-07-21",
+      "end_date": "2026-07-14",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "SR A (6205.EG.202)",
@@ -22,10 +22,22 @@
       "room": "SR A (6205.EG.202)",
       "building": "Im Neuenheimer Feld 205, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Hörsaal (6205.EG.205)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=12450",
+      "room": "Hörsaal (6205.EG.205)",
+      "building": "Hörsaal, Im Neuenheimer Feld 205, Ground floor",
+      "note": "Achtung: Am 21.7. einmalig im Hörsaal!"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414325",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:42:46Z"
+  "last_updated": "2026-07-14T16:21:09Z"
 }

@@ -8,13 +8,13 @@
     "Hecht, Stefan"
   ],
   "organisation": "Institute of Geography",
-  "start_date": "2026-07-30",
-  "end_date": "2026-07-30",
+  "start_date": "2026-08-06",
+  "end_date": "2026-08-06",
   "weeks": [
     {
       "day_of_week": 4,
-      "start_date": "2026-07-30",
-      "end_date": "2026-07-30",
+      "start_date": "2026-08-06",
+      "end_date": "2026-08-06",
       "start_time": "08:30",
       "end_time": "17:00",
       "location": "Externer Ort",
@@ -27,5 +27,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413720",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:09:55Z"
+  "last_updated": "2026-07-14T15:31:39Z"
 }

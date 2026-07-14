@@ -1,13 +1,13 @@
 {
   "id": "9101100005",
-  "title": "BI - Bedside Teaching Nephrologie",
+  "title": "BI - Nephrologie - Bedside Teaching",
   "type": "BT",
   "ects_credits": null,
   "course_languages": "German",
   "lecturers": [
     "Schultz, Jobst-Hendrik"
   ],
-  "organisation": "Klinik für Endokrinologie, Diabetologie",
+  "organisation": "Nephrologie",
   "start_date": "2026-04-29",
   "end_date": "2026-07-09",
   "weeks": [
@@ -231,5 +231,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/397439",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T09:56:43Z"
+  "last_updated": "2026-07-14T15:18:29Z"
 }

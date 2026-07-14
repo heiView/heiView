@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute of Earth Sciences",
   "start_date": "2026-04-16",
-  "end_date": "2026-11-05",
+  "end_date": "2026-11-04",
   "weeks": [
     {
       "day_of_week": 4,
@@ -36,9 +36,9 @@
       "note": "Hauptklausur"
     },
     {
-      "day_of_week": 4,
-      "start_date": "2026-11-05",
-      "end_date": "2026-11-05",
+      "day_of_week": 3,
+      "start_date": "2026-11-04",
+      "end_date": "2026-11-04",
       "start_time": "14:00",
       "end_time": "15:30",
       "location": "Großer Hörsaal (gHS) (6235.EG.015X)",
@@ -51,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418580",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-15T10:40:45Z"
+  "last_updated": "2026-07-14T15:44:45Z"
 }

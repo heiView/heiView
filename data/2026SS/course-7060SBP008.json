@@ -24,6 +24,18 @@
       "note": null
     },
     {
+      "day_of_week": 1,
+      "start_date": "2026-09-14",
+      "end_date": "2026-09-14",
+      "start_time": "13:30",
+      "end_time": "14:30",
+      "location": "SR26 (6329.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13032",
+      "room": "SR26 (6329.EG.001)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "15 Teilnehmer, INF 329, SR 26, EG"
+    },
+    {
       "day_of_week": 2,
       "start_date": "2026-09-15",
       "end_date": "2026-09-22",
@@ -36,6 +48,18 @@
       "note": null
     },
     {
+      "day_of_week": 2,
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-15",
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "location": "SR 2 (6327.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
+      "room": "SR 2 (6327.EG.002)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": "15 Teilnehmer, INF 329, SR 26, EG"
+    },
+    {
       "day_of_week": 3,
       "start_date": "2026-09-16",
       "end_date": "2026-09-23",
@@ -46,6 +70,18 @@
       "room": "Lab 3 (6329.01.109)",
       "building": "Im Neuenheimer Feld 329, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-16",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR26 (6329.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13032",
+      "room": "SR26 (6329.EG.001)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "15 Teilnehmer, INF 329, SR 26, EG"
     },
     {
       "day_of_week": 4,
@@ -70,10 +106,46 @@
       "room": "Lab 3 (6329.01.109)",
       "building": "Im Neuenheimer Feld 329, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-21",
+      "end_date": "2026-09-21",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "SR 2 (6327.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16708",
+      "room": "SR 2 (6327.EG.002)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": "15 Teilnehmer"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-09-23",
+      "end_date": "2026-09-23",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "SR26 (6329.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13032",
+      "room": "SR26 (6329.EG.001)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": "15 Teilnehmer, INF 329, SR 26, EG"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-09-25",
+      "end_date": "2026-09-25",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "SR 1 (6327.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16707",
+      "room": "SR 1 (6327.EG.001)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": "KLAUSUR Kurs Lifestyle von Bakterien und Phagen, ZMBH, Prof. Dr. M. Mayer, 15 Teilnehmer, bitte einen Raum für 30-50 Personen mit Tischen (Klausur)"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385572",
   "exceptions": [],
   "further_info": "Recommended Reading Brock Mikrobiologie kompakt, M.T. Madigan & J.M. Martinko, Pearson Studium, 2015 Termin:14.09.-25.09.2026, INF 329, Labor 1.OG, 9:00 bis 15:00 Uhr",
-  "last_updated": "2026-04-21T10:27:24Z"
+  "last_updated": "2026-07-14T15:50:09Z"
 }

@@ -22,10 +22,34 @@
       "room": "HS 13 (2170.02.018)",
       "building": "HS 13, Grabengasse 3-5, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-24",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 06 (2170.01.036)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20591",
+      "room": "HS 06 (2170.01.036)",
+      "building": "HS 06, Grabengasse 3-5, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-22",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "HS 15 (2170.03.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20773",
+      "room": "HS 15 (2170.03.025)",
+      "building": "HS 15, Grabengasse 3-5, 3rd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408779",
   "exceptions": [],
   "further_info": "Recommended Reading Will be provided at the beginning of the course. A structure of the course and references will be available in Moodle by the starting date of the course. Description: The 2 hour course Administrative Procedural Law in German Language will take place every Wednesday at 9 a.m., starting april the 22th. It gives an overview of the Administrative Procedural Law. The topics covered include procedural principles, administrative review, the conditions of admissibility of administrative court proceedings, different forms of actions, altered types and effects of judicial decisions and interim legal protection.",
-  "last_updated": "2026-04-21T09:50:50Z"
+  "last_updated": "2026-07-14T15:11:42Z"
 }

@@ -1,0 +1,31 @@
+{
+  "id": "0200000007",
+  "title": "14. Rechtspolitisches Kolloquium",
+  "type": "L",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Pfeiffer, Thomas"
+  ],
+  "organisation": "Faculty of Law",
+  "start_date": "2026-07-14",
+  "end_date": "2026-07-14",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-14",
+      "start_time": "17:30",
+      "end_time": "20:00",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/427004",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-07-14T16:30:10Z"
+}

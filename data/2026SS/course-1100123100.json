@@ -2,7 +2,7 @@
   "id": "1100123100",
   "title": "Etale cohomology II",
   "type": "L",
-  "ects_credits": "6",
+  "ects_credits": "8",
   "course_languages": "English",
   "lecturers": [
     "Merici, Alberto"
@@ -51,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413852",
   "exceptions": [],
   "further_info": "Recommended Reading Lecture notes will be provided. Primary source: Deligne: Étale cohomology SGA 4 1/2 (in French, available online, also typed). Other sources: Freitag--Kiel: Étale Cohomology and the Weil Conjecture (Springer) Deligne: La Conjecture de Weil I (Publ math IHES, a translation by J.S. Milne is available on his personal webpage). Source for results in algebraic geometry: The stacks project authors: The Stacks Project Sources for DG categories: Toën Lectures on DG-categories",
-  "last_updated": "2026-04-23T13:41:28Z"
+  "last_updated": "2026-07-14T15:30:46Z"
 }

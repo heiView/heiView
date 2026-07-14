@@ -22,10 +22,46 @@
       "room": "HS 13 (2170.02.018)",
       "building": "HS 13, Grabengasse 3-5, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-30",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "location": "HS 14 (2170.02.033)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20750",
+      "room": "HS 14 (2170.02.033)",
+      "building": "HS 14, Grabengasse 3-5, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "location": "HS 15 (2170.03.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20773",
+      "room": "HS 15 (2170.03.025)",
+      "building": "HS 15, Grabengasse 3-5, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-21",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "location": "HS 07 (2170.01.037)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20592",
+      "room": "HS 07 (2170.01.037)",
+      "building": "HS 07, Grabengasse 3-5, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408721",
   "exceptions": [],
   "further_info": "Recommended Reading Wird in der Vorlesung bekannt gegeben",
-  "last_updated": "2026-04-21T10:33:47Z"
+  "last_updated": "2026-07-14T15:56:38Z"
 }

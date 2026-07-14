@@ -12,7 +12,7 @@
   ],
   "organisation": "Center for Molecular Biology (ZMBH)",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-20",
+  "end_date": "2026-09-07",
   "weeks": [
     {
       "day_of_week": 1,
@@ -469,10 +469,22 @@
       "room": "HS 1 (6306.EG.020)",
       "building": "HS 1, Im Neuenheimer Feld 306, Ground floor",
       "note": "KLAUSUR GK MMMB Mikrobiologie 140 Teilnehmende"
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-07",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "location": "Lab 1 (6329.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=13034",
+      "room": "Lab 1 (6329.EG.004)",
+      "building": "Im Neuenheimer Feld 329, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/385670",
   "exceptions": [],
   "further_info": "online information course documents e-learning course Gruppe 1: 13.04.-17.04.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 2: 20.04.-24.04.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 3: 04.05.-08.05.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 4: 18.05.-22.05.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 5: 26.05.-30.05.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 6: 08.06.-12.06.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 7: 15.06.-19.06.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 8: 22.06.-26.06.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr Gruppe 9: 29.06.-03.07.2026: INF 329, EG, R 3/4 und R 5/6, 11:15 bis 15:15 Uhr",
-  "last_updated": "2026-04-21T10:30:18Z"
+  "last_updated": "2026-07-14T15:53:03Z"
 }

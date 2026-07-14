@@ -10,7 +10,7 @@
   ],
   "organisation": "Heidelberg Center for Ibero-American Studies (HCIAS)",
   "start_date": "2026-04-21",
-  "end_date": "2026-07-21",
+  "end_date": "2026-07-28",
   "weeks": [
     {
       "day_of_week": 2,
@@ -35,10 +35,22 @@
       "room": "Online",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-28",
+      "end_date": "2026-07-28",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "SGU 1016 (2100.01.201X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=23040",
+      "room": "SGU 1016 (2100.01.201X)",
+      "building": "Grabengasse / Sandgasse 14-18 / 5-7, 1st floor",
+      "note": "Klausur zur Vorlesung (SS26, dienstags, 11:15-12:45, SGU1016)"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/407882",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:16:15Z"
+  "last_updated": "2026-07-14T15:38:17Z"
 }

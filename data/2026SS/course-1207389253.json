@@ -82,10 +82,22 @@
       "room": "Übungsraum (6348.EG.013)",
       "building": "Im Neuenheimer Feld 348, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "16:00",
+      "end_time": "18:30",
+      "location": "Übungsraum (6348.01.132)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19340",
+      "room": "Übungsraum (6348.01.132)",
+      "building": "Im Neuenheimer Feld 348, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409396",
   "exceptions": [],
   "further_info": "Das Seminar richtet sich nicht nur an Studierende, die gerade ihre Abschlussarbeit anfertigen, sondern es sind auch Interessierte herzlich eingeladen.",
-  "last_updated": "2026-04-21T10:12:14Z"
+  "last_updated": "2026-07-14T15:34:12Z"
 }

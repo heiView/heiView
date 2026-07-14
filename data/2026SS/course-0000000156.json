@@ -22,10 +22,22 @@
       "room": "ÜR K 3 (1040.04.403)",
       "building": "Karlstraße 16, 4th floor",
       "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "HS 007 (1040.EG.007)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22826",
+      "room": "HS 007 (1040.EG.007)",
+      "building": "HS 007, Karlstraße 16, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410846",
   "exceptions": [],
   "further_info": "Recommended Reading Hans-Richard Reuter/Torsten Meireis/Wolfgang Huber (Hg.), Handbuch der Evangelischen Ethik, München 2015. Jan Rohls, Geschichte der Ethik, Tübingen 21999. Weitere Literatur wird zu Beginn der Veranstaltung bekanntgegeben.",
-  "last_updated": "2026-04-21T10:41:53Z"
+  "last_updated": "2026-07-14T16:06:56Z"
 }

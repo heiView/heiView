@@ -1,0 +1,32 @@
+{
+  "id": "0000000141",
+  "title": "The Genocide of Sinti and Roma in the Museum",
+  "type": "FT",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Kleinmann, Sarah",
+    "Rauschenberger, Joey"
+  ],
+  "organisation": "ZEGK History Seminar",
+  "start_date": "2026-07-21",
+  "end_date": "2026-07-21",
+  "weeks": [
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "location": "Externer Ort",
+      "location_link": null,
+      "room": "Externer Ort",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/429466",
+  "exceptions": [],
+  "further_info": "-",
+  "last_updated": "2026-07-14T16:16:13Z"
+}

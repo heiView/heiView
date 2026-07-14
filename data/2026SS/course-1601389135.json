@@ -9,24 +9,11 @@
     "Wölfl, Stefan"
   ],
   "organisation": "Institute of Pharmacy and Molecular Biotechnology",
-  "start_date": "2026-06-01",
-  "end_date": "2026-07-20",
-  "weeks": [
-    {
-      "day_of_week": 1,
-      "start_date": "2026-06-01",
-      "end_date": "2026-07-20",
-      "start_time": "18:00",
-      "end_time": "19:30",
-      "location": "Hörsaal (7051.EG.012)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=15893",
-      "room": "Hörsaal (7051.EG.012)",
-      "building": "Hörsaal, Berliner Straße 48, Ground floor",
-      "note": null
-    }
-  ],
+  "start_date": null,
+  "end_date": null,
+  "weeks": [],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/420662",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-02T10:10:21Z"
+  "last_updated": "2026-07-14T15:53:25Z"
 }

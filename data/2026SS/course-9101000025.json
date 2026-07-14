@@ -39,7 +39,7 @@
     {
       "day_of_week": 4,
       "start_date": "2026-06-11",
-      "end_date": "2026-07-09",
+      "end_date": "2026-07-02",
       "start_time": "14:30",
       "end_time": "17:45",
       "location": "Seminarraum K12 (6130.01.012)",
@@ -59,10 +59,22 @@
       "room": "Siehe Anmerkung",
       "building": null,
       "note": "Ort: INF 671 Praxishospitation Labor"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "14:30",
+      "end_time": "17:45",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "Ort der Lehrveranstaltung: Klinikapotheke (Wegbeschreibung in Moodle)"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400460",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-02T10:11:25Z"
+  "last_updated": "2026-07-14T15:54:21Z"
 }

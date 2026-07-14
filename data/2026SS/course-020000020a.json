@@ -46,10 +46,22 @@
       "room": "HS 06 (2170.01.036)",
       "building": "HS 06, Grabengasse 3-5, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/408726",
   "exceptions": [],
   "further_info": "Recommended Reading Für den Einstieg gut geeignet: z. B. Frank/Helms, Erbrecht, 8. Aufl. 2024; Leipold, Erbrecht, 23. Aufl. 2022; weitere Hinweise in der Vorlesung. Um Anmeldung im Moodle-Kurs wird gebeten. Die Materialien samt Gliederungen zur Vorlesung werden sukzessive in Moodle hochgeladen",
-  "last_updated": "2026-04-21T10:16:06Z"
+  "last_updated": "2026-07-14T15:38:08Z"
 }

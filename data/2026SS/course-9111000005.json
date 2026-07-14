@@ -541,18 +541,6 @@
     },
     {
       "day_of_week": 3,
-      "start_date": "2026-07-01",
-      "end_date": "2026-07-01",
-      "start_time": "08:15",
-      "end_time": "09:15",
-      "location": "KOPF gHS (6400.EG.266)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
-      "room": "KOPF gHS (6400.EG.266)",
-      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
-      "note": null
-    },
-    {
-      "day_of_week": 3,
       "start_date": "2026-03-11",
       "end_date": "2026-03-11",
       "start_time": "09:30",
@@ -1882,10 +1870,22 @@
       "room": "KOPF SR 1 (6400.EG.268)",
       "building": "Im Neuenheimer Feld 400, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "08:15",
+      "end_time": "09:15",
+      "location": "KOPF gHS (6400.EG.266)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=28734",
+      "room": "KOPF gHS (6400.EG.266)",
+      "building": "KOPF gHS, Im Neuenheimer Feld 400, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/393585",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-12T09:58:16Z"
+  "last_updated": "2026-07-14T15:20:32Z"
 }

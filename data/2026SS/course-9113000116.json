@@ -10,7 +10,7 @@
   ],
   "organisation": "General Medicine and Health Services Research",
   "start_date": "2026-03-02",
-  "end_date": "2026-05-22",
+  "end_date": "2026-07-10",
   "weeks": [
     {
       "day_of_week": 1,
@@ -121,6 +121,18 @@
       "note": null
     },
     {
+      "day_of_week": 4,
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-03-06",
       "end_date": "2026-03-06",
@@ -157,6 +169,18 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-03",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-03-09",
       "end_date": "2026-03-09",
@@ -172,6 +196,18 @@
       "day_of_week": 1,
       "start_date": "2026-04-20",
       "end_date": "2026-04-20",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
       "start_time": "13:00",
       "end_time": "15:00",
       "location": "Online",
@@ -217,9 +253,33 @@
       "note": null
     },
     {
+      "day_of_week": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-10",
+      "start_time": "13:30",
+      "end_time": "15:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-04-13",
       "end_date": "2026-04-13",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-06-29",
+      "end_date": "2026-06-29",
       "start_time": "14:00",
       "end_time": "16:00",
       "location": "Online",
@@ -265,6 +325,18 @@
       "note": null
     },
     {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
       "day_of_week": 1,
       "start_date": "2026-05-11",
       "end_date": "2026-05-18",
@@ -287,10 +359,58 @@
       "room": "Online",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "start_time": "13:30",
+      "end_time": "15:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-02",
+      "start_time": "15:30",
+      "end_time": "17:30",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "location": "Online",
+      "location_link": null,
+      "room": "Online",
+      "building": null,
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/394808",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-05-15T10:17:40Z"
+  "last_updated": "2026-07-14T15:21:31Z"
 }

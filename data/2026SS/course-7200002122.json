@@ -1,0 +1,31 @@
+{
+  "id": "7200002122",
+  "title": "Oberseminar: Towards Reliable and Efficient AI: Bayesian Neural Networks and Emerging Hardware",
+  "type": "SE",
+  "ects_credits": null,
+  "course_languages": "German",
+  "lecturers": [
+    "Klein, Bernhard"
+  ],
+  "organisation": "Institute of Computer Engineering (ZITI)",
+  "start_date": "2026-04-13",
+  "end_date": "2026-07-20",
+  "weeks": [
+    {
+      "day_of_week": 1,
+      "start_date": "2026-04-13",
+      "end_date": "2026-07-20",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": null
+    }
+  ],
+  "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/429574",
+  "exceptions": [],
+  "further_info": "Das Oberseminar findet am Montag, 13 bis 15 Uhr; Besprechungsraum 5.OG, Raum 524 statt.",
+  "last_updated": "2026-07-14T15:58:03Z"
+}

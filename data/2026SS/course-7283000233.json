@@ -14,7 +14,7 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-22",
-      "end_date": "2026-07-22",
+      "end_date": "2026-07-08",
       "start_time": "16:00",
       "end_time": "18:00",
       "location": "Übungsraum 400.00.02 (4400.EG.002)",
@@ -22,10 +22,22 @@
       "room": "Übungsraum 400.00.02 (4400.EG.002)",
       "building": "Voßstraße 2, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-22",
+      "end_date": "2026-07-22",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "location": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11577",
+      "room": "Übungsraum 010.01.02 (4010+4.01.002)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/415846",
   "exceptions": [],
   "further_info": "The colloquium will take place on 22 April, 6 May, 20 May, 10 June, 24 June, 8 July and 22 July.",
-  "last_updated": "2026-04-21T10:02:00Z"
+  "last_updated": "2026-07-14T15:23:32Z"
 }

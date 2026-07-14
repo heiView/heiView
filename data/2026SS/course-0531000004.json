@@ -685,7 +685,7 @@
     },
     {
       "day_of_week": 5,
-      "start_date": "2026-06-26",
+      "start_date": "2026-07-03",
       "end_date": "2026-07-03",
       "start_time": "07:45",
       "end_time": "10:00",
@@ -1298,7 +1298,7 @@
     {
       "day_of_week": 5,
       "start_date": "2026-06-19",
-      "end_date": "2026-06-19",
+      "end_date": "2026-06-26",
       "start_time": "07:45",
       "end_time": "10:00",
       "location": "Online",
@@ -1311,5 +1311,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/386345",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-01T14:35:24Z"
+  "last_updated": "2026-07-14T15:36:04Z"
 }

@@ -61,6 +61,18 @@
       "note": null
     },
     {
+      "day_of_week": 1,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-20",
+      "start_time": "16:15",
+      "end_time": "18:00",
+      "location": "Unterrichtsraum (6229.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14153",
+      "room": "Unterrichtsraum (6229.01.110)",
+      "building": "Im Neuenheimer Feld 229, 1st floor",
+      "note": null
+    },
+    {
       "day_of_week": 2,
       "start_date": "2026-04-14",
       "end_date": "2026-07-21",
@@ -82,6 +94,18 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14508",
       "room": "Übungsraum (6227.03.402)",
       "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-23",
+      "start_time": "09:15",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6229.01.110)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14153",
+      "room": "Unterrichtsraum (6229.01.110)",
+      "building": "Im Neuenheimer Feld 229, 1st floor",
       "note": null
     },
     {
@@ -253,6 +277,30 @@
       "note": null
     },
     {
+      "day_of_week": 2,
+      "start_date": "2026-06-23",
+      "end_date": "2026-06-23",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Unterrichtsraum (6227.02.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14230",
+      "room": "Unterrichtsraum (6227.02.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 2,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-21",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Unterrichtsraum (6227.02.404)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14230",
+      "room": "Unterrichtsraum (6227.02.404)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
+      "note": null
+    },
+    {
       "day_of_week": 4,
       "start_date": "2026-04-16",
       "end_date": "2026-07-23",
@@ -294,6 +342,18 @@
       "end_date": "2026-05-28",
       "start_time": "09:00",
       "end_time": "12:00",
+      "location": "Übungsraum (6227.03.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14509",
+      "room": "Übungsraum (6227.03.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 3rd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-16",
+      "start_time": "09:00",
+      "end_time": "13:00",
       "location": "Übungsraum (6227.03.403)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14509",
       "room": "Übungsraum (6227.03.403)",
@@ -412,5 +472,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410436",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-02T10:17:59Z"
+  "last_updated": "2026-07-14T16:00:19Z"
 }

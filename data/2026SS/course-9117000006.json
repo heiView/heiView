@@ -490,18 +490,6 @@
       "note": null
     },
     {
-      "day_of_week": 1,
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-13",
-      "start_time": "14:30",
-      "end_time": "16:00",
-      "location": "SR 7 (6325.01.112)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
-      "room": "SR 7 (6325.01.112)",
-      "building": "Im Neuenheimer Feld 325, 1st floor",
-      "note": null
-    },
-    {
       "day_of_week": 2,
       "start_date": "2026-04-28",
       "end_date": "2026-04-28",
@@ -577,18 +565,6 @@
       "day_of_week": 2,
       "start_date": "2026-04-28",
       "end_date": "2026-04-28",
-      "start_time": "12:45",
-      "end_time": "14:15",
-      "location": "SR 7 (6325.01.112)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30771",
-      "room": "SR 7 (6325.01.112)",
-      "building": "Im Neuenheimer Feld 325, 1st floor",
-      "note": "Bitte vor dem Impfseminar bearbeiten"
-    },
-    {
-      "day_of_week": 2,
-      "start_date": "2026-07-07",
-      "end_date": "2026-07-07",
       "start_time": "12:45",
       "end_time": "14:15",
       "location": "SR 7 (6325.01.112)",
@@ -970,6 +946,30 @@
       "note": null
     },
     {
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "12:45",
+      "end_time": "14:15",
+      "location": "Siehe Anmerkung",
+      "location_link": null,
+      "room": "Siehe Anmerkung",
+      "building": null,
+      "note": "SR 7"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "14:30",
+      "end_time": "16:00",
+      "location": "Selbststudium",
+      "location_link": null,
+      "room": "Selbststudium",
+      "building": null,
+      "note": "Bitte vor dem Impfseminar bearbeiten"
+    },
+    {
       "day_of_week": 5,
       "start_date": "2026-07-10",
       "end_date": "2026-07-10",
@@ -997,5 +997,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409359",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-01T14:09:57Z"
+  "last_updated": "2026-07-14T15:20:29Z"
 }

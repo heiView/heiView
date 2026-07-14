@@ -94,10 +94,22 @@
       "room": "Übungsraum 1. OG 107 (3041.01.007)",
       "building": "Akademiestraße 3, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
+      "start_time": "09:00",
+      "end_time": "20:00",
+      "location": "Übungsraum UG 024 (3040.U1.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21491",
+      "room": "Übungsraum UG 024 (3040.U1.024)",
+      "building": "Akademiestraße 3, Lower level 1",
+      "note": "Eventuell Ausweichtermin"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/411205",
   "exceptions": [],
   "further_info": "Recommended Reading Döring, N. (2023). Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften. 6. vollständig überarbeitete, aktualisierte und erweiterte Auflage. Berlin: Springer. Reinders, H., Ditton, H., Gräsel, C. & Gniewosz, B. (Hrsg.) (2015). Empirische Bildungsforschung. Strukturen und Methoden. 2., überarbeitete Auflage. Springer. Aktive Teilnahme, Vorbereitung durch Lesen der Literatur, kurze mündliche Präsentationen (in Grup-penarbeit), schriftliche Ausarbeitung (in Gruppenarbeit)",
-  "last_updated": "2026-04-21T09:55:20Z"
+  "last_updated": "2026-07-14T15:16:41Z"
 }

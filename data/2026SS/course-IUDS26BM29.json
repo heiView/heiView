@@ -14,6 +14,18 @@
     {
       "day_of_week": 3,
       "start_date": "2026-04-15",
+      "end_date": "2026-07-08",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Übungsraum (3051.01.114)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19868",
+      "room": "Übungsraum (3051.01.114)",
+      "building": "Plöck 57a, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-22",
       "end_date": "2026-07-22",
       "start_time": "14:15",
       "end_time": "15:45",
@@ -22,10 +34,22 @@
       "room": "Übungsraum (3051.01.114)",
       "building": "Plöck 57a, 1st floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-15",
+      "end_date": "2026-07-15",
+      "start_time": "14:15",
+      "end_time": "15:45",
+      "location": "Unterrichtsraum (3051.U1.109)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=21698",
+      "room": "Unterrichtsraum (3051.U1.109)",
+      "building": "Plöck 57a, Lower level 1",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416905",
   "exceptions": [],
   "further_info": "Der Kurs eignet sich auch für alle Erasmus-Studierenden (auch französischsprachige).",
-  "last_updated": "2026-04-21T11:42:04Z"
+  "last_updated": "2026-07-14T16:20:07Z"
 }

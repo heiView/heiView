@@ -22,10 +22,22 @@
       "room": "Konferenzsaal (KS I) (3051.02.208)",
       "building": "Plöck 57a, 2nd floor",
       "note": "Räumlichkeit wird noch bekannt gegeben"
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "location": "Konferenzsaal (KS II) (3052.EG.053)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20017",
+      "room": "Konferenzsaal (KS II) (3052.EG.053)",
+      "building": "Plöck 57a, Ground floor",
+      "note": "Nachholstunde"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/416395",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T10:45:14Z"
+  "last_updated": "2026-07-14T16:10:41Z"
 }

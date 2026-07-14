@@ -1226,6 +1226,18 @@
     {
       "day_of_week": 3,
       "start_date": "2026-05-06",
+      "end_date": "2026-05-06",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K2 Nephrologie",
+      "location_link": null,
+      "room": "INF 440 - K2 Nephrologie",
+      "building": null,
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-20",
       "end_date": "2026-05-20",
       "start_time": "14:00",
       "end_time": "15:30",
@@ -1606,10 +1618,22 @@
       "room": "INF 440 - K1 Stoffwechsel",
       "building": null,
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-13",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "location": "INF 440 - K2 Nephrologie",
+      "location_link": null,
+      "room": "INF 440 - K2 Nephrologie",
+      "building": null,
+      "note": "kein Tutor, U. abgesagt"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/400540",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-01T14:12:30Z"
+  "last_updated": "2026-07-14T15:22:13Z"
 }

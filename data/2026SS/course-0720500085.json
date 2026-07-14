@@ -9,7 +9,7 @@
   ],
   "organisation": "Institute for Religious Studies",
   "start_date": "2026-04-15",
-  "end_date": "2026-07-18",
+  "end_date": "2026-06-27",
   "weeks": [
     {
       "day_of_week": 3,
@@ -33,7 +33,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
       "room": "Seminarraum (2065.03.314)",
       "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
+      "note": "ACHTUNG: Die Vorbesprechung am 24.06. sowie die beiden Termine am 26. und 27.06. finden ONLINE statt."
     },
     {
       "day_of_week": 5,
@@ -45,19 +45,7 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
       "room": "Seminarraum (2065.03.314)",
       "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 5,
-      "start_date": "2026-07-17",
-      "end_date": "2026-07-17",
-      "start_time": "10:00",
-      "end_time": "18:00",
-      "location": "Seminarraum (2065.03.314)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
-      "room": "Seminarraum (2065.03.314)",
-      "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
+      "note": "ACHTUNG: Die Vorbesprechung am 24.06. sowie die beiden Termine am 26. und 27.06. finden ONLINE statt."
     },
     {
       "day_of_week": 6,
@@ -69,23 +57,11 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
       "room": "Seminarraum (2065.03.314)",
       "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
-    },
-    {
-      "day_of_week": 6,
-      "start_date": "2026-07-18",
-      "end_date": "2026-07-18",
-      "start_time": "10:00",
-      "end_time": "18:00",
-      "location": "Seminarraum (2065.03.314)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=9582",
-      "room": "Seminarraum (2065.03.314)",
-      "building": "Fischmarkt / Hauptstraße 1-2 / 185-187, 3rd floor",
-      "note": null
+      "note": "ACHTUNG: Die Vorbesprechung am 24.06. sowie die beiden Termine am 26. und 27.06. finden ONLINE statt."
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417159",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-02T10:22:55Z"
+  "last_updated": "2026-07-14T16:04:44Z"
 }

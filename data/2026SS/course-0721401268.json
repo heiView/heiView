@@ -29,15 +29,15 @@
       "end_date": "2026-07-13",
       "start_time": "14:00",
       "end_time": "16:00",
-      "location": "Ort noch nicht bekannt",
-      "location_link": null,
-      "room": "Ort noch nicht bekannt",
-      "building": null,
+      "location": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11570",
+      "room": "Übungsraum 010.00.04 (4010+4.EG.002)",
+      "building": "Voßstraße 2, Ground floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/412510",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:50:56Z"
+  "last_updated": "2026-07-14T16:11:20Z"
 }

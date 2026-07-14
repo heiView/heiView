@@ -82,10 +82,22 @@
       "room": "SR 10 (6346.EG.004)",
       "building": "Im Neuenheimer Feld 346, Ground floor",
       "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "location": "SR 4 (6327.EG.004)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16834",
+      "room": "SR 4 (6327.EG.004)",
+      "building": "Im Neuenheimer Feld 327, Ground floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409487",
   "exceptions": [],
   "further_info": "Tutorium bei Herrn Baron und Herrn Alexandru",
-  "last_updated": "2026-05-02T20:39:00Z"
+  "last_updated": "2026-07-14T16:17:58Z"
 }

@@ -22,10 +22,22 @@
       "room": "Verfügungsraum \"Orgel\" (2170.03.031)",
       "building": "Grabengasse 3-5, 3rd floor",
       "note": "Gruppengröße: 18"
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-18",
+      "start_time": "11:15",
+      "end_time": "12:45",
+      "location": "ehem. Senatssaal (2170.02.038)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20754",
+      "room": "ehem. Senatssaal (2170.02.038)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": "Gruppengröße: 18 - verschoben, weil Raum V-Orgel einmalig gesperrt-"
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/419574",
   "exceptions": [],
   "further_info": "Recommended Reading Jürgen Malitz: Nikolaos von Damaskus. Leben des Kaisers Augustus, WBG Darmstadt 2003. Klaus Bringmann, Dirk Wiegandt: Augustus. Schriften, Reden und Aussprüche, WBG Darmstadt 2008. David Wardle: Suetonius, Life of Augustus, OPU Oxford 2014.",
-  "last_updated": "2026-04-21T10:40:51Z"
+  "last_updated": "2026-07-14T16:05:35Z"
 }

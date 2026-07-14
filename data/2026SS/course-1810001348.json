@@ -53,9 +53,9 @@
       "end_date": "2026-06-26",
       "start_time": "09:00",
       "end_time": "18:00",
-      "location": "Übungsraum 00.028 (4310.EG.028)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19002",
-      "room": "Übungsraum 00.028 (4310.EG.028)",
+      "location": "Übungsraum (4310.EG.024)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19000",
+      "room": "Übungsraum (4310.EG.024)",
       "building": "Bergheimer Straße 58, Ground floor",
       "note": "Blockseminar"
     }
@@ -63,5 +63,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/417936",
   "exceptions": [],
   "further_info": "Recommended Reading • Elliott, Graham, and Allan Timmermann. 2016. Economic Forecasting. Princeton Uni-versity Press. • Stock, James, and Mark Watson. 2021. Introduction to Econometrics. Pearson.",
-  "last_updated": "2026-04-21T10:28:12Z"
+  "last_updated": "2026-07-14T15:50:57Z"
 }

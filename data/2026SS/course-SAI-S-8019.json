@@ -8,9 +8,45 @@
     "Mishra, Anand"
   ],
   "organisation": "Cultural and Religious History of South Asia (Classical Indology)",
-  "start_date": "2026-07-06",
+  "start_date": "2026-07-01",
   "end_date": "2026-07-10",
   "weeks": [
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-01",
+      "start_time": "08:30",
+      "end_time": "10:30",
+      "location": "Übungsraum 010.01.03 (4010+4.01.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11578",
+      "room": "Übungsraum 010.01.03 (4010+4.01.003)",
+      "building": "Voßstraße 2, 1st floor",
+      "note": null
+    },
+    {
+      "day_of_week": 7,
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-05",
+      "start_time": "14:00",
+      "end_time": "18:30",
+      "location": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11569",
+      "room": "Übungsraum 010.00.01 (4010+4.EG.001)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 1,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-06",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 130.00.03 (4130.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11327",
+      "room": "Übungsraum 130.00.03 (4130.EG.003)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
     {
       "day_of_week": 1,
       "start_date": "2026-07-06",
@@ -24,11 +60,35 @@
       "note": null
     },
     {
-      "day_of_week": 1,
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-06",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "day_of_week": 2,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "location": "Übungsraum (4400.02.212)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22242",
+      "room": "Übungsraum (4400.02.212)",
+      "building": "Voßstraße 2, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "location": "Übungsraum 130.00.03 (4130.EG.003)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11327",
+      "room": "Übungsraum 130.00.03 (4130.EG.003)",
+      "building": "Voßstraße 2, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-08",
+      "start_time": "11:00",
+      "end_time": "13:00",
       "location": "Übungsraum (4400.02.212)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22242",
       "room": "Übungsraum (4400.02.212)",
@@ -39,17 +99,17 @@
       "day_of_week": 4,
       "start_date": "2026-07-09",
       "end_date": "2026-07-09",
-      "start_time": "17:00",
-      "end_time": "19:00",
-      "location": "Übungsraum (4400.02.212)",
-      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22242",
-      "room": "Übungsraum (4400.02.212)",
-      "building": "Voßstraße 2, 2nd floor",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "location": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=11580",
+      "room": "Hörsaal 010.01.05 (4010+4.01.005)",
+      "building": "Hörsaal 010.01.05, Voßstraße 2, 1st floor",
       "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409874",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-06-02T10:24:15Z"
+  "last_updated": "2026-07-14T16:06:08Z"
 }

@@ -40,8 +40,8 @@
       "day_of_week": 6,
       "start_date": "2026-06-27",
       "end_date": "2026-06-27",
-      "start_time": "10:00",
-      "end_time": "15:00",
+      "start_time": "09:00",
+      "end_time": "14:00",
       "location": "Hörsaal 700 (6700.EG.012)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=22439",
       "room": "Hörsaal 700 (6700.EG.012)",
@@ -52,8 +52,8 @@
       "day_of_week": 6,
       "start_date": "2026-06-27",
       "end_date": "2026-06-27",
-      "start_time": "10:00",
-      "end_time": "15:00",
+      "start_time": "09:00",
+      "end_time": "14:00",
       "location": "Seminarraum 700 (6700.EG.106)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=19596",
       "room": "Seminarraum 700 (6700.EG.106)",
@@ -64,5 +64,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/414606",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-21T11:49:01Z"
+  "last_updated": "2026-07-14T16:12:42Z"
 }

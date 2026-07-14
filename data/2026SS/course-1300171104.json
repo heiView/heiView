@@ -9,7 +9,7 @@
   ],
   "organisation": "Faculty for Physics and Astronomy",
   "start_date": "2026-04-13",
-  "end_date": "2026-07-22",
+  "end_date": "2026-07-23",
   "weeks": [
     {
       "day_of_week": 2,
@@ -57,6 +57,18 @@
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=16106",
       "room": "HS 1 (6227.EG.403)",
       "building": "HS 1, Im Neuenheimer Feld 227 / 227a, Ground floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-23",
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "location": "Unterrichtsraum (6227.02.403)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=14229",
+      "room": "Unterrichtsraum (6227.02.403)",
+      "building": "Im Neuenheimer Feld 227 / 227a, 2nd floor",
       "note": null
     },
     {
@@ -291,5 +303,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/410492",
   "exceptions": [],
   "further_info": "Recommended Reading Siehe Webseite der Vorlesung: https://www.thphys.uni-heidelberg.de/~hebecker/QM/qm.html online information course documents",
-  "last_updated": "2026-05-02T20:37:56Z"
+  "last_updated": "2026-07-14T16:16:54Z"
 }

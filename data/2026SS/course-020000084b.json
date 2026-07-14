@@ -50,9 +50,21 @@
     {
       "day_of_week": 5,
       "start_date": "2026-07-10",
-      "end_date": "2026-07-17",
+      "end_date": "2026-07-10",
       "start_time": "14:30",
       "end_time": "18:30",
+      "location": "Übungsraum (2150.EG.008)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20578",
+      "room": "Übungsraum (2150.EG.008)",
+      "building": "Augustinergasse 9, Ground floor",
+      "note": "Seminarraum I, Augustinergasse 9 (IPR)"
+    },
+    {
+      "day_of_week": 5,
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-17",
+      "start_time": "09:30",
+      "end_time": "12:30",
       "location": "Übungsraum (2150.EG.008)",
       "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20578",
       "room": "Übungsraum (2150.EG.008)",
@@ -63,5 +75,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/418589",
   "exceptions": [],
   "further_info": "Recommended Reading Bibliography will be provided in the lecture. The course will be held in English and German, if desired also completely in english. The allocation of topics for the presentations will be generally made Friday, 26.06.2026. For presentations on the topics notion of art and actors please enquire in advance by email. Information about further talks and exhibitions will be provided during the lecture.",
-  "last_updated": "2026-04-21T10:26:00Z"
+  "last_updated": "2026-07-14T15:48:42Z"
 }

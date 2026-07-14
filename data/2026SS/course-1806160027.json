@@ -25,6 +25,18 @@
     },
     {
       "day_of_week": 4,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-02",
+      "start_time": "14:15",
+      "end_time": "17:45",
+      "location": "Unterrichtsraum (4310.02.025)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=20517",
+      "room": "Unterrichtsraum (4310.02.025)",
+      "building": "Bergheimer Straße 58, 2nd floor",
+      "note": null
+    },
+    {
+      "day_of_week": 4,
       "start_date": "2026-04-16",
       "end_date": "2026-07-23",
       "start_time": "14:15",
@@ -39,5 +51,5 @@
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/413060",
   "exceptions": [],
   "further_info": "Recommended Reading Boris Holzer (2025): Politische Soziologie (online in HEIDI verfügbar, UB Heidelberg) David Graeber, David Wengrow (2022): Anfänge: eine neue Geschichte der Menschheit (online in HEIDI verfügbar, UB Heidelberg) dazu auch: https://libcom.org/article/gender-egalitarianism-made-us-human-response-david-graeber-david-wengrows-how-change-course Grundsatzrede des kanadischen Premiers Mark Carney in Davos 2025 https://www.bild.de/politik/ausland-und-internationales/kanada-premier-rechnet-ab-wir-im-westen-haben-mit-einer-luege-gelebt-697084f70452f09d7ec5d017 Katharina Bluhm: https://www.oei.fu-berlin.de/soziologie/team/bluhm.html https://www.researchgate.net/profile/Katharina-Bluhm Timm Grassmann (2024): Marx gegen Moskau. Zur Außenpolitik der Arbeiterklasse Anrechenbar für: - BA-M 6 (Seminar): 6 ECTS (benotet) - BA-M 9.1 oder 9.3: 2 ECTS (unbenotet), 6 ECTS (benotet) - BA-B 6: 2 ECTS (unbenotet) Eine hiervon abweichende ECTS-Vergabe ist nicht möglich. Hinweis: In BA-M 6 sind eine Vorlesung und zwei Seminare oder zwei Seminare und eine Vorlesung zu erbringen.",
-  "last_updated": "2026-06-02T10:04:50Z"
+  "last_updated": "2026-07-14T15:48:32Z"
 }

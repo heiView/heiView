@@ -50,10 +50,22 @@
       "room": "HS 13 (2170.02.018)",
       "building": "HS 13, Grabengasse 3-5, 2nd floor",
       "note": null
+    },
+    {
+      "day_of_week": 4,
+      "start_date": "2026-06-25",
+      "end_date": "2026-07-16",
+      "start_time": "09:15",
+      "end_time": "10:45",
+      "location": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "location_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=30768",
+      "room": "Neue Aula (inkl. Empore) (2170.02.036X)",
+      "building": "Grabengasse 3-5, 2nd floor",
+      "note": null
     }
   ],
   "detail_link": "https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/409404",
   "exceptions": [],
   "further_info": "-",
-  "last_updated": "2026-04-24T18:46:57Z"
+  "last_updated": "2026-07-14T15:44:17Z"
 }
