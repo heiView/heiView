@@ -97,6 +97,8 @@ HEIVIEW_SEMESTER=2026SS npm run db:sync
 ```
 The default target is configured in `config/semesters.json`. The same semester is used by catalog patching, course/override/custom/skip import, building import and metadata import. Missing, empty or invalid source courses fail before replacing a database. The complete database is built in a temporary file and published only when all steps succeed; other semester databases remain intact. A lock prevents simultaneous syncs for the same semester, and admin writes are rejected while it is building. `HEIVIEW_DATA_DIR` can point to an isolated data directory for testing.
 
+Semester source files under `data/2026SS/` and `data/2026WS/` are git-ignored and stay local. Only each semester's `heiview.db` is included in Git; commit and push that file to publish a database update. The deployment workflow then updates the remote database while leaving local course source files untouched.
+
 Database layout:
 ```text
 data/2026SS/{course-*.json,overrides/,custom/,skip/,feedback/,checkpoint.json,sync-meta.json,heiview.db}
@@ -251,6 +253,8 @@ HEIVIEW_SEMESTER=2026WS npm run db:sync
 HEIVIEW_SEMESTER=2026SS npm run db:sync
 ```
 默认学期来自 `config/semesters.json`。建筑目录补充、课程与 overrides/custom/skip 导入、建筑导入和元数据读取使用同一学期。缺失、空目录或无效课程数据会导致同步失败。数据库先在临时文件完整构建，所有步骤成功后才发布，其他学期不受影响。同学期同步有运行锁，构建期间管理写入返回稍后重试。测试可设置 `HEIVIEW_DATA_DIR` 指向临时目录。
+
+`data/2026SS/` 和 `data/2026WS/` 中的课程源文件由 Git 忽略并保留在本地；只有各学期的 `heiview.db` 会纳入版本控制。要发布数据库更新，提交并推送对应数据库文件。部署工作流会更新远程数据库，不会覆盖或上传本地课程源文件。
 
 每个学期保存自己的课程、人工修订、反馈、断点、同步记录和 `heiview.db`，例如 `data/2026SS/heiview.db`、`data/2026WS/heiview.db`。建筑目录和地点映射继续共用。旧 `data/heiview.db` 仅在 SS 分库不存在时作为 **2026SS** 回退；重建 SS 会生成新分库，首次经过身份验证的 SS 管理写入也会先复制数据库，保留旧库。WS 和其他学期绝不回退到旧库。旧共享 `data/sync-meta.json` 继续接受 SS 全量爬取更新，新构建优先读取所选学期元数据；SS 初次构建可回退读取与学期匹配的旧记录。已有共享的补充信息跳过记录也仅为 SS 保留兼容。
 

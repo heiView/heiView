@@ -38,8 +38,11 @@ copilot-instructions.md
 
 data/admin-accounts.json
 data/admin-audit.json
-data/2026SS/
-data/2026WS/
+# Keep semester source data local; publish only the generated database.
+data/2026SS/*
+!data/2026SS/heiview.db
+data/2026WS/*
+!data/2026WS/heiview.db
 
 # Playwright
 /test-results/
