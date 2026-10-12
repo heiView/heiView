@@ -69,6 +69,35 @@ async function main() {
       ['/api/schedule?date=2026-10-05']);
     console.log('BROWSER_OK: first load requests only the selected day; no historical courses or details.');
 
+    async function checkTimetableCorners() {
+      const originalViewport = page.viewportSize();
+      for (const width of [1440, 375]) {
+        await page.setViewportSize({ width, height: 900 });
+        for (const end of [false, true]) {
+          await page.locator('.hei-board-frame').evaluate((frame, end) => {
+            frame.scrollLeft = end ? frame.scrollWidth : 0;
+          }, end);
+          const corners = await page.locator('.hei-board-frame').evaluate(frame => {
+            const rect = frame.getBoundingClientRect();
+            const hit = (x, y) => frame.contains(document.elementFromPoint(x, y));
+            return {
+              leftClipped: !hit(rect.left + 4, rect.top + 4),
+              rightClipped: !hit(rect.right - 4, rect.top + 4),
+              centerVisible: hit(rect.left + rect.width / 2, rect.top + 4),
+            };
+          });
+          assert.ok(corners.leftClipped, `Left viewport corner clipped at ${width}, scroll end=${end}`);
+          assert.ok(corners.rightClipped, `Right viewport corner clipped at ${width}, scroll end=${end}`);
+          assert.ok(corners.centerVisible, `Timetable header visible at ${width}, scroll end=${end}`);
+        }
+        await page.locator('.hei-board-frame').evaluate(frame => { frame.scrollLeft = 0; });
+      }
+      await page.setViewportSize(originalViewport);
+      console.log('BROWSER_OK: timetable viewport clips both top corners on desktop and mobile at either horizontal scroll edge.');
+    }
+
+    await checkTimetableCorners();
+
     async function selectDate(date) {
       const picker = page.locator('.hei-topbar-date input');
       await picker.fill(date);
@@ -103,7 +132,7 @@ async function main() {
     await page.getByRole('button', { name: 'Open search', exact: true }).waitFor();
     await page.getByRole('button', { name: 'Open search', exact: true }).click();
     assert.equal(await searchInput.inputValue(), 'course');
-    await page.locator('.hei-board-card').click({ position: { x: 5, y: 5 } });
+    await page.locator('.hei-board-card').click({ position: { x: 100, y: 5 } });
     await page.getByRole('button', { name: 'Open search', exact: true }).waitFor();
     await page.getByRole('button', { name: 'Open search', exact: true }).click();
     assert.equal(await searchInput.inputValue(), 'course');
@@ -176,6 +205,48 @@ async function main() {
           await page.screenshot({ path: path.join(process.env.HEIVIEW_NAV_SCREENSHOTS, `heiview-nav-${admin ? 'admin' : 'public'}-${width}.png`) });
         }
 
+        const buildingSelector = page.locator('.hei-topbar-building');
+        const selectorBox = await buildingSelector.boundingBox();
+        await buildingSelector.click();
+        const buildingPopup = page.locator('.hei-building-dropdown-multi:visible');
+        await buildingPopup.waitFor();
+        await expect(buildingPopup).toHaveCSS('opacity', '1');
+        await page.waitForTimeout(200);
+        const popupBox = await buildingPopup.boundingBox();
+        const expectedLeft = Math.max(0, Math.min(selectorBox.x, layout.width - popupBox.width));
+        assert.ok(Math.abs(popupBox.x - expectedLeft) <= 2, `Building popup follows selector at ${width}: ${JSON.stringify({ selectorBox, popupBox, expectedLeft })}`);
+        assert.ok(Math.abs(popupBox.y - selectorBox.y - selectorBox.height - 4) <= 2, `Building popup is below selector at ${width}`);
+        assert.ok(popupBox.x >= 0 && popupBox.x + popupBox.width <= layout.width + 1, `Building popup fits viewport at ${width}`);
+        if (process.env.HEIVIEW_NAV_SCREENSHOTS && [760, 375].includes(width)) {
+          await page.screenshot({ path: path.join(process.env.HEIVIEW_NAV_SCREENSHOTS, `heiview-building-popup-${admin ? 'admin' : 'public'}-${width}.png`) });
+        }
+        await page.keyboard.press('Escape');
+
+        const dateSelector = page.locator('.hei-topbar-date');
+        const dateInput = dateSelector.locator('input');
+        const selectedDate = await dateInput.inputValue();
+        const calendar = page.locator('.ant-picker-dropdown:visible');
+        await dateSelector.click();
+        await expect(calendar).toBeVisible();
+        await dateSelector.click();
+        await expect(calendar).toHaveCount(0);
+        assert.equal(await dateInput.inputValue(), selectedDate, `Closing calendar preserves selected date at ${width}`);
+        await dateSelector.click();
+        await expect(calendar).toBeVisible();
+        await page.keyboard.press('Escape');
+        await expect(calendar).toHaveCount(0);
+        if ([1440, 375].includes(width)) {
+          await dateSelector.click();
+          await expect(calendar).toBeVisible();
+          await page.locator('.hei-board-card').click({ position: { x: 100, y: 5 } });
+          await expect(calendar).toHaveCount(0);
+          await dateSelector.click();
+          await expect(calendar).toBeVisible();
+          await calendar.locator('.ant-picker-cell-selected .ant-picker-cell-inner').click();
+          await expect(calendar).toHaveCount(0);
+          assert.equal(await dateInput.inputValue(), selectedDate);
+        }
+
         const toggle = page.getByRole('button', { name: 'Open search', exact: true });
         const before = await page.locator('.hei-topbar-date').boundingBox();
         await toggle.click();
@@ -203,7 +274,7 @@ async function main() {
       await page.locator('.hei-building-dropdown-multi:visible').waitFor();
       assert.equal(await page.locator('.hei-building-dropdown-multi .ant-select-item-option-content').first().evaluate(element => getComputedStyle(element).whiteSpace), 'normal');
       await page.keyboard.press('Escape');
-      console.log(`BROWSER_OK: ${admin ? 'admin' : 'public'} navbar stays in one row from 320–1440px; watermark, compact date, search movement, focus and retained query verified.`);
+      console.log(`BROWSER_OK: ${admin ? 'admin' : 'public'} navbar stays in one row from 320–1440px; calendar toggles on repeated clicks, outside click, Escape and date selection; building popup, search and watermark verified.`);
     }
 
     await checkNavbar();
@@ -213,9 +284,42 @@ async function main() {
     assert.notEqual(await page.locator('html').getAttribute('data-theme'), originalTheme);
     if (process.env.HEIVIEW_NAV_SCREENSHOTS) await page.screenshot({ path: path.join(process.env.HEIVIEW_NAV_SCREENSHOTS, 'heiview-nav-public-alternate-theme.png') });
     await themeButton.click();
+    for (const pathname of ['/?date=2026-10-05', '/privacy']) {
+      await page.goto(base + pathname);
+      await page.locator('.hei-footer').waitFor();
+      for (const width of [1440, 375]) {
+        await page.setViewportSize({ width, height: 900 });
+        for (const theme of ['light', 'dark']) {
+          const currentTheme = await page.locator('html').getAttribute('data-theme') || 'light';
+          if (currentTheme !== theme) await page.locator('.hei-topbar .hei-toolbar-icon-button[aria-pressed]').dispatchEvent('click');
+          await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+          const footer = await page.evaluate(() => {
+            const body = document.body.getBoundingClientRect();
+            const footer = document.querySelector('.hei-footer');
+            const content = document.querySelector('.hei-footer-content');
+            return {
+              bodyBottom: body.bottom + scrollY,
+              footerBottom: footer.getBoundingClientRect().bottom + scrollY,
+              documentHeight: document.documentElement.scrollHeight,
+              backgroundRepeat: getComputedStyle(document.body).backgroundRepeat,
+              contentBottomMargin: getComputedStyle(content).marginBottom,
+              footerAboveOrbs: Number(getComputedStyle(footer).zIndex) > Number(getComputedStyle(document.querySelector('.hei-orb')).zIndex),
+            };
+          });
+          assert.ok(Math.abs(footer.bodyBottom - footer.documentHeight) <= 1, `Background covers ${pathname} at ${width} in ${theme} mode`);
+          assert.ok(footer.backgroundRepeat.split(',').every(repeat => repeat.trim() === 'no-repeat'));
+          assert.ok(Math.abs(footer.footerBottom - footer.documentHeight) <= 1, `No space after footer on ${pathname}`);
+          assert.equal(footer.contentBottomMargin, '0px');
+          assert.ok(footer.footerAboveOrbs);
+          if (process.env.HEIVIEW_NAV_SCREENSHOTS) await page.screenshot({ path: path.join(process.env.HEIVIEW_NAV_SCREENSHOTS, `heiview-footer-${pathname.startsWith('/privacy') ? 'privacy' : 'home'}-${width}-${theme}.png`) });
+        }
+      }
+    }
+    console.log('BROWSER_OK: page backgrounds cover short and long pages without repeating; footer spacing and layers checked in both themes on desktop and mobile.');
     await page.evaluate(() => localStorage.setItem('admin-token', btoa(JSON.stringify({ user: 'test', role: 'superadmin' })) + '.test'));
     await page.goto(base + '/admin?date=2026-10-05');
     await page.getByText('2026WS COURSE 2026-10-05', { exact: true }).waitFor();
+    await checkTimetableCorners();
     await checkNavbar(true);
     await page.getByRole('button', { name: 'Admin actions', exact: true }).click();
     await page.getByRole('button', { name: 'Accounts', exact: true }).waitFor();

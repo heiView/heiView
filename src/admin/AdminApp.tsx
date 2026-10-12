@@ -35,6 +35,7 @@ import {
 } from '@ant-design/icons'
 import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
 import NavbarSearch from '../components/NavbarSearch/NavbarSearch'
+import NavbarDatePicker from '../components/NavbarDatePicker/NavbarDatePicker'
 import AdminToolbar from '../components/AdminToolbar/AdminToolbar'
 import { CAMPUS_OPTIONS, type Campus } from '../campusConfig'
 import useStore from '../store'
@@ -1230,6 +1231,8 @@ function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selecte
                   placeholder="No building selected"
                   options={filteredBuildingOptions.map(({ campus, ...o }) => o)}
                   popupMatchSelectWidth={false}
+                  placement="bottomLeft"
+                  popupAlign={{ overflow: { adjustX: false, adjustY: true, shiftX: true } }}
                   onChange={(v) => setSelectedBuilding(v)}
                   disabled={filteredBuildingOptions.length === 0}
                   className="hei-topbar-building"
@@ -1242,18 +1245,13 @@ function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selecte
 
               <div className="hei-toolbar-actions">
                 <div className="hei-toolbar-core">
-                  <DatePicker
-                    size="large"
-                    allowClear={false}
+                  <NavbarDatePicker
                     value={selectedDate}
                     onChange={(v) => {
                       const d = v || dayjs(berlinToday())
                       setSelectedDate(d)
                       try { sessionStorage.setItem('admin-selected-date', d.format('YYYY-MM-DD')) } catch (_) { /* ignore */ }
                     }}
-                    className="hei-topbar-date"
-                    aria-label="Choose date"
-                    title={selectedDate.format('YYYY-MM-DD')}
                   />
                   <DarkModeButton className="hei-toolbar-icon-button" />
                   <NavbarSearch

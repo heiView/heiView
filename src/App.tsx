@@ -7,7 +7,6 @@ import {
   Alert,
   Button,
   ConfigProvider,
-  DatePicker,
   Divider,
   Empty,
   Layout,
@@ -20,6 +19,7 @@ import {
 } from 'antd'
 import DarkModeButton from './components/DarkModeButton/DarkModeButton'
 import NavbarSearch from './components/NavbarSearch/NavbarSearch'
+import NavbarDatePicker from './components/NavbarDatePicker/NavbarDatePicker'
 import FeedbackModal from './components/FeedbackModal/FeedbackModal'
 import { CAMPUS_OPTIONS, type Campus } from './campusConfig'
 import useStore from './store'
@@ -492,6 +492,8 @@ function App() {
                   placeholder={text.selectedBuildingFallback}
                   options={filteredBuildingOptions.map(({ campus, ...option }) => option)}
                   popupMatchSelectWidth={false}
+                  placement="bottomLeft"
+                  popupAlign={{ overflow: { adjustX: false, adjustY: true, shiftX: true } }}
                   onChange={(value) => setSelectedBuilding(value)}
                   disabled={filteredBuildingOptions.length === 0}
                   className="hei-topbar-building"
@@ -503,14 +505,9 @@ function App() {
 
               <div className="hei-toolbar-actions">
                 <div className="hei-toolbar-core">
-                  <DatePicker
-                    size="large"
-                    allowClear={false}
+                  <NavbarDatePicker
                     value={selectedDate}
                     onChange={(value) => setSelectedDate(value || dayjs(berlinToday()))}
-                    className="hei-topbar-date"
-                    aria-label="Choose date"
-                    title={selectedDate.format('YYYY-MM-DD')}
                   />
                   <DarkModeButton className="hei-toolbar-icon-button" />
                   <NavbarSearch
