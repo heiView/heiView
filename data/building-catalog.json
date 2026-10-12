@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-14T16:56:59.018Z",
+  "updatedAt": "2026-10-12T10:20:53.274Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -9950,6 +9950,16 @@
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ]
+    },
+    {
+      "id": "bld-im-neuenheimer-feld-305",
+      "street": "Im Neuenheimer Feld 305",
+      "displayName": "INF 305",
+      "campusId": "im-neuenheimer-feld",
+      "aliases": [],
+      "floors": [],
+      "rooms": [],
+      "notes": ""
     }
   ]
 }
