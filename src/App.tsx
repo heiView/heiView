@@ -10,7 +10,6 @@ import {
   DatePicker,
   Divider,
   Empty,
-  Input,
   Layout,
   Modal,
   Select,
@@ -19,10 +18,8 @@ import {
   Typography,
   theme as antdTheme,
 } from 'antd'
-import {
-  SearchOutlined,
-} from '@ant-design/icons'
 import DarkModeButton from './components/DarkModeButton/DarkModeButton'
+import NavbarSearch from './components/NavbarSearch/NavbarSearch'
 import FeedbackModal from './components/FeedbackModal/FeedbackModal'
 import { CAMPUS_OPTIONS, type Campus } from './campusConfig'
 import useStore from './store'
@@ -472,14 +469,10 @@ function App() {
         <div className="hei-orb hei-orb-b" />
 
         <Layout.Content className="hei-content">
-          <header className="hei-topbar" ref={topbarRef}>
+          <header className="hei-topbar hei-topbar-schedule" ref={topbarRef}>
+            <img src="/heiView_logo.png" alt="" aria-hidden="true" className="hei-topbar-watermark" />
             <div className="hei-topbar-inner">
               <div className="hei-brand-cluster">
-                <div className="hei-brand-row">
-                  <a href="/" style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src="/heiView_logo.png" alt={text.brand} className="hei-brand-logo" />
-                  </a>
-                </div>
                 <Select
                   size="large"
                   value={selectedCampus}
@@ -491,6 +484,7 @@ function App() {
                   popupClassName="hei-campus-dropdown"
                   onChange={(value) => setSelectedCampus(value as Campus)}
                   className="hei-topbar-campus"
+                  aria-label="Campus"
                 />
                 <Select
                   size="large"
@@ -501,6 +495,7 @@ function App() {
                   onChange={(value) => setSelectedBuilding(value)}
                   disabled={filteredBuildingOptions.length === 0}
                   className="hei-topbar-building"
+                  aria-label="Building"
                   listHeight={500}
                   popupClassName="hei-building-dropdown-multi"
                 />
@@ -514,16 +509,14 @@ function App() {
                     value={selectedDate}
                     onChange={(value) => setSelectedDate(value || dayjs(berlinToday()))}
                     className="hei-topbar-date"
+                    aria-label="Choose date"
+                    title={selectedDate.format('YYYY-MM-DD')}
                   />
                   <DarkModeButton className="hei-toolbar-icon-button" />
-                  <Input
-                    size="large"
-                    allowClear
+                  <NavbarSearch
                     value={search}
-                    onChange={(event) => setSearch(event.target.value)}
+                    onChange={setSearch}
                     placeholder={text.searchPlaceholder}
-                    suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
-                    className="hei-toolbar-search"
                   />
                 </div>
               </div>
@@ -533,7 +526,7 @@ function App() {
           <div className="hei-shell">
             {error && <Alert type={dataNotReady ? 'info' : 'error'} showIcon className="hei-error"
               message={dataNotReady ? error : `${text.errorPrefix}${error}`} />}
-            {!loading && !error && schedule && !Object.values(schedule.rooms).some(rooms =>
+            {!loading && !error && schedule && !Object.values<RoomEntry[]>(schedule.rooms).some(rooms =>
               rooms.some(room => room.courses.length > 0)) && (
               <Alert type="info" showIcon message="No courses scheduled for this date" />
             )}

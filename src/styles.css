@@ -894,3 +894,249 @@ textarea {
   min-width: 180px !important;
   max-width: 335px !important;
 }
+
+/* Schedule navigation uses a single foreground row over a centered watermark. */
+.hei-topbar-schedule {
+  container-type: inline-size;
+  --hei-icon-size: 44px;
+  --hei-control-gap: 12px;
+  --hei-action-gap: 8px;
+  --hei-campus-width: 123px;
+  --hei-building-width: 250px;
+  --hei-toolbar-extra-width: 0px;
+}
+
+.hei-topbar-watermark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 36px;
+  max-width: 50%;
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+[data-theme='dark'] .hei-topbar-watermark {
+  opacity: 0.28;
+}
+
+.hei-topbar-schedule .hei-topbar-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1680px, calc(100% - 24px));
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: var(--hei-control-gap);
+}
+
+.hei-topbar-schedule .hei-brand-cluster {
+  flex: 1 0 auto;
+  gap: var(--hei-control-gap);
+}
+
+.hei-topbar-schedule .hei-toolbar-actions,
+.hei-topbar-schedule .hei-toolbar-core {
+  flex: 0 0 auto;
+  min-width: 0;
+  flex-wrap: nowrap;
+  gap: var(--hei-action-gap);
+}
+
+.hei-topbar-schedule .hei-topbar-campus {
+  flex: 0 0 var(--hei-campus-width) !important;
+  width: var(--hei-campus-width) !important;
+  min-width: 0;
+}
+
+.hei-topbar-schedule .hei-topbar-building {
+  flex: 0 0 var(--hei-building-width) !important;
+  width: var(--hei-building-width) !important;
+  min-width: 80px !important;
+}
+
+.hei-topbar-schedule .hei-topbar-building .ant-select-selection-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hei-topbar-schedule .hei-topbar-date {
+  height: var(--hei-icon-size);
+}
+
+.hei-topbar-schedule .hei-toolbar-icon-button.ant-btn {
+  width: var(--hei-icon-size);
+  height: var(--hei-icon-size);
+  min-width: var(--hei-icon-size);
+  color: var(--hei-text);
+}
+
+.hei-topbar-schedule .hei-toolbar-search {
+  position: relative;
+  flex: 0 0 auto;
+  height: var(--hei-icon-size);
+  width: var(--hei-icon-size);
+  min-width: 0;
+  max-width: none;
+  transition: width 240ms ease;
+}
+
+.hei-topbar-schedule .hei-toolbar-search.is-expanded {
+  width: clamp(240px, 70cqw, 340px);
+}
+
+.hei-search-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hei-search-input-panel {
+  position: absolute;
+  inset: 0 calc(var(--hei-icon-size) + 4px) 0 0;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 160ms ease;
+}
+
+.is-expanded .hei-search-input-panel {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hei-topbar-schedule .hei-search-input.ant-input-affix-wrapper {
+  width: 100%;
+  height: var(--hei-icon-size);
+}
+
+.hei-admin-tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.hei-admin-tools-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 4px;
+}
+
+.hei-topbar-admin-label {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* The open search field keeps its right edge fixed. On small screens the
+   other controls can move off the left edge until the field is dismissed. */
+@container (max-width: 800px) {
+  .hei-topbar-schedule .hei-topbar-date {
+    position: relative;
+    width: var(--hei-icon-size);
+    flex: 0 0 var(--hei-icon-size);
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hei-topbar-schedule .hei-topbar-date .ant-picker-input {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hei-topbar-schedule .hei-topbar-date .ant-picker-input > input {
+    height: 100%;
+    opacity: 0;
+    transition: none;
+    cursor: pointer;
+  }
+
+  .hei-topbar-schedule .hei-topbar-date .ant-picker-suffix {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    pointer-events: none;
+    color: var(--hei-text);
+  }
+
+  .hei-topbar-schedule .hei-topbar-building {
+    --hei-building-width: clamp(80px, calc(100cqw - 343px - var(--hei-toolbar-extra-width)), 250px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .hei-topbar-admin-view {
+    --hei-toolbar-extra-width: 52px;
+  }
+
+  .hei-topbar-admin-view .hei-topbar-admin-label {
+    display: none;
+  }
+}
+
+@container (max-width: 640px) {
+  .hei-topbar-schedule .hei-topbar-inner {
+    --hei-icon-size: 40px;
+    --hei-control-gap: 4px;
+    --hei-action-gap: 4px;
+    width: calc(100% - 16px);
+    padding: 8px 0;
+  }
+
+  .hei-topbar-admin-view .hei-topbar-inner {
+    --hei-toolbar-extra-width: 44px;
+  }
+
+  .hei-topbar-schedule .hei-topbar-building {
+    --hei-building-width: clamp(80px, calc(100cqw - 275px - var(--hei-toolbar-extra-width)), 250px);
+  }
+}
+
+@container (max-width: 400px) {
+  .hei-topbar-schedule .hei-topbar-campus {
+    --hei-campus-width: 72px;
+  }
+
+  .hei-topbar-schedule .hei-topbar-building {
+    --hei-building-width: clamp(80px, calc(100cqw - 224px - var(--hei-toolbar-extra-width)), 250px);
+  }
+}
+
+@container (max-width: 360px) {
+  .hei-topbar-admin-view .hei-topbar-inner {
+    width: calc(100% - 8px);
+  }
+
+  .hei-topbar-admin-view .hei-topbar-campus {
+    --hei-campus-width: 44px;
+  }
+
+  .hei-topbar-admin-view .hei-topbar-building {
+    --hei-building-width: clamp(72px, calc(100cqw - 232px), 250px);
+    min-width: 72px !important;
+  }
+}
+
+.hei-building-dropdown-multi .ant-select-item-option-content {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+}
+
+.hei-building-dropdown-multi .rc-virtual-list-holder-inner {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hei-topbar-schedule .hei-toolbar-search,
+  .hei-search-input-panel {
+    transition: none;
+  }
+}

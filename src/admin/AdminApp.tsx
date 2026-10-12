@@ -30,11 +30,12 @@ import {
   LogoutOutlined,
   MessageOutlined,
   PushpinOutlined,
-  SearchOutlined,
   UnorderedListOutlined,
   WarningOutlined,
 } from '@ant-design/icons'
 import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
+import NavbarSearch from '../components/NavbarSearch/NavbarSearch'
+import AdminToolbar from '../components/AdminToolbar/AdminToolbar'
 import { CAMPUS_OPTIONS, type Campus } from '../campusConfig'
 import useStore from '../store'
 import { clearToken, adminFetch as rawAdminFetch, isSuperAdmin, getUsername } from './adminAuth'
@@ -358,7 +359,7 @@ function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selecte
   const campusSyncedRef = React.useRef(false)
   const topbarRef = React.useRef<HTMLElement>(null)
 
-  // Keep --topbar-h in sync so content isn't occluded when navbar wraps
+  // Keep content below the fixed navigation bar.
   React.useEffect(() => {
     const el = topbarRef.current
     if (!el) return
@@ -1208,15 +1209,11 @@ function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selecte
         <div className="hei-orb hei-orb-b" />
 
         <Layout.Content className="hei-content">
-          <header className="hei-topbar" ref={topbarRef}>
+          <header className="hei-topbar hei-topbar-schedule hei-topbar-admin-view" ref={topbarRef}>
+            <img src="/heiView_logo.png" alt="" aria-hidden="true" className="hei-topbar-watermark" />
             <div className="hei-topbar-inner">
               <div className="hei-brand-cluster">
-                <div className="hei-brand-row">
-                  <a href="/admin" style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src="/heiView_logo.png" alt="heiView" className="hei-brand-logo" />
-                  </a>
-                  <Tag color="orange" style={{ marginLeft: 8, fontWeight: 600 }}>Admin</Tag>
-                </div>
+                <Tag color="orange" className="hei-topbar-admin-label">Admin</Tag>
                 <Select
                   size="large"
                   value={selectedCampus}
@@ -1225,6 +1222,7 @@ function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selecte
                   popupClassName="hei-campus-dropdown"
                   onChange={(v) => setSelectedCampus(v as Campus)}
                   className="hei-topbar-campus"
+                  aria-label="Campus"
                 />
                 <Select
                   size="large"
@@ -1235,6 +1233,7 @@ function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selecte
                   onChange={(v) => setSelectedBuilding(v)}
                   disabled={filteredBuildingOptions.length === 0}
                   className="hei-topbar-building"
+                  aria-label="Building"
                   virtual={false}
                   listHeight={500}
                   popupClassName="hei-building-dropdown-multi"
@@ -1253,112 +1252,116 @@ function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selecte
                       try { sessionStorage.setItem('admin-selected-date', d.format('YYYY-MM-DD')) } catch (_) { /* ignore */ }
                     }}
                     className="hei-topbar-date"
+                    aria-label="Choose date"
+                    title={selectedDate.format('YYYY-MM-DD')}
                   />
                   <DarkModeButton className="hei-toolbar-icon-button" />
-                  <Input
-                    size="large"
-                    allowClear
+                  <NavbarSearch
                     value={search}
-                    onChange={(e) => setSearch(e.target.value)}
+                    onChange={setSearch}
                     placeholder="Course or lecturer"
-                    suffix={<SearchOutlined className="hei-toolbar-search-icon" />}
-                    className="hei-toolbar-search"
                   />
-                  {superAdmin && (
-                    <div style={{ display: 'flex', gap: 4, alignItems: 'center', flexShrink: 0 }}>
-                      <Tooltip title="Further Info Queue">
-                        <Badge count={fiQueueList.length} size="small" overflowCount={99}>
+                  <AdminToolbar>
+                    {superAdmin && (
+                      <div style={{ display: 'flex', gap: 4, alignItems: 'center', flexShrink: 0 }}>
+                        <Tooltip title="Further Info Queue">
+                          <Badge count={fiQueueList.length} size="small" overflowCount={99}>
+                            <Button
+                              size="large"
+                              icon={<UnorderedListOutlined />}
+                              aria-label="Further Info Queue"
+                              className="hei-toolbar-icon-button"
+                              onClick={async () => {
+                                setFiQueueOpen(true)
+                                setFiShowSkipped(false)
+                                setFiQueueLoading(true)
+                                try {
+                                  const [rq, rs] = await Promise.all([
+                                    adminFetch('/api/admin/further-info-queue'),
+                                    adminFetch('/api/admin/further-info-skip'),
+                                  ])
+                                  if (rq.ok) setFiQueueList(await rq.json())
+                                  if (rs.ok) setFiSkipSet(new Set(await rs.json()))
+                                } finally { setFiQueueLoading(false) }
+                              }}
+                            />
+                          </Badge>
+                        </Tooltip>
+                        <Tooltip title={staleList.length > 0 ? `Stale Overrides (${staleList.length})` : 'Stale Overrides'}>
+                          <Badge
+                            count={staleList.length}
+                            size="small"
+                            color={staleList.some(e => e.sourceDeleted) ? '#ff4d4f' : staleList.length > 0 ? '#faad14' : undefined}
+                            overflowCount={99}
+                          >
+                            <Button
+                              size="large"
+                              icon={<WarningOutlined />}
+                              aria-label="Stale Overrides"
+                              className="hei-toolbar-icon-button"
+                              style={staleList.length > 0 ? (staleList.some(e => e.sourceDeleted) ? { color: '#ff4d4f' } : { color: '#faad14' }) : undefined}
+                              onClick={async () => {
+                                setStaleOpen(true)
+                                setStaleLoading(true)
+                                setStaleDiffCourseId(null)
+                                setStaleDiffData(null)
+                                try {
+                                  const r = await adminFetch('/api/admin/stale-overrides')
+                                  if (r.ok) setStaleList(await r.json())
+                                } finally { setStaleLoading(false) }
+                              }}
+                            />
+                          </Badge>
+                        </Tooltip>
+                        <Tooltip title={feedbackList.filter(f => f.status === 'pending').length > 0 ? `User Feedback (${feedbackList.filter(f => f.status === 'pending').length} pending)` : 'User Feedback'}>
+                          <Badge count={feedbackList.filter(f => f.status === 'pending').length} size="small" overflowCount={99}>
+                            <Button
+                              size="large"
+                              icon={<MessageOutlined />}
+                              aria-label="User Feedback"
+                              className="hei-toolbar-icon-button"
+                              onClick={async () => {
+                                setFeedbackOpen(true)
+                                setFeedbackLoading(true)
+                                try {
+                                  const r = await adminFetch('/api/admin/feedback')
+                                  if (r.ok) setFeedbackList(await r.json())
+                                } finally { setFeedbackLoading(false) }
+                              }}
+                            />
+                          </Badge>
+                        </Tooltip>
+                      </div>
+                    )}
+                    <div className="hei-toolbar-admin">
+                      {superAdmin && (
+                        <>
                           <Button
                             size="large"
-                            icon={<UnorderedListOutlined />}
-                            className="hei-toolbar-icon-button"
                             onClick={async () => {
-                              setFiQueueOpen(true)
-                              setFiShowSkipped(false)
-                              setFiQueueLoading(true)
+                              setAccountsOpen(true)
+                              setAccountsLoading(true)
                               try {
-                                const [rq, rs] = await Promise.all([
-                                  adminFetch('/api/admin/further-info-queue'),
-                                  adminFetch('/api/admin/further-info-skip'),
-                                ])
-                                if (rq.ok) setFiQueueList(await rq.json())
-                                if (rs.ok) setFiSkipSet(new Set(await rs.json()))
-                              } finally { setFiQueueLoading(false) }
+                                const r = await adminFetch('/api/admin/accounts')
+                                if (r.ok) setAccountsList(await r.json())
+                              } finally { setAccountsLoading(false) }
                             }}
-                          />
-                        </Badge>
-                      </Tooltip>
-                      <Tooltip title={staleList.length > 0 ? `Stale Overrides (${staleList.length})` : 'Stale Overrides'}>
-                        <Badge
-                          count={staleList.length}
-                          size="small"
-                          color={staleList.some(e => e.sourceDeleted) ? '#ff4d4f' : staleList.length > 0 ? '#faad14' : undefined}
-                          overflowCount={99}
-                        >
-                          <Button
-                            size="large"
-                            icon={<WarningOutlined />}
-                            className="hei-toolbar-icon-button"
-                            style={staleList.length > 0 ? (staleList.some(e => e.sourceDeleted) ? { color: '#ff4d4f' } : { color: '#faad14' }) : undefined}
-                            onClick={async () => {
-                              setStaleOpen(true)
-                              setStaleLoading(true)
-                              setStaleDiffCourseId(null)
-                              setStaleDiffData(null)
-                              try {
-                                const r = await adminFetch('/api/admin/stale-overrides')
-                                if (r.ok) setStaleList(await r.json())
-                              } finally { setStaleLoading(false) }
-                            }}
-                          />
-                        </Badge>
-                      </Tooltip>
-                      <Tooltip title={feedbackList.filter(f => f.status === 'pending').length > 0 ? `User Feedback (${feedbackList.filter(f => f.status === 'pending').length} pending)` : 'User Feedback'}>
-                        <Badge count={feedbackList.filter(f => f.status === 'pending').length} size="small" overflowCount={99}>
-                          <Button
-                            size="large"
-                            icon={<MessageOutlined />}
-                            className="hei-toolbar-icon-button"
-                            onClick={async () => {
-                              setFeedbackOpen(true)
-                              setFeedbackLoading(true)
-                              try {
-                                const r = await adminFetch('/api/admin/feedback')
-                                if (r.ok) setFeedbackList(await r.json())
-                              } finally { setFeedbackLoading(false) }
-                            }}
-                          />
-                        </Badge>
-                      </Tooltip>
-                    </div>
-                  )}
-                </div>
-                <div className="hei-toolbar-admin">
-                  {superAdmin && (
-                    <>
+                          >
+                            Accounts
+                          </Button>
+                        </>
+                      )}
                       <Button
                         size="large"
-                        onClick={async () => {
-                          setAccountsOpen(true)
-                          setAccountsLoading(true)
-                          try {
-                            const r = await adminFetch('/api/admin/accounts')
-                            if (r.ok) setAccountsList(await r.json())
-                          } finally { setAccountsLoading(false) }
-                        }}
+                        icon={<LogoutOutlined />}
+                        aria-label="Logout"
+                        onClick={handleLogout}
+                        danger
                       >
-                        Accounts
+                        Logout
                       </Button>
-                    </>
-                  )}
-                  <Button
-                    size="large"
-                    icon={<LogoutOutlined />}
-                    onClick={handleLogout}
-                    danger
-                  >
-                    Logout
-                  </Button>
+                    </div>
+                  </AdminToolbar>
                 </div>
               </div>
             </div>
