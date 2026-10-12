@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 
 # Database Temp
+data/.*.db
 data/*.db-shm
 data/*.db-wal
 
@@ -39,10 +40,8 @@ copilot-instructions.md
 data/admin-accounts.json
 data/admin-audit.json
 # Keep semester source data local; publish only the generated database.
-data/2026SS/*
-!data/2026SS/heiview.db
-data/2026WS/*
-!data/2026WS/heiview.db
+data/[0-9][0-9][0-9][0-9]SS/
+data/[0-9][0-9][0-9][0-9]WS/
 
 # Playwright
 /test-results/

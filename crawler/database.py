@@ -27,7 +27,7 @@ async def sync_database(semester: str, *, data_dir: Path = DATA_DIR, task: dict 
         task['syncStatus'] = 'running'
         save_task(task, data_dir, crawl_activity=False)
     env = {**os.environ, 'HEIVIEW_SEMESTER': semester, 'HEIVIEW_DATA_DIR': str(data_dir.resolve())}
-    print(f'[{semester}] npm run db:sync → {data_dir / semester / "heiview.db"}', flush=True)
+    print(f'[{semester}] npm run db:sync → {data_dir / (semester + ".db")}', flush=True)
     process = None
     try:
         process = await asyncio.create_subprocess_exec('npm', 'run', 'db:sync', cwd=PROJECT_ROOT, env=env,

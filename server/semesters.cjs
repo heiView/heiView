@@ -38,7 +38,7 @@ function pathsFor(semester = process.env.HEIVIEW_SEMESTER || config.defaultSemes
   const courseDir = path.join(DATA_DIR, semester);
   return {
     semester, dataDir: DATA_DIR, courseDir,
-    dbPath: path.join(courseDir, 'heiview.db'),
+    dbPath: path.join(DATA_DIR, `${semester}.db`),
     overridesDir: path.join(courseDir, 'overrides'),
     customDir: path.join(courseDir, 'custom'),
     skipListPath: path.join(courseDir, 'skip', 'skip.json'),

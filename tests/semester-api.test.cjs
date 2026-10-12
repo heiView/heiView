@@ -135,6 +135,10 @@ test('search and course slots carry the selected semester', async () => {
 });
 
 test('database sync replaces only its semester and cached responses see new content', async () => {
+  for (const semester of ['2026SS', '2026WS']) {
+    assert.ok(fs.existsSync(path.join(temporary, `${semester}.db`)));
+    assert.ok(!fs.readdirSync(pathsFor(semester).courseDir).some(file => file.endsWith('.db')));
+  }
   await request('/api/schedule?date=2026-10-05');
   const otherBefore = fs.readFileSync(pathsFor('2026SS').dbPath);
   writeJson(path.join(pathsFor('2026WS').courseDir, 'course-shared.json'), sample('2026WS', 'Winter Updated'));

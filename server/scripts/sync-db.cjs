@@ -32,7 +32,7 @@ function main() {
   // Catalog additions are shared even when course databases are separate.
   const catalogLockPath = path.join(DATA_DIR, '.catalog-sync.lock');
   let catalogLock = null;
-  const stage = path.join(paths.courseDir, `.heiview-${crypto.randomUUID()}.db`);
+  const stage = path.join(paths.dataDir, `.${paths.semester}-${crypto.randomUUID()}.db`);
   const env = { ...process.env, HEIVIEW_SEMESTER: paths.semester, HEIVIEW_DB_PATH: stage };
   let cleaned = false;
   const cleanup = () => {
