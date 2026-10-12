@@ -184,12 +184,34 @@ textarea {
   pointer-events: auto;
 }
 
+.hei-topbar-date,
+.hei-topbar-date input,
+.hei-topbar-campus,
+.hei-topbar-campus *,
+.hei-topbar-building,
+.hei-topbar-building *,
+.hei-campus-dropdown,
+.hei-campus-dropdown *,
+.hei-building-dropdown-multi,
+.hei-building-dropdown-multi * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .hei-topbar-date.ant-picker {
   border-radius: 14px !important;
 }
 
 .hei-topbar-date.ant-picker .ant-picker-input > input {
   text-align: center;
+}
+
+/* These controls only select values; their containers handle pointer interaction. */
+.hei-topbar-date.ant-picker .ant-picker-input > input,
+.hei-topbar-campus input,
+.hei-topbar-building input {
+  pointer-events: none;
 }
 
 .hei-topbar-date.ant-picker .ant-picker-input > input::placeholder {

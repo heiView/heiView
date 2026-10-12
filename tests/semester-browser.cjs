@@ -22,7 +22,7 @@ async function main() {
     server.listen(0, '127.0.0.1');
     await new Promise((resolve, reject) => { server.once('listening', resolve); server.once('error', reject); });
     browser = await chromium.launch({ headless: true, executablePath: process.env.HEIVIEW_BROWSER_EXECUTABLE || undefined });
-    const page = await browser.newPage();
+    const page = await browser.newPage({ hasTouch: true });
     const fixture = (date, semester) => ({
       date, semester, buildings: [{ id: 'Test Building', street: 'Test Building', campus: 'Altstadt' }],
       rooms: { 'Test Building': [{ room: 'Room 1', floor: 'Ground floor', courses: [{
@@ -208,13 +208,49 @@ async function main() {
           await page.screenshot({ path: path.join(process.env.HEIVIEW_NAV_SCREENSHOTS, `heiview-nav-${admin ? 'admin' : 'public'}-${width}.png`) });
         }
 
+        if (width === 375) {
+          for (const [selectorClass, popupClass] of [
+            ['hei-topbar-campus', 'hei-campus-dropdown'],
+            ['hei-topbar-building', 'hei-building-dropdown-multi'],
+          ]) {
+            const selector = page.locator(`.${selectorClass}`);
+            const popup = page.locator(`.${popupClass}:visible`);
+            const selectedLabel = await selector.innerText();
+            await expect(selector.locator('input')).toHaveAttribute('readonly', '');
+            await expect(selector.locator('input')).toHaveCSS('pointer-events', 'none');
+            // Tap the visible label, where Safari could otherwise select text.
+            const label = selector.locator('.ant-select-content');
+            await expect(label).toHaveCSS('user-select', 'none');
+            await label.tap();
+            await expect(popup).toBeVisible();
+            await label.tap();
+            await expect(popup).toHaveCount(0);
+            await label.tap();
+            await expect(popup).toBeVisible();
+            const selectedOption = popup.locator('.ant-select-item-option-selected');
+            await expect(selectedOption).toHaveCSS('user-select', 'none');
+            await selectedOption.tap();
+            await expect(popup).toHaveCount(0);
+            assert.equal(await selector.innerText(), selectedLabel);
+            assert.equal(await page.evaluate(() => window.getSelection().toString()), '');
+          }
+        }
+
         const buildingSelector = page.locator('.hei-topbar-building');
-        const selectorBox = await buildingSelector.boundingBox();
         await buildingSelector.click();
         const buildingPopup = page.locator('.hei-building-dropdown-multi:visible');
         await buildingPopup.waitFor();
         await expect(buildingPopup).toHaveCSS('opacity', '1');
         await page.waitForTimeout(200);
+        // Focus and popup animation can update layout after the opening click.
+        await expect.poll(async () => {
+          const selector = await buildingSelector.boundingBox();
+          const popup = await buildingPopup.boundingBox();
+          if (!selector || !popup) return Infinity;
+          const expectedLeft = Math.max(0, Math.min(selector.x, layout.width - popup.width));
+          return Math.abs(popup.x - expectedLeft);
+        }).toBeLessThanOrEqual(2);
+        const selectorBox = await buildingSelector.boundingBox();
         const popupBox = await buildingPopup.boundingBox();
         const expectedLeft = Math.max(0, Math.min(selectorBox.x, layout.width - popupBox.width));
         assert.ok(Math.abs(popupBox.x - expectedLeft) <= 2, `Building popup follows selector at ${width}: ${JSON.stringify({ selectorBox, popupBox, expectedLeft })}`);
@@ -230,11 +266,23 @@ async function main() {
         await expect(dateInput).toHaveAttribute('readonly', '');
         const selectedDate = await dateInput.inputValue();
         const calendar = page.locator('.ant-picker-dropdown:visible');
-        await dateSelector.click();
+        const clickDate = () => width === 375 ? dateSelector.tap() : dateSelector.click();
+        await clickDate();
         await expect(calendar).toBeVisible();
-        await dateSelector.click();
+        await clickDate();
         await expect(calendar).toHaveCount(0);
+        await expect(dateInput).not.toBeFocused();
         assert.equal(await dateInput.inputValue(), selectedDate, `Closing calendar preserves selected date at ${width}`);
+        if (width === 375) {
+          // Rapid repeated taps must not leave native input text selected.
+          await clickDate();
+          await clickDate();
+          await expect(calendar).toHaveCount(0);
+          await expect(dateInput).not.toBeFocused();
+          await expect(dateInput).toHaveCSS('pointer-events', 'none');
+          await expect(dateInput).toHaveCSS('user-select', 'none');
+          assert.equal(await page.evaluate(() => window.getSelection().toString()), '');
+        }
         await dateSelector.click();
         await expect(calendar).toBeVisible();
         await page.keyboard.press('Escape');

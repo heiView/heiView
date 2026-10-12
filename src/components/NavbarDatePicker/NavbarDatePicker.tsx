@@ -20,7 +20,12 @@ function NavbarDatePicker({ value, onChange }: {
       onOpenChange={setOpen}
       // Capture before focus and the picker's default click handler open it.
       onMouseDown={() => { openBeforeClick.current = open }}
-      onClick={() => setOpen(!openBeforeClick.current)}
+      onClick={(event) => {
+        const nextOpen = !openBeforeClick.current
+        setOpen(nextOpen)
+        // Release the readonly input so Safari cannot offer text actions after closing.
+        if (!nextOpen) event.currentTarget.querySelector('input')?.blur()
+      }}
       className="hei-topbar-date"
       aria-label="Choose date"
       title={value.format('YYYY-MM-DD')}
