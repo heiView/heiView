@@ -13,6 +13,7 @@ function NavbarDatePicker({ value, onChange }: {
     <DatePicker
       size="large"
       allowClear={false}
+      inputReadOnly
       value={value}
       onChange={onChange}
       open={open}

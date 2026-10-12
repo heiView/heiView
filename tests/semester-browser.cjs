@@ -99,10 +99,13 @@ async function main() {
     await checkTimetableCorners();
 
     async function selectDate(date) {
-      const picker = page.locator('.hei-topbar-date input');
-      await picker.fill(date);
-      await picker.press('Enter');
-      await page.locator('body').click({ position: { x: 5, y: 5 } });
+      await page.locator('.hei-topbar-date').click();
+      const calendar = page.locator('.ant-picker-dropdown:visible');
+      await calendar.locator('.ant-picker-year-btn').click();
+      await calendar.locator('.ant-picker-year-panel .ant-picker-cell-inner').filter({ hasText: new RegExp(`^${date.slice(0, 4)}$`) }).click();
+      await calendar.locator('.ant-picker-month-panel .ant-picker-cell').nth(Number(date.slice(5, 7)) - 1).click();
+      await calendar.locator(`.ant-picker-date-panel .ant-picker-cell[title="${date}"] .ant-picker-cell-inner`).click();
+      await expect(calendar).toHaveCount(0);
     }
     await selectDate('2026-04-06');
     await page.getByText('2026SS COURSE 2026-04-06', { exact: true }).waitFor();
@@ -224,6 +227,7 @@ async function main() {
 
         const dateSelector = page.locator('.hei-topbar-date');
         const dateInput = dateSelector.locator('input');
+        await expect(dateInput).toHaveAttribute('readonly', '');
         const selectedDate = await dateInput.inputValue();
         const calendar = page.locator('.ant-picker-dropdown:visible');
         await dateSelector.click();
