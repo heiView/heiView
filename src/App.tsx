@@ -1,3 +1,5 @@
+import { berlinToday, initialDate, semesterForDate, semesterUrl } from './utils/semester'
+import { ScheduleError } from './utils/schedule'
 import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import dayjs, { Dayjs } from 'dayjs'
@@ -169,12 +171,15 @@ function App() {
   const [schedule, setSchedule] = React.useState<ScheduleResponse | null>(null)
   const [selectedCampus, setSelectedCampus] = React.useState<Campus>('Altstadt')
   const [selectedBuilding, setSelectedBuilding] = React.useState<string>(() => buildingFromUrl)
-  const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => dayjs())
+  const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => dayjs(initialDate(location.search)))
+  const activeSemester = semesterForDate(selectedDate.format('YYYY-MM-DD'))
   const [search, setSearch] = React.useState('')
   const deferredSearch = React.useDeferredValue(search)
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
+  const [dataNotReady, setDataNotReady] = React.useState(false)
   const [selectedCourse, setSelectedCourse] = React.useState<CourseModalState | null>(null)
+  const courseSemester = selectedCourse?.course.semester || activeSemester
   const [courseSlots, setCourseSlots] = React.useState<CourseSlot[]>([])
   const [courseSlotsFetching, setCourseSlotsFetching] = React.useState(false)
   const [searchResults, setSearchResults] = React.useState<SearchResult[]>([])
@@ -237,21 +242,27 @@ function App() {
     }
 
     if (selectedBuilding) {
-      navigate('/' + encodeURIComponent(selectedBuilding), { replace: true })
+      navigate({ pathname: '/' + encodeURIComponent(selectedBuilding), search: location.search }, { replace: true })
     } else {
-      navigate('/', { replace: true })
+      navigate({ pathname: '/', search: location.search }, { replace: true })
     }
   }, [selectedBuilding, navigate])
 
   React.useEffect(() => {
     let alive = true
+    const controller = new AbortController()
 
     const run = async () => {
       setLoading(true)
+      setSchedule(null)
+      setSelectedCourse(null)
+      setFeedbackOpen(false)
+      setCourseSlots([])
       setError(null)
+      setDataNotReady(false)
 
       try {
-        const data = await fetchSchedule(toIsoDate(selectedDate))
+        const data = await fetchSchedule(toIsoDate(selectedDate), 'no-cache', controller.signal)
         if (!alive) return
 
         setSchedule(data)
@@ -287,6 +298,7 @@ function App() {
       } catch (loadError) {
         if (!alive) return
         setSchedule(null)
+        setDataNotReady(loadError instanceof ScheduleError && loadError.code === 'SEMESTER_NOT_READY')
         setError(loadError instanceof Error ? loadError.message : String(loadError))
       } finally {
         if (alive) setLoading(false)
@@ -297,6 +309,7 @@ function App() {
 
     return () => {
       alive = false
+      controller.abort()
     }
   }, [selectedDate, language])
 
@@ -356,14 +369,15 @@ function App() {
     const courseId = selectedCourse?.course.id
     if (!courseId) { setCourseSlots([]); return }
     setCourseSlotsFetching(true)
+    setCourseSlots([])
     let alive = true
-    fetch(`/api/course/${encodeURIComponent(courseId)}/slots`)
+    fetch(semesterUrl(`/api/course/${encodeURIComponent(courseId)}/slots`, courseSemester), { cache: 'no-cache' })
       .then(r => r.ok ? r.json() : [])
       .then((data: unknown) => { if (alive) setCourseSlots(Array.isArray(data) ? (data as CourseSlot[]) : []) })
       .catch(() => { if (alive) setCourseSlots([]) })
       .finally(() => { if (alive) setCourseSlotsFetching(false) })
     return () => { alive = false }
-  }, [selectedCourse?.course.id])
+  }, [selectedCourse?.course.id, courseSemester])
 
   const visibleRooms = React.useMemo(() => {
     const rooms = (schedule?.rooms[activeBuildingId] || []).filter((room) => room.room)
@@ -407,10 +421,12 @@ function App() {
     }
 
     let alive = true
+    const controller = new AbortController()
+    setSearchResults([])
     setSearchLoading(true)
 
     const timer = setTimeout(() => {
-      fetch(`/api/search?q=${encodeURIComponent(query)}`)
+      fetch(semesterUrl(`/api/search?q=${encodeURIComponent(query)}&date=${selectedDate.format('YYYY-MM-DD')}`, activeSemester), { cache: 'no-cache', signal: controller.signal })
         .then((r) => r.json())
         .then((data: SearchResult[]) => {
           if (!alive) return
@@ -427,8 +443,9 @@ function App() {
     return () => {
       alive = false
       clearTimeout(timer)
+      controller.abort()
     }
-  }, [deferredSearch])
+  }, [deferredSearch, activeSemester, selectedDate])
 
   const appTheme = React.useMemo(
     () => ({
@@ -444,7 +461,7 @@ function App() {
 
   const isSearchMode = !loading && deferredSearch.trim().length > 0
   const timelineMinWidth = 140 + (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
-  const isToday = selectedDate.isSame(dayjs(), 'day')
+  const isToday = selectedDate.format('YYYY-MM-DD') === berlinToday()
   const nowLeft = (nowMinutes - TRACK_START_HOUR * 60) * PIXELS_PER_MINUTE
   const showNowLine = isToday && nowLeft >= 0 && nowLeft <= (TRACK_END_HOUR - TRACK_START_HOUR) * 60 * PIXELS_PER_MINUTE
 
@@ -495,7 +512,7 @@ function App() {
                     size="large"
                     allowClear={false}
                     value={selectedDate}
-                    onChange={(value) => setSelectedDate(value || dayjs())}
+                    onChange={(value) => setSelectedDate(value || dayjs(berlinToday()))}
                     className="hei-topbar-date"
                   />
                   <DarkModeButton className="hei-toolbar-icon-button" />
@@ -514,7 +531,12 @@ function App() {
           </header>
 
           <div className="hei-shell">
-            {error && <Alert type="error" showIcon className="hei-error" message={`${text.errorPrefix}${error}`} />}
+            {error && <Alert type={dataNotReady ? 'info' : 'error'} showIcon className="hei-error"
+              message={dataNotReady ? error : `${text.errorPrefix}${error}`} />}
+            {!loading && !error && schedule && !Object.values(schedule.rooms).some(rooms =>
+              rooms.some(room => room.courses.length > 0)) && (
+              <Alert type="info" showIcon message="No courses scheduled for this date" />
+            )}
 
             <section className="hei-board-card">
 
@@ -527,6 +549,8 @@ function App() {
                   <Spin size="large" />
                   <Typography.Text type="secondary">{text.loading}</Typography.Text>
                 </div>
+              ) : error ? (
+                <div className="hei-empty-state"><Empty description={dataNotReady ? 'Semester data not ready' : 'Could not load the schedule'} /></div>
               ) : isSearchMode ? (
                 searchLoading ? (
                   <div className="hei-board-loading">
@@ -970,6 +994,7 @@ function App() {
 
         <FeedbackModal
           open={feedbackOpen}
+          semester={courseSemester}
           courseId={selectedCourse?.course.id ?? ''}
           courseTitle={
             selectedCourse

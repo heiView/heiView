@@ -149,7 +149,8 @@ export function normalizeScheduleResponse(raw: ScheduleResponse): ScheduleRespon
       seen.add(b.id)
       return true
     })
-  return { buildings: normalizedBuildings, rooms: roomGroups, lastSyncTime: raw.lastSyncTime }
+  return { buildings: normalizedBuildings, rooms: roomGroups, lastSyncTime: raw.lastSyncTime,
+    semester: raw.semester, date: raw.date }
 }
 
 export function toIsoDate(d: Dayjs) {
@@ -178,9 +179,17 @@ export function clusterEvents(events: TimelineEvent[]) {
   return clusters
 }
 
-export async function fetchSchedule(date: string, cacheMode: RequestCache = 'default') {
-  const res = await fetch(`/api/schedule?date=${date}`, { cache: cacheMode })
-  if (!res.ok) throw new Error(`HTTP ${res.status}`)
+export class ScheduleError extends Error {
+  constructor(message: string, public code?: string) { super(message) }
+}
+
+export async function fetchSchedule(date: string, cacheMode: RequestCache = 'no-cache', signal?: AbortSignal) {
+  const res = await fetch(`/api/schedule?date=${date}`, { cache: cacheMode, signal })
+  if (!res.ok) {
+    const error = await res.json().catch(() => ({}))
+    if (error.code === 'SEMESTER_NOT_READY') throw new ScheduleError(`Course data for ${error.semester} is not ready yet.`, error.code)
+    throw new Error(error.error || `HTTP ${res.status}`)
+  }
   const ct = res.headers.get('content-type') || ''
   if (!ct.includes('application/json')) throw new Error(`Unexpected content type: ${ct || 'unknown'}`)
   return normalizeScheduleResponse((await res.json()) as ScheduleResponse)

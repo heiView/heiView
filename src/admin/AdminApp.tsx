@@ -1,3 +1,4 @@
+import { berlinToday, initialDate, semesterForDate, semesterUrl } from '../utils/semester'
 import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import dayjs, { Dayjs } from 'dayjs'
@@ -36,7 +37,7 @@ import {
 import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
 import { CAMPUS_OPTIONS, type Campus } from '../campusConfig'
 import useStore from '../store'
-import { clearToken, adminFetch, isSuperAdmin, getUsername } from './adminAuth'
+import { clearToken, adminFetch as rawAdminFetch, isSuperAdmin, getUsername } from './adminAuth'
 import type {
   Language,
   LocalizedText,
@@ -211,7 +212,7 @@ function hasNonWeeksDiff(source: Record<string, unknown>, override: Record<strin
 }
 // ─────────────────────────────────────────────────────────────────────────────
 
-function AdminApp() {
+function AdminAppView({ selectedDate, setSelectedDate }: { key?: string, selectedDate: Dayjs, setSelectedDate: React.Dispatch<React.SetStateAction<Dayjs>> }) {
   const location = useLocation()
   const navigate = useNavigate()
   const buildingFromUrl = location.pathname === '/admin' ? '' : decodeURIComponent(location.pathname.slice('/admin/'.length - 1 + 1))
@@ -222,16 +223,9 @@ function AdminApp() {
   const [scheduleVersion, setScheduleVersion] = React.useState(0)
   const [selectedCampus, setSelectedCampus] = React.useState<Campus>('Altstadt')
   const [selectedBuilding, setSelectedBuilding] = React.useState<string>('')
-  const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => {
-    try {
-      const saved = sessionStorage.getItem('admin-selected-date')
-      if (saved) {
-        const d = dayjs(saved)
-        if (d.isValid()) return d
-      }
-    } catch (_) { /* ignore */ }
-    return dayjs()
-  })
+  const activeSemester = semesterForDate(selectedDate.format('YYYY-MM-DD'))
+  const adminFetch = React.useCallback((url: string, options: RequestInit = {}) =>
+    rawAdminFetch(semesterUrl(url, activeSemester), options), [activeSemester])
   const [search, setSearch] = React.useState('')
   const deferredSearch = React.useDeferredValue(search)
   const [loading, setLoading] = React.useState(true)
@@ -406,19 +400,22 @@ function AdminApp() {
   React.useEffect(() => {
     if (!initializedRef.current) { initializedRef.current = true; return }
     if (selectedBuilding) {
-      navigate('/admin/' + encodeURIComponent(selectedBuilding), { replace: true })
+      navigate({ pathname: '/admin/' + encodeURIComponent(selectedBuilding), search: location.search }, { replace: true })
     } else {
-      navigate('/admin', { replace: true })
+      navigate({ pathname: '/admin', search: location.search }, { replace: true })
     }
   }, [selectedBuilding, navigate])
 
   // Fetch schedule
   React.useEffect(() => {
     let alive = true
+    const controller = new AbortController()
     const run = async () => {
       setLoading(true); setError(null)
+      setSchedule(null)
+      setSelectedCourse(null)
       try {
-        const data = await fetchSchedule(toIsoDate(selectedDate), 'no-store')
+        const data = await fetchSchedule(toIsoDate(selectedDate), 'no-store', controller.signal)
         if (!alive) return
         setSchedule(data)
         setSelectedBuilding((cur) => {
@@ -438,7 +435,7 @@ function AdminApp() {
       }
     }
     void run()
-    return () => { alive = false }
+    return () => { alive = false; controller.abort() }
   }, [selectedDate, scheduleVersion])
 
   const buildingOptions = React.useMemo(
@@ -541,14 +538,15 @@ function AdminApp() {
     const query = deferredSearch.trim()
     if (!query) { setSearchResults([]); return }
     let alive = true
+    setSearchResults([])
     setSearchLoading(true)
-    fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    adminFetch(`/api/search?q=${encodeURIComponent(query)}&date=${selectedDate.format('YYYY-MM-DD')}`)
       .then((r) => r.json())
       .then((data: SearchResult[]) => { if (!alive) return; setSearchResults(Array.isArray(data) ? data : []) })
       .catch(() => { if (alive) setSearchResults([]) })
       .finally(() => { if (alive) setSearchLoading(false) })
     return () => { alive = false }
-  }, [deferredSearch])
+  }, [deferredSearch, activeSemester, selectedDate])
 
   const visibleRooms = React.useMemo(() => {
     const rooms = (schedule?.rooms[activeBuildingId] || []).filter((r) => r.room)
@@ -1250,7 +1248,7 @@ function AdminApp() {
                     allowClear={false}
                     value={selectedDate}
                     onChange={(v) => {
-                      const d = v || dayjs()
+                      const d = v || dayjs(berlinToday())
                       setSelectedDate(d)
                       try { sessionStorage.setItem('admin-selected-date', d.format('YYYY-MM-DD')) } catch (_) { /* ignore */ }
                     }}
@@ -2961,7 +2959,7 @@ function AdminApp() {
               <Input.TextArea rows={2} />
             </Form.Item>
             <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 12, fontSize: 12 }}>
-              Saved to <code>data/2026SS/custom/</code> and synced to SQLite automatically.
+              Saved to <code>data/{activeSemester}/custom/</code> and synced to SQLite automatically.
             </Typography.Text>
             <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
               <Space>
@@ -3240,7 +3238,7 @@ function AdminApp() {
                           {feedbackDetailData.feedback.files.map(fname => (
                             <a
                               key={fname}
-                              href={`/api/admin/feedback/${feedbackDetailId}/file/${encodeURIComponent(fname)}`}
+                              href={semesterUrl(`/api/admin/feedback/${feedbackDetailId}/file/${encodeURIComponent(fname)}`, activeSemester)}
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -3461,6 +3459,22 @@ function AdminApp() {
       </Layout>
     </ConfigProvider>
   )
+}
+
+function AdminApp() {
+  const [selectedDate, setSelectedDate] = React.useState<Dayjs>(() => {
+    const requested = new URLSearchParams(window.location.search).get('date')
+    if (requested) return dayjs(initialDate(window.location.search))
+    try {
+      const saved = sessionStorage.getItem('admin-selected-date')
+      if (saved) {
+        const d = dayjs(saved)
+        if (d.isValid()) return d
+      }
+    } catch (_) { /* ignore */ }
+    return dayjs(berlinToday())
+  })
+  return <AdminAppView key={semesterForDate(selectedDate.format('YYYY-MM-DD'))} selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
 }
 
 export default AdminApp

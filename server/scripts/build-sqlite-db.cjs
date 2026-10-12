@@ -1,16 +1,10 @@
+const { DATA_DIR, getPaths } = require('../semesters.cjs');
 const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
 
-const ROOT = path.resolve(__dirname, '..', '..');
-const COURSE_DIR = path.join(ROOT, 'data', '2026SS');
-const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
-const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
-const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
-const DB_DIR = path.join(ROOT, 'data');
-const DB_PATH = path.join(DB_DIR, 'heiview.db');
-const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
-const NOTE_LOCATION_MAP_PATH = path.join(ROOT, 'data', 'note-location-map.json');
+const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
+const NOTE_LOCATION_MAP_PATH = path.join(DATA_DIR, 'note-location-map.json');
 
 function loadNoteLocationMap() {
   if (!fs.existsSync(NOTE_LOCATION_MAP_PATH)) return [];
@@ -46,9 +40,9 @@ function resolveNoteToLocation(note, entries, organisation) {
 }
 
 function loadSkipSet() {
-  if (!fs.existsSync(SKIP_LIST_PATH)) return new Set();
+  if (!fs.existsSync(getPaths().skipListPath)) return new Set();
   try {
-    const data = JSON.parse(fs.readFileSync(SKIP_LIST_PATH, 'utf8'));
+    const data = JSON.parse(fs.readFileSync(getPaths().skipListPath, 'utf8'));
     return new Set(Array.isArray(data) ? data.map(String) : []);
   } catch (e) {
     console.warn('[skip] Failed to load skip list:', e.message);
@@ -57,11 +51,11 @@ function loadSkipSet() {
 }
 
 function resolveCoursePath(fileName) {
-  const overridePath = path.join(OVERRIDES_DIR, fileName);
+  const overridePath = path.join(getPaths().overridesDir, fileName);
   if (fs.existsSync(overridePath)) return overridePath;
-  const customPath = path.join(CUSTOM_DIR, fileName);
+  const customPath = path.join(getPaths().customDir, fileName);
   if (fs.existsSync(customPath)) return customPath;
-  return path.join(COURSE_DIR, fileName);
+  return path.join(getPaths().courseDir, fileName);
 }
 
 function buildAliasMap() {
@@ -158,18 +152,18 @@ function parseInfRoom(rawRoom) {
 
 function normalizeFloorLabel(label) {
   if (!label) return null;
-  const lower = label.trim().toLowerCase();
+  const lower = label.trim().toLowerCase().replace(/ß/g, 'ss');
   if (lower === 'eg' || lower === 'erdgeschoss' || /^ground[\s\-]*floor$/.test(lower)) return 'Ground floor';
-  if (/^1\.?\s*[oO][gG]$/.test(lower) || /^1(?:st)?\s*floor$/.test(lower)) return '1st floor';
-  if (/^2\.?\s*[oO][gG]$/.test(lower) || /^2(?:nd)?\s*floor$/.test(lower)) return '2nd floor';
-  if (/^3\.?\s*[oO][gG]$/.test(lower) || /^3(?:rd)?\s*floor$/.test(lower)) return '3rd floor';
-  if (/^4\.?\s*[oO][gG]$/.test(lower) || /^4(?:th)?\s*floor$/.test(lower)) return '4th floor';
-  if (/^5\.?\s*[oO][gG]$/.test(lower) || /^5(?:th)?\s*floor$/.test(lower)) return '5th floor';
-  if (/^6\.?\s*[oO][gG]$/.test(lower) || /^6(?:th)?\s*floor$/.test(lower)) return '6th floor';
-  if (/^7\.?\s*[oO][gG]$/.test(lower) || /^7(?:th)?\s*floor$/.test(lower)) return '7th floor';
-  if (/^8\.?\s*[oO][gG]$/.test(lower) || /^8(?:th)?\s*floor$/.test(lower)) return '8th floor';
-  if (/^1\.?\s*[uU][gG]$/.test(lower) || /^lower\s+level\s*1$/.test(lower) || lower === 'ug' || lower === 'untergeschoss') return 'Lower level 1';
-  if (/^2\.?\s*[uU][gG]$/.test(lower) || /^lower\s+level\s*2$/.test(lower)) return 'Lower level 2';
+  if (/^1\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^1(?:st)?\s*floor$/.test(lower)) return '1st floor';
+  if (/^2\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^2(?:nd)?\s*floor$/.test(lower)) return '2nd floor';
+  if (/^3\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^3(?:rd)?\s*floor$/.test(lower)) return '3rd floor';
+  if (/^4\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^4(?:th)?\s*floor$/.test(lower)) return '4th floor';
+  if (/^5\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^5(?:th)?\s*floor$/.test(lower)) return '5th floor';
+  if (/^6\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^6(?:th)?\s*floor$/.test(lower)) return '6th floor';
+  if (/^7\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^7(?:th)?\s*floor$/.test(lower)) return '7th floor';
+  if (/^8\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^8(?:th)?\s*floor$/.test(lower)) return '8th floor';
+  if (/^1\.?\s*(?:ug|untergeschoss)$/.test(lower) || /^lower\s+level\s*1$/.test(lower) || lower === 'ug' || lower === 'untergeschoss') return 'Lower level 1';
+  if (/^2\.?\s*(?:ug|untergeschoss)$/.test(lower) || /^lower\s+level\s*2$/.test(lower)) return 'Lower level 2';
   return label.trim() || null;
 }
 
@@ -190,9 +184,9 @@ function splitBuildingAndFloor(value) {
   }
 
   const isLikelyFloorLabel = (segment) => {
-    const normalized = segment.toLowerCase();
+    const normalized = segment.toLowerCase().replace(/ß/g, 'ss');
     if (!normalized) return false;
-    if (/\b(floor|geschoss|eg|og|untergeschoss|keller|mezzanine|level|ground|lower level|upper level|attic|dach)\b/.test(normalized)) {
+    if (/\b(floor|ober(?:geschoss)?|erdgeschoss|geschoss|eg|og|untergeschoss|keller|mezzanine|level|ground|lower level|upper level|attic|dach)\b/.test(normalized)) {
       return true;
     }
     if (/\b\d+\s*(st|nd|rd|th)\s*floor\b/.test(normalized)) {
@@ -306,13 +300,14 @@ function ensureSchema(db) {
 }
 
 function main() {
-  if (!fs.existsSync(COURSE_DIR)) {
-    throw new Error(`Course directory not found: ${COURSE_DIR}`);
+  require('./validate-data.cjs').validateData();
+  if (!fs.existsSync(getPaths().courseDir)) {
+    throw new Error(`Course directory not found: ${getPaths().courseDir}`);
   }
 
-  fs.mkdirSync(DB_DIR, { recursive: true });
+  fs.mkdirSync(getPaths().courseDir, { recursive: true });
 
-  const db = new Database(DB_PATH);
+  const db = new Database(getPaths().dbPath);
   ensureSchema(db);
 
   db.exec('BEGIN');
@@ -352,8 +347,8 @@ function main() {
     `);
 
     const files = [
-      ...fs.readdirSync(COURSE_DIR).filter((name) => name.startsWith('course-') && name.endsWith('.json')),
-      ...(fs.existsSync(CUSTOM_DIR) ? fs.readdirSync(CUSTOM_DIR).filter((name) => name.startsWith('course-') && name.endsWith('.json')) : []),
+      ...fs.readdirSync(getPaths().courseDir).filter((name) => name.startsWith('course-') && name.endsWith('.json')),
+      ...(fs.existsSync(getPaths().customDir) ? fs.readdirSync(getPaths().customDir).filter((name) => name.startsWith('course-') && name.endsWith('.json')) : []),
     ];
     // Deduplicate (override or custom may shadow original)
     const seenIds = new Set();
@@ -368,7 +363,7 @@ function main() {
 
     for (const fileName of uniqueFiles) {
       const coursePath = resolveCoursePath(fileName);
-      const isOverride = coursePath !== path.join(COURSE_DIR, fileName);
+      const isOverride = coursePath !== path.join(getPaths().courseDir, fileName);
       const payload = safeReadJson(coursePath);
       if (!payload || !payload.id) {
         continue;
@@ -523,10 +518,15 @@ function main() {
     }
 
     // Import sync metadata (last crawl timestamp)
-    const SYNC_META_PATH = path.join(ROOT, 'data', 'sync-meta.json');
+    const SYNC_META_PATH = fs.existsSync(getPaths().syncMetaPath) ? getPaths().syncMetaPath
+      : getPaths().semester === require('../semesters.cjs').config.legacySemester
+        ? path.join(DATA_DIR, 'sync-meta.json') : getPaths().syncMetaPath;
     if (fs.existsSync(SYNC_META_PATH)) {
       try {
         const syncMeta = JSON.parse(fs.readFileSync(SYNC_META_PATH, 'utf8'));
+        if (syncMeta.currentSeason !== getPaths().semester || syncMeta.complete === false) {
+          throw new Error('Sync metadata does not describe a full sync of this semester');
+        }
         const upsertMeta = db.prepare('INSERT OR REPLACE INTO meta (key, value) VALUES (@key, @value)');
         if (syncMeta.lastSyncTime) {
           upsertMeta.run({ key: 'lastSyncTime', value: syncMeta.lastSyncTime });
@@ -540,8 +540,10 @@ function main() {
       }
     }
 
+    db.prepare('INSERT OR REPLACE INTO meta (key, value) VALUES (?, ?)').run('semester', getPaths().semester);
+    db.prepare('INSERT OR REPLACE INTO meta (key, value) VALUES (?, ?)').run('databaseBuiltAt', new Date().toISOString());
     db.exec('COMMIT');
-    console.log(`SQLite build complete: ${DB_PATH}`);
+    console.log(`SQLite build complete: ${getPaths().dbPath}`);
     console.log(`Courses: ${courseCount}`);
     console.log(`Occurrences: ${occurrenceCount}`);
   } catch (err) {
@@ -557,7 +559,7 @@ function main() {
  * Much faster than a full db:sync — deletes then reinserts only this course.
  */
 function syncSingleCourse(courseId) {
-  if (!fs.existsSync(DB_PATH)) {
+  if (!fs.existsSync(getPaths().dbPath)) {
     console.warn('[syncSingleCourse] DB not found, skipping. Run db:sync first.');
     return;
   }
@@ -570,7 +572,7 @@ function syncSingleCourse(courseId) {
   const payload = safeReadJson(coursePath);
   if (!payload || !payload.id) return;
 
-  const db = new Database(DB_PATH);
+  const db = new Database(getPaths().dbPath);
   ensureOccurrencesSplitColumns(db);
   const aliasMap = buildAliasMap();
   const skipSet = loadSkipSet();

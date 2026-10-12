@@ -1,0 +1,11 @@
+{
+  "timezone": "Europe/Berlin",
+  "defaultSemester": "2026WS",
+  "legacySemester": "2026SS",
+  "summerStartMonth": 4,
+  "winterStartMonth": 10,
+  "semesters": {
+    "2026SS": { "termId": 189 },
+    "2026WS": { "termId": 190 }
+  }
+}

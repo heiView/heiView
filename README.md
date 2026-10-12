@@ -59,21 +59,67 @@ Due to incomplete and inconsistently formatted data in heiCO, over 700 courses i
 npm install
 ```
 
-**2. Crawl Course Data**
+**2. Crawl Courses and Resume Tasks**
 
-Run the crawler to fetch all courses for the semester (requires campus network or university VPN):
+Use Python 3.10+ and install the crawler dependencies and Chromium:
 ```bash
-python crawler/heico_crawler.py
+python -m pip install -r crawler/requirements.txt
+python -m playwright install chromium
+python heiview
+# Equivalent menu entry point:
+python -m crawler
 ```
-Repeated runs only write files when content changes. To update a single course, use `--url "URL"`.
+Course access may require the campus network or university VPN. In the menu, choose `1`/`crawl`, select a semester, then configure forward/reverse crawling or detail URLs. Enter accepts the displayed default, `b` goes back, `q` exits, and `e` edits the execution summary. Ctrl+C cancels the current task and returns to the menu; Ctrl+C at the main menu exits.
 
-**3. Synchronize & Build Database**
+If the selected semester has an unfinished task from the same **Europe/Berlin calendar day**, the menu offers to resume it, configure a new task, or return. The original options and progress are displayed. Completed limited/URL tasks are not treated as interrupted. Tasks from another day and corrupted/incompatible checkpoints cannot resume; the menu explains why.
 
-After the crawler generates new JSON files, run:
+Each semester stores an atomic `checkpoint.json`. Every successful course is journaled immediately, even while concurrent requests are running. Resume retries failed/pending courses before continuing from the saved pagination position and does not rescan successful pages or course details. The original count limit counts distinct selected courses across all attempts; retries do not consume new positions. Changing the source website's list order during a task can still change page membership; start a new full crawl if the list changes substantially.
+
+Direct calls remain supported; **2026WS** is the default:
 ```bash
-npm run db:sync
+python crawler/heico_crawler.py --semester 2026WS -n 5
+python crawler/heico_crawler.py --semester 2026WS --reverse --skip 20 -n 5
+python crawler/heico_crawler.py --semester 2026SS --skip 200 --concurrency 3
+python crawler/heico_crawler.py --semester 2026WS --url "COURSE_DETAIL_URL"
 ```
-Your newly scraped data will automatically sync to the backend database.
+`--number` and `--concurrency` must be positive, `--skip` nonnegative. Forward skip counts from the beginning; reverse skip counts from the end, with automatic last-page discovery. Repeat `--url` for multiple detail URLs; URL mode rejects reverse, a nonzero skip and count limits. Ensure URLs belong to the selected semester. `--show-browser` displays Chromium. Checkpoint resumption is offered through the menu; direct invocations start new tasks.
+
+`last-run.json` records each task's result. `sync-meta.json` records only a successful full-coverage task: original skip=0, no count limit, no URL override, all courses successful. Full forward **and reverse** tasks qualify, including tasks completed after same-day resumption. Statistics and removal checks combine the whole task's course set. Partial/failed/interrupted or empty runs preserve the previous full-sync metadata and do not archive courses. Verification errors keep existing course files.
+
+**3. Automatic and Manual Database Sync**
+
+After every successful crawl, including a limited or URL task, the crawler automatically runs `npm run db:sync` for that semester. Failed/interrupted crawls do not trigger it. The checkpoint records crawl and database sync states independently: if the database step fails, the menu offers **sync only**, so courses need not be crawled again. CLI failures return a nonzero exit code. There is no deployment step.
+
+Choose `2`/`sync`/`db` in the menu to manually select a semester and build its database, or run:
+```bash
+HEIVIEW_SEMESTER=2026WS npm run db:sync
+HEIVIEW_SEMESTER=2026SS npm run db:sync
+```
+The default target is configured in `config/semesters.json`. The same semester is used by catalog patching, course/override/custom/skip import, building import and metadata import. Missing, empty or invalid source courses fail before replacing a database. The complete database is built in a temporary file and published only when all steps succeed; other semester databases remain intact. A lock prevents simultaneous syncs for the same semester, and admin writes are rejected while it is building. `HEIVIEW_DATA_DIR` can point to an isolated data directory for testing.
+
+Database layout:
+```text
+data/2026SS/{course-*.json,overrides/,custom/,skip/,feedback/,checkpoint.json,sync-meta.json,heiview.db}
+data/2026WS/{course-*.json,overrides/,custom/,skip/,feedback/,checkpoint.json,sync-meta.json,heiview.db}
+```
+Shared building catalogs and location maps stay under `data/`. The previous `data/heiview.db` is used only as a **2026SS** fallback when that semester's database is absent. Rebuilding SS creates its new database without removing the old one; the first authenticated SS admin write also makes a SQLite copy before editing. WS and other semesters never fall back to it. The legacy shared `data/sync-meta.json` still receives full SS crawl updates; new builds read semester metadata, with the matching legacy SS record as an initial fallback. Existing shared further-information skip records are likewise retained for SS only.
+
+The public site loads **only the selected day's schedule**, defaulting to today's Berlin date (or a valid `?date=YYYY-MM-DD` URL). April–September maps to that year's SS; October–March maps to WS beginning in October (January–March belongs to the previous year's WS). Thus 2026-09-30 → 2026SS, 2026-10-01 and 2027-03-31 → 2026WS. Historic dates/semesters are requested only when selected, without background crawling or historical prefetch. Missing semester databases show “data not ready”, distinct from an empty day or request error.
+
+Search spans dates within the selected semester. Details, feedback, calendar export and admin edits retain the course's semester, including courses with the same ID in different semesters. API request context and caches are semester-specific. Published database versions invalidate old schedule cache keys, and database connections are reopened for each request. Admin date selection determines its editing semester; changing semester clears open editor state.
+
+`config/semesters.json` is the shared Python/Node/frontend registry for term IDs, default semester, timezone and month boundaries. Add future heiCO IDs there; APIs can report an unprepared semester even when it has no registered term ID yet.
+
+Verification uses temporary data and mocked crawls, not the project database:
+```bash
+python -m unittest discover -s tests -v
+node --test tests/semester-api.test.cjs
+npm run build
+# Browser checks (requires a Playwright Chromium installation):
+node tests/semester-browser.cjs
+# Optionally select an installed Chromium-compatible browser:
+HEIVIEW_BROWSER_EXECUTABLE="/path/to/browser" node tests/semester-browser.cjs
+```
 
 **4. Configure Environment Variables**
 
@@ -168,25 +214,61 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 npm install
 ```
 
-**2.更新课程数据**
+**2. 爬取课程与同日恢复**
 
-运行爬虫更新本学期所有课程数据（需要在校园网或大学 VPN 环境下进行）：
-
+使用 Python 3.10 或更新版本，安装依赖和 Chromium 后启动菜单：
 ```bash
-python crawler/heico_crawler.py
+python -m pip install -r crawler/requirements.txt
+python -m playwright install chromium
+python heiview
+# 等价入口：
+python -m crawler
 ```
+访问课程可能需要校园网或大学 VPN。输入 `1`/`crawl`，选择学期，再配置顺序/倒序、数量、偏移、并发、浏览器或详情 URL。回车保留默认值，`b` 返回，`q` 退出，执行摘要中可输入 `e` 修改。Ctrl+C 取消当前操作并返回菜单，在主菜单按 Ctrl+C 则退出。
 
-仅在内容发生变化时才写入文件（增量更新）。如需测试更新单门课程，可使用 `--url "课程网址"`。
+选择学期后，若存在 **Europe/Berlin 当天**未完成、失败或中断的任务，菜单展示原参数和进度，并提供继续、重新配置或返回。正常结束的限量/URL 任务不会被误认为中断；跨日、损坏或配置不匹配的断点不能恢复，会说明原因。
 
-**3. 同步与构建数据库**
+每个学期的 `checkpoint.json` 原子保存断点。并发请求每成功一门即写入，恢复时先处理失败和未完成课程，再从保存的分页位置继续，不重复扫描成功页面或课程详情。数量上限累计计算不同课程，失败重试不占新增名额。如果网站在任务期间大幅调整列表顺序，建议重新进行全量爬取。
 
-在爬虫运行完毕并生成新的 JSON 文件后，请执行：
-
+原脚本入口保留，默认 **2026WS**：
 ```bash
-npm run db:sync
+python crawler/heico_crawler.py --semester 2026WS -n 5
+python crawler/heico_crawler.py --semester 2026WS --reverse --skip 20 -n 5
+python crawler/heico_crawler.py --semester 2026SS --skip 200 --concurrency 3
+python crawler/heico_crawler.py --semester 2026WS --url "课程详情网址"
 ```
+`--number`、`--concurrency` 必须为正数，`--skip` 非负。顺序偏移从开头计算，倒序从末尾计算并自动定位末页；`--show-browser` 显示浏览器。多个 URL 重复使用 `--url`，URL 模式不允许倒序、非零偏移或数量限制，请确保 URL 属于所选学期。断点恢复通过菜单选择；直接调用脚本创建新任务。
 
-新爬取的内容将自动同步至后端数据库。
+`last-run.json` 记录任务结果；`sync-meta.json` 只记录成功覆盖整个学期的任务：原始 skip=0、不限数量、非 URL 模式、全部课程成功。顺序和倒序均支持恢复后认定全量，统计和移除检查包含恢复前后的全部课程。部分、失败、中断或空结果任务不覆盖全量同步记录，也不归档课程；验证异常时保留原文件。
+
+**3. 自动与手动构建数据库**
+
+每次成功爬取后（包括限量和 URL 模式），自动为所选学期执行 `npm run db:sync`。失败或中断不自动同步。断点分别记录爬取与同步状态；同步失败后，菜单提供“只重试数据库同步”，不必重新爬取。脚本调用失败返回非零退出码，不自动部署。
+
+菜单输入 `2`/`sync`/`db` 可选择学期手动同步；也可直接执行：
+```bash
+HEIVIEW_SEMESTER=2026WS npm run db:sync
+HEIVIEW_SEMESTER=2026SS npm run db:sync
+```
+默认学期来自 `config/semesters.json`。建筑目录补充、课程与 overrides/custom/skip 导入、建筑导入和元数据读取使用同一学期。缺失、空目录或无效课程数据会导致同步失败。数据库先在临时文件完整构建，所有步骤成功后才发布，其他学期不受影响。同学期同步有运行锁，构建期间管理写入返回稍后重试。测试可设置 `HEIVIEW_DATA_DIR` 指向临时目录。
+
+每个学期保存自己的课程、人工修订、反馈、断点、同步记录和 `heiview.db`，例如 `data/2026SS/heiview.db`、`data/2026WS/heiview.db`。建筑目录和地点映射继续共用。旧 `data/heiview.db` 仅在 SS 分库不存在时作为 **2026SS** 回退；重建 SS 会生成新分库，首次经过身份验证的 SS 管理写入也会先复制数据库，保留旧库。WS 和其他学期绝不回退到旧库。旧共享 `data/sync-meta.json` 继续接受 SS 全量爬取更新，新构建优先读取所选学期元数据；SS 初次构建可回退读取与学期匹配的旧记录。已有共享的补充信息跳过记录也仅为 SS 保留兼容。
+
+网页首次打开只加载所选日期的当天课表，默认 Berlin 今天，也支持有效的 `?date=YYYY-MM-DD`。4—9 月对应当年 SS，10 月至次年 3 月对应当年 WS，1—3 月属于上一年 WS。历史日期和学期仅在用户选择后请求，不预加载、不临时爬取或构建数据库。缺少数据库显示“该学期数据尚未准备”，与当天无课程、请求失败区分。
+
+搜索仅跨所选学期的日期；课程详情、日历导出、反馈和管理操作均保留课程所属学期。后端使用请求独立的学期上下文，缓存包含学期与数据库版本，重新发布数据库后后续请求读取新版本。管理端日期决定编辑学期，跨学期切换会清空打开的编辑窗口，避免同编号课程串用。
+
+共享配置 `config/semesters.json` 供 Python、Node 和前端读取，集中维护 term ID、默认学期、时区和月份边界；后续学期在此添加。未配置或未构建的学期仍能按日期识别并提示未准备。
+
+验证命令（使用临时数据和模拟爬取，不改动项目数据库）：
+```bash
+python -m unittest discover -s tests -v
+node --test tests/semester-api.test.cjs
+npm run build
+node tests/semester-browser.cjs
+# 如需使用本机已有的 Chromium 类浏览器：
+HEIVIEW_BROWSER_EXECUTABLE="/path/to/browser" node tests/semester-browser.cjs
+```
 
 **4. 配置环境变量**
 

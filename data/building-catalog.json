@@ -5705,6 +5705,13 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-700::rm-tennishalle",
+          "name": "Tennishalle",
+          "floors": [],
+          "features": {},
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8182,6 +8189,13 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-vossstrasse-2-4420::rm-ort-siehe-anmerkung",
+          "name": "Ort - siehe Anmerkung",
+          "floors": [],
+          "features": {},
+          "notes": ""
         }
       ]
     },
@@ -9804,6 +9818,134 @@
           "floors": [
             "9.OG"
           ],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-kapelle",
+      "street": "Kapelle",
+      "displayName": "Kapelle",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-kapelle::rm-kapelle",
+          "name": "Kapelle",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-hfk-a",
+      "street": "HfK (A)",
+      "displayName": "HfK (A)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-hfk-a::rm-hfk-a",
+          "name": "HfK (A)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-210-haus-zum-riesen-25",
+      "street": "210 Haus zum Riesen (25)",
+      "displayName": "210 Haus zum Riesen (25)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-210-haus-zum-riesen-25::rm-210-haus-zum-riesen-25",
+          "name": "210 Haus zum Riesen (25)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-hs-413",
+      "street": "HS 413",
+      "displayName": "HS 413",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-hs-413::rm-hs-413",
+          "name": "HS 413",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-hauptstr-235-v-lkerkundemuseum",
+      "street": "Hauptstr. 235 / Völkerkundemuseum",
+      "displayName": "Hauptstr. 235 / Völkerkundemuseum",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-hauptstr-235-v-lkerkundemuseum::rm-hauptstr-235-v-lkerkundemuseum",
+          "name": "Hauptstr. 235 / Völkerkundemuseum",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-raum-440002212-cats",
+      "street": "Raum 440002212 (CATS)",
+      "displayName": "Raum 440002212 (CATS)",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-raum-440002212-cats::rm-raum-440002212-cats",
+          "name": "Raum 440002212 (CATS)",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-kurpf-lzisches-museum-hd",
+      "street": "Kurpfälzisches Museum HD",
+      "displayName": "Kurpfälzisches Museum HD",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-kurpf-lzisches-museum-hd::rm-kurpf-lzisches-museum-hd",
+          "name": "Kurpfälzisches Museum HD",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "bld-other-avp",
+      "street": "AVP",
+      "displayName": "AVP",
+      "campusId": "other",
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-avp::rm-avp",
+          "name": "AVP",
+          "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }

@@ -1,16 +1,13 @@
+const { DATA_DIR, getPaths } = require('../semesters.cjs');
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.resolve(__dirname, '..', '..');
-const COURSE_DIR = path.join(ROOT, 'data', '2026SS');
-const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
-const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
-const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
+const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
 
 function loadSkipSet() {
-  if (!fs.existsSync(SKIP_LIST_PATH)) return new Set();
+  if (!fs.existsSync(getPaths().skipListPath)) return new Set();
   try {
-    const data = JSON.parse(fs.readFileSync(SKIP_LIST_PATH, 'utf8'));
+    const data = JSON.parse(fs.readFileSync(getPaths().skipListPath, 'utf8'));
     return new Set(Array.isArray(data) ? data.map(String) : []);
   } catch (e) {
     console.warn('[skip] Failed to load skip list:', e.message);
@@ -19,25 +16,27 @@ function loadSkipSet() {
 }
 
 function resolveCoursePath(fileName) {
-  const overridePath = path.join(OVERRIDES_DIR, fileName);
+  const overridePath = path.join(getPaths().overridesDir, fileName);
   if (fs.existsSync(overridePath)) return overridePath;
-  return path.join(COURSE_DIR, fileName);
+  const customPath = path.join(getPaths().customDir, fileName);
+  if (fs.existsSync(customPath)) return customPath;
+  return path.join(getPaths().courseDir, fileName);
 }
 
 function normalizeFloorLabel(label) {
   if (!label) return null;
-  const lower = label.trim().toLowerCase();
+  const lower = label.trim().toLowerCase().replace(/ß/g, 'ss');
   if (lower === 'eg' || lower === 'erdgeschoss' || /^ground[\s\-]*floor$/.test(lower)) return 'Ground floor';
-  if (/^1\.?\s*[oO][gG]$/.test(lower) || /^1(?:st)?\s*floor$/.test(lower)) return '1st floor';
-  if (/^2\.?\s*[oO][gG]$/.test(lower) || /^2(?:nd)?\s*floor$/.test(lower)) return '2nd floor';
-  if (/^3\.?\s*[oO][gG]$/.test(lower) || /^3(?:rd)?\s*floor$/.test(lower)) return '3rd floor';
-  if (/^4\.?\s*[oO][gG]$/.test(lower) || /^4(?:th)?\s*floor$/.test(lower)) return '4th floor';
-  if (/^5\.?\s*[oO][gG]$/.test(lower) || /^5(?:th)?\s*floor$/.test(lower)) return '5th floor';
-  if (/^6\.?\s*[oO][gG]$/.test(lower) || /^6(?:th)?\s*floor$/.test(lower)) return '6th floor';
-  if (/^7\.?\s*[oO][gG]$/.test(lower) || /^7(?:th)?\s*floor$/.test(lower)) return '7th floor';
-  if (/^8\.?\s*[oO][gG]$/.test(lower) || /^8(?:th)?\s*floor$/.test(lower)) return '8th floor';
-  if (/^1\.?\s*[uU][gG]$/.test(lower) || /^lower\s+level\s*1$/.test(lower) || lower === 'ug' || lower === 'untergeschoss') return 'Lower level 1';
-  if (/^2\.?\s*[uU][gG]$/.test(lower) || /^lower\s+level\s*2$/.test(lower)) return 'Lower level 2';
+  if (/^1\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^1(?:st)?\s*floor$/.test(lower)) return '1st floor';
+  if (/^2\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^2(?:nd)?\s*floor$/.test(lower)) return '2nd floor';
+  if (/^3\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^3(?:rd)?\s*floor$/.test(lower)) return '3rd floor';
+  if (/^4\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^4(?:th)?\s*floor$/.test(lower)) return '4th floor';
+  if (/^5\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^5(?:th)?\s*floor$/.test(lower)) return '5th floor';
+  if (/^6\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^6(?:th)?\s*floor$/.test(lower)) return '6th floor';
+  if (/^7\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^7(?:th)?\s*floor$/.test(lower)) return '7th floor';
+  if (/^8\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^8(?:th)?\s*floor$/.test(lower)) return '8th floor';
+  if (/^1\.?\s*(?:ug|untergeschoss)$/.test(lower) || /^lower\s+level\s*1$/.test(lower) || lower === 'ug' || lower === 'untergeschoss') return 'Lower level 1';
+  if (/^2\.?\s*(?:ug|untergeschoss)$/.test(lower) || /^lower\s+level\s*2$/.test(lower)) return 'Lower level 2';
   return label.trim() || null;
 }
 
@@ -50,9 +49,9 @@ function splitBuildingAndFloor(value) {
   if (parts.length === 0) return { buildingName: null, floorLabel: null };
 
   const isLikelyFloorLabel = (segment) => {
-    const normalized = segment.toLowerCase();
+    const normalized = segment.toLowerCase().replace(/ß/g, 'ss');
     if (!normalized) return false;
-    if (/\b(floor|geschoss|eg|og|untergeschoss|keller|mezzanine|level|ground|lower level|upper level|attic|dach)\b/.test(normalized)) return true;
+    if (/\b(floor|ober(?:geschoss)?|erdgeschoss|geschoss|eg|og|untergeschoss|keller|mezzanine|level|ground|lower level|upper level|attic|dach)\b/.test(normalized)) return true;
     if (/\b\d+\s*(st|nd|rd|th)\s*floor\b/.test(normalized)) return true;
     if (/^u\d+$/.test(normalized)) return true;
     if (/ebene/i.test(normalized)) return true;
@@ -222,6 +221,7 @@ function normalizeBuildingNameForMerge(name, buildingsMap) {
 }
 
 function main() {
+  const courseFiles = require('./validate-data.cjs').validateData();
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
 
   // Merge equivalent buildings first (e.g. Hauptstraße 47/51 -> Hauptstraße 47-51)
@@ -260,10 +260,10 @@ function main() {
   }
 
   // Ensure directory exists before reading
-  if (fs.existsSync(COURSE_DIR)) {
+  if (fs.existsSync(getPaths().courseDir)) {
     const skipSet = loadSkipSet();
     if (skipSet.size > 0) console.log(`[skip] Loaded ${skipSet.size} course(s) to skip.`);
-    const files = fs.readdirSync(COURSE_DIR).filter(f => f.endsWith('.json'));
+    const files = courseFiles;
     for (const file of files) {
       const coursePath = resolveCoursePath(file);
       const payload = JSON.parse(fs.readFileSync(coursePath, 'utf8'));

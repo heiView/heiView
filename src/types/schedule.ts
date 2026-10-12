@@ -12,6 +12,7 @@ export type RoomFeatures = {
 }
 
 export type Course = {
+  semester?: string
   id?: string
   time: string
   name: LocalizedText
@@ -48,6 +49,8 @@ export type BuildingEntry = {
 }
 
 export type ScheduleResponse = {
+  semester?: string
+  date?: string
   buildings: BuildingEntry[]
   rooms: Record<string, RoomEntry[]>
   lastSyncTime?: string | null

@@ -38,6 +38,8 @@ copilot-instructions.md
 
 data/admin-accounts.json
 data/admin-audit.json
+data/2026SS/
+data/2026WS/
 
 # Playwright
 /test-results/

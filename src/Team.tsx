@@ -1,5 +1,6 @@
 import React from 'react'
-import { Layout, ConfigProvider, Typography, Space, Card, Drawer, Avatar, Descriptions, theme as antdTheme } from 'antd'
+import { Layout, ConfigProvider, Typography, Space, Drawer, Avatar, Descriptions, theme as antdTheme } from 'antd'
+import Card from 'antd/es/card/Card'
 import { UserOutlined } from '@ant-design/icons'
 import useStore from './store'
 import DarkModeButton from './components/DarkModeButton/DarkModeButton'

@@ -2,26 +2,51 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+from dataclasses import dataclass
 from datetime import datetime, timezone
 import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import quote, urljoin
-
-from playwright.async_api import async_playwright
+from urllib.parse import quote, urljoin, urlsplit
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-from crawler.scrape_course_details import extract_time_slots
+from crawler.config import DATA_DIR, DEFAULT_SEMESTER, LEGACY_SYNC_SEMESTER, SEMESTERS
+from crawler.checkpoint import atomic_json
 
-ROOT = Path(__file__).resolve().parent
-PROJECT_ROOT = ROOT.parent
-OUTPUT_DIR = PROJECT_ROOT / 'data' / '2026SS'
 BASE_URL = 'https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses'
 DESKTOP_HOME_URL = 'https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/'
-TERM_QUERY = '$ctx=&$skip={skip}&$top=100&objTermId=189&orgId=1'
 PAGE_SIZE = 100
+
+
+@dataclass(frozen=True)
+class CrawlOptions:
+    semester: str = DEFAULT_SEMESTER
+    number: int | None = None
+    skip: int = 0
+    concurrency: int = 5
+    show_browser: bool = False
+    url: tuple[str, ...] = ()
+    reverse: bool = False
+
+    def validate(self) -> None:
+        if self.semester not in SEMESTERS:
+            raise ValueError(f'Unknown semester: {self.semester}')
+        if self.number is not None and self.number <= 0:
+            raise ValueError('--number must be a positive integer.')
+        if self.skip < 0:
+            raise ValueError('--skip must be a nonnegative integer.')
+        if self.concurrency <= 0:
+            raise ValueError('--concurrency must be a positive integer.')
+        if self.url and (self.reverse or self.skip != 0 or self.number is not None):
+            raise ValueError('--url cannot be combined with --reverse, --skip or --number.')
+        for value in self.url:
+            parsed = urlsplit(normalize_course_url(value))
+            if (parsed.scheme != 'https' or parsed.netloc != 'heico.uni-heidelberg.de'
+                    or parsed.path != '/heiCO/ee/ui/ca2/app/desktop/'
+                    or not parsed.fragment.startswith('/slc.tm.cp/student/courses/')):
+                raise ValueError(f'Expected a heiCO course detail URL, got: {value}')
 
 
 def compact_ws(value: str) -> str:
@@ -32,7 +57,7 @@ def compact_ws(value: str) -> str:
 # "Courses / <title>" or "Veranstaltungen / <title>".  Strip these so we
 # store only the actual course title.
 _TITLE_BREADCRUMB_RE = re.compile(
-    r'^(?:Courses|Veranstaltungen|Kurse)\s*/\s*',
+    r'^(?:Courses|Lehrveranstaltungen|Veranstaltungen|Kurse)\s*/\s*',
     re.IGNORECASE,
 )
 
@@ -91,14 +116,17 @@ def normalize_course_url(value: str) -> str:
     return normalize_hreflike(cleaned)
 
 
-def build_page_url(skip: int) -> str:
-    return f'{BASE_URL}?{TERM_QUERY.format(skip=skip)}'
+def build_page_url(skip: int, semester: str = DEFAULT_SEMESTER) -> str:
+    term_id = SEMESTERS[semester]
+    return f'{BASE_URL}?$ctx=lang=EN&$skip={skip}&$top={PAGE_SIZE}&objTermId={term_id}&orgId=1'
 
 
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description='Crawl heiCO courses for 2026SS.')
-    parser.add_argument('--number', '-n', type=int, default=None, help='Stop after crawling this many courses.')
-    parser.add_argument('--skip', type=int, default=0, help='Start from this offset in the course list (e.g. --skip 2000 to resume after an interruption).')
+def parse_args(argv: list[str] | None = None) -> CrawlOptions:
+    parser = argparse.ArgumentParser(description='Crawl heiCO courses for a selected semester.')
+    parser.add_argument('--semester', choices=tuple(SEMESTERS), default=DEFAULT_SEMESTER,
+                        help=f'Semester to crawl (default: {DEFAULT_SEMESTER}).')
+    parser.add_argument('--number', '-n', type=int, default=None, help='Attempt at most this many distinct courses.')
+    parser.add_argument('--skip', type=int, default=0, help='Skip this many courses from the start, or from the end with --reverse.')
     parser.add_argument('--concurrency', type=int, default=5, help='Max number of course/room pages to crawl in parallel.')
     parser.add_argument('--show-browser', action='store_true', help='Launch Chromium in headed mode.')
     parser.add_argument(
@@ -107,8 +135,15 @@ def parse_args() -> argparse.Namespace:
         default=[],
         help='Recrawl a specific course detail page URL. Can be provided multiple times.',
     )
-    parser.add_argument('--reverse', action='store_true', help='Enable reverse crawling logic.')
-    return parser.parse_args()
+    parser.add_argument('--reverse', action='store_true', help='Crawl from the actual last page toward the first page, reversing entries within each page.')
+    namespace = parser.parse_args(argv)
+    namespace.url = tuple(namespace.url)
+    options = CrawlOptions(**vars(namespace))
+    try:
+        options.validate()
+    except ValueError as exc:
+        parser.error(str(exc))
+    return options
 
 
 def extract_week_note(slot: dict) -> str | None:
@@ -671,14 +706,17 @@ async def process_course_entry(
     room_cache: dict[str, str | None],
     room_semaphore: asyncio.Semaphore,
     detail_semaphore: asyncio.Semaphore,
+    output_dir: Path,
 ) -> tuple[str, str, bool] | None:
+    from crawler.scrape_course_details import extract_time_slots
+
     course_id = entry['course_id']  # type: ignore[index]
     title = entry['title']  # type: ignore[index]
     href = entry['href']  # type: ignore[index]
     course_type = entry['course_type']  # type: ignore[index]
     lecturer_names = entry['lecturers']  # type: ignore[index]
     filename = build_course_filename(course_id)
-    target_path = OUTPUT_DIR / filename
+    target_path = output_dir / filename
 
     existing_weeks: list[dict[str, object]] = []
     if target_path.exists():
@@ -720,7 +758,7 @@ async def process_course_entry(
                 print(f'[{course_id}] corrected ID to {detail_course_id} from detail page Number field')
                 course_id = detail_course_id
                 filename = build_course_filename(course_id)
-                target_path = OUTPUT_DIR / filename
+                target_path = output_dir / filename
 
                 # Re-read existing data from the correct file so building
                 # cache and unchanged-check work against the right file.
@@ -930,243 +968,374 @@ async def process_course_entry(
     return course_id, filename, True
 
 
-async def main() -> None:
-    args = parse_args()
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+async def read_course_page(browser, semester: str, skip: int) -> list[dict[str, object]]:
+    """Accept explicit empty results, but never treat a timeout/login as EOF."""
+    page = await browser.new_page()
+    try:
+        await page.goto(build_page_url(skip, semester), wait_until='domcontentloaded', timeout=30000)
+        await page.wait_for_function(
+            """() => document.querySelector(
+                '[role="listitem"] a[href*="/slc.tm.cp/student/courses/"]'
+            ) !== null || /Keine Einträge gefunden|No entries found|No records found|No courses found/i.test(
+                document.body.innerText
+            )""",
+            timeout=30000,
+        )
+        entries = await extract_course_entries(page)
+        if not entries:
+            body = await page.inner_text('body')
+            if not re.search(r'Keine Einträge gefunden|No entries found|No records found|No courses found', body, re.I):
+                raise RuntimeError(f'Course list at skip={skip} did not load correctly.')
+        listed_count = await page.locator(
+            '[role="listitem"]:has(a[href*="/slc.tm.cp/student/courses/"])'
+        ).count()
+        if listed_count != len(entries):
+            raise RuntimeError(f'Could not parse all courses at skip={skip}; refusing to truncate the crawl.')
+        print(f'[{semester}] Found {len(entries)} courses on page skip={skip}')
+        return entries
+    finally:
+        await page.close()
 
-    async with async_playwright() as playwright:
-        browser = await playwright.chromium.launch(headless=not args.show_browser)
-        room_cache: dict[str, str | None] = {}
-        room_semaphore = asyncio.Semaphore(max(1, args.concurrency))
-        detail_semaphore = asyncio.Semaphore(max(1, args.concurrency))
+
+async def find_last_page(fetch_page) -> tuple[int, list[dict[str, object]]]:
+    """Locate EOF with exponential/binary probes, including exact page multiples."""
+    first = await fetch_page(0)
+    if len(first) < PAGE_SIZE:
+        return 0, first
+    first_ids = [entry['course_id'] for entry in first]
+    low, high = 0, 1
+    low_entries = first
+    while True:
+        entries = await fetch_page(high * PAGE_SIZE)
+        if not entries:
+            break
+        if [entry['course_id'] for entry in entries] == first_ids:
+            raise RuntimeError('heiCO repeated the first page instead of applying the pagination offset.')
+        if len(entries) < PAGE_SIZE:
+            return high * PAGE_SIZE, entries
+        low, low_entries = high, entries
+        high *= 2
+    while high - low > 1:
+        middle = (low + high) // 2
+        entries = await fetch_page(middle * PAGE_SIZE)
+        if entries:
+            if [entry['course_id'] for entry in entries] == first_ids:
+                raise RuntimeError('heiCO ignored the pagination offset.')
+            if len(entries) < PAGE_SIZE:
+                return middle * PAGE_SIZE, entries
+            low, low_entries = middle, entries
+        else:
+            high = middle
+    return low * PAGE_SIZE, low_entries
+
+
+async def iter_course_pages(options: CrawlOptions, fetch_page):
+    if options.reverse:
+        last_skip, last_entries = await find_last_page(fetch_page)
+        # --skip always counts courses in the selected traversal direction.
+        start_index = last_skip + len(last_entries) - 1 - options.skip
+        if start_index < 0:
+            return
+        skip = (start_index // PAGE_SIZE) * PAGE_SIZE
+        entries = last_entries if skip == last_skip else await fetch_page(skip)
+        yield skip, list(reversed(entries[:start_index % PAGE_SIZE + 1]))
+        skip -= PAGE_SIZE
+        while skip >= 0:
+            entries = await fetch_page(skip)
+            if not entries:
+                raise RuntimeError(f'Unexpected empty page during reverse traversal at skip={skip}.')
+            yield skip, list(reversed(entries))
+            skip -= PAGE_SIZE
+    else:
+        skip = options.skip
+        previous_ids = None
+        while True:
+            entries = await fetch_page(skip)
+            ids = [entry['course_id'] for entry in entries]
+            if ids and ids == previous_ids:
+                raise RuntimeError('heiCO repeated a page instead of applying the pagination offset.')
+            yield skip, entries
+            if len(entries) < PAGE_SIZE:
+                return
+            previous_ids = ids
+            skip += PAGE_SIZE
+
+
+def write_run_metadata(data_dir: Path, options: CrawlOptions, record: dict) -> None:
+    """Partial/failed runs never replace the last successful full sync."""
+    output_dir = data_dir / options.semester
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    def write(path: Path) -> None:
+        atomic_json(path, record)
+
+    write(output_dir / 'last-run.json')
+    if record['complete']:
+        write(output_dir / 'sync-meta.json')
+        if options.semester == LEGACY_SYNC_SEMESTER:
+            write(data_dir / 'sync-meta.json')
+
+
+async def archive_removed_courses(browser, output_dir: Path, expected_filenames: set[str]) -> None:
+    deleted_dir = output_dir / 'deleted'
+    moved_count = 0
+    for candidate_path in sorted(output_dir.glob('course-*.json')):
+        if candidate_path.name in expected_filenames:
+            continue
         try:
-            processed_count = 0
-            updated_count = 0
-            seen_course_ids: set[str] = set()
-            if args.url:
-                manual_entries: list[dict[str, object]] = []
-                for raw_url in args.url:
-                    course_url = normalize_course_url(raw_url)
-                    entry = await build_entry_from_course_url(browser, course_url)
-                    if entry is None:
-                        continue
-                    course_id = entry['course_id']  # type: ignore[index]
-                    if course_id in seen_course_ids:
-                        continue
-                    seen_course_ids.add(course_id)
-                    manual_entries.append(entry)
+            existing_data = json.loads(candidate_path.read_text(encoding='utf-8'))
+            detail_link = existing_data.get('detail_link')
+        except (ValueError, OSError, AttributeError) as exc:
+            print(f'[VERIFY] {candidate_path.name}: cannot read course ({exc}); keeping file')
+            continue
+        if not detail_link:
+            print(f'[VERIFY] {candidate_path.name}: no detail URL; keeping file')
+            continue
+        print(f'[VERIFY] {candidate_path.name}: re-checking {detail_link}')
+        try:
+            verify_entry = await build_entry_from_course_url(browser, detail_link)
+        except Exception as exc:
+            print(f'[VERIFY] {candidate_path.name}: check error ({exc}); keeping file')
+            continue
+        if verify_entry is not None:
+            print(f'[VERIFY] {candidate_path.name}: still accessible, keeping file')
+            continue
+        deleted_dir.mkdir(parents=True, exist_ok=True)
+        dest = deleted_dir / candidate_path.name
+        if dest.exists():
+            print(f'[VERIFY] {candidate_path.name}: archive already exists; keeping file')
+            continue
+        candidate_path.rename(dest)
+        print(f'[DELETED] {candidate_path.name} → deleted/')
+        moved_count += 1
+    if moved_count:
+        print(f'Moved {moved_count} deleted course(s) to {deleted_dir}')
 
-                tasks = [
-                    process_course_entry(browser, entry, room_cache, room_semaphore, detail_semaphore)
-                    for entry in manual_entries
-                ]
-                results = await asyncio.gather(*tasks)
-                for result in results:
-                    if result is None:
-                        continue
-                    _course_id, _filename, written = result
-                    processed_count += 1
-                    if written:
-                        updated_count += 1
-            elif args.reverse:
-                skip = 4000
-                found_less_than_page = False
-                while True:
-                    page = await browser.new_page()
-                    try:
-                        page_url = build_page_url(skip)
-                        await page.goto(page_url, wait_until='domcontentloaded', timeout=30000)
-                        await page.wait_for_timeout(5000)
-                        await page.wait_for_selector('[role="listitem"]', timeout=30000)
 
-                        entries = await extract_course_entries(page)
-                        page_course_count = len(entries)
-                        print(f'[REVERSE] Found {page_course_count} courses on page skip={skip}')
-                        if page_course_count == 0:
-                            break
+async def crawl_courses(options: CrawlOptions, *, data_dir: Path = DATA_DIR,
+                        resume: bool = False, auto_sync: bool = True) -> dict:
+    """Persist each successful detail request before advancing the traversal."""
+    from crawler.checkpoint import can_resume, load_task, new_task, save_task
+    from crawler.database import sync_database
+    from playwright.async_api import async_playwright
+    from crawler.scrape_course_details import extract_time_slots  # noqa: F401
+    import fcntl
 
-                        page_entries: list[dict[str, object]] = []
-                        for entry in entries:
-                            course_id = entry['course_id']  # type: ignore[index]
-                            if course_id in seen_course_ids:
-                                continue
-                            if args.number is not None and processed_count + len(page_entries) >= args.number:
-                                break
-                            seen_course_ids.add(course_id)
-                            page_entries.append(entry)
+    options.validate()
+    output_dir = data_dir / options.semester
+    output_dir.mkdir(parents=True, exist_ok=True)
+    lock = (output_dir / '.crawl.lock').open('a')
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        lock.close()
+        raise RuntimeError('该学期已有爬取任务在运行。')
+    try:
+        task = load_task(options.semester, data_dir) if resume else new_task(options)
+        if resume:
+            if task is None or not can_resume(task):
+                raise ValueError('没有同一天可恢复的未完成爬取任务。')
+            saved_options = dict(task['options'])
+            saved_options['url'] = tuple(saved_options.get('url', ()))
+            if CrawlOptions(**saved_options) != options:
+                raise ValueError('恢复参数必须与原任务一致。')
+            print(f'Resuming {options.semester}: page offset={task["nextSkip"]}, '
+                  f'pending={len(task["pagePending"]) + len(task["retries"])}, '
+                  f'succeeded={len(task["successes"])}')
+        task['crawlStatus'] = 'running'
+        save_task(task, data_dir)
 
-                        tasks = [
-                            process_course_entry(browser, entry, room_cache, room_semaphore, detail_semaphore)
-                            for entry in page_entries
-                        ]
-                        results = await asyncio.gather(*tasks)
-                        for result in results:
-                            if result is None:
-                                continue
-                            _course_id, _filename, written = result
-                            processed_count += 1
-                            if written:
-                                updated_count += 1
+        def persist():
+            save_task(task, data_dir)
 
-                        if args.number is not None and processed_count >= args.number:
-                            break
+        def metadata() -> dict:
+            successes = task['successes']
+            pending_ids = {entry['course_id'] for entry in task['pagePending'] + task['retries']}
+            failed_count = len(pending_ids) + len(task['urlPending'])
+            complete = (
+                task['crawlStatus'] == 'completed' and not options.url
+                and options.skip == 0 and options.number is None and bool(successes)
+            )
+            return {
+                'lastSyncTime': task['lastCrawlTime'],
+                'courseCount': len(successes), 'currentSeason': options.semester,
+                'attemptedCount': len(task['selectedIds']) + len(task['urlPending']),
+                'updatedCount': sum(int(result['written']) for result in successes.values()),
+                'failedCount': failed_count, 'complete': complete,
+                'status': task['crawlStatus'], 'taskId': task['id'],
+                'startedAt': task['startedAt'], 'mode': 'urls' if options.url else ('reverse' if options.reverse else 'forward'),
+                'skip': options.skip, 'number': options.number,
+            }
 
-                        if page_course_count < PAGE_SIZE:
-                            found_less_than_page = True
-                            break
-                        skip += PAGE_SIZE
-                    finally:
-                        await page.close()
+        try:
+            async with async_playwright() as playwright:
+                browser = await playwright.chromium.launch(headless=not options.show_browser)
+                try:
+                    room_cache = {}
+                    room_semaphore = asyncio.Semaphore(options.concurrency)
+                    detail_semaphore = asyncio.Semaphore(options.concurrency)
 
-                if found_less_than_page:
-                    skip = 3900
-                    while skip >= 0:
-                        page = await browser.new_page()
-                        try:
-                            page_url = build_page_url(skip)
-                            await page.goto(page_url, wait_until='domcontentloaded', timeout=30000)
-                            await page.wait_for_timeout(5000)
-                            await page.wait_for_selector('[role="listitem"]', timeout=30000)
+                    async def process_pending(*, retry_failed: bool = False) -> None:
+                        # Persist a result immediately, even while its peers are still running.
+                        pending = {entry['course_id']: entry for entry in
+                                   (task['retries'] if retry_failed else []) + task['pagePending']}
+                        task['pagePending'] = list(pending.values())
+                        if retry_failed:
+                            task['retries'] = []
+                        persist()
 
-                            entries = await extract_course_entries(page)
-                            page_course_count = len(entries)
-                            print(f'[REVERSE] (decrement) Found {page_course_count} courses on page skip={skip}')
-                            if page_course_count == 0:
-                                break
-
-                            page_entries: list[dict[str, object]] = []
-                            for entry in entries:
-                                course_id = entry['course_id']  # type: ignore[index]
-                                if course_id in seen_course_ids:
-                                    continue
-                                if args.number is not None and processed_count + len(page_entries) >= args.number:
-                                    break
-                                seen_course_ids.add(course_id)
-                                page_entries.append(entry)
-
-                            tasks = [
-                                process_course_entry(browser, entry, room_cache, room_semaphore, detail_semaphore)
-                                for entry in page_entries
-                            ]
-                            results = await asyncio.gather(*tasks)
-                            for result in results:
+                        async def process(entry):
+                            key = entry['course_id']
+                            if key in task['successes']:
+                                task['pagePending'] = [item for item in task['pagePending'] if item['course_id'] != key]
+                                persist()
+                                return
+                            try:
+                                result = await process_course_entry(
+                                    browser, entry, room_cache, room_semaphore, detail_semaphore, output_dir,
+                                )
                                 if result is None:
+                                    raise RuntimeError('course could not be processed')
+                                course_id, filename, written = result
+                                task['successes'][key] = {
+                                    'courseId': course_id, 'filename': filename, 'written': written,
+                                }
+                                if filename not in task['expectedFilenames']:
+                                    task['expectedFilenames'].append(filename)
+                            except Exception as exc:
+                                print(f'[ERROR] {key}: {exc}')
+                                task['retries'].append(entry)
+                            task['pagePending'] = [item for item in task['pagePending'] if item['course_id'] != key]
+                            persist()
+
+                        await asyncio.gather(*(process(entry) for entry in pending.values()))
+
+                    # Retry outstanding courses once before continuing at the saved cursor.
+                    if task['pagePending'] or task['retries']:
+                        await process_pending(retry_failed=True)
+
+                    if options.url:
+                        unresolved = []
+                        for raw_url in list(task['urlPending']):
+                            try:
+                                entry = await build_entry_from_course_url(browser, normalize_course_url(raw_url))
+                                if entry is None:
+                                    raise RuntimeError('URL could not be resolved')
+                            except Exception as exc:
+                                print(f'[ERROR] {raw_url}: {exc}')
+                                unresolved.append(raw_url)
+                                continue
+                            key = entry['course_id']
+                            if key not in task['selectedIds']:
+                                task['selectedIds'].append(key)
+                            task['urlPending'].remove(raw_url)
+                            if key not in task['successes']:
+                                task['pagePending'].append(entry)
+                            persist()
+                            await process_pending()
+                        task['urlPending'] = unresolved
+                        task['traversalFinished'] = True
+                        persist()
+                    else:
+                        async def fetch_page(skip):
+                            return await read_course_page(browser, options.semester, skip)
+
+                        first_entries = None
+                        if options.reverse and task['nextSkip'] is None:
+                            last_skip, last_entries = await find_last_page(fetch_page)
+                            start_index = last_skip + len(last_entries) - 1 - options.skip
+                            if start_index < 0:
+                                task['traversalFinished'] = True
+                            else:
+                                task['nextSkip'] = start_index // PAGE_SIZE * PAGE_SIZE
+                                task['firstPageTake'] = start_index % PAGE_SIZE + 1
+                                if task['nextSkip'] == last_skip:
+                                    first_entries = last_entries
+                            persist()
+
+                        while not task['traversalFinished']:
+                            if options.number is not None and len(task['selectedIds']) >= options.number:
+                                task['traversalFinished'] = True
+                                persist()
+                                break
+                            skip = task['nextSkip']
+                            entries = first_entries if first_entries is not None else await fetch_page(skip)
+                            first_entries = None
+                            ids = [entry['course_id'] for entry in entries]
+                            if ids and ids == task.get('previousPageIds'):
+                                raise RuntimeError('heiCO ignored the pagination offset.')
+                            if options.reverse and not entries:
+                                raise RuntimeError(f'Unexpected empty page during reverse traversal at skip={skip}.')
+                            task['previousPageIds'] = ids
+                            page_size = len(entries)
+                            if options.reverse:
+                                take = task.pop('firstPageTake', page_size)
+                                entries = list(reversed(entries[:take]))
+                            selected = []
+                            for entry in entries:
+                                key = entry['course_id']
+                                if key in task['selectedIds']:
                                     continue
-                                _course_id, _filename, written = result
-                                processed_count += 1
-                                if written:
-                                    updated_count += 1
+                                if options.number is not None and len(task['selectedIds']) >= options.number:
+                                    break
+                                task['selectedIds'].append(key)
+                                selected.append(entry)
+                            task['pagePending'] = selected
+                            task['pagesVisited'] += 1
+                            task['nextSkip'] = skip - PAGE_SIZE if options.reverse else skip + PAGE_SIZE
+                            task['traversalFinished'] = (
+                                skip == 0 if options.reverse else page_size < PAGE_SIZE
+                            )
+                            if options.number is not None and len(task['selectedIds']) >= options.number:
+                                task['traversalFinished'] = True
+                            # Cursor and the entire page's work are saved together.
+                            persist()
+                            if selected:
+                                await process_pending()
 
-                            if args.number is not None and processed_count >= args.number:
-                                break
+                    if task['pagePending'] or task['retries'] or task['urlPending']:
+                        task['crawlStatus'] = 'failed'
+                    else:
+                        task['crawlStatus'] = 'completed'
+                        task.pop('crawlError', None)
+                    persist()
+                    record = metadata()
+                    if record['complete']:
+                        await archive_removed_courses(browser, output_dir, set(task['expectedFilenames']))
+                    write_run_metadata(data_dir, options, record)
+                finally:
+                    await browser.close()
+        except (Exception, asyncio.CancelledError) as exc:
+            task['crawlStatus'] = 'interrupted' if isinstance(exc, asyncio.CancelledError) else 'failed'
+            task['crawlError'] = str(exc)
+            persist()
+            write_run_metadata(data_dir, options, metadata())
+            raise
 
-                        finally:
-                            await page.close()
-                        skip -= PAGE_SIZE
+        record = metadata()
+        print(f'[{options.semester}] Processed {record["courseCount"]} course(s), '
+              f'failed {record["failedCount"]}; {"full sync" if record["complete"] else "partial coverage"}.')
+        # Sync errors leave crawlStatus=completed and only change syncStatus.
+        if task['crawlStatus'] == 'completed' and auto_sync:
+            await sync_database(options.semester, data_dir=data_dir, task=task)
+        return record
+    finally:
+        fcntl.flock(lock, fcntl.LOCK_UN)
+        lock.close()
 
-            else:
-                skip = args.skip
 
-                while True:
-                    page = await browser.new_page()
-                    try:
-                        page_url = build_page_url(skip)
-                        await page.goto(page_url, wait_until='domcontentloaded', timeout=30000)
-                        await page.wait_for_timeout(5000)
-                        await page.wait_for_selector('[role="listitem"]', timeout=30000)
-
-                        entries = await extract_course_entries(page)
-                        page_course_count = len(entries)
-                        print(f'Found {page_course_count} courses on page skip={skip}')
-                        if page_course_count == 0:
-                            break
-
-                        page_entries: list[dict[str, object]] = []
-                        for entry in entries:
-                            course_id = entry['course_id']  # type: ignore[index]
-                            if course_id in seen_course_ids:
-                                continue
-                            if args.number is not None and processed_count + len(page_entries) >= args.number:
-                                break
-                            seen_course_ids.add(course_id)
-                            page_entries.append(entry)
-
-                        tasks = [
-                            process_course_entry(browser, entry, room_cache, room_semaphore, detail_semaphore)
-                            for entry in page_entries
-                        ]
-                        results = await asyncio.gather(*tasks)
-                        for result in results:
-                            if result is None:
-                                continue
-                            _course_id, _filename, written = result
-                            processed_count += 1
-                            if written:
-                                updated_count += 1
-
-                        if args.number is not None and processed_count >= args.number:
-                            break
-
-                        if page_course_count < PAGE_SIZE:
-                            break
-                        skip += PAGE_SIZE
-                    finally:
-                        await page.close()
-
-            skipped_count = processed_count - updated_count
-            print(f'Processed {processed_count} course(s): wrote {updated_count}, skipped {skipped_count} unchanged.')
-
-            # Write sync metadata (timestamp of this crawl run)
-            if not args.url:
-                sync_meta = {
-                    'lastSyncTime': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
-                    'courseCount': processed_count,
-                    'currentSeason': '2026SS',
-                }
-                sync_meta_path = PROJECT_ROOT / 'data' / 'sync-meta.json'
-                sync_meta_path.write_text(json.dumps(sync_meta, indent=2), encoding='utf-8')
-                print(f'Wrote sync metadata to {sync_meta_path}')
-
-            # Detect courses removed from the website (full crawl only).
-            # Requires a complete run: no URL override, no count limit, no offset skip, not reverse mode.
-            if not args.url and args.number is None and args.skip == 0 and not args.reverse:
-                expected_filenames = {build_course_filename(cid) for cid in seen_course_ids}
-                deleted_dir = OUTPUT_DIR / 'deleted'
-                moved_count = 0
-                for candidate_path in sorted(OUTPUT_DIR.glob('course-*.json')):
-                    if candidate_path.name in expected_filenames:
-                        continue
-                    # Before moving, re-verify that the course URL is truly inaccessible.
-                    # This guards against false-positives caused by SPA loading failures
-                    # or transient network errors during the full crawl.
-                    detail_link: str | None = None
-                    try:
-                        existing_data = json.loads(candidate_path.read_text(encoding='utf-8'))
-                        detail_link = existing_data.get('detail_link')
-                    except Exception:
-                        pass
-
-                    if detail_link:
-                        print(f'[VERIFY] {candidate_path.name}: re-checking {detail_link}')
-                        try:
-                            verify_entry = await build_entry_from_course_url(browser, detail_link)
-                        except Exception as exc:
-                            print(f'[VERIFY] {candidate_path.name}: check error ({exc}), treating as deleted')
-                            verify_entry = None
-                        if verify_entry is not None:
-                            print(f'[VERIFY] {candidate_path.name}: still accessible, skipping deletion')
-                            continue
-
-                    deleted_dir.mkdir(parents=True, exist_ok=True)
-                    dest = deleted_dir / candidate_path.name
-                    candidate_path.rename(dest)
-                    print(f'[DELETED] {candidate_path.name} → deleted/')
-                    moved_count += 1
-                if moved_count:
-                    print(f'Moved {moved_count} deleted course(s) to deleted/')
-        finally:
-            await browser.close()
+async def main() -> None:
+    record = await crawl_courses(parse_args())
+    if record['failedCount']:
+        raise RuntimeError(f'{record["failedCount"]} course(s) could not be processed; see the crawl log.')
 
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print('\nCrawl cancelled.', file=sys.stderr)
+        raise SystemExit(130)
+    except Exception as exc:
+        print(f'Crawl failed: {exc}', file=sys.stderr)
+        raise SystemExit(1)

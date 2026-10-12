@@ -1,10 +1,9 @@
+const { DATA_DIR, getPaths } = require('../semesters.cjs');
 const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
 
-const ROOT = path.resolve(__dirname, '..', '..');
-const DB_PATH = path.join(ROOT, 'data', 'heiview.db');
-const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
+const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
 
 function toNullableInteger(value) {
   if (value === true) return 1;
@@ -112,8 +111,9 @@ function parseCatalog() {
 }
 
 function main() {
+  if (!fs.existsSync(getPaths().dbPath)) throw new Error('Build the semester course database before importing buildings');
   const { campuses, buildings } = parseCatalog();
-  const db = new Database(DB_PATH);
+  const db = new Database(getPaths().dbPath);
   ensureSchema(db);
 
   const insertCampus = db.prepare(`
@@ -214,7 +214,7 @@ function main() {
     }
 
     db.exec('COMMIT');
-    console.log(`Building catalog import complete: ${DB_PATH}`);
+    console.log(`Building catalog import complete: ${getPaths().dbPath}`);
     console.log(`Campuses: ${campuses.length}`);
     console.log(`Buildings: ${buildingCount}`);
     console.log(`Rooms: ${roomCount}`);

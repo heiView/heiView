@@ -53,6 +53,7 @@ export function authHeaders(): Record<string, string> {
 
 export async function adminFetch(url: string, options: RequestInit = {}): Promise<Response> {
   const res = await fetch(url, {
+    cache: 'no-store',
     ...options,
     headers: {
       ...authHeaders(),

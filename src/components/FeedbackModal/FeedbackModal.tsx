@@ -41,13 +41,14 @@ type ProposedWeek = {
 }
 
 type FeedbackModalProps = {
+  semester: string
   open: boolean
   courseId: string
   courseTitle: string
   onClose: () => void
 }
 
-export default function FeedbackModal({ open, courseId, courseTitle, onClose }: FeedbackModalProps) {
+export default function FeedbackModal({ open, semester, courseId, courseTitle, onClose }: FeedbackModalProps) {
   const [form] = Form.useForm()
   const [weeks, setWeeks] = React.useState<ProposedWeek[]>([])
   const [fileList, setFileList] = React.useState<UploadFile[]>([])
@@ -117,7 +118,7 @@ export default function FeedbackModal({ open, courseId, courseTitle, onClose }: 
         }
       }
 
-      const res = await fetch('/api/feedback', { method: 'POST', body: formData })
+      const res = await fetch(`/api/feedback?semester=${encodeURIComponent(semester)}`, { method: 'POST', body: formData })
       if (!res.ok) {
         const err = await res.json()
         antdMessage.error(err.error || 'Failed to submit feedback')

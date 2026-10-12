@@ -26,13 +26,14 @@ const { importBuildingCatalog } = require('./scripts/import-building-catalog.cjs
 const { syncSingleCourse } = require('./scripts/build-sqlite-db.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
-const DB_PATH = path.join(ROOT, 'data', 'heiview.db');
+const { DATA_DIR, config: semesterConfig, getPaths, pathsFor, existingDbPath, withPaths,
+  semesterForDate, validDate, validSemester, today, databaseVersion } = require('./semesters.cjs');
 const PORT = Number.parseInt(process.env.PORT || '3001', 10);
 
 // ── Admin auth ──────────────────────────────────────────────────────────────
 const ADMIN_SECRET = process.env.ADMIN_SECRET || 'dev-secret-change-in-production';
-const ADMIN_ACCOUNTS_PATH = path.join(ROOT, 'data', 'admin-accounts.json');
-const AUDIT_LOG_PATH = path.join(ROOT, 'data', 'admin-audit.json');
+const ADMIN_ACCOUNTS_PATH = path.join(DATA_DIR, 'admin-accounts.json');
+const AUDIT_LOG_PATH = path.join(DATA_DIR, 'admin-audit.json');
 const MAX_AUDIT_ENTRIES = 2000;
 
 // Superadmin from env — always exists, cannot be deleted via UI
@@ -71,22 +72,16 @@ function audit(req, action, target, summary, snapshot) {
   appendAuditEntry({
     ts: new Date().toISOString(),
     username: req.adminUser || 'unknown',
+    semester: getPaths().semester,
     action,
     target: target || null,
     summary: summary || null,
     snapshot: snapshot || null,
   });
 }
-const SEASON = '2026SS';
-const COURSE_DIR = path.join(ROOT, 'data', SEASON);
-const OVERRIDES_DIR = path.join(COURSE_DIR, 'overrides');
-const CUSTOM_DIR = path.join(COURSE_DIR, 'custom');
-const SKIP_LIST_PATH = path.join(COURSE_DIR, 'skip', 'skip.json');
-const FEEDBACK_DIR = path.join(COURSE_DIR, 'feedback');
-const CATALOG_PATH = path.join(ROOT, 'data', 'building-catalog.json');
-const NOTE_LOCATION_MAP_PATH = path.join(ROOT, 'data', 'note-location-map.json');
-const FI_SKIP_PATH = path.join(ROOT, 'data', 'further-info-skip.json');
-const ORG_NAME_MAP_PATH = path.join(ROOT, 'data', 'org-name-map.json');
+const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
+const NOTE_LOCATION_MAP_PATH = path.join(DATA_DIR, 'note-location-map.json');
+const ORG_NAME_MAP_PATH = path.join(DATA_DIR, 'org-name-map.json');
 
 const scheduleCache = new Map(); // key -> { data, ts } — module-level so writeCatalog can clear it
 
@@ -152,7 +147,7 @@ function writeCatalog(catalog) {
   catalog.updatedAt = new Date().toISOString();
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2), 'utf8');
   try {
-    importBuildingCatalog();
+    if (fs.existsSync(getPaths().dbPath)) importBuildingCatalog();
   } catch (e) {
     console.error('[writeCatalog] SQLite sync failed:', e.message);
   }
@@ -210,11 +205,26 @@ function requireSuperAdmin(req, res, next) {
 }
 
 function readSkipList() {
-  try { return JSON.parse(fs.readFileSync(SKIP_LIST_PATH, 'utf8')); } catch (_) { return []; }
+  try { return JSON.parse(fs.readFileSync(getPaths().skipListPath, 'utf8')); } catch (_) { return []; }
 }
 
 function writeSkipList(list) {
-  fs.writeFileSync(SKIP_LIST_PATH, JSON.stringify(list, null, 2), 'utf8');
+  fs.mkdirSync(path.dirname(getPaths().skipListPath), { recursive: true });
+  fs.writeFileSync(getPaths().skipListPath, JSON.stringify(list, null, 2), 'utf8');
+  scheduleCache.clear();
+}
+
+function readFurtherInfoSkip() {
+  const paths = getPaths();
+  const legacy = path.join(DATA_DIR, 'further-info-skip.json');
+  const source = !fs.existsSync(paths.furtherInfoSkipPath) && paths.semester === semesterConfig.legacySemester
+    ? legacy : paths.furtherInfoSkipPath;
+  try { return JSON.parse(fs.readFileSync(source, 'utf8')); } catch (_) { return []; }
+}
+
+function writeFurtherInfoSkip(list) {
+  fs.mkdirSync(getPaths().courseDir, { recursive: true });
+  fs.writeFileSync(getPaths().furtherInfoSkipPath, JSON.stringify(list, null, 2), 'utf8');
 }
 
 function withLastUpdated(data) {
@@ -231,12 +241,12 @@ function getLastUpdatedMs(filePath) {
 // ────────────────────────────────────────────────────────────────────────────
 
 function openDb() {
-  if (!fs.existsSync(DB_PATH)) {
+  if (!fs.existsSync(getPaths().dbPath)) {
     throw new Error(
-      `SQLite database not found at ${DB_PATH}. Run \"npm run db:build\" first.`
+      `SQLite database not found at ${getPaths().dbPath}. Run \"npm run db:build\" first.`
     );
   }
-  return new Database(DB_PATH, { readonly: true });
+  return new Database(getPaths().dbPath, { readonly: true });
 }
 
 function makeCourseLabel(title, courseId) {
@@ -310,6 +320,79 @@ function createApp() {
   app.use(compression());
   app.use(express.json());
 
+  app.get('/api/semesters', (_req, res) => {
+    res.json({ timezone: semesterConfig.timezone,
+      semesters: Object.keys(semesterConfig.semesters).map(semester => {
+        const paths = pathsFor(semester);
+        return { semester, ready: fs.existsSync(existingDbPath(paths)) };
+      }),
+    });
+  });
+
+  app.use('/api', async (req, res, next) => {
+    const unrelated = /^\/(health|semesters|admin\/(login|accounts))$/.test(req.path);
+    if (unrelated) return next();
+    try {
+      const selectedDate = req.query.date;
+      const requestedSemester = req.query.semester;
+      if (selectedDate !== undefined && !validDate(selectedDate)) {
+        return res.status(400).json({ error: 'date must be a valid YYYY-MM-DD calendar date' });
+      }
+      const semester = selectedDate !== undefined ? semesterForDate(selectedDate)
+        : requestedSemester || semesterForDate(today());
+      if (!validSemester(semester) || (requestedSemester !== undefined && requestedSemester !== semester)) {
+        return res.status(400).json({ error: 'Invalid semester or date/semester mismatch' });
+      }
+      if ((req.path.startsWith('/admin/') || req.path === '/feedback' || req.path.startsWith('/course/')) && !requestedSemester) {
+        return res.status(400).json({ error: 'An explicit semester is required for feedback and admin operations' });
+      }
+      const paths = pathsFor(semester);
+      paths.dbPath = existingDbPath(paths);
+      if (req.method !== 'GET' && req.path.startsWith('/admin/')
+          && (fs.existsSync(path.join(paths.courseDir, '.db-sync.lock'))
+              || fs.existsSync(path.join(DATA_DIR, '.catalog-sync.lock')))) {
+        return res.status(409).json({ error: 'Database sync in progress; retry this edit after it completes' });
+      }
+      const writablePath = pathsFor(semester).dbPath;
+      if (req.method !== 'GET' && req.path.startsWith('/admin/') && paths.dbPath !== writablePath
+          && verifyAdminToken((req.headers.authorization || '').replace(/^Bearer /, ''))) {
+        // VACUUM INTO copies committed WAL content; the legacy file is untouched.
+        fs.mkdirSync(paths.courseDir, { recursive: true });
+        const legacy = new Database(paths.dbPath, { readonly: true });
+        try { legacy.prepare('VACUUM INTO ?').run(writablePath); }
+        finally { legacy.close(); }
+        paths.dbPath = writablePath;
+      }
+      if ((req.path === '/schedule' || req.path === '/search' || /^\/course\//.test(req.path))
+          && !fs.existsSync(paths.dbPath)) {
+        return res.status(503).json({ code: 'SEMESTER_NOT_READY', semester,
+          date: selectedDate || null, error: `Course data for ${semester} is not ready` });
+      }
+      // All existing readers/writers use this request-local context, including
+      // asynchronous uploads; no process-wide current semester is changed.
+      withPaths(paths, () => {
+        res.setHeader('X-HeiView-Semester', semester);
+        const sendJson = res.json.bind(res);
+        res.json = value => {
+          const annotate = item => {
+            if (!item || typeof item !== 'object') return;
+            if (item.course && typeof item.course === 'object') item.course.semester = semester;
+            if (Array.isArray(item.courses)) item.courses.forEach(course => { course.semester = semester; });
+            if (item.rooms && !Array.isArray(item.rooms)) {
+              Object.values(item.rooms).filter(Array.isArray).forEach(rooms => rooms.forEach(annotate));
+            }
+          };
+          if (Array.isArray(value)) value.forEach(annotate);
+          else annotate(value);
+          return sendJson(value);
+        };
+        next();
+      });
+    } catch (err) {
+      res.status(400).json({ error: err.message });
+    }
+  });
+
   app.get('/api/health', (_req, res) => {
     res.json({ ok: true });
   });
@@ -331,6 +414,7 @@ function createApp() {
     }
 
     const skipSet = new Set(readSkipList().map(String));
+    const referenceDate = typeof req.query.date === 'string' ? req.query.date : today();
 
     // Expand organisation search to include synonyms (English ↔ German ↔ abbreviations)
     const orgExpansionPatterns = getOrgExpansionPatterns(qLower);
@@ -369,7 +453,7 @@ function createApp() {
         LEFT JOIN (
           SELECT course_id, building_name, room,
                  start_time, end_time, note,
-                 MIN(CASE WHEN date >= date('now') THEN date END) AS next_date,
+                 MIN(CASE WHEN date >= @referenceDate THEN date END) AS next_date,
                  MAX(date) AS last_date,
                  MIN(slot_start_date) AS slot_start_date,
                  MAX(slot_end_date) AS slot_end_date
@@ -386,7 +470,7 @@ function createApp() {
           ${orgExpansionSql}
         ORDER BY c.title
         LIMIT 300
-      `).all({ p: pattern, lp: lecturerPattern, ...orgExpansionParams });
+      `).all({ p: pattern, lp: lecturerPattern, referenceDate, ...orgExpansionParams });
 
       // Also search building/room names
       const roomRows = db.prepare(`
@@ -410,7 +494,7 @@ function createApp() {
           SELECT course_id, building_name, room,
                  MIN(start_time) AS start_time, MIN(end_time) AS end_time,
                  MIN(note) AS note,
-                 MIN(CASE WHEN date >= date('now') THEN date END) AS next_date,
+                 MIN(CASE WHEN date >= @referenceDate THEN date END) AS next_date,
                  MAX(date) AS last_date,
                  MIN(slot_start_date) AS slot_start_date,
                  MAX(slot_end_date) AS slot_end_date
@@ -422,7 +506,7 @@ function createApp() {
           LOWER(COALESCE(o.building_name, '')) LIKE @p OR
           LOWER(COALESCE(o.room, '')) LIKE @p
         LIMIT 300
-      `).all({ p: pattern });
+      `).all({ p: pattern, referenceDate });
 
       // Merge and deduplicate by (course_id, building_name, room)
       const seen = new Set();
@@ -543,6 +627,9 @@ function createApp() {
     const idx = log.findIndex(e => e.id === entryId);
     if (idx === -1) { res.status(404).json({ error: 'Log entry not found' }); return; }
     const entry = log[idx];
+    if ((entry.semester || semesterConfig.legacySemester) !== getPaths().semester) {
+      return res.status(409).json({ error: 'Select the audit entry semester before undoing it' });
+    }
     if (entry.undone) { res.status(409).json({ error: 'Already undone' }); return; }
     const { action, snapshot } = entry;
     if (!snapshot) { res.status(400).json({ error: 'No snapshot — cannot undo this entry' }); return; }
@@ -558,16 +645,16 @@ function createApp() {
         }
         case 'edit_course': {
           if (!snapshot.previousData) { res.status(400).json({ error: 'No previous data in snapshot' }); return; }
-          const ovPath = path.join(OVERRIDES_DIR, `course-${snapshot.courseId}.json`);
-          if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
+          const ovPath = path.join(getPaths().overridesDir, `course-${snapshot.courseId}.json`);
+          if (!fs.existsSync(getPaths().overridesDir)) fs.mkdirSync(getPaths().overridesDir, { recursive: true });
           fs.writeFileSync(ovPath, JSON.stringify(withLastUpdated(snapshot.previousData), null, 2), 'utf8');
           try { syncSingleCourse(snapshot.courseId); } catch (_) {} break;
         }
         case 'create_course': {
-          const customFilePath = path.join(CUSTOM_DIR, `course-${snapshot.courseId}.json`);
+          const customFilePath = path.join(getPaths().customDir, `course-${snapshot.courseId}.json`);
           if (fs.existsSync(customFilePath)) fs.unlinkSync(customFilePath);
-          if (fs.existsSync(DB_PATH)) {
-            const db = new Database(DB_PATH);
+          if (fs.existsSync(getPaths().dbPath)) {
+            const db = new Database(getPaths().dbPath);
             try {
               db.prepare('DELETE FROM occurrences WHERE course_id = ?').run(snapshot.courseId);
               db.prepare('DELETE FROM courses WHERE id = ?').run(snapshot.courseId);
@@ -585,8 +672,8 @@ function createApp() {
                 return { ...w, room: origRoom || null, building: origBuilding || null };
               return w;
             });
-            const ovPath = path.join(OVERRIDES_DIR, `course-${cid}.json`);
-            if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
+            const ovPath = path.join(getPaths().overridesDir, `course-${cid}.json`);
+            if (!fs.existsSync(getPaths().overridesDir)) fs.mkdirSync(getPaths().overridesDir, { recursive: true });
             fs.writeFileSync(ovPath, JSON.stringify(withLastUpdated({ ...data, weeks }), null, 2), 'utf8');
             try { syncSingleCourse(cid); } catch (_) {}
           } break;
@@ -691,13 +778,13 @@ function createApp() {
   });
 
   // GET /api/admin/stale-overrides
-  // Returns override files whose source JSON in COURSE_DIR has been updated more recently,
+  // Returns override files whose source JSON in getPaths().courseDir has been updated more recently,
   // excluding cases where the only changed field is last_updated (crawler timestamp noise).
   // Also returns overrides whose source file no longer exists (sourceDeleted: true).
   app.get('/api/admin/stale-overrides', requireAdmin, (req, res) => {
     // Fields that are irrelevant for staleness — changes to these alone are not reported.
     const IGNORED_FIELDS = new Set(['last_updated']);
-    const DELETED_DIR = path.join(COURSE_DIR, 'deleted');
+    const DELETED_DIR = path.join(getPaths().courseDir, 'deleted');
 
     function hasMeaningfulChanges(srcObj, ovObj) {
       const allKeys = new Set([...Object.keys(srcObj), ...Object.keys(ovObj)]);
@@ -712,13 +799,13 @@ function createApp() {
       const stale = [];
       const sourceDeleted = [];
       let files;
-      try { files = fs.readdirSync(OVERRIDES_DIR); } catch (_) { files = []; }
+      try { files = fs.readdirSync(getPaths().overridesDir); } catch (_) { files = []; }
       for (const file of files) {
         const m = file.match(/^course-(.+)\.json$/);
         if (!m) continue;
         const courseId = m[1];
-        const ovPath = path.join(OVERRIDES_DIR, file);
-        const srcPath = path.join(COURSE_DIR, file);
+        const ovPath = path.join(getPaths().overridesDir, file);
+        const srcPath = path.join(getPaths().courseDir, file);
 
         // Source file missing — check whether it was moved to deleted/
         if (!fs.existsSync(srcPath)) {
@@ -748,14 +835,14 @@ function createApp() {
   });
 
   // GET /api/admin/course-file-both/:courseId
-  // Returns both the source (COURSE_DIR) and override versions of a course file.
+  // Returns both the source (getPaths().courseDir) and override versions of a course file.
   app.get('/api/admin/course-file-both/:courseId', requireAdmin, (req, res) => {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
     const filename = `course-${courseId}.json`;
     try {
-      const srcPath = path.join(COURSE_DIR, filename);
-      const ovPath = path.join(OVERRIDES_DIR, filename);
+      const srcPath = path.join(getPaths().courseDir, filename);
+      const ovPath = path.join(getPaths().overridesDir, filename);
       const source = fs.existsSync(srcPath) ? JSON.parse(fs.readFileSync(srcPath, 'utf8')) : null;
       const override = fs.existsSync(ovPath) ? JSON.parse(fs.readFileSync(ovPath, 'utf8')) : null;
       const srcMtime = fs.existsSync(srcPath) ? getLastUpdatedMs(srcPath) : null;
@@ -771,7 +858,7 @@ function createApp() {
   app.post('/api/admin/stale-overrides/:courseId/dismiss', requireAdmin, (req, res) => {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
-    const ovPath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
+    const ovPath = path.join(getPaths().overridesDir, `course-${courseId}.json`);
     if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
     try {
       const content = JSON.parse(fs.readFileSync(ovPath, 'utf8'));
@@ -793,8 +880,8 @@ function createApp() {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
     const filename = `course-${courseId}.json`;
-    const srcPath = path.join(COURSE_DIR, filename);
-    const ovPath = path.join(OVERRIDES_DIR, filename);
+    const srcPath = path.join(getPaths().courseDir, filename);
+    const ovPath = path.join(getPaths().overridesDir, filename);
     if (!fs.existsSync(srcPath)) { res.status(404).json({ error: 'Source file not found' }); return; }
     if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
     try {
@@ -844,8 +931,8 @@ function createApp() {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
     const filename = `course-${courseId}.json`;
-    const srcPath = path.join(COURSE_DIR, filename);
-    const ovPath = path.join(OVERRIDES_DIR, filename);
+    const srcPath = path.join(getPaths().courseDir, filename);
+    const ovPath = path.join(getPaths().overridesDir, filename);
     if (!fs.existsSync(srcPath)) { res.status(404).json({ error: 'Source file not found' }); return; }
     if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
     try {
@@ -866,7 +953,7 @@ function createApp() {
   app.delete('/api/admin/overrides/:courseId', requireAdmin, (req, res) => {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
-    const ovPath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
+    const ovPath = path.join(getPaths().overridesDir, `course-${courseId}.json`);
     if (!fs.existsSync(ovPath)) { res.status(404).json({ error: 'Override not found' }); return; }
     try {
       fs.unlinkSync(ovPath);
@@ -881,8 +968,8 @@ function createApp() {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
     const filename = `course-${courseId}.json`;
-    const overridePath = path.join(OVERRIDES_DIR, filename);
-    const originalPath = path.join(COURSE_DIR, filename);
+    const overridePath = path.join(getPaths().overridesDir, filename);
+    const originalPath = path.join(getPaths().courseDir, filename);
     try {
       if (fs.existsSync(overridePath)) {
         res.json(JSON.parse(fs.readFileSync(overridePath, 'utf8')));
@@ -900,15 +987,15 @@ function createApp() {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
     const filename = `course-${courseId}.json`;
-    const overridePath = path.join(OVERRIDES_DIR, filename);
+    const overridePath = path.join(getPaths().overridesDir, filename);
     try {
       // Capture previous state before overwriting
       let previousData = null;
       try {
-        const prevPath = fs.existsSync(overridePath) ? overridePath : path.join(COURSE_DIR, filename);
+        const prevPath = fs.existsSync(overridePath) ? overridePath : path.join(getPaths().courseDir, filename);
         if (fs.existsSync(prevPath)) previousData = JSON.parse(fs.readFileSync(prevPath, 'utf8'));
       } catch (_) {}
-      if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
+      if (!fs.existsSync(getPaths().overridesDir)) fs.mkdirSync(getPaths().overridesDir, { recursive: true });
       fs.writeFileSync(overridePath, JSON.stringify(withLastUpdated(req.body), null, 2), 'utf8');
       try { syncSingleCourse(courseId); } catch (e) { console.error('[PUT course-file] SQLite sync failed:', e.message); }
       // Auto-upsert rooms into catalog so they appear on days with no courses
@@ -971,8 +1058,8 @@ function createApp() {
     };
 
     try {
-      if (!fs.existsSync(CUSTOM_DIR)) fs.mkdirSync(CUSTOM_DIR, { recursive: true });
-      const filePath = path.join(CUSTOM_DIR, `course-${courseId}.json`);
+      if (!fs.existsSync(getPaths().customDir)) fs.mkdirSync(getPaths().customDir, { recursive: true });
+      const filePath = path.join(getPaths().customDir, `course-${courseId}.json`);
       fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), 'utf8');
       try { syncSingleCourse(courseId); } catch (e) { console.error('[POST course-file] SQLite sync failed:', e.message); }
       audit(req, 'create_course', courseId, `Created custom event: ${payload.title}`, { courseId });
@@ -986,20 +1073,20 @@ function createApp() {
   // ── Batch edit helpers ────────────────────────────────────────────────────
   function resolveCoursePath(courseId) {
     const fileName = `course-${courseId}.json`;
-    const overridePath = path.join(OVERRIDES_DIR, fileName);
+    const overridePath = path.join(getPaths().overridesDir, fileName);
     if (fs.existsSync(overridePath)) return overridePath;
-    const customPath = path.join(CUSTOM_DIR, fileName);
+    const customPath = path.join(getPaths().customDir, fileName);
     if (fs.existsSync(customPath)) return customPath;
-    const originalPath = path.join(COURSE_DIR, fileName);
+    const originalPath = path.join(getPaths().courseDir, fileName);
     if (fs.existsSync(originalPath)) return originalPath;
     return null;
   }
 
   function getAllCourseIds() {
     const ids = new Set();
-    try { for (const f of fs.readdirSync(COURSE_DIR)) { const m = f.match(/^course-(.+)\.json$/); if (m) ids.add(m[1]); } } catch (_) {}
-    try { for (const f of fs.readdirSync(OVERRIDES_DIR)) { const m = f.match(/^course-(.+)\.json$/); if (m) ids.add(m[1]); } } catch (_) {}
-    try { for (const f of fs.readdirSync(CUSTOM_DIR)) { const m = f.match(/^course-(.+)\.json$/); if (m) ids.add(m[1]); } } catch (_) {}
+    try { for (const f of fs.readdirSync(getPaths().courseDir)) { const m = f.match(/^course-(.+)\.json$/); if (m) ids.add(m[1]); } } catch (_) {}
+    try { for (const f of fs.readdirSync(getPaths().overridesDir)) { const m = f.match(/^course-(.+)\.json$/); if (m) ids.add(m[1]); } } catch (_) {}
+    try { for (const f of fs.readdirSync(getPaths().customDir)) { const m = f.match(/^course-(.+)\.json$/); if (m) ids.add(m[1]); } } catch (_) {}
     return [...ids];
   }
 
@@ -1009,8 +1096,8 @@ function createApp() {
     const results = [];
     // Read from source files only (original + custom), not overrides
     const sourceFiles = [];
-    try { for (const f of fs.readdirSync(COURSE_DIR)) { if (f.startsWith('course-') && f.endsWith('.json')) sourceFiles.push({ path: path.join(COURSE_DIR, f), id: f.slice(7, -5) }); } } catch (_) {}
-    try { for (const f of fs.readdirSync(CUSTOM_DIR)) { if (f.startsWith('course-') && f.endsWith('.json')) sourceFiles.push({ path: path.join(CUSTOM_DIR, f), id: f.slice(7, -5) }); } } catch (_) {}
+    try { for (const f of fs.readdirSync(getPaths().courseDir)) { if (f.startsWith('course-') && f.endsWith('.json')) sourceFiles.push({ path: path.join(getPaths().courseDir, f), id: f.slice(7, -5) }); } } catch (_) {}
+    try { for (const f of fs.readdirSync(getPaths().customDir)) { if (f.startsWith('course-') && f.endsWith('.json')) sourceFiles.push({ path: path.join(getPaths().customDir, f), id: f.slice(7, -5) }); } } catch (_) {}
     for (const { path: p, id: courseId } of sourceFiles) {
       let data;
       try { data = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) { continue; }
@@ -1019,7 +1106,7 @@ function createApp() {
       const weeks = Array.isArray(data.weeks) ? data.weeks : [];
       if (weeks.length > 0) continue;
       // Check if override exists with weeks
-      const overridePath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
+      const overridePath = path.join(getPaths().overridesDir, `course-${courseId}.json`);
       let hasOverride = false;
       if (fs.existsSync(overridePath)) {
         try {
@@ -1034,19 +1121,15 @@ function createApp() {
 
   // GET /api/admin/further-info-skip
   app.get('/api/admin/further-info-skip', requireAdmin, (req, res) => {
-    try {
-      if (!fs.existsSync(FI_SKIP_PATH)) { res.json([]); return; }
-      res.json(JSON.parse(fs.readFileSync(FI_SKIP_PATH, 'utf8')));
-    } catch (_) { res.json([]); }
+    res.json(readFurtherInfoSkip());
   });
 
   // POST /api/admin/further-info-skip/:courseId
   app.post('/api/admin/further-info-skip/:courseId', requireAdmin, (req, res) => {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
-    let list = [];
-    try { if (fs.existsSync(FI_SKIP_PATH)) list = JSON.parse(fs.readFileSync(FI_SKIP_PATH, 'utf8')); } catch (_) {}
-    if (!list.includes(courseId)) { list.push(courseId); fs.writeFileSync(FI_SKIP_PATH, JSON.stringify(list, null, 2), 'utf8'); }
+    const list = readFurtherInfoSkip();
+    if (!list.includes(courseId)) { list.push(courseId); writeFurtherInfoSkip(list); }
     res.json({ ok: true });
   });
 
@@ -1054,10 +1137,7 @@ function createApp() {
   app.delete('/api/admin/further-info-skip/:courseId', requireAdmin, (req, res) => {
     const { courseId } = req.params;
     if (!/^[\w\-\.]+$/.test(courseId)) { res.status(400).json({ error: 'Invalid course ID' }); return; }
-    let list = [];
-    try { if (fs.existsSync(FI_SKIP_PATH)) list = JSON.parse(fs.readFileSync(FI_SKIP_PATH, 'utf8')); } catch (_) {}
-    list = list.filter(id => id !== courseId);
-    fs.writeFileSync(FI_SKIP_PATH, JSON.stringify(list, null, 2), 'utf8');
+    writeFurtherInfoSkip(readFurtherInfoSkip().filter(id => id !== courseId));
     res.json({ ok: true });
   });
 
@@ -1118,9 +1198,9 @@ function createApp() {
       });
       if (!changed) continue;
 
-      const overridePath = path.join(OVERRIDES_DIR, `course-${courseId}.json`);
+      const overridePath = path.join(getPaths().overridesDir, `course-${courseId}.json`);
       try {
-        if (!fs.existsSync(OVERRIDES_DIR)) fs.mkdirSync(OVERRIDES_DIR, { recursive: true });
+        if (!fs.existsSync(getPaths().overridesDir)) fs.mkdirSync(getPaths().overridesDir, { recursive: true });
         fs.writeFileSync(overridePath, JSON.stringify(withLastUpdated({ ...data, weeks: newWeeks }), null, 2), 'utf8');
         try { syncSingleCourse(courseId); } catch (e) { console.error(`[batch] sync failed for ${courseId}:`, e.message); }
         updatedCourseIds.push(courseId);
@@ -1238,8 +1318,8 @@ function createApp() {
 
   // Helper: query distinct course_ids in occurrences for given building name variants
   function coursesOnBuilding(building) {
-    if (!fs.existsSync(DB_PATH)) return [];
-    const db = new Database(DB_PATH, { readonly: true });
+    if (!fs.existsSync(getPaths().dbPath)) return [];
+    const db = new Database(getPaths().dbPath, { readonly: true });
     try {
       const names = buildingNames(building);
       if (names.length === 0) return [];
@@ -1252,8 +1332,8 @@ function createApp() {
 
   // Helper: query distinct course_ids in occurrences for a specific room in a building
   function coursesOnRoom(building, roomName) {
-    if (!fs.existsSync(DB_PATH)) return [];
-    const db = new Database(DB_PATH, { readonly: true });
+    if (!fs.existsSync(getPaths().dbPath)) return [];
+    const db = new Database(getPaths().dbPath, { readonly: true });
     try {
       const names = buildingNames(building);
       if (names.length === 0) return [];
@@ -1530,7 +1610,7 @@ function createApp() {
 
   function setScheduleCache(key, data) {
     // Limit cache size to avoid unbounded growth
-    if (scheduleCache.size > 200) {
+    if (scheduleCache.size >= 200) {
       const oldest = scheduleCache.keys().next().value;
       scheduleCache.delete(oldest);
     }
@@ -1558,10 +1638,10 @@ function createApp() {
 
     // Allow short-term browser caching for non-admin requests (server cache is 60s).
     // Admin requests always get fresh data.
-    res.setHeader('Cache-Control', isAdmin ? 'no-store' : 'public, max-age=30');
+    res.setHeader('Cache-Control', 'no-cache');
 
     // Admin requests bypass cache (skip list excluded, may see hidden courses)
-    const cacheKey = isAdmin ? null : `${date}|${buildingFilter || ''}`;
+    const cacheKey = isAdmin ? null : `${getPaths().semester}|${databaseVersion(getPaths())}|${date}|${buildingFilter || ''}`;
     if (cacheKey) {
       const cached = getScheduleCache(cacheKey);
       if (cached) {
@@ -1918,7 +1998,7 @@ function createApp() {
           campus: buildingCampusMap.get(id) || null,
         }));
 
-      const responseData = { buildings, rooms };
+      const responseData = { date, semester: getPaths().semester, buildings, rooms };
 
       // Attach sync metadata
       try {
@@ -1944,8 +2024,8 @@ function createApp() {
 
   const feedbackStorage = multer.diskStorage({
     destination: (_req, _file, cb) => {
-      if (!fs.existsSync(FEEDBACK_DIR)) fs.mkdirSync(FEEDBACK_DIR, { recursive: true });
-      cb(null, FEEDBACK_DIR);
+      if (!fs.existsSync(getPaths().feedbackDir)) fs.mkdirSync(getPaths().feedbackDir, { recursive: true });
+      cb(null, getPaths().feedbackDir);
     },
     filename: (req, file, cb) => {
       // Extract extension from original name and validate against allowlist
@@ -1989,6 +2069,7 @@ function createApp() {
       }
       const uploadedFiles = (req.files || []).map(f => path.basename(f.path));
       const feedback = {
+        semester: getPaths().semester,
         id,
         courseId: courseId.slice(0, 100),
         courseTitle: (courseTitle || '').slice(0, 300),
@@ -1999,9 +2080,9 @@ function createApp() {
         submittedAt: new Date().toISOString(),
         status: 'pending',
       };
-      if (!fs.existsSync(FEEDBACK_DIR)) fs.mkdirSync(FEEDBACK_DIR, { recursive: true });
+      if (!fs.existsSync(getPaths().feedbackDir)) fs.mkdirSync(getPaths().feedbackDir, { recursive: true });
       try {
-        fs.writeFileSync(path.join(FEEDBACK_DIR, `${id}.json`), JSON.stringify(feedback, null, 2), 'utf8');
+        fs.writeFileSync(path.join(getPaths().feedbackDir, `${id}.json`), JSON.stringify(feedback, null, 2), 'utf8');
         res.json({ ok: true, id });
       } catch (e) {
         res.status(500).json({ error: 'Failed to save feedback' });
@@ -2012,12 +2093,12 @@ function createApp() {
   // GET /api/admin/feedback — list all feedback submissions
   app.get('/api/admin/feedback', requireAdmin, (_req, res) => {
     try {
-      if (!fs.existsSync(FEEDBACK_DIR)) { res.json([]); return; }
+      if (!fs.existsSync(getPaths().feedbackDir)) { res.json([]); return; }
       const items = [];
-      for (const file of fs.readdirSync(FEEDBACK_DIR)) {
+      for (const file of fs.readdirSync(getPaths().feedbackDir)) {
         if (!file.endsWith('.json')) continue;
         try {
-          const data = JSON.parse(fs.readFileSync(path.join(FEEDBACK_DIR, file), 'utf8'));
+          const data = JSON.parse(fs.readFileSync(path.join(getPaths().feedbackDir, file), 'utf8'));
           items.push({
             id: data.id, courseId: data.courseId, courseTitle: data.courseTitle,
             email: data.email, message: data.message, files: data.files || [],
@@ -2035,7 +2116,7 @@ function createApp() {
   app.get('/api/admin/feedback/:id', requireAdmin, (req, res) => {
     const { id } = req.params;
     if (!/^feedback-[\w\-]+$/.test(id)) { res.status(400).json({ error: 'Invalid ID' }); return; }
-    const feedbackPath = path.join(FEEDBACK_DIR, `${id}.json`);
+    const feedbackPath = path.join(getPaths().feedbackDir, `${id}.json`);
     if (!fs.existsSync(feedbackPath)) { res.status(404).json({ error: 'Feedback not found' }); return; }
     try {
       const feedback = JSON.parse(fs.readFileSync(feedbackPath, 'utf8'));
@@ -2052,8 +2133,8 @@ function createApp() {
   app.get('/api/admin/feedback/:id/file/:filename', requireAdmin, (req, res) => {
     const { filename } = req.params;
     if (!/^[\w\-\.]+$/.test(filename)) { res.status(400).json({ error: 'Invalid filename' }); return; }
-    const filePath = path.resolve(FEEDBACK_DIR, filename);
-    if (!filePath.startsWith(path.resolve(FEEDBACK_DIR))) { res.status(400).json({ error: 'Invalid path' }); return; }
+    const filePath = path.resolve(getPaths().feedbackDir, filename);
+    if (!filePath.startsWith(path.resolve(getPaths().feedbackDir))) { res.status(400).json({ error: 'Invalid path' }); return; }
     if (!fs.existsSync(filePath)) { res.status(404).json({ error: 'File not found' }); return; }
     res.sendFile(filePath);
   });
@@ -2062,7 +2143,7 @@ function createApp() {
   app.post('/api/admin/feedback/:id/dismiss', requireAdmin, (req, res) => {
     const { id } = req.params;
     if (!/^feedback-[\w\-]+$/.test(id)) { res.status(400).json({ error: 'Invalid ID' }); return; }
-    const feedbackPath = path.join(FEEDBACK_DIR, `${id}.json`);
+    const feedbackPath = path.join(getPaths().feedbackDir, `${id}.json`);
     if (!fs.existsSync(feedbackPath)) { res.status(404).json({ error: 'Feedback not found' }); return; }
     try {
       const data = JSON.parse(fs.readFileSync(feedbackPath, 'utf8'));
@@ -2078,7 +2159,7 @@ function createApp() {
   app.post('/api/admin/feedback/:id/send-email', requireAdmin, (req, res) => {
     const { id } = req.params;
     if (!/^feedback-[\w\-]+$/.test(id)) { res.status(400).json({ error: 'Invalid ID' }); return; }
-    const feedbackPath = path.join(FEEDBACK_DIR, `${id}.json`);
+    const feedbackPath = path.join(getPaths().feedbackDir, `${id}.json`);
     if (!fs.existsSync(feedbackPath)) { res.status(404).json({ error: 'Feedback not found' }); return; }
     let feedbackData;
     try { feedbackData = JSON.parse(fs.readFileSync(feedbackPath, 'utf8')); }
@@ -2115,7 +2196,9 @@ function createApp() {
   return app;
 }
 
-const app = createApp();
-app.listen(PORT, () => {
-  console.log(`SQLite API listening on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  createApp().listen(PORT, () => {
+    console.log(`SQLite API listening on http://localhost:${PORT}`);
+  });
+}
+module.exports = { createApp };
