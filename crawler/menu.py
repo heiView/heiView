@@ -87,6 +87,11 @@ def choose(label: str, choices: list[tuple[str, str]], default: str) -> str:
         print('无效选项，请重新输入。')
 
 
+def semester_choices() -> list[tuple[str, str]]:
+    semesters = sorted(SEMESTERS, key=lambda key: (int(key[:4]), key[4:] == 'WS'), reverse=True)
+    return [(key, key) for key in semesters]
+
+
 def integer(label: str, default: int | None, *, minimum: int, optional: bool = False) -> int | None:
     default_text = '不限' if default is None else str(default)
     while True:
@@ -153,7 +158,7 @@ def configure_crawl() -> CrawlOptions | SavedTaskAction | None:
             if index < len(steps):
                 step = steps[index]
                 if step == 'semester':
-                    draft[step] = choose('选择学期', [(key, key) for key in SEMESTERS], draft[step])
+                    draft[step] = choose('选择学期', semester_choices(), draft[step])
                     saved_action = offer_saved_task(draft[step])
                     if saved_action is not None:
                         return saved_action
@@ -228,7 +233,7 @@ def run_crawl() -> None:
 
 def run_database_sync() -> None:
     try:
-        semester = choose('选择要同步的学期', [(key, key) for key in SEMESTERS], DEFAULT_SEMESTER)
+        semester = choose('选择要同步的学期', semester_choices(), DEFAULT_SEMESTER)
         print(f'数据目录：{DATA_DIR / semester}')
         print(f'HEIVIEW_SEMESTER={semester} npm run db:sync')
         if yes_no('执行数据库同步', False):
