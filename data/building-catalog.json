@@ -5402,6 +5402,13 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-460::rm-nct-treffpunkt-3-og-am-aufzug",
+          "name": "(NCT) - Treffpunkt 3.OG am Aufzug",
+          "floors": [],
+          "features": {},
+          "notes": ""
         }
       ],
       "notes": ""
@@ -8736,6 +8743,15 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-mannheimer-str-1::rm-gmmg-studiensekretariat-mannheimer-str-1-eg",
+          "name": "GMMG-Studiensekretariat, Mannheimer Str.1, EG",
+          "floors": [
+            "Ground floor"
+          ],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ],
       "notes": ""

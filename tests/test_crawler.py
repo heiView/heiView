@@ -495,7 +495,7 @@ class MenuTests(unittest.TestCase):
         self.assertEqual(self.configure([''] * 7 + ['r']), crawler.CrawlOptions())
 
     def test_invalid_values_are_retried(self):
-        options = self.configure(['invalid', '2', 'list', 'reverse', '0', '2', '-1', '150', '0', '3', 'maybe', 'n', 'r'])
+        options = self.configure(['invalid', '1', 'list', 'reverse', '0', '2', '-1', '150', '0', '3', 'maybe', 'n', 'r'])
         self.assertEqual(options, crawler.CrawlOptions(number=2, skip=150, concurrency=3, reverse=True))
 
     def test_edit_summary_preserves_settings(self):
@@ -504,7 +504,7 @@ class MenuTests(unittest.TestCase):
 
     def test_back_can_switch_to_url_mode_and_edit_urls(self):
         second_url = DETAIL_URL.replace('/123?', '/456?')
-        options = self.configure(['1', 'list', 'b', 'urls', '5', 'n', DETAIL_URL, 'b', second_url, 'r'])
+        options = self.configure(['2', 'list', 'b', 'urls', '5', 'n', DETAIL_URL, 'b', second_url, 'r'])
         self.assertEqual(options.semester, '2026SS')
         self.assertEqual(options.url, (second_url,))
         self.assertFalse(options.reverse)
@@ -544,7 +544,7 @@ class MenuTests(unittest.TestCase):
         self.assertEqual(result, menu.SavedTaskAction(options, sync_only=True))
 
     def test_manual_database_operation_uses_shared_sync_function(self):
-        with patch('builtins.input', side_effect=['2026SS', 'y']), \
+        with patch('builtins.input', side_effect=['2', 'y']), \
                 patch.object(menu, 'sync_database', AsyncMock()) as sync, redirect_stdout(StringIO()):
             menu.run_database_sync()
         sync.assert_awaited_once_with('2026SS')
