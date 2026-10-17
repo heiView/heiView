@@ -58,4 +58,4 @@ function matchesOrganisation(organisation, filter, lookup) {
   });
 }
 
-module.exports = { loadOrgSynonymLookup, matchesOrganisation };
+module.exports = { normalizeOrganisation, loadOrgSynonymLookup, matchesOrganisation };

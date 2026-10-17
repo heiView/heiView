@@ -1,3 +1,85 @@
+const { normalizeBuildingKey } = require('./building-aliases.cjs');
+
+function splitOgFloor(value) {
+  const text = String(value || '').trim();
+  const pattern = /(?<![\d.])(\d+)\s*\.\s*OG\b\.?/gi;
+  const floors = [...text.matchAll(pattern)].map(match => Number(match[1]));
+  // Conflicting floor markers cannot identify a single occurrence's floor.
+  if (!floors.length || new Set(floors).size !== 1) return { room: text, floorLabel: null };
+  const room = text.replace(pattern, ' ').split(',').map(part => part.replace(/\s+/g, ' ').trim())
+    .filter(Boolean).join(', ');
+  return { room, floorLabel: ordinalFloorLabel(floors[0]) };
+}
+
+const INF_440 = 'Im Neuenheimer Feld 440';
+const INF_440_STATIONS = ['Station Geburtshilfe', 'Station Gynäkologie'];
+const isInf440Station = value => /^Station\s+(?:Geburtshilfe|Gyn(?:ä|ae)kologie)$/i.test(value);
+const isInf440Address = value => /^(?:INF\s*440|Im\s+Neuenheimer\s+Feld\s+440)$/i.test(value);
+
+function parseInf440Station(room, location, building) {
+  const fields = [room, location, building].map(splitOgFloor);
+  const hasStation = fields.some(field => field.room.split(',').some(part => isInf440Station(part.trim())));
+  const hasAddressWithFloor = fields.some(field => field.room.split(',').some(part => isInf440Address(part.trim())))
+    && fields.some(field => field.floorLabel);
+  if (!hasStation && !hasAddressWithFloor) return null;
+  const remaining = fields.map(field => field.room.split(',').map(part => part.trim())
+    .filter(part => part && !isInf440Station(part)
+      && !isInf440Address(part)).join(', '));
+  return { buildingName: INF_440, room: remaining.find(Boolean) || 'Unbekannter Raum',
+    floorLabel: fields.find(field => field.floorLabel)?.floorLabel || null };
+}
+
+function ensureInf440StationRoom(catalog, parsed) {
+  if (!parsed) return null;
+  let changed = false;
+  const ids = new Set((catalog.buildings || []).flatMap(building =>
+    [building.id, ...(building.rooms || []).map(room => room.id)]));
+  const uniqueId = base => {
+    let id = base;
+    for (let suffix = 2; ids.has(id); suffix++) id = `${base}-${suffix}`;
+    ids.add(id);
+    return id;
+  };
+  let building = catalog.buildings.find(item => normalizeBuildingKey(item.street) === normalizeBuildingKey(INF_440));
+  if (!building) {
+    building = { id: uniqueId('bld-im-neuenheimer-feld-440'), street: INF_440,
+      displayName: 'INF 440', campusId: 'im-neuenheimer-feld', aliases: [], floors: [], rooms: [] };
+    catalog.buildings.push(building);
+    changed = true;
+  }
+  if (building.campusId !== 'im-neuenheimer-feld') {
+    building.campusId = 'im-neuenheimer-feld';
+    changed = true;
+  }
+  if (!Array.isArray(building.aliases)) building.aliases = [];
+  for (const alias of ['INF 440', ...INF_440_STATIONS]) {
+    if (!building.aliases.some(name => normalizeBuildingKey(name) === normalizeBuildingKey(alias))) {
+      building.aliases.push(alias);
+      changed = true;
+    }
+  }
+  if (!Array.isArray(building.rooms)) building.rooms = [];
+  const key = normalizeBuildingKey(parsed.room);
+  let room = building.rooms.find(item => [item.name, item.displayName]
+    .some(name => name && normalizeBuildingKey(name) === key));
+  if (!room) {
+    const slug = parsed.room.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    room = { id: uniqueId(`${building.id}::rm-${slug || 'unbekannt'}`), name: parsed.room,
+      floors: [], features: {}, notes: '' };
+    building.rooms.push(room);
+    changed = true;
+  }
+  if (!room.features) room.features = {};
+  for (const item of [building, room]) {
+    if (!Array.isArray(item.floors)) item.floors = [];
+    if (parsed.floorLabel && !item.floors.includes(parsed.floorLabel)) {
+      item.floors.push(parsed.floorLabel);
+      changed = true;
+    }
+  }
+  return { building, room, changed };
+}
+
 // The number in parentheses is source metadata, not part of the room name.
 // Keep the leading room number as a string so rooms such as "002" retain zeros.
 function parseHausZumRiesen(value) {
@@ -131,6 +213,9 @@ function ensureRoomCodeRoom(index, parsedCode) {
 }
 
 module.exports = {
+  splitOgFloor,
+  parseInf440Station,
+  ensureInf440StationRoom,
   parseHausZumRiesen,
   parseBgLudwigshafen,
   ordinalFloorLabel,

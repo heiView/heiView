@@ -50,6 +50,12 @@ Bare room codes in the format `BBBB.FF.RRR` also resolve automatically. The cata
 
 Compact nine-digit codes such as `440002212` are normalized in the same way (`4400.02.212`). The matcher also extracts them from text such as `Raum 440002212 (CATS)` and checks both the `room` and `location` fields. Existing rooms are reused; if only the building code is known, the missing room is added to that building with the normalized code.
 
+Before falling back to Other, courses can also reuse existing rooms through their organisation: the organisation must match a known building's street, display name or alias, and either `room` or `location` must match a room's name or display name within that building. For example, `Hochschule für Jüdische Studien Heidelberg` (or `HfJS`) with `Seminarraum 2` resolves to the existing room in `Landfriedstraße 12`. Matching ignores case and extra whitespace, requires an unambiguous result, preserves known building assignments and does not create rooms based on organisation alone. Catalog patching, full builds and single-course updates apply this rule across semesters.
+
+Organisation matching also uses the shared English, German and abbreviation mappings in `data/org-name-map.json`. For example, `Heidelberg Center for Cultural Heritage`, `Heidelberg Zentrum kulturelles Erbe` and `HCCH` identify `Marstallstraße. 6`. Within an institution's matching buildings, room labels can match a complete phrase inside an existing room name: `HS 413` reuses `Hörsaal 413 (HS 413)`. Exact room matches take priority; partial matches must be unique and respect word/number boundaries, so `HS 41` cannot match `HS 413`.
+
+`Station Geburtshilfe` and `Station Gynäkologie` resolve to `Im Neuenheimer Feld 440`. The remaining location text is split into room and floor: `Wartebereich 2.OG, Station Geburtshilfe` becomes room `Wartebereich`, floor `2nd floor`; the gynaecology example with `3.OG` uses the same room on `3rd floor`. A number followed by `.OG` is a floor marker even when attached to the room name. Existing room names/display names are reused (ignoring case and extra whitespace); missing rooms and floors are registered automatically. Full sync also merges old station fallback rooms while preserving reviewed room metadata. Single-course updates apply the same rule without course overrides.
+
 There are still some contents to be improved, such as incomplete building floors, adding common abbreviations to the buildings and information about the facilities inside the classroom (whether there are sockets and air conditioners, etc.).
 
 ### To Do List
@@ -228,6 +234,12 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 仅包含 `BBBB.FF.RRR` 格式编码的地点也会自动匹配。系统根据目录中已知教室的编码识别建筑，例如 `8020.01.160` 会归入 `Albert-Ueberle-Straße 3-5` 的 `1st floor`。完整编码对应的教室已存在时，复用其名称和设施信息；不存在时，以完整编码作为名称新建教室，并补充缺失楼层（`00` 表示地面层）。完整建库和单课程更新均使用此规则，适用于所有学期。无法确定或存在歧义的建筑编号会保留原地点，不猜测地址。
 
 连续九位编码（例如 `440002212`）会按同一规则规范化为 `4400.02.212`。系统也能从 `Raum 440002212 (CATS)` 这类文字中提取编码，并同时检查 `room` 和 `location` 字段。已有教室会直接复用；如果只能识别建筑编号，则在对应建筑下使用规范化编码创建缺失教室。
+
+进入 Other 兜底前，还会尝试通过课程机构复用已有教室：机构名称需匹配正式建筑的地址、显示名或别名，`room` 或 `location` 需匹配该建筑内教室的名称或显示名。例如机构为 `Hochschule für Jüdische Studien Heidelberg`（或 `HfJS`）、教室为 `Seminarraum 2` 时，会并入 `Landfriedstraße 12` 的现有教室。匹配忽略大小写和多余空格，仅在结果唯一时生效；已有明确建筑的分配会保留，不会仅凭机构新建教室。目录补丁、完整建库和单课程更新对所有学期使用同一规则。
+
+机构匹配也会使用 `data/org-name-map.json` 中共享的英文、德文和缩写映射。例如 `Heidelberg Center for Cultural Heritage`、`Heidelberg Zentrum kulturelles Erbe` 和 `HCCH` 均可识别为 `Marstallstraße. 6`。在该机构匹配到的建筑内，教室标签还可匹配已有教室名称中的完整短语：`HS 413` 会复用 `Hörsaal 413 (HS 413)`。完整匹配优先；部分匹配必须唯一，并遵守词语和数字边界，因此 `HS 41` 不会误匹配到 `HS 413`。
+
+`Station Geburtshilfe` 和 `Station Gynäkologie` 会归入 `Im Neuenheimer Feld 440`，剩余地点会拆成教室和楼层。例如 `Wartebereich 2.OG, Station Geburtshilfe` 对应教室 `Wartebereich`、楼层 `2nd floor`；妇科站点的 `3.OG` 对应同名教室的 `3rd floor`。数字后接 `.OG` 即表示楼层，即使它紧跟在教室名称后也会拆出。已有教室按名称或显示名复用（忽略大小写和多余空格），缺失的教室和楼层自动创建。完整同步还会合并旧的站点兜底教室，保留人工维护的教室信息；单课程更新使用同一规则，无需课程 override。
 
 目前还有部分内容待完善，如建筑楼层不全，为建筑添加常见的简称及教室内部的设施信息（是否有插座和空调等）。
 

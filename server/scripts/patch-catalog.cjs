@@ -1,9 +1,11 @@
 const { DATA_DIR, getPaths } = require('../semesters.cjs');
 const fs = require('fs');
 const path = require('path');
-const { normalizeBuildingKey, createBuildingAliasMap, findBuildingAlias, findBuildingRoom, isOtherBuilding } = require('../building-aliases.cjs');
+const { normalizeBuildingKey, createBuildingAliasMap, findBuildingAlias, findBuildingRoom, findOrganisationBuildingRoom, isOtherBuilding } = require('../building-aliases.cjs');
+const { loadOrgSynonymLookup } = require('../organisation-map.cjs');
 const {
   parseHausZumRiesen, parseBgLudwigshafen,
+  parseInf440Station, ensureInf440StationRoom, ordinalFloorLabel,
   parseDirectRoomCode, parseLocationRoomCode, createRoomCodeIndex, resolveRoomCode, ensureRoomCodeRoom,
 } = require('../location-rules.cjs');
 
@@ -31,6 +33,8 @@ function resolveCoursePath(fileName) {
 function normalizeFloorLabel(label) {
   if (!label) return null;
   const lower = label.trim().toLowerCase().replace(/ß/g, 'ss');
+  const upperFloor = lower.match(/^(\d+)\.?\s*(?:og|ober(?:geschoss)?)$/);
+  if (upperFloor) return ordinalFloorLabel(Number(upperFloor[1]));
   if (lower === 'eg' || lower === 'erdgeschoss' || /^ground[\s\-]*floor$/.test(lower)) return 'Ground floor';
   if (/^1\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^1(?:st)?\s*floor$/.test(lower)) return '1st floor';
   if (/^2\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^2(?:nd)?\s*floor$/.test(lower)) return '2nd floor';
@@ -359,6 +363,35 @@ function mergeDirectRoomCodeFallbacks(catalog) {
   catalog.buildings = catalog.buildings.filter(building => !emptyFallbacks.has(building));
 }
 
+function mergeInf440StationRooms(catalog) {
+  const emptyFallbacks = new Set();
+  for (const source of [...catalog.buildings]) {
+    if (source.campusId !== 'other' && source.street !== 'Im Neuenheimer Feld 440') continue;
+    let moved = false;
+    for (const room of [...(source.rooms || [])]) {
+      const parsed = parseInf440Station(room.name, room.displayName, source.street);
+      if (!parsed) continue;
+      const target = ensureInf440StationRoom(catalog, parsed);
+      if (target.room === room) continue;
+      // Preserve reviewed metadata while removing the old unparsed room label.
+      for (const [key, value] of Object.entries(room.features || {})) {
+        if (target.room.features[key] == null && value != null) target.room.features[key] = value;
+      }
+      if (!target.room.notes && room.notes && !/^Auto-generated fallback/i.test(room.notes)) {
+        target.room.notes = room.notes;
+      }
+      for (const floor of (room.floors || []).map(normalizeFloorLabel).filter(Boolean)) {
+        if (!target.room.floors.includes(floor)) target.room.floors.push(floor);
+        if (!target.building.floors.includes(floor)) target.building.floors.push(floor);
+      }
+      source.rooms = source.rooms.filter(item => item !== room);
+      moved = true;
+    }
+    if (moved && source.campusId === 'other' && !source.rooms?.length) emptyFallbacks.add(source);
+  }
+  catalog.buildings = catalog.buildings.filter(building => !emptyFallbacks.has(building));
+}
+
 function main() {
   const courseFiles = require('./validate-data.cjs').validateData();
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
@@ -368,6 +401,7 @@ function main() {
   mergeHausZumRiesenBuildings(catalog);
   mergeBgLudwigshafenRooms(catalog);
   mergeDirectRoomCodeFallbacks(catalog);
+  mergeInf440StationRooms(catalog);
 
   // SELF-HEALING: Clean up existing duplicate IDs in the JSON file
   const globalUniqueIds = new Set();
@@ -403,6 +437,7 @@ function main() {
   const aliasMap = createBuildingAliasMap(catalog.buildings);
   const reviewedAliasMap = createBuildingAliasMap(catalog.buildings, { includeOther: false });
   const roomCodeIndex = createRoomCodeIndex(catalog.buildings);
+  const orgLookup = loadOrgSynonymLookup();
 
   // Ensure directory exists before reading
   if (fs.existsSync(getPaths().courseDir)) {
@@ -429,6 +464,14 @@ function main() {
             ensureRoomCodeRoom(roomCodeIndex, directCode);
             continue;
           }
+        }
+        const inf440Station = parseInf440Station(rawRoom, week.location, week.building);
+        const explicitBuildingName = splitBuildingAndFloor(week.building, aliasMap).buildingName;
+        if (inf440Station && (!explicitBuildingName || explicitOther
+            || parseInf440Station(null, null, week.building)
+            || normalizeBuildingKey(explicitBuildingName) === normalizeBuildingKey(inf440Station.buildingName))) {
+          ensureInf440StationRoom(catalog, inf440Station);
+          continue;
         }
         if (week.building && !explicitOther) continue;
 
@@ -467,7 +510,9 @@ function main() {
           campusId = "other";
         }
 
-        const roomMatch = findBuildingRoom(catalog.buildings, targetRoomName, fallbackBuildingName);
+        const roomMatch = (campusId === 'other' && findOrganisationBuildingRoom(catalog.buildings,
+          payload.organisation, [targetRoomName, week.room, week.location], fallbackBuildingName, orgLookup))
+          || findBuildingRoom(catalog.buildings, targetRoomName, fallbackBuildingName);
         const currentBuilding = catalog.buildings.find(building =>
           normalizeBuildingKey(building.street) === normalizeBuildingKey(fallbackBuildingName));
         if (roomMatch && (!currentBuilding || currentBuilding.campusId === 'other')) {

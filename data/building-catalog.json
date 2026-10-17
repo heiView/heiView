@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T17:56:13.517Z",
+  "updatedAt": "2026-10-17T18:57:12.947Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -4944,12 +4944,16 @@
       "displayName": "INF 440",
       "campusId": "im-neuenheimer-feld",
       "aliases": [
-        "INF 440"
+        "INF 440",
+        "Station Geburtshilfe",
+        "Station Gynäkologie"
       ],
       "floors": [
         "1st floor",
         "Ground floor",
-        "Lower level 1"
+        "Lower level 1",
+        "2nd floor",
+        "3rd floor"
       ],
       "rooms": [
         {
@@ -5240,6 +5244,27 @@
           "id": "bld-im-neuenheimer-feld-440::rm-ambulanz-haut",
           "name": "Ambulanz Haut",
           "displayName": "",
+          "floors": [],
+          "features": {},
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-440::rm-wartebereich",
+          "name": "Wartebereich",
+          "displayName": "",
+          "floors": [
+            "2nd floor",
+            "3rd floor"
+          ],
+          "features": {
+            "hasAirConditioning": null,
+            "hasAccessControl": null
+          },
+          "notes": ""
+        },
+        {
+          "id": "bld-im-neuenheimer-feld-440::rm-ufhk-kleingruppenraum-6440-eg-273",
+          "name": "UFHK Kleingruppenraum (6440.EG.273)",
           "floors": [],
           "features": {},
           "notes": ""
@@ -8627,42 +8652,6 @@
       "notes": ""
     },
     {
-      "id": "bld-station-gynaekologie",
-      "street": "Station Gynäkologie",
-      "displayName": "Station Gynäkologie",
-      "campusId": "other",
-      "aliases": [],
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-station-gynaekologie::rm-wartebereich-3-og-station-gyn-kologie",
-          "name": "Wartebereich 3.OG, Station Gynäkologie",
-          "displayName": "",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-station-geburtshilfe",
-      "street": "Station Geburtshilfe",
-      "displayName": "Station Geburtshilfe",
-      "campusId": "other",
-      "aliases": [],
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-station-geburtshilfe::rm-wartebereich-2-og-station-geburtshilfe",
-          "name": "Wartebereich 2.OG, Station Geburtshilfe",
-          "displayName": "",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-leonardo-hotel",
       "street": "Leonardo Hotel",
       "displayName": "Leonardo Hotel",
@@ -8899,7 +8888,8 @@
         "Marstallstraße 6",
         "Marstallstra. 6",
         "Marstallstra 6",
-        "HCCH"
+        "HCCH",
+        "Heidelberg Center for Cultural Heritage"
       ],
       "floors": [
         "Ground floor",
@@ -9562,22 +9552,6 @@
       "notes": ""
     },
     {
-      "id": "bld-other-seminarraum-2",
-      "street": "Seminarraum 2",
-      "displayName": "Seminarraum 2",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-seminarraum-2::rm-seminarraum-2",
-          "name": "Seminarraum 2",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-other-raum-hinten",
       "street": "Raum hinten",
       "displayName": "Raum hinten",
@@ -9587,38 +9561,6 @@
         {
           "id": "bld-other-raum-hinten::rm-mensa-raum-hinten",
           "name": "Mensa, Raum hinten",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-hs-413",
-      "street": "HS 413",
-      "displayName": "HS 413",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-hs-413::rm-hs-413",
-          "name": "HS 413",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-kurpf-lzisches-museum-hd",
-      "street": "Kurpfälzisches Museum HD",
-      "displayName": "Kurpfälzisches Museum HD",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-kurpf-lzisches-museum-hd::rm-kurpf-lzisches-museum-hd",
-          "name": "Kurpfälzisches Museum HD",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -9653,6 +9595,26 @@
         {
           "id": "bld-bergheimer-str-147-geb-c::rm-zegj-bergheimer-str-147-geb-c-2-og",
           "name": "ZEGJ, Bergheimer Str. 147, Geb. C, 2. OG",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bld-hauptstrasse-97",
+      "street": "Hauptstraße 97",
+      "displayName": "Kurpfälzisches Museum",
+      "campusId": "altstadt",
+      "aliases": [
+        "Kurpfälzisches Museum HD"
+      ],
+      "floors": [],
+      "rooms": [
+        {
+          "id": "bld-other-kurpf-lzisches-museum-hd::rm-kurpf-lzisches-museum-hd",
+          "name": "Kurpfälzisches Museum HD",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."

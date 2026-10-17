@@ -1,3 +1,5 @@
+const { normalizeOrganisation } = require('./organisation-map.cjs');
+
 function normalizeBuildingKey(value) {
   return String(value || '')
     .normalize('NFKC')
@@ -62,4 +64,50 @@ function findBuildingRoom(buildings, roomName, preferredBuildingName = null) {
   return candidates.length === 1 ? candidates[0] : null;
 }
 
-module.exports = { normalizeBuildingKey, createBuildingAliasMap, findBuildingAlias, findBuildingRoom, isOtherBuilding };
+function findOrganisationBuildingRoom(buildings, organisation, roomNames, preferredBuildingName = null, orgLookup = new Map()) {
+  const organisationKey = normalizeBuildingKey(normalizeOrganisation(organisation));
+  if (!organisationKey) return null;
+  const knownBuildings = (buildings || []).filter(building => building.campusId && building.campusId !== 'other');
+  const buildingNames = building => [building.street, building.displayName, ...(building.aliases || [])];
+  const preferredKey = normalizeBuildingKey(preferredBuildingName);
+  // This is an Other fallback only; a location rule or explicit known building wins.
+  if (preferredKey && knownBuildings.some(building => [building.street, ...(building.aliases || [])]
+    .some(name => name && normalizeBuildingKey(name) === preferredKey))) return null;
+
+  const roomKeys = new Set((roomNames || []).map(normalizeBuildingKey).filter(Boolean));
+  if (!roomKeys.size) return null;
+  const organisationKeys = new Set([organisationKey,
+    ...[...(orgLookup.get(normalizeOrganisation(organisation)) || [])].map(normalizeBuildingKey)]);
+  const roomMatches = (catalogName, inputKey) => {
+    const catalogKey = normalizeBuildingKey(catalogName);
+    if (!catalogKey || !inputKey) return false;
+    if (catalogKey === inputKey) return true;
+    // Institution-scoped matching may use a short source label such as
+    // "HS 413" for a catalog name like "Hörsaal 413 (HS 413)".
+    if (inputKey.length < 4) return false;
+    const escaped = inputKey.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`(^|[^\\p{L}\\p{N}])${escaped}($|[^\\p{L}\\p{N}])`, 'u').test(catalogKey);
+  };
+  const exactCandidates = [];
+  const partialCandidates = [];
+  for (const building of knownBuildings) {
+    if (!buildingNames(building).some(name => name
+      && organisationKeys.has(normalizeBuildingKey(normalizeOrganisation(name))))) continue;
+    for (const room of building.rooms || []) {
+      const names = [room.name, room.displayName].filter(Boolean);
+      if (names.some(name => roomKeys.has(normalizeBuildingKey(name)))) {
+        exactCandidates.push({ building, room });
+      } else if (names.some(name => name
+        && [...roomKeys].some(inputKey => roomMatches(name, inputKey)))) {
+        partialCandidates.push({ building, room });
+      }
+    }
+  }
+  // Neither a shared institution name nor conflicting room/location values may
+  // select an arbitrary building or room. Reuse existing catalog objects only.
+  const candidates = exactCandidates.length ? exactCandidates : partialCandidates;
+  return candidates.length === 1 ? candidates[0] : null;
+}
+
+module.exports = { normalizeBuildingKey, createBuildingAliasMap, findBuildingAlias, findBuildingRoom,
+  findOrganisationBuildingRoom, isOtherBuilding };

@@ -19,6 +19,7 @@ const organisationMap = {
   mapping: { en: 'Faculty of Mapping & Astronomy', de: 'Fakultät für Zuordnung und Astronomie',
     abbrev: 'FMA', synonyms: ['Mapping Faculty'] },
   physics: { en: 'Institute for Physics', de: 'Physikalisches Institut', abbrev: 'PI' },
+  hcch: { en: 'Heidelberg Center for Cultural Heritage', de: 'Heidelberg Zentrum kulturelles Erbe', abbrev: 'HCCH' },
 };
 const locationMap = { entries: [
   { notes: ['Shared scoped note'], room: 'Mapped Room', building: 'Mapped Building',
@@ -147,6 +148,69 @@ function roomCodeSamples(semester) {
   });
 }
 
+function organisationRoomSamples(semester) {
+  const school = 'Hochschule für Jüdische Studien Heidelberg';
+  return [
+    ['display-name', school, { room: 'Seminarraum 2' }, 'Landfriedstraße 12', 'Seminarraum 2'],
+    ['alias', 'HfJS', { room: 'Seminarraum 2' }, 'Landfriedstraße 12', 'Seminarraum 2'],
+    ['location', school, { room: 'Vague room', location: 'Seminarraum 2' }, 'Landfriedstraße 12', 'Seminarraum 2'],
+    ['room-display-name', school, { room: 'Seminar Room Two' }, 'Landfriedstraße 12', 'Seminarraum 2'],
+    ['old-other', school, { room: 'Seminarraum 2', building: 'Seminarraum 2' }, 'Landfriedstraße 12', 'Seminarraum 2'],
+    ['old-institution-other', school, { room: 'Seminarraum 2', building: school }, 'Landfriedstraße 12', 'Seminarraum 2'],
+    ['missing', null, { room: 'Seminarraum 2' }, 'Seminarraum 2', 'Seminarraum 2'],
+    ['unrelated', 'Unrelated School', { room: 'Seminarraum 2' }, 'Seminarraum 2', 'Seminarraum 2'],
+    ['no-room', school, { room: 'Seminarraum 99' }, 'Seminarraum 99', 'Seminarraum 99'],
+    ['explicit-known', school, { room: 'Seminarraum 2', building: 'Test Building' }, 'Test Building', 'Seminarraum 2'],
+    ['explicit-alias', school, { room: 'Seminarraum 2', building: 'Language Centre, Main Site' }, 'Plöck 79-81', 'Seminarraum 2'],
+    ['known-location', school, { room: 'Room 2, Akademiestraße 4' }, 'Akademiestraße 4', 'Room 2, Akademiestraße 4'],
+    ['conflicting', school, { room: 'Seminarraum 2', location: 'Seminarraum 3' }, 'Seminarraum 2', 'Seminarraum 2'],
+    ['ambiguous-school', 'Shared School', { room: 'Seminarraum 2' }, 'Seminarraum 2', 'Seminarraum 2'],
+    ['hcch-en', organisationMap.hcch.en, { room: 'HS 413' }, 'Marstallstraße. 6', 'Hörsaal 413 (HS 413)'],
+    ['hcch-de', `${organisationMap.hcch.de} (HCCH)`, { room: 'HS 413' }, 'Marstallstraße. 6', 'Hörsaal 413 (HS 413)'],
+    ['hcch-abbrev', 'HCCH', { room: 'HS 413' }, 'Marstallstraße. 6', 'Hörsaal 413 (HS 413)'],
+    ['hcch-location', organisationMap.hcch.en, { room: 'Vague room', location: 'HS 413' }, 'Marstallstraße. 6', 'Hörsaal 413 (HS 413)'],
+    ['hcch-prefix', organisationMap.hcch.en, { room: 'Hörsaal 413' }, 'Marstallstraße. 6', 'Hörsaal 413 (HS 413)'],
+    ['hcch-old-other', organisationMap.hcch.en, { room: 'HS 413', building: 'HS 413' }, 'Marstallstraße. 6', 'Hörsaal 413 (HS 413)'],
+    ['hcch-explicit', organisationMap.hcch.en, { room: 'HS 413', building: 'Test Building' }, 'Test Building', 'HS 413'],
+    ['hcch-incomplete', organisationMap.hcch.en, { room: 'HS 41' }, 'HS 41', 'HS 41'],
+    ['hcch-unrelated', 'Unrelated Institute', { room: 'HS 413' }, 'HS 413', 'HS 413'],
+    ['hcch-missing-org', null, { room: 'HS 413' }, 'HS 413', 'HS 413'],
+    ['hcch-no-room', organisationMap.hcch.en, { room: 'HS 999' }, 'HS 999', 'HS 999'],
+    ['hcch-ambiguous', organisationMap.hcch.en, { room: 'SR 20' }, 'SR 20', 'SR 20'],
+  ].map(([id, organisation, week, building_name, room]) => {
+    const course = sample(semester, `Organisation room check ${id}`);
+    return { ...course, id: `organisation-room-${id}`, organisation,
+      weeks: [{ ...course.weeks[0], building: null, ...week }], expected: { building_name, room } };
+  });
+}
+
+function stationSamples(semester) {
+  const address = 'Im Neuenheimer Feld 440';
+  return [
+    ['obstetrics', { room: 'Wartebereich 2.OG, Station Geburtshilfe' }, 'Wartebereich', '2nd floor'],
+    ['gynaecology', { room: 'Wartebereich 3.OG, Station Gynäkologie' }, 'Wartebereich', '3rd floor'],
+    ['formatted', { room: ' wartebereich  3. og , station gynäkologie ' }, 'Wartebereich', '3rd floor'],
+    ['split-fields', { room: 'Wartebereich 2.OG', building: 'Station Geburtshilfe' }, 'Wartebereich', '2nd floor'],
+    ['location', { room: null, location: 'Wartebereich 3.OG, Station Gynäkologie' }, 'Wartebereich', '3rd floor'],
+    ['location-floor', { room: 'Wartebereich', location: 'Wartebereich 3.OG, Station Gynäkologie' }, 'Wartebereich', '3rd floor'],
+    ['explicit-known', { room: 'Wartebereich 2.OG, Station Geburtshilfe', building: address }, 'Wartebereich', '2nd floor'],
+    ['explicit-alias', { room: 'Wartebereich 2.OG', building: 'INF 440' }, 'Wartebereich', '2nd floor'],
+    ['explicit-station', { room: 'Wartebereich 3.OG', building: 'Station Gynäkologie' }, 'Wartebereich', '3rd floor'],
+    ['new-room', { room: 'Besprechung 21.OG, Station Gynäkologie' }, 'Besprechung', '21st floor'],
+    ['ground', { room: 'Empfang 0.OG, Station Geburtshilfe' }, 'Empfang', 'Ground floor'],
+    ['no-floor', { room: 'Wartebereich, Station Geburtshilfe' }, 'Wartebereich', null],
+    ['display-name', { room: 'Waiting Area 3.OG, Station Gynäkologie' }, 'Wartebereich', '3rd floor'],
+    ['explicit-other', { room: 'Wartebereich 2.OG, Station Geburtshilfe', building: 'Test Building' },
+      'Wartebereich 2.OG, Station Geburtshilfe', null, 'Test Building'],
+    ['unrelated', { room: 'Wartebereich 2.OG, Station Geburtshilfe-West' },
+      'Wartebereich 2.OG, Station Geburtshilfe-West', null, 'Station Geburtshilfe-West'],
+  ].map(([id, week, room, floor_label, building_name = address]) => {
+    const course = sample(semester, `Station location check ${id}`);
+    return { ...course, id: `station-${id}`, weeks: [{ ...course.weeks[0], building: null, ...week }],
+      expected: { building_name, room, floor_label } };
+  });
+}
+
 function writeJson(file, data) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, JSON.stringify(data));
@@ -181,8 +245,47 @@ before(async () => {
   writeJson(path.join(temporary, 'note-location-map.json'), locationMap);
   writeJson(path.join(temporary, 'building-catalog.json'), {
     campuses: [{ id: 'altstadt', name: 'Altstadt' }, { id: 'other', name: 'Other' }, { id: 'bergheim', name: 'Bergheim' },
-      { id: 'mannheim-and-ludwigshafen', name: 'Mannheim & Ludwigshafen' }],
+      { id: 'mannheim-and-ludwigshafen', name: 'Mannheim & Ludwigshafen' },
+      { id: 'im-neuenheimer-feld', name: 'Im Neuenheimer Feld' }],
     buildings: [
+      { id: 'hcch', street: 'Marstallstraße. 6', displayName: 'Marstallstraße. 6', campusId: 'altstadt',
+        aliases: [organisationMap.hcch.en], floors: ['4th floor'], rooms: [
+          { id: 'hcch-413', name: 'Hörsaal 413 (HS 413)', floors: ['4th floor'],
+            features: { hasProjector: true }, notes: 'Reviewed lecture hall' },
+          { id: 'hcch-20-a', name: 'Seminar A (SR 20)', floors: [], features: {} },
+          { id: 'hcch-20-b', name: 'Seminar B (SR 20)', floors: [], features: {} },
+        ] },
+      { id: 'old-hs-413', street: 'HS 413', campusId: 'other', floors: [], rooms: [
+        { id: 'old-hs-413-room', name: 'HS 413', floors: [], features: {} },
+      ] },
+      { id: 'inf-440', street: 'Im Neuenheimer Feld 440', displayName: 'INF 440',
+        campusId: 'im-neuenheimer-feld', aliases: ['INF 440', 'Station Geburtshilfe'], floors: ['2nd floor'], rooms: [
+          { id: 'inf-440-waiting', name: 'Wartebereich', displayName: 'Waiting Area', floors: ['2nd floor'],
+            features: { hasProjector: true }, notes: 'Reviewed waiting area' },
+          { id: 'inf-440-legacy', name: 'Wartebereich 2.OG, Station Geburtshilfe', floors: [],
+            features: { hasAirConditioning: true }, notes: '' },
+        ] },
+      { id: 'old-gynaecology', street: 'Station Gynäkologie', campusId: 'other', floors: [], rooms: [
+        { id: 'old-gynaecology-room', name: 'Wartebereich 3.OG, Station Gynäkologie', floors: [],
+          features: { hasMicrophone: true }, notes: 'Auto-generated fallback from unparsed location.' },
+        { id: 'old-gynaecology-office', name: 'Büro 4.OG', floors: [], features: {}, notes: 'Reviewed office' },
+      ] },
+      { id: 'hfjs', street: 'Landfriedstraße 12', displayName: 'Hochschule für Jüdische Studien Heidelberg',
+        campusId: 'altstadt', aliases: ['HfJS', 'Shared School'], floors: [], rooms: [
+          { id: 'hfjs-seminar-2', name: 'Seminarraum 2', displayName: 'Seminar Room Two', floors: [],
+            features: { hasProjector: true }, notes: 'Reviewed school room' },
+          { id: 'hfjs-seminar-3', name: 'Seminarraum 3', floors: [], features: {} },
+        ] },
+      { id: 'archive', street: 'Akademiestraße 4', campusId: 'altstadt', aliases: ['Shared School'], floors: [], rooms: [
+        { id: 'archive-seminar-2', name: 'Seminarraum 2', floors: [], features: {} },
+        { id: 'archive-seminar-3', name: 'Seminarraum 3', floors: [], features: {} },
+      ] },
+      { id: 'old-seminar-2', street: 'Seminarraum 2', campusId: 'other', floors: [], rooms: [
+        { id: 'old-seminar-2-room', name: 'Seminarraum 2', floors: [], features: {} },
+      ] },
+      { id: 'old-institution', street: 'Hochschule für Jüdische Studien Heidelberg', campusId: 'other', floors: [], rooms: [
+        { id: 'old-institution-room', name: 'Seminarraum 2', floors: [], features: {} },
+      ] },
       { id: 'test-building', street: 'Test Building', campusId: 'altstadt', aliases: [], floors: [],
         rooms: [{ id: 'test-room', name: 'Room 1', floors: [], features: {} }] },
       { id: 'old-location-fallback', street: 'Plöck 79 - 81', campusId: 'other', floors: [],
@@ -256,6 +359,12 @@ before(async () => {
       writeJson(path.join(paths.courseDir, `course-${course.id}.json`), course);
     }
     for (const course of roomCodeSamples(semester)) {
+      writeJson(path.join(paths.courseDir, `course-${course.id}.json`), course);
+    }
+    for (const course of organisationRoomSamples(semester)) {
+      writeJson(path.join(paths.courseDir, `course-${course.id}.json`), course);
+    }
+    for (const course of stationSamples(semester)) {
       writeJson(path.join(paths.courseDir, `course-${course.id}.json`), course);
     }
     writeJson(paths.syncMetaPath, { currentSeason: semester, lastSyncTime: `${semester}-sync`, courseCount: 1 });
@@ -518,6 +627,71 @@ test('single-course sync also splits BG Ludwigshafen locations', () => {
   }
 });
 
+test('INF 440 stations merge existing rooms and split OG floors in both semesters', async () => {
+  for (const semester of ['2026SS', '2026WS']) {
+    const db = new Database(pathsFor(semester).dbPath, { readonly: true });
+    try {
+      for (const course of stationSamples(semester)) {
+        assert.deepEqual(db.prepare('SELECT building_name, room, floor_label FROM occurrences WHERE course_id=?')
+          .get(course.id), course.expected, course.id);
+      }
+      assert.deepEqual(db.prepare("SELECT id, has_projector, has_air_conditioning, has_microphone, notes FROM rooms_meta WHERE building_id='inf-440' AND name='Wartebereich'").all(),
+        [{ id: 'inf-440-waiting', has_projector: 1, has_air_conditioning: 1, has_microphone: 1, notes: 'Reviewed waiting area' }]);
+      const floors = JSON.parse(db.prepare("SELECT floors_json FROM rooms_meta WHERE id='inf-440-waiting'").get().floors_json);
+      assert.deepEqual(floors, ['2nd floor', '3rd floor']);
+      assert.equal(db.prepare("SELECT count(*) n FROM buildings_meta WHERE name='Station Gynäkologie'").get().n, 0);
+      assert.equal(db.prepare("SELECT count(*) n FROM rooms_meta WHERE building_id='inf-440' AND name LIKE '%OG%'").get().n, 0);
+      assert.equal(db.prepare("SELECT notes FROM rooms_meta WHERE building_id='inf-440' AND name='Büro'").get().notes, 'Reviewed office');
+    } finally { db.close(); }
+    const date = semester === '2026SS' ? '2026-04-06' : '2026-10-05';
+    const { data } = await request(`/api/schedule?date=${date}`);
+    const rooms = data.rooms['Im Neuenheimer Feld 440'].filter(room => room.room === 'Wartebereich');
+    const courses = rooms.flatMap(room => room.courses);
+    for (const id of ['station-obstetrics', 'station-gynaecology']) {
+      assert.ok(courses.some(course => course.id === id));
+    }
+  }
+  const catalog = JSON.parse(fs.readFileSync(path.join(temporary, 'building-catalog.json'), 'utf8'));
+  const building = catalog.buildings.find(building => building.id === 'inf-440');
+  assert.equal(building.rooms.filter(room => room.name === 'Wartebereich').length, 1);
+  assert.ok(building.rooms.some(room => room.name === 'Besprechung'));
+  assert.ok(building.aliases.includes('Station Gynäkologie'));
+  assert.ok(!catalog.buildings.some(building => building.id === 'old-gynaecology'));
+});
+
+test('single-course station sync reuses rooms and registers new rooms and floors without source overrides', () => {
+  for (const semester of ['2026SS', '2026WS']) {
+    for (const course of stationSamples(semester)) {
+      withPaths(pathsFor(semester), () => syncSingleCourse(course.id));
+      const db = new Database(pathsFor(semester).dbPath, { readonly: true });
+      try {
+        assert.deepEqual(db.prepare('SELECT building_name, room, floor_label FROM occurrences WHERE course_id=?')
+          .get(course.id), course.expected, course.id);
+      } finally { db.close(); }
+    }
+    const course = sample(semester, 'New station room after full build');
+    course.id = 'station-new-single';
+    course.weeks = [{ ...course.weeks[0], building: null, room: 'Schulungsraum 12.OG, Station Gynäkologie' }];
+    const file = path.join(pathsFor(semester).courseDir, `course-${course.id}.json`);
+    writeJson(file, course);
+    const source = fs.readFileSync(file, 'utf8');
+    withPaths(pathsFor(semester), () => syncSingleCourse(course.id));
+    const catalog = fs.readFileSync(path.join(temporary, 'building-catalog.json'), 'utf8');
+    withPaths(pathsFor(semester), () => syncSingleCourse(course.id));
+    assert.equal(fs.readFileSync(path.join(temporary, 'building-catalog.json'), 'utf8'), catalog);
+    assert.equal(fs.readFileSync(file, 'utf8'), source);
+    assert.ok(!fs.existsSync(path.join(pathsFor(semester).overridesDir, `course-${course.id}.json`)));
+    const db = new Database(pathsFor(semester).dbPath, { readonly: true });
+    try {
+      assert.deepEqual(db.prepare('SELECT building_name, room, floor_label FROM occurrences WHERE course_id=?').get(course.id),
+        { building_name: 'Im Neuenheimer Feld 440', room: 'Schulungsraum', floor_label: '12th floor' });
+      const rooms = db.prepare("SELECT floors_json FROM rooms_meta WHERE building_id='inf-440' AND name='Schulungsraum'").all();
+      assert.equal(rooms.length, 1);
+      assert.deepEqual(JSON.parse(rooms[0].floors_json), ['12th floor']);
+    } finally { db.close(); }
+  }
+});
+
 test('direct room codes reuse catalog rooms or add floors and rooms in both semesters', async () => {
   for (const semester of ['2026SS', '2026WS']) {
     const db = new Database(pathsFor(semester).dbPath, { readonly: true });
@@ -579,6 +753,60 @@ test('single-course room code sync creates catalog and database metadata without
       assert.deepEqual(JSON.parse(db.prepare("SELECT floors_json FROM rooms_meta WHERE building_id='albert' AND name='8020.05.999'").get().floors_json), ['5th floor']);
     } finally { db.close(); }
   }
+});
+
+test('organisation fallback reuses institution rooms without changing explicit buildings in both semesters', async () => {
+  for (const semester of ['2026SS', '2026WS']) {
+    const db = new Database(pathsFor(semester).dbPath, { readonly: true });
+    try {
+      for (const course of organisationRoomSamples(semester)) {
+        assert.deepEqual(db.prepare('SELECT building_name, room FROM occurrences WHERE course_id=?')
+          .get(course.id), course.expected, course.id);
+      }
+      assert.deepEqual(db.prepare("SELECT id, has_projector, notes FROM rooms_meta WHERE building_id='hfjs' AND name='Seminarraum 2'").all(),
+        [{ id: 'hfjs-seminar-2', has_projector: 1, notes: 'Reviewed school room' }]);
+      assert.deepEqual(db.prepare("SELECT id, has_projector, notes FROM rooms_meta WHERE building_id='hcch' AND name='Hörsaal 413 (HS 413)'").all(),
+        [{ id: 'hcch-413', has_projector: 1, notes: 'Reviewed lecture hall' }]);
+    } finally { db.close(); }
+    const date = semester === '2026SS' ? '2026-04-06' : '2026-10-05';
+    const { data } = await request(`/api/schedule?date=${date}`);
+    const room = data.rooms['Landfriedstraße 12'].find(room => room.room === 'Seminarraum 2');
+    assert.ok(room.courses.some(course => course.id === 'organisation-room-display-name'));
+    assert.ok(room.features.hasProjector);
+    const hcchRoom = data.rooms['Marstallstraße. 6'].find(room => room.room === 'Hörsaal 413 (HS 413)');
+    for (const id of ['hcch-en', 'hcch-de', 'hcch-abbrev']) {
+      assert.ok(hcchRoom.courses.some(course => course.id === `organisation-room-${id}`));
+    }
+  }
+  const catalog = JSON.parse(fs.readFileSync(path.join(temporary, 'building-catalog.json'), 'utf8'));
+  const school = catalog.buildings.find(building => building.id === 'hfjs');
+  assert.deepEqual(school.rooms.map(room => room.name), ['Seminarraum 2', 'Seminarraum 3']);
+  // A room matched through location must not create an Other building or room.
+  assert.ok(!catalog.buildings.some(building => building.street === 'Vague room'));
+  assert.ok(!catalog.buildings.some(building => building.street === 'Seminar Room Two'));
+  // Unrelated courses sharing the legacy Other label must stay there.
+  assert.ok(catalog.buildings.some(building => building.id === 'old-seminar-2'));
+  assert.ok(catalog.buildings.some(building => building.id === 'old-hs-413'));
+  assert.deepEqual(catalog.buildings.find(building => building.id === 'hcch').rooms.map(room => room.name),
+    ['Hörsaal 413 (HS 413)', 'Seminar A (SR 20)', 'Seminar B (SR 20)']);
+});
+
+test('single-course sync uses the same organisation fallback and leaves source and catalog unchanged', () => {
+  const catalogBefore = fs.readFileSync(path.join(temporary, 'building-catalog.json'), 'utf8');
+  for (const semester of ['2026SS', '2026WS']) {
+    for (const course of organisationRoomSamples(semester)) {
+      const file = path.join(pathsFor(semester).courseDir, `course-${course.id}.json`);
+      const sourceBefore = fs.readFileSync(file, 'utf8');
+      withPaths(pathsFor(semester), () => syncSingleCourse(course.id));
+      const db = new Database(pathsFor(semester).dbPath, { readonly: true });
+      try {
+        assert.deepEqual(db.prepare('SELECT building_name, room FROM occurrences WHERE course_id=?')
+          .get(course.id), course.expected, course.id);
+      } finally { db.close(); }
+      assert.equal(fs.readFileSync(file, 'utf8'), sourceBefore);
+    }
+  }
+  assert.equal(fs.readFileSync(path.join(temporary, 'building-catalog.json'), 'utf8'), catalogBefore);
 });
 
 test('organisation searches use shared English, German and abbreviation variants in every semester', async () => {

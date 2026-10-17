@@ -3,10 +3,13 @@ const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
 const { loadOrgSynonymLookup, matchesOrganisation } = require('../organisation-map.cjs');
-const { createBuildingAliasMap, findBuildingAlias, findBuildingRoom, isOtherBuilding } = require('../building-aliases.cjs');
+const { createBuildingAliasMap, findBuildingAlias, findBuildingRoom, findOrganisationBuildingRoom, isOtherBuilding } = require('../building-aliases.cjs');
 const {
   parseHausZumRiesen,
   parseBgLudwigshafen,
+  parseInf440Station,
+  ensureInf440StationRoom,
+  ordinalFloorLabel,
   parseDirectRoomCode,
   parseLocationRoomCode,
   createRoomCodeIndex,
@@ -157,6 +160,8 @@ function parseInfRoom(rawRoom) {
 function normalizeFloorLabel(label) {
   if (!label) return null;
   const lower = label.trim().toLowerCase().replace(/ß/g, 'ss');
+  const upperFloor = lower.match(/^(\d+)\.?\s*(?:og|ober(?:geschoss)?)$/);
+  if (upperFloor) return ordinalFloorLabel(Number(upperFloor[1]));
   if (lower === 'eg' || lower === 'erdgeschoss' || /^ground[\s\-]*floor$/.test(lower)) return 'Ground floor';
   if (/^1\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^1(?:st)?\s*floor$/.test(lower)) return '1st floor';
   if (/^2\.?\s*(?:og|ober(?:geschoss)?)$/.test(lower) || /^2(?:nd)?\s*floor$/.test(lower)) return '2nd floor';
@@ -460,6 +465,17 @@ function main() {
           currentRoom = bgLudwigshafen.room;
         }
 
+        const inf440Station = parseInf440Station(rawRoom, week.location, resolvedBuilding);
+        if (inf440Station && (!split.buildingName
+            || isOtherBuilding(split.buildingName, roomCodeCatalog.buildings, fallbackAliasMap)
+            || parseInf440Station(null, null, resolvedBuilding)
+            || resolveCanonicalBuildingName(split.buildingName, aliasMap) === inf440Station.buildingName)) {
+          split.buildingName = inf440Station.buildingName;
+          split.floorLabel = inf440Station.floorLabel || split.floorLabel;
+          const registered = ensureInf440StationRoom(roomCodeCatalog, inf440Station);
+          currentRoom = registered.room.name;
+        }
+
         const directRoomCode = parseLocationRoomCode(resolvedRoom, week.location);
         const directRoomMatch = resolveRoomCode(roomCodeLookup, directRoomCode);
         if (directRoomCode && directRoomMatch
@@ -557,7 +573,9 @@ function main() {
           }
         }
 
-        const roomMatch = findBuildingRoom(roomCodeCatalog.buildings, currentRoom, split.buildingName);
+        const roomMatch = findOrganisationBuildingRoom(roomCodeCatalog.buildings, payload.organisation,
+          [currentRoom, resolvedRoom, week.location, week.room], split.buildingName, orgLookup)
+          || findBuildingRoom(roomCodeCatalog.buildings, currentRoom, split.buildingName);
         if (roomMatch) {
           split.buildingName = roomMatch.building.street;
           currentRoom = roomMatch.room.name;
@@ -737,6 +755,22 @@ function syncSingleCourse(courseId) {
         currentRoom = bgLudwigshafen.room;
       }
 
+      const inf440Station = parseInf440Station(rawRoom, week.location, resolvedBuilding);
+      if (inf440Station && (!split.buildingName
+          || isOtherBuilding(split.buildingName, roomCodeCatalog.buildings, fallbackAliasMap)
+          || parseInf440Station(null, null, resolvedBuilding)
+          || resolveCanonicalBuildingName(split.buildingName, aliasMap) === inf440Station.buildingName)) {
+        split.buildingName = inf440Station.buildingName;
+        split.floorLabel = inf440Station.floorLabel || split.floorLabel;
+        const registered = ensureInf440StationRoom(roomCodeCatalog, inf440Station);
+        roomCodeCatalogChanged ||= registered.changed;
+        const metadata = db.prepare('SELECT floors_json FROM rooms_meta WHERE building_id = ? AND name = ?')
+          .get(registered.building.id, registered.room.name);
+        roomCodeMetadataNeedsImport ||= !metadata || (inf440Station.floorLabel
+          && !JSON.parse(metadata.floors_json).includes(inf440Station.floorLabel));
+        currentRoom = registered.room.name;
+      }
+
       const directRoomCode = parseLocationRoomCode(resolvedRoom, week.location);
       const directRoomMatch = resolveRoomCode(roomCodeLookup, directRoomCode);
       if (directRoomCode && directRoomMatch
@@ -831,7 +865,9 @@ function syncSingleCourse(courseId) {
         }
       }
 
-      const roomMatch = findBuildingRoom(roomCodeCatalog.buildings, currentRoom, split.buildingName);
+      const roomMatch = findOrganisationBuildingRoom(roomCodeCatalog.buildings, payload.organisation,
+        [currentRoom, resolvedRoom, week.location, week.room], split.buildingName, orgLookup)
+        || findBuildingRoom(roomCodeCatalog.buildings, currentRoom, split.buildingName);
       if (roomMatch) {
         split.buildingName = roomMatch.building.street;
         currentRoom = roomMatch.room.name;
