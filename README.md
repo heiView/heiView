@@ -48,6 +48,8 @@ Locations starting with `BG Ludwigshafen,` resolve to `Ludwig-Guttmann-Straße 1
 
 Bare room codes in the format `BBBB.FF.RRR` also resolve automatically. The catalog's known room codes identify the building: `8020.01.160` maps to `Albert-Ueberle-Straße 3-5`, on the `1st floor`. Existing rooms are reused by complete code, preserving their names and facilities; missing rooms use the full code as their name, and missing floors are added (`00` means ground floor). Full database sync and single-course updates apply the same rule across semesters. Unknown or ambiguous building codes retain their original location rather than receiving a guessed address.
 
+Compact nine-digit codes such as `440002212` are normalized in the same way (`4400.02.212`). The matcher also extracts them from text such as `Raum 440002212 (CATS)` and checks both the `room` and `location` fields. Existing rooms are reused; if only the building code is known, the missing room is added to that building with the normalized code.
+
 There are still some contents to be improved, such as incomplete building floors, adding common abbreviations to the buildings and information about the facilities inside the classroom (whether there are sockets and air conditioners, etc.).
 
 ### To Do List
@@ -77,7 +79,7 @@ python heiview
 # Equivalent menu entry point:
 python -m crawler
 ```
-Course access may require the campus network or university VPN. In the menu, choose `1`/`crawl`, select a semester, then configure forward/reverse crawling or detail URLs. Enter accepts the displayed default, `b` goes back, `q` exits, and `e` edits the execution summary. Ctrl+C cancels the current task and returns to the menu; Ctrl+C at the main menu exits.
+Course access may require the campus network or university VPN. In the menu, choose `1`/`crawl`, then choose a crawl mode. Full crawling asks for the semester and crawl settings; URL crawling asks only for detail URLs, detects each course's semester from its page, and uses concurrency 10 with the browser hidden. Enter accepts the displayed default, `b` goes back, `q` exits, and `e` edits the execution summary. Ctrl+C cancels the current task and returns to the menu; Ctrl+C at the main menu exits.
 
 If the selected semester has an unfinished task from the same **Europe/Berlin calendar day**, the menu offers to resume it, configure a new task, or return. The original options and progress are displayed. Completed limited/URL tasks are not treated as interrupted. Tasks from another day and corrupted/incompatible checkpoints cannot resume; the menu explains why.
 
@@ -90,7 +92,7 @@ python crawler/heico_crawler.py --semester 2026WS --reverse --skip 20 -n 5
 python crawler/heico_crawler.py --semester 2026SS --skip 200 --concurrency 3
 python crawler/heico_crawler.py --semester 2026WS --url "COURSE_DETAIL_URL"
 ```
-`--number` and `--concurrency` must be positive, `--skip` nonnegative. Forward skip counts from the beginning; reverse skip counts from the end, with automatic last-page discovery. Repeat `--url` for multiple detail URLs; URL mode rejects reverse, a nonzero skip and count limits. Ensure URLs belong to the selected semester. `--show-browser` displays Chromium. Checkpoint resumption is offered through the menu; direct invocations start new tasks.
+`--number` and `--concurrency` must be positive, `--skip` nonnegative. Forward skip counts from the beginning; reverse skip counts from the end, with automatic last-page discovery. Repeat `--url` for multiple detail URLs; direct URL mode uses the explicitly selected semester, while the menu's URL mode detects semesters automatically. URL mode rejects reverse, a nonzero skip and count limits. `--show-browser` displays Chromium. Checkpoint resumption is offered through the menu; direct invocations start new tasks.
 
 `last-run.json` records each task's result. `sync-meta.json` records only a successful full-coverage task: original skip=0, no count limit, no URL override, all courses successful. Full forward **and reverse** tasks qualify, including tasks completed after same-day resumption. Statistics and removal checks combine the whole task's course set. Partial/failed/interrupted or empty runs preserve the previous full-sync metadata and do not archive courses. Verification errors keep existing course files.
 
@@ -98,11 +100,13 @@ python crawler/heico_crawler.py --semester 2026WS --url "COURSE_DETAIL_URL"
 
 After every successful crawl, including a limited or URL task, the crawler automatically runs `npm run db:sync` for that semester. Failed/interrupted crawls do not trigger it. The checkpoint records crawl and database sync states independently: if the database step fails, the menu offers **sync only**, so courses need not be crawled again. CLI failures return a nonzero exit code. There is no deployment step.
 
-Choose `2`/`sync`/`db` in the menu to manually select a semester and build its database, or run:
+Choose `2`/`sync`/`db` in the menu. **All semesters** is the first and default option; individual semesters follow, newest first. To run directly:
 ```bash
+npm run db:sync -- --all
 HEIVIEW_SEMESTER=2026WS npm run db:sync
 HEIVIEW_SEMESTER=2026SS npm run db:sync
 ```
+Other buildings have the lowest matching priority: known building aliases, location rules, room codes and unique room matches in known buildings are tried first. Ambiguous room names are kept as fallbacks. After all local semesters have built successfully, all-semester sync removes Other buildings with no course occurrences in any semester from the shared catalog and every rebuilt database. Known campus buildings and Other buildings used by even one semester are kept. Single-semester sync does not run this cleanup. Missing/invalid source data or a failed build prevents cleanup and leaves published databases intact.
 The default target is configured in `config/semesters.json`. The same semester is used by catalog patching, course/override/custom/skip import, building import and metadata import. Missing, empty or invalid source courses fail before replacing a database. The complete database is built in a temporary file and published only when all steps succeed; other semester databases remain intact. A lock prevents simultaneous syncs for the same semester, and admin writes are rejected while it is building. `HEIVIEW_DATA_DIR` can point to an isolated data directory for testing.
 
 Semester source files under `data/2026SS/` and `data/2026WS/` are git-ignored and stay local. Generated semester databases live directly under `data/`, named `2026SS.db`, `2026WS.db`, and so on. Commit and push the corresponding database file to publish an update. The deployment workflow then updates the remote database while leaving local course source files untouched.
@@ -223,6 +227,8 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 仅包含 `BBBB.FF.RRR` 格式编码的地点也会自动匹配。系统根据目录中已知教室的编码识别建筑，例如 `8020.01.160` 会归入 `Albert-Ueberle-Straße 3-5` 的 `1st floor`。完整编码对应的教室已存在时，复用其名称和设施信息；不存在时，以完整编码作为名称新建教室，并补充缺失楼层（`00` 表示地面层）。完整建库和单课程更新均使用此规则，适用于所有学期。无法确定或存在歧义的建筑编号会保留原地点，不猜测地址。
 
+连续九位编码（例如 `440002212`）会按同一规则规范化为 `4400.02.212`。系统也能从 `Raum 440002212 (CATS)` 这类文字中提取编码，并同时检查 `room` 和 `location` 字段。已有教室会直接复用；如果只能识别建筑编号，则在对应建筑下使用规范化编码创建缺失教室。
+
 目前还有部分内容待完善，如建筑楼层不全，为建筑添加常见的简称及教室内部的设施信息（是否有插座和空调等）。
 
 ### 待办事项
@@ -246,7 +252,7 @@ python heiview
 # 等价入口：
 python -m crawler
 ```
-访问课程可能需要校园网或大学 VPN。输入 `1`/`crawl`，选择学期，再配置顺序/倒序、数量、偏移、并发、浏览器或详情 URL。回车保留默认值，`b` 返回，`q` 退出，执行摘要中可输入 `e` 修改。Ctrl+C 取消当前操作并返回菜单，在主菜单按 Ctrl+C 则退出。
+访问课程可能需要校园网或大学 VPN。输入 `1`/`crawl` 后先选择爬取模式。完整爬取会继续选择学期、顺序/倒序、数量、偏移、并发和浏览器；URL 模式只需输入详情网址，系统会从课程页面自动识别学期，并固定使用并发数 10 且不显示浏览器。回车保留默认值，`b` 返回，`q` 退出，执行摘要中可输入 `e` 修改。Ctrl+C 取消当前操作并返回菜单，在主菜单按 Ctrl+C 则退出。
 
 选择学期后，若存在 **Europe/Berlin 当天**未完成、失败或中断的任务，菜单展示原参数和进度，并提供继续、重新配置或返回。正常结束的限量/URL 任务不会被误认为中断；跨日、损坏或配置不匹配的断点不能恢复，会说明原因。
 
@@ -259,7 +265,7 @@ python crawler/heico_crawler.py --semester 2026WS --reverse --skip 20 -n 5
 python crawler/heico_crawler.py --semester 2026SS --skip 200 --concurrency 3
 python crawler/heico_crawler.py --semester 2026WS --url "课程详情网址"
 ```
-`--number`、`--concurrency` 必须为正数，`--skip` 非负。顺序偏移从开头计算，倒序从末尾计算并自动定位末页；`--show-browser` 显示浏览器。多个 URL 重复使用 `--url`，URL 模式不允许倒序、非零偏移或数量限制，请确保 URL 属于所选学期。断点恢复通过菜单选择；直接调用脚本创建新任务。
+`--number`、`--concurrency` 必须为正数，`--skip` 非负。顺序偏移从开头计算，倒序从末尾计算并自动定位末页；`--show-browser` 显示浏览器。多个 URL 重复使用 `--url`；直接调用脚本时 URL 使用显式选择的学期，菜单中的 URL 模式会自动识别学期。URL 模式不允许倒序、非零偏移或数量限制。断点恢复通过菜单选择；直接调用脚本创建新任务。
 
 `last-run.json` 记录任务结果；`sync-meta.json` 只记录成功覆盖整个学期的任务：原始 skip=0、不限数量、非 URL 模式、全部课程成功。顺序和倒序均支持恢复后认定全量，统计和移除检查包含恢复前后的全部课程。部分、失败、中断或空结果任务不覆盖全量同步记录，也不归档课程；验证异常时保留原文件。
 
@@ -267,11 +273,13 @@ python crawler/heico_crawler.py --semester 2026WS --url "课程详情网址"
 
 每次成功爬取后（包括限量和 URL 模式），自动为所选学期执行 `npm run db:sync`。失败或中断不自动同步。断点分别记录爬取与同步状态；同步失败后，菜单提供“只重试数据库同步”，不必重新爬取。脚本调用失败返回非零退出码，不自动部署。
 
-菜单输入 `2`/`sync`/`db` 可选择学期手动同步；也可直接执行：
+菜单输入 `2`/`sync`/`db` 后，首项和默认项为 **All semesters**，后面按时间倒序列出单个学期；也可直接执行：
 ```bash
+npm run db:sync -- --all
 HEIVIEW_SEMESTER=2026WS npm run db:sync
 HEIVIEW_SEMESTER=2026SS npm run db:sync
 ```
+Other 建筑的匹配优先级最低：优先尝试已知建筑别名、地点规则、教室编码，以及已知建筑中唯一匹配的教室；有歧义的教室名保留为兜底。所有本地学期都成功构建后，全学期同步会从共用目录和所有重建数据库中移除在任何学期都没有课程记录的 Other 建筑。正式校区建筑，以及至少被一个学期使用的 Other 建筑都会保留。单学期同步不执行该清理；源数据缺失、无效或构建失败时，不执行清理，保留已发布的数据库。
 默认学期来自 `config/semesters.json`。建筑目录补充、课程与 overrides/custom/skip 导入、建筑导入和元数据读取使用同一学期。缺失、空目录或无效课程数据会导致同步失败。数据库先在临时文件完整构建，所有步骤成功后才发布，其他学期不受影响。同学期同步有运行锁，构建期间管理写入返回稍后重试。测试可设置 `HEIVIEW_DATA_DIR` 指向临时目录。
 
 `data/2026SS/` 和 `data/2026WS/` 中的课程源文件由 Git 忽略并保留在本地；生成的学期数据库统一放在 `data/` 根目录，命名为 `2026SS.db`、`2026WS.db` 等，并纳入版本控制。要发布数据库更新，提交并推送对应数据库文件。部署工作流会更新远程数据库，不会覆盖或上传本地课程源文件。

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T14:37:12.491Z",
+  "updatedAt": "2026-10-17T17:56:13.517Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -8438,24 +8438,6 @@
       ]
     },
     {
-      "id": "bld-ort-siehe-anmerkung",
-      "street": "Ort - siehe Anmerkung",
-      "displayName": "Ort - siehe Anmerkung",
-      "campusId": "other",
-      "aliases": [],
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-ort-siehe-anmerkung::rm-ort-siehe-anmerkung",
-          "name": "Ort - siehe Anmerkung",
-          "displayName": "",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-selbststudium",
       "street": "Selbststudium",
       "displayName": "Selbststudium",
@@ -8542,17 +8524,11 @@
       "floors": [],
       "rooms": [
         {
-          "id": "bld-voelkerkundemuseum::rm-voelkerkundemuseum",
-          "name": "Völkerkundemuseum",
-          "displayName": "",
-          "floors": [
-            "Unknown floor"
-          ],
-          "features": {
-            "hasAirConditioning": null,
-            "hasAccessControl": null
-          },
-          "notes": ""
+          "id": "bld-other-hauptstr-235-v-lkerkundemuseum::rm-hauptstr-235-v-lkerkundemuseum",
+          "name": "Hauptstr. 235 / Völkerkundemuseum",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ],
       "notes": ""
@@ -8916,7 +8892,7 @@
     {
       "id": "bld-marstallstrasse-6-hcch",
       "street": "Marstallstraße. 6",
-      "displayName": "",
+      "displayName": "Marstallstraße. 6",
       "campusId": "altstadt",
       "aliases": [
         "Marstallstraße. 6",
@@ -9465,9 +9441,19 @@
       "street": "Röntgenstraße 1",
       "displayName": "Thoraxklinik Heidelberg",
       "campusId": "heidelberg",
-      "aliases": [],
+      "aliases": [
+        "Thoraxklinik - Pforte"
+      ],
       "floors": [],
-      "rooms": [],
+      "rooms": [
+        {
+          "id": "bld-other-thoraxklinik-pforte::rm-thoraxklinik-pforte",
+          "name": "Thoraxklinik - Pforte",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ],
       "notes": ""
     },
     {
@@ -9576,138 +9562,6 @@
       "notes": ""
     },
     {
-      "id": "bld-other-geb-c",
-      "street": "Geb. C",
-      "displayName": "Geb. C",
-      "campusId": "other",
-      "floors": [
-        "2nd floor"
-      ],
-      "rooms": [
-        {
-          "id": "bld-other-geb-c::rm-zegj-bergheimer-str-147-geb-c-2-og",
-          "name": "ZEGJ, Bergheimer Str. 147, Geb. C, 2. OG",
-          "floors": [
-            "2nd floor"
-          ],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-thoraxklinik-pforte",
-      "street": "Thoraxklinik - Pforte",
-      "displayName": "Thoraxklinik - Pforte",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-thoraxklinik-pforte::rm-thoraxklinik-pforte",
-          "name": "Thoraxklinik - Pforte",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-a2-08-altbau",
-      "street": "A2.08 (Altbau)",
-      "displayName": "A2.08 (Altbau)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-a2-08-altbau::rm-a2-08-altbau",
-          "name": "A2.08 (Altbau)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-seminarraum-1",
-      "street": "Seminarraum 1",
-      "displayName": "Seminarraum 1",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-seminarraum-1::rm-seminarraum-1",
-          "name": "Seminarraum 1",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-issw-bootshaus",
-      "street": "ISSW Bootshaus",
-      "displayName": "ISSW Bootshaus",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-issw-bootshaus::rm-issw-bootshaus",
-          "name": "ISSW Bootshaus",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-seminarraum-4",
-      "street": "Seminarraum 4",
-      "displayName": "Seminarraum 4",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-seminarraum-4::rm-seminarraum-4",
-          "name": "Seminarraum 4",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-n2-05",
-      "street": "N2.05",
-      "displayName": "N2.05",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-n2-05::rm-bet-midrasch-n2-05",
-          "name": "Bet Midrasch, N2.05",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-seminarraum-3",
-      "street": "Seminarraum 3",
-      "displayName": "Seminarraum 3",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-seminarraum-3::rm-seminarraum-3",
-          "name": "Seminarraum 3",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-other-seminarraum-2",
       "street": "Seminarraum 2",
       "displayName": "Seminarraum 2",
@@ -9717,22 +9571,6 @@
         {
           "id": "bld-other-seminarraum-2::rm-seminarraum-2",
           "name": "Seminarraum 2",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-a1-07",
-      "street": "A1.07",
-      "displayName": "A1.07",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-a1-07::rm-konferenzraum-a1-07",
-          "name": "Konferenzraum, A1.07",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -9756,38 +9594,6 @@
       ]
     },
     {
-      "id": "bld-other-kapelle",
-      "street": "Kapelle",
-      "displayName": "Kapelle",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-kapelle::rm-kapelle",
-          "name": "Kapelle",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-hfk-a",
-      "street": "HfK (A)",
-      "displayName": "HfK (A)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-hfk-a::rm-hfk-a",
-          "name": "HfK (A)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-other-hs-413",
       "street": "HS 413",
       "displayName": "HS 413",
@@ -9797,38 +9603,6 @@
         {
           "id": "bld-other-hs-413::rm-hs-413",
           "name": "HS 413",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-hauptstr-235-v-lkerkundemuseum",
-      "street": "Hauptstr. 235 / Völkerkundemuseum",
-      "displayName": "Hauptstr. 235 / Völkerkundemuseum",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-hauptstr-235-v-lkerkundemuseum::rm-hauptstr-235-v-lkerkundemuseum",
-          "name": "Hauptstr. 235 / Völkerkundemuseum",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-raum-440002212-cats",
-      "street": "Raum 440002212 (CATS)",
-      "displayName": "Raum 440002212 (CATS)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-raum-440002212-cats::rm-raum-440002212-cats",
-          "name": "Raum 440002212 (CATS)",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -9852,22 +9626,6 @@
       ]
     },
     {
-      "id": "bld-other-avp",
-      "street": "AVP",
-      "displayName": "AVP",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-avp::rm-avp",
-          "name": "AVP",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-im-neuenheimer-feld-305",
       "street": "Im Neuenheimer Feld 305",
       "displayName": "INF 305",
@@ -9875,6 +9633,31 @@
       "aliases": [],
       "floors": [],
       "rooms": [],
+      "notes": ""
+    },
+    {
+      "id": "bld-bergheimer-str-147-geb-c",
+      "street": "Bergheimer Str. 147, Geb. C",
+      "displayName": "ZEGJ",
+      "campusId": "heidelberg",
+      "aliases": [
+        "ZEGJ",
+        "ZEGJ, Bergheimer Str. 147",
+        "ZEGJ, Bergheimer Str. 147, Geb. C",
+        "ZEGJ, Bergheimer Str. 147, Geb. C, 2. OG"
+      ],
+      "floors": [
+        "2nd floor"
+      ],
+      "rooms": [
+        {
+          "id": "bld-bergheimer-str-147-geb-c::rm-zegj-bergheimer-str-147-geb-c-2-og",
+          "name": "ZEGJ, Bergheimer Str. 147, Geb. C, 2. OG",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        }
+      ],
       "notes": ""
     }
   ]
