@@ -760,6 +760,36 @@ class ArchiveTests(unittest.IsolatedAsyncioTestCase):
             self.assertTrue((root / '2026SS/course-stale.json').exists())
 
 
+class DatabaseSyncTests(unittest.IsolatedAsyncioTestCase):
+    async def test_all_semester_sync_uses_all_flag_and_updates_each_checkpoint(self):
+        from crawler.database import sync_all_databases
+        with tempfile.TemporaryDirectory() as directory, redirect_stdout(StringIO()):
+            root = Path(directory)
+            for semester in SEMESTERS:
+                task = new_task(crawler.CrawlOptions(semester=semester))
+                save_task(task, root)
+            process = types.SimpleNamespace(wait=AsyncMock(return_value=0), returncode=0)
+            with patch('asyncio.create_subprocess_exec', AsyncMock(return_value=process)) as launch:
+                await sync_all_databases(data_dir=root)
+            self.assertEqual(launch.call_args.args, ('npm', 'run', 'db:sync', '--', '--all'))
+            self.assertEqual(launch.call_args.kwargs['env']['HEIVIEW_DATA_DIR'], str(root.resolve()))
+            for semester in SEMESTERS:
+                self.assertEqual(load_task(semester, root)['syncStatus'], 'completed')
+
+    async def test_all_semester_sync_failure_marks_each_checkpoint_failed(self):
+        from crawler.database import sync_all_databases
+        with tempfile.TemporaryDirectory() as directory, redirect_stdout(StringIO()):
+            root = Path(directory)
+            for semester in SEMESTERS:
+                save_task(new_task(crawler.CrawlOptions(semester=semester)), root)
+            process = types.SimpleNamespace(wait=AsyncMock(return_value=1), returncode=1)
+            with patch('asyncio.create_subprocess_exec', AsyncMock(return_value=process)):
+                with self.assertRaises(RuntimeError):
+                    await sync_all_databases(data_dir=root)
+            for semester in SEMESTERS:
+                self.assertEqual(load_task(semester, root)['syncStatus'], 'failed')
+
+
 class MenuTests(unittest.TestCase):
     def configure(self, answers, saved_task=None):
         with patch.object(menu, 'load_task', return_value=saved_task), \
@@ -833,10 +863,31 @@ class MenuTests(unittest.TestCase):
         self.assertEqual(result, menu.SavedTaskAction(options, sync_only=True))
 
     def test_manual_database_operation_uses_shared_sync_function(self):
-        with patch('builtins.input', side_effect=['2', 'y']), \
-                patch.object(menu, 'sync_database', AsyncMock()) as sync, redirect_stdout(StringIO()):
+        with patch('builtins.input', side_effect=['3', 'y']), \
+                patch.object(menu, 'sync_database', AsyncMock()) as sync, \
+                patch.object(menu, 'sync_all_databases', AsyncMock()) as sync_all, redirect_stdout(StringIO()):
             menu.run_database_sync()
         sync.assert_awaited_once_with('2026SS')
+        sync_all.assert_not_awaited()
+
+    def test_manual_database_operation_defaults_to_all_semesters(self):
+        output = StringIO()
+        with patch('builtins.input', side_effect=['', 'y']), \
+                patch.object(menu, 'sync_database', AsyncMock()) as sync, \
+                patch.object(menu, 'sync_all_databases', AsyncMock()) as sync_all, redirect_stdout(output):
+            menu.run_database_sync()
+        sync.assert_not_awaited()
+        sync_all.assert_awaited_once_with()
+        self.assertIn('1. All semesters (default)', output.getvalue())
+        self.assertIn('2. 2026WS', output.getvalue())
+        self.assertIn('3. 2026SS', output.getvalue())
+
+    def test_manual_database_operation_can_select_one_semester(self):
+        with patch('builtins.input', side_effect=['2', 'y']), \
+                patch.object(menu, 'sync_database', AsyncMock()) as sync, \
+                patch.object(menu, 'sync_all_databases', AsyncMock()), redirect_stdout(StringIO()):
+            menu.run_database_sync()
+        sync.assert_awaited_once_with('2026WS')
 
     def test_manual_database_operation_can_return_without_sync(self):
         with patch('builtins.input', side_effect=['b']), \

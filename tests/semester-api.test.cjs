@@ -81,6 +81,13 @@ function riesenSamples(semester) {
   });
 }
 
+function museumSamples(semester) {
+  return ['Hauptstr. 235 / Völkerkundemuseum', 'Völkerkundemuseum'].map((room, index) => {
+    const course = sample(semester, 'Museum alias check');
+    return { ...course, id: `museum-${index}`, weeks: [{ ...course.weeks[0], building: null, room }] };
+  });
+}
+
 function ludwigshafenSamples(semester) {
   const raw = 'BG Ludwigshafen, SR 1+2, Turm 1, 9.OG';
   return [
@@ -122,6 +129,17 @@ function roomCodeSamples(semester) {
     ['malformed', { room: '8020.1.160' }, '8020.1.160', '8020.1.160', null],
     ['ambiguous', { room: '8999.03.303' }, '8999.03.303', '8999.03.303', null],
     ['ambiguous-exact', { room: '8999.01.101' }, 'Shared Code Building A', 'Room A (8999.01.101)', '1st floor'],
+    ['compact', { room: '440002212' }, 'Voßstraße 2 - 4400', 'Übungsraum (4400.02.212)', '2nd floor'],
+    ['compact-location', { room: null, location: 'Raum 440002212 (CATS)' }, 'Voßstraße 2 - 4400', 'Übungsraum (4400.02.212)', '2nd floor'],
+    ['compact-room-text', { room: 'Raum 440002212 (CATS)' }, 'Voßstraße 2 - 4400', 'Übungsraum (4400.02.212)', '2nd floor'],
+    ['compact-location-with-room', { room: 'Raum', location: 'Raum 440002212 (CATS)' }, 'Voßstraße 2 - 4400', 'Übungsraum (4400.02.212)', '2nd floor'],
+    ['compact-new', { room: 'Raum 440003009 (CATS)' }, 'Voßstraße 2 - 4400', '4400.03.009', '3rd floor'],
+    ['compact-ground', { room: '440000002' }, 'Voßstraße 2 - 4400', 'Übungsraum (4400.EG.002)', 'Ground floor'],
+    ['compact-catalog', { room: '440001112' }, 'Voßstraße 2 - 4400', 'Raum 440001112 (CATS)', '1st floor'],
+    ['compact-explicit', { room: '440002212', building: '440002212' }, 'Voßstraße 2 - 4400', 'Übungsraum (4400.02.212)', '2nd floor'],
+    ['compact-unrelated', { room: '440002212', building: 'Test Building' }, 'Test Building', '440002212', null],
+    ['compact-unknown', { room: '999901002' }, '999901002', '999901002', null],
+    ['compact-ambiguous', { room: '899903303' }, '899903303', '899903303', null],
   ].map(([id, week, building_name, room, floor_label]) => {
     const course = sample(semester, `Room code check ${id}`);
     return { ...course, id: `room-code-${id}`, weeks: [{ ...course.weeks[0], building: null, ...week }],
@@ -162,7 +180,7 @@ before(async () => {
   writeJson(path.join(temporary, 'org-name-map.json'), organisationMap);
   writeJson(path.join(temporary, 'note-location-map.json'), locationMap);
   writeJson(path.join(temporary, 'building-catalog.json'), {
-    campuses: [{ id: 'altstadt', name: 'Altstadt' }, { id: 'other', name: 'Other' },
+    campuses: [{ id: 'altstadt', name: 'Altstadt' }, { id: 'other', name: 'Other' }, { id: 'bergheim', name: 'Bergheim' },
       { id: 'mannheim-and-ludwigshafen', name: 'Mannheim & Ludwigshafen' }],
     buildings: [
       { id: 'test-building', street: 'Test Building', campusId: 'altstadt', aliases: [], floors: [],
@@ -172,6 +190,13 @@ before(async () => {
         rooms: [{ id: 'old-location-room', name: 'ZLS, Plöck 79 - 81', floors: [], features: {} }] },
       { id: 'language-centre', street: 'Plöck 79-81', campusId: 'altstadt', floors: [], rooms: [],
         aliases: ['ZLS, Plöck 79 - 81', 'Language Centre, Main Site'] },
+      { id: 'museum', street: 'Hauptstraße 235', campusId: 'altstadt', floors: [],
+        aliases: ['Hauptstr. 235 / Völkerkundemuseum', 'Völkerkundemuseum'], rooms: [] },
+      { id: 'old-museum', street: 'Hauptstr. 235 / Völkerkundemuseum', campusId: 'other',
+        aliases: ['Old Museum Location'], floors: ['1st floor'], rooms: [
+          { id: 'old-museum-room', name: 'Museum Seminar Room', floors: ['1st floor'],
+            features: { hasProjector: true }, notes: 'Preserve room metadata' },
+        ] },
       { id: 'riesen', street: 'Hauptstraße 52', campusId: 'altstadt', floors: [],
         aliases: ['Haus zum Riesen'],
         rooms: [{ id: 'riesen-106', name: '106', floors: [], features: { hasAirConditioning: true } }] },
@@ -204,6 +229,12 @@ before(async () => {
         rooms: [{ id: 'shared-room-a', name: 'Room A (8999.01.101)', floors: [], features: {} }] },
       { id: 'shared-code-b', street: 'Shared Code Building B', campusId: 'altstadt', floors: [],
         rooms: [{ id: 'shared-room-b', name: 'Room B (8999.02.202)', floors: [], features: {} }] },
+      { id: 'voss-4400', street: 'Voßstraße 2 - 4400', campusId: 'bergheim', floors: ['2nd floor'],
+        aliases: [], rooms: [{ id: 'voss-4400-room', name: 'Übungsraum (4400.02.212)', floors: ['2nd floor'], features: {} },
+          { id: 'voss-4400-ground', name: 'Übungsraum (4400.EG.002)', floors: ['Ground floor'], features: {} },
+          { id: 'voss-4400-compact', name: 'Raum 440001112 (CATS)', floors: ['1st floor'], features: {} }] },
+      { id: 'old-voss-compact', street: 'Raum 440002212 (CATS)', campusId: 'other', floors: [], rooms: [
+        { id: 'old-voss-compact-room', name: 'Raum 440002212 (CATS)', floors: [], features: { hasMicrophone: true } }] },
     ],
   });
   for (const semester of ['2026SS', '2026WS']) {
@@ -213,6 +244,9 @@ before(async () => {
       writeJson(path.join(paths.courseDir, `course-${course.id}.json`), course);
     }
     for (const course of buildingAliasSamples(semester)) {
+      writeJson(path.join(paths.courseDir, `course-${course.id}.json`), course);
+    }
+    for (const course of museumSamples(semester)) {
       writeJson(path.join(paths.courseDir, `course-${course.id}.json`), course);
     }
     for (const course of riesenSamples(semester)) {
@@ -359,6 +393,36 @@ test('building aliases resolve complete locations, formatting and floors in both
   }
 });
 
+test('reviewed museum aliases merge legacy Other buildings and work in both semesters', async () => {
+  for (const semester of ['2026SS', '2026WS']) {
+    const db = new Database(pathsFor(semester).dbPath, { readonly: true });
+    try {
+      const check = course => assert.equal(db.prepare('SELECT building_name FROM occurrences WHERE course_id = ?')
+        .get(course.id).building_name, 'Hauptstraße 235');
+      for (const course of museumSamples(semester)) {
+        check(course);
+        withPaths(pathsFor(semester), () => syncSingleCourse(course.id));
+        check(course);
+      }
+      assert.deepEqual(db.prepare("SELECT name, campus_id FROM buildings_meta WHERE name LIKE '%235%'").all(),
+        [{ name: 'Hauptstraße 235', campus_id: 'altstadt' }]);
+    } finally { db.close(); }
+    const date = semester === '2026SS' ? '2026-04-06' : '2026-10-05';
+    const { data } = await request(`/api/schedule?date=${date}`);
+    assert.equal(data.buildings.find(building => building.id === 'Hauptstraße 235').campus, 'Altstadt');
+    assert.ok(data.rooms['Hauptstraße 235'].flatMap(room => room.courses).some(course => course.id === 'museum-0'));
+  }
+  const catalog = JSON.parse(fs.readFileSync(path.join(temporary, 'building-catalog.json'), 'utf8'));
+  assert.ok(!catalog.buildings.some(building => building.id === 'old-museum'));
+  const museum = catalog.buildings.find(building => building.id === 'museum');
+  assert.ok(museum.aliases.includes('Old Museum Location'));
+  assert.ok(museum.floors.includes('1st floor'));
+  assert.deepEqual(museum.rooms.find(room => room.id === 'old-museum-room'), {
+    id: 'old-museum-room', name: 'Museum Seminar Room', floors: ['1st floor'],
+    features: { hasProjector: true }, notes: 'Preserve room metadata',
+  });
+});
+
 test('single-course updates apply building aliases and preserve explicit buildings', () => {
   for (const semester of ['2026SS', '2026WS']) {
     for (const course of buildingAliasSamples(semester).filter(item => !item.id.endsWith('unrelated'))) {
@@ -467,6 +531,9 @@ test('direct room codes reuse catalog rooms or add floors and rooms in both seme
       assert.deepEqual(db.prepare("SELECT has_air_conditioning, has_projector, notes FROM rooms_meta WHERE id='albert-160'").get(),
         { has_air_conditioning: 1, has_projector: 1, notes: 'Reviewed room' });
       assert.equal(db.prepare("SELECT count(*) n FROM rooms_meta WHERE building_id='numbered-room-building' AND name='8111.01.160'").get().n, 0);
+      assert.equal(db.prepare("SELECT count(*) n FROM buildings_meta WHERE name='Raum 440002212 (CATS)'").get().n, 0);
+      assert.equal(db.prepare("SELECT count(*) n FROM rooms_meta WHERE building_id='voss-4400' AND name='Übungsraum (4400.02.212)'").get().n, 1);
+      assert.equal(db.prepare("SELECT has_microphone FROM rooms_meta WHERE id='voss-4400-room'").get().has_microphone, 1);
       assert.ok(JSON.parse(db.prepare("SELECT floors_json FROM buildings_meta WHERE id='albert'").get().floors_json).includes('4th floor'));
       assert.deepEqual(JSON.parse(db.prepare("SELECT floors_json FROM rooms_meta WHERE building_id='albert' AND name='8020.04.007'").get().floors_json), ['4th floor']);
     } finally { db.close(); }
@@ -491,7 +558,7 @@ test('single-course room code sync creates catalog and database metadata without
     }
     const course = sample(semester, 'New coded room after full build');
     course.id = 'room-code-new-single';
-    course.weeks = [{ ...course.weeks[0], building: null, room: '8020.05.999' }];
+    course.weeks = [{ ...course.weeks[0], building: null, room: '802005999' }];
     const file = path.join(paths.courseDir, `course-${course.id}.json`);
     writeJson(file, course);
     const source = fs.readFileSync(file, 'utf8');

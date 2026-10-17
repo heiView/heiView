@@ -33,10 +33,17 @@ function ordinalFloorLabel(value) {
 
 function parseDirectRoomCode(value) {
   const text = String(value || '').trim();
-  const match = text.match(/^(\d{4})\.(\d{2})\.(\d{3})$/);
+  let match = text.match(/^(\d{4})\.(\d{2})\.(\d{3})$/);
+  if (!match) {
+    // Compact codes use the same 4/2/3 parts. Ignore longer numbers and do not
+    // choose arbitrarily when a location names more than one room code.
+    const compact = [...text.matchAll(/(?<![\d.])(\d{4})(\d{2})(\d{3})(?![\d.])/g)];
+    if (new Set(compact.map(item => item[0])).size !== 1) return null;
+    match = compact[0];
+  }
   if (!match) return null;
   return {
-    code: match[0],
+    code: `${match[1]}.${match[2]}.${match[3]}`,
     buildingCode: match[1],
     floorCode: match[2],
     roomCode: match[3],
@@ -44,9 +51,13 @@ function parseDirectRoomCode(value) {
   };
 }
 
+function parseLocationRoomCode(room, location) {
+  return parseDirectRoomCode(room) || parseDirectRoomCode(location);
+}
+
 function extractRoomCode(value) {
   const match = String(value || '').match(/(?<![a-z0-9])(\d{4})\.(\d{2}|EG|U\d)\.(\d{3}[a-z]?)(?![a-z0-9])/i);
-  return match ? match[0] : null;
+  return match ? match[0] : parseDirectRoomCode(value)?.code || null;
 }
 
 function createRoomCodeIndex(buildings) {
@@ -82,7 +93,7 @@ function resolveRoomCode(index, parsedCode) {
   if (exact.length) {
     if (new Set(exact.map(item => item.building)).size !== 1) return null;
     // Prefer a descriptive catalog name over a duplicate bare code.
-    return exact.find(item => !parseDirectRoomCode(item.room.name)) || exact[0];
+    return exact.find(item => ![parsedCode.code, parsedCode.code.replace(/\./g, '')].includes(item.room.name.trim())) || exact[0];
   }
   const candidates = [...(index.byBuildingCode.get(parsedCode.buildingCode) || [])];
   if (candidates.length !== 1) return null;
@@ -124,6 +135,7 @@ module.exports = {
   parseBgLudwigshafen,
   ordinalFloorLabel,
   parseDirectRoomCode,
+  parseLocationRoomCode,
   extractRoomCode,
   createRoomCodeIndex,
   resolveRoomCode,

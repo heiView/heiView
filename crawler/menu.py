@@ -10,7 +10,7 @@ from typing import Callable
 from crawler.config import DATA_DIR, DEFAULT_SEMESTER, SEMESTERS
 from crawler.heico_crawler import CrawlOptions, crawl_courses, crawl_urls_by_semester
 from crawler.checkpoint import can_resume, load_task
-from crawler.database import sync_database
+from crawler.database import sync_database, sync_all_databases
 
 
 class Back(Exception):
@@ -256,11 +256,19 @@ def run_crawl() -> None:
 
 def run_database_sync() -> None:
     try:
-        semester = choose('Select semester to sync', semester_choices(), DEFAULT_SEMESTER)
-        print(f'\nData directory: {DATA_DIR / semester}')
-        print(f'\nHEIVIEW_SEMESTER={semester} npm run db:sync')
+        choices = [('all', 'All semesters'), *semester_choices()]
+        target = choose('Select semesters to sync', choices, 'all')
+        if target == 'all':
+            print(f'\nData directory: {DATA_DIR}')
+            print('\nnpm run db:sync -- --all')
+        else:
+            print(f'\nData directory: {DATA_DIR / target}')
+            print(f'\nHEIVIEW_SEMESTER={target} npm run db:sync')
         if yes_no('\nRun database sync', False):
-            asyncio.run(sync_database(semester))
+            if target == 'all':
+                asyncio.run(sync_all_databases())
+            else:
+                asyncio.run(sync_database(target))
     except Back:
         return
 

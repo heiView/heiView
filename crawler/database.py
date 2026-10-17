@@ -21,16 +21,30 @@ def validate_data(semester: str, data_dir: Path = DATA_DIR) -> None:
 
 
 async def sync_database(semester: str, *, data_dir: Path = DATA_DIR, task: dict | None = None) -> None:
-    validate_data(semester, data_dir)
-    task = task if task is not None else load_task(semester, data_dir)
-    if task:
-        task['syncStatus'] = 'running'
-        save_task(task, data_dir, crawl_activity=False)
-    env = {**os.environ, 'HEIVIEW_SEMESTER': semester, 'HEIVIEW_DATA_DIR': str(data_dir.resolve())}
-    print(f'[{semester}] npm run db:sync → {data_dir / (semester + ".db")}', flush=True)
+    all_semesters = semester == 'all'
+    if all_semesters:
+        # The Node sync validates every local semester (including databases
+        # whose source directory is missing) before changing shared data.
+        tasks = [saved for selected in SEMESTERS if (data_dir / selected).is_dir()
+                 if (saved := load_task(selected, data_dir)) is not None]
+    else:
+        validate_data(semester, data_dir)
+        saved = task if task is not None else load_task(semester, data_dir)
+        tasks = [saved] if saved is not None else []
+    for saved in tasks:
+        saved['syncStatus'] = 'running'
+        save_task(saved, data_dir, crawl_activity=False)
+    env = {**os.environ, 'HEIVIEW_DATA_DIR': str(data_dir.resolve())}
+    args = ['npm', 'run', 'db:sync']
+    if all_semesters:
+        args += ['--', '--all']
+    else:
+        env['HEIVIEW_SEMESTER'] = semester
+    destination = data_dir if all_semesters else data_dir / (semester + '.db')
+    print(f'[{semester}] {" ".join(args)} → {destination}', flush=True)
     process = None
     try:
-        process = await asyncio.create_subprocess_exec('npm', 'run', 'db:sync', cwd=PROJECT_ROOT, env=env,
+        process = await asyncio.create_subprocess_exec(*args, cwd=PROJECT_ROOT, env=env,
                                                       start_new_session=True)
         code = await process.wait()
         if code:
@@ -42,13 +56,18 @@ async def sync_database(semester: str, *, data_dir: Path = DATA_DIR, task: dict 
             except ProcessLookupError:
                 pass
             await process.wait()
-        if task:
-            task['syncStatus'] = 'interrupted' if isinstance(exc, asyncio.CancelledError) else 'failed'
-            task['syncError'] = str(exc)
-            save_task(task, data_dir, crawl_activity=False)
+        for saved in tasks:
+            saved['syncStatus'] = 'interrupted' if isinstance(exc, asyncio.CancelledError) else 'failed'
+            saved['syncError'] = str(exc)
+            save_task(saved, data_dir, crawl_activity=False)
         raise
-    if task:
-        task['syncStatus'] = 'completed'
-        task.pop('syncError', None)
-        save_task(task, data_dir, crawl_activity=False)
+    for saved in tasks:
+        saved['syncStatus'] = 'completed'
+        saved.pop('syncError', None)
+        save_task(saved, data_dir, crawl_activity=False)
     print(f'[{semester}] Database sync completed successfully.', flush=True)
+
+
+async def sync_all_databases(*, data_dir: Path = DATA_DIR) -> None:
+    """Build all local semesters before pruning unused Other buildings."""
+    await sync_database('all', data_dir=data_dir)

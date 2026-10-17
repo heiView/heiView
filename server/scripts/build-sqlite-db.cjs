@@ -3,11 +3,12 @@ const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
 const { loadOrgSynonymLookup, matchesOrganisation } = require('../organisation-map.cjs');
-const { createBuildingAliasMap, findBuildingAlias } = require('../building-aliases.cjs');
+const { createBuildingAliasMap, findBuildingAlias, findBuildingRoom, isOtherBuilding } = require('../building-aliases.cjs');
 const {
   parseHausZumRiesen,
   parseBgLudwigshafen,
   parseDirectRoomCode,
+  parseLocationRoomCode,
   createRoomCodeIndex,
   resolveRoomCode,
   ensureRoomCodeRoom,
@@ -62,11 +63,11 @@ function resolveCoursePath(fileName) {
   return path.join(getPaths().courseDir, fileName);
 }
 
-function buildAliasMap() {
+function buildAliasMap(options) {
   if (!fs.existsSync(CATALOG_PATH)) return new Map();
   try {
     const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
-    return createBuildingAliasMap(catalog.buildings || []);
+    return createBuildingAliasMap(catalog.buildings || [], options);
   } catch (e) {
     console.warn('[alias] Failed to load building-catalog.json:', e.message);
     return new Map();
@@ -215,6 +216,13 @@ function splitBuildingAndFloor(value, aliasMap) {
   return { buildingName: buildingName || null, floorLabel: normalizeFloorLabel(floorLabel) };
 }
 
+function resolveFallbackLocation(rawRoom, aliasMap, fallbackAliasMap, explicitFallback) {
+  const reviewed = splitBuildingAndFloor(rawRoom, aliasMap);
+  const buildingName = findBuildingAlias(reviewed.buildingName, aliasMap);
+  if (buildingName) return { ...reviewed, buildingName };
+  return explicitFallback || splitBuildingAndFloor(rawRoom, fallbackAliasMap);
+}
+
 function ensureCoursesExtraColumns(db) {
   const columns = db.prepare('PRAGMA table_info(courses);').all();
   const names = new Set(columns.map((column) => column.name));
@@ -323,8 +331,9 @@ function main() {
     db.exec('DELETE FROM occurrences;');
     db.exec('DELETE FROM courses;');
 
-    const aliasMap = buildAliasMap();
-    const { index: roomCodeLookup } = buildRoomCodeLookup();
+    const aliasMap = buildAliasMap({ includeOther: false });
+    const fallbackAliasMap = buildAliasMap();
+    const { catalog: roomCodeCatalog, index: roomCodeLookup } = buildRoomCodeLookup();
     const skipSet = loadSkipSet();
     const noteLocationMap = loadNoteLocationMap();
     const orgLookup = loadOrgSynonymLookup();
@@ -414,7 +423,9 @@ function main() {
         let resolvedRoom = week.room;
         let resolvedBuilding = week.building;
         const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
-        const isVagueBuilding = !resolvedBuilding;
+        const isVagueBuilding = !resolvedBuilding || isOtherBuilding(
+          splitBuildingAndFloor(resolvedBuilding, fallbackAliasMap).buildingName,
+          roomCodeCatalog.buildings, fallbackAliasMap);
         if (isVagueRoom && isVagueBuilding) {
           const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation, orgLookup))
             || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation, orgLookup))
@@ -428,6 +439,9 @@ function main() {
         const rawRoom = (resolvedRoom || week.location || '').trim() || null;
         let split = splitBuildingAndFloor(resolvedBuilding || null, aliasMap);
         let currentRoom = rawRoom;
+        const originalSplit = splitBuildingAndFloor(resolvedBuilding, fallbackAliasMap);
+        const fallbackSplit = isOtherBuilding(originalSplit.buildingName, roomCodeCatalog.buildings, fallbackAliasMap) ? originalSplit : null;
+        if (fallbackSplit && rawRoom) split = { buildingName: null, floorLabel: split.floorLabel };
 
         const hausZumRiesen = parseHausZumRiesen(rawRoom);
         if (hausZumRiesen && (!split.buildingName
@@ -446,11 +460,11 @@ function main() {
           currentRoom = bgLudwigshafen.room;
         }
 
-        const directRoomCode = parseDirectRoomCode(rawRoom);
+        const directRoomCode = parseLocationRoomCode(resolvedRoom, week.location);
         const directRoomMatch = resolveRoomCode(roomCodeLookup, directRoomCode);
         if (directRoomCode && directRoomMatch
             && (!split.buildingName
-              || split.buildingName === directRoomCode.code
+              || parseDirectRoomCode(split.buildingName)?.code === directRoomCode.code
               || resolveCanonicalBuildingName(split.buildingName, aliasMap) === directRoomMatch.building.street)) {
           split.buildingName = directRoomMatch.building.street;
           split.floorLabel = directRoomCode.floorLabel;
@@ -517,7 +531,7 @@ function main() {
                   } else {
                     // Generic fallback: extract building name from rawRoom (e.g. "Room, Building, Floor")
                     // mirror the same fallback used in patch-catalog.cjs
-                    const fallback = splitBuildingAndFloor(rawRoom, aliasMap);
+                    const fallback = resolveFallbackLocation(rawRoom, aliasMap, fallbackAliasMap, fallbackSplit);
                     if (fallback.buildingName) {
                       split.buildingName = fallback.buildingName;
                       split.floorLabel = fallback.floorLabel;
@@ -541,6 +555,12 @@ function main() {
           } else {
             split.buildingName = `Voßstraße 2`;
           }
+        }
+
+        const roomMatch = findBuildingRoom(roomCodeCatalog.buildings, currentRoom, split.buildingName);
+        if (roomMatch) {
+          split.buildingName = roomMatch.building.street;
+          currentRoom = roomMatch.room.name;
         }
 
         for (const date of meetingDates) {
@@ -619,7 +639,8 @@ function syncSingleCourse(courseId) {
 
   const db = new Database(getPaths().dbPath);
   ensureOccurrencesSplitColumns(db);
-  const aliasMap = buildAliasMap();
+  const aliasMap = buildAliasMap({ includeOther: false });
+  const fallbackAliasMap = buildAliasMap();
   const { catalog: roomCodeCatalog, index: roomCodeLookup } = buildRoomCodeLookup();
   let roomCodeCatalogChanged = false;
   let roomCodeMetadataNeedsImport = false;
@@ -682,7 +703,9 @@ function syncSingleCourse(courseId) {
       let resolvedRoom = week.room;
       let resolvedBuilding = week.building;
       const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
-      const isVagueBuilding = !resolvedBuilding;
+      const isVagueBuilding = !resolvedBuilding || isOtherBuilding(
+        splitBuildingAndFloor(resolvedBuilding, fallbackAliasMap).buildingName,
+        roomCodeCatalog.buildings, fallbackAliasMap);
       if (isVagueRoom && isVagueBuilding) {
         const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation, orgLookup))
           || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation, orgLookup))
@@ -693,6 +716,9 @@ function syncSingleCourse(courseId) {
       const rawRoom = (resolvedRoom || week.location || '').trim() || null;
       let split = splitBuildingAndFloor(resolvedBuilding || null, aliasMap);
       let currentRoom = rawRoom;
+      const originalSplit = splitBuildingAndFloor(resolvedBuilding, fallbackAliasMap);
+      const fallbackSplit = isOtherBuilding(originalSplit.buildingName, roomCodeCatalog.buildings, fallbackAliasMap) ? originalSplit : null;
+      if (fallbackSplit && rawRoom) split = { buildingName: null, floorLabel: split.floorLabel };
 
       const hausZumRiesen = parseHausZumRiesen(rawRoom);
       if (hausZumRiesen && (!split.buildingName
@@ -711,11 +737,11 @@ function syncSingleCourse(courseId) {
         currentRoom = bgLudwigshafen.room;
       }
 
-      const directRoomCode = parseDirectRoomCode(rawRoom);
+      const directRoomCode = parseLocationRoomCode(resolvedRoom, week.location);
       const directRoomMatch = resolveRoomCode(roomCodeLookup, directRoomCode);
       if (directRoomCode && directRoomMatch
           && (!split.buildingName
-            || split.buildingName === directRoomCode.code
+            || parseDirectRoomCode(split.buildingName)?.code === directRoomCode.code
             || resolveCanonicalBuildingName(split.buildingName, aliasMap) === directRoomMatch.building.street)) {
         const registered = ensureRoomCodeRoom(roomCodeLookup, directRoomCode);
         roomCodeCatalogChanged ||= registered.changed;
@@ -780,7 +806,7 @@ function syncSingleCourse(courseId) {
                   split.floorLabel = floorLabel;
                   currentRoom = 'Unbekannt';
                 } else {
-                  const fallback = splitBuildingAndFloor(rawRoom, aliasMap);
+                  const fallback = resolveFallbackLocation(rawRoom, aliasMap, fallbackAliasMap, fallbackSplit);
                   if (fallback.buildingName) {
                     split.buildingName = fallback.buildingName;
                     split.floorLabel = fallback.floorLabel;
@@ -803,6 +829,12 @@ function syncSingleCourse(courseId) {
         } else {
           split.buildingName = `Voßstraße 2`;
         }
+      }
+
+      const roomMatch = findBuildingRoom(roomCodeCatalog.buildings, currentRoom, split.buildingName);
+      if (roomMatch) {
+        split.buildingName = roomMatch.building.street;
+        currentRoom = roomMatch.room.name;
       }
 
       for (const date of meetingDates) {

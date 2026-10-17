@@ -1,10 +1,10 @@
 const { DATA_DIR, getPaths } = require('../semesters.cjs');
 const fs = require('fs');
 const path = require('path');
-const { normalizeBuildingKey, createBuildingAliasMap, findBuildingAlias } = require('../building-aliases.cjs');
+const { normalizeBuildingKey, createBuildingAliasMap, findBuildingAlias, findBuildingRoom, isOtherBuilding } = require('../building-aliases.cjs');
 const {
   parseHausZumRiesen, parseBgLudwigshafen,
-  parseDirectRoomCode, createRoomCodeIndex, resolveRoomCode, ensureRoomCodeRoom,
+  parseDirectRoomCode, parseLocationRoomCode, createRoomCodeIndex, resolveRoomCode, ensureRoomCodeRoom,
 } = require('../location-rules.cjs');
 
 const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
@@ -208,8 +208,11 @@ function mergeEquivalentBuildings(catalog) {
 
       // If the hyphen equivalent exists, merge slashBld into targetBld
       if (targetBld && targetBld !== slashBld) {
-        mergeBuildingData(targetBld, slashBld);
-        toRemove.add(slashBld);
+        const preferSlash = targetBld.campusId === 'other' && slashBld.campusId !== 'other';
+        const target = preferSlash ? slashBld : targetBld;
+        const source = preferSlash ? targetBld : slashBld;
+        mergeBuildingData(target, source);
+        toRemove.add(source);
       }
     }
   }
@@ -232,6 +235,21 @@ function mergeEquivalentBuildings(catalog) {
       normalizedMap.set(key, target);
       toRemove.add(source);
     }
+  }
+
+  // A previously unparsed location may now be an alias of a reviewed building.
+  // Merge its rooms before removing it so future syncs cannot resurrect the
+  // duplicate or let it override the reviewed alias mapping.
+  const reviewedBuildings = catalog.buildings.filter(building =>
+    !toRemove.has(building) && building.campusId && building.campusId !== 'other');
+  const reviewedAliases = createBuildingAliasMap(reviewedBuildings);
+  const reviewedByStreet = new Map(reviewedBuildings.map(building => [building.street, building]));
+  for (const source of catalog.buildings) {
+    if (toRemove.has(source) || source.campusId !== 'other') continue;
+    const target = reviewedByStreet.get(findBuildingAlias(source.street, reviewedAliases));
+    if (!target) continue;
+    mergeBuildingData(target, source);
+    toRemove.add(source);
   }
 
   // Remove all equivalent duplicate buildings.
@@ -383,6 +401,7 @@ function main() {
     buildingsMap.set(b.street, b);
   }
   const aliasMap = createBuildingAliasMap(catalog.buildings);
+  const reviewedAliasMap = createBuildingAliasMap(catalog.buildings, { includeOther: false });
   const roomCodeIndex = createRoomCodeIndex(catalog.buildings);
 
   // Ensure directory exists before reading
@@ -399,17 +418,19 @@ function main() {
       for (const week of weeks) {
         const rawRoom = week.room || week.location || '';
         if (!rawRoom.trim()) continue;
+        const explicitOther = isOtherBuilding(
+          splitBuildingAndFloor(week.building, aliasMap).buildingName, catalog.buildings, aliasMap);
 
-        const directCode = parseDirectRoomCode(rawRoom);
+        const directCode = parseLocationRoomCode(week.room, week.location);
         if (directCode) {
           const resolved = resolveRoomCode(roomCodeIndex, directCode);
           const explicitBuilding = splitBuildingAndFloor(week.building, aliasMap).buildingName;
-          if (resolved && (!explicitBuilding || explicitBuilding === directCode.code || explicitBuilding === resolved.building.street)) {
+          if (resolved && (!explicitBuilding || explicitOther || parseDirectRoomCode(explicitBuilding)?.code === directCode.code || explicitBuilding === resolved.building.street)) {
             ensureRoomCodeRoom(roomCodeIndex, directCode);
             continue;
           }
         }
-        if (week.building) continue;
+        if (week.building && !explicitOther) continue;
 
         const online = parseOnline(rawRoom);
         const inf = parseInfRoom(rawRoom);
@@ -436,11 +457,23 @@ function main() {
                     voss ? "bergheim" : "other"; 
         } else {
           // Fallback logic
-          const split = splitBuildingAndFloor(rawRoom, aliasMap);
+          const reviewedLocation = splitBuildingAndFloor(rawRoom, reviewedAliasMap);
+          const reviewedBuilding = findBuildingAlias(reviewedLocation.buildingName, reviewedAliasMap);
+          const split = reviewedBuilding ? { ...reviewedLocation, buildingName: reviewedBuilding }
+            : splitBuildingAndFloor(explicitOther ? week.building : rawRoom, aliasMap);
           fallbackBuildingName = findBuildingAlias(split.buildingName, aliasMap) || split.buildingName || rawRoom.trim();
           floorLabel = split.floorLabel;
           targetRoomName = rawRoom.trim();
           campusId = "other";
+        }
+
+        const roomMatch = findBuildingRoom(catalog.buildings, targetRoomName, fallbackBuildingName);
+        const currentBuilding = catalog.buildings.find(building =>
+          normalizeBuildingKey(building.street) === normalizeBuildingKey(fallbackBuildingName));
+        if (roomMatch && (!currentBuilding || currentBuilding.campusId === 'other')) {
+          fallbackBuildingName = roomMatch.building.street;
+          targetRoomName = roomMatch.room.name;
+          campusId = roomMatch.building.campusId;
         }
 
         // Apply hypen mapping if a hyphenated building exists instead of a slash building
