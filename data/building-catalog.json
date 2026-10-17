@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T10:20:53.274Z",
+  "updatedAt": "2026-10-17T14:37:12.491Z",
   "campuses": [
     {
       "id": "altstadt",
@@ -1299,7 +1299,13 @@
       "campusId": "altstadt",
       "aliases": [
         "Hauptstr. 52",
-        "Hauptstrasse 52"
+        "Hauptstrasse 52",
+        "Haus zum Riesen",
+        "106 Haus zum Riesen (10)",
+        "204 Haus zum Riesen (45)",
+        "205 Haus zum Riesen (15)",
+        "002 Haus zum Riesen (40)",
+        "210 Haus zum Riesen (25)"
       ],
       "floors": [
         "1st floor",
@@ -6905,7 +6911,8 @@
       "aliases": [
         "Plöck 79/81",
         "ZSL",
-        "Zentrales Sprachlabor"
+        "Zentrales Sprachlabor",
+        "ZLS, Plöck 79 - 81"
       ],
       "floors": [
         "1st floor",
@@ -6976,6 +6983,13 @@
             "hasAccessControl": null
           },
           "notes": ""
+        },
+        {
+          "id": "bld-other-pl-ck-79-81::rm-zls-pl-ck-79-81",
+          "name": "ZLS, Plöck 79 - 81",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ],
       "notes": ""
@@ -8346,6 +8360,13 @@
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
+        },
+        {
+          "id": "bld-ort-zeit-noch-nicht-bekannt::rm-ort-zeit-noch-nicht-bekannt-1",
+          "name": "Ort/Zeit noch nicht bekannt",
+          "floors": [],
+          "features": {},
+          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
         }
       ]
     },
@@ -8764,12 +8785,23 @@
       "aliases": [
         "Ludwig-Guttmann-Stra 13",
         "Ludwig-Guttmann-Stra. 13",
-        "BK Ludwigshafen"
+        "BK Ludwigshafen",
+        "BG Ludwigshafen"
       ],
       "floors": [
         "9th floor"
       ],
-      "rooms": [],
+      "rooms": [
+        {
+          "id": "bld-other-turm-1::rm-bg-ludwigshafen-sr-1-2-turm-1-9-og",
+          "name": "SR 1+2, Turm 1",
+          "floors": [
+            "9th floor"
+          ],
+          "features": {},
+          "notes": ""
+        }
+      ],
       "notes": ""
     },
     {
@@ -9580,54 +9612,6 @@
       ]
     },
     {
-      "id": "bld-other-8020-01-160",
-      "street": "8020.01.160",
-      "displayName": "8020.01.160",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-8020-01-160::rm-8020-01-160",
-          "name": "8020.01.160",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-106-haus-zum-riesen-10",
-      "street": "106 Haus zum Riesen (10)",
-      "displayName": "106 Haus zum Riesen (10)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-106-haus-zum-riesen-10::rm-106-haus-zum-riesen-10",
-          "name": "106 Haus zum Riesen (10)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-204-haus-zum-riesen-45",
-      "street": "204 Haus zum Riesen (45)",
-      "displayName": "204 Haus zum Riesen (45)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-204-haus-zum-riesen-45::rm-204-haus-zum-riesen-45",
-          "name": "204 Haus zum Riesen (45)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-other-a2-08-altbau",
       "street": "A2.08 (Altbau)",
       "displayName": "A2.08 (Altbau)",
@@ -9644,22 +9628,6 @@
       ]
     },
     {
-      "id": "bld-other-205-haus-zum-riesen-15",
-      "street": "205 Haus zum Riesen (15)",
-      "displayName": "205 Haus zum Riesen (15)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-205-haus-zum-riesen-15::rm-205-haus-zum-riesen-15",
-          "name": "205 Haus zum Riesen (15)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-other-seminarraum-1",
       "street": "Seminarraum 1",
       "displayName": "Seminarraum 1",
@@ -9669,22 +9637,6 @@
         {
           "id": "bld-other-seminarraum-1::rm-seminarraum-1",
           "name": "Seminarraum 1",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-002-haus-zum-riesen-40",
-      "street": "002 Haus zum Riesen (40)",
-      "displayName": "002 Haus zum Riesen (40)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-002-haus-zum-riesen-40::rm-002-haus-zum-riesen-40",
-          "name": "002 Haus zum Riesen (40)",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."
@@ -9804,42 +9756,6 @@
       ]
     },
     {
-      "id": "bld-other-pl-ck-79-81",
-      "street": "Plöck 79 - 81",
-      "displayName": "Plöck 79 - 81",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-pl-ck-79-81::rm-zls-pl-ck-79-81",
-          "name": "ZLS, Plöck 79 - 81",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-turm-1",
-      "street": "Turm 1",
-      "displayName": "Turm 1",
-      "campusId": "other",
-      "floors": [
-        "9.OG"
-      ],
-      "rooms": [
-        {
-          "id": "bld-other-turm-1::rm-bg-ludwigshafen-sr-1-2-turm-1-9-og",
-          "name": "BG Ludwigshafen, SR 1+2, Turm 1, 9.OG",
-          "floors": [
-            "9.OG"
-          ],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
       "id": "bld-other-kapelle",
       "street": "Kapelle",
       "displayName": "Kapelle",
@@ -9865,22 +9781,6 @@
         {
           "id": "bld-other-hfk-a::rm-hfk-a",
           "name": "HfK (A)",
-          "floors": [],
-          "features": {},
-          "notes": "Auto-generated fallback from unparsed location. Needs manual review."
-        }
-      ]
-    },
-    {
-      "id": "bld-other-210-haus-zum-riesen-25",
-      "street": "210 Haus zum Riesen (25)",
-      "displayName": "210 Haus zum Riesen (25)",
-      "campusId": "other",
-      "floors": [],
-      "rooms": [
-        {
-          "id": "bld-other-210-haus-zum-riesen-25::rm-210-haus-zum-riesen-25",
-          "name": "210 Haus zum Riesen (25)",
           "floors": [],
           "features": {},
           "notes": "Auto-generated fallback from unparsed location. Needs manual review."

@@ -81,46 +81,15 @@ function audit(req, action, target, summary, snapshot) {
 }
 const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
 const NOTE_LOCATION_MAP_PATH = path.join(DATA_DIR, 'note-location-map.json');
-const ORG_NAME_MAP_PATH = path.join(DATA_DIR, 'org-name-map.json');
+const { loadOrgSynonymLookup } = require('./organisation-map.cjs');
 
 const scheduleCache = new Map(); // key -> { data, ts } — module-level so writeCatalog can clear it
 
 // ── Org synonym expansion ────────────────────────────────────────────────────
-// Maps lowercase synonym → Set<string> of all synonyms for the same org.
-// Used to expand organisation searches across English/German names and abbreviations.
-function buildOrgSynonymLookup() {
-  try {
-    const raw = JSON.parse(fs.readFileSync(ORG_NAME_MAP_PATH, 'utf8'));
-    const lookup = new Map(); // lowerSynonym -> Set of all synonyms for this org
-    for (const entry of Object.values(raw)) {
-      const synonyms = (entry.synonyms || []).map(s =>
-        s.replace(/&amp;/g, '&')
-      );
-      const en = (entry.en || '').replace(/&amp;/g, '&');
-      const de = (entry.de || '').replace(/&amp;/g, '&');
-      const abbrev = entry.abbrev;
-      // Include "name (abbrev)" compound variants that may appear in the organisation field
-      const allVariants = new Set(synonyms);
-      if (abbrev) {
-        allVariants.add(`${en} (${abbrev})`);
-        if (de !== en) allVariants.add(`${de} (${abbrev})`);
-      }
-      for (const syn of synonyms) {
-        const key = syn.toLowerCase();
-        if (!lookup.has(key)) lookup.set(key, new Set());
-        for (const v of allVariants) lookup.get(key).add(v);
-      }
-    }
-    return lookup;
-  } catch (_) { return new Map(); }
-}
-
-const orgSynonymLookup = buildOrgSynonymLookup();
-
 // Returns extra organisation LIKE patterns for synonyms of orgs matching the query.
 function getOrgExpansionPatterns(qLower) {
   const extraPatterns = new Set();
-  for (const [synLower, variantSet] of orgSynonymLookup) {
+  for (const [synLower, variantSet] of loadOrgSynonymLookup()) {
     let matches = false;
     if (synLower === qLower) {
       // Exact synonym match (handles abbreviations like "RS", "ZMBH")

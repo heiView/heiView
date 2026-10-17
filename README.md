@@ -40,6 +40,14 @@ Whether you're looking for a quiet room to study, or exploring courses and activ
 
 The `data/building-catalog.json` file is a data dictionary generated from the classroom information in the heiCO course, supplemented by a large number of manual modifications. It is used to record the affiliation and alias relationships of different campuses, buildings and classrooms. For example, Grabengasse 3-5 is displayed as Neue Universität for easy understanding, and Voßstraße 2 is divided into 10 different buildings to avoid new students getting lost, etc.
 
+Building aliases are shared across semesters. Both full builds and single-course updates match complete locations before splitting comma-separated room/building/floor fields, ignoring case, repeated whitespace and spacing around hyphens. For example, the alias `ZLS, Plöck 79 - 81` resolves to `Plöck 79-81`. After editing aliases, run `HEIVIEW_SEMESTER=2026SS npm run db:sync` (and repeat for other existing semesters); refreshing the webpage alone does not rebuild the database. Database sync also merges duplicate building streets that differ only in these formatting details, preserving their rooms and aliases.
+
+Locations such as `106 Haus zum Riesen (10)` and `204 Haus zum Riesen (45)` resolve to `Hauptstraße 52`, with room names `106` and `204`. Leading zeros such as `002` are preserved. The parenthesized suffix remains in the source JSON and is omitted from the displayed room name. Full builds and single-course updates use the same rule, and catalog sync merges old fallback buildings into the correct building.
+
+Locations starting with `BG Ludwigshafen,` resolve to `Ludwig-Guttmann-Straße 13`. For example, `BG Ludwigshafen, SR 1+2, Turm 1, 9.OG` becomes room `SR 1+2, Turm 1` on the `9th floor`. The rule applies to all semesters during full builds and single-course updates, without course overrides. Catalog sync moves previously unparsed rooms to the hospital and removes empty fallback buildings.
+
+Bare room codes in the format `BBBB.FF.RRR` also resolve automatically. The catalog's known room codes identify the building: `8020.01.160` maps to `Albert-Ueberle-Straße 3-5`, on the `1st floor`. Existing rooms are reused by complete code, preserving their names and facilities; missing rooms use the full code as their name, and missing floors are added (`00` means ground floor). Full database sync and single-course updates apply the same rule across semesters. Unknown or ambiguous building codes retain their original location rather than receiving a guessed address.
+
 There are still some contents to be improved, such as incomplete building floors, adding common abbreviations to the buildings and information about the facilities inside the classroom (whether there are sockets and air conditioners, etc.).
 
 ### To Do List
@@ -107,6 +115,8 @@ data/2026SS.db
 data/2026WS.db
 ```
 Shared building catalogs and location maps stay under `data/`. The previous `data/heiview.db` has been renamed to `data/2026SS.db`, and `data/2026WS/heiview.db` to `data/2026WS.db`. For older installations that still have `data/heiview.db`, it remains a **2026SS** fallback when `data/2026SS.db` is absent. Rebuilding SS creates the new database; the first authenticated SS admin write also makes a SQLite copy before editing, preserving the legacy file. WS and other semesters never fall back to it. The legacy shared `data/sync-meta.json` still receives full SS crawl updates; new builds read semester metadata, with the matching legacy SS record as an initial fallback. Existing shared further-information skip records are likewise retained for SS only.
+
+`data/note-location-map.json` and `data/org-name-map.json` are shared by **all semesters**, including future semesters; keep one copy of each in the data root. Full database builds and single-course updates apply the location rules to vague locations in notes, location fields and further information. Organisation filters recognize English/German names and abbreviations from the shared organisation map; an absent organisation cannot satisfy an organisation-specific rule. Explicit room/building assignments are preserved. Organisation searches use the same aliases and reload the registry when it changes. After editing location rules, run database sync for each existing semester that should receive the corrections; newly crawled courses use the shared rules during their automatic database sync.
 
 The public site loads **only the selected day's schedule**, defaulting to today's Berlin date (or a valid `?date=YYYY-MM-DD` URL). April–September maps to that year's SS; October–March maps to WS beginning in October (January–March belongs to the previous year's WS). Thus 2026-09-30 → 2026SS, 2026-10-01 and 2027-03-31 → 2026WS. Historic dates/semesters are requested only when selected, without background crawling or historical prefetch. Missing semester databases show “data not ready”, distinct from an empty day or request error.
 
@@ -205,6 +215,14 @@ This project is licensed under the [AGPL-3.0 License](LICENSE).
 
 `data/building-catalog.json` 文件是由heiCO课程里的教室信息生成的数据字典，辅以大量手动修改，用于记录不同校区、建筑物和教室的从属与别名关系，例如让 Grabengasse 3-5 显示为 Neue Universität 方便理解，将 Voßstraße 2 细分为10栋不同建筑避免新生迷路等。
 
+建筑别名对所有学期共用。完整建库和单课程更新会先匹配完整地点，再拆分逗号分隔的教室、建筑和楼层，匹配时忽略大小写、多余空格及连字符两侧空格。例如别名 `ZLS, Plöck 79 - 81` 可归入 `Plöck 79-81`。修改别名后需运行 `HEIVIEW_SEMESTER=2026SS npm run db:sync`，其他已有学期分别同步；仅刷新网页不会重建数据库。同步还会合并仅有这些格式差异的重复建筑，保留教室和别名。
+
+`106 Haus zum Riesen (10)`、`204 Haus zum Riesen (45)` 等地点会归入 `Hauptstraße 52`，教室名分别为 `106`、`204`，`002` 等前导零会保留。括号后缀仍保存在原始 JSON 中，不作为网页显示的教室名。完整建库和单课程更新使用同一规则，目录同步时会将旧的回退建筑合并到正确建筑。
+
+以 `BG Ludwigshafen,` 开头的地点会归入 `Ludwig-Guttmann-Straße 13`。例如 `BG Ludwigshafen, SR 1+2, Turm 1, 9.OG` 会拆分为教室 `SR 1+2, Turm 1` 和楼层 `9th floor`。规则适用于所有学期的完整建库和单课程更新，无需课程 override。目录同步会将此前未解析的教室移到医院，并删除清空后的回退建筑。
+
+仅包含 `BBBB.FF.RRR` 格式编码的地点也会自动匹配。系统根据目录中已知教室的编码识别建筑，例如 `8020.01.160` 会归入 `Albert-Ueberle-Straße 3-5` 的 `1st floor`。完整编码对应的教室已存在时，复用其名称和设施信息；不存在时，以完整编码作为名称新建教室，并补充缺失楼层（`00` 表示地面层）。完整建库和单课程更新均使用此规则，适用于所有学期。无法确定或存在歧义的建筑编号会保留原地点，不猜测地址。
+
 目前还有部分内容待完善，如建筑楼层不全，为建筑添加常见的简称及教室内部的设施信息（是否有插座和空调等）。
 
 ### 待办事项
@@ -259,6 +277,8 @@ HEIVIEW_SEMESTER=2026SS npm run db:sync
 `data/2026SS/` 和 `data/2026WS/` 中的课程源文件由 Git 忽略并保留在本地；生成的学期数据库统一放在 `data/` 根目录，命名为 `2026SS.db`、`2026WS.db` 等，并纳入版本控制。要发布数据库更新，提交并推送对应数据库文件。部署工作流会更新远程数据库，不会覆盖或上传本地课程源文件。
 
 每个学期文件夹保存自己的课程源数据及相关人工修订、反馈、断点和同步记录，数据库单独存放为 `data/2026SS.db`、`data/2026WS.db`。原 `data/heiview.db` 已改名为 `data/2026SS.db`，原 `data/2026WS/heiview.db` 已迁移到 `data/2026WS.db`。建筑目录和地点映射继续共用。对于仍保留旧库的安装，`data/heiview.db` 仅在 `data/2026SS.db` 不存在时作为 **2026SS** 回退；重建 SS 会生成新分库，首次经过身份验证的 SS 管理写入也会先复制数据库，保留旧库。WS 和其他学期绝不回退到旧库。旧共享 `data/sync-meta.json` 继续接受 SS 全量爬取更新，新构建优先读取所选学期元数据；SS 初次构建可回退读取与学期匹配的旧记录。已有共享的补充信息跳过记录也仅为 SS 保留兼容。
+
+`data/note-location-map.json` 和 `data/org-name-map.json` 对**所有学期及未来学期**共用，只需在 `data/` 根目录各维护一份。完整建库和单课程更新会用地点规则匹配备注、location 字段及补充信息中的模糊地点；机构条件会识别机构映射里的英德名称和缩写，机构缺失的课程不会命中特定机构的规则，明确填写的教室和建筑会保留。机构搜索使用同一套别名，并在配置变更后自动重新读取。修改地点规则后，对需要更新的已有学期分别运行数据库同步；以后爬取的课程会在自动同步时使用这些共享规则。
 
 网页首次打开只加载所选日期的当天课表，默认 Berlin 今天，也支持有效的 `?date=YYYY-MM-DD`。4—9 月对应当年 SS，10 月至次年 3 月对应当年 WS，1—3 月属于上一年 WS。历史日期和学期仅在用户选择后请求，不预加载、不临时爬取或构建数据库。缺少数据库显示“该学期数据尚未准备”，与当天无课程、请求失败区分。
 

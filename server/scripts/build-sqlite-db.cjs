@@ -2,6 +2,16 @@ const { DATA_DIR, getPaths } = require('../semesters.cjs');
 const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
+const { loadOrgSynonymLookup, matchesOrganisation } = require('../organisation-map.cjs');
+const { createBuildingAliasMap, findBuildingAlias } = require('../building-aliases.cjs');
+const {
+  parseHausZumRiesen,
+  parseBgLudwigshafen,
+  parseDirectRoomCode,
+  createRoomCodeIndex,
+  resolveRoomCode,
+  ensureRoomCodeRoom,
+} = require('../location-rules.cjs');
 
 const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
 const NOTE_LOCATION_MAP_PATH = path.join(DATA_DIR, 'note-location-map.json');
@@ -17,17 +27,11 @@ function loadNoteLocationMap() {
   }
 }
 
-function resolveNoteToLocation(note, entries, organisation) {
+function resolveNoteToLocation(note, entries, organisation, orgLookup) {
   if (!note || !entries.length) return null;
   const trimmedLower = note.trim().toLowerCase();
-  const orgLower = (organisation || '').trim().toLowerCase();
   for (const entry of entries) {
-    // If the entry has an organisation filter, only match courses whose organisation
-    // contains the entry's organisation as a substring (case-insensitive).
-    if (entry.organisation) {
-      const entryOrgLower = entry.organisation.trim().toLowerCase();
-      if (!orgLower.includes(entryOrgLower) && !entryOrgLower.includes(orgLower)) continue;
-    }
+    if (!matchesOrganisation(organisation, entry.organisation, orgLookup)) continue;
     const matchType = entry.match || 'exact';
     const patterns = Array.isArray(entry.notes) ? entry.notes : [];
     if (matchType === 'exact') {
@@ -59,31 +63,30 @@ function resolveCoursePath(fileName) {
 }
 
 function buildAliasMap() {
-  const aliasMap = new Map();
-  if (!fs.existsSync(CATALOG_PATH)) return aliasMap;
+  if (!fs.existsSync(CATALOG_PATH)) return new Map();
   try {
     const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
-    for (const b of (catalog.buildings || [])) {
-      const canonical = b.street;
-      if (!canonical) continue;
-      aliasMap.set(canonical.trim().toLowerCase(), canonical);
-      for (const alias of (b.aliases || [])) {
-        if (alias) aliasMap.set(alias.trim().toLowerCase(), canonical);
-      }
-      const dashName = canonical.replace(/\//g, '-');
-      if (dashName !== canonical) {
-        aliasMap.set(dashName.trim().toLowerCase(), canonical);
-      }
-    }
+    return createBuildingAliasMap(catalog.buildings || []);
   } catch (e) {
     console.warn('[alias] Failed to load building-catalog.json:', e.message);
+    return new Map();
   }
-  return aliasMap;
+}
+
+function buildRoomCodeLookup() {
+  if (!fs.existsSync(CATALOG_PATH)) return { catalog: { buildings: [] }, index: createRoomCodeIndex([]) };
+  try {
+    const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
+    return { catalog, index: createRoomCodeIndex(catalog.buildings || []) };
+  } catch (e) {
+    console.warn('[room-code] Failed to load building-catalog.json:', e.message);
+    return { catalog: { buildings: [] }, index: createRoomCodeIndex([]) };
+  }
 }
 
 function resolveCanonicalBuildingName(name, aliasMap) {
   if (!name) return name;
-  return aliasMap.get(name.trim().toLowerCase()) || name;
+  return findBuildingAlias(name, aliasMap) || name;
 }
 
 function parseIsoDate(value) {
@@ -167,7 +170,7 @@ function normalizeFloorLabel(label) {
   return label.trim() || null;
 }
 
-function splitBuildingAndFloor(value) {
+function splitBuildingAndFloor(value, aliasMap) {
 
   if (!value || typeof value !== 'string') {
     return { buildingName: null, floorLabel: null };
@@ -177,6 +180,10 @@ function splitBuildingAndFloor(value) {
   if (!text) {
     return { buildingName: null, floorLabel: null };
   }
+
+  // Catalog aliases can contain commas; match before extracting room/building parts.
+  const fullAlias = findBuildingAlias(text, aliasMap);
+  if (fullAlias) return { buildingName: fullAlias, floorLabel: null };
 
   const parts = text.split(',').map((part) => part.trim()).filter(Boolean);
   if (parts.length === 0) {
@@ -203,7 +210,8 @@ function splitBuildingAndFloor(value) {
     return { buildingName: null, floorLabel: normalizeFloorLabel(floorLabel) };
   }
 
-  const buildingName = coreParts.length >= 2 ? coreParts[coreParts.length - 1] : coreParts[0];
+  const buildingName = findBuildingAlias(coreParts.join(', '), aliasMap)
+    || (coreParts.length >= 2 ? coreParts[coreParts.length - 1] : coreParts[0]);
   return { buildingName: buildingName || null, floorLabel: normalizeFloorLabel(floorLabel) };
 }
 
@@ -316,8 +324,10 @@ function main() {
     db.exec('DELETE FROM courses;');
 
     const aliasMap = buildAliasMap();
+    const { index: roomCodeLookup } = buildRoomCodeLookup();
     const skipSet = loadSkipSet();
     const noteLocationMap = loadNoteLocationMap();
+    const orgLookup = loadOrgSynonymLookup();
     if (noteLocationMap.length > 0) {
       console.log(`[note-map] Loaded ${noteLocationMap.length} note-to-location entries.`);
     }
@@ -406,9 +416,9 @@ function main() {
         const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
         const isVagueBuilding = !resolvedBuilding;
         if (isVagueRoom && isVagueBuilding) {
-          const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation))
-            || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation))
-            || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap, payload.organisation));
+          const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation, orgLookup))
+            || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation, orgLookup))
+            || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap, payload.organisation, orgLookup));
           if (mapped) {
             resolvedRoom = mapped.room;
             resolvedBuilding = mapped.building;
@@ -416,8 +426,43 @@ function main() {
         }
 
         const rawRoom = (resolvedRoom || week.location || '').trim() || null;
-        let split = splitBuildingAndFloor(resolvedBuilding || null);
+        let split = splitBuildingAndFloor(resolvedBuilding || null, aliasMap);
         let currentRoom = rawRoom;
+
+        const hausZumRiesen = parseHausZumRiesen(rawRoom);
+        if (hausZumRiesen && (!split.buildingName
+            || resolveCanonicalBuildingName(split.buildingName, aliasMap) === hausZumRiesen.buildingName
+            || parseHausZumRiesen(split.buildingName))) {
+          split.buildingName = hausZumRiesen.buildingName;
+          currentRoom = hausZumRiesen.room;
+        }
+
+        const bgLudwigshafen = parseBgLudwigshafen(rawRoom);
+        if (bgLudwigshafen && (!split.buildingName
+            || resolveCanonicalBuildingName(split.buildingName, aliasMap) === bgLudwigshafen.buildingName
+            || parseBgLudwigshafen(resolvedBuilding))) {
+          split.buildingName = bgLudwigshafen.buildingName;
+          split.floorLabel = bgLudwigshafen.floorLabel || split.floorLabel;
+          currentRoom = bgLudwigshafen.room;
+        }
+
+        const directRoomCode = parseDirectRoomCode(rawRoom);
+        const directRoomMatch = resolveRoomCode(roomCodeLookup, directRoomCode);
+        if (directRoomCode && directRoomMatch
+            && (!split.buildingName
+              || split.buildingName === directRoomCode.code
+              || resolveCanonicalBuildingName(split.buildingName, aliasMap) === directRoomMatch.building.street)) {
+          split.buildingName = directRoomMatch.building.street;
+          split.floorLabel = directRoomCode.floorLabel;
+          currentRoom = directRoomMatch.room?.name || rawRoom;
+        }
+
+        // Try the complete raw location first. This allows catalog aliases such as
+        // "ZLS, Plöck 79 - 81" to resolve before generic location parsing drops
+        // the prefix and leaves a differently formatted building name.
+        if (!split.buildingName) {
+          split.buildingName = findBuildingAlias(rawRoom, aliasMap);
+        }
         
         if (!split.buildingName && rawRoom) {
           const inf = parseInfRoom(rawRoom);
@@ -472,7 +517,7 @@ function main() {
                   } else {
                     // Generic fallback: extract building name from rawRoom (e.g. "Room, Building, Floor")
                     // mirror the same fallback used in patch-catalog.cjs
-                    const fallback = splitBuildingAndFloor(rawRoom);
+                    const fallback = splitBuildingAndFloor(rawRoom, aliasMap);
                     if (fallback.buildingName) {
                       split.buildingName = fallback.buildingName;
                       split.floorLabel = fallback.floorLabel;
@@ -575,6 +620,9 @@ function syncSingleCourse(courseId) {
   const db = new Database(getPaths().dbPath);
   ensureOccurrencesSplitColumns(db);
   const aliasMap = buildAliasMap();
+  const { catalog: roomCodeCatalog, index: roomCodeLookup } = buildRoomCodeLookup();
+  let roomCodeCatalogChanged = false;
+  let roomCodeMetadataNeedsImport = false;
   const skipSet = loadSkipSet();
 
   const insertCourse = db.prepare(`
@@ -623,6 +671,7 @@ function syncSingleCourse(courseId) {
 
     const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
     const noteLocationMap = loadNoteLocationMap();
+    const orgLookup = loadOrgSynonymLookup();
     for (const week of weeks) {
       const dayOfWeek = Number.parseInt(String(week.day_of_week || ''), 10);
       const slotStart = week.start_date || payload.start_date;
@@ -635,15 +684,52 @@ function syncSingleCourse(courseId) {
       const isVagueRoom = !resolvedRoom || resolvedRoom === 'Siehe Anmerkung' || resolvedRoom === week.location;
       const isVagueBuilding = !resolvedBuilding;
       if (isVagueRoom && isVagueBuilding) {
-        const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation))
-          || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation))
-          || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap, payload.organisation));
+        const mapped = (week.note && resolveNoteToLocation(week.note, noteLocationMap, payload.organisation, orgLookup))
+          || (week.location && resolveNoteToLocation(week.location, noteLocationMap, payload.organisation, orgLookup))
+          || (payload.further_info && resolveNoteToLocation(payload.further_info, noteLocationMap, payload.organisation, orgLookup));
         if (mapped) { resolvedRoom = mapped.room; resolvedBuilding = mapped.building; }
       }
 
       const rawRoom = (resolvedRoom || week.location || '').trim() || null;
-      let split = splitBuildingAndFloor(resolvedBuilding || null);
+      let split = splitBuildingAndFloor(resolvedBuilding || null, aliasMap);
       let currentRoom = rawRoom;
+
+      const hausZumRiesen = parseHausZumRiesen(rawRoom);
+      if (hausZumRiesen && (!split.buildingName
+          || resolveCanonicalBuildingName(split.buildingName, aliasMap) === hausZumRiesen.buildingName
+          || parseHausZumRiesen(split.buildingName))) {
+        split.buildingName = hausZumRiesen.buildingName;
+        currentRoom = hausZumRiesen.room;
+      }
+
+      const bgLudwigshafen = parseBgLudwigshafen(rawRoom);
+      if (bgLudwigshafen && (!split.buildingName
+          || resolveCanonicalBuildingName(split.buildingName, aliasMap) === bgLudwigshafen.buildingName
+          || parseBgLudwigshafen(resolvedBuilding))) {
+        split.buildingName = bgLudwigshafen.buildingName;
+        split.floorLabel = bgLudwigshafen.floorLabel || split.floorLabel;
+        currentRoom = bgLudwigshafen.room;
+      }
+
+      const directRoomCode = parseDirectRoomCode(rawRoom);
+      const directRoomMatch = resolveRoomCode(roomCodeLookup, directRoomCode);
+      if (directRoomCode && directRoomMatch
+          && (!split.buildingName
+            || split.buildingName === directRoomCode.code
+            || resolveCanonicalBuildingName(split.buildingName, aliasMap) === directRoomMatch.building.street)) {
+        const registered = ensureRoomCodeRoom(roomCodeLookup, directRoomCode);
+        roomCodeCatalogChanged ||= registered.changed;
+        const metadata = db.prepare('SELECT floors_json FROM rooms_meta WHERE building_id = ? AND name = ?')
+          .get(registered.building.id, registered.room.name);
+        roomCodeMetadataNeedsImport ||= !metadata || !JSON.parse(metadata.floors_json).includes(directRoomCode.floorLabel);
+        split.buildingName = directRoomMatch.building.street;
+        split.floorLabel = directRoomCode.floorLabel;
+        currentRoom = registered.room.name;
+      }
+
+      if (!split.buildingName) {
+        split.buildingName = findBuildingAlias(rawRoom, aliasMap);
+      }
 
       if (!split.buildingName && rawRoom) {
         const inf = parseInfRoom(rawRoom);
@@ -694,7 +780,7 @@ function syncSingleCourse(courseId) {
                   split.floorLabel = floorLabel;
                   currentRoom = 'Unbekannt';
                 } else {
-                  const fallback = splitBuildingAndFloor(rawRoom);
+                  const fallback = splitBuildingAndFloor(rawRoom, aliasMap);
                   if (fallback.buildingName) {
                     split.buildingName = fallback.buildingName;
                     split.floorLabel = fallback.floorLabel;
@@ -744,6 +830,8 @@ function syncSingleCourse(courseId) {
   } finally {
     db.close();
   }
+  if (roomCodeCatalogChanged) fs.writeFileSync(CATALOG_PATH, JSON.stringify(roomCodeCatalog, null, 2));
+  if (roomCodeCatalogChanged || roomCodeMetadataNeedsImport) require('./import-building-catalog.cjs').importBuildingCatalog();
 }
 
 module.exports = { syncSingleCourse };

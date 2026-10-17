@@ -1,6 +1,11 @@
 const { DATA_DIR, getPaths } = require('../semesters.cjs');
 const fs = require('fs');
 const path = require('path');
+const { normalizeBuildingKey, createBuildingAliasMap, findBuildingAlias } = require('../building-aliases.cjs');
+const {
+  parseHausZumRiesen, parseBgLudwigshafen,
+  parseDirectRoomCode, createRoomCodeIndex, resolveRoomCode, ensureRoomCodeRoom,
+} = require('../location-rules.cjs');
 
 const CATALOG_PATH = path.join(DATA_DIR, 'building-catalog.json');
 
@@ -40,10 +45,13 @@ function normalizeFloorLabel(label) {
   return label.trim() || null;
 }
 
-function splitBuildingAndFloor(value) {
+function splitBuildingAndFloor(value, aliasMap) {
   if (!value || typeof value !== 'string') return { buildingName: null, floorLabel: null };
   const text = value.trim();
   if (!text) return { buildingName: null, floorLabel: null };
+
+  const fullAlias = findBuildingAlias(text, aliasMap);
+  if (fullAlias) return { buildingName: fullAlias, floorLabel: null };
 
   const parts = text.split(',').map(p => p.trim()).filter(Boolean);
   if (parts.length === 0) return { buildingName: null, floorLabel: null };
@@ -63,7 +71,8 @@ function splitBuildingAndFloor(value) {
   const floorLabel = hasFloorLabel ? parts[parts.length - 1] : null;
   const coreParts = hasFloorLabel ? parts.slice(0, -1) : parts;
   if (coreParts.length === 0) return { buildingName: null, floorLabel: normalizeFloorLabel(floorLabel) };
-  const buildingName = coreParts.length >= 2 ? coreParts[coreParts.length - 1] : coreParts[0];
+  const buildingName = findBuildingAlias(coreParts.join(', '), aliasMap)
+    || (coreParts.length >= 2 ? coreParts[coreParts.length - 1] : coreParts[0]);
   return { buildingName: buildingName || null, floorLabel: normalizeFloorLabel(floorLabel) };
 }
 
@@ -154,6 +163,32 @@ function parsePoliklinik(rawRoom) {
   return { buildingName: 'Im Neuenheimer Feld 400', displayName: 'INF 400', room: 'Unbekannt', floorLabel };
 }
 
+function mergeBuildingData(target, source) {
+  target.aliases = [...new Set([
+    ...(target.aliases || []), ...(source.aliases || []), source.street,
+  ].filter(name => name && name !== target.street))];
+  if (!Array.isArray(target.rooms)) target.rooms = [];
+  if (Array.isArray(source.rooms)) {
+    for (const room of source.rooms) {
+      if (target.rooms.some(existing => existing.name === room.name)) continue;
+      let mergedRoom = { ...room };
+      if (target.rooms.some(existing => existing.id === mergedRoom.id)) {
+        const base = mergedRoom.id;
+        let index = 2;
+        while (target.rooms.some(existing => existing.id === `${base}-${index}`)) index += 1;
+        mergedRoom.id = `${base}-${index}`;
+      }
+      target.rooms.push(mergedRoom);
+    }
+  }
+  if (!Array.isArray(target.floors)) target.floors = [];
+  if (Array.isArray(source.floors)) {
+    for (const floor of source.floors) {
+      if (!target.floors.includes(floor)) target.floors.push(floor);
+    }
+  }
+}
+
 function mergeEquivalentBuildings(catalog) {
   const exactMap = new Map();
   const toRemove = new Set();
@@ -173,42 +208,57 @@ function mergeEquivalentBuildings(catalog) {
 
       // If the hyphen equivalent exists, merge slashBld into targetBld
       if (targetBld && targetBld !== slashBld) {
-        
-        // Merge rooms
-        if (Array.isArray(slashBld.rooms)) {
-          for (const room of slashBld.rooms) {
-            // Check if the room already exists by name
-            if (!targetBld.rooms.some(r => r.name === room.name)) {
-              let newRoom = { ...room };
-              // Resolve duplicate ID conflicts
-              if (targetBld.rooms.some(r => r.id === newRoom.id)) {
-                let base = newRoom.id;
-                let idx = 2;
-                while (targetBld.rooms.some(r => r.id === `${base}-${idx}`)) {
-                  idx++;
-                }
-                newRoom.id = `${base}-${idx}`;
-              }
-              targetBld.rooms.push(newRoom);
-            }
-          }
-        }
-
-        // Merge floors
-        if (Array.isArray(slashBld.floors)) {
-          for (const floor of slashBld.floors) {
-            if (!targetBld.floors.includes(floor)) {
-              targetBld.floors.push(floor);
-            }
-          }
-        }
+        mergeBuildingData(targetBld, slashBld);
         toRemove.add(slashBld);
       }
     }
   }
 
-  // Remove the merged slash items
+  // Also merge duplicate streets that differ only by spacing around a hyphen
+  // (for example, "Plöck 79-81" and "Plöck 79 - 81").
+  const normalizedMap = new Map();
+  for (const building of catalog.buildings) {
+    if (toRemove.has(building) || typeof building.street !== 'string') continue;
+    const key = normalizeBuildingKey(building.street);
+    const existing = normalizedMap.get(key);
+    if (!existing) {
+      normalizedMap.set(key, building);
+    } else if (existing !== building) {
+      // Prefer the reviewed campus assignment over an automatically created Other entry.
+      const preferNew = existing.campusId === 'other' && building.campusId !== 'other';
+      const target = preferNew ? building : existing;
+      const source = preferNew ? existing : building;
+      mergeBuildingData(target, source);
+      normalizedMap.set(key, target);
+      toRemove.add(source);
+    }
+  }
+
+  // Remove all equivalent duplicate buildings.
   catalog.buildings = catalog.buildings.filter(b => !toRemove.has(b));
+}
+
+function mergeHausZumRiesenBuildings(catalog) {
+  const legacyBuildings = catalog.buildings.filter(building => parseHausZumRiesen(building.street));
+  if (!legacyBuildings.length) return;
+  let target = catalog.buildings.find(building => normalizeBuildingKey(building.street) === normalizeBuildingKey('Hauptstraße 52'));
+  if (!target) {
+    target = { id: 'bld-hauptstrasse-52', street: 'Hauptstraße 52',
+      displayName: 'Hauptstraße 52 Haus zum Riesen', campusId: 'altstadt',
+      aliases: ['Haus zum Riesen'], rooms: [], floors: [] };
+    catalog.buildings.push(target);
+  }
+  for (const source of legacyBuildings) {
+    const rooms = (source.rooms || []).map(room => {
+      const parsed = parseHausZumRiesen(room.name);
+      if (!parsed) return room;
+      return { ...room, name: parsed.room,
+        displayName: parseHausZumRiesen(room.displayName) ? parsed.room : room.displayName };
+    });
+    mergeBuildingData(target, { ...source, rooms });
+  }
+  const legacySet = new Set(legacyBuildings);
+  catalog.buildings = catalog.buildings.filter(building => !legacySet.has(building));
 }
 
 function normalizeBuildingNameForMerge(name, buildingsMap) {
@@ -217,7 +267,78 @@ function normalizeBuildingNameForMerge(name, buildingsMap) {
   if (dashName !== name && buildingsMap.has(dashName)) {
     return dashName;
   }
+  const normalized = normalizeBuildingKey(name);
+  for (const [street, building] of buildingsMap) {
+    if (normalizeBuildingKey(street) === normalized) return building.street;
+  }
   return name;
+}
+
+function mergeBgLudwigshafenRooms(catalog) {
+  let target = catalog.buildings.find(building => building.street === 'Ludwig-Guttmann-Straße 13');
+  const emptyFallbacks = new Set();
+  if (target) {
+    target.aliases = [...new Set([...(target.aliases || []), 'BG Ludwigshafen'])];
+    if (!target.rooms) target.rooms = [];
+    for (const room of target.rooms) {
+      if (/^Auto-generated fallback from unparsed location/i.test(room.notes || '')) room.notes = '';
+    }
+  }
+  for (const source of [...catalog.buildings]) {
+    const matching = (source.rooms || []).filter(room => parseBgLudwigshafen(room.name));
+    if (!matching.length) continue;
+    if (!target) {
+      target = { id: 'bld-ludwig-guttmann-strasse-13', street: 'Ludwig-Guttmann-Straße 13',
+        displayName: 'BG Klinik Ludwigshafen', campusId: 'mannheim-and-ludwigshafen',
+        aliases: ['BG Ludwigshafen'], rooms: [], floors: [] };
+      catalog.buildings.push(target);
+    }
+    source.rooms = source.rooms.filter(room => !matching.includes(room));
+    for (const room of matching) {
+      const parsed = parseBgLudwigshafen(room.name);
+      const floors = parsed.floorLabel ? [parsed.floorLabel] : (room.floors || []);
+      const cleanedNotes = /^Auto-generated fallback from unparsed location/i.test(room.notes || '') ? '' : room.notes;
+      const existing = target.rooms.find(item => item.name === parsed.room);
+      if (existing) {
+        existing.floors = [...new Set([...(existing.floors || []), ...floors])];
+        existing.features = { ...room.features, ...existing.features };
+        if (!existing.notes && cleanedNotes) existing.notes = cleanedNotes;
+      } else {
+        target.rooms.push({ ...room, name: parsed.room, floors,
+          displayName: parseBgLudwigshafen(room.displayName) ? parsed.room : room.displayName,
+          notes: cleanedNotes });
+      }
+      target.floors = [...new Set([...(target.floors || []), ...floors])];
+    }
+    // A tower name alone is not an alias for the hospital. Keep unrelated rooms.
+    if (source !== target && source.campusId === 'other' && !source.rooms.length) emptyFallbacks.add(source);
+  }
+  catalog.buildings = catalog.buildings.filter(building => !emptyFallbacks.has(building));
+}
+
+function mergeDirectRoomCodeFallbacks(catalog) {
+  const index = createRoomCodeIndex(catalog.buildings);
+  const emptyFallbacks = new Set();
+  for (const source of catalog.buildings) {
+    if (source.campusId !== 'other') continue;
+    const moved = new Set();
+    for (const room of source.rooms || []) {
+      const parsed = parseDirectRoomCode(room.name);
+      if (!parsed) continue;
+      const target = ensureRoomCodeRoom(index, parsed);
+      if (!target) continue;
+      if (!target.room.features) target.room.features = {};
+      for (const [key, value] of Object.entries(room.features || {})) {
+        if (target.room.features[key] == null && value != null) target.room.features[key] = value;
+      }
+      if (!target.room.notes && room.notes && !/^Auto-generated fallback/.test(room.notes)) target.room.notes = room.notes;
+      moved.add(room);
+    }
+    if (!moved.size) continue;
+    source.rooms = source.rooms.filter(room => !moved.has(room));
+    if (!source.rooms.length && parseDirectRoomCode(source.street)) emptyFallbacks.add(source);
+  }
+  catalog.buildings = catalog.buildings.filter(building => !emptyFallbacks.has(building));
 }
 
 function main() {
@@ -226,6 +347,9 @@ function main() {
 
   // Merge equivalent buildings first (e.g. Hauptstraße 47/51 -> Hauptstraße 47-51)
   mergeEquivalentBuildings(catalog);
+  mergeHausZumRiesenBuildings(catalog);
+  mergeBgLudwigshafenRooms(catalog);
+  mergeDirectRoomCodeFallbacks(catalog);
 
   // SELF-HEALING: Clean up existing duplicate IDs in the JSON file
   const globalUniqueIds = new Set();
@@ -258,6 +382,8 @@ function main() {
   for (const b of catalog.buildings) {
     buildingsMap.set(b.street, b);
   }
+  const aliasMap = createBuildingAliasMap(catalog.buildings);
+  const roomCodeIndex = createRoomCodeIndex(catalog.buildings);
 
   // Ensure directory exists before reading
   if (fs.existsSync(getPaths().courseDir)) {
@@ -271,20 +397,31 @@ function main() {
       const weeks = Array.isArray(payload.weeks) ? payload.weeks : [];
       
       for (const week of weeks) {
-        if (week.building) continue;
         const rawRoom = week.room || week.location || '';
-        
         if (!rawRoom.trim()) continue;
+
+        const directCode = parseDirectRoomCode(rawRoom);
+        if (directCode) {
+          const resolved = resolveRoomCode(roomCodeIndex, directCode);
+          const explicitBuilding = splitBuildingAndFloor(week.building, aliasMap).buildingName;
+          if (resolved && (!explicitBuilding || explicitBuilding === directCode.code || explicitBuilding === resolved.building.street)) {
+            ensureRoomCodeRoom(roomCodeIndex, directCode);
+            continue;
+          }
+        }
+        if (week.building) continue;
 
         const online = parseOnline(rawRoom);
         const inf = parseInfRoom(rawRoom);
+        const hausZumRiesen = parseHausZumRiesen(rawRoom);
+        const bgLudwigshafen = parseBgLudwigshafen(rawRoom);
         const voss = parseVossRoom(rawRoom, week.building, week.note);
         const akad = parseAkademiestrasse(rawRoom);
         const schlierbacher = parseSchlierbacher(rawRoom);
         const zsl = parseZSL(rawRoom);
         const poliklinik = parsePoliklinik(rawRoom);
         
-        let parsedResult = online || inf || akad || zsl || schlierbacher || poliklinik || voss;
+        let parsedResult = online || inf || hausZumRiesen || bgLudwigshafen || akad || zsl || schlierbacher || poliklinik || voss;
         let fallbackBuildingName, floorLabel, targetRoomName, campusId;
 
         if (parsedResult) {
@@ -294,12 +431,13 @@ function main() {
           // Retain appropriate campus IDs
           campusId = online ? "online" : 
                     (inf || poliklinik) ? "im-neuenheimer-feld" : 
-                    (akad || zsl) ? "altstadt" : 
+                    (akad || zsl || hausZumRiesen) ? "altstadt" :
+                    bgLudwigshafen ? "mannheim-and-ludwigshafen" :
                     voss ? "bergheim" : "other"; 
         } else {
           // Fallback logic
-          const split = splitBuildingAndFloor(rawRoom);
-          fallbackBuildingName = split.buildingName || rawRoom.trim();
+          const split = splitBuildingAndFloor(rawRoom, aliasMap);
+          fallbackBuildingName = findBuildingAlias(split.buildingName, aliasMap) || split.buildingName || rawRoom.trim();
           floorLabel = split.floorLabel;
           targetRoomName = rawRoom.trim();
           campusId = "other";
