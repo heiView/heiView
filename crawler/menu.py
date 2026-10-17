@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from typing import Callable
 
 from crawler.config import DATA_DIR, DEFAULT_SEMESTER, SEMESTERS
-from crawler.heico_crawler import CrawlOptions, crawl_courses
+from crawler.heico_crawler import CrawlOptions, crawl_courses, crawl_urls_by_semester
 from crawler.checkpoint import can_resume, load_task
 from crawler.database import sync_database
 
@@ -25,6 +25,11 @@ class ExitMenu(Exception):
 class SavedTaskAction:
     options: CrawlOptions
     sync_only: bool = False
+
+
+@dataclass(frozen=True)
+class URLCrawlAction:
+    url: tuple[str, ...]
 
 
 def offer_saved_task(semester: str) -> SavedTaskAction | None:
@@ -128,8 +133,8 @@ def yes_no(label: str, default: bool) -> bool:
 
 
 def course_urls(default: tuple[str, ...]) -> tuple[str, ...]:
-    print('URL mode uses only the semester, concurrency, and browser options; direction, limit, and skip are ignored.')
-    print('Courses will be saved to the selected semester. Make sure each detail URL belongs to that semester.')
+    print('Each course is saved to the semester shown on its detail page automatically.')
+    print('URL mode uses concurrency 10 with the browser hidden.')
     if default:
         print('Current URLs: ' + ' '.join(default))
     while True:
@@ -145,7 +150,7 @@ def course_urls(default: tuple[str, ...]) -> tuple[str, ...]:
             print(f'Invalid URL: {exc}')
 
 
-def configure_crawl() -> CrawlOptions | SavedTaskAction | None:
+def configure_crawl() -> CrawlOptions | SavedTaskAction | URLCrawlAction | None:
     draft = {
         'semester': DEFAULT_SEMESTER, 'mode': 'list', 'reverse': False,
         'number': None, 'skip': 0, 'concurrency': 10,
@@ -153,18 +158,20 @@ def configure_crawl() -> CrawlOptions | SavedTaskAction | None:
     }
     index = 0
     while True:
-        steps = ['semester', 'mode']
+        steps = ['mode']
         if draft['mode'] == 'list':
-            steps += ['reverse', 'number', 'skip']
-        steps += ['concurrency', 'show_browser']
-        if draft['mode'] == 'urls':
+            steps += ['semester', 'reverse', 'number', 'skip', 'concurrency', 'show_browser']
+        else:
             steps += ['url']
         try:
             if index < len(steps):
                 step = steps[index]
                 if step == 'semester':
                     draft[step] = choose('Select semester', semester_choices(), draft[step])
-                    saved_action = offer_saved_task(draft[step])
+                    try:
+                        saved_action = offer_saved_task(draft[step])
+                    except Back:
+                        return None
                     if saved_action is not None:
                         return saved_action
                 elif step == 'mode':
@@ -192,29 +199,32 @@ def configure_crawl() -> CrawlOptions | SavedTaskAction | None:
                 index += 1
                 continue
 
-            # Unused list/URL settings are excluded when switching modes.
-            options = CrawlOptions(
-                semester=draft['semester'], concurrency=draft['concurrency'],
-                show_browser=draft['show_browser'],
-                url=draft['url'] if draft['mode'] == 'urls' else (),
-                reverse=draft['reverse'] if draft['mode'] == 'list' else False,
-                number=draft['number'] if draft['mode'] == 'list' else None,
-                skip=draft['skip'] if draft['mode'] == 'list' else 0,
-            )
-            options.validate()
+            # URL tasks resolve their semester at execution time, so list-mode
+            # choices cannot accidentally send them to a previous semester.
+            if draft['mode'] == 'urls':
+                options = URLCrawlAction(draft['url'])
+            else:
+                options = CrawlOptions(
+                    semester=draft['semester'], concurrency=draft['concurrency'],
+                    show_browser=draft['show_browser'], reverse=draft['reverse'],
+                    number=draft['number'], skip=draft['skip'],
+                )
+                options.validate()
             print('\nTask summary')
-            print(f'  Semester: {options.semester}')
-            print(f'  Output directory: {DATA_DIR / options.semester}')
-            if options.url:
+            if isinstance(options, URLCrawlAction):
                 print('  Mode: crawl by URLs')
+                print('  Semester and output directory: detected from each course page')
                 for url in options.url:
                     print(f'    {url}')
+                print('  Concurrency: 10; show browser: no')
             else:
+                print(f'  Semester: {options.semester}')
+                print(f'  Output directory: {DATA_DIR / options.semester}')
                 print(f'  Direction: {"reverse" if options.reverse else "forward"}')
                 print(f'  Limit: {options.number if options.number is not None else "unlimited"}')
                 print(f'  Courses to skip: {options.skip} (counted from the '
                       f'{"end" if options.reverse else "beginning"})')
-            print(f'  Concurrency: {options.concurrency}; show browser: {"yes" if options.show_browser else "no"}')
+                print(f'  Concurrency: {options.concurrency}; show browser: {"yes" if options.show_browser else "no"}')
             print('  r: run, e: edit, b: go back one step, m: return to main menu, q: quit.')
             answer = read_input('Select an action: ').lower()
             if answer in {'r', 'run'}:
@@ -238,6 +248,8 @@ def run_crawl() -> None:
             asyncio.run(sync_database(options.options.semester))
         else:
             asyncio.run(crawl_courses(options.options, resume=True))
+    elif isinstance(options, URLCrawlAction):
+        asyncio.run(crawl_urls_by_semester(options.url))
     elif options is not None:
         asyncio.run(crawl_courses(options))
 

@@ -18,6 +18,11 @@ from crawler.checkpoint import atomic_json
 BASE_URL = 'https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses'
 DESKTOP_HOME_URL = 'https://heico.uni-heidelberg.de/heiCO/ee/ui/ca2/app/desktop/'
 PAGE_SIZE = 100
+BROWSER_WARNING_MARKERS = (
+    'Die Seite ist nicht für diesen Browser optimiert.',
+    'This site is not optimised for your browser.',
+)
+ROOM_BUILDING_SELECTOR = '.ca-header-page-title-container h2, h2#idCaSubTitle'
 
 
 @dataclass(frozen=True)
@@ -53,6 +58,11 @@ def compact_ws(value: str) -> str:
     return ' '.join(value.split())
 
 
+def is_browser_warning_text(value: str) -> bool:
+    text = compact_ws(value).casefold()
+    return any(marker.casefold() in text for marker in BROWSER_WARNING_MARKERS)
+
+
 # heiCO detail-page <h1> elements often include a breadcrumb prefix such as
 # "Courses / <title>" or "Veranstaltungen / <title>".  Strip these so we
 # store only the actual course title.
@@ -70,7 +80,14 @@ def strip_title_breadcrumb(title: str) -> str:
 _SPA_UI_TITLES = frozenset({
     'Detail Navigation',
     'Detailnavigation',
+    'Browserinformation',
+    'Browser information',
 })
+_NON_COURSE_TITLE_MARKERS = (
+    'login', 'anmelden', 'anmeldung', 'sign in', 'einloggen',
+    'zugriff verweigert', 'access denied', 'not found', 'nicht gefunden',
+    'default_page', 'detail navigation', 'detailnavigation',
+)
 
 
 def parse_course_id(raw_text: str, title: str) -> str:
@@ -423,19 +440,50 @@ async def fetch_room_building(
     cache: dict[str, str | None],
     semaphore: asyncio.Semaphore,
 ) -> str | None:
-    if room_href in cache:
-        return cache[room_href]
+    cached = cache.get(room_href)
+    if cached and not is_browser_warning_text(cached):
+        return cached
+    cache.pop(room_href, None)
 
     async with semaphore:
         page = await browser.new_page()
         try:
-            await page.goto(room_href, wait_until='domcontentloaded', timeout=30000)
-            await safe_wait_networkidle(page)
-            await page.wait_for_timeout(1000)
-            heading = page.locator('h2').first
-            building = compact_ws((await heading.text_content()) or '') if await heading.count() > 0 else None
-            cache[room_href] = building or None
-            return cache[room_href]
+            for attempt in range(2):
+                if attempt:
+                    # Reinitialize the app shell if the first room request
+                    # stopped on the browser compatibility page.
+                    await page.goto(DESKTOP_HOME_URL, wait_until='domcontentloaded', timeout=30000)
+                    await safe_wait_networkidle(page)
+                await page.goto(room_href, wait_until='domcontentloaded', timeout=30000)
+                await safe_wait_networkidle(page)
+                try:
+                    # Wait for the actual room subtitle, not an unrelated h2
+                    # in the compatibility banner while the SPA is loading.
+                    await page.wait_for_function(
+                        """({selector, markers}) => Array.from(document.querySelectorAll(selector))
+                            .some(el => {
+                                const text = (el.textContent || '').replace(/\\s+/g, ' ').trim();
+                                return text && !markers.some(marker => text.includes(marker));
+                            })""",
+                        arg={'selector': ROOM_BUILDING_SELECTOR, 'markers': BROWSER_WARNING_MARKERS},
+                        timeout=10000,
+                    )
+                except Exception:
+                    # Older heiCO layouts can have an unclassified h2.  Keep
+                    # that fallback, but never accept the browser warning.
+                    pass
+                headings = await page.locator(ROOM_BUILDING_SELECTOR).all_text_contents()
+                if not headings:
+                    headings = await page.locator('h2').all_text_contents()
+                for heading in headings:
+                    building = compact_ws(heading)
+                    if building and not is_browser_warning_text(building):
+                        cache[room_href] = building
+                        return building
+            print(f'Room page has no usable building heading after retry: {room_href}')
+            # Do not cache failures: another occurrence may successfully load
+            # this room later in the same crawl.
+            return None
         finally:
             await page.close()
 
@@ -491,7 +539,8 @@ def guess_title_from_text(raw_text: str) -> str | None:
     lines = [compact_ws(line) for line in raw_text.splitlines() if compact_ws(line)]
     for line in lines:
         # Skip generic navigation-like lines.
-        if line in {'heiCO', 'Termine und Gruppen', 'Dates and Groups'} | _SPA_UI_TITLES:
+        if (line in {'heiCO', 'Termine und Gruppen', 'Dates and Groups'} | _SPA_UI_TITLES
+                or is_browser_warning_text(line)):
             continue
         if len(line) < 3:
             continue
@@ -548,6 +597,20 @@ def extract_course_type_from_type_field(raw_text: str) -> str | None:
     return None
 
 
+def extract_semester_from_text(raw_text: str) -> str | None:
+    """Read the offered semester field, rather than dates or description text."""
+    match = re.search(
+        r'\b(?:Angeboten im(?: Semester)?|Offered in(?: semester)?)\s*:?\s*'
+        r'(Sommersemester|Summer semester|Wintersemester|Winter semester)\s+(\d{4})'
+        r'(?:\s*/\s*\d{2,4})?\b',
+        compact_ws(raw_text), re.IGNORECASE,
+    )
+    if not match:
+        return None
+    suffix = 'SS' if match.group(1).lower().startswith(('sommer', 'summer')) else 'WS'
+    return match.group(2) + suffix
+
+
 async def open_course_page_with_warmup(page, course_url: str) -> str:
 
     await page.goto(DESKTOP_HOME_URL, wait_until='domcontentloaded', timeout=30000)
@@ -558,6 +621,30 @@ async def open_course_page_with_warmup(page, course_url: str) -> str:
     await safe_wait_networkidle(page)
     await page.wait_for_timeout(800)
     return await page.inner_text('body')
+
+
+async def extract_course_title(page) -> str | None:
+    """Prefer the course header and skip navigation/compatibility headings.
+
+    The compatibility warning may be hidden (and absent from body.innerText)
+    while still being returned by text_content().  Never use heading length
+    to decide which of these strings is the course title.
+    """
+    for selector in ('.ca-header-page-title', '#id-main-title', 'h1', 'h2'):
+        for text in await page.locator(selector).all_text_contents():
+            candidate = strip_title_breadcrumb(compact_ws(text))
+            if candidate and candidate not in _SPA_UI_TITLES and not is_browser_warning_text(candidate):
+                return candidate
+    return None
+
+
+async def has_browser_warning(page, raw_text: str) -> bool:
+    # Hidden warning headings are absent from body.inner_text(), but are still
+    # evidence of a failed load when no real course heading was found.
+    return is_browser_warning_text(raw_text) or any(
+        is_browser_warning_text(text)
+        for text in await page.locator('h1, h2').all_text_contents()
+    )
 
 
 async def expand_dates_and_groups_show_more(page) -> None:
@@ -637,33 +724,16 @@ async def build_entry_from_course_url(browser, course_url: str) -> dict[str, obj
             print(f'Course URL redirected to login page (course may have been deleted): {course_url}')
             return None
 
-        browser_warning_markers = (
-            'Die Seite ist nicht für diesen Browser optimiert.',
-            'This site is not optimised for your browser.',
-        )
-        if any(marker in raw_text_compact for marker in browser_warning_markers):
+        title = await extract_course_title(page)
+        if not title and await has_browser_warning(page, raw_text_compact):
             # Retry once after re-opening app shell in case first load got stuck on warning page.
             raw_text = await open_course_page_with_warmup(page, course_url)
             raw_text_compact = compact_ws(raw_text)
-
-        if any(marker in raw_text_compact for marker in browser_warning_markers):
-            print(
-                'Detected browser warning page instead of course detail page. '
-                f'Please verify URL/login: {course_url}'
-            )
-            return None
-
-        title = None
-        for selector in ('h1', 'h2', '.page-header h1', '.page-header h2'):
-            try:
-                node = page.locator(selector).first
-                if await node.count() > 0:
-                    candidate = compact_ws((await node.text_content()) or '')
-                    if candidate:
-                        title = candidate
-                        break
-            except Exception:
-                pass
+            title = await extract_course_title(page)
+            if not title:
+                # This is a transient fetch failure, not evidence the course
+                # was deleted.  Keep the JSON and let checkpoint retries run.
+                raise RuntimeError(f'Browser warning instead of course detail after retry: {course_url}')
 
         if not title:
             title = guess_title_from_text(raw_text)
@@ -675,10 +745,7 @@ async def build_entry_from_course_url(browser, course_url: str) -> dict[str, obj
         # Detect in-app login pages (SPA shows login form without URL redirect)
         # Typical: title = "Login", "Anmelden", "Anmeldung", "Sign in"
         # "DEFAULT_PAGE" = heiCO SPA placeholder for deleted/inaccessible courses
-        non_course_titles = ('login', 'anmelden', 'anmeldung', 'sign in', 'einloggen',
-                             'zugriff verweigert', 'access denied', 'not found', 'nicht gefunden',
-                             'default_page', 'detail navigation', 'detailnavigation')
-        if any(t in title.lower() for t in non_course_titles):
+        if any(t in title.lower() for t in _NON_COURSE_TITLE_MARKERS):
             print(f'Course page shows "{title}" instead of a course (course may have been deleted): {course_url}')
             return None
 
@@ -695,6 +762,7 @@ async def build_entry_from_course_url(browser, course_url: str) -> dict[str, obj
             'href': course_url,
             'course_type': course_type,
             'lecturers': lecturer_names,
+            'semester': extract_semester_from_text(raw_text),
         }
     finally:
         await page.close()
@@ -738,6 +806,7 @@ async def process_course_entry(
             and isinstance(existing_location, str)
             and isinstance(existing_building, str)
             and existing_building
+            and not is_browser_warning_text(existing_building)
         ):
             existing_building_map[(existing_link, existing_location)] = existing_building
 
@@ -748,6 +817,18 @@ async def process_course_entry(
             await safe_wait_networkidle(detail_page)
             await detail_page.wait_for_timeout(400)
             detail_raw_text = await detail_page.inner_text('body')
+            detail_title = await extract_course_title(detail_page)
+            if not detail_title and await has_browser_warning(detail_page, detail_raw_text):
+                detail_raw_text = await open_course_page_with_warmup(detail_page, href)
+                detail_title = await extract_course_title(detail_page)
+                if not detail_title:
+                    raise RuntimeError(f'[{course_id}] Browser warning instead of course detail after retry')
+            if detail_title:
+                if any(t in detail_title.lower() for t in _NON_COURSE_TITLE_MARKERS):
+                    raise RuntimeError(f'[{course_id}] Non-course page "{detail_title}"; keeping existing data')
+                title = detail_title
+            if is_browser_warning_text(title):
+                raise RuntimeError(f'[{course_id}] No valid course title; keeping existing data')
             ects_credits = extract_ects_credits_from_body(detail_raw_text)
             course_languages = extract_course_languages_from_body(detail_raw_text)
             organisation = extract_organisation_from_body(detail_raw_text)
@@ -776,20 +857,9 @@ async def process_course_entry(
                     el = ew.get('location_link')
                     eloc = ew.get('location')
                     eb = ew.get('building')
-                    if isinstance(el, str) and isinstance(eloc, str) and isinstance(eb, str) and eb:
+                    if (isinstance(el, str) and isinstance(eloc, str) and isinstance(eb, str)
+                            and eb and not is_browser_warning_text(eb)):
                         existing_building_map[(el, eloc)] = eb
-
-            # Correct title from the detail page heading
-            for selector in ('h1', 'h2'):
-                try:
-                    node = detail_page.locator(selector).first
-                    if await node.count() > 0:
-                        candidate = strip_title_breadcrumb(compact_ws((await node.text_content()) or ''))
-                        if candidate and len(candidate) > len(title) and candidate not in _SPA_UI_TITLES:
-                            title = candidate
-                            break
-                except Exception:
-                    pass
 
             # Navigate to Description tab to extract Zusatzinformationen/Further information
             further_info = None
@@ -1322,6 +1392,39 @@ async def crawl_courses(options: CrawlOptions, *, data_dir: Path = DATA_DIR,
     finally:
         fcntl.flock(lock, fcntl.LOCK_UN)
         lock.close()
+
+
+async def crawl_urls_by_semester(urls: tuple[str, ...], *, data_dir: Path = DATA_DIR) -> dict[str, dict]:
+    """Resolve URL semesters, then reuse the normal isolated crawl/sync flow."""
+    from playwright.async_api import async_playwright
+
+    CrawlOptions(url=urls).validate()
+    if not urls:
+        raise ValueError('Enter at least one course detail URL.')
+    grouped: dict[str, list[str]] = {}
+    async with async_playwright() as playwright:
+        browser = await playwright.chromium.launch(headless=True)
+        try:
+            for url in dict.fromkeys(normalize_course_url(value) for value in urls):
+                entry = await build_entry_from_course_url(browser, url)
+                if entry is None:
+                    raise RuntimeError(f'Could not resolve course URL: {url}')
+                semester = entry.get('semester')
+                if not semester:
+                    raise RuntimeError(f'Could not read the offered semester from course page: {url}')
+                if semester not in SEMESTERS:
+                    raise ValueError(f'Semester {semester} is not configured: {url}')
+                grouped.setdefault(semester, []).append(url)
+        finally:
+            await browser.close()
+
+    records = {}
+    for semester, semester_urls in grouped.items():
+        print(f'[{semester}] Auto-detected {len(semester_urls)} URL course(s).')
+        records[semester] = await crawl_courses(
+            CrawlOptions(semester=semester, url=tuple(semester_urls), concurrency=10), data_dir=data_dir,
+        )
+    return records
 
 
 async def main() -> None:

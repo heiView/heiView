@@ -47,6 +47,19 @@ class OptionsTests(unittest.TestCase):
                 self.assertEqual(crawler.strip_title_breadcrumb(prefix + ' / American Slavery'), 'American Slavery')
         self.assertEqual(crawler.strip_title_breadcrumb('American Slavery'), 'American Slavery')
 
+    def test_semester_comes_from_offered_field_in_both_languages(self):
+        for text, expected in (
+            ('Angeboten im Semester\nSommersemester 2026', '2026SS'),
+            ('Angeboten im\nWintersemester 2026/27', '2026WS'),
+            ('Offered in\nSummer semester 2026', '2026SS'),
+            ('Offered in semester: Winter semester 2026/2027', '2026WS'),
+            ('Wintersemester 2025 in title\nOffered in\nSummer semester 2026', '2026SS'),
+            ('Offered in\nWinter semester 2027/28', '2027WS'),
+        ):
+            with self.subTest(text=text):
+                self.assertEqual(crawler.extract_semester_from_text(text), expected)
+        self.assertIsNone(crawler.extract_semester_from_text('Description\nWintersemester 2026'))
+
     def test_invalid_parameters_are_rejected(self):
         cases = [
             ['--semester', 'unknown'], ['-n', '0'], ['-n', '-1'], ['--skip', '-1'],
@@ -123,6 +136,234 @@ class PaginationTests(unittest.IsolatedAsyncioTestCase):
         with self.assertRaisesRegex(RuntimeError, 'Unexpected empty page'):
             async for _page in crawler.iter_course_pages(crawler.CrawlOptions(reverse=True), fetch):
                 pass
+
+
+class CourseTitleTests(unittest.IsolatedAsyncioTestCase):
+    warning = ('Die Seite ist nicht für diesen Browser optimiert. '
+               'This site is not optimised for your browser.')
+    title = 'Ü AT: Genesis 1-11: The Theological Polyphony of the Beginning (fällt aus!)'
+    course_id = '0000000080'
+
+    def course_page(self, headings, body=None):
+        empty = types.SimpleNamespace(count=AsyncMock(return_value=0))
+
+        def locator(selector):
+            return types.SimpleNamespace(
+                all_text_contents=AsyncMock(return_value=(
+                    headings.get('h1', []) + headings.get('h2', []) if selector == 'h1, h2'
+                    else headings.get(selector, []))),
+                count=empty.count,
+            )
+
+        return types.SimpleNamespace(
+            url=DETAIL_URL, locator=Mock(side_effect=locator), goto=AsyncMock(),
+            wait_for_load_state=AsyncMock(), wait_for_timeout=AsyncMock(), close=AsyncMock(),
+            wait_for_selector=AsyncMock(), content=AsyncMock(return_value=''),
+            inner_text=AsyncMock(return_value=body or f'Number\n{self.course_id}'),
+        )
+
+    async def test_title_header_wins_over_longer_hidden_warning_and_navigation(self):
+        page = self.course_page({'h1': ['Courses / ' + self.title],
+                                 'h2': ['Detail Navigation', self.warning]})
+        self.assertEqual(await crawler.extract_course_title(page), self.title)
+
+    async def test_warning_headings_are_skipped_in_every_position(self):
+        page = self.course_page({'h1': [self.warning, 'Detail Navigation'],
+                                 'h2': [self.warning, 'Lehrveranstaltungen / ' + self.title]})
+        self.assertEqual(await crawler.extract_course_title(page), self.title)
+        self.assertIsNone(crawler.guess_title_from_text(self.warning))
+
+    async def test_url_accepts_real_course_even_with_visible_warning(self):
+        page = self.course_page({'h1': ['Courses / ' + self.title], 'h2': [self.warning]})
+        browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+        with patch.object(crawler, 'open_course_page_with_warmup', AsyncMock(
+                return_value=f'{self.warning}\nNumber\n{self.course_id}')) as open_page, \
+                patch.object(crawler, 'extract_lecturers', AsyncMock(return_value=[])):
+            entry = await crawler.build_entry_from_course_url(browser, DETAIL_URL)
+        self.assertEqual(entry['title'], self.title)
+        self.assertEqual(entry['course_id'], self.course_id)
+        open_page.assert_awaited_once()
+        page.close.assert_awaited_once()
+
+    async def test_url_retries_warning_only_page_and_recovers(self):
+        page = self.course_page({})
+        browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+        with patch.object(crawler, 'open_course_page_with_warmup', AsyncMock(
+                side_effect=[self.warning, f'Number\n{self.course_id}'])), \
+                patch.object(crawler, 'extract_course_title', AsyncMock(side_effect=[None, self.title])), \
+                patch.object(crawler, 'extract_lecturers', AsyncMock(return_value=[])):
+            entry = await crawler.build_entry_from_course_url(browser, DETAIL_URL)
+        self.assertEqual(entry['title'], self.title)
+
+    async def test_persistent_warning_is_fetch_failure_instead_of_deleted_course(self):
+        for body in (self.warning, 'heiCO'):
+            with self.subTest(body=body):
+                page = self.course_page({'h2': [self.warning]}, body)
+                browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+                with patch.object(crawler, 'open_course_page_with_warmup', AsyncMock(return_value=body)) as open_page:
+                    with self.assertRaisesRegex(RuntimeError, 'Browser warning'):
+                        await crawler.build_entry_from_course_url(browser, DETAIL_URL)
+                self.assertEqual(open_page.await_count, 2)
+                page.close.assert_awaited_once()
+
+    async def test_course_writer_repairs_long_bad_title_and_keeps_good_titles(self):
+        for old_title in (self.warning, self.title):
+            with self.subTest(old_title=old_title), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                path = root / crawler.build_course_filename(self.course_id)
+                path.write_text(json.dumps({'title': old_title}))
+                page = self.course_page({'h1': ['Courses / ' + self.title], 'h2': [self.warning]})
+                browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+                entry = {'course_id': self.course_id, 'title': old_title, 'href': DETAIL_URL,
+                         'course_type': 'UE', 'lecturers': []}
+                with patch.object(crawler, 'expand_dates_and_groups_show_more', AsyncMock()), \
+                        patch('crawler.scrape_course_details.extract_time_slots', return_value=[]), \
+                        redirect_stdout(StringIO()):
+                    await crawler.process_course_entry(browser, entry, {}, asyncio.Semaphore(1),
+                                                       asyncio.Semaphore(1), root)
+                self.assertEqual(json.loads(path.read_text())['title'], self.title)
+
+    async def test_course_writer_keeps_original_json_when_warning_persists(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / crawler.build_course_filename(self.course_id)
+            original = json.dumps({'title': self.title, 'weeks': [{'room': 'keep me'}]})
+            path.write_text(original)
+            page = self.course_page({'h2': [self.warning]}, self.warning)
+            browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+            entry = {'course_id': self.course_id, 'title': self.title, 'href': DETAIL_URL,
+                     'course_type': 'UE', 'lecturers': []}
+            with patch.object(crawler, 'open_course_page_with_warmup', AsyncMock(return_value=self.warning)):
+                with self.assertRaisesRegex(RuntimeError, 'Browser warning'):
+                    await crawler.process_course_entry(browser, entry, {}, asyncio.Semaphore(1),
+                                                       asyncio.Semaphore(1), root)
+            self.assertEqual(path.read_text(), original)
+            page.close.assert_awaited_once()
+
+    async def test_course_writer_does_not_replace_course_title_with_login_title(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / crawler.build_course_filename(self.course_id)
+            original = json.dumps({'title': self.title})
+            path.write_text(original)
+            page = self.course_page({'h1': ['Login']})
+            browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+            entry = {'course_id': self.course_id, 'title': self.title, 'href': DETAIL_URL,
+                     'course_type': 'UE', 'lecturers': []}
+            with self.assertRaisesRegex(RuntimeError, 'Non-course page'):
+                await crawler.process_course_entry(browser, entry, {}, asyncio.Semaphore(1),
+                                                   asyncio.Semaphore(1), root)
+            self.assertEqual(path.read_text(), original)
+
+
+class RoomBuildingTests(unittest.IsolatedAsyncioTestCase):
+    room_url = crawler.DESKTOP_HOME_URL + '#/pl/ui/$ctx/ris.einzelRaum?raumKey=22373'
+    building = 'Theoretikum HS 2, Im Neuenheimer Feld 308, Erdgeschoß'
+    warning = ' '.join(crawler.BROWSER_WARNING_MARKERS)
+
+    def room_page(self, headings, fallback=()):
+        preferred = types.SimpleNamespace(all_text_contents=AsyncMock(side_effect=headings))
+        generic = types.SimpleNamespace(all_text_contents=AsyncMock(side_effect=fallback))
+        return types.SimpleNamespace(
+            goto=AsyncMock(), wait_for_load_state=AsyncMock(), wait_for_function=AsyncMock(),
+            close=AsyncMock(), locator=Mock(side_effect=lambda selector:
+                preferred if selector == crawler.ROOM_BUILDING_SELECTOR else generic),
+        )
+
+    async def test_room_subtitle_wins_over_warning_banner_and_is_cached(self):
+        page = self.room_page([[self.building]], [[self.warning, self.building]])
+        browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+        cache = {}
+        for _ in range(2):
+            self.assertEqual(await crawler.fetch_room_building(browser, self.room_url, cache,
+                                                              asyncio.Semaphore(1)), self.building)
+        browser.new_page.assert_awaited_once()
+        page.close.assert_awaited_once()
+
+    async def test_warning_only_page_is_retried_after_app_warmup(self):
+        page = self.room_page([[], [self.building]], [[self.warning]])
+        page.wait_for_function.side_effect = [TimeoutError(), None]
+        browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+        cache = {}
+        self.assertEqual(await crawler.fetch_room_building(browser, self.room_url, cache,
+                                                          asyncio.Semaphore(1)), self.building)
+        self.assertEqual([call.args[0] for call in page.goto.await_args_list],
+                         [self.room_url, crawler.DESKTOP_HOME_URL, self.room_url])
+        self.assertEqual(cache[self.room_url], self.building)
+        page.close.assert_awaited_once()
+
+    async def test_persistent_warning_is_never_saved_or_cached_and_can_recover(self):
+        failed = self.room_page([[], []], [[self.warning], [self.warning]])
+        failed.wait_for_function.side_effect = TimeoutError()
+        recovered = self.room_page([[self.building]])
+        browser = types.SimpleNamespace(new_page=AsyncMock(side_effect=[failed, recovered]))
+        cache = {}
+        with redirect_stdout(StringIO()):
+            self.assertIsNone(await crawler.fetch_room_building(browser, self.room_url, cache,
+                                                               asyncio.Semaphore(1)))
+        self.assertNotIn(self.room_url, cache)
+        self.assertEqual(await crawler.fetch_room_building(browser, self.room_url, cache,
+                                                          asyncio.Semaphore(1)), self.building)
+        failed.close.assert_awaited_once()
+        recovered.close.assert_awaited_once()
+
+    async def test_old_warning_and_failed_cache_entries_are_refetched(self):
+        for value in (self.warning, None):
+            with self.subTest(cached=value):
+                page = self.room_page([[self.building]])
+                browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+                cache = {self.room_url: value}
+                self.assertEqual(await crawler.fetch_room_building(browser, self.room_url, cache,
+                                                                  asyncio.Semaphore(1)), self.building)
+                self.assertEqual(cache[self.room_url], self.building)
+
+    async def test_legacy_headings_skip_warning_before_real_building(self):
+        page = self.room_page([[]], [[self.warning, '  ' + self.building + '\n']])
+        page.wait_for_function.side_effect = TimeoutError()
+        browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+        self.assertEqual(await crawler.fetch_room_building(browser, self.room_url, {},
+                                                          asyncio.Semaphore(1)), self.building)
+
+    async def test_recrawl_discards_warning_from_saved_json_including_corrected_id(self):
+        # Exercise the real course writer so a saved warning cannot bypass the
+        # room fetch, including when the detail page corrects a stale list ID.
+        course_id = '1300272228'
+        location = 'Theoretikum HS 2 (6308.EG.002)'
+        for entry_id in (course_id, 'old-list-id'):
+            with self.subTest(entry_id=entry_id), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                path = root / crawler.build_course_filename(course_id)
+                path.write_text(json.dumps({'weeks': [{'location': location,
+                    'location_link': self.room_url, 'building': self.warning}]}))
+                empty = Mock()
+                empty.count = AsyncMock(return_value=0)
+                empty.all_text_contents = AsyncMock(return_value=[])
+                anchor = Mock()
+                anchor.count = AsyncMock(return_value=1)
+                anchor.first = anchor
+                anchor.get_attribute = AsyncMock(return_value=self.room_url)
+                appointment = Mock(locator=Mock(return_value=anchor), evaluate=AsyncMock(return_value=None))
+                appointments = Mock(count=AsyncMock(return_value=1), nth=Mock(return_value=appointment))
+                page = types.SimpleNamespace(
+                    goto=AsyncMock(), wait_for_load_state=AsyncMock(), wait_for_timeout=AsyncMock(),
+                    wait_for_selector=AsyncMock(), close=AsyncMock(), content=AsyncMock(return_value=''),
+                    inner_text=AsyncMock(return_value=f'Number\n{course_id}'),
+                    locator=Mock(side_effect=lambda selector:
+                        appointments if selector == 'tm-course-group-list div.compact-appointment' else empty),
+                )
+                browser = types.SimpleNamespace(new_page=AsyncMock(return_value=page))
+                entry = {'course_id': entry_id, 'title': 'Advanced General Relativity',
+                         'href': DETAIL_URL, 'course_type': 'VO', 'lecturers': []}
+                with patch('crawler.scrape_course_details.extract_time_slots', return_value=[{
+                        'weekday_index': 3, 'location': location}]), \
+                        patch.object(crawler, 'extract_lecturers', AsyncMock(return_value=[])), \
+                        patch.object(crawler, 'expand_dates_and_groups_show_more', AsyncMock()), \
+                        patch.object(crawler, 'fetch_room_building', AsyncMock(return_value=self.building)) as fetch, \
+                        redirect_stdout(StringIO()):
+                    await crawler.process_course_entry(browser, entry, {}, asyncio.Semaphore(1),
+                                                       asyncio.Semaphore(1), root)
+                fetch.assert_awaited_once()
+                self.assertEqual(json.loads(path.read_text())['weeks'][0]['building'], self.building)
 
 
 class CrawlTests(unittest.IsolatedAsyncioTestCase):
@@ -235,6 +476,39 @@ class CrawlTests(unittest.IsolatedAsyncioTestCase):
         self.assertTrue((self.root / '2026WS/course-url-course.json').exists())
         self.assertFalse(record['complete'])
         self.archiver.assert_not_awaited()
+
+    async def test_auto_url_mode_groups_semesters_and_uses_fixed_defaults(self):
+        second_url = DETAIL_URL.replace('/123?', '/456?')
+        course_by_url = {
+            DETAIL_URL: {'course_id': 'shared', 'semester': '2026SS'},
+            second_url: {'course_id': 'shared', 'semester': '2026WS'},
+        }
+        resolver = AsyncMock(side_effect=lambda browser, url: course_by_url[url])
+        with patch.object(crawler, 'build_entry_from_course_url', resolver):
+            records = await crawler.crawl_urls_by_semester((DETAIL_URL, second_url, DETAIL_URL),
+                                                         data_dir=self.root)
+        self.assertEqual(set(records), {'2026SS', '2026WS'})
+        for semester in SEMESTERS:
+            self.assertTrue((self.root / semester / 'course-shared.json').exists())
+            task = load_task(semester, self.root)
+            self.assertEqual(task['options']['concurrency'], 10)
+            self.assertFalse(task['options']['show_browser'])
+            self.assertEqual(records[semester]['courseCount'], 1)
+            self.assertFalse(records[semester]['complete'])
+            self.assertEqual(self.load(f'{semester}/sync-meta.json'), {'previous': semester})
+        self.assertEqual([call.args[0] for call in self.syncer.await_args_list], ['2026SS', '2026WS'])
+        self.reader.assert_not_awaited()
+        self.archiver.assert_not_awaited()
+        self.assertEqual(self.load('sync-meta.json'), self.old_record)
+
+    async def test_auto_url_mode_never_guesses_missing_or_unconfigured_semester(self):
+        for semester in (None, '2027WS'):
+            with self.subTest(semester=semester), patch.object(crawler, 'build_entry_from_course_url',
+                    AsyncMock(return_value={'course_id': 'shared', 'semester': semester})):
+                with self.assertRaises((RuntimeError, ValueError)):
+                    await crawler.crawl_urls_by_semester((DETAIL_URL,), data_dir=self.root)
+        self.processor.assert_not_awaited()
+        self.syncer.assert_not_awaited()
 
     async def test_failed_course_prevents_full_sync_and_archive(self):
         self.courses = entries(2)
@@ -496,28 +770,45 @@ class MenuTests(unittest.TestCase):
         self.assertEqual(self.configure([''] * 7 + ['r']), crawler.CrawlOptions(concurrency=10))
 
     def test_invalid_values_are_retried(self):
-        options = self.configure(['invalid', '1', 'list', 'reverse', '0', '2', '-1', '150', '0', '3', 'maybe', 'n', 'r'])
+        options = self.configure(['invalid', 'list', '2026WS', 'reverse', '0', '2', '-1', '150', '0', '3', 'maybe', 'n', 'r'])
         self.assertEqual(options, crawler.CrawlOptions(number=2, skip=150, concurrency=3, reverse=True))
 
     def test_edit_summary_preserves_settings(self):
-        options = self.configure([''] * 7 + ['e', '2026SS'] + [''] * 6 + ['r'])
+        options = self.configure([''] * 7 + ['e', 'list', '2026SS'] + [''] * 5 + ['r'])
         self.assertEqual(options.semester, '2026SS')
 
     def test_back_can_switch_to_url_mode_and_edit_urls(self):
         second_url = DETAIL_URL.replace('/123?', '/456?')
-        options = self.configure(['2', 'list', 'b', 'urls', '5', 'n', DETAIL_URL, 'b', second_url, 'r'])
-        self.assertEqual(options.semester, '2026SS')
+        options = self.configure(['list', 'b', 'urls', DETAIL_URL, 'b', second_url, 'r'])
+        self.assertIsInstance(options, menu.URLCrawlAction)
         self.assertEqual(options.url, (second_url,))
-        self.assertFalse(options.reverse)
 
     def test_url_mode_rejects_invalid_url_and_supports_multiple_urls(self):
-        options = self.configure(['2026SS', 'urls', '3', 'y', '', 'https://example.com',
+        options = self.configure(['urls', '', 'https://example.com',
                                   DETAIL_URL + ' ' + DETAIL_URL.replace('/123?', '/456?'), 'r'])
         self.assertEqual(len(options.url), 2)
-        self.assertEqual(options.concurrency, 3)
-        self.assertTrue(options.show_browser)
-        self.assertIsNone(options.number)
-        self.assertEqual(options.skip, 0)
+        self.assertIsInstance(options, menu.URLCrawlAction)
+
+    def test_url_mode_skips_semester_concurrency_and_browser_questions(self):
+        with patch.object(menu, 'offer_saved_task') as saved, \
+                patch.object(menu, 'integer') as integer, patch.object(menu, 'yes_no') as yes_no:
+            self.assertEqual(self.configure(['2', DETAIL_URL, 'r']), menu.URLCrawlAction((DETAIL_URL,)))
+        saved.assert_not_called()
+        integer.assert_not_called()
+        yes_no.assert_not_called()
+
+    def test_switching_from_list_to_urls_discards_previous_list_settings(self):
+        options = self.configure(['list', '2026SS', 'reverse', '2', '150', '3', 'y',
+                                  'e', 'urls', DETAIL_URL, 'r'])
+        self.assertEqual(options, menu.URLCrawlAction((DETAIL_URL,)))
+
+    def test_run_url_mode_dispatches_to_automatic_semester_crawler(self):
+        with patch.object(menu, 'configure_crawl', return_value=menu.URLCrawlAction((DETAIL_URL,))), \
+                patch.object(menu, 'crawl_urls_by_semester', AsyncMock()) as crawl, \
+                patch.object(menu, 'crawl_courses', AsyncMock()) as explicit_crawl:
+            menu.run_crawl()
+        crawl.assert_awaited_once_with((DETAIL_URL,))
+        explicit_crawl.assert_not_awaited()
 
     def test_back_at_first_step_returns_to_main_menu(self):
         self.assertIsNone(self.configure(['b']))
@@ -526,19 +817,19 @@ class MenuTests(unittest.TestCase):
         options = crawler.CrawlOptions(semester='2026SS', number=10, concurrency=2)
         task = new_task(options)
         task['nextSkip'] = 100
-        result = self.configure(['2026SS', 'resume'], saved_task=task)
+        result = self.configure(['list', '2026SS', 'resume'], saved_task=task)
         self.assertEqual(result, menu.SavedTaskAction(options))
 
     def test_resume_offer_can_return_to_menu(self):
         task = new_task(crawler.CrawlOptions())
-        self.assertIsNone(self.configure(['2026WS', 'menu'], saved_task=task))
+        self.assertIsNone(self.configure(['list', '2026WS', 'menu'], saved_task=task))
 
     def test_completed_task_with_failed_sync_offers_sync_only(self):
         options = crawler.CrawlOptions(number=2)
         task = new_task(options)
         task['crawlStatus'] = 'completed'
         task['syncStatus'] = 'failed'
-        result = self.configure(['2026WS', 'sync'], saved_task=task)
+        result = self.configure(['list', '2026WS', 'sync'], saved_task=task)
         self.assertEqual(result, menu.SavedTaskAction(options, sync_only=True))
 
     def test_manual_database_operation_uses_shared_sync_function(self):
