@@ -1129,16 +1129,16 @@ async def crawl_courses(options: CrawlOptions, *, data_dir: Path = DATA_DIR,
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     except BlockingIOError:
         lock.close()
-        raise RuntimeError('该学期已有爬取任务在运行。')
+        raise RuntimeError('A crawl task for this semester is already running.')
     try:
         task = load_task(options.semester, data_dir) if resume else new_task(options)
         if resume:
             if task is None or not can_resume(task):
-                raise ValueError('没有同一天可恢复的未完成爬取任务。')
+                raise ValueError('No unfinished crawl task from today is available to resume.')
             saved_options = dict(task['options'])
             saved_options['url'] = tuple(saved_options.get('url', ()))
             if CrawlOptions(**saved_options) != options:
-                raise ValueError('恢复参数必须与原任务一致。')
+                raise ValueError('Resume parameters must match the original task.')
             print(f'Resuming {options.semester}: page offset={task["nextSkip"]}, '
                   f'pending={len(task["pagePending"]) + len(task["retries"])}, '
                   f'succeeded={len(task["successes"])}')

@@ -32,7 +32,7 @@ def offer_saved_task(semester: str) -> SavedTaskAction | None:
         task = load_task(semester)
     except ValueError as exc:
         print(exc)
-        print('该断点无法恢复；可以配置新任务。')
+        print('This checkpoint cannot be resumed; you can configure a new task.')
         return None
     if task is None:
         return None
@@ -40,35 +40,40 @@ def offer_saved_task(semester: str) -> SavedTaskAction | None:
     options['url'] = tuple(options.get('url', ()))
     saved = CrawlOptions(**options)
     if can_resume(task):
-        print(f'\n发现当天未完成任务：{semester}，{"倒序" if saved.reverse else "顺序"}，'
-              f'已成功 {len(task["successes"])} 门，下一页偏移 {task["nextSkip"]}，'
-              f'待处理/重试 {len(task["pagePending"]) + len(task["retries"]) + len(task["urlPending"])} 项。')
-        print(f'原任务参数：数量上限 {saved.number or "不限"}，初始跳过 {saved.skip}，'
-              f'并发 {saved.concurrency}，显示浏览器 {saved.show_browser}，URL {list(saved.url)}')
-        print(f'开始于 {task["startedAt"]}；最近爬取 {task["lastCrawlTime"]}。')
-        choice = choose('处理上次任务', [('resume', '从断点继续'), ('new', '重新配置新任务'),
-                                      ('menu', '返回菜单')], 'resume')
+        print(f'\nFound an unfinished task for today: {semester}, '
+              f'{"reverse" if saved.reverse else "forward"}, '
+              f'{len(task["successes"])} courses completed, next page offset {task["nextSkip"]}, '
+              f'{len(task["pagePending"]) + len(task["retries"]) + len(task["urlPending"])} pending/retry items.')
+        print(f'Original options: limit {saved.number or "unlimited"}, initial skip {saved.skip}, '
+              f'concurrency {saved.concurrency}, show browser {saved.show_browser}, URLs {list(saved.url)}')
+        print(f'Started at {task["startedAt"]}; last crawled at {task["lastCrawlTime"]}.')
+        choice = choose('Handle previous task', [('resume', 'Resume from checkpoint'),
+                                                ('new', 'Configure a new task'),
+                                                ('menu', 'Return to menu')], 'resume')
         if choice == 'resume':
             return SavedTaskAction(saved)
         if choice == 'menu':
             raise Back
     elif task['crawlStatus'] == 'completed' and task['syncStatus'] != 'completed':
-        choice = choose('上次爬取已完成，数据库尚未同步成功',
-                        [('sync', '只重试数据库同步'), ('new', '配置新爬取任务'), ('menu', '返回菜单')], 'sync')
+        choice = choose('The previous crawl completed, but database sync did not succeed',
+                        [('sync', 'Retry database sync only'),
+                         ('new', 'Configure a new crawl task'),
+                         ('menu', 'Return to menu')], 'sync')
         if choice == 'sync':
             return SavedTaskAction(saved, sync_only=True)
         if choice == 'menu':
             raise Back
     elif task['crawlStatus'] != 'completed':
-        print('上次任务不在同一天（Europe/Berlin），不使用旧断点。')
+        print('The previous task is not from today (Europe/Berlin); its checkpoint will not be used.')
     return None
 
 
 def read_input(prompt: str) -> str:
     value = input(prompt).strip()
-    if value.lower() in {'b', 'back', '返回'}:
+    print('\n----------------------------------------')
+    if value.lower() in {'b', 'back'}:
         raise Back
-    if value.lower() in {'q', 'quit', 'exit', '退出'}:
+    if value.lower() in {'q', 'quit', 'exit'}:
         raise ExitMenu
     return value
 
@@ -76,15 +81,15 @@ def read_input(prompt: str) -> str:
 def choose(label: str, choices: list[tuple[str, str]], default: str) -> str:
     print(f'\n{label}')
     for index, (value, title) in enumerate(choices, 1):
-        print(f'  {index}. {title}{"（默认）" if value == default else ""}')
+        print(f'  {index}. {title}{" (default)" if value == default else ""}')
     while True:
-        answer = read_input('输入编号或选项名称，回车使用默认值：')
+        answer = read_input('\nPress Enter for the default, or enter b to go back, q to quit: ')
         if not answer:
             return default
         for index, (value, _title) in enumerate(choices, 1):
             if answer == str(index) or answer.lower() == value.lower():
                 return value
-        print('无效选项，请重新输入。')
+        print('\nInvalid option. Please try again.')
 
 
 def semester_choices() -> list[tuple[str, str]]:
@@ -93,12 +98,12 @@ def semester_choices() -> list[tuple[str, str]]:
 
 
 def integer(label: str, default: int | None, *, minimum: int, optional: bool = False) -> int | None:
-    default_text = '不限' if default is None else str(default)
+    default_text = 'unlimited' if default is None else str(default)
     while True:
-        answer = read_input(f'{label} [默认：{default_text}]：')
+        answer = read_input(f'{label} [default: {default_text}]: ')
         if not answer:
             return default
-        if optional and answer.lower() in {'all', 'none', '不限'}:
+        if optional and answer.lower() in {'all', 'none', 'unlimited'}:
             return None
         try:
             value = int(answer)
@@ -106,47 +111,47 @@ def integer(label: str, default: int | None, *, minimum: int, optional: bool = F
                 return value
         except ValueError:
             pass
-        print(f'请输入不小于 {minimum} 的整数。' + (' 输入 all 表示不限。' if optional else ''))
+        print(f'Enter an integer greater than or equal to {minimum}.'
+              + (' Enter "all" for no limit.' if optional else ''))
 
 
 def yes_no(label: str, default: bool) -> bool:
     while True:
-        answer = read_input(f'{label} [y/n，默认：{"y" if default else "n"}]：').lower()
+        answer = read_input(f'{label} [y/n, default: {"y" if default else "n"}]: ').lower()
         if not answer:
             return default
-        if answer in {'y', 'yes', '是', '1'}:
+        if answer in {'y', 'yes', '1'}:
             return True
-        if answer in {'n', 'no', '否', '0'}:
+        if answer in {'n', 'no', '0'}:
             return False
-        print('请输入 y 或 n。')
+        print('Enter y or n.')
 
 
 def course_urls(default: tuple[str, ...]) -> tuple[str, ...]:
-    print('指定 URL 模式只使用学期、并发数和浏览器选项；不使用方向、数量或偏移量。')
-    print('课程将保存到所选学期，请确保详情 URL 属于该学期。')
+    print('URL mode uses only the semester, concurrency, and browser options; direction, limit, and skip are ignored.')
+    print('Courses will be saved to the selected semester. Make sure each detail URL belongs to that semester.')
     if default:
-        print('当前 URL：' + ' '.join(default))
+        print('Current URLs: ' + ' '.join(default))
     while True:
-        answer = read_input('课程详情 URL（多个用空格分隔，回车保留当前值）：')
+        answer = read_input('Course detail URLs (separate multiple URLs with spaces; press Enter to keep current values): ')
         urls = tuple(answer.split()) if answer else default
         if not urls:
-            print('请至少输入一个课程详情 URL。')
+            print('Enter at least one course detail URL.')
             continue
         try:
             CrawlOptions(url=urls).validate()
             return urls
         except ValueError as exc:
-            print(f'URL 无效：{exc}')
+            print(f'Invalid URL: {exc}')
 
 
 def configure_crawl() -> CrawlOptions | SavedTaskAction | None:
     draft = {
         'semester': DEFAULT_SEMESTER, 'mode': 'list', 'reverse': False,
-        'number': None, 'skip': 0, 'concurrency': 5,
+        'number': None, 'skip': 0, 'concurrency': 10,
         'show_browser': False, 'url': (),
     }
     index = 0
-    print('\n配置爬取任务。每一步都可输入 b 返回上一步，q 退出菜单。')
     while True:
         steps = ['semester', 'mode']
         if draft['mode'] == 'list':
@@ -158,25 +163,30 @@ def configure_crawl() -> CrawlOptions | SavedTaskAction | None:
             if index < len(steps):
                 step = steps[index]
                 if step == 'semester':
-                    draft[step] = choose('选择学期', semester_choices(), draft[step])
+                    draft[step] = choose('Select semester', semester_choices(), draft[step])
                     saved_action = offer_saved_task(draft[step])
                     if saved_action is not None:
                         return saved_action
                 elif step == 'mode':
-                    draft[step] = choose('爬取方式', [('list', '爬取课程列表'), ('urls', '按详情 URL 重新爬取')], draft[step])
+                    draft[step] = choose('Crawl mode', [('list', 'Crawl all courses'),
+                                                        ('urls', 'Crawl by URLs')], draft[step])
                 elif step == 'reverse':
-                    direction = choose('遍历方向', [('forward', '顺序：从列表开头向后'), ('reverse', '倒序：从列表末尾向前')],
+                    direction = choose('Traversal direction',
+                                       [('forward', 'Forward: from the beginning of the list'),
+                                        ('reverse', 'Reverse: from the end of the list')],
                                        'reverse' if draft[step] else 'forward')
                     draft[step] = direction == 'reverse'
                 elif step == 'number':
-                    draft[step] = integer('爬取数量上限（输入 all 表示不限）', draft[step], minimum=1, optional=True)
+                    draft[step] = integer('Maximum number of courses (enter "all" for no limit)',
+                                          draft[step], minimum=1, optional=True)
                 elif step == 'skip':
-                    position = '末尾' if draft['reverse'] else '开头'
-                    draft[step] = integer(f'从列表{position}跳过多少门课程', draft[step], minimum=0)
+                    position = 'end' if draft['reverse'] else 'beginning'
+                    draft[step] = integer(f'Number of courses to skip from the {position} of the list',
+                                          draft[step], minimum=0)
                 elif step == 'concurrency':
-                    draft[step] = integer('并发数', draft[step], minimum=1)
+                    draft[step] = integer('Concurrency', draft[step], minimum=1)
                 elif step == 'show_browser':
-                    draft[step] = yes_no('是否显示浏览器', draft[step])
+                    draft[step] = yes_no('Show browser', draft[step])
                 elif step == 'url':
                     draft[step] = course_urls(draft[step])
                 index += 1
@@ -192,28 +202,29 @@ def configure_crawl() -> CrawlOptions | SavedTaskAction | None:
                 skip=draft['skip'] if draft['mode'] == 'list' else 0,
             )
             options.validate()
-            print('\n任务摘要')
-            print(f'  学期：{options.semester}')
-            print(f'  输出目录：{DATA_DIR / options.semester}')
+            print('\nTask summary')
+            print(f'  Semester: {options.semester}')
+            print(f'  Output directory: {DATA_DIR / options.semester}')
             if options.url:
-                print('  模式：按 URL 重新爬取')
+                print('  Mode: crawl by URLs')
                 for url in options.url:
                     print(f'    {url}')
             else:
-                print(f'  方向：{"倒序" if options.reverse else "顺序"}')
-                print(f'  数量上限：{options.number if options.number is not None else "不限"}')
-                print(f'  跳过数量：{options.skip}（从{"末尾" if options.reverse else "开头"}计数）')
-            print(f'  并发数：{options.concurrency}；显示浏览器：{"是" if options.show_browser else "否"}')
-            print('  r/1 执行，e/2 修改，b 返回上一步，menu 返回主菜单，q 退出。')
-            answer = read_input('选择操作：').lower()
-            if answer in {'r', 'run', '1'}:
+                print(f'  Direction: {"reverse" if options.reverse else "forward"}')
+                print(f'  Limit: {options.number if options.number is not None else "unlimited"}')
+                print(f'  Courses to skip: {options.skip} (counted from the '
+                      f'{"end" if options.reverse else "beginning"})')
+            print(f'  Concurrency: {options.concurrency}; show browser: {"yes" if options.show_browser else "no"}')
+            print('  r: run, e: edit, b: go back one step, m: return to main menu, q: quit.')
+            answer = read_input('Select an action: ').lower()
+            if answer in {'r', 'run'}:
                 return options
-            if answer in {'e', 'edit', '2'}:
+            if answer in {'e', 'edit'}:
                 index = 0
-            elif answer in {'menu', 'cancel'}:
+            elif answer in {'m', 'cancel'}:
                 return None
             else:
-                print('请输入 r、e、b、menu 或 q。')
+                print('Enter r, e, b, m, or q.')
         except Back:
             if index == 0:
                 return None
@@ -233,10 +244,10 @@ def run_crawl() -> None:
 
 def run_database_sync() -> None:
     try:
-        semester = choose('选择要同步的学期', semester_choices(), DEFAULT_SEMESTER)
-        print(f'数据目录：{DATA_DIR / semester}')
-        print(f'HEIVIEW_SEMESTER={semester} npm run db:sync')
-        if yes_no('执行数据库同步', False):
+        semester = choose('Select semester to sync', semester_choices(), DEFAULT_SEMESTER)
+        print(f'\nData directory: {DATA_DIR / semester}')
+        print(f'\nHEIVIEW_SEMESTER={semester} npm run db:sync')
+        if yes_no('\nRun database sync', False):
             asyncio.run(sync_database(semester))
     except Back:
         return
@@ -252,42 +263,42 @@ class Operation:
 
 # Register future menu operations here.
 OPERATIONS = (
-    Operation('crawl', '爬取课程', run_crawl, ('c', '爬取课程')),
-    Operation('sync', '构建/同步数据库', run_database_sync, ('db', '构建数据库')),
+    Operation('crawl', 'Crawl courses', run_crawl, ('c',)),
+    Operation('sync', 'Build/sync database', run_database_sync, ('db',)),
 )
 
 
 def main(argv: list[str] | None = None) -> None:
-    argparse.ArgumentParser(description='heiView 交互式命令行菜单（输入编号或命令选择操作）。').parse_args(argv)
+    argparse.ArgumentParser(description='heiView interactive command menu (select an operation by number or command).').parse_args(argv)
     while True:
-        print('\nheiView 操作菜单')
+        print('\n  heiView Crawler Menu\n')
         for index, operation in enumerate(OPERATIONS, 1):
             print(f'  {index}. {operation.label} ({operation.name})')
-        print('  0. 退出 (q)')
+        print('  0. Exit (q)')
         try:
-            answer = read_input('选择操作：').lower()
+            answer = read_input('\nSelect an operation: ').lower()
             if answer == '0':
                 raise ExitMenu
         except Back:
             continue
         except (ExitMenu, EOFError, KeyboardInterrupt):
-            print('\n已退出 heiView。')
+            print('\nExited heiView.')
             return
 
         operation = next((item for index, item in enumerate(OPERATIONS, 1)
                           if answer in (str(index), item.name, *item.aliases)), None)
         if operation is None:
-            print('无效操作，请输入菜单编号或命令。')
+            print('\nInvalid operation. Enter a menu number or command.')
             continue
         try:
             operation.handler()
         except (ExitMenu, EOFError):
-            print('\n已退出 heiView。')
+            print('\nExited heiView.')
             return
         except KeyboardInterrupt:
-            print('\n当前操作已取消，返回主菜单。')
+            print('\nThe current operation was cancelled. Returning to the main menu.')
         except Exception as exc:
-            print(f'操作失败：{exc}')
+            print(f'Operation failed: {exc}')
             if isinstance(exc, ModuleNotFoundError):
-                print('请安装依赖：python -m pip install -r crawler/requirements.txt')
-            print('已返回主菜单。')
+                print('Install dependencies with: python -m pip install -r crawler/requirements.txt')
+            print('Returning to the main menu.')

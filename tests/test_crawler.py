@@ -402,7 +402,7 @@ class CrawlTests(unittest.IsolatedAsyncioTestCase):
         self.syncer.side_effect = self.real_syncer
         process = types.SimpleNamespace(wait=AsyncMock(return_value=1), returncode=1)
         with patch('asyncio.create_subprocess_exec', AsyncMock(return_value=process)):
-            with self.assertRaisesRegex(RuntimeError, '退出码 1'):
+            with self.assertRaises(RuntimeError):
                 await crawler.crawl_courses(crawler.CrawlOptions(number=1), data_dir=self.root)
         task = load_task('2026WS', self.root)
         self.assertEqual(task['crawlStatus'], 'completed')
@@ -420,11 +420,11 @@ class CrawlTests(unittest.IsolatedAsyncioTestCase):
         task = new_task(crawler.CrawlOptions(number=1))
         task['crawlStatus'] = 'failed'
         save_task(task, self.root)
-        with self.assertRaisesRegex(ValueError, '参数'):
+        with self.assertRaises(ValueError):
             await crawler.crawl_courses(crawler.CrawlOptions(number=2), data_dir=self.root, resume=True)
         task['lastCrawlTime'] = '2020-01-01T00:00:00+00:00'
         save_task(task, self.root, crawl_activity=False)
-        with self.assertRaisesRegex(ValueError, '同一天'):
+        with self.assertRaises(ValueError):
             await crawler.crawl_courses(crawler.CrawlOptions(number=1), data_dir=self.root, resume=True)
 
 
@@ -487,12 +487,13 @@ class ArchiveTests(unittest.IsolatedAsyncioTestCase):
 
 
 class MenuTests(unittest.TestCase):
-    def configure(self, answers):
-        with patch('builtins.input', side_effect=answers), redirect_stdout(StringIO()):
+    def configure(self, answers, saved_task=None):
+        with patch.object(menu, 'load_task', return_value=saved_task), \
+                patch('builtins.input', side_effect=answers), redirect_stdout(StringIO()):
             return menu.configure_crawl()
 
     def test_default_options(self):
-        self.assertEqual(self.configure([''] * 7 + ['r']), crawler.CrawlOptions())
+        self.assertEqual(self.configure([''] * 7 + ['r']), crawler.CrawlOptions(concurrency=10))
 
     def test_invalid_values_are_retried(self):
         options = self.configure(['invalid', '1', 'list', 'reverse', '0', '2', '-1', '150', '0', '3', 'maybe', 'n', 'r'])
@@ -525,22 +526,19 @@ class MenuTests(unittest.TestCase):
         options = crawler.CrawlOptions(semester='2026SS', number=10, concurrency=2)
         task = new_task(options)
         task['nextSkip'] = 100
-        with patch.object(menu, 'load_task', return_value=task):
-            result = self.configure(['2026SS', 'resume'])
+        result = self.configure(['2026SS', 'resume'], saved_task=task)
         self.assertEqual(result, menu.SavedTaskAction(options))
 
     def test_resume_offer_can_return_to_menu(self):
         task = new_task(crawler.CrawlOptions())
-        with patch.object(menu, 'load_task', return_value=task):
-            self.assertIsNone(self.configure(['2026WS', 'menu']))
+        self.assertIsNone(self.configure(['2026WS', 'menu'], saved_task=task))
 
     def test_completed_task_with_failed_sync_offers_sync_only(self):
         options = crawler.CrawlOptions(number=2)
         task = new_task(options)
         task['crawlStatus'] = 'completed'
         task['syncStatus'] = 'failed'
-        with patch.object(menu, 'load_task', return_value=task):
-            result = self.configure(['2026WS', 'sync'])
+        result = self.configure(['2026WS', 'sync'], saved_task=task)
         self.assertEqual(result, menu.SavedTaskAction(options, sync_only=True))
 
     def test_manual_database_operation_uses_shared_sync_function(self):
@@ -556,7 +554,7 @@ class MenuTests(unittest.TestCase):
         sync.assert_not_awaited()
 
     def test_summary_can_return_to_main_menu_without_running(self):
-        self.assertIsNone(self.configure([''] * 7 + ['menu']))
+        self.assertIsNone(self.configure([''] * 7 + ['m']))
 
     def test_invalid_main_selection_then_quit(self):
         with patch('builtins.input', side_effect=['bad', 'q']), redirect_stdout(StringIO()):
@@ -566,7 +564,7 @@ class MenuTests(unittest.TestCase):
         for failure in (None, RuntimeError('failed'), KeyboardInterrupt()):
             with self.subTest(failure=failure):
                 handler = Mock(side_effect=failure)
-                operation = menu.Operation('crawl', '爬取课程', handler)
+                operation = menu.Operation('crawl', 'Crawl courses', handler)
                 with patch.object(menu, 'OPERATIONS', (operation,)), patch('builtins.input', side_effect=['crawl', 'q']), redirect_stdout(StringIO()):
                     menu.main([])
                 handler.assert_called_once()

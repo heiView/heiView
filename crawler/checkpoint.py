@@ -68,30 +68,30 @@ def load_task(semester: str, data_dir: Path = DATA_DIR) -> dict | None:
                 or not isinstance(task['pagePending'], list)
                 or not isinstance(task['retries'], list)
                 or not isinstance(task['urlPending'], list)):
-            raise ValueError('结构或学期配置不匹配')
+            raise ValueError('Checkpoint structure or semester configuration does not match')
         from crawler.heico_crawler import CrawlOptions
         options = dict(task['options'])
         options['url'] = tuple(options.get('url', ()))
         CrawlOptions(**options).validate()
         when = datetime.fromisoformat(task['lastCrawlTime'])
         if when.tzinfo is None:
-            raise ValueError('断点时间缺少时区')
+            raise ValueError('Checkpoint timestamp is missing timezone information')
         cursor = task['nextSkip']
         if cursor is not None and (not isinstance(cursor, int) or (cursor < 0 and not task['traversalFinished'])):
-            raise ValueError('分页位置无效')
+            raise ValueError('Invalid pagination position')
         for entry in task['pagePending'] + task['retries']:
             if not isinstance(entry, dict) or not isinstance(entry.get('course_id'), str):
-                raise ValueError('待处理课程无效')
+                raise ValueError('Invalid pending course record')
         for result in task['successes'].values():
             if (not isinstance(result, dict) or not isinstance(result.get('filename'), str)
                     or Path(result['filename']).name != result['filename']):
-                raise ValueError('成功课程记录无效')
+                raise ValueError('Invalid successful course record')
         if not isinstance(task['expectedFilenames'], list) or not isinstance(task['traversalFinished'], bool):
-            raise ValueError('覆盖信息无效')
+            raise ValueError('Invalid crawl coverage metadata')
         when.astimezone(LOCAL_TIMEZONE)
         return task
     except (ValueError, KeyError, TypeError, OSError, AttributeError) as exc:
-        raise ValueError(f'无法使用断点 {path}：{exc}') from exc
+        raise ValueError(f'Cannot use checkpoint {path}: {exc}') from exc
 
 
 def can_resume(task: dict, now: datetime | None = None) -> bool:

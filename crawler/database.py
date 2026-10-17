@@ -17,7 +17,7 @@ def validate_data(semester: str, data_dir: Path = DATA_DIR) -> None:
     course_dir = data_dir / semester
     if (not course_dir.is_dir() or not (any(course_dir.glob('course-*.json'))
                                        or any((course_dir / 'custom').glob('course-*.json')))):
-        raise ValueError(f'{semester} 没有可导入的课程数据：{course_dir}')
+        raise ValueError(f'No importable course data found for {semester}: {course_dir}')
 
 
 async def sync_database(semester: str, *, data_dir: Path = DATA_DIR, task: dict | None = None) -> None:
@@ -34,7 +34,7 @@ async def sync_database(semester: str, *, data_dir: Path = DATA_DIR, task: dict 
                                                       start_new_session=True)
         code = await process.wait()
         if code:
-            raise RuntimeError(f'数据库同步失败（退出码 {code}）。可在菜单中只重试数据库同步。')
+            raise RuntimeError(f'Database sync failed (exit code {code}). You can retry database sync only from the menu.')
     except (Exception, asyncio.CancelledError) as exc:
         if process is not None and process.returncode is None:
             try:
@@ -51,4 +51,4 @@ async def sync_database(semester: str, *, data_dir: Path = DATA_DIR, task: dict 
         task['syncStatus'] = 'completed'
         task.pop('syncError', None)
         save_task(task, data_dir, crawl_activity=False)
-    print(f'[{semester}] 数据库同步成功。', flush=True)
+    print(f'[{semester}] Database sync completed successfully.', flush=True)
